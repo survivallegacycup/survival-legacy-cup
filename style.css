@@ -1,0 +1,81 @@
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Arial', sans-serif; }
+body { background-color: #0d0d0d; color: #fff; }
+
+/* NAVBAR */
+.navbar {
+    display: flex; justify-content: space-between; align-items: center;
+    background-color: #000; padding: 15px 40px;
+    border-bottom: 2px solid #ffcc00;
+}
+.logo { font-size: 24px; font-style: italic; color: #fff; font-weight: 900;}
+.nav-links { list-style: none; display: flex; gap: 30px; }
+.nav-links a { color: #888; text-decoration: none; font-size: 13px; font-weight: bold; }
+.nav-links a.active, .nav-links a:hover { color: #ffcc00; }
+.login-btn {
+    background: transparent; border: 1px solid #555; color: #aaa;
+    padding: 6px 20px; border-radius: 4px; cursor: pointer; font-size: 12px;
+}
+.login-btn:hover { border-color: #fff; color: #fff; }
+
+/* CONTAINER & SIDEBAR (Ghi đè phần này trong CSS của bạn) */
+.sidebar h3 {
+    color: #fff; font-size: 16px; margin-bottom: 10px; text-transform: uppercase;
+}
+.mt-20 { margin-top: 30px; }
+
+.stages { list-style: none; margin-bottom: 20px;}
+.stages li {
+    padding: 12px 15px; cursor: pointer;
+    background-color: transparent; 
+    border: 1px solid #333;
+    border-left: 3px solid transparent;
+    color: #888; font-size: 12px; font-weight: bold;
+    margin-bottom: -1px; /* Tránh viền bị đè lên nhau 2 lớp */
+}
+.stages li small { font-weight: normal; font-size: 11px; color: #666; display: block; margin-top: 3px;}
+.stages li.active {
+    border-left: 3px solid #ffcc00; color: #fff;
+}
+.stages li:hover { background-color: #222; }
+
+/* Định dạng hình Booyah */
+.team-booyah { 
+    display: flex; gap: 8px; justify-content: center; align-items: center; 
+    font-weight: bold; color: #fff; 
+}
+.team-booyah img { 
+    width: 25px; height: 25px; object-fit: contain; border-radius: 4px;
+}
+/* MAIN CONTENT TABLE */
+.content { flex: 1; border-top: 2px solid #ffcc00; }
+.table-wrapper { background-color: #1a1a1a; border-left: 1px solid #333; border-right: 1px solid #333;}
+
+.table-header {
+    display: flex; padding: 15px 0; border-bottom: 1px solid #333;
+    color: #888; font-size: 12px; text-align: center;
+}
+.col { flex: 1; display: flex; justify-content: center; align-items: center; }
+
+.date-header {
+    background-color: #252525; padding: 12px 20px; display: flex; gap: 50px;
+    font-size: 13px; font-weight: bold; border-bottom: 1px solid #333;
+}
+.date-header .date-text { color: #aaa; }
+.date-header .highlight-text { color: #ffcc00; }
+
+.match-item {
+    display: flex; padding: 15px 0; border-bottom: 1px solid #333;
+    font-size: 13px; color: #ccc; text-align: center; transition: 0.2s;
+}
+.match-item:hover { background-color: #222; }
+
+/* Khu vực Team Booyah */
+.team-booyah { gap: 10px; font-weight: bold; color: #fff; }
+.team-booyah img { width: 24px; height: 24px; object-fit: contain; }
+
+/* Nút Xem Thông Số */
+.btn-stats {
+    background: transparent; border: 1px solid #555; color: #888;
+    padding: 5px 15px; border-radius: 15px; font-size: 11px; cursor: pointer;
+}
+.btn-stats:hover { border-color: #ffcc00; color: #ffcc00; }
