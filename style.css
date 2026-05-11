@@ -333,3 +333,67 @@ body {
     color: #888; font-size: 11px; font-weight: bold;
 }
 .btn-xem-them .arrow { color: #ffcc00; margin-left: 5px; font-size: 10px;}
+/* ================= TRANG ĐỘI TUYỂN (TEAM PAGE) ================= */
+.team-page-wrapper { display: flex; flex-direction: column; width: 100%; }
+
+/* 1. Chọn 12 Đội (2 Hàng x 6 Cột) */
+.team-selector-section {
+    display: flex; align-items: center; justify-content: center;
+    background-color: #222; padding: 30px; border-radius: 4px 4px 0 0;
+    gap: 20px; border-bottom: 2px solid #333;
+}
+.team-grid-12 {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /* Ép chia đúng 6 cột */
+    gap: 20px 30px; /* Khoảng cách dọc 20px, ngang 30px */
+    justify-items: center;
+}
+.t-icon {
+    display: flex; flex-direction: column; align-items: center; gap: 8px;
+    cursor: pointer; opacity: 0.4; transition: 0.3s;
+}
+.t-icon:hover, .t-icon.active { opacity: 1; }
+.t-icon img {
+    width: 65px; height: 65px; object-fit: contain;
+    background: #fff; border: 2px solid transparent; border-radius: 5px;
+    padding: 5px;
+}
+.t-icon.active img { border-color: #ffcc00; }
+.t-icon span { color: #fff; font-size: 12px; font-weight: bold; }
+
+/* 2. Banner Thông tin */
+.team-info-banner {
+    display: flex; align-items: center; gap: 30px;
+    background-color: #2a2a2a; padding: 30px 50px;
+}
+.big-logo-box img { width: 120px; height: 120px; background: #fff; padding: 10px; border-radius: 5px; }
+.team-desc-box h2 { color: #ffcc00; font-size: 24px; margin-bottom: 10px; text-transform: uppercase;}
+.team-desc-box p { color: #ccc; font-size: 14px; line-height: 1.6; max-width: 600px; }
+
+/* 3. Lưới Tuyển Thủ */
+.players-grid {
+    display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;
+    background-color: #151515; padding: 40px 20px; border-radius: 0 0 4px 4px;
+}
+
+/* Thẻ cầu thủ cắt góc */
+.player-card {
+    width: calc(33.333% - 20px); min-width: 230px;
+    background-color: #1a1a1a; position: relative;
+    clip-path: polygon(15px 0, calc(100% - 15px) 0, 100% 15px, 100% 100%, 0 100%, 0 15px);
+    border-bottom: 3px solid #ffcc00; 
+    display: flex; flex-direction: column; align-items: center;
+    transition: 0.3s; cursor: pointer;
+}
+.player-card:hover { transform: translateY(-5px); background-color: #222;}
+.player-card::before {
+    content: ""; position: absolute; top: 0; left: 0;
+    width: 20px; height: 20px; background: #ffcc00;
+    clip-path: polygon(0 0, 100% 0, 0 100%);
+}
+.p-info-top { width: 100%; display: flex; flex-direction: column; align-items: flex-end; padding: 15px 20px 0 0; z-index: 2; }
+.p-name { color: #fff; font-size: 15px; font-weight: bold; text-transform: uppercase; }
+.p-tag { color: #888; font-size: 11px; margin-top: 3px; border: 1px solid #555; padding: 2px 5px; border-radius: 3px;}
+.p-avatar { width: 100%; height: 220px; object-fit: contain; object-position: bottom; margin-top: -30px; z-index: 1; }
+.btn-xem-them { position: absolute; bottom: 10px; right: 15px; color: #888; font-size: 11px; font-weight: bold; }
+.btn-xem-them .arrow { color: #ffcc00; margin-left: 5px; font-size: 10px;}
