@@ -41,93 +41,35 @@
                 <div class="team-selector-section">
                     <button class="nav-arrow">❮</button>
                     <div class="team-grid-12">
-                        <div class="t-icon active" onclick="doiTeam('uzi', this)"><img src="https://placehold.co/60x60/222/FFF?text=UZI" alt="team"><span>UZI</span></div>
-                        <div class="t-icon" onclick="doiTeam('t2', this)"><img src="https://placehold.co/60x60/222/FFF?text=T2" alt="team"><span>TEAM 2</span></div>
-                        <div class="t-icon" onclick="doiTeam('t3', this)"><img src="https://placehold.co/60x60/222/FFF?text=T3" alt="team"><span>TEAM 3</span></div>
-                        <div class="t-icon" onclick="doiTeam('t4', this)"><img src="https://placehold.co/60x60/222/FFF?text=T4" alt="team"><span>TEAM 4</span></div>
-                        <div class="t-icon" onclick="doiTeam('t5', this)"><img src="https://placehold.co/60x60/222/FFF?text=T5" alt="team"><span>TEAM 5</span></div>
-                        <div class="t-icon" onclick="doiTeam('t6', this)"><img src="https://placehold.co/60x60/222/FFF?text=T6" alt="team"><span>TEAM 6</span></div>
+                        <div class="t-icon active" onclick="switchTeam('uzi')"><img src="https://placehold.co/60x60/222/FFF?text=UZI" alt="team"><span>UZI</span></div>
+                        <div class="t-icon" onclick="switchTeam('t2')"><img src="https://placehold.co/60x60/222/FFF?text=T2" alt="team"><span>TEAM 2</span></div>
+                        <div class="t-icon" onclick="switchTeam('t3')"><img src="https://placehold.co/60x60/222/FFF?text=T3" alt="team"><span>TEAM 3</span></div>
+                        <div class="t-icon" onclick="switchTeam('t4')"><img src="https://placehold.co/60x60/222/FFF?text=T4" alt="team"><span>TEAM 4</span></div>
+                        <div class="t-icon" onclick="switchTeam('t5')"><img src="https://placehold.co/60x60/222/FFF?text=T5" alt="team"><span>TEAM 5</span></div>
+                        <div class="t-icon" onclick="switchTeam('t6')"><img src="https://placehold.co/60x60/222/FFF?text=T6" alt="team"><span>TEAM 6</span></div>
                         
-                        <div class="t-icon" onclick="doiTeam('t7', this)"><img src="https://placehold.co/60x60/222/FFF?text=T7" alt="team"><span>TEAM 7</span></div>
-                        <div class="t-icon" onclick="doiTeam('t8', this)"><img src="https://placehold.co/60x60/222/FFF?text=T8" alt="team"><span>TEAM 8</span></div>
-                        <div class="t-icon" onclick="doiTeam('t9', this)"><img src="https://placehold.co/60x60/222/FFF?text=T9" alt="team"><span>TEAM 9</span></div>
-                        <div class="t-icon" onclick="doiTeam('t10', this)"><img src="https://placehold.co/60x60/222/FFF?text=T10" alt="team"><span>TEAM 10</span></div>
-                        <div class="t-icon" onclick="doiTeam('t11', this)"><img src="https://placehold.co/60x60/222/FFF?text=T11" alt="team"><span>TEAM 11</span></div>
-                        <div class="t-icon" onclick="doiTeam('t12', this)"><img src="https://placehold.co/60x60/222/FFF?text=T12" alt="team"><span>TEAM 12</span></div>
+                        <div class="t-icon" onclick="switchTeam('t7')"><img src="https://placehold.co/60x60/222/FFF?text=T7" alt="team"><span>TEAM 7</span></div>
+                        <div class="t-icon" onclick="switchTeam('t8')"><img src="https://placehold.co/60x60/222/FFF?text=T8" alt="team"><span>TEAM 8</span></div>
+                        <div class="t-icon" onclick="switchTeam('t9')"><img src="https://placehold.co/60x60/222/FFF?text=T9" alt="team"><span>TEAM 9</span></div>
+                        <div class="t-icon" onclick="switchTeam('t10')"><img src="https://placehold.co/60x60/222/FFF?text=T10" alt="team"><span>TEAM 10</span></div>
+                        <div class="t-icon" onclick="switchTeam('t11')"><img src="https://placehold.co/60x60/222/FFF?text=T11" alt="team"><span>TEAM 11</span></div>
+                        <div class="t-icon" onclick="switchTeam('t12')"><img src="https://placehold.co/60x60/222/FFF?text=T12" alt="team"><span>TEAM 12</span></div>
                     </div>
                     <button class="nav-arrow">❯</button>
                 </div>
 
                 <div class="team-info-banner">
                     <div class="big-logo-box">
-                        <img id="logo-chi-tiet" src="https://placehold.co/120x120/222/FFF?text=UZI+LOGO" alt="Logo">
+                        <img id="info-team-logo" src="https://placehold.co/120x120/222/FFF?text=UZI+LOGO" alt="UZI">
                     </div>
                     <div class="team-desc-box">
-                        <h2 id="ten-chi-tiet">UZI</h2>
-                        <p id="mota-chi-tiet">UZI LEGENDS – Tên đầy đủ là UZI LEGENDS. Đội tuyển Free Fire chuyên nghiệp đến từ Việt Nam, tranh tài tại Survival Legacy Cup SS1.</p>
+                        <h2 id="info-team-name">UZI</h2>
+                        <p id="info-team-desc">UZI LEGENDS – Tên đầy đủ là UZI LEGENDS. Đội tuyển Free Fire chuyên nghiệp đến từ Việt Nam, tranh tài tại Survival Legacy Cup SS1.</p>
                     </div>
                 </div>
 
-                <div class="players-grid" id="khung-tuyen-thu">
+                <div class="players-grid" id="player-cards-container">
                     </div>
-                </div>
-
-                <div class="team-info-banner">
-                    <div class="big-logo-box">
-                        <img src="https://placehold.co/120x120/222/FFF?text=UZI+LOGO" alt="UZI">
-                    </div>
-                    <div class="team-desc-box">
-                        <h2>UZI</h2>
-                        <p>UZI LEGENDS – Tên đầy đủ là UZI LEGENDS. Đội tuyển Free Fire chuyên nghiệp đến từ Việt Nam, tranh tài tại Survival Legacy Cup SS1.</p>
-                    </div>
-                </div>
-
-                <div class="players-grid">
-                    <div class="player-card">
-                        <div class="p-info-top">
-                            <span class="p-name">UZI.CAMNHUNG</span>
-                            <span class="p-tag">[VIETNAM]</span>
-                        </div>
-                        <img class="p-avatar" src="https://placehold.co/200x250/111/555?text=AVATAR+FF" alt="Player">
-                        <div class="btn-xem-them">XEM THÊM <span class="arrow">▶</span></div>
-                    </div>
-
-                    <div class="player-card">
-                        <div class="p-info-top">
-                            <span class="p-name">UZI.DONTCRY</span>
-                            <span class="p-tag">[VIETNAM]</span>
-                        </div>
-                        <img class="p-avatar" src="https://placehold.co/200x250/111/555?text=AVATAR+FF" alt="Player">
-                        <div class="btn-xem-them">XEM THÊM <span class="arrow">▶</span></div>
-                    </div>
-
-                    <div class="player-card">
-                        <div class="p-info-top">
-                            <span class="p-name">UZI.LAOHO</span>
-                            <span class="p-tag">[VIETNAM]</span>
-                        </div>
-                        <img class="p-avatar" src="https://placehold.co/200x250/111/555?text=AVATAR+FF" alt="Player">
-                        <div class="btn-xem-them">XEM THÊM <span class="arrow">▶</span></div>
-                    </div>
-
-                    <div class="player-card">
-                        <div class="p-info-top">
-                            <span class="p-name">UZI.NKHANG</span>
-                            <span class="p-tag">[VIETNAM]</span>
-                        </div>
-                        <img class="p-avatar" src="https://placehold.co/200x250/111/555?text=AVATAR+FF" alt="Player">
-                        <div class="btn-xem-them">XEM THÊM <span class="arrow">▶</span></div>
-                    </div>
-
-                    <div class="player-card">
-                        <div class="p-info-top">
-                            <span class="p-name">UZI.THANHVIEN5</span>
-                            <span class="p-tag">[VIETNAM]</span>
-                        </div>
-                        <img class="p-avatar" src="https://placehold.co/200x250/111/555?text=AVATAR+FF" alt="Player">
-                        <div class="btn-xem-them">XEM THÊM <span class="arrow">▶</span></div>
-                    </div>
-                </div>
 
             </div>
         </main>

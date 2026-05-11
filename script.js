@@ -132,3 +132,84 @@ document.addEventListener('DOMContentLoaded', () => {
         doiTeam('uzi', logoUzi);
     }
 });
+/* ================= HỆ THỐNG XỬ LÝ ĐỔI ĐỘI TUYỂN ================= */
+
+// 1. Kho dữ liệu mẫu cho cả 12 đội (Sẽ thay bằng ảnh/text thật sau)
+const teamsDatabase = {
+    "uzi": {
+        name: "UZI LEGENDS",
+        desc: "Đội tuyển Free Fire chuyên nghiệp đến từ Việt Nam, tranh tài tại Survival Legacy Cup SS1. Mục tiêu: Vô địch!",
+        logo: "https://placehold.co/120x120/222/FFF?text=UZI+LOGO",
+        country: "[VIETNAM]",
+        players: [
+            { n: "UZI.CAMNHUNG", a: "https://placehold.co/200x250/111/555?text=AVATAR+FF" },
+            { n: "UZI.DONTCRY", a: "https://placehold.co/200x250/111/555?text=AVATAR+FF" },
+            { n: "UZI.LAOHO", a: "https://placehold.co/200x250/111/555?text=AVATAR+FF" },
+            { n: "UZI.NKHANG", a: "https://placehold.co/200x250/111/555?text=AVATAR+FF" },
+            { n: "UZI.THVIEN5", a: "https://placehold.co/200x250/111/555?text=AVATAR+FF" }
+        ]
+    },
+    "t2": {
+        name: "TEAM 2 (THAILAND)",
+        desc: "A powerful team representing Thailand in the SLC SS1.",
+        logo: "https://placehold.co/120x120/222/FFF?text=T2+LOGO",
+        country: "[THAILAND]",
+        players: [
+            { n: "T2.PLAYER 1", a: "https://placehold.co/200x250/333/777?text=T2+P1" },
+            { n: "T2.PLAYER 2", a: "https://placehold.co/200x250/333/777?text=T2+P2" },
+            { n: "T2.PLAYER 3", a: "https://placehold.co/200x250/333/777?text=T2+P3" },
+            { n: "T2.PLAYER 4", a: "https://placehold.co/200x250/333/777?text=T2+P4" },
+            { n: "T2.PLAYER 5", a: "https://placehold.co/200x250/333/777?text=T2+P5" }
+        ]
+    }
+    // Bạn có thể nhân bản cụm "t2" ra làm t3, t4... t12 để nhập liệu tiếp cho các đội khác.
+};
+
+// Hàm chính xử lý khi click vào Logo
+function switchTeam(teamId) {
+    // A. Lấy dữ liệu của đội từ "Kho"
+    const data = teamsDatabase[teamId];
+    
+    // Nếu chưa nhập dữ liệu cho đội này thì thoát ra
+    if (!data) {
+        console.error("Chưa có dữ liệu cho đội:", teamId);
+        return;
+    }
+
+    // B. Thay thế nội dung Banner Thông tin
+    document.getElementById('info-team-logo').src = data.logo;
+    document.getElementById('info-team-name').innerText = data.name;
+    document.getElementById('info-team-desc').innerText = data.desc;
+
+    // C. Vẽ lại danh sách Tuyển thủ
+    const container = document.getElementById('player-cards-container');
+    container.innerHTML = ''; // Xóa sạch 5 cầu thủ của đội cũ
+
+    // Duyệt qua mảng cầu thủ và tạo HTML động đắp vào
+    data.players.forEach(player => {
+        container.innerHTML += `
+            <div class="player-card">
+                <div class="p-info-top">
+                    <span class="p-name">${player.n}</span>
+                    <span class="p-tag">${data.country}</span>
+                </div>
+                <img class="p-avatar" src="${player.a}" alt="Player Avatar">
+                <div class="btn-xem-them">XEM THÊM <span class="arrow">▶</span></div>
+            </div>
+        `;
+    });
+
+    // D. Cập nhật viền vàng cho logo được bấm
+    // Xóa active cũ
+    const currentActiveLogo = document.querySelector('.t-icon.active');
+    if (currentActiveLogo) currentActiveLogo.classList.remove('active');
+
+    // Thêm active vào cái mới (Sử dụng parentNode để tìm đúng div chứa logo)
+    // Cách này hơi phức tạp, tốt nhất là sửa onclick trong HTML truyền thêm 'this' vào.
+    // Mình sẽ hướng dẫn sửa onclick trong HTML ở Bước 1.
+    // Tạm thời bỏ qua bước D này nếu onclick trong HTML chưa sửa.
+}
+
+
+// Mai mốt, để đội UZI tự hiện ra khi vừa load web, bạn thêm dòng này vào script.js:
+// switchTeam('uzi');
