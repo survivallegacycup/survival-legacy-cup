@@ -59,3 +59,76 @@ async function moThongSo(soTran) {
 function dongThongSo() {
     document.getElementById('modal-thong-so').style.display = 'none';
 }
+/* ================= HỆ THỐNG DỮ LIỆU ĐỘI TUYỂN ================= */
+const duLieuDoi = {
+    "uzi": {
+        ten: "UZI",
+        mota: "UZI LEGENDS – Tên đầy đủ là UZI LEGENDS. Đội tuyển Free Fire chuyên nghiệp đến từ Việt Nam, tranh tài tại Survival Legacy Cup SS1.",
+        logo: "https://placehold.co/120x120/222/FFF?text=UZI+LOGO",
+        quocGia: "[VIETNAM]",
+        tuyenThu: [
+            { ten: "UZI.CAMNHUNG", avatar: "https://placehold.co/200x250/111/555?text=AVATAR+FF" },
+            { ten: "UZI.DONTCRY", avatar: "https://placehold.co/200x250/111/555?text=AVATAR+FF" },
+            { ten: "UZI.LAOHO", avatar: "https://placehold.co/200x250/111/555?text=AVATAR+FF" },
+            { ten: "UZI.NKHANG", avatar: "https://placehold.co/200x250/111/555?text=AVATAR+FF" },
+            { ten: "UZI.TV5", avatar: "https://placehold.co/200x250/111/555?text=AVATAR+FF" }
+        ]
+    },
+    "t2": {
+        ten: "TEAM 2",
+        mota: "TEAM 2 - Đội tuyển bí ẩn đang chờ được hé lộ đội hình chính thức.",
+        logo: "https://placehold.co/120x120/222/FFF?text=T2+LOGO",
+        quocGia: "[THAILAND]",
+        tuyenThu: [
+            { ten: "T2.PLAYER1", avatar: "https://placehold.co/200x250/333/888?text=PLAYER+1" },
+            { ten: "T2.PLAYER2", avatar: "https://placehold.co/200x250/333/888?text=PLAYER+2" },
+            { ten: "T2.PLAYER3", avatar: "https://placehold.co/200x250/333/888?text=PLAYER+3" },
+            { ten: "T2.PLAYER4", avatar: "https://placehold.co/200x250/333/888?text=PLAYER+4" }
+        ]
+    }
+    // Bạn có thể copy cụm "t2" ra làm t3, t4... để nhập liệu tiếp cho các đội khác
+};
+
+// Hàm xử lý khi click vào Logo Đội
+function doiTeam(maDoi, elementClick) {
+    // 1. Cập nhật viền vàng cho logo được bấm
+    let cacLogo = document.querySelectorAll('.t-icon');
+    cacLogo.forEach(el => el.classList.remove('active')); // Xóa sáng các logo cũ
+    elementClick.classList.add('active'); // Thắp sáng logo mới
+
+    // 2. Lấy dữ liệu của đội tương ứng
+    let thongTin = duLieuDoi[maDoi];
+    
+    // Nếu đội chưa có dữ liệu thì thoát ra không làm gì cả
+    if (!thongTin) return; 
+
+    // 3. Thay đổi Banner
+    document.getElementById('logo-chi-tiet').src = thongTin.logo;
+    document.getElementById('ten-chi-tiet').innerText = thongTin.ten;
+    document.getElementById('mota-chi-tiet').innerText = thongTin.mota;
+
+    // 4. Vẽ lại danh sách Tuyển thủ
+    let khungTuyenThu = document.getElementById('khung-tuyen-thu');
+    khungTuyenThu.innerHTML = ''; // Xóa sạch cầu thủ cũ
+
+    thongTin.tuyenThu.forEach(tt => {
+        khungTuyenThu.innerHTML += `
+            <div class="player-card">
+                <div class="p-info-top">
+                    <span class="p-name">${tt.ten}</span>
+                    <span class="p-tag">${thongTin.quocGia}</span>
+                </div>
+                <img class="p-avatar" src="${tt.avatar}" alt="Player">
+                <div class="btn-xem-them">XEM THÊM <span class="arrow">▶</span></div>
+            </div>
+        `;
+    });
+}
+
+// Khi vừa vào web, tự động gọi hiển thị đội UZI đầu tiên
+document.addEventListener('DOMContentLoaded', () => {
+    let logoUzi = document.querySelector('.t-icon'); // Lấy logo đầu tiên
+    if (document.getElementById('khung-tuyen-thu')) {
+        doiTeam('uzi', logoUzi);
+    }
+});
