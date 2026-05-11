@@ -211,144 +211,58 @@ body {
     color: #ffcc00;
 }
 
-/* ================= STYLES CHO MODAL THÔNG SỐ ================= */
+/* ================= STYLES CHO MODAL THÔNG SỐ GARENA ================= */
 .modal-overlay {
-    display: none; /* Mặc định ẩn */
     position: fixed;
     top: 0; left: 0; width: 100%; height: 100%;
-    background-color: rgba(0, 0, 0, 0.85); /* Nền đen mờ bao phủ web */
-    z-index: 999;
-    backdrop-filter: blur(5px);
-}
-
-.modal-content {
-    width: 90%;
-    max-width: 1100px;
-    margin: 50px auto;
-    background-color: #0d0d0d;
-    border: 1px solid #333;
-    padding: 20px;
-}
-
-.modal-header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    margin-bottom: 20px;
-}
-
-.btn-back {
-    position: absolute;
-    left: 0;
-    background: transparent; border: 1px solid #555; color: #aaa;
-    padding: 5px 15px; border-radius: 4px; cursor: pointer; font-size: 12px;
-}
-.btn-back:hover { color: #fff; border-color: #fff; }
-
-.modal-title { color: #ffcc00; font-size: 20px; font-weight: bold; text-transform: uppercase;}
-
-/* Khung thông tin trận đấu */
-.match-info-banner {
-    display: flex; justify-content: space-between; align-items: center;
-    background-color: #1a1a1a;
-    border-top: 2px solid #ffcc00; border-bottom: 2px solid #ffcc00;
-    padding: 15px 40px; margin-bottom: 20px;
-}
-
-.info-box { text-align: center; }
-.time-box .label { color: #888; font-size: 12px; margin-bottom: 5px; }
-.time-box .date { color: #ffcc00; font-size: 14px; font-weight: bold; }
-.time-box .time { color: #ffcc00; font-size: 28px; font-weight: bold; }
-
-.booyah-box .booyah-text { color: #ffcc00; font-style: italic; font-size: 24px; margin-bottom: 5px; }
-.booyah-box img { width: 50px; height: 50px; object-fit: contain; }
-.booyah-box .winner-name { color: #fff; font-weight: bold; margin-top: 5px; }
-
-.nav-box { display: flex; align-items: center; gap: 15px; }
-.arrow-btn { background: #222; border: 1px solid #555; color: #ffcc00; padding: 5px 10px; cursor: pointer;}
-.match-number { color: #fff; font-weight: bold; font-size: 16px;}
-
-/* Bảng xếp hạng 2 bên */
-.stats-tables-container {
-    display: flex; gap: 20px; align-items: flex-start;
-}
-
-.team-board, .player-board {
-    flex: 1; background-color: #1a1a1a;
-}
-
-.t-row {
-    display: flex; padding: 12px 15px; border-bottom: 1px solid #333;
-    color: #ccc; font-size: 13px; text-align: center; align-items: center;
-}
-
-.t-header { background-color: #222; color: #888; font-weight: bold; font-size: 12px; }
-
-.w-10 { width: 10%; } .w-20 { width: 20%; } .w-30 { width: 30%; }
-.w-25 { width: 25%; } .w-50 { width: 50%; }
-.text-left { text-align: left; }
-
-.team-name-cell { display: flex; align-items: center; gap: 10px; color: #fff; font-weight: bold; }
-.team-name-cell img { width: 20px; height: 20px; border-radius: 3px; }
-.total-score { color: #ffcc00; font-weight: bold; }
-
-/* Thanh cuộn cho bảng Player */
-.scroll-area {
-    max-height: 400px; /* Chiều cao tối đa để kích hoạt thanh cuộn */
+    background-color: #050505; /* Màu nền đen đặc như Garena */
+    z-index: 9999;
     overflow-y: auto;
 }
 
-/* Tùy chỉnh giao diện thanh cuộn (Scrollbar) */
-.scroll-area::-webkit-scrollbar { width: 6px; }
-.scroll-area::-webkit-scrollbar-track { background: #111; }
-.scroll-area::-webkit-scrollbar-thumb { background: #ffcc00; border-radius: 10px; }
-/* ================= STYLES CHO MODAL THÔNG SỐ (PHẢI CÓ ĐOẠN NÀY) ================= */
-.modal-overlay {
-    display: none; /* Lệnh cực kỳ quan trọng: Mặc định ẩn cái bảng đi */
-    position: fixed;
-    top: 0; left: 0; width: 100%; height: 100%;
-    background-color: rgba(0, 0, 0, 0.85); /* Làm nền đen mờ */
-    z-index: 999; /* Ép cái bảng phải nổi lên trên cùng mọi thứ */
-    backdrop-filter: blur(5px);
+.btn-back-top {
+    position: absolute;
+    top: 30px; left: 40px;
+    background: transparent; border: 1px solid #555; color: #aaa;
+    padding: 8px 20px; border-radius: 4px; cursor: pointer; font-size: 12px; font-weight: bold;
 }
+.btn-back-top:hover { color: #fff; border-color: #fff; }
 
 .modal-content {
-    width: 90%;
-    max-width: 1100px;
-    margin: 50px auto;
-    background-color: #0d0d0d;
-    border: 1px solid #333;
-    padding: 20px;
+    width: 90%; max-width: 1000px;
+    margin: 40px auto;
+    padding-top: 30px;
 }
 
-.modal-header {
-    display: flex; justify-content: center; align-items: center; position: relative; margin-bottom: 20px;
-}
+.modal-header { text-align: center; margin-bottom: 30px; }
+.modal-title { color: #ffcc00; font-size: 24px; font-weight: bold; text-transform: uppercase;}
+.modal-title .text-white { color: #fff; }
 
-.btn-back {
-    position: absolute; left: 0; background: transparent; border: 1px solid #555; color: #aaa;
-    padding: 5px 15px; border-radius: 4px; cursor: pointer; font-size: 12px;
-}
-.btn-back:hover { color: #fff; border-color: #fff; }
-
-.modal-title { color: #ffcc00; font-size: 20px; font-weight: bold; text-transform: uppercase;}
-
+/* Khung thông tin trận đấu cắt góc */
 .match-info-banner {
     display: flex; justify-content: space-between; align-items: center;
-    background-color: #1a1a1a; border-top: 2px solid #ffcc00; border-bottom: 2px solid #ffcc00;
-    padding: 15px 40px; margin-bottom: 20px;
+    background-color: #1a1a1a; 
+    border-top: 3px solid #ffcc00;
+    padding: 20px 50px; margin-bottom: 0; /* Gắn liền với bảng */
 }
 
 .info-box { text-align: center; }
-.time-box .label { color: #888; font-size: 12px; margin-bottom: 5px; }
-.time-box .date { color: #fff; font-size: 14px; font-weight: bold; }
-.time-box .time { color: #ffcc00; font-size: 28px; font-weight: bold; }
+.time-box .label { color: #fff; font-size: 13px; margin-bottom: 5px; }
+.time-box .date { color: #aaa; font-size: 15px; font-weight: bold; margin-bottom: 5px;}
+.time-box .time { color: #ffcc00; font-size: 32px; font-weight: bold; }
 
-.booyah-box .booyah-text { color: #ffcc00; font-style: italic; font-size: 24px; margin-bottom: 5px; }
+.booyah-box .booyah-text { color: #ffcc00; font-style: italic; font-size: 24px; margin-bottom: 10px; font-weight: 900;}
 .booyah-box img { width: 50px; height: 50px; object-fit: contain; }
-.booyah-box .winner-name { color: #fff; font-weight: bold; margin-top: 5px; }
+.booyah-box .winner-name { color: #888; font-size: 12px; margin-top: 5px; }
 
 .nav-box { display: flex; align-items: center; gap: 15px; }
-.arrow-btn { background: #222; border: 1px solid #555; color: #ffcc00; padding: 5px 10px; cursor: pointer;}
+.arrow-btn { background: transparent; border: 1px solid #555; color: #aaa; padding: 5px 10px; cursor: pointer;}
+.arrow-btn:hover { border-color: #ffcc00; color: #ffcc00; }
 .match-number { color: #fff; font-weight: bold; font-size: 16px;}
+
+/* Tinh chỉnh lại Bảng Grid */
+.grid-table {
+    display: grid;
+    grid-template-columns: 8% 20% 14% 14% 10% 18% 8% 8%;
+    background-color: #151515;
+}
