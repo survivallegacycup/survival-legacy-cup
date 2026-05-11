@@ -1,12 +1,10 @@
-/* ================= PHẦN 1: BẢNG THÔNG SỐ TRẬN ĐẤU (TRANG LỊCH THI ĐẤU) ================= */
-// NHỚ DÁN LẠI LINK CSV GOOGLE SHEETS VÀO ĐÂY NHÉ:
-const SHEET_LINK = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vTxQ0XUFPh9AASBh24GIZExBRoR-Mx6IzgV8VmYzfbeTzIh-WXiOShCm2xHMnnuiEXMLunN2GQG-jpQ/pub?gid=1286104940&single=true&output=csv';
+/* ================= PHẦN 1: BẢNG THÔNG SỐ (TRANG LỊCH THI ĐẤU) ================= */
+// Nhớ dán link Google Sheets của bạn vào đây nha:
+const SHEET_LINK = 'DAN_LINK_CSV_CUA_BAN_VAO_DAY';
 
 async function moThongSo(soTran) {
     let modal = document.getElementById('modal-thong-so');
     let container = document.getElementById('data-bang-diem');
-    
-    // Nếu đang ở trang Đội Tuyển (không có bảng điểm) thì bỏ qua lệnh này để không bị lỗi
     if(!modal || !container) return; 
 
     modal.style.display = 'block';
@@ -62,51 +60,40 @@ function dongThongSo() {
 }
 
 
-/* ================= PHẦN 2: HỆ THỐNG ĐỘI TUYỂN (TRANG ĐỘI TUYỂN) ================= */
+/* ================= PHẦN 2: HỆ THỐNG ĐỘI TUYỂN ================= */
 const teamsDatabase = {
-    "uzi": {
-        name: "UZI LEGENDS",
-        desc: "UZI LEGENDS – Tên đầy đủ là UZI LEGENDS. Đội tuyển Free Fire chuyên nghiệp đến từ Việt Nam, tranh tài tại Survival Legacy Cup SS1.",
-        logo: "https://placehold.co/120x120/222/FFF?text=UZI",
-        country: "[VIETNAM]",
+    // ĐỘI 1: UNICORN (Đã ẩn chữ Việt Nam và thay đổi thành viên)
+    "unc": {
+        name: "UNC",
+        desc: "UNC – Tên đầy đủ là UNICORN. Đội tuyển Free Fire mang phong cách đột phá và khó lường, nổi bật với lối chơi linh hoạt, sáng tạo cùng khả năng bùng nổ trong những thời khắc quyết định tại Survival Legacy Cup SS1!",
+        logo: "logo-unc.jpg",
+        country: "", 
         players: [
-            { n: "UZI.CAMNHUNG", a: "https://placehold.co/200x250/111/555?text=AVATAR+FF" },
-            { n: "UZI.DONTCRY", a: "https://placehold.co/200x250/111/555?text=AVATAR+FF" },
-            { n: "UZI.LAOHO", a: "https://placehold.co/200x250/111/555?text=AVATAR+FF" },
-            { n: "UZI.NKHANG", a: "https://placehold.co/200x250/111/555?text=AVATAR+FF" },
-            { n: "UZI.THVIEN5", a: "https://placehold.co/200x250/111/555?text=AVATAR+FF" }
+            { n: "UNC.LEVI", a: "https://placehold.co/200x250/111/555?text=AVATAR+FF" },
+            { n: "UNC.QTOAN", a: "https://placehold.co/200x250/111/555?text=AVATAR+FF" },
+            { n: "UNC.FOR", a: "https://placehold.co/200x250/111/555?text=AVATAR+FF" },
+            { n: "UNC.NHIM", a: "https://placehold.co/200x250/111/555?text=AVATAR+FF" },
+            { n: "KHÔNG CÓ", a: "https://placehold.co/200x250/111/555?text=TRONG" }
         ]
     },
-    "t2": {
-        name: "TEAM FLASH VN",
-        desc: "TEAM FLASH - Đội tuyển cựu vương với lối bắn càn quét, đại diện đến từ Việt Nam.",
-        logo: "https://placehold.co/120x120/222/FFF?text=FL",
-        country: "[VIETNAM]",
-        players: [
-            { n: "FL.PLAYER1", a: "https://placehold.co/200x250/333/777?text=FL+1" },
-            { n: "FL.PLAYER2", a: "https://placehold.co/200x250/333/777?text=FL+2" },
-            { n: "FL.PLAYER3", a: "https://placehold.co/200x250/333/777?text=FL+3" },
-            { n: "FL.PLAYER4", a: "https://placehold.co/200x250/333/777?text=FL+4" },
-            { n: "FL.PLAYER5", a: "https://placehold.co/200x250/333/777?text=FL+5" }
-        ]
-    },
-    "t3": { name: "HEAVY VN", desc: "HEAVY - 'Now or Never'. Một thế lực đáng gờm tại đấu trường Free Fire.", logo: "https://placehold.co/120x120/222/FFF?text=HEV", country: "[VIETNAM]", players: Array(5).fill({ n: "HEV.MEMBER", a: "https://placehold.co/200x250/333/777?text=HEV" }) },
-    "t4": { name: "WAG VN", desc: "WAG - Kẻ thách thức mọi giới hạn, đội tuyển có kỹ năng sinh tồn tuyệt đỉnh.", logo: "https://placehold.co/120x120/222/FFF?text=WAG", country: "[VIETNAM]", players: Array(5).fill({ n: "WAG.MEMBER", a: "https://placehold.co/200x250/333/777?text=WAG" }) },
-    "t5": { name: "GOW VN", desc: "GOW - Cơn lốc của giải đấu, luôn mang đến những bất ngờ vào phút chót.", logo: "https://placehold.co/120x120/222/FFF?text=GOW", country: "[VIETNAM]", players: Array(5).fill({ n: "GOW.MEMBER", a: "https://placehold.co/200x250/333/777?text=GOW" }) },
-    "t6": { name: "AG GLOBAL", desc: "ALL GAMERS GLOBAL - Đội tuyển hạt giống số 1 đến từ Thái Lan.", logo: "https://placehold.co/120x120/222/FFF?text=AG", country: "[THAILAND]", players: Array(5).fill({ n: "AG.MEMBER", a: "https://placehold.co/200x250/333/777?text=AG" }) },
-    "t7": { name: "EVOS ID", desc: "EVOS ESPORTS - Mãnh hổ trắng đến từ Indonesia.", logo: "https://placehold.co/120x120/222/FFF?text=EVOS", country: "[INDONESIA]", players: Array(5).fill({ n: "EVOS.MEMBER", a: "https://placehold.co/200x250/333/777?text=EVOS" }) },
-    "t8": { name: "BTR ID", desc: "BIGETRON - Đội quân robot với khả năng tính toán vòng bo hoàn hảo.", logo: "https://placehold.co/120x120/222/FFF?text=BTR", country: "[INDONESIA]", players: Array(5).fill({ n: "BTR.MEMBER", a: "https://placehold.co/200x250/333/777?text=BTR" }) },
-    "t9": { name: "ONIC ID", desc: "ONIC OLYMPUS - Sẵn sàng bùng nổ sức mạnh tại SLC SS1.", logo: "https://placehold.co/120x120/222/FFF?text=ONIC", country: "[INDONESIA]", players: Array(5).fill({ n: "ONIC.MEMBER", a: "https://placehold.co/200x250/333/777?text=ONIC" }) },
-    "t10": { name: "RRQ ID", desc: "RRQ KAZO - Huyền thoại xứ vạn đảo chưa bao giờ làm fan thất vọng.", logo: "https://placehold.co/120x120/222/FFF?text=RRQ", country: "[INDONESIA]", players: Array(5).fill({ n: "RRQ.MEMBER", a: "https://placehold.co/200x250/333/777?text=RRQ" }) },
-    "t11": { name: "TDK MY", desc: "TODAK - Chiến binh sát thủ đại diện cho Malaysia.", logo: "https://placehold.co/120x120/222/FFF?text=TDK", country: "[MALAYSIA]", players: Array(5).fill({ n: "TDK.MEMBER", a: "https://placehold.co/200x250/333/777?text=TDK" }) },
-    "t12": { name: "VESJ ID", desc: "VESA ESPORTS - Đội tuyển trẻ mang luồng gió mới đến giải đấu.", logo: "https://placehold.co/120x120/222/FFF?text=VESJ", country: "[INDONESIA]", players: Array(5).fill({ n: "VESJ.MEMBER", a: "https://placehold.co/200x250/333/777?text=VESJ" }) }
+    // ĐỘI 2 trở đi... (Lát nữa mình thay sau)
+    "t2": { name: "TEAM 2", desc: "Thông tin đội 2...", logo: "https://placehold.co/120x120/222/FFF?text=T2", country: "[VIETNAM]", players: Array(5).fill({ n: "T2.MEMBER", a: "https://placehold.co/200x250/333/777?text=T2" }) },
+    "t3": { name: "TEAM 3", desc: "Thông tin đội 3...", logo: "https://placehold.co/120x120/222/FFF?text=T3", country: "[VIETNAM]", players: Array(5).fill({ n: "T3.MEMBER", a: "https://placehold.co/200x250/333/777?text=T3" }) },
+    "t4": { name: "TEAM 4", desc: "Thông tin đội 4...", logo: "https://placehold.co/120x120/222/FFF?text=T4", country: "[VIETNAM]", players: Array(5).fill({ n: "T4.MEMBER", a: "https://placehold.co/200x250/333/777?text=T4" }) },
+    "t5": { name: "TEAM 5", desc: "Thông tin đội 5...", logo: "https://placehold.co/120x120/222/FFF?text=T5", country: "[VIETNAM]", players: Array(5).fill({ n: "T5.MEMBER", a: "https://placehold.co/200x250/333/777?text=T5" }) },
+    "t6": { name: "TEAM 6", desc: "Thông tin đội 6...", logo: "https://placehold.co/120x120/222/FFF?text=T6", country: "[VIETNAM]", players: Array(5).fill({ n: "T6.MEMBER", a: "https://placehold.co/200x250/333/777?text=T6" }) },
+    "t7": { name: "TEAM 7", desc: "Thông tin đội 7...", logo: "https://placehold.co/120x120/222/FFF?text=T7", country: "[VIETNAM]", players: Array(5).fill({ n: "T7.MEMBER", a: "https://placehold.co/200x250/333/777?text=T7" }) },
+    "t8": { name: "TEAM 8", desc: "Thông tin đội 8...", logo: "https://placehold.co/120x120/222/FFF?text=T8", country: "[VIETNAM]", players: Array(5).fill({ n: "T8.MEMBER", a: "https://placehold.co/200x250/333/777?text=T8" }) },
+    "t9": { name: "TEAM 9", desc: "Thông tin đội 9...", logo: "https://placehold.co/120x120/222/FFF?text=T9", country: "[VIETNAM]", players: Array(5).fill({ n: "T9.MEMBER", a: "https://placehold.co/200x250/333/777?text=T9" }) },
+    "t10": { name: "TEAM 10", desc: "Thông tin đội 10...", logo: "https://placehold.co/120x120/222/FFF?text=T10", country: "[VIETNAM]", players: Array(5).fill({ n: "T10.MEMBER", a: "https://placehold.co/200x250/333/777?text=T10" }) },
+    "t11": { name: "TEAM 11", desc: "Thông tin đội 11...", logo: "https://placehold.co/120x120/222/FFF?text=T11", country: "[VIETNAM]", players: Array(5).fill({ n: "T11.MEMBER", a: "https://placehold.co/200x250/333/777?text=T11" }) },
+    "t12": { name: "TEAM 12", desc: "Thông tin đội 12...", logo: "https://placehold.co/120x120/222/FFF?text=T12", country: "[VIETNAM]", players: Array(5).fill({ n: "T12.MEMBER", a: "https://placehold.co/200x250/333/777?text=T12" }) }
 };
 
 function switchTeam(teamId) {
     const data = teamsDatabase[teamId];
     if (!data) return; 
 
-    // Kiểm tra xem các phần tử có tồn tại trên trang hiện tại không
     let logoEl = document.getElementById('info-team-logo');
     let nameEl = document.getElementById('info-team-name');
     let descEl = document.getElementById('info-team-desc');
@@ -119,21 +106,23 @@ function switchTeam(teamId) {
     if(container) {
         container.innerHTML = ''; 
         data.players.forEach(player => {
-            // LƯU Ý: Phải có dấu ngoặc ngược (`) ở ngay sau dấu +=
+            // Lệnh giấu cái khung Quốc gia nếu để trống
+            let tagQuocGia = data.country !== "" ? `<span class="p-tag">${data.country}</span>` : "";
+            
             container.innerHTML += `
                 <div class="player-card">
                     <div class="p-info-top">
                         <span class="p-name">${player.n}</span>
-                        <span class="p-tag">${data.country}</span>
+                        ${tagQuocGia}
                     </div>
                     <img class="p-avatar" src="${player.a}" alt="Avatar">
                     <div class="btn-xem-them">XEM THÊM <span class="arrow">▶</span></div>
                 </div>
-            `; // Và một dấu ngoặc ngược (`) đóng lại ở đây
+            `;
         });
     }
 
-    // Đổi viền vàng cho logo được chọn
+    // Lệnh đổi viền vàng cho nút đang được chọn
     document.querySelectorAll('.t-icon').forEach(icon => {
         icon.classList.remove('active'); 
         if (icon.getAttribute('onclick') && icon.getAttribute('onclick').includes(`switchTeam('${teamId}')`)) {
@@ -142,9 +131,9 @@ function switchTeam(teamId) {
     });
 }
 
-// Phép thuật tự động bật UZI khi vừa vào trang Đội Tuyển
+// Bắt đầu vào web là bật ngay đội UNICORN (Mã là 'unc')
 document.addEventListener("DOMContentLoaded", function() {
     if (document.getElementById('player-cards-container')) {
-        switchTeam('uzi'); 
+        switchTeam('unc'); 
     }
 });
