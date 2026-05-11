@@ -106,6 +106,8 @@ function doiTeam(maDoi, elementClick) {
     document.getElementById('logo-chi-tiet').src = thongTin.logo;
     document.getElementById('ten-chi-tiet').innerText = thongTin.ten;
     document.getElementById('mota-chi-tiet').innerText = thongTin.mota;
+    <div class="players-grid" id="player-cards-container">
+        </div>
 
     // 4. Vẽ lại danh sách Tuyển thủ
     let khungTuyenThu = document.getElementById('khung-tuyen-thu');
@@ -209,7 +211,12 @@ function switchTeam(teamId) {
     // Mình sẽ hướng dẫn sửa onclick trong HTML ở Bước 1.
     // Tạm thời bỏ qua bước D này nếu onclick trong HTML chưa sửa.
 }
-
+// Tự động tải thông tin đội UZI khi vừa mở trang web Đội Tuyển
+window.onload = function() {
+    if (document.getElementById('player-cards-container')) {
+        switchTeam('uzi');
+    }
+};
 
 // Mai mốt, để đội UZI tự hiện ra khi vừa load web, bạn thêm dòng này vào script.js:
 // switchTeam('uzi');
