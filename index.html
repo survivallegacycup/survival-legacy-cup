@@ -6,6 +6,50 @@
     <title>Survival Legacy Cup SS1 | UZI LEGENDS</title>
     <link rel="stylesheet" href="style.css">
 </head>
+<div id="modal-thong-so" class="modal-overlay">
+        <div class="modal-content">
+            
+            <div class="modal-header">
+                <button class="btn-back" onclick="dongThongSo()">◀ TRỞ LẠI</button>
+                <h2 class="modal-title">SURVIVAL LEGACY CUP SS1 | GRAND FINAL</h2>
+            </div>
+
+            <div class="match-info-banner">
+                <div class="info-box time-box">
+                    <p class="label">THỜI GIAN</p>
+                    <p class="date">15/05/2026</p>
+                    <p class="time">19:30</p>
+                </div>
+                
+                <div class="info-box booyah-box">
+                    <h3 class="booyah-text">BOOYAH!</h3>
+                    <img src="https://placehold.co/50x50/222/FFF?text=UZI" alt="Winner Logo">
+                    <p class="winner-name">UZI LEGENDS</p>
+                </div>
+                
+                <div class="info-box nav-box">
+                    <button class="arrow-btn">◀</button>
+                    <span class="match-number">TRẬN 1</span>
+                    <button class="arrow-btn">▶</button>
+                </div>
+            </div>
+
+            <div class="grid-table" id="data-bang-diem">
+                <div class="g-header">Hạng</div>
+                <div class="g-header text-left">Đội tuyển</div>
+                <div class="g-header">Điểm thứ hạng</div>
+                <div class="g-header">Điểm hạ gục</div>
+                <div class="g-header col-tong-diem">Tổng điểm</div>
+                <div class="g-header text-left">Người chơi</div>
+                <div class="g-header">Hạ gục</div>
+                <div class="g-header">Sát thương</div>
+                
+                </div>
+
+        </div>
+    </div>
+<script src="script.js"></script>
+
 <body>
     <nav class="navbar">
         <div class="logo">UZI LEGENDS</div>
@@ -58,7 +102,7 @@
                         <img src="https://placehold.co/30x30/222/FFF?text=???" alt="Logo"> 
                         ???
                     </div>
-                    <div class="col col-stats"><button class="btn-stats">XEM THÔNG SỐ</button></div>
+                    <div class="col col-stats"><button class="btn-stats" onclick="moThongSo()">XEM THÔNG SỐ</button></div>
                 </div>
 
                 <div class="match-item">
