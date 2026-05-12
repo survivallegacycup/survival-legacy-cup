@@ -77,7 +77,19 @@ const teamsDatabase = {
         ]
     },
     // ĐỘI 2 trở đi... (Lát nữa mình thay sau)
-    "t2": { name: "TEAM 2", desc: "Thông tin đội 2...", logo: "https://placehold.co/120x120/222/FFF?text=T2", country: "[VIETNAM]", players: Array(5).fill({ n: "T2.MEMBER", a: "https://placehold.co/200x250/333/777?text=T2" }) },
+    "ks": {
+        name: "KINGS FF",
+        desc: "KS – Tên đầy đủ là KINGS FF. Đội tuyển Free Fire sở hữu lối chơi bản lĩnh và kỷ luật, luôn giữ thế trận ổn định và sẵn sàng áp đảo đối thủ để khẳng định vị thế “nhà vua” tại Survival Legacy Cup SS1",
+        logo: "logo-ks.jpg",
+        country: "", // Để trống để ẩn cái khung chữ [VIETNAM] đi
+        players: [
+            { n: "KS.GREAT", a: "https://placehold.co/200x250/111/555?text=AVATAR+FF" },
+            { n: "KS.VPHAT", a: "https://placehold.co/200x250/111/555?text=AVATAR+FF" },
+            { n: "KS.CTHANG", a: "https://placehold.co/200x250/111/555?text=AVATAR+FF" },
+            { n: "KS.HLOC", a: "https://placehold.co/200x250/111/555?text=AVATAR+FF" },
+            { n: "KHÔNG CÓ", a: "https://placehold.co/200x250/111/555?text=TRONG" }
+        ]
+    },
     "t3": { name: "TEAM 3", desc: "Thông tin đội 3...", logo: "https://placehold.co/120x120/222/FFF?text=T3", country: "[VIETNAM]", players: Array(5).fill({ n: "T3.MEMBER", a: "https://placehold.co/200x250/333/777?text=T3" }) },
     "t4": { name: "TEAM 4", desc: "Thông tin đội 4...", logo: "https://placehold.co/120x120/222/FFF?text=T4", country: "[VIETNAM]", players: Array(5).fill({ n: "T4.MEMBER", a: "https://placehold.co/200x250/333/777?text=T4" }) },
     "t5": { name: "TEAM 5", desc: "Thông tin đội 5...", logo: "https://placehold.co/120x120/222/FFF?text=T5", country: "[VIETNAM]", players: Array(5).fill({ n: "T5.MEMBER", a: "https://placehold.co/200x250/333/777?text=T5" }) },

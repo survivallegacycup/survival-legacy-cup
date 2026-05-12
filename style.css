@@ -328,9 +328,16 @@ body {
     z-index: 1;
 }
 
+/* ================= TÌM VÀ SỬA ĐOẠN NÀY TRONG STYLE.CSS ================= */
 .btn-xem-them {
-    position: absolute; bottom: 10px; right: 15px;
-    color: #888; font-size: 11px; font-weight: bold;
+    position: absolute;
+    bottom: 10px;
+    right: 15px; /* Canh lề phải 15px */
+    left: 15px;  /* THÊM LỆNH NÀY: Canh luôn lề trái 15px để ép chữ nằm trong khung */
+    text-align: right; /* Ép chữ phải dồn về bên phải */
+    color: #888;
+    font-size: 11px;
+    font-weight: bold;
 }
 .btn-xem-them .arrow { color: #ffcc00; margin-left: 5px; font-size: 10px;}
 /* ================= TRANG ĐỘI TUYỂN (TEAM PAGE) ================= */
