@@ -71,9 +71,9 @@ const teamsDatabase = {
         players: [
             { n: "UNC.LEVI", a: "https://placehold.co/200x250/111/555?text=AVATAR+FF" },
             { n: "UNC.QTOAN", a: "https://placehold.co/200x250/111/555?text=AVATAR+FF" },
-            { n: "UNC.FOR", a: "https://placehold.co/200x250/111/555?text=AVATAR+FF" },
+            { n: "UNC.VTHIEN", a: "https://placehold.co/200x250/111/555?text=AVATAR+FF" },
             { n: "UNC.NHIM", a: "https://placehold.co/200x250/111/555?text=AVATAR+FF" },
-            { n: "KHÔNG CÓ", a: "https://placehold.co/200x250/111/555?text=TRONG" }
+            { n: "UNC.FOR", a: "https://placehold.co/200x250/111/555?text=TRONG" }
         ]
     },
     // ĐỘI 2 trở đi... (Lát nữa mình thay sau)
@@ -100,7 +100,7 @@ const teamsDatabase = {
             { n: "MAO.BAUUJU?", a: "https://placehold.co/200x250/111/555?text=AVATAR+FF" },
             { n: "MAO.QVINH", a: "https://placehold.co/200x250/111/555?text=AVATAR+FF" },
             { n: "MAO.NTRI", a: "https://placehold.co/200x250/111/555?text=AVATAR+FF" },
-            { n: "MAO.TLUAN", a: "https://placehold.co/200x250/111/555?text=AVATAR+FF" }
+            { n: "MAO.SUN", a: "https://placehold.co/200x250/111/555?text=AVATAR+FF" }
         ]
     },
     "t4": { name: "TEAM 4", desc: "Thông tin đội 4...", logo: "https://placehold.co/120x120/222/FFF?text=T4", country: "[VIETNAM]", players: Array(5).fill({ n: "T4.MEMBER", a: "https://placehold.co/200x250/333/777?text=T4" }) },
