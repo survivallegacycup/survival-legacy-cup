@@ -1,6 +1,6 @@
 /* ================= PHẦN 1: BẢNG THÔNG SỐ (TRANG LỊCH THI ĐẤU) ================= */
 // Nhớ dán link Google Sheets của bạn vào đây nha:
-const SHEET_LINK = 'DAN_LINK_CSV_CUA_BAN_VAO_DAY';
+const SHEET_LINK = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vTxQ0XUFPh9AASBh24GIZExBRoR-Mx6IzgV8VmYzfbeTzIh-WXiOShCm2xHMnnuiEXMLunN2GQG-jpQ/pub?gid=1286104940&single=true&output=csv';
 
 async function moThongSo(soTran) {
     let modal = document.getElementById('modal-thong-so');
