@@ -90,7 +90,19 @@ const teamsDatabase = {
             { n: "KHÔNG CÓ", a: "https://placehold.co/200x250/111/555?text=TRONG" }
         ]
     },
-    "t3": { name: "TEAM 3", desc: "Thông tin đội 3...", logo: "https://placehold.co/120x120/222/FFF?text=T3", country: "[VIETNAM]", players: Array(5).fill({ n: "T3.MEMBER", a: "https://placehold.co/200x250/333/777?text=T3" }) },
+    "mao": {
+        name: "MAO",
+        desc: "MAO – Tên đầy đủ là MAO. Đội tuyển Free Fire nổi bật với lối chơi nhanh, táo bạo và không ngại giao tranh, luôn tạo áp lực mạnh mẽ và sẵn sàng bùng nổ tại Survival Legacy Cup SS1!",
+        logo: "logo-mao.jpg",
+        country: "", 
+        players: [
+            { n: "MAO.ĐBIN", a: "https://placehold.co/200x250/111/555?text=AVATAR+FF" },
+            { n: "MAO.BAUUJU?", a: "https://placehold.co/200x250/111/555?text=AVATAR+FF" },
+            { n: "MAO.QVINH", a: "https://placehold.co/200x250/111/555?text=AVATAR+FF" },
+            { n: "MAO.NTRI", a: "https://placehold.co/200x250/111/555?text=AVATAR+FF" },
+            { n: "MAO.TLUAN", a: "https://placehold.co/200x250/111/555?text=AVATAR+FF" }
+        ]
+    },
     "t4": { name: "TEAM 4", desc: "Thông tin đội 4...", logo: "https://placehold.co/120x120/222/FFF?text=T4", country: "[VIETNAM]", players: Array(5).fill({ n: "T4.MEMBER", a: "https://placehold.co/200x250/333/777?text=T4" }) },
     "t5": { name: "TEAM 5", desc: "Thông tin đội 5...", logo: "https://placehold.co/120x120/222/FFF?text=T5", country: "[VIETNAM]", players: Array(5).fill({ n: "T5.MEMBER", a: "https://placehold.co/200x250/333/777?text=T5" }) },
     "t6": { name: "TEAM 6", desc: "Thông tin đội 6...", logo: "https://placehold.co/120x120/222/FFF?text=T6", country: "[VIETNAM]", players: Array(5).fill({ n: "T6.MEMBER", a: "https://placehold.co/200x250/333/777?text=T6" }) },
