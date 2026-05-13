@@ -454,25 +454,25 @@ body {
     background-color: #262626; /* Màu xám đen chuẩn Garena */
 }
 
-/* ================= LIỀN MẠCH CỘT TỔNG ĐIỂM TUYỆT ĐỐI ================= */
+/* ================= CHỐT HẠ CỘT TỔNG ĐIỂM ================= */
 .g-cell.cot-xam {
     background-color: #262626 !important;
-    position: relative;
+    /* Xóa sạch mọi đường kẻ ngang/dọc gây lệch khung ngang */
+    border-left: none !important;
+    border-right: none !important;
+    border-top: none !important;
+    border-bottom: none !important;
+    box-sizing: border-box !important;
+    margin: 0 !important;
+    /* Phép thuật lấp khe hở dọc (chỉ kéo lên/xuống 1px, không cho phình ra 2 bên) */
+    box-shadow: 0 1.5px 0 #262626, 0 -1.5px 0 #262626 !important;
     z-index: 1;
-    /* Đổi luôn màu của mọi vạch kẻ thành xám để tàng hình */
-    border-color: #262626 !important; 
 }
 
-/* Miếng dán ma thuật: Kéo giãn màu xám lấp mọi khe hở lưới */
-.g-cell.cot-xam::before {
-    content: "";
-    position: absolute;
-    top: -2px;    /* Kéo giãn lên trên 2px */
-    bottom: -2px; /* Kéo giãn xuống dưới 2px */
-    left: 0;
-    right: 0;
-    background-color: #262626;
-    z-index: -1;  /* Nằm chìm xuống dưới để không che chữ */
+/* Kẻ lại đúng 1 đường phân chia ranh giới ở dưới cùng của mỗi Đội */
+.g-cell.cot-xam.p-row-last {
+    border-bottom: 1px solid #333 !important;
+    box-shadow: 0 -1.5px 0 #262626 !important; /* Tắt bóng đổ phía dưới để không che vạch */
 }
 /* ================= CSS CLASSIC BẢO VỆ BẢNG ĐIỂM ================= */
 #data-bang-diem {
