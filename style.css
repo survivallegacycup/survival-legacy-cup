@@ -442,3 +442,16 @@ body {
     font-weight: bold;
     color: #fff;
 }
+/* ================= CHIÊU GỘP KHỐI CHO BẢNG ĐIỂM ================= */
+.cell-span-4 {
+    grid-row: span 4; /* Lệnh ăn tiền: Bắt 1 ô kéo dài bằng 4 ô bình thường */
+    display: flex;
+    align-items: center; /* Đẩy chữ vào chính giữa khối theo chiều dọc */
+    justify-content: center;
+    border-bottom: 1px solid #333; /* Vẽ vạch ngang kết thúc Đội */
+}
+
+/* Ghi đè riêng cho cột Tên Đội để nó canh trái thay vì đứng giữa */
+.team-name-cell.cell-span-4 {
+    justify-content: flex-start;
+}
