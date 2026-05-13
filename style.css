@@ -413,3 +413,32 @@ body {
     margin: 20px auto;
     max-width: 400px; /* Ép độ rộng để nó rớt xuống 2 hàng cho đẹp */
 }
+/* ================= DÁN VÀO DƯỚI CÙNG STYLE.CSS ================= */
+
+/* Ép tỷ lệ các cột xích lại gần nhau */
+#data-bang-diem {
+    display: grid !important;
+    grid-template-columns: 60px 140px 120px 120px 100px 1fr 80px 100px !important;
+    align-items: center;
+}
+
+/* Định dạng cột tên đội (Logo + Chữ) */
+.team-name-cell {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px; /* Khoảng cách vừa phải giữa logo và chữ */
+}
+
+/* Căn chỉnh kích thước Logo nhỏ trong bảng */
+.small-logo {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    border-radius: 3px;
+}
+
+.short-name {
+    font-weight: bold;
+    color: #fff;
+}

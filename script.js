@@ -2,6 +2,7 @@
 // Nhớ dán link Google Sheets của bạn vào đây nha:
 const SHEET_LINK = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vTxQ0XUFPh9AASBh24GIZExBRoR-Mx6IzgV8VmYzfbeTzIh-WXiOShCm2xHMnnuiEXMLunN2GQG-jpQ/pub?gid=1286104940&single=true&output=csv';
 
+/* ================= THAY THẾ TOÀN BỘ HÀM NÀY VÀO SCRIPT.JS ================= */
 async function moThongSo(soTran) {
     let modal = document.getElementById('modal-thong-so');
     let container = document.getElementById('data-bang-diem');
@@ -21,11 +22,22 @@ async function moThongSo(soTran) {
             if (!rows[i] || rows[i].trim() === '') continue; 
             const teamInfo = rows[i].split(',');
             if (teamInfo.length < 5) continue; 
+            
+            // Lấy tên đội từ Excel (Cột B)
+            let tenDoi = teamInfo[1] ? teamInfo[1].trim() : '';
+            let logoThichHop = "https://placehold.co/24x24/222/FFF?text=LOGO";
+            
+            // Phép thuật: Tự động tìm logo thật trong kho dữ liệu ghép vào
+            let timDoi = Object.values(teamsDatabase).find(t => t.name.toUpperCase() === tenDoi.toUpperCase());
+            if(timDoi && timDoi.logo) {
+                logoThichHop = timDoi.logo;
+            }
 
             container.innerHTML += `
                 <div class="g-cell span-4">${teamInfo[0] || ''}</div>
                 <div class="g-cell span-4 text-left team-name-cell">
-                    <img src="https://placehold.co/24x24/222/FFF?text=LOGO" alt="logo"> ${teamInfo[1] || ''}
+                    <img src="${logoThichHop}" alt="logo" class="small-logo"> 
+                    <span class="short-name">${tenDoi}</span>
                 </div>
                 <div class="g-cell span-4">${teamInfo[2] || ''}</div>
                 <div class="g-cell span-4">${teamInfo[3] || ''}</div>
