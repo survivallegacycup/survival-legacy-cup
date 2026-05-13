@@ -2,7 +2,7 @@
 // Nhớ dán link Google Sheets của bạn vào đây nha:
 const SHEET_LINK = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vTxQ0XUFPh9AASBh24GIZExBRoR-Mx6IzgV8VmYzfbeTzIh-WXiOShCm2xHMnnuiEXMLunN2GQG-jpQ/pub?gid=1286104940&single=true&output=csv';
 
-/* ================= BẢN NÂNG CẤP GỘP HÀNG CHUẨN GARENA ================= */
+/* ================= BẢN GỐC ỔN ĐỊNH - CHỈ THÊM LOGO ================= */
 async function moThongSo(soTran) {
     let modal = document.getElementById('modal-thong-so');
     let container = document.getElementById('data-bang-diem');
@@ -23,33 +23,43 @@ async function moThongSo(soTran) {
             const teamInfo = rows[i].split(',');
             if (teamInfo.length < 5) continue; 
             
+            // Tìm logo
             let tenDoi = teamInfo[1] ? teamInfo[1].trim() : '';
             let logoThichHop = "https://placehold.co/24x24/222/FFF?text=LOGO";
-            
             let timDoi = Object.values(teamsDatabase).find(t => t.name.toUpperCase() === tenDoi.toUpperCase());
             if(timDoi && timDoi.logo) {
                 logoThichHop = timDoi.logo;
             }
 
-            // 1. BƠM 5 CỘT CỦA ĐỘI (Gắn class cell-span-4 để gộp khối)
-            const isLastTeam = (i + 4 >= rows.length) ? 'p-row-last' : '';
-            container.innerHTML += `
-                <div class="g-cell cell-span-4 ${isLastTeam}">${teamInfo[0] || ''}</div>
-                <div class="g-cell text-left team-name-cell cell-span-4 ${isLastTeam}">
-                    <img src="${logoThichHop}" alt="logo" class="small-logo"> 
-                    <span class="short-name">${tenDoi}</span>
-                </div>
-                <div class="g-cell cell-span-4 ${isLastTeam}">${teamInfo[2] || ''}</div>
-                <div class="g-cell cell-span-4 ${isLastTeam}">${teamInfo[3] || ''}</div>
-                <div class="g-cell tong-diem-val cell-span-4 ${isLastTeam}">${teamInfo[4] || ''}</div>
-            `;
-
-            // 2. BƠM 3 CỘT CỦA 4 NGƯỜI CHƠI (Xếp tự do bên cạnh)
             for (let j = 0; j < 4; j++) {
                 const pRow = rows[i + j];
                 const p = pRow ? pRow.split(',') : [];
                 const isLast = (j === 3) ? 'p-row-last' : '';
-                
+
+                if (j === 0) {
+                    // Dòng 1: In 5 thông tin Đội
+                    container.innerHTML += `
+                        <div class="g-cell ${isLast}">${teamInfo[0] || ''}</div>
+                        <div class="g-cell text-left team-name-cell ${isLast}">
+                            <img src="${logoThichHop}" alt="logo" class="small-logo"> 
+                            <span class="short-name">${tenDoi}</span>
+                        </div>
+                        <div class="g-cell ${isLast}">${teamInfo[2] || ''}</div>
+                        <div class="g-cell ${isLast}">${teamInfo[3] || ''}</div>
+                        <div class="g-cell tong-diem-val ${isLast}">${teamInfo[4] || ''}</div>
+                    `;
+                } else {
+                    // Dòng 2, 3, 4: Bơm 5 ô trống để giữ khung
+                    container.innerHTML += `
+                        <div class="g-cell ${isLast}"></div>
+                        <div class="g-cell ${isLast}"></div>
+                        <div class="g-cell ${isLast}"></div>
+                        <div class="g-cell ${isLast}"></div>
+                        <div class="g-cell ${isLast}"></div>
+                    `;
+                }
+
+                // In 3 thông tin Người chơi
                 let ten = p[5] ? p[5].toUpperCase() : '';
                 let kill = p[6] ? p[6].trim() : '0';
                 let dmg = p[7] ? p[7].trim() : '0';
