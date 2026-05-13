@@ -486,7 +486,11 @@ body {
     border-bottom: 1px solid transparent !important;
 }
 
-/* Đổ màu xám liền mạch cho cột Tổng Điểm */
+/* Nối liền cột Tổng Điểm siêu mượt bằng Shadow */
 .g-cell.cot-xam {
     background-color: #262626 !important;
+    /* Bóng đổ tỏa ra trên và dưới để lấp đầy mọi khe hở của Grid */
+    box-shadow: 0 4px 0 #262626, 0 -4px 0 #262626;
+    position: relative;
+    z-index: 1; /* Ưu tiên đè lên các vạch đứt */
 }

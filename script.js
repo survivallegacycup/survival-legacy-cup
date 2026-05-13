@@ -2,7 +2,7 @@
 // Nhớ dán link Google Sheets của bạn vào đây nha:
 const SHEET_LINK = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vTxQ0XUFPh9AASBh24GIZExBRoR-Mx6IzgV8VmYzfbeTzIh-WXiOShCm2xHMnnuiEXMLunN2GQG-jpQ/pub?gid=1286104940&single=true&output=csv';
 
-/* ================= BẢN CLASSIC ỔN ĐỊNH - KHÔNG DÙNG SPAN GỘP KHỐI ================= */
+/* ================= BẢN SỬA LỖI SỐ 0 VÔ DUYÊN VÀ CỘT XÁM ================= */
 async function moThongSo(soTran) {
     let modal = document.getElementById('modal-thong-so');
     let container = document.getElementById('data-bang-diem');
@@ -31,17 +31,13 @@ async function moThongSo(soTran) {
                 logoThichHop = timDoi.logo;
             }
 
-            // LẶP CHÍNH XÁC 4 LẦN MỖI ĐỘI (Bảo kê không bao giờ vỡ khung)
             for (let j = 0; j < 4; j++) {
                 const pRow = rows[i + j];
                 const p = pRow ? pRow.split(',') : []; 
                 const isLast = (j === 3) ? 'p-row-last' : '';
-                
-                // Thủ thuật tàng hình vạch ngang (Chỉ kẻ vạch ở dòng cuối cùng của đội)
                 const hideBorder = (j !== 3) ? 'no-border' : '';
 
                 if (j === 0) {
-                    // Dòng 1: Chứa tên đội và thông tin
                     container.innerHTML += `
                         <div class="g-cell ${hideBorder} ${isLast}">${teamInfo[0] || ''}</div>
                         <div class="g-cell text-left team-name-cell ${hideBorder} ${isLast}">
@@ -53,7 +49,6 @@ async function moThongSo(soTran) {
                         <div class="g-cell tong-diem-val cot-xam ${hideBorder} ${isLast}">${teamInfo[4] || ''}</div>
                     `;
                 } else {
-                    // Dòng 2,3,4: Bơm ô trống để giữ vững lưới Grid, giữ lại màu xám cho cột 5
                     container.innerHTML += `
                         <div class="g-cell ${hideBorder} ${isLast}"></div>
                         <div class="g-cell ${hideBorder} ${isLast}"></div>
@@ -63,10 +58,16 @@ async function moThongSo(soTran) {
                     `;
                 }
                 
-                // 3 ô bên phải của người chơi
-                let ten = p[5] ? p[5].toUpperCase() : '';
-                let kill = p[6] ? p[6].trim() : '0';
-                let dmg = p[7] ? p[7].trim() : '0';
+                // --- ĐÂY LÀ KHÚC SỬA LỖI SỐ 0 ---
+                let ten = (p[5] && p[5].trim() !== '') ? p[5].toUpperCase() : '';
+                let kill = '';
+                let dmg = '';
+                
+                // Ép luật: Nếu ô tên (ten) có chữ, thì mới in thông số. Còn trống thì cho tàng hình hết!
+                if (ten !== '') {
+                    kill = (p[6] && p[6].trim() !== '') ? p[6].trim() : '0';
+                    dmg = (p[7] && p[7].trim() !== '') ? p[7].trim() : '0';
+                }
 
                 container.innerHTML += `
                     <div class="g-cell text-left ${isLast}">${ten}</div>
