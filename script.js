@@ -31,35 +31,39 @@ async function moThongSo(soTran) {
                 logoThichHop = timDoi.logo;
             }
 
+            // Vòng lặp 4 người chơi
             for (let j = 0; j < 4; j++) {
                 const pRow = rows[i + j];
                 const p = pRow ? pRow.split(',') : [];
                 const isLast = (j === 3) ? 'p-row-last' : '';
+                
+                // Lệnh tàng hình: Tẩy mờ các vạch ngang bên trong Đội
+                const noBorder = (j !== 3) ? 'no-border' : '';
 
                 if (j === 0) {
-                    // Dòng 1: In 5 thông tin Đội
+                    // Dòng 1: Có gắn class "cot-xam" cho Tổng điểm
                     container.innerHTML += `
-                        <div class="g-cell ${isLast}">${teamInfo[0] || ''}</div>
-                        <div class="g-cell text-left team-name-cell ${isLast}">
+                        <div class="g-cell ${noBorder} ${isLast}">${teamInfo[0] || ''}</div>
+                        <div class="g-cell text-left team-name-cell ${noBorder} ${isLast}">
                             <img src="${logoThichHop}" alt="logo" class="small-logo"> 
                             <span class="short-name">${tenDoi}</span>
                         </div>
-                        <div class="g-cell ${isLast}">${teamInfo[2] || ''}</div>
-                        <div class="g-cell ${isLast}">${teamInfo[3] || ''}</div>
-                        <div class="g-cell tong-diem-val ${isLast}">${teamInfo[4] || ''}</div>
+                        <div class="g-cell ${noBorder} ${isLast}">${teamInfo[2] || ''}</div>
+                        <div class="g-cell ${noBorder} ${isLast}">${teamInfo[3] || ''}</div>
+                        <div class="g-cell tong-diem-val cot-xam ${noBorder} ${isLast}">${teamInfo[4] || ''}</div>
                     `;
                 } else {
-                    // Dòng 2, 3, 4: Bơm 5 ô trống để giữ khung
+                    // Dòng 2, 3, 4: Bơm 5 ô trống (Và cũng phải tô "cot-xam" cho ô thứ 5)
                     container.innerHTML += `
-                        <div class="g-cell ${isLast}"></div>
-                        <div class="g-cell ${isLast}"></div>
-                        <div class="g-cell ${isLast}"></div>
-                        <div class="g-cell ${isLast}"></div>
-                        <div class="g-cell ${isLast}"></div>
+                        <div class="g-cell ${noBorder} ${isLast}"></div>
+                        <div class="g-cell ${noBorder} ${isLast}"></div>
+                        <div class="g-cell ${noBorder} ${isLast}"></div>
+                        <div class="g-cell ${noBorder} ${isLast}"></div>
+                        <div class="g-cell cot-xam ${noBorder} ${isLast}"></div>
                     `;
                 }
 
-                // In 3 thông tin Người chơi
+                // In 3 thông tin Người chơi (Giữ nguyên vạch ngang bình thường)
                 let ten = p[5] ? p[5].toUpperCase() : '';
                 let kill = p[6] ? p[6].trim() : '0';
                 let dmg = p[7] ? p[7].trim() : '0';
