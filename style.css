@@ -454,11 +454,25 @@ body {
     background-color: #262626; /* Màu xám đen chuẩn Garena */
 }
 
-/* Ép các ô xám sát lại với nhau, không để lộ viền đen */
+/* ================= LIỀN MẠCH CỘT TỔNG ĐIỂM TUYỆT ĐỐI ================= */
 .g-cell.cot-xam {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin: 0;
+    background-color: #262626 !important;
+    position: relative;
+    z-index: 1;
+    /* Đổi luôn màu của mọi vạch kẻ thành xám để tàng hình */
+    border-color: #262626 !important; 
+}
+
+/* Miếng dán ma thuật: Kéo giãn màu xám lấp mọi khe hở lưới */
+.g-cell.cot-xam::before {
+    content: "";
+    position: absolute;
+    top: -2px;    /* Kéo giãn lên trên 2px */
+    bottom: -2px; /* Kéo giãn xuống dưới 2px */
+    left: 0;
+    right: 0;
+    background-color: #262626;
+    z-index: -1;  /* Nằm chìm xuống dưới để không che chữ */
 }
 /* ================= CSS CLASSIC BẢO VỆ BẢNG ĐIỂM ================= */
 #data-bang-diem {
