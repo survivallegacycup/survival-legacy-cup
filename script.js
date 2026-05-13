@@ -2,7 +2,7 @@
 // Nhớ dán link Google Sheets của bạn vào đây nha:
 const SHEET_LINK = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vTxQ0XUFPh9AASBh24GIZExBRoR-Mx6IzgV8VmYzfbeTzIh-WXiOShCm2xHMnnuiEXMLunN2GQG-jpQ/pub?gid=1286104940&single=true&output=csv';
 
-/* ================= BẢN GỘP KHỐI BẤT TỬ (CHỐNG VỠ KHUNG) ================= */
+/* ================= BẢN CLASSIC ỔN ĐỊNH - KHÔNG DÙNG SPAN GỘP KHỐI ================= */
 async function moThongSo(soTran) {
     let modal = document.getElementById('modal-thong-so');
     let container = document.getElementById('data-bang-diem');
@@ -31,30 +31,43 @@ async function moThongSo(soTran) {
                 logoThichHop = timDoi.logo;
             }
 
-            // 1. IN 5 CỘT CỦA ĐỘI (Dùng class cell-span-4 để gộp 4 hàng thành 1 khối)
-            const isLastTeam = (i + 4 >= rows.length) ? 'p-row-last' : '';
-            container.innerHTML += `
-                <div class="g-cell cell-span-4 ${isLastTeam}">${teamInfo[0] || ''}</div>
-                <div class="g-cell text-left team-name-cell cell-span-4 ${isLastTeam}">
-                    <img src="${logoThichHop}" alt="logo" class="small-logo"> 
-                    <span class="short-name">${tenDoi}</span>
-                </div>
-                <div class="g-cell cell-span-4 ${isLastTeam}">${teamInfo[2] || ''}</div>
-                <div class="g-cell cell-span-4 ${isLastTeam}">${teamInfo[3] || ''}</div>
-                <div class="g-cell tong-diem-val cot-xam cell-span-4 ${isLastTeam}">${teamInfo[4] || ''}</div>
-            `;
-
-            // 2. LUÔN LẶP ĐÚNG 4 LẦN CHO NGƯỜI CHƠI (Dù Excel bị bỏ trống vẫn phải vẽ ô)
+            // LẶP CHÍNH XÁC 4 LẦN MỖI ĐỘI (Bảo kê không bao giờ vỡ khung)
             for (let j = 0; j < 4; j++) {
                 const pRow = rows[i + j];
-                const p = pRow ? pRow.split(',') : []; // Nếu dòng trống thì tự tạo mảng rỗng
+                const p = pRow ? pRow.split(',') : []; 
                 const isLast = (j === 3) ? 'p-row-last' : '';
                 
+                // Thủ thuật tàng hình vạch ngang (Chỉ kẻ vạch ở dòng cuối cùng của đội)
+                const hideBorder = (j !== 3) ? 'no-border' : '';
+
+                if (j === 0) {
+                    // Dòng 1: Chứa tên đội và thông tin
+                    container.innerHTML += `
+                        <div class="g-cell ${hideBorder} ${isLast}">${teamInfo[0] || ''}</div>
+                        <div class="g-cell text-left team-name-cell ${hideBorder} ${isLast}">
+                            <img src="${logoThichHop}" alt="logo" class="small-logo"> 
+                            <span class="short-name">${tenDoi}</span>
+                        </div>
+                        <div class="g-cell ${hideBorder} ${isLast}">${teamInfo[2] || ''}</div>
+                        <div class="g-cell ${hideBorder} ${isLast}">${teamInfo[3] || ''}</div>
+                        <div class="g-cell tong-diem-val cot-xam ${hideBorder} ${isLast}">${teamInfo[4] || ''}</div>
+                    `;
+                } else {
+                    // Dòng 2,3,4: Bơm ô trống để giữ vững lưới Grid, giữ lại màu xám cho cột 5
+                    container.innerHTML += `
+                        <div class="g-cell ${hideBorder} ${isLast}"></div>
+                        <div class="g-cell ${hideBorder} ${isLast}"></div>
+                        <div class="g-cell ${hideBorder} ${isLast}"></div>
+                        <div class="g-cell ${hideBorder} ${isLast}"></div>
+                        <div class="g-cell cot-xam ${hideBorder} ${isLast}"></div>
+                    `;
+                }
+                
+                // 3 ô bên phải của người chơi
                 let ten = p[5] ? p[5].toUpperCase() : '';
                 let kill = p[6] ? p[6].trim() : '0';
                 let dmg = p[7] ? p[7].trim() : '0';
 
-                // In 3 ô của người chơi
                 container.innerHTML += `
                     <div class="g-cell text-left ${isLast}">${ten}</div>
                     <div class="g-cell ${isLast}">${kill}</div>
