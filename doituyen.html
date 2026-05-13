@@ -42,24 +42,44 @@
             <div class="team-page-wrapper">
                 
                 <div class="team-selector-section">
-                    <button class="nav-arrow">❮</button>
-                    <div class="team-grid-12">
-                        <div class="t-icon active" onclick="switchTeam('unc')"><img src="logo-unc.jpg" alt="team"><span>UNC</span></div>
-                        <div class="t-icon active" onclick="switchTeam('ks')"><img src="logo-ks.jpg" alt="team"><span>KS</span></div>
-                        <div class="t-icon active" onclick="switchTeam('mao')"><img src="logo-mao.jpg" alt="team"><span>MAO</span></div>
-                        <div class="t-icon active" onclick="switchTeam('ft')"><img src="logo-ft.jpg" alt="team"><span>FT</span></div>
-                        <div class="t-icon" onclick="switchTeam('t5')"><img src="https://placehold.co/60x60/222/FFF?text=T5" alt="team"><span>TEAM 5</span></div>
-                        <div class="t-icon" onclick="switchTeam('t6')"><img src="https://placehold.co/60x60/222/FFF?text=T6" alt="team"><span>TEAM 6</span></div>
-                        
-                        <div class="t-icon" onclick="switchTeam('t7')"><img src="https://placehold.co/60x60/222/FFF?text=T7" alt="team"><span>TEAM 7</span></div>
-                        <div class="t-icon" onclick="switchTeam('t8')"><img src="https://placehold.co/60x60/222/FFF?text=T8" alt="team"><span>TEAM 8</span></div>
-                        <div class="t-icon" onclick="switchTeam('t9')"><img src="https://placehold.co/60x60/222/FFF?text=T9" alt="team"><span>TEAM 9</span></div>
-                        <div class="t-icon" onclick="switchTeam('t10')"><img src="https://placehold.co/60x60/222/FFF?text=T10" alt="team"><span>TEAM 10</span></div>
-                        <div class="t-icon" onclick="switchTeam('t11')"><img src="https://placehold.co/60x60/222/FFF?text=T11" alt="team"><span>TEAM 11</span></div>
-                        <div class="t-icon" onclick="switchTeam('t12')"><img src="https://placehold.co/60x60/222/FFF?text=T12" alt="team"><span>TEAM 12</span></div>
-                    </div>
-                    <button class="nav-arrow">❯</button>
-                </div>
+    <!-- Nút Lùi -->
+    <button class="nav-arrow" onclick="chuyenTrang(-1)">❮</button>
+
+    <!-- TRANG 1 (12 ĐỘI ĐẦU) -->
+    <div id="trang-1" class="team-grid-12">
+        <div class="t-icon active" onclick="switchTeam('unc')"><img src="logo-unc.jpg" alt="team"><span>UNC</span></div>
+        <div class="t-icon active" onclick="switchTeam('ks')"><img src="logo-ks.jpg" alt="team"><span>KINGS</span></div>
+        <div class="t-icon active" onclick="switchTeam('mao')"><img src="logo-mao.jpg" alt="team"><span>MAO</span></div>
+        <div class="t-icon active" onclick="switchTeam('ft')"><img src="logo-ft.jpg" alt="team"><span>FT</span></div>
+        <div class="t-icon" onclick="switchTeam('t5')"><img src="https://placehold.co/60x60/222/FFF?text=T5" alt="team"><span>TEAM 5</span></div>
+        <div class="t-icon" onclick="switchTeam('t6')"><img src="https://placehold.co/60x60/222/FFF?text=T6" alt="team"><span>TEAM 6</span></div>
+        <div class="t-icon" onclick="switchTeam('t7')"><img src="https://placehold.co/60x60/222/FFF?text=T7" alt="team"><span>TEAM 7</span></div>
+        <div class="t-icon" onclick="switchTeam('t8')"><img src="https://placehold.co/60x60/222/FFF?text=T8" alt="team"><span>TEAM 8</span></div>
+        <div class="t-icon" onclick="switchTeam('t9')"><img src="https://placehold.co/60x60/222/FFF?text=T9" alt="team"><span>TEAM 9</span></div>
+        <div class="t-icon" onclick="switchTeam('t10')"><img src="https://placehold.co/60x60/222/FFF?text=T10" alt="team"><span>TEAM 10</span></div>
+        <div class="t-icon" onclick="switchTeam('t11')"><img src="https://placehold.co/60x60/222/FFF?text=T11" alt="team"><span>TEAM 11</span></div>
+        <div class="t-icon" onclick="switchTeam('t12')"><img src="https://placehold.co/60x60/222/FFF?text=T12" alt="team"><span>TEAM 12</span></div>
+    </div>
+
+    <!-- TRANG 2 (12 ĐỘI SAU - Bị ẩn mặc định) -->
+    <div id="trang-2" class="team-grid-12" style="display: none;">
+        <div class="t-icon" onclick="switchTeam('t13')"><img src="https://placehold.co/60x60/222/FFF?text=T13" alt="team"><span>TEAM 13</span></div>
+        <div class="t-icon" onclick="switchTeam('t14')"><img src="https://placehold.co/60x60/222/FFF?text=T14" alt="team"><span>TEAM 14</span></div>
+        <div class="t-icon" onclick="switchTeam('t15')"><img src="https://placehold.co/60x60/222/FFF?text=T15" alt="team"><span>TEAM 15</span></div>
+        <div class="t-icon" onclick="switchTeam('t16')"><img src="https://placehold.co/60x60/222/FFF?text=T16" alt="team"><span>TEAM 16</span></div>
+        <div class="t-icon" onclick="switchTeam('t17')"><img src="https://placehold.co/60x60/222/FFF?text=T17" alt="team"><span>TEAM 17</span></div>
+        <div class="t-icon" onclick="switchTeam('t18')"><img src="https://placehold.co/60x60/222/FFF?text=T18" alt="team"><span>TEAM 18</span></div>
+        <div class="t-icon" onclick="switchTeam('t19')"><img src="https://placehold.co/60x60/222/FFF?text=T19" alt="team"><span>TEAM 19</span></div>
+        <div class="t-icon" onclick="switchTeam('t20')"><img src="https://placehold.co/60x60/222/FFF?text=T20" alt="team"><span>TEAM 20</span></div>
+        <div class="t-icon" onclick="switchTeam('t21')"><img src="https://placehold.co/60x60/222/FFF?text=T21" alt="team"><span>TEAM 21</span></div>
+        <div class="t-icon" onclick="switchTeam('t22')"><img src="https://placehold.co/60x60/222/FFF?text=T22" alt="team"><span>TEAM 22</span></div>
+        <div class="t-icon" onclick="switchTeam('t23')"><img src="https://placehold.co/60x60/222/FFF?text=T23" alt="team"><span>TEAM 23</span></div>
+        <div class="t-icon" onclick="switchTeam('t24')"><img src="https://placehold.co/60x60/222/FFF?text=T24" alt="team"><span>TEAM 24</span></div>
+    </div>
+
+    <!-- Nút Tới -->
+    <button class="nav-arrow" onclick="chuyenTrang(1)">❯</button>
+</div>
                 <div class="team-info-banner">
                     <div class="big-logo-box">
                         <img id="info-team-logo" src="https://placehold.co/120x120/222/FFF?text=UZI+LOGO" alt="UZI">
