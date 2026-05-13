@@ -147,7 +147,19 @@ const teamsDatabase = {
     "t33": { name: "TEAM 33", desc: "Thông tin đội 33...", logo: "https://placehold.co/120x120/222/FFF?text=T33", country: "[VIETNAM]", players: Array(5).fill({ n: "T33.MEMBER", a: "https://placehold.co/200x250/333/777?text=T33" }) },
     "t34": { name: "TEAM 34", desc: "Thông tin đội 34...", logo: "https://placehold.co/120x120/222/FFF?text=T34", country: "[VIETNAM]", players: Array(5).fill({ n: "T34.MEMBER", a: "https://placehold.co/200x250/333/777?text=T34" }) },
     "t35": { name: "TEAM 35", desc: "Thông tin đội 35...", logo: "https://placehold.co/120x120/222/FFF?text=T35", country: "[VIETNAM]", players: Array(5).fill({ n: "T35.MEMBER", a: "https://placehold.co/200x250/333/777?text=T35" }) },
-    "t36": { name: "TEAM 36", desc: "Thông tin đội 36...", logo: "https://placehold.co/120x120/222/FFF?text=T36", country: "[VIETNAM]", players: Array(5).fill({ n: "T36.MEMBER", a: "https://placehold.co/200x250/333/777?text=T36" }) }
+    "t36": { name: "TEAM 36", desc: "Thông tin đội 36...", logo: "https://placehold.co/120x120/222/FFF?text=T36", country: "[VIETNAM]", players: Array(5).fill({ n: "T36.MEMBER", a: "https://placehold.co/200x250/333/777?text=T36" }) },
+    "t37": { name: "TEAM 37", desc: "Thông tin đội 37...", logo: "https://placehold.co/120x120/222/FFF?text=T37", country: "[VIETNAM]", players: Array(5).fill({ n: "T37.MEMBER", a: "https://placehold.co/200x250/333/777?text=T37" }) },
+    "t38": { name: "TEAM 38", desc: "Thông tin đội 38...", logo: "https://placehold.co/120x120/222/FFF?text=T38", country: "[VIETNAM]", players: Array(5).fill({ n: "T38.MEMBER", a: "https://placehold.co/200x250/333/777?text=T38" }) },
+    "t39": { name: "TEAM 39", desc: "Thông tin đội 39...", logo: "https://placehold.co/120x120/222/FFF?text=T39", country: "[VIETNAM]", players: Array(5).fill({ n: "T39.MEMBER", a: "https://placehold.co/200x250/333/777?text=T39" }) },
+    "t40": { name: "TEAM 40", desc: "Thông tin đội 40...", logo: "https://placehold.co/120x120/222/FFF?text=T40", country: "[VIETNAM]", players: Array(5).fill({ n: "T40.MEMBER", a: "https://placehold.co/200x250/333/777?text=T40" }) },
+    "t41": { name: "TEAM 41", desc: "Thông tin đội 41...", logo: "https://placehold.co/120x120/222/FFF?text=T41", country: "[VIETNAM]", players: Array(5).fill({ n: "T41.MEMBER", a: "https://placehold.co/200x250/333/777?text=T41" }) },
+    "t42": { name: "TEAM 42", desc: "Thông tin đội 42...", logo: "https://placehold.co/120x120/222/FFF?text=T42", country: "[VIETNAM]", players: Array(5).fill({ n: "T42.MEMBER", a: "https://placehold.co/200x250/333/777?text=T42" }) },
+    "t43": { name: "TEAM 43", desc: "Thông tin đội 43...", logo: "https://placehold.co/120x120/222/FFF?text=T43", country: "[VIETNAM]", players: Array(5).fill({ n: "T43.MEMBER", a: "https://placehold.co/200x250/333/777?text=T43" }) },
+    "t44": { name: "TEAM 44", desc: "Thông tin đội 44...", logo: "https://placehold.co/120x120/222/FFF?text=T44", country: "[VIETNAM]", players: Array(5).fill({ n: "T44.MEMBER", a: "https://placehold.co/200x250/333/777?text=T44" }) },
+    "t45": { name: "TEAM 45", desc: "Thông tin đội 45...", logo: "https://placehold.co/120x120/222/FFF?text=T45", country: "[VIETNAM]", players: Array(5).fill({ n: "T45.MEMBER", a: "https://placehold.co/200x250/333/777?text=T45" }) },
+    "t46": { name: "TEAM 46", desc: "Thông tin đội 46...", logo: "https://placehold.co/120x120/222/FFF?text=T46", country: "[VIETNAM]", players: Array(5).fill({ n: "T46.MEMBER", a: "https://placehold.co/200x250/333/777?text=T46" }) },
+    "t47": { name: "TEAM 47", desc: "Thông tin đội 47...", logo: "https://placehold.co/120x120/222/FFF?text=T47", country: "[VIETNAM]", players: Array(5).fill({ n: "T47.MEMBER", a: "https://placehold.co/200x250/333/777?text=T47" }) },
+    "t48": { name: "TEAM 48", desc: "Thông tin đội 48...", logo: "https://placehold.co/120x120/222/FFF?text=T48", country: "[VIETNAM]", players: Array(5).fill({ n: "T48.MEMBER", a: "https://placehold.co/200x250/333/777?text=T48" }) }
 };
 
 function switchTeam(teamId) {
@@ -197,21 +209,23 @@ document.addEventListener("DOMContentLoaded", function() {
         switchTeam('unc'); 
     }
 });
-// ================= HỆ THỐNG MŨI TÊN CHUYỂN 3 TRANG =================
+// ================= HỆ THỐNG MŨI TÊN CHUYỂN 4 TRANG =================
 let trangHienTai = 1;
 function chuyenTrang(huong) {
     trangHienTai += huong;
-    if (trangHienTai > 3) trangHienTai = 1; // Nhảy từ trang 3 về trang 1
-    if (trangHienTai < 1) trangHienTai = 3; // Lùi từ trang 1 xuống trang 3
+    if (trangHienTai > 4) trangHienTai = 1; // Nhảy từ trang 4 về trang 1
+    if (trangHienTai < 1) trangHienTai = 4; // Lùi từ trang 1 xuống trang 4
 
     // Bật tắt giao diện
     let t1 = document.getElementById('trang-1');
     let t2 = document.getElementById('trang-2');
     let t3 = document.getElementById('trang-3');
+    let t4 = document.getElementById('trang-4'); // Thêm trang 4
     
-    if(t1 && t2 && t3) {
+    if(t1 && t2 && t3 && t4) {
         t1.style.display = (trangHienTai === 1) ? '' : 'none';
         t2.style.display = (trangHienTai === 2) ? '' : 'none';
         t3.style.display = (trangHienTai === 3) ? '' : 'none';
+        t4.style.display = (trangHienTai === 4) ? '' : 'none'; // Điều khiển trang 4
     }
 }
