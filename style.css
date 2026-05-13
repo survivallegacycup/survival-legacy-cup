@@ -442,3 +442,45 @@ body {
     font-weight: bold;
     color: #fff;
 }
+/* ================= THỦ THUẬT ĐÁNH LỪA THỊ GIÁC ================= */
+
+/* Tẩy mờ các đường kẻ ngang thừa bên trong 5 cột của Đội */
+.no-border {
+    border-bottom: 1px solid transparent !important;
+}
+
+/* Nối liền cột Tổng Điểm thành một dải màu xám liên tục */
+.cot-xam {
+    background-color: #262626; /* Màu xám đen chuẩn Garena */
+}
+
+/* Ép các ô xám sát lại với nhau, không để lộ viền đen */
+.g-cell.cot-xam {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 0;
+}
+/* ================= CSS GỘP KHỐI VÀ TÔ MÀU XÁM TỔNG ĐIỂM ================= */
+.cell-span-4 {
+    grid-row: span 4; /* Phép thuật gộp 4 hàng làm 1 */
+    display: flex;
+    align-items: center; /* Căn chữ vào chính giữa chiều dọc */
+    justify-content: center;
+    border-bottom: 1px solid #333; /* Chỉ kẻ vạch khi kết thúc 1 Đội */
+}
+
+/* Ép tên đội căn sang trái thay vì đứng giữa */
+.team-name-cell.cell-span-4 {
+    justify-content: flex-start;
+}
+
+/* Đổ màu xám nguyên khối cho cột Tổng Điểm */
+.cot-xam.cell-span-4 {
+    background-color: #262626; /* Màu xám đen Garena */
+    font-weight: bold;
+    color: #fff;
+    /* Xóa padding để màu lấp đầy ô */
+    margin: 0; 
+    border-left: 1px solid #1a1a1a;
+    border-right: 1px solid #1a1a1a;
+}
