@@ -530,3 +530,9 @@ body {
     font-style: italic;   /* In nghiêng dòng tiếng Anh */
     color: #555;
 }
+/* Ép buộc ô điểm số phải có nền xám và chữ trắng, đè bẹp mọi code cũ */
+#data-bang-diem .g-cell.tong-diem-val.cot-xam {
+    background-color: #262626 !important;
+    color: #ffffff !important; 
+    font-weight: bold;
+}
