@@ -100,11 +100,11 @@ const teamsDatabase = {
         logo: "logo-unc.jpg",
         country: "", 
         players: [
-            { n: "UNC.LEVI", a: "https://placehold.co/200x250/111/555?text=AVATAR+FF" },
-            { n: "UNC.QTOAN", a: "https://placehold.co/200x250/111/555?text=AVATAR+FF" },
-            { n: "UNC.VTHIEN", a: "https://placehold.co/200x250/111/555?text=AVATAR+FF" },
-            { n: "UNC.NHIM", a: "https://placehold.co/200x250/111/555?text=AVATAR+FF" },
-            { n: "UNC.FOR", a: "https://placehold.co/200x250/111/555?text=TRONG" }
+            { n: "UNC.LEVI", a: "levi.jpg" },
+            { n: "UNC.QTOAN", a: "qtoan.jpg" },
+            { n: "UNC.VTHIEN", a: "vthien.jpg" },
+            { n: "UNC.NHIM", a: "nhim.jpg" },
+            { n: "UNC.FOR", a: "for.jpg" }
         ]
     },
     // ĐỘI 2 trở đi... (Lát nữa mình thay sau)
