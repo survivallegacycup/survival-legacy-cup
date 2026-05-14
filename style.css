@@ -514,3 +514,20 @@ body {
     box-shadow: none !important; /* Tắt bóng đổ để không che vạch */
     border-bottom: 1px solid #333 !important;
 }
+/* ================= CSS CHO DÒNG BẢN QUYỀN ================= */
+.footer-copyright {
+    position: fixed;      /* Ghim cố định trên màn hình */
+    bottom: 15px;         /* Cách đáy màn hình 15px */
+    left: 20px;           /* Cách lề trái 20px */
+    color: #666;          /* Màu xám mờ chuyên nghiệp */
+    font-size: 12px;      /* Chữ nhỏ vừa phải */
+    line-height: 1.6;     /* Khoảng cách giữa 2 dòng */
+    z-index: 1000;        /* Đảm bảo luôn nổi lên trên cùng, không bị che */
+    pointer-events: none; /* Không cản trở việc click chuột vào các nút bên dưới */
+}
+
+.footer-copyright .eng-text {
+    font-size: 11px;      /* Dòng tiếng Anh nhỏ hơn 1 chút xíu */
+    font-style: italic;   /* In nghiêng dòng tiếng Anh */
+    color: #555;
+}
