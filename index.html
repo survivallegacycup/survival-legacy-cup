@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Survival Legacy Cup SS1 | UZI LEGENDS</title>
-    <link rel="stylesheet" href="style.css?v=3">
+    <link rel="stylesheet" href="style.css?v=5">
 </head>
 
 <body>
@@ -180,16 +180,11 @@
                     <p class="winner-name">UZI LEGENDS</p>
                 </div>
                 
-                <!-- HỘP CHỨA MŨI TÊN CHUYỂN TRẬN -->
-                <div class="info-box match-nav-box" style="display: flex; align-items: center; justify-content: center; gap: 20px;">
-                    <!-- Mũi tên trái -->
-                    <div class="nut-mui-ten" style="cursor: pointer; font-size: 20px;" onclick="chuyenTran(-1)"> ◀ </div>
-            
-                    <!-- Chữ TRẬN 1 -->
-                    <div id="ten-tran-dau" class="chu-tran" style="font-size: 16px; font-weight: bold;">TRẬN 1</div>
-            
-                    <!-- Mũi tên phải -->
-                    <div class="nut-mui-ten" style="cursor: pointer; font-size: 20px;" onclick="chuyenTran(1)"> ▶ </div>
+                <!-- HỘP CHỨA MŨI TÊN CHUYỂN TRẬN GARENA STYLE -->
+                <div class="match-nav-box">
+                    <div class="nav-arrow" onclick="chuyenTran(-1)"> ◀ </div>
+                    <div id="ten-tran-dau" class="chu-tran">TRẬN 1</div>
+                    <div class="nav-arrow" onclick="chuyenTran(1)"> ▶ </div>
                 </div>
             <div class="grid-table" id="data-bang-diem">
                 <div class="g-header">Hạng</div>
