@@ -173,7 +173,19 @@ const teamsDatabase = {
             { n: "TLK.VANTUAN", a: "vantuan.jpg" }
         ]
     },
-    "t7": { name: "TEAM 7", desc: "Thông tin đội 7...", logo: "https://placehold.co/120x120/222/FFF?text=T7", country: "[VIETNAM]", players: Array(5).fill({ n: "T7.MEMBER", a: "https://placehold.co/200x250/333/777?text=T7" }) },
+    "uch": {
+        name: "UCH",
+        desc: "UCH - Tên đầy đủ là Uchiha. Đội tuyển Free Fire mang phong cách lạnh lùng và chuẩn xác, nổi bật với khả năng kiểm soát giao tranh cùng những pha xử lý sắc bén, luôn sẵn sàng thiêu rụi đối thủ tại Survival Legacy Cup SS1!",
+        logo: "logo-uch.jpg",
+        country: "", 
+        players: [
+            { n: "UCH.TDUY", a: "tduy.jpg" },
+            { n: "UCH.HKIET", a: "hkiet.jpg" },
+            { n: "UCH.TKIEN", a: "tkien.jpg" },
+            { n: "UCH.THE", a: "the.jpg" },
+            { n: "KHÔNG CÓ", a: "https://placehold.co/200x250/111/555?text=TRONG" }
+        ]
+    },
     "t8": { name: "TEAM 8", desc: "Thông tin đội 8...", logo: "https://placehold.co/120x120/222/FFF?text=T8", country: "[VIETNAM]", players: Array(5).fill({ n: "T8.MEMBER", a: "https://placehold.co/200x250/333/777?text=T8" }) },
     "t9": { name: "TEAM 9", desc: "Thông tin đội 9...", logo: "https://placehold.co/120x120/222/FFF?text=T9", country: "[VIETNAM]", players: Array(5).fill({ n: "T9.MEMBER", a: "https://placehold.co/200x250/333/777?text=T9" }) },
     "t10": { name: "TEAM 10", desc: "Thông tin đội 10...", logo: "https://placehold.co/120x120/222/FFF?text=T10", country: "[VIETNAM]", players: Array(5).fill({ n: "T10.MEMBER", a: "https://placehold.co/200x250/333/777?text=T10" }) },
