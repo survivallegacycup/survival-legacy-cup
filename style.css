@@ -508,3 +508,50 @@ body {
 #data-bang-diem {
     min-width: 800px !important; 
 }
+/* ================= TÚT LẠI KHUNG VIỀN & HEADER CHUẨN GARENA ================= */
+
+/* 1. Lên màu cho hàng Tiêu Đề (Header) */
+#data-bang-diem .g-header {
+    background-color: #1f1f1f !important; /* Xám sáng hơn nền để tách biệt khối */
+    color: #888888 !important; /* Chữ màu xám lông chuột chuyên nghiệp */
+    font-size: 13px !important;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 16px 0 !important;
+    border-bottom: 3px solid #000000 !important; /* Vạch đen dày chốt dưới header */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* 2. Căn trái Tiêu đề "Đội" và "Người chơi" cho thẳng tắp với dữ liệu bên dưới */
+#data-bang-diem .g-header:nth-child(2),
+#data-bang-diem .g-header:nth-child(6) {
+    justify-content: flex-start !important;
+    padding-left: 10px !important;
+}
+
+/* 3. Viền bao quanh Bảng điểm cho cứng cáp (Tạo cảm giác đóng khung) */
+#data-bang-diem {
+    border-left: 1px solid #222 !important;
+    border-right: 1px solid #222 !important;
+    border-bottom: 1px solid #222 !important;
+}
+
+/* 4. Chỉnh màu chữ Tuyển thủ cho dịu mắt đúng chuẩn */
+.player-cell {
+    color: #cccccc !important; 
+}
+
+/* 5. Phép thuật biến Thanh cuộn thô kệch thành chuẩn eSports */
+::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+}
+::-webkit-scrollbar-track {
+    background: #0a0a0a;
+}
+::-webkit-scrollbar-thumb {
+    background: #ffcc00; /* Thanh cuộn màu vàng xịn xò */
+    border-radius: 2px;
+}
