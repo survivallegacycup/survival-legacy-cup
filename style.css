@@ -500,19 +500,18 @@ body {
     border-bottom: 1px solid transparent !important;
 }
 
-/* ================= CHỐT HẠ CỘT TỔNG ĐIỂM (BẢN CUỐI) ================= */
+/* ================= KHỐI XÁM TỔNG ĐIỂM ================= */
 .g-cell.cot-xam {
     background-color: #262626 !important;
+    /* Đổi màu viền thành màu xám để lấp kín mọi khe hở 1px */
+    border-bottom: 1px solid #262626 !important;
+    border-top: 1px solid #262626 !important;
     margin: 0 !important;
-    /* CHỈ đổ bóng xuống dưới để dính các ô cùng đội, CẤM đổ bóng hắt lên trên */
-    box-shadow: 0 2px 0 #262626 !important; 
-    z-index: 1;
 }
 
-/* Trả lại vạch kẻ ngang ngăn cách giữa các Đội */
+/* Kẻ lại đúng 1 vạch ngăn cách dưới cùng khi chuyển sang Đội khác */
 .g-cell.cot-xam.p-row-last {
-    box-shadow: none !important; /* Tắt bóng đổ để không che vạch */
-    border-bottom: 1px solid #333 !important;
+    border-bottom: 1px solid #333 !important; 
 }
 /* ================= CSS CHO DÒNG BẢN QUYỀN ================= */
 .footer-copyright {
