@@ -669,34 +669,26 @@ div#data-bang-diem {
     object-fit: cover !important; /* Tự động phóng to lấp đầy khung mà KHÔNG BỊ MÉO */
     object-position: center top !important; /* Tập trung ống kính vào góc trên cùng giữa (Chỗ có Avatar & Tên) */
 }
-/* ================= ĐỔI THEME SANG MÀU ĐỎ UZI LEGENDS ================= */
+/* ================= PHA TRỘN: MENU DỌC BÊN TRÁI MÀU ĐỎ ================= */
 
-/* 1. Đổi màu chữ Highlight (Tên giải, Trạng thái, Booyah, Tổng điểm...) */
-.highlight-text, .status-upcoming, .booyah-text, .col-tong-diem, .chu-tran, .p-name {
-    color: #ff1a1a !important; /* Mã màu Đỏ eSports cực chiến */
+/* 1. Ép viền của các mục đang chọn ở Menu Trái thành màu Đỏ */
+.container > div:not(.content) .active,
+.sidebar .active,
+.menu-left .active {
+    border-left-color: #ff1a1a !important;
 }
 
-/* 2. Đổi viền khung chính và viền Menu */
-.table-wrapper, .menu-item.active {
-    border-color: #ff1a1a !important;
+/* 2. Đổi luôn viền Đỏ khi rê chuột (hover) vào menu trái cho đồng bộ */
+.container > div:not(.content) li:hover,
+.container > div:not(.content) .menu-item:hover,
+.sidebar .menu-item:hover {
+    border-left-color: #ff1a1a !important;
 }
 
-/* 3. Nhuộm đỏ Thanh cuộn (Scrollbar) */
+/* 3. Tiện tay nhuộm Đỏ luôn thanh cuộn (Scrollbar) cho chiến */
 ::-webkit-scrollbar-thumb {
     background: #ff1a1a !important; 
 }
 ::-webkit-scrollbar-thumb:hover {
-    background: #cc0000 !important; /* Đỏ sậm hơn khi trỏ chuột vào */
-}
-
-/* 4. Đổi màu Mũi tên phát sáng sang Đỏ */
-.nav-arrow:hover {
-    border-color: #ff1a1a !important;
-    color: #ff1a1a !important;
-    box-shadow: 0 0 8px rgba(255, 26, 26, 0.4), inset 0 0 4px rgba(255, 26, 26, 0.2) !important;
-}
-
-/* Đổi viền bóng chữ Tên tuyển thủ sang Đỏ cho tone-sur-tone (nếu muốn) */
-.p-info-top .p-name {
-    text-shadow: 1px 1px 2px #550000, -1px -1px 2px #550000, 1px -1px 2px #550000, -1px 1px 2px #550000 !important;
+    background: #cc0000 !important; 
 }
