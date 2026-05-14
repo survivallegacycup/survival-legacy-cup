@@ -155,7 +155,7 @@ const teamsDatabase = {
         players: [
             { n: "WB.BOI", a: "boi.jpg" },
             { n: "WB.DMK", a: "dmk.jpg" },
-            { n: "WB.VY", a: "ny.jpg" },
+            { n: "WB.VY", a: "vy.jpg" },
             { n: "WB.PIN", a: "pin.jpg" },
             { n: "KHÔNG CÓ", a: "https://placehold.co/200x250/111/555?text=TRONG" }
         ]
