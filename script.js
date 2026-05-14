@@ -25,7 +25,11 @@ async function moThongSo(soTran) {
     headers.forEach(h => container.appendChild(h));
 
     try {
-        const response = await fetch(SHEET_LINK);
+        // Bốc đúng link CSV theo số trận
+        let linkHienTai = linkCacTran[soTran];
+        if (!linkHienTai) return; 
+
+        const response = await fetch(linkHienTai);
         const data = await response.text();
         const rows = data.split('\n').slice(1);
 
