@@ -642,3 +642,14 @@ div#data-bang-diem {
     box-shadow: 0 0 8px rgba(255, 204, 0, 0.4), inset 0 0 4px rgba(255, 204, 0, 0.2); 
     transform: scale(1.05); /* Phóng to lên một tí ti tạo cảm giác bấm */
 }
+/* ================= LÀM NỔI BẬT TÊN TUYỂN THỦ TRONG THẺ ================= */
+.p-info-top .p-name {
+    color: #ffaa00 !important; /* Nhuộm màu cam eSports rực rỡ */
+    /* Đắp viền đen 4 phía cực mạnh để chống chìm vào ảnh nền */
+    text-shadow: 2px 2px 3px #000000, 
+                -2px -2px 3px #000000, 
+                 2px -2px 3px #000000, 
+                -2px 2px 3px #000000 !important; 
+    font-size: 16px !important; /* Chữ to ra một xíu xiu cho dễ đọc */
+    font-weight: 900 !important; /* Tô đậm nét chữ */
+}
