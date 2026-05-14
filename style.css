@@ -550,30 +550,66 @@ body {
     color: #ffffff !important; 
     font-weight: bold;
 }
-/* ================= CSS GARENA 1:1 ================= */
+/* ================= THIẾT KẾ KHUNG GARENA CHUẨN MỰC ================= */
+
+/* 1. Ép Khung Lưới Chống Vỡ */
 #data-bang-diem {
     display: grid !important;
     grid-template-columns: 60px 140px 120px 120px 100px 1fr 80px 100px !important;
+    gap: 0 !important; /* Xóa tận gốc mọi khe hở của Grid */
+    background-color: transparent !important;
 }
 
-/* Biến 5 cột đầu thành khối to, chữ căn chính giữa */
+/* 2. Ép tất cả các ô đổ màu nền sậm Garena, Tiêu diệt vạch ngang */
+#data-bang-diem .g-cell {
+    border: none !important;
+    background-color: #1a1a1a !important; /* Nền xám đen đặc trưng của Garena */
+    box-sizing: border-box !important;
+    margin: 0 !important;
+}
+
+/* 3. Định dạng Khối 5 Cột Bên Trái (Hạng, Đội, Điểm) */
 .span-4-row {
     grid-row: span 4;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-bottom: 1px solid #333; /* Vẽ vạch kết thúc cho cả đội */
+    /* Ranh giới đen đứt đoạn phân chia giữa các đội */
+    border-bottom: 4px solid #000 !important; 
 }
-
 .span-4-row.team-name-cell {
     justify-content: flex-start;
 }
 
-/* Khối xám Tổng Điểm chuẩn Garena */
+/* 4. Khối Đen Tổng Điểm & Số Vàng */
 .span-4-row.cot-xam-garena {
-    background-color: #262626 !important;
-    color: #ffcc00 !important; /* Chữ màu Vàng */
+    background-color: #0d0d0d !important; /* Đen sậm nổi bật hẳn lên */
+    color: #ffcc00 !important; /* Vàng rực rỡ */
+    font-size: 18px !important;
     font-weight: bold;
-    font-size: 16px;
-    margin: 0 !important;
+}
+
+/* 5. Định dạng 3 Cột Người Chơi Bên Phải */
+.player-cell {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 38px; /* Tỉ lệ chuẩn cho dòng người chơi */
+    color: #ccc;
+}
+.player-cell.text-left {
+    justify-content: flex-start;
+    padding-left: 10px;
+}
+.player-cell.p-row-last {
+    border-bottom: 4px solid #000 !important; /* Nối tiếp ranh giới đen cho đồng bộ với khối trái */
+}
+
+/* 6. Chống vỡ giao diện trên Điện Thoại */
+#modal-thong-so {
+    overflow-x: auto !important; 
+    -webkit-overflow-scrolling: touch;
+}
+#data-bang-diem {
+    min-width: 800px !important; 
 }

@@ -2,7 +2,7 @@
 // Nhớ dán link Google Sheets của bạn vào đây nha:
 const SHEET_LINK = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vTxQ0XUFPh9AASBh24GIZExBRoR-Mx6IzgV8VmYzfbeTzIh-WXiOShCm2xHMnnuiEXMLunN2GQG-jpQ/pub?gid=1286104940&single=true&output=csv';
 
-/* ================= BẢN SAO GARENA 1:1 (GEMINI TỐI THƯỢNG) ================= */
+/* ================= BẢN SAO GARENA 1:1 ================= */
 async function moThongSo(soTran) {
     let modal = document.getElementById('modal-thong-so');
     let container = document.getElementById('data-bang-diem');
@@ -31,7 +31,7 @@ async function moThongSo(soTran) {
                 logoThichHop = timDoi.logo;
             }
 
-            // 1. IN 5 CỘT CỦA ĐỘI (Dùng class span-4-row để gộp thành 1 khối to, chữ nằm giữa)
+            // --- 1. IN 5 CỘT BÊN TRÁI (Gộp thành 1 khối bự duy nhất) ---
             container.innerHTML += `
                 <div class="g-cell span-4-row">${teamInfo[0] || ''}</div>
                 <div class="g-cell span-4-row team-name-cell">
@@ -43,7 +43,7 @@ async function moThongSo(soTran) {
                 <div class="g-cell span-4-row cot-xam-garena">${teamInfo[4] || ''}</div>
             `;
 
-            // 2. LẶP ĐÚNG 4 LẦN CHỈ ĐỂ IN 3 CỘT CỦA NGƯỜI CHƠI (Xếp vào bên phải)
+            // --- 2. LẶP 4 LẦN CHO 3 CỘT NGƯỜI CHƠI BÊN PHẢI ---
             for (let j = 0; j < 4; j++) {
                 const pRow = rows[i + j];
                 const p = pRow ? pRow.split(',') : []; 
@@ -59,9 +59,9 @@ async function moThongSo(soTran) {
                 }
 
                 container.innerHTML += `
-                    <div class="g-cell text-left ${isLast}">${ten}</div>
-                    <div class="g-cell ${isLast}">${kill}</div>
-                    <div class="g-cell ${isLast}">${dmg}</div>
+                    <div class="g-cell player-cell text-left ${isLast}">${ten}</div>
+                    <div class="g-cell player-cell ${isLast}">${kill}</div>
+                    <div class="g-cell player-cell ${isLast}">${dmg}</div>
                 `;
             }
         }
