@@ -153,10 +153,10 @@ const teamsDatabase = {
         logo: "logo-wb.jpg", /* Nhớ gõ đúng tên file ảnh bạn vừa lưu ở Bước 1 */
         country: "", 
         players: [
-            { n: "WB.BOI", a: "https://placehold.co/200x250/111/555?text=AVATAR+FF" },
-            { n: "WB.DMK", a: "https://placehold.co/200x250/111/555?text=AVATAR+FF" },
-            { n: "WB.VY", a: "https://placehold.co/200x250/111/555?text=AVATAR+FF" },
-            { n: "WB.PIN", a: "https://placehold.co/200x250/111/555?text=AVATAR+FF" },
+            { n: "WB.BOI", a: "boi.jpg" },
+            { n: "WB.DMK", a: "dmk.jpg" },
+            { n: "WB.VY", a: "ny.jpg" },
+            { n: "WB.PIN", a: "pin.jpg" },
             { n: "KHÔNG CÓ", a: "https://placehold.co/200x250/111/555?text=TRONG" }
         ]
     },
