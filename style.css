@@ -500,13 +500,41 @@ body {
     border-bottom: 1px solid transparent !important;
 }
 
-/* ================= KHỐI XÁM TỔNG ĐIỂM ================= */
+/* ================= CỘT TỔNG ĐIỂM SIÊU MỊN & SỐ VÀNG ================= */
 .g-cell.cot-xam {
     background-color: #262626 !important;
-    /* Đổi màu viền thành màu xám để lấp kín mọi khe hở 1px */
-    border-bottom: 1px solid #262626 !important;
-    border-top: 1px solid #262626 !important;
-    margin: 0 !important;
+    border: none !important; /* Xóa mọi viền gốc gây lấn cấn */
+    position: relative; 
+    z-index: 1; 
+}
+
+/* Ép màu chữ ô Tổng điểm thành Vàng chuẩn Garena */
+#data-bang-diem .g-cell.tong-diem-val.cot-xam {
+    color: #ffcc00 !important; 
+    font-weight: bold;
+    font-size: 14px; /* Cho số to ra một tí xíu nhìn cho lực */
+}
+
+/* Miếng dán ma thuật: Tự động giãn màu xám lên/xuống 1px để lấp sạch khe hở */
+.g-cell.cot-xam::before {
+    content: "";
+    position: absolute;
+    top: -1px;
+    bottom: -1px;
+    left: 0;
+    right: 0;
+    background-color: #262626;
+    z-index: -1; /* Nằm chìm xuống dưới để không che mất số 8 */
+}
+
+/* Dòng cuối cùng của đội thì không giãn xuống nữa để chừa chỗ kẻ vạch */
+.g-cell.cot-xam.p-row-last::before {
+    bottom: 0; 
+}
+
+/* Kẻ lại vạch ngăn cách giữa các Đội */
+.g-cell.cot-xam.p-row-last {
+    border-bottom: 1px solid #333 !important; 
 }
 
 /* Kẻ lại đúng 1 vạch ngăn cách dưới cùng khi chuyển sang Đội khác */
