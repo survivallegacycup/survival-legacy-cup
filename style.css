@@ -692,3 +692,12 @@ div#data-bang-diem {
 ::-webkit-scrollbar-thumb:hover {
     background: #cc0000 !important; 
 }
+/* ================= NHUỘM ĐỎ ĐƯỜNG KẺ NGANG DƯỚI HEADER ================= */
+header, .header, .navbar, .top-bar, .top-header, #header {
+    border-bottom-color: #ff1a1a !important;
+}
+
+/* Phòng hờ trường hợp viền đó nằm ở khung container bên dưới */
+.container, .main-container, .wrapper {
+    border-top-color: #ff1a1a !important;
+}
