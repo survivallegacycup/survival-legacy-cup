@@ -114,10 +114,10 @@ const teamsDatabase = {
         logo: "logo-ks.jpg",
         country: "", // Để trống để ẩn cái khung chữ [VIETNAM] đi
         players: [
-            { n: "KS.GREAT", a: "https://placehold.co/200x250/111/555?text=AVATAR+FF" },
-            { n: "KS.VPHAT", a: "https://placehold.co/200x250/111/555?text=AVATAR+FF" },
-            { n: "KS.CTHANG", a: "https://placehold.co/200x250/111/555?text=AVATAR+FF" },
-            { n: "KS.HLOC", a: "https://placehold.co/200x250/111/555?text=AVATAR+FF" },
+            { n: "KS.GREAT", a: "great.jpg" },
+            { n: "KS.VPHAT", a: "vphat.jpg" },
+            { n: "KS.CTHANG", a: "cthang.jpg" },
+            { n: "KS.HLOC", a: "hloc.jpg" },
             { n: "KHÔNG CÓ", a: "https://placehold.co/200x250/111/555?text=TRONG" }
         ]
     },
