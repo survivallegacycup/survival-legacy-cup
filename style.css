@@ -413,24 +413,7 @@ body {
     margin: 20px auto;
     max-width: 400px; /* Ép độ rộng để nó rớt xuống 2 hàng cho đẹp */
 }
-/* ================= DÁN VÀO DƯỚI CÙNG STYLE.CSS ================= */
-
-/* Ép tỷ lệ các cột xích lại gần nhau */
-#data-bang-diem {
-    display: grid !important;
-    grid-template-columns: 60px 140px 120px 120px 100px 1fr 80px 100px !important;
-    align-items: center;
-}
-
-/* Định dạng cột tên đội (Logo + Chữ) */
-.team-name-cell {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 10px; /* Khoảng cách vừa phải giữa logo và chữ */
-}
-
-/* Căn chỉnh kích thước Logo nhỏ trong bảng */
+/* ================= 1. CĂN CHỈNH LOGO & TÊN ================= */
 .small-logo {
     width: 24px;
     height: 24px;
@@ -442,159 +425,71 @@ body {
     font-weight: bold;
     color: #fff;
 }
-/* ================= THỦ THUẬT ĐÁNH LỪA THỊ GIÁC ================= */
 
-/* Tẩy mờ các đường kẻ ngang thừa bên trong 5 cột của Đội */
-.no-border {
-    border-bottom: 1px solid transparent !important;
-}
-
-/* Nối liền cột Tổng Điểm thành một dải màu xám liên tục */
-.cot-xam {
-    background-color: #262626; /* Màu xám đen chuẩn Garena */
-}
-
-/* ================= CHỐT HẠ CỘT TỔNG ĐIỂM ================= */
-.g-cell.cot-xam {
-    background-color: #262626 !important;
-    /* Xóa sạch mọi đường kẻ ngang/dọc gây lệch khung ngang */
-    border-left: none !important;
-    border-right: none !important;
-    border-top: none !important;
-    border-bottom: none !important;
-    box-sizing: border-box !important;
-    margin: 0 !important;
-    /* Phép thuật lấp khe hở dọc (chỉ kéo lên/xuống 1px, không cho phình ra 2 bên) */
-    box-shadow: 0 1.5px 0 #262626, 0 -1.5px 0 #262626 !important;
-    z-index: 1;
-}
-
-/* Kẻ lại đúng 1 đường phân chia ranh giới ở dưới cùng của mỗi Đội */
-.g-cell.cot-xam.p-row-last {
-    border-bottom: 1px solid #333 !important;
-    box-shadow: 0 -1.5px 0 #262626 !important; /* Tắt bóng đổ phía dưới để không che vạch */
-}
-/* ================= CSS CLASSIC BẢO VỆ BẢNG ĐIỂM ================= */
-#data-bang-diem {
-    display: grid !important;
-    grid-template-columns: 60px 140px 120px 120px 100px 1fr 80px 100px !important;
-    align-items: center;
-}
-
-.team-name-cell {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 10px;
-}
-
-.small-logo {
-    width: 24px;
-    height: 24px;
-    object-fit: contain;
-    border-radius: 3px;
-}
-
-/* Đánh lừa thị giác: Xóa vạch kẻ ngang thừa */
-.no-border {
-    border-bottom: 1px solid transparent !important;
-}
-
-/* ================= CỘT TỔNG ĐIỂM SIÊU MỊN & SỐ VÀNG ================= */
-.g-cell.cot-xam {
-    background-color: #262626 !important;
-    border: none !important; /* Xóa mọi viền gốc gây lấn cấn */
-    position: relative; 
-    z-index: 1; 
-}
-
-/* Ép màu chữ ô Tổng điểm thành Vàng chuẩn Garena */
-#data-bang-diem .g-cell.tong-diem-val.cot-xam {
-    color: #ffcc00 !important; 
-    font-weight: bold;
-    font-size: 14px; /* Cho số to ra một tí xíu nhìn cho lực */
-}
-
-/* Miếng dán ma thuật: Tự động giãn màu xám lên/xuống 1px để lấp sạch khe hở */
-.g-cell.cot-xam::before {
-    content: "";
-    position: absolute;
-    top: -1px;
-    bottom: -1px;
-    left: 0;
-    right: 0;
-    background-color: #262626;
-    z-index: -1; /* Nằm chìm xuống dưới để không che mất số 8 */
-}
-
-/* ================= CSS CHO DÒNG BẢN QUYỀN ================= */
+/* ================= 2. BẢN QUYỀN GÓC TRÁI ================= */
 .footer-copyright {
-    position: fixed;      /* Ghim cố định trên màn hình */
-    bottom: 15px;         /* Cách đáy màn hình 15px */
-    left: 20px;           /* Cách lề trái 20px */
-    color: #666;          /* Màu xám mờ chuyên nghiệp */
-    font-size: 12px;      /* Chữ nhỏ vừa phải */
-    line-height: 1.6;     /* Khoảng cách giữa 2 dòng */
-    z-index: 1000;        /* Đảm bảo luôn nổi lên trên cùng, không bị che */
-    pointer-events: none; /* Không cản trở việc click chuột vào các nút bên dưới */
+    position: fixed;
+    bottom: 15px;
+    left: 20px;
+    color: #666;
+    font-size: 12px;
+    line-height: 1.6;
+    z-index: 1000;
+    pointer-events: none;
 }
 
 .footer-copyright .eng-text {
-    font-size: 11px;      /* Dòng tiếng Anh nhỏ hơn 1 chút xíu */
-    font-style: italic;   /* In nghiêng dòng tiếng Anh */
+    font-size: 11px;
+    font-style: italic;
     color: #555;
 }
-/* Ép buộc ô điểm số phải có nền xám và chữ trắng, đè bẹp mọi code cũ */
-#data-bang-diem .g-cell.tong-diem-val.cot-xam {
-    background-color: #262626 !important;
-    color: #ffffff !important; 
-    font-weight: bold;
-}
-/* ================= THIẾT KẾ KHUNG GARENA CHUẨN MỰC ================= */
 
-/* 1. Ép Khung Lưới Chống Vỡ */
+/* ================= 3. THIẾT KẾ KHUNG GARENA CHUẨN MỰC ================= */
+/* Ép Khung Lưới Chống Vỡ */
 #data-bang-diem {
     display: grid !important;
     grid-template-columns: 60px 140px 120px 120px 100px 1fr 80px 100px !important;
-    gap: 0 !important; /* Xóa tận gốc mọi khe hở của Grid */
+    gap: 0 !important;
     background-color: transparent !important;
 }
 
-/* 2. Ép tất cả các ô đổ màu nền sậm Garena, Tiêu diệt vạch ngang */
+/* Ép tất cả các ô đổ màu nền sậm Garena, Tiêu diệt vạch ngang */
 #data-bang-diem .g-cell {
     border: none !important;
-    background-color: #1a1a1a !important; /* Nền xám đen đặc trưng của Garena */
+    background-color: #1a1a1a !important;
     box-sizing: border-box !important;
     margin: 0 !important;
 }
 
-/* 3. Định dạng Khối 5 Cột Bên Trái (Hạng, Đội, Điểm) */
+/* Định dạng Khối 5 Cột Bên Trái (Hạng, Đội, Điểm) */
 .span-4-row {
     grid-row: span 4;
     display: flex;
     align-items: center;
     justify-content: center;
-    /* Ranh giới đen đứt đoạn phân chia giữa các đội */
-    border-bottom: 4px solid #000 !important; 
-}
-.span-4-row.team-name-cell {
-    justify-content: flex-start;
+    border-bottom: 4px solid #000 !important; /* Ranh giới chia đội */
 }
 
-/* 4. Khối Đen Tổng Điểm & Số Vàng */
+/* Căn trái cho tên đội và tạo khoảng cách với logo */
+.span-4-row.team-name-cell {
+    justify-content: flex-start;
+    gap: 10px; 
+}
+
+/* Khối Đen Tổng Điểm & Số Vàng */
 .span-4-row.cot-xam-garena {
-    background-color: #0d0d0d !important; /* Đen sậm nổi bật hẳn lên */
-    color: #ffcc00 !important; /* Vàng rực rỡ */
+    background-color: #0d0d0d !important;
+    color: #ffcc00 !important;
     font-size: 18px !important;
     font-weight: bold;
 }
 
-/* 5. Định dạng 3 Cột Người Chơi Bên Phải */
+/* Định dạng 3 Cột Người Chơi Bên Phải */
 .player-cell {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 38px; /* Tỉ lệ chuẩn cho dòng người chơi */
+    height: 38px;
     color: #ccc;
 }
 .player-cell.text-left {
@@ -602,10 +497,10 @@ body {
     padding-left: 10px;
 }
 .player-cell.p-row-last {
-    border-bottom: 4px solid #000 !important; /* Nối tiếp ranh giới đen cho đồng bộ với khối trái */
+    border-bottom: 4px solid #000 !important;
 }
 
-/* 6. Chống vỡ giao diện trên Điện Thoại */
+/* Chống vỡ giao diện trên Điện Thoại */
 #modal-thong-so {
     overflow-x: auto !important; 
     -webkit-overflow-scrolling: touch;
