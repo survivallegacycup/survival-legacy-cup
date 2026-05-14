@@ -574,3 +574,16 @@ body {
     color: #ffffff !important; 
     font-weight: bold;
 }
+/* ================= CỨU HỘ GIAO DIỆN ĐIỆN THOẠI ================= */
+/* Cho phép cuộn ngang đối với khu vực chứa bảng điểm */
+#modal-thong-so {
+    overflow-x: auto !important; 
+    -webkit-overflow-scrolling: touch; /* Lướt mượt trên iPhone/Android */
+}
+
+#data-bang-diem {
+    min-width: 750px !important; /* Lệnh quan trọng: Ép bảng không được co rúm lại dưới 750px */
+}
+
+/* Xóa những class bị thừa lúc nãy tớ xúi dại */
+.cot-xam::before { display: none !important; }

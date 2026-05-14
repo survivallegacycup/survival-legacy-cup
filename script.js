@@ -31,11 +31,19 @@ async function moThongSo(soTran) {
                 logoThichHop = timDoi.logo;
             }
 
+            // Vòng lặp 4 người chơi
             for (let j = 0; j < 4; j++) {
                 const pRow = rows[i + j];
                 const p = pRow ? pRow.split(',') : []; 
                 const isLast = (j === 3) ? 'p-row-last' : '';
                 const hideBorder = (j !== 3) ? 'no-border' : '';
+                
+                // Phép thuật "Mã Lực": Ép thẳng CSS vào thẻ, không sợ bị đè hay kẹt Cache
+                const xamKín = "background-color: #262626 !important; border-top: 0 !important; border-bottom: 0 !important; border-left: 1px solid #1a1a1a;";
+                const xamKínCuoiCung = "background-color: #262626 !important; border-top: 0 !important; border-bottom: 1px solid #333 !important; border-left: 1px solid #1a1a1a;";
+                const chuVang = "color: #ffcc00 !important; font-weight: bold; font-size: 15px;";
+                
+                let styleXam = (j === 3) ? xamKínCuoiCung : xamKín;
 
                 if (j === 0) {
                     container.innerHTML += `
@@ -46,7 +54,7 @@ async function moThongSo(soTran) {
                         </div>
                         <div class="g-cell ${hideBorder} ${isLast}">${teamInfo[2] || ''}</div>
                         <div class="g-cell ${hideBorder} ${isLast}">${teamInfo[3] || ''}</div>
-                        <div class="g-cell tong-diem-val cot-xam ${hideBorder} ${isLast}">${teamInfo[4] || ''}</div>
+                        <div class="g-cell tong-diem-val ${isLast}" style="${styleXam} ${chuVang}">${teamInfo[4] || ''}</div>
                     `;
                 } else {
                     container.innerHTML += `
@@ -54,16 +62,14 @@ async function moThongSo(soTran) {
                         <div class="g-cell ${hideBorder} ${isLast}"></div>
                         <div class="g-cell ${hideBorder} ${isLast}"></div>
                         <div class="g-cell ${hideBorder} ${isLast}"></div>
-                        <div class="g-cell cot-xam ${hideBorder} ${isLast}"></div>
+                        <div class="g-cell ${isLast}" style="${styleXam}"></div>
                     `;
                 }
                 
-                // --- ĐÂY LÀ KHÚC SỬA LỖI SỐ 0 ---
                 let ten = (p[5] && p[5].trim() !== '') ? p[5].toUpperCase() : '';
                 let kill = '';
                 let dmg = '';
                 
-                // Ép luật: Nếu ô tên (ten) có chữ, thì mới in thông số. Còn trống thì cho tàng hình hết!
                 if (ten !== '') {
                     kill = (p[6] && p[6].trim() !== '') ? p[6].trim() : '0';
                     dmg = (p[7] && p[7].trim() !== '') ? p[7].trim() : '0';
