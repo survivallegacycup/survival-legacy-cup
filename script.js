@@ -140,10 +140,10 @@ const teamsDatabase = {
         logo: "logo-ft.jpg",
         country: "", 
         players: [
-            { n: "FT.MILLOW", a: "https://placehold.co/200x250/111/555?text=AVATAR+FF" },
-            { n: "FT.THANHDAI", a: "https://placehold.co/200x250/111/555?text=AVATAR+FF" },
-            { n: "FT.MEOMEO", a: "https://placehold.co/200x250/111/555?text=AVATAR+FF" },
-            { n: "FT.W4U", a: "https://placehold.co/200x250/111/555?text=AVATAR+FF" },
+            { n: "FT.MILLOW", a: "millow.jpg" },
+            { n: "FT.THANHDAI", a: "thanhdai.jpg" },
+            { n: "FT.MEOMEO", a: "meomeo.jpg" },
+            { n: "FT.W4U", a: "w4u.jpg" },
             { n: "KHÔNG CÓ", a: "https://placehold.co/200x250/111/555?text=TRONG" }
         ]
     },
