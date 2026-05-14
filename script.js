@@ -127,11 +127,11 @@ const teamsDatabase = {
         logo: "logo-mao.jpg",
         country: "", 
         players: [
-            { n: "MAO.ĐBIN", a: "https://placehold.co/200x250/111/555?text=AVATAR+FF" },
-            { n: "MAO.BAUUJU?", a: "https://placehold.co/200x250/111/555?text=AVATAR+FF" },
-            { n: "MAO.QVINH", a: "https://placehold.co/200x250/111/555?text=AVATAR+FF" },
-            { n: "MAO.NTRI", a: "https://placehold.co/200x250/111/555?text=AVATAR+FF" },
-            { n: "MAO.SUN", a: "https://placehold.co/200x250/111/555?text=AVATAR+FF" }
+            { n: "MAO.ĐBIN", a: "đbin.jpg" },
+            { n: "MAO.QVINH", a: "qvinh.jpg" },
+            { n: "MAO.BAUUJU?", a: "bauju.jpg" },
+            { n: "MAO.NTRI", a: "ntri.jpg" },
+            { n: "MAO.SUN", a: "sun.jpg" }
         ]
     },
     "ft": {
