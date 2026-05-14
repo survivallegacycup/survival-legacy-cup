@@ -2,7 +2,7 @@
 // Nhớ dán link Google Sheets của bạn vào đây nha:
 const SHEET_LINK = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vTxQ0XUFPh9AASBh24GIZExBRoR-Mx6IzgV8VmYzfbeTzIh-WXiOShCm2xHMnnuiEXMLunN2GQG-jpQ/pub?gid=1286104940&single=true&output=csv';
 
-/* ================= BẢN SỬA LỖI SỐ 0 VÔ DUYÊN VÀ CỘT XÁM ================= */
+/* ================= BẢN SAO GARENA 1:1 (GEMINI TỐI THƯỢNG) ================= */
 async function moThongSo(soTran) {
     let modal = document.getElementById('modal-thong-so');
     let container = document.getElementById('data-bang-diem');
@@ -31,40 +31,23 @@ async function moThongSo(soTran) {
                 logoThichHop = timDoi.logo;
             }
 
-            // Vòng lặp 4 người chơi
+            // 1. IN 5 CỘT CỦA ĐỘI (Dùng class span-4-row để gộp thành 1 khối to, chữ nằm giữa)
+            container.innerHTML += `
+                <div class="g-cell span-4-row">${teamInfo[0] || ''}</div>
+                <div class="g-cell span-4-row team-name-cell">
+                    <img src="${logoThichHop}" alt="logo" class="small-logo"> 
+                    <span class="short-name">${tenDoi}</span>
+                </div>
+                <div class="g-cell span-4-row">${teamInfo[2] || ''}</div>
+                <div class="g-cell span-4-row">${teamInfo[3] || ''}</div>
+                <div class="g-cell span-4-row cot-xam-garena">${teamInfo[4] || ''}</div>
+            `;
+
+            // 2. LẶP ĐÚNG 4 LẦN CHỈ ĐỂ IN 3 CỘT CỦA NGƯỜI CHƠI (Xếp vào bên phải)
             for (let j = 0; j < 4; j++) {
                 const pRow = rows[i + j];
                 const p = pRow ? pRow.split(',') : []; 
                 const isLast = (j === 3) ? 'p-row-last' : '';
-                const hideBorder = (j !== 3) ? 'no-border' : '';
-                
-                // Phép thuật "Mã Lực": Ép thẳng CSS vào thẻ, không sợ bị đè hay kẹt Cache
-                const xamKín = "background-color: #262626 !important; border-top: 0 !important; border-bottom: 0 !important; border-left: 1px solid #1a1a1a;";
-                const xamKínCuoiCung = "background-color: #262626 !important; border-top: 0 !important; border-bottom: 1px solid #333 !important; border-left: 1px solid #1a1a1a;";
-                const chuVang = "color: #ffcc00 !important; font-weight: bold; font-size: 15px;";
-                
-                let styleXam = (j === 3) ? xamKínCuoiCung : xamKín;
-
-                if (j === 0) {
-                    container.innerHTML += `
-                        <div class="g-cell ${hideBorder} ${isLast}">${teamInfo[0] || ''}</div>
-                        <div class="g-cell text-left team-name-cell ${hideBorder} ${isLast}">
-                            <img src="${logoThichHop}" alt="logo" class="small-logo"> 
-                            <span class="short-name">${tenDoi}</span>
-                        </div>
-                        <div class="g-cell ${hideBorder} ${isLast}">${teamInfo[2] || ''}</div>
-                        <div class="g-cell ${hideBorder} ${isLast}">${teamInfo[3] || ''}</div>
-                        <div class="g-cell tong-diem-val ${isLast}" style="${styleXam} ${chuVang}">${teamInfo[4] || ''}</div>
-                    `;
-                } else {
-                    container.innerHTML += `
-                        <div class="g-cell ${hideBorder} ${isLast}"></div>
-                        <div class="g-cell ${hideBorder} ${isLast}"></div>
-                        <div class="g-cell ${hideBorder} ${isLast}"></div>
-                        <div class="g-cell ${hideBorder} ${isLast}"></div>
-                        <div class="g-cell ${isLast}" style="${styleXam}"></div>
-                    `;
-                }
                 
                 let ten = (p[5] && p[5].trim() !== '') ? p[5].toUpperCase() : '';
                 let kill = '';
