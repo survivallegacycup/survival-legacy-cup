@@ -527,19 +527,29 @@ body {
     z-index: -1; /* Nằm chìm xuống dưới để không che mất số 8 */
 }
 
-/* Dòng cuối cùng của đội thì không giãn xuống nữa để chừa chỗ kẻ vạch */
-.g-cell.cot-xam.p-row-last::before {
-    bottom: 0; 
+/* ================= ÉP BUỘC CỘT XÁM VÀ SỐ VÀNG ================= */
+#data-bang-diem .g-cell.cot-xam {
+    background-color: #262626 !important;
+    /* Dùng box-shadow tỏa bóng xám dính chặt các ô lại, đè bẹp khe hở lưới */
+    box-shadow: 0 -1.5px 0 0 #262626, 0 1.5px 0 0 #262626 !important; 
+    border-top: none !important;
+    border-bottom: none !important;
+    position: relative !important;
+    z-index: 10 !important;
 }
 
-/* Kẻ lại vạch ngăn cách giữa các Đội */
-.g-cell.cot-xam.p-row-last {
-    border-bottom: 1px solid #333 !important; 
+/* Đích danh ép ô số điểm phải hóa Vàng */
+#data-bang-diem .g-cell.cot-xam.tong-diem-val {
+    color: #ffcc00 !important; /* Màu Vàng Garena */
+    font-weight: bold !important;
+    font-size: 16px !important; /* Cho số to ra nhìn cho ngầu */
+    text-shadow: 1px 1px 2px #000; /* Thêm tí viền đen cho số nổi bần bật */
 }
 
-/* Kẻ lại đúng 1 vạch ngăn cách dưới cùng khi chuyển sang Đội khác */
-.g-cell.cot-xam.p-row-last {
-    border-bottom: 1px solid #333 !important; 
+/* Kẻ lại vạch ngăn cách giữa 2 đội (Dòng cuối cùng của đội) */
+#data-bang-diem .g-cell.cot-xam.p-row-last {
+    box-shadow: 0 -1.5px 0 0 #262626 !important; /* Rút bóng phía dưới lại */
+    border-bottom: 1px solid #333 !important; /* Kẻ vạch đen */
 }
 /* ================= CSS CHO DÒNG BẢN QUYỀN ================= */
 .footer-copyright {
