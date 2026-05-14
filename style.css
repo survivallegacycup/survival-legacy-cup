@@ -555,29 +555,17 @@ body {
     background: #ffcc00; /* Thanh cuộn màu vàng xịn xò */
     border-radius: 2px;
 }
-/* ================= CỨU HỘ VIỀN KẺ ================= */
+/* ================= VIỀN KẺ RÀNH MẠCH CHUẨN GARENA 100% ================= */
 
-/* 1. Ép hiển thị lại vạch đen dày 4px phân chia giữa các Đội */
-#data-bang-diem .g-cell.span-4-row,
-#data-bang-diem .g-cell.player-cell.p-row-last {
-    border-bottom: 4px solid #000000 !important;
+/* 1. Kẻ vạch ngang mỏng màu xám mờ cho tất cả các ô (Chia đội và chia từng người chơi) */
+div#data-bang-diem div.g-cell,
+div#data-bang-diem div.g-header {
+    border: none !important; /* Xóa sạch các viền tạp nham */
+    border-bottom: 1px solid #2a2a2a !important; /* Vạch xám mờ tinh tế chuẩn Garena */
 }
 
-/* 2. Đóng khung viền xám bao quanh toàn bộ Bảng điểm cho cứng cáp */
-#data-bang-diem {
-    border-left: 1px solid #333333 !important;
-    border-right: 1px solid #333333 !important;
-    border-bottom: 1px solid #333333 !important;
-}
-/* ================= CỨU HỘ VIỀN KẺ (ĐỘ ƯU TIÊN TỐI THƯỢNG) ================= */
-
-/* 1. Ép hiển thị lại vạch đen dày 4px phân chia giữa các Đội */
-div#data-bang-diem div.g-cell.span-4-row,
-div#data-bang-diem div.g-cell.player-cell.p-row-last {
-    border-bottom: 4px solid #000000 !important;
-}
-
-/* 2. Đóng khung viền xám bao quanh toàn bộ Bảng điểm cho cứng cáp */
+/* 2. Đóng khung viền bao quanh toàn bộ bảng */
 div#data-bang-diem {
-    border: 1px solid #333333 !important;
+    border: 1px solid #2a2a2a !important;
+    border-bottom: none !important; /* Chống bị viền đôi ở dưới cùng đáy bảng */
 }
