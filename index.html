@@ -180,16 +180,17 @@
                     <p class="winner-name">UZI LEGENDS</p>
                 </div>
                 
-                <!-- Mũi tên trái: Bấm để lùi 1 trận (-1) -->
-                <div class="nut-mui-ten" onclick="chuyenTran(-1)"> ◀ </div>
-
-                <!-- Chữ TRẬN 1: Phải có id="ten-tran-dau" để JavaScript tìm ra và đổi tên -->
-                <div id="ten-tran-dau" class="chu-tran">TRẬN 1</div>
-
-                <!-- Mũi tên phải: Bấm để tiến 1 trận (1) -->
-                <div class="nut-mui-ten" onclick="chuyenTran(1)"> ▶ </div>
-            </div>
-
+                <!-- HỘP CHỨA MŨI TÊN CHUYỂN TRẬN -->
+                <div class="info-box match-nav-box" style="display: flex; align-items: center; justify-content: center; gap: 20px;">
+                    <!-- Mũi tên trái -->
+                    <div class="nut-mui-ten" style="cursor: pointer; font-size: 20px;" onclick="chuyenTran(-1)"> ◀ </div>
+            
+                    <!-- Chữ TRẬN 1 -->
+                    <div id="ten-tran-dau" class="chu-tran" style="font-size: 16px; font-weight: bold;">TRẬN 1</div>
+            
+                    <!-- Mũi tên phải -->
+                    <div class="nut-mui-ten" style="cursor: pointer; font-size: 20px;" onclick="chuyenTran(1)"> ▶ </div>
+                </div>
             <div class="grid-table" id="data-bang-diem">
                 <div class="g-header">Hạng</div>
                 <div class="g-header text-left">Đội tuyển</div>
