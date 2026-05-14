@@ -555,3 +555,17 @@ body {
     background: #ffcc00; /* Thanh cuộn màu vàng xịn xò */
     border-radius: 2px;
 }
+/* ================= CỨU HỘ VIỀN KẺ ================= */
+
+/* 1. Ép hiển thị lại vạch đen dày 4px phân chia giữa các Đội */
+#data-bang-diem .g-cell.span-4-row,
+#data-bang-diem .g-cell.player-cell.p-row-last {
+    border-bottom: 4px solid #000000 !important;
+}
+
+/* 2. Đóng khung viền xám bao quanh toàn bộ Bảng điểm cho cứng cáp */
+#data-bang-diem {
+    border-left: 1px solid #333333 !important;
+    border-right: 1px solid #333333 !important;
+    border-bottom: 1px solid #333333 !important;
+}
