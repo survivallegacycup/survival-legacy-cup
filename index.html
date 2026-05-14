@@ -180,11 +180,14 @@
                     <p class="winner-name">UZI LEGENDS</p>
                 </div>
                 
-                <div class="info-box nav-box">
-                    <button class="arrow-btn">◀</button>
-                    <span class="match-number">TRẬN 1</span>
-                    <button class="arrow-btn">▶</button>
-                </div>
+                <!-- Mũi tên trái: Bấm để lùi 1 trận (-1) -->
+                <div class="nut-mui-ten" onclick="chuyenTran(-1)"> ◀ </div>
+
+                <!-- Chữ TRẬN 1: Phải có id="ten-tran-dau" để JavaScript tìm ra và đổi tên -->
+                <div id="ten-tran-dau" class="chu-tran">TRẬN 1</div>
+
+                <!-- Mũi tên phải: Bấm để tiến 1 trận (1) -->
+                <div class="nut-mui-ten" onclick="chuyenTran(1)"> ▶ </div>
             </div>
 
             <div class="grid-table" id="data-bang-diem">

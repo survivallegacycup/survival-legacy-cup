@@ -4,6 +4,11 @@ const SHEET_LINK = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vTxQ0XUFPh9A
 
 /* ================= BẢN SAO GARENA 1:1 ================= */
 async function moThongSo(soTran) {
+    // --- CHÈN 4 DÒNG NÀY VÀO ĐẦU HÀM ---
+    tranHienTai = soTran; // Cập nhật lại số trận hiện tại
+    let tenTranEl = document.getElementById('ten-tran-dau');
+    if (tenTranEl) tenTranEl.innerText = "TRẬN " + soTran; // Đổi chữ cứng thành số động
+    // -----------------------------------
     let modal = document.getElementById('modal-thong-so');
     let container = document.getElementById('data-bang-diem');
     if(!modal || !container) return; 
@@ -244,4 +249,20 @@ function chuyenTrang(huong) {
         t3.style.display = (trangHienTai === 3) ? '' : 'none';
         t4.style.display = (trangHienTai === 4) ? '' : 'none'; // Điều khiển trang 4
     }
+}
+/* ================= HỆ THỐNG MŨI TÊN CHUYỂN TRẬN ================= */
+let tranHienTai = 1;
+const tongSoTran = 6; // Khai báo tổng cộng có 6 trận
+
+function chuyenTran(huong) {
+    tranHienTai += huong;
+    
+    // Nếu đang ở Trận 1 mà bấm lùi, nó vòng xuống Trận 6
+    if (tranHienTai < 1) tranHienTai = tongSoTran;
+    
+    // Nếu đang ở Trận 6 mà bấm tới, nó vòng lại Trận 1
+    if (tranHienTai > tongSoTran) tranHienTai = 1;
+    
+    // Lệnh cho nó mở bảng thông số của trận vừa chuyển
+    moThongSo(tranHienTai);
 }
