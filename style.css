@@ -653,3 +653,19 @@ div#data-bang-diem {
     font-size: 16px !important; /* Chữ to ra một xíu xiu cho dễ đọc */
     font-weight: 900 !important; /* Tô đậm nét chữ */
 }
+/* ================= CHỈNH LẠI TỶ LỆ ẢNH VÀ TÊN TUYỂN THỦ ================= */
+
+/* 1. Thu nhỏ Tên và làm viền mỏng lại cho tinh tế */
+.p-info-top .p-name {
+    font-size: 13px !important; /* Chữ nhỏ nhắn, vừa vặn hơn */
+    color: #ffaa00 !important;
+    text-shadow: 1px 1px 2px #000, -1px -1px 2px #000, 1px -1px 2px #000, -1px 1px 2px #000 !important; /* Viền mỏng lại cho đỡ thô */
+}
+
+/* 2. Phép thuật chống bóp méo ảnh và xích góc nhìn cho đẹp */
+.player-card .p-avatar {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important; /* Tự động phóng to lấp đầy khung mà KHÔNG BỊ MÉO */
+    object-position: center top !important; /* Tập trung ống kính vào góc trên cùng giữa (Chỗ có Avatar & Tên) */
+}
