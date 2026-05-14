@@ -593,3 +593,9 @@ div#data-bang-diem {
 #data-bang-diem .span-4-row.cot-xam-garena {
     background-color: #0d0d0d !important;
 }
+/* ================= GHI ĐÈ TỶ LỆ CỘT LẦN CUỐI (TỶ LỆ VÀNG) ================= */
+#data-bang-diem {
+    /* Ép lại kích thước các cột: Cột Tổng điểm (số 5) to ra 160px, cột Người chơi (1fr) sẽ bị ép nhỏ lại */
+    grid-template-columns: 70px 160px 130px 130px 160px 1fr 100px 120px !important;
+    min-width: 900px !important; /* Mở rộng bảng ra xíu cho thoáng */
+}
