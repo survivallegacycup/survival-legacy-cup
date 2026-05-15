@@ -225,7 +225,19 @@ const teamsDatabase = {
             { n: "KHÔNG CÓ", a: "https://placehold.co/200x250/111/555?text=TRONG" }
         ]
     },
-    "t11": { name: "TEAM 11", desc: "Thông tin đội 11...", logo: "https://placehold.co/120x120/222/FFF?text=T11", country: "[VIETNAM]", players: Array(5).fill({ n: "T11.MEMBER", a: "https://placehold.co/200x250/333/777?text=T11" }) },
+    "bnn1": {
+        name: "BNN1",
+        desc: "BBN1 - Tên đầy đủ là Béc Nin No 1. Đội tuyển Free Fire với khí chất dẫn đầu, lối chơi dứt khoát và đầy uy lực, luôn nhập cuộc với mục tiêu thống trị và khẳng định đẳng cấp số 1 tại Survival Legacy Cup SS1!",
+        logo: "logo-bnn1.jpg",
+        country: "", 
+        players: [
+            { n: "BNN1.HGIA", a: "hgia.jpg" },
+            { n: "BNN1.TCONG", a: "tcong.jpg" },
+            { n: "BNN1.VTAI", a: "vtai.jpg" },
+            { n: "BNN1.VLAP", a: "vlap.jpg" },
+            { n: "KHÔNG CÓ", a: "https://placehold.co/200x250/111/555?text=TRONG" }
+        ]
+    },
     "t12": { name: "TEAM 12", desc: "Thông tin đội 12...", logo: "https://placehold.co/120x120/222/FFF?text=T12", country: "[VIETNAM]", players: Array(5).fill({ n: "T12.MEMBER", a: "https://placehold.co/200x250/333/777?text=T12" }) },
     "t13": { name: "TEAM 13", desc: "Thông tin đội 13...", logo: "https://placehold.co/120x120/222/FFF?text=T13", country: "[VIETNAM]", players: Array(5).fill({ n: "T13.MEMBER", a: "https://placehold.co/200x250/333/777?text=T13" }) },
     "t14": { name: "TEAM 14", desc: "Thông tin đội 14...", logo: "https://placehold.co/120x120/222/FFF?text=T14", country: "[VIETNAM]", players: Array(5).fill({ n: "T14.MEMBER", a: "https://placehold.co/200x250/333/777?text=T14" }) },
