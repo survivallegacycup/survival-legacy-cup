@@ -212,7 +212,19 @@ const teamsDatabase = {
             { n: "KHÔNG CÓ", a: "https://placehold.co/200x250/111/555?text=TRONG" }
         ]
     },
-    "t10": { name: "TEAM 10", desc: "Thông tin đội 10...", logo: "https://placehold.co/120x120/222/FFF?text=T10", country: "[VIETNAM]", players: Array(5).fill({ n: "T10.MEMBER", a: "https://placehold.co/200x250/333/777?text=T10" }) },
+    "nna": {
+        name: "NNA",
+        desc: "NNA - Tên đầy đủ Nước Ngọt Academy. Đội tuyển Free Fire mang phong cách “ngọt mà gắt”, vẻ ngoài nhẹ nhàng nhưng lối chơi cực kỳ khó chịu, sẵn sàng tung đòn kết liễu bất ngờ và khiến đối thủ “thấm đòn” tại Survival Legacy Cup SS1!",
+        logo: "logo-nna.jpg",
+        country: "", 
+        players: [
+            { n: "NNA.QMANH", a: "qmanh.jpg" },
+            { n: "NNA.DHAI", a: "dhai.jpg" },
+            { n: "NNA.TCUONG", a: "tcuong.jpg" },
+            { n: "NNA.THDAT", a: "thdat.jpg" },
+            { n: "KHÔNG CÓ", a: "https://placehold.co/200x250/111/555?text=TRONG" }
+        ]
+    },
     "t11": { name: "TEAM 11", desc: "Thông tin đội 11...", logo: "https://placehold.co/120x120/222/FFF?text=T11", country: "[VIETNAM]", players: Array(5).fill({ n: "T11.MEMBER", a: "https://placehold.co/200x250/333/777?text=T11" }) },
     "t12": { name: "TEAM 12", desc: "Thông tin đội 12...", logo: "https://placehold.co/120x120/222/FFF?text=T12", country: "[VIETNAM]", players: Array(5).fill({ n: "T12.MEMBER", a: "https://placehold.co/200x250/333/777?text=T12" }) },
     "t13": { name: "TEAM 13", desc: "Thông tin đội 13...", logo: "https://placehold.co/120x120/222/FFF?text=T13", country: "[VIETNAM]", players: Array(5).fill({ n: "T13.MEMBER", a: "https://placehold.co/200x250/333/777?text=T13" }) },
