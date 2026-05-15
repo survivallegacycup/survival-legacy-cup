@@ -199,7 +199,19 @@ const teamsDatabase = {
             { n: "KHÔNG CÓ", a: "https://placehold.co/200x250/111/555?text=TRONG" }
         ]
     },
-    "t9": { name: "TEAM 9", desc: "Thông tin đội 9...", logo: "https://placehold.co/120x120/222/FFF?text=T9", country: "[VIETNAM]", players: Array(5).fill({ n: "T9.MEMBER", a: "https://placehold.co/200x250/333/777?text=T9" }) },
+    "vtp": {
+        name: "VTP",
+        desc: "VTP - Tên đầy đủ là VTP Esports. Đội tuyển Free Fire thi đấu đầy toan tính, nổi bật với khả năng đọc tình huống tốt và tận dụng thời cơ cực kỳ hiệu quả, luôn biết cách vươn lên đúng lúc tại Survival Legacy Cup SS1!",
+        logo: "logo-vtp.jpg",
+        country: "", 
+        players: [
+            { n: "VTP.ATUAN", a: "atuan.jpg" },
+            { n: "VTP.MCHIEN", a: "mchien.jpg" },
+            { n: "VTP.MINHYUE", a: "minhyue.jpg" },
+            { n: "VTP.BUNCHA", a: "buncha.jpg" },
+            { n: "KHÔNG CÓ", a: "https://placehold.co/200x250/111/555?text=TRONG" }
+        ]
+    },
     "t10": { name: "TEAM 10", desc: "Thông tin đội 10...", logo: "https://placehold.co/120x120/222/FFF?text=T10", country: "[VIETNAM]", players: Array(5).fill({ n: "T10.MEMBER", a: "https://placehold.co/200x250/333/777?text=T10" }) },
     "t11": { name: "TEAM 11", desc: "Thông tin đội 11...", logo: "https://placehold.co/120x120/222/FFF?text=T11", country: "[VIETNAM]", players: Array(5).fill({ n: "T11.MEMBER", a: "https://placehold.co/200x250/333/777?text=T11" }) },
     "t12": { name: "TEAM 12", desc: "Thông tin đội 12...", logo: "https://placehold.co/120x120/222/FFF?text=T12", country: "[VIETNAM]", players: Array(5).fill({ n: "T12.MEMBER", a: "https://placehold.co/200x250/333/777?text=T12" }) },
