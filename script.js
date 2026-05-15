@@ -186,7 +186,19 @@ const teamsDatabase = {
             { n: "KHÔNG CÓ", a: "https://placehold.co/200x250/111/555?text=TRONG" }
         ]
     },
-    "t8": { name: "TEAM 8", desc: "Thông tin đội 8...", logo: "https://placehold.co/120x120/222/FFF?text=T8", country: "[VIETNAM]", players: Array(5).fill({ n: "T8.MEMBER", a: "https://placehold.co/200x250/333/777?text=T8" }) },
+    "qc": {
+        name: "QC",
+        desc: "QC - Tên đầy đủ là Quyết Chiến Esports. Đội tuyển Free Fire với tinh thần chiến đấu máu lửa, luôn chủ động giao tranh và không ngại va chạm, nổi bật với lối chơi quyết liệt và khả năng ép giao tranh mạnh mẽ tại Survival Legacy Cup SS1!",
+        logo: "logo-qc.jpg",
+        country: "", 
+        players: [
+            { n: "QC.KAME", a: "kame.jpg" },
+            { n: "QC.WIST", a: "wist.jpg" },
+            { n: "QC.TABETA", a: "tabeta.jpg" },
+            { n: "QC.EBOR", a: "ebor.jpg" },
+            { n: "KHÔNG CÓ", a: "https://placehold.co/200x250/111/555?text=TRONG" }
+        ]
+    },
     "t9": { name: "TEAM 9", desc: "Thông tin đội 9...", logo: "https://placehold.co/120x120/222/FFF?text=T9", country: "[VIETNAM]", players: Array(5).fill({ n: "T9.MEMBER", a: "https://placehold.co/200x250/333/777?text=T9" }) },
     "t10": { name: "TEAM 10", desc: "Thông tin đội 10...", logo: "https://placehold.co/120x120/222/FFF?text=T10", country: "[VIETNAM]", players: Array(5).fill({ n: "T10.MEMBER", a: "https://placehold.co/200x250/333/777?text=T10" }) },
     "t11": { name: "TEAM 11", desc: "Thông tin đội 11...", logo: "https://placehold.co/120x120/222/FFF?text=T11", country: "[VIETNAM]", players: Array(5).fill({ n: "T11.MEMBER", a: "https://placehold.co/200x250/333/777?text=T11" }) },
