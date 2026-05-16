@@ -166,11 +166,11 @@ const teamsDatabase = {
         logo: "logo-tlk.jpg",
         country: "", 
         players: [
-            { n: "TLK.NGOCTIEN", a: "ngoctien.jpg" },
-            { n: "TLK.NTT", a: "ntt.jpg" },
-            { n: "TLK.RAM", a: "ram.jpg" },
-            { n: "TLK.DONTCRY", a: "dontcry.jpg" },
-            { n: "TLK.VANTUAN", a: "vantuan.jpg" }
+            { n: "TLK.DONTCRY", a: "dontcry.jpg", r: "RUSHER" },
+            { n: "TLK.NTT", a: "ntt.jpg", r: "SNIPER" },
+            { n: "TLK.RAM", a: "ram.jpg", r: "BOMBER" },
+            { n: "TLK.NGOCTIEN", a: "ngoctien.jpg", r: "SUPPORT" },
+            { n: "TLK.VANTUAN", a: "vantuan.jpg", r: "SUPPORT" }
         ]
     },
     "uch": {
