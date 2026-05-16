@@ -701,3 +701,12 @@ header, .header, .navbar, .top-bar, .top-header, #header {
 .container, .main-container, .wrapper {
     border-top-color: #ff1a1a !important;
 }
+/* ================= VAI TRÒ TUYỂN THỦ XANH LÁ ================= */
+.p-tag {
+    color: #00FF00 !important; /* Màu xanh lá neon cực chiến */
+    font-weight: 800 !important; /* In đậm chữ */
+    display: block !important; /* Ép buộc hiển thị, không cho ẩn */
+    margin-top: 4px !important; /* Cách tên ở trên ra một chút */
+    font-size: 14px !important; /* Kích thước chữ (bạn có thể chỉnh to nhỏ tùy ý) */
+    text-shadow: 1px 1px 3px #000, -1px -1px 3px #000, 0px 0px 5px #00FF00 !important; /* Bo viền đen và tỏa sáng xanh */
+}

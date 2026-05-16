@@ -100,11 +100,11 @@ const teamsDatabase = {
         logo: "logo-uzi.jpg",
         country: "", 
         players: [
-            { n: "UZI.TDUY", a: "t.duy.jpg" },
-            { n: "UZI.HANA", a: "hana.jpg" },
-            { n: "UZI.QTOAN", a: "qtoan.jpg" },
-            { n: "UZI.FOR", a: "for.jpg" },
-            { n: "UZI.VTHIEN", a: "vthien.jpg" }
+            { n: "UZI.QTOAN", a: "qtoan.jpg", r: "RUSHER"},
+            { n: "UZI.TDUY", a: "t.duy.jpg", r: "CHUA BIET" },
+            { n: "UZI.HANA", a: "hana.jpg", r: "SUPPORT" },
+            { n: "UZI.FOR", a: "for.jpg", r: "CHUA BIET" },
+            { n: "UZI.VTHIEN", a: "vthien.jpg", r: "CHUA BIET" }
         ]
     },
     // ĐỘI 2 trở đi... (Lát nữa mình thay sau)
@@ -112,7 +112,7 @@ const teamsDatabase = {
         name: "KINGS FF",
         desc: "KS – Tên đầy đủ là KINGS FF. Đội tuyển Free Fire sở hữu lối chơi bản lĩnh và kỷ luật, luôn giữ thế trận ổn định và sẵn sàng áp đảo đối thủ để khẳng định vị thế “nhà vua” tại Survival Legacy Cup SS1!",
         logo: "logo-ks.jpg",
-        country: "", // Để trống để ẩn cái khung chữ [VIETNAM] đi
+        country: "",
         players: [
             { n: "KS.GREAT", a: "great.jpg" },
             { n: "KS.VPHAT", a: "vphat.jpg" },
@@ -324,7 +324,7 @@ function switchTeam(teamId) {
                 <div class="player-card">
                     <div class="p-info-top">
                         <span class="p-name">${player.n}</span>
-                        ${tagQuocGia}
+                        <span class="p-tag">[${player.r ? player.r : 'THÀNH VIÊN'}]</span>
                     </div>
                     <img class="p-avatar" src="${player.a}" alt="Avatar">
                     <div class="btn-xem-them">XEM THÊM <span class="arrow">▶</span></div>
