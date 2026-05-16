@@ -701,12 +701,28 @@ header, .header, .navbar, .top-bar, .top-header, #header {
 .container, .main-container, .wrapper {
     border-top-color: #ff1a1a !important;
 }
-/* ================= VAI TRÒ TUYỂN THỦ XANH LÁ ================= */
+/* ================= CĂN CHỈNH TÊN (VÀNG) VÀ VAI TRÒ (XANH LÁ) ================= */
+
+/* 1. Ép 2 dòng chữ xếp dọc và xích cả cụm xuống dưới */
+.p-info-top {
+    display: flex !important;
+    flex-direction: column !important; /* Ép tên và vai trò xếp thành cột dọc */
+    align-items: center !important; /* Căn giữa 2 chữ */
+    top: 25px !important; /* Đẩy cụm chữ xích xuống dưới. Bạn có thể tăng lên 30px, 35px nếu muốn nó tụt xuống thấp hơn nữa */
+}
+
+/* 2. Chữ tên màu vàng */
+.p-name {
+    display: block !important;
+    font-size: 14px !important; /* Đảm bảo tên vàng đủ to rõ */
+    margin-bottom: 2px !important; /* Tạo một khe hở nhỏ với chữ xanh lá phía dưới */
+}
+
+/* 3. Chữ vai trò màu xanh lá */
 .p-tag {
-    color: #00FF00 !important; /* Màu xanh lá neon cực chiến */
-    font-weight: 800 !important; /* In đậm chữ */
-    display: block !important; /* Ép buộc hiển thị, không cho ẩn */
-    margin-top: 4px !important; /* Cách tên ở trên ra một chút */
-    font-size: 14px !important; /* Kích thước chữ (bạn có thể chỉnh to nhỏ tùy ý) */
-    text-shadow: 1px 1px 3px #000, -1px -1px 3px #000, 0px 0px 5px #00FF00 !important; /* Bo viền đen và tỏa sáng xanh */
+    color: #00FF00 !important; 
+    font-weight: 800 !important; 
+    display: block !important; 
+    font-size: 10px !important; /* Thu nhỏ chữ xanh lá lại (nhỏ hơn tên vàng) */
+    text-shadow: 1px 1px 2px #000, -1px -1px 2px #000, 0px 0px 4px #00FF00 !important; 
 }
