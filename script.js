@@ -100,11 +100,11 @@ const teamsDatabase = {
         logo: "logo-uzi.jpg",
         country: "", 
         players: [
-            { n: "UZI.QTOAN", a: "qtoan.jpg", r: "RUSHER"},
-            { n: "UZI.TDUY", a: "t.duy.jpg", r: "CHUA BIET" },
-            { n: "UZI.HANA", a: "hana.jpg", r: "SUPPORT" },
+            { n: "UZI.TDUY", a: "t.duy.jpg", r: "RUSHER"},
+            { n: "UZI.KEN", a: "ken.jpg", r: "RIFLER" },
+            { n: "UZI.HANA", a: "hana.jpg", r: "BOMBER" },
             { n: "UZI.FOR", a: "for.jpg", r: "SNIPPER" },
-            { n: "UZI.VTHIEN", a: "vthien.jpg", r: "CHUA BIET" }
+            { n: "UZI.BIN", a: "bin.jpg", r: "SUPPORT" }
         ]
     },
     // ĐỘI 2 trở đi... (Lát nữa mình thay sau)
