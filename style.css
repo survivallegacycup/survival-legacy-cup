@@ -329,11 +329,11 @@ body {
 /* ================= 2. CANH CHỮ THẲNG TẮP GÓC PHẢI ================= */
 .p-info-top {
     position: absolute !important;
-    top: 50px !important;    /* Hạ thấp xuống 50px để nhường chỗ cho logo Free Fire Max */
-    right: 10px !important;  /* Nép sát lề phải */
+    top: 15px !important;    /* 🚨 Sửa số 50px thành 15px để kéo tuốt cụm chữ lên góc trên cùng */
+    right: 10px !important;  /* Giữ nguyên: Nép sát lề phải */
     display: flex !important;
     flex-direction: column !important;
-    align-items: flex-end !important; /* 🚨 LỆNH QUAN TRỌNG: Ép cả tên và role phải thẳng tắp theo lề phải */
+    align-items: flex-end !important; /* Ép chữ thẳng hàng góc phải */
     z-index: 10 !important;
 }
 
