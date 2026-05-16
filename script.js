@@ -94,17 +94,17 @@ function dongThongSo() {
 /* ================= PHẦN 2: HỆ THỐNG ĐỘI TUYỂN ================= */
 const teamsDatabase = {
     // ĐỘI 1: UNICORN (Đã ẩn chữ Việt Nam và thay đổi thành viên)
-    "unc": {
-        name: "UNC",
-        desc: "UNC – Tên đầy đủ là UNICORN. Đội tuyển Free Fire mang phong cách đột phá và khó lường, nổi bật với lối chơi linh hoạt, sáng tạo cùng khả năng bùng nổ trong những thời khắc quyết định tại Survival Legacy Cup SS1!",
-        logo: "logo-unc.jpg",
+    "uzi": {
+        name: "UZI",
+        desc: "UZI - Tên đầy đủ là UZI LEGENDS. Đội tuyển Free Fire mang hình tượng “song UZI khai hỏa”, tốc độ xả đạn nghẹt thở, dồn ép liên tục khiến đối thủ không kịp thở, vào giao tranh là quét sạch đội hình đối thủ trong tích tắc, thể hiện đẳng cấp “bắn nhanh – thắng nhanh” tại Survival Legacy Cup SS1!",
+        logo: "logo-uzi.jpg",
         country: "", 
         players: [
-            { n: "UNC.LEVI", a: "levi.jpg" },
-            { n: "UNC.QTOAN", a: "qtoan.jpg" },
-            { n: "UNC.VTHIEN", a: "vthien.jpg" },
-            { n: "UNC.NHIM", a: "nhim.jpg" },
-            { n: "UNC.FOR", a: "for.jpg" }
+            { n: "UZI.TDUY", a: "t.duy.jpg" },
+            { n: "UZI.HANA", a: "hana.jpg" },
+            { n: "UZI.QTOAN", a: "qtoan.jpg" },
+            { n: "UZI.FOR", a: "for.jpg" },
+            { n: "UZI.VTHIEN", a: "vthien.jpg" }
         ]
     },
     // ĐỘI 2 trở đi... (Lát nữa mình thay sau)
