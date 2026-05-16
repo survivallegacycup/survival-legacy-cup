@@ -735,3 +735,16 @@ header, .header, .navbar, .top-bar, .top-header, #header {
     /* Tớ bỏ overflow: hidden đi để không bị cắt lẹm mất góc thẻ của bạn nữa */
 }
 
+/* ================= LOGO TRÊN THANH MENU ================= */
+.navbar .logo {
+    display: flex !important;
+    align-items: center !important; /* Canh giữa logo và chữ theo chiều dọc */
+    gap: 10px !important; /* Khoảng cách giữa ảnh logo và chữ UZI LEGENDS */
+}
+
+.navbar .logo img {
+    height: 35px !important; /* Chiều cao logo (Nhung có thể tăng giảm cho vừa mắt, tầm 30px-40px là đẹp) */
+    width: auto !important;
+    border-radius: 4px !important; /* Bo cong 4 góc logo một tí xíu cho sang trọng */
+    object-fit: contain !important;
+}
