@@ -153,10 +153,10 @@ const teamsDatabase = {
         logo: "logo-wb.jpg", /* Nhớ gõ đúng tên file ảnh bạn vừa lưu ở Bước 1 */
         country: "", 
         players: [
-            { n: "WB.BOI", a: "boi.jpg" },
-            { n: "WB.DMK", a: "dmk.jpg" },
-            { n: "WB.VY", a: "vy.jpg" },
-            { n: "WB.PIN", a: "pin.jpg" },
+            { n: "WB.K9", a: "k9.jpg", r: "RUSHER" },
+            { n: "WB.BOI", a: "boi.jpg", r: "BOMBER" },
+            { n: "WB.DMK", a: "dmk.jpg", r: "SNIPER" },
+            { n: "WB.PEPIN", a: "pin.jpg", r: "SUPPORT" },
             { n: "KHÔNG CÓ", a: "https://placehold.co/200x250/111/555?text=TRONG" }
         ]
     },
@@ -167,8 +167,8 @@ const teamsDatabase = {
         country: "", 
         players: [
             { n: "TLK.DONTCRY", a: "dontcry.jpg", r: "RUSHER" },
-            { n: "TLK.NTT", a: "ntt.jpg", r: "SNIPER" },
             { n: "TLK.RAM", a: "ram.jpg", r: "BOMBER" },
+            { n: "TLK.NTT", a: "ntt.jpg", r: "SNIPER" },
             { n: "TLK.NGOCTIEN", a: "ngoctien.jpg", r: "SUPPORT" },
             { n: "TLK.VANTUAN", a: "vantuan.jpg", r: "SUPPORT" }
         ]
@@ -180,9 +180,9 @@ const teamsDatabase = {
         country: "", 
         players: [
             { n: "UCH.HKIET", a: "hkiet.jpg", r: "RUSHER"},
-            { n: "UCH.TDUY", a: "tduy.jpg", r: "SUPPORT" },
+            { n: "UCH.TDUY", a: "tduy.jpg", r: "BOMBER" },
             { n: "UCH.TKIEN", a: "tkien.jpg", r: "SNIPER"},
-            { n: "UCH.XBAO", a: "xbao.jpg", r: "BOMBER" },
+            { n: "UCH.XBAO", a: "xbao.jpg", r: "SUPPORT" },
             { n: "KHÔNG CÓ", a: "https://placehold.co/200x250/111/555?text=TRONG" }
         ]
     },
@@ -244,10 +244,10 @@ const teamsDatabase = {
         logo: "logo-nnn.jpg",
         country: "", 
         players: [
-            { n: "NNN.BMINH", a: "bminh.jpg" },
-            { n: "NNN.NHATTIEN", a: "nhattien.jpg" },
-            { n: "NNN.VANTAI", a: "vantai.jpg" },
-            { n: "NNN.DINH", a: "dinh.jpg" },
+            { n: "NNN.DINH", a: "dinh.jpg", r: "RUSHER" },
+            { n: "NNN.VANTAI", a: "vantai.jpg", r: "RUSHER" },
+            { n: "NNN.NHATTIEN", a: "nhattien.jpg", r: "SNIPER" },
+            { n: "NNN.BMINH", a: "bminh.jpg", r: "SUPPORT" },
             { n: "KHÔNG CÓ", a: "https://placehold.co/200x250/111/555?text=TRONG" }
         ]
     },
@@ -270,10 +270,10 @@ const teamsDatabase = {
         logo: "logo-tq.jpg",
         country: "", 
         players: [
-            { n: "TQ.FAKE", a: "fake.jpg", r: "CHUA BIET" },
-            { n: "TQ.SYHA", a: "syha.jpg", r: "CHUA BIET" },
-            { n: "TQ.MOICHOI", a: "moichoi.jpg", r: "CHUA BIET" },
-            { n: "TQ.VKHANG", a: "vkhang.jpg", r: "CHUA BIET" },
+            { n: "TQ.VKHANG", a: "vkhang.jpg", r: "RUSHER" },
+            { n: "TQ.SYHA", a: "syha.jpg", r: "RIFLER" },
+            { n: "TQ.FAKE", a: "fake.jpg", r: "SNIPER" },
+            { n: "TQ.MOICHOI", a: "moichoi.jpg", r: "SUPPORT" },
             { n: "KHÔNG CÓ", a: "https://placehold.co/200x250/111/555?text=TRONG"}
         ]
     },
