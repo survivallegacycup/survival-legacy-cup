@@ -701,28 +701,31 @@ header, .header, .navbar, .top-bar, .top-header, #header {
 .container, .main-container, .wrapper {
     border-top-color: #ff1a1a !important;
 }
-/* ================= CĂN CHỈNH TÊN (VÀNG) VÀ VAI TRÒ (XANH LÁ) ================= */
+/* ================= DI CHUYỂN TÊN VÀ ROLE QUA GÓC PHẢI ================= */
 
-/* 1. Ép 2 dòng chữ xếp dọc và xích cả cụm xuống dưới */
 .p-info-top {
     display: flex !important;
-    flex-direction: column !important; /* Ép tên và vai trò xếp thành cột dọc */
-    align-items: center !important; /* Căn giữa 2 chữ */
-    top: 25px !important; /* Đẩy cụm chữ xích xuống dưới. Bạn có thể tăng lên 30px, 35px nếu muốn nó tụt xuống thấp hơn nữa */
+    flex-direction: column !important; /* Ép tên và role xếp thành hàng dọc */
+    align-items: flex-end !important;  /* Đẩy các dòng chữ canh sát về lề phải */
+    text-align: right !important;     /* Căn chữ thẳng hàng bên phải */
+    position: absolute !important;
+    top: 12px !important;             /* Khoảng cách từ mép trên thẻ xuống (Nhung có thể tăng giảm tùy thích) */
+    right: 15px !important;           /* Đẩy sát cụm chữ qua góc bên phải */
+    left: auto !important;            /* Gỡ bỏ căn lề trái cũ để tránh bị kéo dãn */
 }
 
-/* 2. Chữ tên màu vàng */
+/* Tên ingame màu vàng */
 .p-name {
     display: block !important;
-    font-size: 14px !important; /* Đảm bảo tên vàng đủ to rõ */
-    margin-bottom: 2px !important; /* Tạo một khe hở nhỏ với chữ xanh lá phía dưới */
+    font-size: 13px !important;       /* Kích thước chữ tên vừa vặn */
+    margin-bottom: 2px !important;
 }
 
-/* 3. Chữ vai trò màu xanh lá */
+/* Vai trò màu xanh lá nhỏ gọn nằm ngay phía dưới tên */
 .p-tag {
     color: #00FF00 !important; 
     font-weight: 800 !important; 
     display: block !important; 
-    font-size: 10px !important; /* Thu nhỏ chữ xanh lá lại (nhỏ hơn tên vàng) */
+    font-size: 10px !important;       /* Giữ chữ role nhỏ nhắn hơn tên vàng */
     text-shadow: 1px 1px 2px #000, -1px -1px 2px #000, 0px 0px 4px #00FF00 !important; 
 }
