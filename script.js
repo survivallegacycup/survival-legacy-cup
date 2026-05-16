@@ -127,11 +127,11 @@ const teamsDatabase = {
         logo: "logo-mao.jpg",
         country: "", 
         players: [
-            { n: "MAO.ĐBIN", a: "đbin.jpg" },
-            { n: "MAO.QVINH", a: "qvinh.jpg" },
-            { n: "MAO.BAUUJU?", a: "bauju.jpg" },
-            { n: "MAO.NTRI", a: "ntri.jpg" },
-            { n: "MAO.SUN", a: "sun.jpg" }
+            { n: "MAO.ĐBIN", a: "đbin.jpg", r: "RUSHER"},
+            { n: "MAO.NTRI", a: "ntri.jpg", r: "BOMBER"},
+            { n: "MAO.QVINH", a: "qvinh.jpg", r: "SNIPER"},
+            { n: "MAO.BAUUJU?", a: "bauju.jpg", r: "SUPPORT"},
+            { n: "MAO.SUN", a: "sun.jpg", r: "SUPPORT"}
         ]
     },
     "ft": {
