@@ -315,35 +315,47 @@ body {
     clip-path: polygon(0 0, 100% 0, 0 100%);
 }
 
+/* ================= 1. TRẢ LẠI ẢNH FULL THẺ GAME NHƯ CŨ ================= */
+.p-avatar {
+    width: 100% !important;
+    height: 100% !important; 
+    min-height: 280px !important; /* Kéo giãn ảnh ra cho bằng với hồ sơ game gốc */
+    object-fit: cover !important; /* Lấp đầy toàn bộ khung mà không bị méo */
+    object-position: center top !important; /* Ưu tiên hiển thị phần nóc ảnh (chỗ có logo) */
+    display: block !important;
+    margin: 0 !important;
+}
+
+/* ================= 2. CANH CHỮ THẲNG TẮP GÓC PHẢI ================= */
 .p-info-top {
     position: absolute !important;
-    top: 15px !important;    /* Nằm sát mép trên thẻ */
-    right: 15px !important;  /* Nằm sát mép phải thẻ */
+    top: 50px !important;    /* Hạ thấp xuống 50px để nhường chỗ cho logo Free Fire Max */
+    right: 10px !important;  /* Nép sát lề phải */
     display: flex !important;
     flex-direction: column !important;
-    align-items: flex-end !important;
+    align-items: flex-end !important; /* 🚨 LỆNH QUAN TRỌNG: Ép cả tên và role phải thẳng tắp theo lề phải */
     z-index: 10 !important;
 }
 
+/* Chữ Tên Vàng */
 .p-name { 
-    color: #ffaa00 !important; /* Chữ vàng cam */
-    font-size: 14px !important; 
+    color: #ffaa00 !important;
+    font-size: 15px !important; 
     font-weight: bold !important; 
     text-transform: uppercase !important; 
-    margin-bottom: 2px !important;
-    text-shadow: 1px 1px 3px #000 !important; /* Viền đen chống chìm chữ */
+    margin-bottom: 3px !important; /* Khoảng cách nhỏ giữa tên và role */
+    text-shadow: 2px 2px 4px #000, -1px -1px 2px #000 !important; /* Viền đen dày để chữ nổi bần bật */
+    line-height: 1 !important;
 }
 
+/* Chữ Role Xanh Lá (Nằm ngay dưới Tên) */
 .p-tag { 
-    color: #00FF00 !important; /* Chữ Role xanh lá */
-    font-size: 11px !important; 
+    color: #00FF00 !important; 
+    font-size: 12px !important; 
     font-weight: 800 !important; 
     text-shadow: 1px 1px 2px #000, -1px -1px 2px #000, 0px 0px 4px #00FF00 !important;
-}
-.p-avatar {
-    width: 100%; height: 220px; object-fit: contain; object-position: bottom;
-    margin-top: -30px; /* Kéo ảnh lùi lên đè vào tên một chút cho ngầu */
-    z-index: 1;
+    line-height: 1 !important;
+    margin: 0 !important;
 }
 
 /* ================= TÌM VÀ SỬA ĐOẠN NÀY TRONG STYLE.CSS ================= */
@@ -722,34 +734,3 @@ header, .header, .navbar, .top-bar, .top-header, #header {
     /* Tớ bỏ overflow: hidden đi để không bị cắt lẹm mất góc thẻ của bạn nữa */
 }
 
-/* ================= 2. ÉP CHỮ VÀO GÓC PHẢI (NÉ LOGO GAME RA) ================= */
-.p-info-top {
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: flex-end !important;
-    text-align: right !important;
-    
-    position: absolute !important; 
-    top: 60px !important;    /* 🚨 CHÌA KHÓA ĐÂY: Hạ thấp xuống 60px để không đè mất chữ FREE FIRE MAX */
-    right: 15px !important;  /* Nép sát vào lề phải */
-    left: auto !important;
-    z-index: 10 !important;  
-    width: auto !important;
-}
-
-/* Tên màu vàng */
-.p-name {
-    display: block !important;
-    font-size: 14px !important; /* Chữ vàng to rõ */
-    margin-bottom: 2px !important;
-    text-shadow: 1px 1px 3px #000 !important; /* Thêm tí viền đen để chữ nổi bật trên mọi phông nền */
-}
-
-/* Vai trò màu xanh lá */
-.p-tag {
-    color: #00FF00 !important; 
-    font-weight: 800 !important; 
-    display: block !important; 
-    font-size: 11px !important; /* Nhỏ hơn chữ vàng một xíu */
-    text-shadow: 1px 1px 2px #000, -1px -1px 2px #000, 0px 0px 4px #00FF00 !important; 
-}
