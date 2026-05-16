@@ -729,3 +729,41 @@ header, .header, .navbar, .top-bar, .top-header, #header {
     font-size: 10px !important;       /* Giữ chữ role nhỏ nhắn hơn tên vàng */
     text-shadow: 1px 1px 2px #000, -1px -1px 2px #000, 0px 0px 4px #00FF00 !important; 
 }
+/* ================= 1. GÓC TỌA ĐỘ CHO THẺ GAME (BẮT BUỘC) ================= */
+.player-card {
+    position: relative !important; /* ĐÂY LÀ SỢI DÂY TRÓI: Ép chữ phải nằm gọn bên trong thẻ, không được bay ra ngoài */
+    overflow: hidden !important;   /* Cắt gọt mép thẻ cho vuông vức */
+}
+
+/* ================= 2. ÉP CHỮ VÀO GÓC PHẢI TRÊN CÙNG ================= */
+.p-info-top {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-end !important;
+    text-align: right !important;
+    
+    position: absolute !important; 
+    top: 10px !important;    /* Cách nóc thẻ game đúng 10px */
+    right: 15px !important;  /* Cách mép phải thẻ game đúng 15px */
+    left: auto !important;
+    z-index: 10 !important;  /* Nổi lên trên cùng, không bị ảnh đè lên */
+    width: auto !important;
+}
+
+/* Tên màu vàng */
+.p-name {
+    display: block !important;
+    font-size: 13px !important;
+    margin-bottom: 2px !important;
+    line-height: 1.2 !important;
+}
+
+/* Vai trò màu xanh lá */
+.p-tag {
+    color: #00FF00 !important; 
+    font-weight: 800 !important; 
+    display: block !important; 
+    font-size: 10px !important;
+    line-height: 1.2 !important;
+    text-shadow: 1px 1px 2px #000, -1px -1px 2px #000, 0px 0px 4px #00FF00 !important; 
+}

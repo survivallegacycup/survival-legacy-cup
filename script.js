@@ -384,3 +384,7 @@ function chuyenTran(huong) {
     // Lệnh cho nó mở bảng thông số của trận vừa chuyển
     moThongSo(tranHienTai);
 }
+// Tự động kích hoạt hiển thị đội UZI ngay khi vừa mở trang
+window.onload = function() {
+    switchTeam('uzi');
+};
