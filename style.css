@@ -326,17 +326,18 @@ body {
     margin: 0 !important;
 }
 
-/* ================= 2. CANH CHỮ THẲNG TẮP GÓC PHẢI ================= */
+/* ================= CANH SÁT RỊT GÓC PHẢI TRÊN CÙNG ================= */
 .p-info-top {
     position: absolute !important;
-    top: 15px !important;    /* 🚨 Sửa số 50px thành 15px để kéo tuốt cụm chữ lên góc trên cùng */
-    right: 10px !important;  /* Giữ nguyên: Nép sát lề phải */
+    top: 5px !important;       /* 🚨 Ép sát lên đụng nóc thẻ */
+    right: 5px !important;     /* 🚨 Ép sát rịt vào khung viền bên phải */
+    margin: 0 !important;      /* Quét sạch lề thừa đang đẩy chữ ra ngoài */
+    padding: 0 !important;     /* Quét sạch đệm thừa */
     display: flex !important;
     flex-direction: column !important;
-    align-items: flex-end !important; /* Ép chữ thẳng hàng góc phải */
-    z-index: 10 !important;
+    align-items: flex-end !important;
+    z-index: 999 !important;   /* Nổi lên trên cùng mọi thứ */
 }
-
 /* Chữ Tên Vàng */
 .p-name { 
     color: #ffaa00 !important;
