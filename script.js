@@ -103,7 +103,7 @@ const teamsDatabase = {
             { n: "UZI.QTOAN", a: "qtoan.jpg", r: "RUSHER"},
             { n: "UZI.TDUY", a: "t.duy.jpg", r: "CHUA BIET" },
             { n: "UZI.HANA", a: "hana.jpg", r: "SUPPORT" },
-            { n: "UZI.FOR", a: "for.jpg", r: "CHUA BIET" },
+            { n: "UZI.FOR", a: "for.jpg", r: "SNIPPER" },
             { n: "UZI.VTHIEN", a: "vthien.jpg", r: "CHUA BIET" }
         ]
     },
