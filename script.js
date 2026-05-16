@@ -179,10 +179,10 @@ const teamsDatabase = {
         logo: "logo-uch.jpg",
         country: "", 
         players: [
-            { n: "UCH.TDUY", a: "tduy.jpg" },
-            { n: "UCH.HKIET", a: "hkiet.jpg" },
-            { n: "UCH.TKIEN", a: "tkien.jpg" },
-            { n: "UCH.THE", a: "the.jpg" },
+            { n: "UCH.HKIET", a: "hkiet.jpg", r: "RUSHER"},
+            { n: "UCH.TDUY", a: "tduy.jpg", r: "SUPPORT" },
+            { n: "UCH.TKIEN", a: "tkien.jpg", r: "SNIPER"},
+            { n: "UCH.XBAO", a: "xbao.jpg", r: "BOMBER" },
             { n: "KHÔNG CÓ", a: "https://placehold.co/200x250/111/555?text=TRONG" }
         ]
     },
