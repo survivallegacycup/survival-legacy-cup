@@ -205,10 +205,10 @@ const teamsDatabase = {
         logo: "logo-vtp.jpg",
         country: "", 
         players: [
-            { n: "VTP.ATUAN", a: "atuan.jpg" },
-            { n: "VTP.MCHIEN", a: "mchien.jpg" },
-            { n: "VTP.MINHYUE", a: "minhyue.jpg" },
-            { n: "VTP.BUNCHA", a: "buncha.jpg" },
+            { n: "VTP.ATUAN", a: "atuan.jpg", r: "RUSHER" },
+            { n: "VTP.MCHIEN", a: "mchien.jpg", r: "SUPPORT" },
+            { n: "VTP.MINHYUE", a: "minhyue.jpg", r: "SNIPER" },
+            { n: "VTP.BUNCHA", a: "buncha.jpg", r: "BOMBER" },
             { n: "KHÔNG CÓ", a: "https://placehold.co/200x250/111/555?text=TRONG" }
         ]
     },
@@ -231,10 +231,10 @@ const teamsDatabase = {
         logo: "logo-bnn1.jpg",
         country: "", 
         players: [
-            { n: "BNN1.HGIA", a: "hgia.jpg" },
-            { n: "BNN1.TCONG", a: "tcong.jpg" },
-            { n: "BNN1.VTAI", a: "vtai.jpg" },
-            { n: "BNN1.VLAP", a: "vlap.jpg" },
+            { n: "BNN1.HGIA", a: "hgia.jpg", r: "RUSHER" },
+            { n: "BNN1.TCONG", a: "tcong.jpg", r: "BOMBER" },
+            { n: "BNN1.VTAI", a: "vtai.jpg", r: "SUPPORT" },
+            { n: "BNN1.VLAP", a: "vlap.jpg", r: "SNIPER" },
             { n: "KHÔNG CÓ", a: "https://placehold.co/200x250/111/555?text=TRONG" }
         ]
     },
@@ -264,7 +264,19 @@ const teamsDatabase = {
             { n: "KHÔNG CÓ", a: "https://placehold.co/200x250/111/555?text=TRONG" }
         ]
     },
-    "t14": { name: "TEAM 14", desc: "Thông tin đội 14...", logo: "https://placehold.co/120x120/222/FFF?text=T14", country: "[VIETNAM]", players: Array(5).fill({ n: "T14.MEMBER", a: "https://placehold.co/200x250/333/777?text=T14" }) },
+    "tq": {
+        name: "TQ",
+        desc: "TQ - Tên đầy đủ là TQ Esports. Đội tuyển Free Fire mang phong cách “im lặng nhưng kết liễu”, không ồn ào nhưng mỗi lần xuất hiện là một lần quét sạch, ra đòn ít nhưng chuẩn và cực kỳ chí mạng tại Survival Legacy Cup SS1.!",
+        logo: "logo-tq.jpg",
+        country: "", 
+        players: [
+            { n: "TQ.FAKE", a: "fake.jpg", r: "CHUA BIET" },
+            { n: "TQ.SYHA", a: "syha.jpg", r: "CHUA BIET" },
+            { n: "TQ.MOICHOI", a: "moichoi.jpg", r: "CHUA BIET" },
+            { n: "TQ.VKHANG", a: "vkhang.jpg", r: "CHUA BIET" },
+            { n: "KHÔNG CÓ", a: "https://placehold.co/200x250/111/555?text=TRONG"}
+        ]
+    },
     "t15": { name: "TEAM 15", desc: "Thông tin đội 15...", logo: "https://placehold.co/120x120/222/FFF?text=T15", country: "[VIETNAM]", players: Array(5).fill({ n: "T15.MEMBER", a: "https://placehold.co/200x250/333/777?text=T15" }) },
     "t16": { name: "TEAM 16", desc: "Thông tin đội 16...", logo: "https://placehold.co/120x120/222/FFF?text=T16", country: "[VIETNAM]", players: Array(5).fill({ n: "T16.MEMBER", a: "https://placehold.co/200x250/333/777?text=T16" }) },
     "t17": { name: "TEAM 17", desc: "Thông tin đội 17...", logo: "https://placehold.co/120x120/222/FFF?text=T17", country: "[VIETNAM]", players: Array(5).fill({ n: "T17.MEMBER", a: "https://placehold.co/200x250/333/777?text=T17" }) },
