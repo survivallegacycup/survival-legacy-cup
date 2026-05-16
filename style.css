@@ -326,17 +326,17 @@ body {
     margin: 0 !important;
 }
 
-/* ================= CANH SÁT RỊT GÓC PHẢI TRÊN CÙNG ================= */
+/* ================= CANH SÁT LỀ PHẢI & LÙI XUỐNG NÉ CHỮ CÓ SẴN ================= */
 .p-info-top {
     position: absolute !important;
-    top: 5px !important;       /* 🚨 Ép sát lên đụng nóc thẻ */
-    right: 5px !important;     /* 🚨 Ép sát rịt vào khung viền bên phải */
-    margin: 0 !important;      /* Quét sạch lề thừa đang đẩy chữ ra ngoài */
-    padding: 0 !important;     /* Quét sạch đệm thừa */
+    top: 25px !important;      /* 🚨 Chìa khóa đây: Tăng lên 25px để cả cụm chữ tụt xuống 1 dòng */
+    right: 5px !important;     /* Vẫn ép sát rịt vào khung viền bên phải */
+    margin: 0 !important;      
+    padding: 0 !important;     
     display: flex !important;
     flex-direction: column !important;
     align-items: flex-end !important;
-    z-index: 999 !important;   /* Nổi lên trên cùng mọi thứ */
+    z-index: 999 !important;   
 }
 /* Chữ Tên Vàng */
 .p-name { 
