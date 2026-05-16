@@ -251,7 +251,19 @@ const teamsDatabase = {
             { n: "KHÔNG CÓ", a: "https://placehold.co/200x250/111/555?text=TRONG" }
         ]
     },
-    "t13": { name: "TEAM 13", desc: "Thông tin đội 13...", logo: "https://placehold.co/120x120/222/FFF?text=T13", country: "[VIETNAM]", players: Array(5).fill({ n: "T13.MEMBER", a: "https://placehold.co/200x250/333/777?text=T13" }) },
+    "t2al": {
+        name: "T2AL",
+        desc: "T2AL- Tên đầy đủ là T2AL Esports. Đội tuyển Free Fire mang biểu tượng “số 2 bứt phá”, luôn âm thầm tích lũy sức mạnh trước khi tăng tốc mạnh mẽ, sẵn sàng vượt lên và chiếm lĩnh vị trí dẫn đầu tại Survival Legacy Cup SS1!",
+        logo: "logo-t2al.jpg",
+        country: "", 
+        players: [
+            { n: "T2AL.KTUAN", a: "ktuan.jpg" },
+            { n: "T2AL.LHTUAN", a: "lhtuan.jpg" },
+            { n: "T2AL.XUANLOC", a: "xuanloc.jpg" },
+            { n: "T2AL.MINHANN", a: "minhan.jpg" },
+            { n: "KHÔNG CÓ", a: "https://placehold.co/200x250/111/555?text=TRONG" }
+        ]
+    },
     "t14": { name: "TEAM 14", desc: "Thông tin đội 14...", logo: "https://placehold.co/120x120/222/FFF?text=T14", country: "[VIETNAM]", players: Array(5).fill({ n: "T14.MEMBER", a: "https://placehold.co/200x250/333/777?text=T14" }) },
     "t15": { name: "TEAM 15", desc: "Thông tin đội 15...", logo: "https://placehold.co/120x120/222/FFF?text=T15", country: "[VIETNAM]", players: Array(5).fill({ n: "T15.MEMBER", a: "https://placehold.co/200x250/333/777?text=T15" }) },
     "t16": { name: "TEAM 16", desc: "Thông tin đội 16...", logo: "https://placehold.co/120x120/222/FFF?text=T16", country: "[VIETNAM]", players: Array(5).fill({ n: "T16.MEMBER", a: "https://placehold.co/200x250/333/777?text=T16" }) },
