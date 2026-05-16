@@ -316,12 +316,30 @@ body {
 }
 
 .p-info-top {
-    width: 100%; display: flex; flex-direction: column; align-items: flex-end;
-    padding: 15px 20px 0 0; z-index: 2;
+    position: absolute !important;
+    top: 15px !important;    /* Nằm sát mép trên thẻ */
+    right: 15px !important;  /* Nằm sát mép phải thẻ */
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-end !important;
+    z-index: 10 !important;
 }
-.p-name { color: #fff; font-size: 15px; font-weight: bold; text-transform: uppercase; }
-.p-tag { color: #888; font-size: 11px; margin-top: 3px; border: 1px solid #555; padding: 2px 5px; border-radius: 3px;}
 
+.p-name { 
+    color: #ffaa00 !important; /* Chữ vàng cam */
+    font-size: 14px !important; 
+    font-weight: bold !important; 
+    text-transform: uppercase !important; 
+    margin-bottom: 2px !important;
+    text-shadow: 1px 1px 3px #000 !important; /* Viền đen chống chìm chữ */
+}
+
+.p-tag { 
+    color: #00FF00 !important; /* Chữ Role xanh lá */
+    font-size: 11px !important; 
+    font-weight: 800 !important; 
+    text-shadow: 1px 1px 2px #000, -1px -1px 2px #000, 0px 0px 4px #00FF00 !important;
+}
 .p-avatar {
     width: 100%; height: 220px; object-fit: contain; object-position: bottom;
     margin-top: -30px; /* Kéo ảnh lùi lên đè vào tên một chút cho ngầu */
@@ -661,14 +679,6 @@ div#data-bang-diem {
     color: #ffaa00 !important;
     text-shadow: 1px 1px 2px #000, -1px -1px 2px #000, 1px -1px 2px #000, -1px 1px 2px #000 !important; /* Viền mỏng lại cho đỡ thô */
 }
-
-/* 2. Phép thuật chống bóp méo ảnh và xích góc nhìn cho đẹp */
-.player-card .p-avatar {
-    width: 100% !important;
-    height: 100% !important;
-    object-fit: cover !important; /* Tự động phóng to lấp đầy khung mà KHÔNG BỊ MÉO */
-    object-position: center top !important; /* Tập trung ống kính vào góc trên cùng giữa (Chỗ có Avatar & Tên) */
-}
 /* ================= PHA TRỘN: MENU DỌC BÊN TRÁI MÀU ĐỎ ================= */
 
 /* 1. Ép viền của các mục đang chọn ở Menu Trái thành màu Đỏ */
@@ -700,34 +710,6 @@ header, .header, .navbar, .top-bar, .top-header, #header {
 /* Phòng hờ trường hợp viền đó nằm ở khung container bên dưới */
 .container, .main-container, .wrapper {
     border-top-color: #ff1a1a !important;
-}
-/* ================= DI CHUYỂN TÊN VÀ ROLE QUA GÓC PHẢI ================= */
-
-.p-info-top {
-    display: flex !important;
-    flex-direction: column !important; /* Ép tên và role xếp thành hàng dọc */
-    align-items: flex-end !important;  /* Đẩy các dòng chữ canh sát về lề phải */
-    text-align: right !important;     /* Căn chữ thẳng hàng bên phải */
-    position: absolute !important;
-    top: 12px !important;             /* Khoảng cách từ mép trên thẻ xuống (Nhung có thể tăng giảm tùy thích) */
-    right: 15px !important;           /* Đẩy sát cụm chữ qua góc bên phải */
-    left: auto !important;            /* Gỡ bỏ căn lề trái cũ để tránh bị kéo dãn */
-}
-
-/* Tên ingame màu vàng */
-.p-name {
-    display: block !important;
-    font-size: 13px !important;       /* Kích thước chữ tên vừa vặn */
-    margin-bottom: 2px !important;
-}
-
-/* Vai trò màu xanh lá nhỏ gọn nằm ngay phía dưới tên */
-.p-tag {
-    color: #00FF00 !important; 
-    font-weight: 800 !important; 
-    display: block !important; 
-    font-size: 10px !important;       /* Giữ chữ role nhỏ nhắn hơn tên vàng */
-    text-shadow: 1px 1px 2px #000, -1px -1px 2px #000, 0px 0px 4px #00FF00 !important; 
 }
 /* ================= 1. GÓC TỌA ĐỘ CHO THẺ GAME (BẮT BUỘC) ================= */
 .player-card {
