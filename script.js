@@ -240,17 +240,17 @@ const teamsDatabase = {
             { n: "KHÔNG CÓ", a: "https://placehold.co/200x250/111/555?text=TRONG" }
         ]
     },
-    "vtp": {
-        name: "VTP",
-        desc: "VTP - Tên đầy đủ là VTP Esports. Đội tuyển Free Fire thi đấu đầy toan tính, nổi bật với khả năng đọc tình huống tốt và tận dụng thời cơ cực kỳ hiệu quả, luôn biết cách vươn lên đúng lúc tại Survival Legacy Cup SS1!",
-        logo: "logo-vtp.jpg",
+    "kg": {
+        name: "KG",
+        desc: "KG – Tên đầy đủ là KG Esports. Đội tuyển Free Fire thi đấu đầy bản lĩnh và kỷ luật, nổi bật với lối chơi chắc chắn, kiểm soát trận đấu tốt và khả năng phối hợp team cực kỳ ăn ý. Không chỉ mạnh ở kỹ năng cá nhân, họ còn sở hữu tư duy chiến thuật sắc bén, sẵn sàng bứt phá và làm chủ cuộc chơi ở những thời khắc quyết định tại Survival Legacy Cup SS1!",
+        logo: "logo-kg.jpg",
         country: "", 
         players: [
-            { n: "VTP.ATUAN", a: "atuan.jpg", r: "RUSHER" },
-            { n: "VTP.MCHIEN", a: "mchien.jpg", r: "SUPPORT" },
-            { n: "VTP.MINHYUE", a: "minhyue.jpg", r: "SNIPER" },
-            { n: "VTP.BUNCHA", a: "buncha.jpg", r: "BOMBER" },
-            { n: "KHÔNG CÓ", a: "https://placehold.co/200x250/111/555?text=TRONG" }
+            { n: "KG.TANPHAT", a: "tanphat.jpg", r: "RUSHER" },
+            { n: "KG.QUAN", a: "quan.jpg", r: "RUSHER" },
+            { n: "KG.THINH", a: "thinh.jpg", r: "SNIPER" },
+            { n: "KG.HIEUDUC", a: "hieuduc.jpg", r: "SUPPORT" },
+            { n: "KHÔNG CÓ", a: "https://placehold.co/200x250/111/555?text=TRONG", r: "TRONG" }
         ]
     },
     "nna": {
