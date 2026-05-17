@@ -14,6 +14,39 @@ async function moThongSo(soTran) {
     tranHienTai = soTran; // Cập nhật lại số trận hiện tại
     let tenTranEl = document.getElementById('ten-tran-dau');
     if (tenTranEl) tenTranEl.innerText = "TRẬN " + soTran; // Đổi chữ cứng thành số động
+    // =========================================================
+    // HỆ THỐNG ĐIỀU KHIỂN: THỜI GIAN & ĐỘI BOOYAH TỪNG TRẬN
+    // =========================================================
+
+    // 1. Tự động đổi Giờ thi đấu (Cách nhau 30p)
+    let timeEl = document.querySelector('.info-box.time-box .time');
+    if (timeEl) {
+        const gioThiDau = { 1: "19:00", 2: "19:30", 3: "20:00", 4: "20:30", 5: "21:00", 6: "21:30" };
+        timeEl.innerText = gioThiDau[soTran] || "19:00";
+    }
+
+    // 2. Cập nhật Đội Booyah (Giải chưa đá nên tớ cài sẵn là ???)
+    let booyahLogo = document.querySelector('.info-box.booyah-box img');
+    let booyahName = document.querySelector('.info-box.booyah-box .winner-name');
+    
+    /* 💡 HƯỚNG DẪN SAU NÀY: 
+       Khi trận đấu kết thúc, bạn chỉ cần mở file script.js này ra, 
+       sửa "???" thành tên đội (ví dụ: "UZI"), và thay cái link ảnh thành tên file logo (ví dụ: "logo-uzi.jpg") là web tự update nhé! */
+       
+    const doiChienThang = {
+        1: { ten: "???", logo: "https://placehold.co/80x80/222/FFF?text=?" },
+        2: { ten: "???", logo: "https://placehold.co/80x80/222/FFF?text=?" },
+        3: { ten: "???", logo: "https://placehold.co/80x80/222/FFF?text=?" },
+        4: { ten: "???", logo: "https://placehold.co/80x80/222/FFF?text=?" },
+        5: { ten: "???", logo: "https://placehold.co/80x80/222/FFF?text=?" },
+        6: { ten: "???", logo: "https://placehold.co/80x80/222/FFF?text=?" }
+    };
+
+    if (booyahLogo && booyahName) {
+        booyahName.innerText = doiChienThang[soTran].ten;
+        booyahLogo.src = doiChienThang[soTran].logo;
+    }
+    // =========================================================
     // -----------------------------------
     let modal = document.getElementById('modal-thong-so');
     let container = document.getElementById('data-bang-diem');
