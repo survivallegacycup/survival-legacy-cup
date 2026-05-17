@@ -298,10 +298,10 @@ const teamsDatabase = {
         logo: "logo-t2al.jpg",
         country: "", 
         players: [
-            { n: "T2AL.KTUAN", a: "ktuan.jpg" },
-            { n: "T2AL.LHTUAN", a: "lhtuan.jpg" },
-            { n: "T2AL.XUANLOC", a: "xuanloc.jpg" },
-            { n: "T2AL.MINHANN", a: "minhan.jpg" },
+            { n: "T2AL.KTUAN", a: "ktuan.jpg", r: "RUSHER" },
+            { n: "T2AL.LHTUAN", a: "lhtuan.jpg", r: "RUSHER" },
+            { n: "T2AL.XUANLOC", a: "xuanloc.jpg", r: "SNIPER" },
+            { n: "T2AL.MINHANN", a: "minhan.jpg", r: "SUPPORT" },
             { n: "KHÔNG CÓ", a: "https://placehold.co/200x250/111/555?text=TRONG" }
         ]
     },
