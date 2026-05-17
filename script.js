@@ -330,8 +330,20 @@ const teamsDatabase = {
             { n: "Đang thay đổi", a: "https://placehold.co/200x250/111/555?text=DANG+DOI", r: "CHƯA RÕ" },
             { n: "KHÔNG CÓ", a: "https://placehold.co/200x250/111/555?text=TRONG", r: "TRONG" }
         ]
-    }, // Nếu đội CM là đội cuối cùng thì không cần dấu phẩy ở đây, nhưng nếu chuẩn bị thêm Team 16 thì nhớ phẩy nhé!
-    "t16": { name: "TEAM 16", desc: "Thông tin đội 16...", logo: "https://placehold.co/120x120/222/FFF?text=T16", country: "[VIETNAM]", players: Array(5).fill({ n: "T16.MEMBER", a: "https://placehold.co/200x250/333/777?text=T16" }) },
+    },
+    "nvd": {
+        name: "NVD",
+        desc: "NVD - Tên đầy đủ là NEVERDIE. Đội tuyển Free Fire với tinh thần chiến đấu không bỏ cuộc đúng như tên gọi. Lì lợm, bền bỉ và luôn chiến đến cùng, Neverdie cái tên luôn khiến đối thủ phải dè chừng mỗi khi bước vào trận tại Survival Legacy Cup SS1!",
+        logo: "logo-nvd.jpg",
+        country: "", 
+        players: [
+            { n: "NVD.QUOCHUY", a: "quochuy.jpg", r: "RUSHER" },
+            { n: "NVD.PHAMCUONG", a: "phamcuong.jpg", r: "RUSHER" },
+            { n: "NVD.MINHTRI", a: "minhtri.jpg", r: "SPINER" },
+            { n: "NVD.TRANLONG", a: "tranlong", r: "SUPPORT" },
+            { n: "NVD.QUOCMINH", a: "quocminh.jpg", r: "SUPPORT" }
+        ]
+    },
     "t17": { name: "TEAM 17", desc: "Thông tin đội 17...", logo: "https://placehold.co/120x120/222/FFF?text=T17", country: "[VIETNAM]", players: Array(5).fill({ n: "T17.MEMBER", a: "https://placehold.co/200x250/333/777?text=T17" }) },
     "t18": { name: "TEAM 18", desc: "Thông tin đội 18...", logo: "https://placehold.co/120x120/222/FFF?text=T18", country: "[VIETNAM]", players: Array(5).fill({ n: "T18.MEMBER", a: "https://placehold.co/200x250/333/777?text=T18" }) },
     "t19": { name: "TEAM 19", desc: "Thông tin đội 19...", logo: "https://placehold.co/120x120/222/FFF?text=T19", country: "[VIETNAM]", players: Array(5).fill({ n: "T19.MEMBER", a: "https://placehold.co/200x250/333/777?text=T19" }) },
