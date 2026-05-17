@@ -6,7 +6,13 @@ const linkCacTran = {
     3: "https://docs.google.com/spreadsheets/d/e/2PACX-1vTxQ0XUFPh9AASBh24GIZExBRoR-Mx6IzgV8VmYzfbeTzIh-WXiOShCm2xHMnnuiEXMLunN2GQG-jpQ/pub?gid=1914379601&single=true&output=csv",
     4: "https://docs.google.com/spreadsheets/d/e/2PACX-1vTxQ0XUFPh9AASBh24GIZExBRoR-Mx6IzgV8VmYzfbeTzIh-WXiOShCm2xHMnnuiEXMLunN2GQG-jpQ/pub?gid=1824049530&single=true&output=csv",
     5: "https://docs.google.com/spreadsheets/d/e/2PACX-1vTxQ0XUFPh9AASBh24GIZExBRoR-Mx6IzgV8VmYzfbeTzIh-WXiOShCm2xHMnnuiEXMLunN2GQG-jpQ/pub?gid=440796779&single=true&output=csv",
-    6: "https://docs.google.com/spreadsheets/d/e/2PACX-1vTxQ0XUFPh9AASBh24GIZExBRoR-Mx6IzgV8VmYzfbeTzIh-WXiOShCm2xHMnnuiEXMLunN2GQG-jpQ/pub?gid=1658103566&single=true&output=csv"
+    6: "https://docs.google.com/spreadsheets/d/e/2PACX-1vTxQ0XUFPh9AASBh24GIZExBRoR-Mx6IzgV8VmYzfbeTzIh-WXiOShCm2xHMnnuiEXMLunN2GQG-jpQ/pub?gid=1658103566&single=true&output=csv",
+    7: "https://docs.google.com/spreadsheets/d/e/2PACX-1vTxQ0XUFPh9AASBh24GIZExBRoR-Mx6IzgV8VmYzfbeTzIh-WXiOShCm2xHMnnuiEXMLunN2GQG-jpQ/pub?gid=939701822&single=true&output=csv",
+    8: "https://docs.google.com/spreadsheets/d/e/2PACX-1vTxQ0XUFPh9AASBh24GIZExBRoR-Mx6IzgV8VmYzfbeTzIh-WXiOShCm2xHMnnuiEXMLunN2GQG-jpQ/pub?gid=279317705&single=true&output=csv",
+    9: "https://docs.google.com/spreadsheets/d/e/2PACX-1vTxQ0XUFPh9AASBh24GIZExBRoR-Mx6IzgV8VmYzfbeTzIh-WXiOShCm2xHMnnuiEXMLunN2GQG-jpQ/pub?gid=1183253134&single=true&output=csv",
+    10: "https://docs.google.com/spreadsheets/d/e/2PACX-1vTxQ0XUFPh9AASBh24GIZExBRoR-Mx6IzgV8VmYzfbeTzIh-WXiOShCm2xHMnnuiEXMLunN2GQG-jpQ/pub?gid=1678347431&single=true&output=csv",
+    11: "https://docs.google.com/spreadsheets/d/e/2PACX-1vTxQ0XUFPh9AASBh24GIZExBRoR-Mx6IzgV8VmYzfbeTzIh-WXiOShCm2xHMnnuiEXMLunN2GQG-jpQ/pub?gid=301684834&single=true&output=csv",
+    12: "https://docs.google.com/spreadsheets/d/e/2PACX-1vTxQ0XUFPh9AASBh24GIZExBRoR-Mx6IzgV8VmYzfbeTzIh-WXiOShCm2xHMnnuiEXMLunN2GQG-jpQ/pub?gid=826238436&single=true&output=csv"
 }
 /* ================= BẢN SAO GARENA 1:1 ================= */
 async function moThongSo(soTran) {
@@ -14,37 +20,37 @@ async function moThongSo(soTran) {
     tranHienTai = soTran; // Cập nhật lại số trận hiện tại
     let tenTranEl = document.getElementById('ten-tran-dau');
     if (tenTranEl) tenTranEl.innerText = "TRẬN " + soTran; // Đổi chữ cứng thành số động
-    // =========================================================
-    // HỆ THỐNG ĐIỀU KHIỂN: THỜI GIAN & ĐỘI BOOYAH TỪNG TRẬN
+// =========================================================
+    // HỆ THỐNG ĐIỀU KHIỂN: THỜI GIAN & ĐỘI BOOYAH TỪNG TRẬN (TỰ ĐỘNG MỌI NGÀY)
     // =========================================================
 
-    // 1. Tự động đổi Giờ thi đấu (Cách nhau 30p)
+    // 1. Tự động đổi Giờ thi đấu (Xoay vòng mỗi 6 trận)
     let timeEl = document.querySelector('.info-box.time-box .time');
     if (timeEl) {
+        // Phép tính này giúp Trận 7, 13 tự lặp lại thành số 1; Trận 8, 14 thành số 2...
+        let tranTrongNgay = ((soTran - 1) % 6) + 1; 
         const gioThiDau = { 1: "19:00", 2: "19:30", 3: "20:00", 4: "20:30", 5: "21:00", 6: "21:30" };
-        timeEl.innerText = gioThiDau[soTran] || "19:00";
+        timeEl.innerText = gioThiDau[tranTrongNgay] || "19:00";
     }
 
-    // 2. Cập nhật Đội Booyah (Giải chưa đá nên tớ cài sẵn là ???)
+    // 2. Cập nhật Đội Booyah SIÊU GỌN
     let booyahLogo = document.querySelector('.info-box.booyah-box img');
     let booyahName = document.querySelector('.info-box.booyah-box .winner-name');
     
-    /* 💡 HƯỚNG DẪN SAU NÀY: 
-       Khi trận đấu kết thúc, bạn chỉ cần mở file script.js này ra, 
-       sửa "???" thành tên đội (ví dụ: "UZI"), và thay cái link ảnh thành tên file logo (ví dụ: "logo-uzi.jpg") là web tự update nhé! */
-       
+    /* 💡 MẸO CODE:
+       Giờ bạn KHÔNG CẦN viết ??? cho 24 trận nữa. 
+       Chỉ trận nào ĐÁ XONG VÀ CÓ NGƯỜI WIN thì bạn mới viết vào đây. 
+       Còn lại máy tính sẽ tự động điền ??? cho tất cả! */
     const doiChienThang = {
-        1: { ten: "???", logo: "https://placehold.co/80x80/222/FFF?text=?" },
-        2: { ten: "???", logo: "https://placehold.co/80x80/222/FFF?text=?" },
-        3: { ten: "???", logo: "https://placehold.co/80x80/222/FFF?text=?" },
-        4: { ten: "???", logo: "https://placehold.co/80x80/222/FFF?text=?" },
-        5: { ten: "???", logo: "https://placehold.co/80x80/222/FFF?text=?" },
-        6: { ten: "???", logo: "https://placehold.co/80x80/222/FFF?text=?" }
+        // Ví dụ mốt đá xong, bạn bỏ dấu // và điền tên như dưới này:
+        // 1: { ten: "UZI", logo: "logo-uzi.jpg" },
+        // 7: { ten: "TQ", logo: "logo-tq.jpg" }, 
     };
 
     if (booyahLogo && booyahName) {
-        booyahName.innerText = doiChienThang[soTran].ten;
-        booyahLogo.src = doiChienThang[soTran].logo;
+        // Lệnh: Nếu trận đó có trong danh sách thì hiện tên/ảnh, nếu chưa có thì auto hiện ???
+        booyahName.innerText = doiChienThang[soTran] ? doiChienThang[soTran].ten : "???";
+        booyahLogo.src = doiChienThang[soTran] ? doiChienThang[soTran].logo : "https://placehold.co/80x80/222/FFF?text=?";
     }
     // =========================================================
     // -----------------------------------
