@@ -340,7 +340,7 @@ const teamsDatabase = {
             { n: "NVD.QUOCHUY", a: "quochuy.jpg", r: "RUSHER" },
             { n: "NVD.PHAMCUONG", a: "phamcuong.jpg", r: "RUSHER" },
             { n: "NVD.MINHTRI", a: "minhtri.jpg", r: "SPINER" },
-            { n: "NVD.TRANLONG", a: "tranlong", r: "SUPPORT" },
+            { n: "NVD.TRANLONG", a: "tranlong.jpg", r: "SUPPORT" },
             { n: "NVD.QUOCMINH", a: "quocminh.jpg", r: "SUPPORT" }
         ]
     },
