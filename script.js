@@ -16,6 +16,8 @@ const linkCacTran = {
 }
 /* ================= BẢN SAO GARENA 1:1 ================= */
 async function moThongSo(soTran) {
+    if (!soTran) soTran = 1;
+    
     // --- CHÈN 4 DÒNG NÀY VÀO ĐẦU HÀM ---
     tranHienTai = soTran; // Cập nhật lại số trận hiện tại
     let tenTranEl = document.getElementById('ten-tran-dau');
@@ -421,7 +423,7 @@ function chuyenTrang(huong) {
 }
 /* ================= HỆ THỐNG MŨI TÊN CHUYỂN TRẬN ================= */
 let tranHienTai = 1;
-const tongSoTran = 6; // Khai báo tổng cộng có 6 trận
+const tongSoTran = 12; // Khai báo tổng cộng có 6 trận
 
 function chuyenTran(huong) {
     tranHienTai += huong;
