@@ -330,16 +330,16 @@ const teamsDatabase = {
             { n: "KHÔNG CÓ", a: "https://placehold.co/200x250/111/555?text=TRONG"}
         ]
     },
-    "cm": {
-        name: "CM",
-        desc: "CM - Tên đầy đủ là CM Academy. Đội tuyển Free Fire mang phong cách thi đấu bùng nổ và đầy biến hóa. Không đi theo lối mòn, CM luôn tạo ra những pha xử lý táo bạo, khiến trận đấu trở nên khó lường và đối thủ không kịp trở tay tại Survival Legacy Cup SS1!",
-        logo: "logo-cm.jpg",
+    "npa": {
+        name: "NPA",
+        desc: "NPA – Tên đầy đủ là Ngọc Phụng Academy. Đội tuyển Free Fire trẻ với tinh thần thi đấu máu lửa và khát khao khẳng định bản thân. Với tinh thần “đánh là phải dấu ấn”, NPA luôn mang đến những pha xử lý táo bạo và khó lường tại Survival Legacy Cup SS1!",
+        logo: "logo-npa.jpg",
         country: "", 
         players: [
-            { n: "CM.BAODUY", a: "baoduy.jpg", r: "RUSHER" },
-            { n: "CM.BAHANH", a: "bahanh.jpg", r: "BOMBER" },
-            { n: "Đang thay đổi", a: "https://placehold.co/200x250/111/555?text=DANG+DOI", r: "CHƯA RÕ" },
-            { n: "Đang thay đổi", a: "https://placehold.co/200x250/111/555?text=DANG+DOI", r: "CHƯA RÕ" },
+            { n: "NPA.DANGKHOI", a: "dangkhoi.jpg", r: "RUSHER" },
+            { n: "NPA.PHAMVU", a: "phamvu.jpg", r: "RUSHER" },
+            { n: "NPA.BAODUY", a: "baoduy.jpg", r: "SPINER" },
+            { n: "NPA.PHONG", a: "phong.jpg", r: "SUPPORT" },
             { n: "KHÔNG CÓ", a: "https://placehold.co/200x250/111/555?text=TRONG", r: "TRONG" }
         ]
     },
