@@ -19,59 +19,48 @@ async function moThongSo(soTran) {
     if (!soTran) soTran = 1;
     
     // --- CHÈN 4 DÒNG NÀY VÀO ĐẦU HÀM ---
-    tranHienTai = soTran; // Cập nhật lại số trận hiện tại
-    let tenTranEl = document.getElementById('ten-tran-dau');
-    if (tenTranEl) tenTranEl.innerText = "TRẬN " + soTran; // Đổi chữ cứng thành số động
-// =========================================================
-    // HỆ THỐNG ĐIỀU KHIỂN: THỜI GIAN, NGÀY THÁNG & ĐỘI BOOYAH 
+    tranHienTai = soTran;
     // =========================================================
+    // 1. TÍNH TOÁN VÀ CẬP NHẬT GIAO DIỆN (NGÀY, GIỜ, BOOYAH)
+    // =========================================================
+    let ngayThiDau = Math.ceil(soTran / 6); 
+    let tranTrongNgay = ((soTran - 1) % 6) + 1; 
 
-    // 1. Tính toán Ngày và Trận hiện tại bằng toán học
-    let ngayThiDau = Math.ceil(soTran / 6); // Cứ 6 trận là 1 ngày (Trận 7 chia 6 = Day 2)
-    let tranTrongNgay = ((soTran - 1) % 6) + 1; // Quy đổi Trận 7 thành Trận 1 của Day 2
-
-    // 2. Cập nhật chữ TRẬN (Thay vì Trận 7 thì hiện Trận 1)
     let tenTranEl = document.getElementById('ten-tran-dau');
     if (tenTranEl) tenTranEl.innerText = "TRẬN " + tranTrongNgay;
 
-    // 3. Cập nhật chữ DAY (Day 1, Day 2...)
     let dayEl = document.querySelector('.modal-title span'); 
     if (dayEl) dayEl.innerText = "DAY " + ngayThiDau;
 
-    // 4. Cập nhật Ngày Tháng (Tự động nhảy theo Day)
     let dateEl = document.querySelector('.info-box.time-box .date');
     if (dateEl) {
-        // Khai báo sẵn lịch trình các ngày thi đấu
         const lichNgay = { 1: "21/05/2026", 2: "22/05/2026", 3: "23/05/2026", 4: "24/05/2026" };
         dateEl.innerText = lichNgay[ngayThiDau] || "21/05/2026";
     }
 
-    // 5. Tự động đổi Giờ thi đấu
     let timeEl = document.querySelector('.info-box.time-box .time');
     if (timeEl) {
         const gioThiDau = { 1: "19:00", 2: "19:30", 3: "20:00", 4: "20:30", 5: "21:00", 6: "21:30" };
         timeEl.innerText = gioThiDau[tranTrongNgay] || "19:00";
     }
 
-    // 6. Cập nhật Đội Booyah
     let booyahLogo = document.querySelector('.info-box.booyah-box img');
     let booyahName = document.querySelector('.info-box.booyah-box .winner-name');
-    
-    const doiChienThang = {
-        // Khi nào có đội win thì thêm vào đây (Ví dụ: 1: { ten: "UZI", logo: "logo-uzi.jpg" })
-    };
-
+    const doiChienThang = {};
     if (booyahLogo && booyahName) {
         booyahName.innerText = doiChienThang[soTran] ? doiChienThang[soTran].ten : "???";
         booyahLogo.src = doiChienThang[soTran] ? doiChienThang[soTran].logo : "https://placehold.co/80x80/222/FFF?text=?";
     }
+
     // =========================================================
-    // -----------------------------------
+    // 2. LỆNH MỞ KHUNG POPUP (Đoạn này lúc nãy bạn lỡ xóa mất)
+    // =========================================================
     let modal = document.getElementById('modal-thong-so');
     let container = document.getElementById('data-bang-diem');
-    if(!modal || !container) return; 
+    if(!modal || !container) return;
 
-    modal.style.display = 'block';
+    modal.style.display = 'block'; // ĐÂY CHÍNH LÀ LỆNH GỌI CÁI BẢNG LÊN!
+    
     const headers = container.querySelectorAll('.g-header');
     container.innerHTML = '';
     headers.forEach(h => container.appendChild(h));
