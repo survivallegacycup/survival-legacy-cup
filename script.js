@@ -23,34 +23,45 @@ async function moThongSo(soTran) {
     let tenTranEl = document.getElementById('ten-tran-dau');
     if (tenTranEl) tenTranEl.innerText = "TRẬN " + soTran; // Đổi chữ cứng thành số động
 // =========================================================
-    // HỆ THỐNG ĐIỀU KHIỂN: THỜI GIAN & ĐỘI BOOYAH TỪNG TRẬN (TỰ ĐỘNG MỌI NGÀY)
+    // HỆ THỐNG ĐIỀU KHIỂN: THỜI GIAN, NGÀY THÁNG & ĐỘI BOOYAH 
     // =========================================================
 
-    // 1. Tự động đổi Giờ thi đấu (Xoay vòng mỗi 6 trận)
+    // 1. Tính toán Ngày và Trận hiện tại bằng toán học
+    let ngayThiDau = Math.ceil(soTran / 6); // Cứ 6 trận là 1 ngày (Trận 7 chia 6 = Day 2)
+    let tranTrongNgay = ((soTran - 1) % 6) + 1; // Quy đổi Trận 7 thành Trận 1 của Day 2
+
+    // 2. Cập nhật chữ TRẬN (Thay vì Trận 7 thì hiện Trận 1)
+    let tenTranEl = document.getElementById('ten-tran-dau');
+    if (tenTranEl) tenTranEl.innerText = "TRẬN " + tranTrongNgay;
+
+    // 3. Cập nhật chữ DAY (Day 1, Day 2...)
+    let dayEl = document.querySelector('.modal-title span'); 
+    if (dayEl) dayEl.innerText = "DAY " + ngayThiDau;
+
+    // 4. Cập nhật Ngày Tháng (Tự động nhảy theo Day)
+    let dateEl = document.querySelector('.info-box.time-box .date');
+    if (dateEl) {
+        // Khai báo sẵn lịch trình các ngày thi đấu
+        const lichNgay = { 1: "21/05/2026", 2: "22/05/2026", 3: "23/05/2026", 4: "24/05/2026" };
+        dateEl.innerText = lichNgay[ngayThiDau] || "21/05/2026";
+    }
+
+    // 5. Tự động đổi Giờ thi đấu
     let timeEl = document.querySelector('.info-box.time-box .time');
     if (timeEl) {
-        // Phép tính này giúp Trận 7, 13 tự lặp lại thành số 1; Trận 8, 14 thành số 2...
-        let tranTrongNgay = ((soTran - 1) % 6) + 1; 
         const gioThiDau = { 1: "19:00", 2: "19:30", 3: "20:00", 4: "20:30", 5: "21:00", 6: "21:30" };
         timeEl.innerText = gioThiDau[tranTrongNgay] || "19:00";
     }
 
-    // 2. Cập nhật Đội Booyah SIÊU GỌN
+    // 6. Cập nhật Đội Booyah
     let booyahLogo = document.querySelector('.info-box.booyah-box img');
     let booyahName = document.querySelector('.info-box.booyah-box .winner-name');
     
-    /* 💡 MẸO CODE:
-       Giờ bạn KHÔNG CẦN viết ??? cho 24 trận nữa. 
-       Chỉ trận nào ĐÁ XONG VÀ CÓ NGƯỜI WIN thì bạn mới viết vào đây. 
-       Còn lại máy tính sẽ tự động điền ??? cho tất cả! */
     const doiChienThang = {
-        // Ví dụ mốt đá xong, bạn bỏ dấu // và điền tên như dưới này:
-        // 1: { ten: "UZI", logo: "logo-uzi.jpg" },
-        // 7: { ten: "TQ", logo: "logo-tq.jpg" }, 
+        // Khi nào có đội win thì thêm vào đây (Ví dụ: 1: { ten: "UZI", logo: "logo-uzi.jpg" })
     };
 
     if (booyahLogo && booyahName) {
-        // Lệnh: Nếu trận đó có trong danh sách thì hiện tên/ảnh, nếu chưa có thì auto hiện ???
         booyahName.innerText = doiChienThang[soTran] ? doiChienThang[soTran].ten : "???";
         booyahLogo.src = doiChienThang[soTran] ? doiChienThang[soTran].logo : "https://placehold.co/80x80/222/FFF?text=?";
     }
