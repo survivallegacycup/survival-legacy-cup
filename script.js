@@ -299,8 +299,8 @@ const teamsDatabase = {
         players: [
             { n: "NNN.DINH", a: "dinh.jpg", r: "RUSHER" },
             { n: "NNN.VANTAI", a: "vantai.jpg", r: "RUSHER" },
-            { n: "NNN.NHATTIEN", a: "nhattien.jpg", r: "SNIPER" },
-            { n: "NNN.BMINH", a: "bminh.jpg", r: "SUPPORT" },
+            { n: "NNN.BMINH", a: "bminh.jpg", r: "SNIPER" },
+            { n: "NNN.NHATTIEN", a: "nhattien.jpg", r: "SUPPORT" },
             { n: "KHÔNG CÓ", a: "https://placehold.co/200x250/111/555?text=TRONG" }
         ]
     },
