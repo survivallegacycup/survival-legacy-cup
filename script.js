@@ -400,7 +400,19 @@ const teamsDatabase = {
             { n: "GODS.GHUY", a: "ghuy.jpg", r: "SUPPORT" }
         ]
     },
-    "t19": { name: "TEAM 19", desc: "Thông tin đội 19...", logo: "https://placehold.co/120x120/222/FFF?text=T19", country: "[VIETNAM]", players: Array(5).fill({ n: "T19.MEMBER", a: "https://placehold.co/200x250/333/777?text=T19" }) },
+    "whd": {
+        name: "WHD",
+        desc: "WHD - Tên đầy đủ là Vui Vẻ Hoà Đồng. Đội tuyển Free Fire mang năng lượng tích cực vào từng trận đấu, nhưng đừng để sự vui vẻ đánh lừa, khi cần họ vẫn có thể bùng nổ và xoay chuyển cục diện theo cách không ai ngờ tới  tại Survival Legacy Cup SS1!",
+        logo: "logo-whd.png",
+        country: "", 
+        players: [
+            { n: "WHD.TUANANH", a: "tuananh.jpg", r: "RUSHER" },
+            { n: "WHD.CONGHAO", a: "conghao.jpg", r: "BOMBER" },
+            { n: "WHD.THANHSON", a: "thanhson.jpg", r: "SNIPER" },
+            { n: "WHD.NGOCCAC", a: "ngoccac.jpg", r: "SNIPER" },
+            { n: "WHD.HUUPHUOC", a: "huuphuoc.jpg", r: "SUPPORT" }
+        ]
+    },
     "t20": { name: "TEAM 20", desc: "Thông tin đội 20...", logo: "https://placehold.co/120x120/222/FFF?text=T20", country: "[VIETNAM]", players: Array(5).fill({ n: "T20.MEMBER", a: "https://placehold.co/200x250/333/777?text=T20" }) },
     "t21": { name: "TEAM 21", desc: "Thông tin đội 21...", logo: "https://placehold.co/120x120/222/FFF?text=T21", country: "[VIETNAM]", players: Array(5).fill({ n: "T21.MEMBER", a: "https://placehold.co/200x250/333/777?text=T21" }) },
     "t22": { name: "TEAM 22", desc: "Thông tin đội 22...", logo: "https://placehold.co/120x120/222/FFF?text=T22", country: "[VIETNAM]", players: Array(5).fill({ n: "T22.MEMBER", a: "https://placehold.co/200x250/333/777?text=T22" }) },
