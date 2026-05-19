@@ -374,7 +374,19 @@ const teamsDatabase = {
             { n: "NVD.QUOCMINH", a: "quocminh.jpg", r: "SUPPORT" }
         ]
     },
-    "t17": { name: "TEAM 17", desc: "Thông tin đội 17...", logo: "https://placehold.co/120x120/222/FFF?text=T17", country: "[VIETNAM]", players: Array(5).fill({ n: "T17.MEMBER", a: "https://placehold.co/200x250/333/777?text=T17" }) },
+    "hp": {
+        name: "HP",
+        desc: "HP – Tên đầy đủ là HP ESPORTS. Đội tuyển Free Fire mang phong cách thi đấu lạnh lùng và chuẩn xác. Không cần quá phô trương, HP luôn âm thầm tích lũy lợi thế và kết liễu trận đấu bằng những pha xử lý gọn gàng, dứt khoát tại Survival Legacy Cup SS1!",
+        logo: "logo-hp.jpg",
+        country: "", 
+        players: [
+            { n: "HP.PHUY", a: "phuy.jpg", r: "RUSHER" },
+            { n: "HP.MLONG", a: "mlong.jpg", r: "RUSHER" },
+            { n: "HP.HBAO", a: "hbao.jpg", r: "BOMBER" },
+            { n: "HP.HKIET", a: "h-kiet.jpg", r: "SNIPER" },
+            { n: "HP.ATUAN", a: "atuan.jpg", r: "SUPPORT" }
+        ]
+    },
     "t18": { name: "TEAM 18", desc: "Thông tin đội 18...", logo: "https://placehold.co/120x120/222/FFF?text=T18", country: "[VIETNAM]", players: Array(5).fill({ n: "T18.MEMBER", a: "https://placehold.co/200x250/333/777?text=T18" }) },
     "t19": { name: "TEAM 19", desc: "Thông tin đội 19...", logo: "https://placehold.co/120x120/222/FFF?text=T19", country: "[VIETNAM]", players: Array(5).fill({ n: "T19.MEMBER", a: "https://placehold.co/200x250/333/777?text=T19" }) },
     "t20": { name: "TEAM 20", desc: "Thông tin đội 20...", logo: "https://placehold.co/120x120/222/FFF?text=T20", country: "[VIETNAM]", players: Array(5).fill({ n: "T20.MEMBER", a: "https://placehold.co/200x250/333/777?text=T20" }) },
