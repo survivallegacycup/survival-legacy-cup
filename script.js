@@ -263,11 +263,11 @@ const teamsDatabase = {
         logo: "logo-qc.jpg",
         country: "", 
         players: [
-            { n: "QC.KAME", a: "kame.jpg" },
-            { n: "QC.WIST", a: "wist.jpg" },
-            { n: "QC.TABETA", a: "tabeta.jpg" },
-            { n: "QC.EBOR", a: "ebor.jpg" },
-            { n: "KHÔNG CÓ", a: "https://placehold.co/200x250/111/555?text=TRONG" }
+            { n: "QC.KAME", a: "kame.jpg", r: "RUSHER" },
+            { n: "QC.DKHANG", a: "dkhang.jpg", r: "RUSHER" },
+            { n: "QC.NGHIEU", a: "nghieu.jpg", r: "BOMBER" },
+            { n: "QC.CHIBUN", a: "chibun.jpg", r: "SNIPER" },
+            { n: "QC.LAW", a: "law.jpg", r: "SUPPORT" }
         ]
     },
     "kg": {
