@@ -387,7 +387,19 @@ const teamsDatabase = {
             { n: "HP.ATUAN", a: "atuan.jpg", r: "SUPPORT" }
         ]
     },
-    "t18": { name: "TEAM 18", desc: "Thông tin đội 18...", logo: "https://placehold.co/120x120/222/FFF?text=T18", country: "[VIETNAM]", players: Array(5).fill({ n: "T18.MEMBER", a: "https://placehold.co/200x250/333/777?text=T18" }) },
+    "gods": {
+        name: "GODS",
+        desc: "GODS – Tên đầy đủ là GODS ESPORTS. Đội tuyển Free Fire bước vào trận như những kẻ định đoạt số phận ván đấu. Mỗi pha di chuyển đều mang tính áp đặt, mỗi giao tranh đều là lời tuyên bố: đây là lãnh địa của GODS tại Survival Legacy Cup SS1!",
+        logo: "logo-gods.jpg",
+        country: "", 
+        players: [
+            { n: "GODS.BHUY", a: "bhuy.jpg", r: "RUSHER" },
+            { n: "GODS.CHUY", a: "chuy.jpg", r: "RUSHER" },
+            { n: "GODS.KDUY", a: "kduy.jpg", r: "SPINER" },
+            { n: "GODS.TVAN", a: "tvan.jpg", r: "SUPPORT" },
+            { n: "GODS.GHUY", a: "ghuy.jpg", r: "SUPPORT" }
+        ]
+    },
     "t19": { name: "TEAM 19", desc: "Thông tin đội 19...", logo: "https://placehold.co/120x120/222/FFF?text=T19", country: "[VIETNAM]", players: Array(5).fill({ n: "T19.MEMBER", a: "https://placehold.co/200x250/333/777?text=T19" }) },
     "t20": { name: "TEAM 20", desc: "Thông tin đội 20...", logo: "https://placehold.co/120x120/222/FFF?text=T20", country: "[VIETNAM]", players: Array(5).fill({ n: "T20.MEMBER", a: "https://placehold.co/200x250/333/777?text=T20" }) },
     "t21": { name: "TEAM 21", desc: "Thông tin đội 21...", logo: "https://placehold.co/120x120/222/FFF?text=T21", country: "[VIETNAM]", players: Array(5).fill({ n: "T21.MEMBER", a: "https://placehold.co/200x250/333/777?text=T21" }) },
