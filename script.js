@@ -422,7 +422,7 @@ const teamsDatabase = {
             { n: "ARC.HUY", a: "huy.jpg", r: "RUSHER" },
             { n: "ARC.MINHBOY", a: "minhboy.jpg", r: "BOMBER" },
             { n: "ARC.DUNG", a: "dung.jpg", r: "SNIPER" },
-            { n: "ARC.DONG", a: "dong", r: "SUPPORT" },
+            { n: "ARC.DONG", a: "dong.jpg", r: "SUPPORT" },
             { n: "KHÔNG CÓ", a: "https://placehold.co/200x250/111/555?text=TRONG", r: "TRONG" }
         ]
     },
