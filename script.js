@@ -290,8 +290,8 @@ const teamsDatabase = {
         country: "", 
         players: [
             { n: "NNA.TCUONG", a: "tcuong.jpg", r: "RUSHER" },
+            { n: "NNA.THDAT", a: "thdat.jpg", r: "RUSHER" },
             { n: "NNA.DHAI", a: "dhai.jpg", r: "BOMBER" },
-            { n: "NNA.THDAT", a: "thdat.jpg", r: "SNIPER" },
             { n: "NNA.QMANH", a: "qmanh.jpg", r: "SUPPORT" },
             { n: "KHÔNG CÓ", a: "https://placehold.co/200x250/111/555?text=TRONG" }
         ]
