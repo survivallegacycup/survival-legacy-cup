@@ -413,7 +413,19 @@ const teamsDatabase = {
             { n: "WHD.HUUPHUOC", a: "huuphuoc.jpg", r: "SUPPORT" }
         ]
     },
-    "t20": { name: "TEAM 20", desc: "Thông tin đội 20...", logo: "https://placehold.co/120x120/222/FFF?text=T20", country: "[VIETNAM]", players: Array(5).fill({ n: "T20.MEMBER", a: "https://placehold.co/200x250/333/777?text=T20" }) },
+    "arc": {
+        name: "ARC",
+        desc: "ARC – tên đầy đủ là ARCANE LEGION. Đội tuyển Free Fire mang màu sắc huyền bí và khó lường, nơi mỗi bước di chuyển đều ẩn chứa toan tính. Với lối chơi tinh quái và khả năng tạo đột biến cao, ARC luôn khiến trận đấu xoay chiều theo cách rất “ma thuật” tại Survival Legacy Cup SS1!",
+        logo: "logo-arc.jpg",
+        country: "", 
+        players: [
+            { n: "ARC.HUY", a: "huy.jpg", r: "RUSHER" },
+            { n: "ARC.MINHBOY", a: "minhboy.jpg", r: "BOMBER" },
+            { n: "ARC.DUNG", a: "dung.jpg", r: "SNIPER" },
+            { n: "ARC.DONG", a: "dong", r: "SUPPORT" },
+            { n: "KHÔNG CÓ", a: "https://placehold.co/200x250/111/555?text=TRONG", r: "TRONG" }
+        ]
+    },
     "t21": { name: "TEAM 21", desc: "Thông tin đội 21...", logo: "https://placehold.co/120x120/222/FFF?text=T21", country: "[VIETNAM]", players: Array(5).fill({ n: "T21.MEMBER", a: "https://placehold.co/200x250/333/777?text=T21" }) },
     "t22": { name: "TEAM 22", desc: "Thông tin đội 22...", logo: "https://placehold.co/120x120/222/FFF?text=T22", country: "[VIETNAM]", players: Array(5).fill({ n: "T22.MEMBER", a: "https://placehold.co/200x250/333/777?text=T22" }) },
     "t23": { name: "TEAM 23", desc: "Thông tin đội 23...", logo: "https://placehold.co/120x120/222/FFF?text=T23", country: "[VIETNAM]", players: Array(5).fill({ n: "T23.MEMBER", a: "https://placehold.co/200x250/333/777?text=T23" }) },
