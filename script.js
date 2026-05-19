@@ -285,7 +285,7 @@ const teamsDatabase = {
     },
     "nna": {
         name: "NNA",
-        desc: "NNA - Tên đầy đủ Nước Ngọt Academy. Đội tuyển Free Fire mang phong cách “ngọt mà gắt”, vẻ ngoài nhẹ nhàng nhưng lối chơi cực kỳ khó chịu, sẵn sàng tung đòn kết liễu bất ngờ và khiến đối thủ “thấm đòn” tại Survival Legacy Cup SS1!",
+        desc: "NNA - Tên đầy đủ là Nước Ngọt Academy. Đội tuyển Free Fire mang phong cách “ngọt mà gắt”, vẻ ngoài nhẹ nhàng nhưng lối chơi cực kỳ khó chịu, sẵn sàng tung đòn kết liễu bất ngờ và khiến đối thủ “thấm đòn” tại Survival Legacy Cup SS1!",
         logo: "logo-nna.jpg",
         country: "", 
         players: [
@@ -330,9 +330,9 @@ const teamsDatabase = {
         players: [
             { n: "T2AL.KTUAN", a: "ktuan.jpg", r: "RUSHER" },
             { n: "T2AL.LHTUAN", a: "lhtuan.jpg", r: "RUSHER" },
+            { n: "T2AL.XQUYENN", a: "xquyen.jpg", r: "RIFLER" },
             { n: "T2AL.XUANLOC", a: "xuanloc.jpg", r: "SNIPER" },
-            { n: "T2AL.MINHANN", a: "minhan.jpg", r: "SUPPORT" },
-            { n: "KHÔNG CÓ", a: "https://placehold.co/200x250/111/555?text=TRONG" }
+            { n: "T2AL.MINHANN", a: "minhan.jpg", r: "SUPPORT" }
         ]
     },
     "tq": {
