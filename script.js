@@ -407,7 +407,7 @@ const teamsDatabase = {
         country: "", 
         players: [
             { n: "WHD.TUANANH", a: "tuananh.jpg", r: "RUSHER" },
-            { n: "WHD.CONGHAO", a: "conghao.jpg", r: "BOMBER" },
+            { n: "WHD.NGOCHAI", a: "ngochai.jpg", r: "BOMBER" },
             { n: "WHD.THANHSON", a: "thanhson.jpg", r: "SNIPER" },
             { n: "WHD.NGOCCAC", a: "ngoccac.jpg", r: "SNIPER" },
             { n: "WHD.HUUPHUOC", a: "huuphuoc.jpg", r: "SUPPORT" }
