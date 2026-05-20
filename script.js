@@ -426,7 +426,19 @@ const teamsDatabase = {
             { n: "KHÔNG CÓ", a: "https://placehold.co/200x250/111/555?text=TRONG", r: "TRONG" }
         ]
     },
-    "t21": { name: "TEAM 21", desc: "Thông tin đội 21...", logo: "https://placehold.co/120x120/222/FFF?text=T21", country: "[VIETNAM]", players: Array(5).fill({ n: "T21.MEMBER", a: "https://placehold.co/200x250/333/777?text=T21" }) },
+    "bne": {
+        name: "BNE",
+        desc: "BNE - Tên đầy đủ là BN ESPORT. Đội tuyển Free Fire chơi theo kiểu “ít nhưng chất” — mỗi pha di chuyển đều có mục đích, mỗi giao tranh đều tính toán kỹ lưỡng. Không ồn ào, nhưng khi ra tay thì gần như không cho đối thủ cơ hội phản kháng tại Survival Legacy Cup SS1!",
+        logo: "logo-bne.jpg",
+        country: "", 
+        players: [
+            { n: "BNE.TUANAN", a: "tuanan.jpg", r: "RUSHER" },
+            { n: "BNE.DPHONG", a: "dphong.jpg", r: "BOMBER" },
+            { n: "BNE.VINHKAKA", a: "vinhkaka.jpg", r: "BOMBER" },
+            { n: "BNE.TNHAN", a: "tnhan.jpg", r: "SNIPER" },
+            { n: "BNE.DBAO", a: "dbao.jpg", r: "SUPPORT" }
+        ]
+    },
     "t22": { name: "TEAM 22", desc: "Thông tin đội 22...", logo: "https://placehold.co/120x120/222/FFF?text=T22", country: "[VIETNAM]", players: Array(5).fill({ n: "T22.MEMBER", a: "https://placehold.co/200x250/333/777?text=T22" }) },
     "t23": { name: "TEAM 23", desc: "Thông tin đội 23...", logo: "https://placehold.co/120x120/222/FFF?text=T23", country: "[VIETNAM]", players: Array(5).fill({ n: "T23.MEMBER", a: "https://placehold.co/200x250/333/777?text=T23" }) },
     "t24": { name: "TEAM 24", desc: "Thông tin đội 24...", logo: "https://placehold.co/120x120/222/FFF?text=T24", country: "[VIETNAM]", players: Array(5).fill({ n: "T24.MEMBER", a: "https://placehold.co/200x250/333/777?text=T24" }) },
