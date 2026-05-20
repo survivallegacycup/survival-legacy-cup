@@ -491,7 +491,19 @@ const teamsDatabase = {
             { n: "KHÔNG CÓ", a: "https://placehold.co/200x250/111/555?text=TRONG", r: "TRONG" }
         ]
     },
-    "t26": { name: "TEAM 26", desc: "Thông tin đội 26...", logo: "https://placehold.co/120x120/222/FFF?text=T26", country: "[VIETNAM]", players: Array(5).fill({ n: "T26.MEMBER", a: "https://placehold.co/200x250/333/777?text=T26" }) },
+    "pcm": {
+        name: "PCM",
+        desc: "PCM - Tên đầy đủ là PCM. Đội tuyển chơi như những “kẻ giật dây” phía sau trận đấu - không ồn ào nhưng luôn kiểm soát nhịp độ. Đến khi đối thủ nhận ra, mọi thứ đã nằm trọn trong thế trận của PCM tại Survival Legacy Cup SS1!",
+        logo: "logo-pcm.jpg",
+        country: "", 
+        players: [
+            { n: "PCM.APPOMEO", a: "appomeo.jpg", r: "RUSHER" },
+            { n: "PCM.DZAI", a: "dzai.jpg", r: "RUSHER" },
+            { n: "PCM.OGGY", a: "oggy.jpg", r: "SNIPER" },
+            { n: "PCM.K", a: "k.jpg", r: "SUPPORT" },
+            { n: "KHÔNG CÓ", a: "https://placehold.co/200x250/111/555?text=TRONG", r: "TRONG" }
+        ]
+    },
     "t27": { name: "TEAM 27", desc: "Thông tin đội 27...", logo: "https://placehold.co/120x120/222/FFF?text=T27", country: "[VIETNAM]", players: Array(5).fill({ n: "T27.MEMBER", a: "https://placehold.co/200x250/333/777?text=T27" }) },
     "t28": { name: "TEAM 28", desc: "Thông tin đội 28...", logo: "https://placehold.co/120x120/222/FFF?text=T28", country: "[VIETNAM]", players: Array(5).fill({ n: "T28.MEMBER", a: "https://placehold.co/200x250/333/777?text=T28" }) },
     "t29": { name: "TEAM 29", desc: "Thông tin đội 29...", logo: "https://placehold.co/120x120/222/FFF?text=T29", country: "[VIETNAM]", players: Array(5).fill({ n: "T29.MEMBER", a: "https://placehold.co/200x250/333/777?text=T29" }) },
