@@ -348,17 +348,17 @@ const teamsDatabase = {
             { n: "KHÔNG CÓ", a: "https://placehold.co/200x250/111/555?text=TRONG"}
         ]
     },
-    "npa": {
-        name: "NPA",
-        desc: "NPA – Tên đầy đủ là Ngọc Phụng Academy. Đội tuyển Free Fire trẻ với tinh thần thi đấu máu lửa và khát khao khẳng định bản thân. Với tinh thần “đánh là phải dấu ấn”, NPA luôn mang đến những pha xử lý táo bạo và khó lường tại Survival Legacy Cup SS1!",
-        logo: "logo-npa.jpg",
+    "tgl": {
+        name: "TGL",
+        desc: "TGL - Tên đầy đủ là Team Gia Lai. Đội tuyển Free Fire không chỉ thi đấu, họ “định hình” trận đấu theo cách của riêng mình. Với phong thái điềm tĩnh và những pha ra quyết định mang tính chuẩn mực, TGL luôn khiến chiến thắng trở thành điều tất yếu chứ không phải may mắn tại Survival Legacy Cup SS1!",
+        logo: "logo-tgl.jpg",
         country: "", 
         players: [
-            { n: "NPA.DANGKHOI", a: "dangkhoi.jpg", r: "RUSHER" },
-            { n: "NPA.PHAMVU", a: "phamvu.jpg", r: "RUSHER" },
-            { n: "NPA.BAODUY", a: "baoduy.jpg", r: "SPINER" },
-            { n: "NPA.PHONG", a: "phong.jpg", r: "SUPPORT" },
-            { n: "KHÔNG CÓ", a: "https://placehold.co/200x250/111/555?text=TRONG", r: "TRONG" }
+            { n: "TGL.DEKAY", a: "", r: "RUSHER" },
+            { n: "TGL.HDPE", a: "", r: "RUSHER" },
+            { n: "TGL.MUP", a: "", r: "BOMBER" },
+            { n: "TGL.CUBA", a: "", r: "SNIPER" },
+            { n: "TGL.NPHUNG", a: "", r: "SUPPORT" }
         ]
     },
     "nvd": {
