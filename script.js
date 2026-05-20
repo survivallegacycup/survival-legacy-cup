@@ -478,7 +478,19 @@ const teamsDatabase = {
             { n: "BLX.TC", a: "tc.jpg", r: "SUPPORT" }
         ]
     },
-    "t25": { name: "TEAM 25", desc: "Thông tin đội 25...", logo: "https://placehold.co/120x120/222/FFF?text=T25", country: "[VIETNAM]", players: Array(5).fill({ n: "T25.MEMBER", a: "https://placehold.co/200x250/333/777?text=T25" }) },
+    "hre": {
+        name: "HRE",
+        desc: "HRE - Tên đầy đủ là HERO ESPORTS. Đội tuyển mang tinh thần của những “người hùng” thực thụ- luôn xuất hiện đúng lúc và tạo nên khác biệt. Với lối chơi bản lĩnh và những pha tỏa sáng cá nhân, HRE thường là nhân tố xoay chuyển cục diện trận đấu tại Survival Legacy Cup SS1!",
+        logo: "logo-hre.jpg",
+        country: "", 
+        players: [
+            { n: "HRE.RESFINA", a: "resfina.jpg", r: "RUSHER" },
+            { n: "HRE.COTU", a: "cotu.jpg", r: "BOMBER" },
+            { n: "HRE.TANHH", a: "tanhh.jpg", r: "SNIPER" },
+            { n: "HRE.VANPHONG", a: "vanphong.jpg", r: "SUPPORT" },
+            { n: "KHÔNG CÓ", a: "https://placehold.co/200x250/111/555?text=TRONG", r: "TRONG" }
+        ]
+    },
     "t26": { name: "TEAM 26", desc: "Thông tin đội 26...", logo: "https://placehold.co/120x120/222/FFF?text=T26", country: "[VIETNAM]", players: Array(5).fill({ n: "T26.MEMBER", a: "https://placehold.co/200x250/333/777?text=T26" }) },
     "t27": { name: "TEAM 27", desc: "Thông tin đội 27...", logo: "https://placehold.co/120x120/222/FFF?text=T27", country: "[VIETNAM]", players: Array(5).fill({ n: "T27.MEMBER", a: "https://placehold.co/200x250/333/777?text=T27" }) },
     "t28": { name: "TEAM 28", desc: "Thông tin đội 28...", logo: "https://placehold.co/120x120/222/FFF?text=T28", country: "[VIETNAM]", players: Array(5).fill({ n: "T28.MEMBER", a: "https://placehold.co/200x250/333/777?text=T28" }) },
