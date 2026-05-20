@@ -452,7 +452,19 @@ const teamsDatabase = {
             { n: "CNCT.QUYEN", a: "quyen.jpg", r: "SUPPORT" }
         ]
     },
-    "t23": { name: "TEAM 23", desc: "Thông tin đội 23...", logo: "https://placehold.co/120x120/222/FFF?text=T23", country: "[VIETNAM]", players: Array(5).fill({ n: "T23.MEMBER", a: "https://placehold.co/200x250/333/777?text=T23" }) },
+    "btn": {
+        name: "BTN",
+        desc: "BTN - Tên đầy đủ là BTN. Đội tuyển Free Fire mang phong cách thi đấu lạnh và lì, càng bị ép, họ càng nguy hiểm. Với những pha phản công sắc bén, BTN luôn biết cách biến thế trận bất lợi thành màn lật kèo đầy bất ngờ tại Survival Legacy Cup SS1!",
+        logo: "logo-btn.jpg",
+        country: "", 
+        players: [
+            { n: "BTN.TDUNG", a: "tdung.jpg", r: "RUSHER" },
+            { n: "BTN.VQUANG", a: "vquang.jpg", r: "RUSHER" },
+            { n: "BTN.TANH", a: "tanh.jpg", r: "SNIPER" },
+            { n: "BTN.HLONG", a: "hlong.jpg", r: "SUPPORT" },
+            { n: "KHÔNG CÓ", a: "https://placehold.co/200x250/111/555?text=TRONG", r: "TRONG" }
+        ]
+    },
     "t24": { name: "TEAM 24", desc: "Thông tin đội 24...", logo: "https://placehold.co/120x120/222/FFF?text=T24", country: "[VIETNAM]", players: Array(5).fill({ n: "T24.MEMBER", a: "https://placehold.co/200x250/333/777?text=T24" }) },
     "t25": { name: "TEAM 25", desc: "Thông tin đội 25...", logo: "https://placehold.co/120x120/222/FFF?text=T25", country: "[VIETNAM]", players: Array(5).fill({ n: "T25.MEMBER", a: "https://placehold.co/200x250/333/777?text=T25" }) },
     "t26": { name: "TEAM 26", desc: "Thông tin đội 26...", logo: "https://placehold.co/120x120/222/FFF?text=T26", country: "[VIETNAM]", players: Array(5).fill({ n: "T26.MEMBER", a: "https://placehold.co/200x250/333/777?text=T26" }) },
