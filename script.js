@@ -439,7 +439,19 @@ const teamsDatabase = {
             { n: "BNE.DBAO", a: "dbao.jpg", r: "SUPPORT" }
         ]
     },
-    "t22": { name: "TEAM 22", desc: "Thông tin đội 22...", logo: "https://placehold.co/120x120/222/FFF?text=T22", country: "[VIETNAM]", players: Array(5).fill({ n: "T22.MEMBER", a: "https://placehold.co/200x250/333/777?text=T22" }) },
+    "cnct": {
+        name: "CNCT",
+        desc: "CNCT – Tên đầy đủ là CAINUOC CITY. Đội tuyển Free Fire mang đậm chất đường phố với lối chơi táo bạo và không ngại va chạm. Luôn sẵn sàng lao vào giao tranh, CNCT biến mỗi trận đấu thành cuộc chiến thực thụ, nơi bản lĩnh được đặt lên hàng đầu tại Survival Legacy Cup SS1!",
+        logo: "logo-cnct.jpg",
+        country: "", 
+        players: [
+            { n: "CNCT.QN", a: "qn.jpg", r: "RUSHER" },
+            { n: "CNCT.CN", a: "cn.jpg", r: "RUSHER" },
+            { n: "CNCT.KH", a: "kh.jpg", r: "RUSHER" },
+            { n: "CNCT.SOI", a: "soi.jpg", r: "SNIPER" },
+            { n: "CNCT.QUYEN", a: "quyen.jpg", r: "SUPPORT" }
+        ]
+    },
     "t23": { name: "TEAM 23", desc: "Thông tin đội 23...", logo: "https://placehold.co/120x120/222/FFF?text=T23", country: "[VIETNAM]", players: Array(5).fill({ n: "T23.MEMBER", a: "https://placehold.co/200x250/333/777?text=T23" }) },
     "t24": { name: "TEAM 24", desc: "Thông tin đội 24...", logo: "https://placehold.co/120x120/222/FFF?text=T24", country: "[VIETNAM]", players: Array(5).fill({ n: "T24.MEMBER", a: "https://placehold.co/200x250/333/777?text=T24" }) },
     "t25": { name: "TEAM 25", desc: "Thông tin đội 25...", logo: "https://placehold.co/120x120/222/FFF?text=T25", country: "[VIETNAM]", players: Array(5).fill({ n: "T25.MEMBER", a: "https://placehold.co/200x250/333/777?text=T25" }) },
