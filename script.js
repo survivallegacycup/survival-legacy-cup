@@ -397,7 +397,7 @@ const teamsDatabase = {
             { n: "GODS.CHUY", a: "chuy.jpg", r: "RUSHER" },
             { n: "GODS.KDUY", a: "kduy.jpg", r: "SPINER" },
             { n: "GODS.TVAN", a: "tvan.jpg", r: "SUPPORT" },
-            { n: "GODS.GHUY", a: "ghuy.jpg", r: "SUPPORT" }
+            { n: "GODS.GKIET", a: "gkiet.jpg", r: "SUPPORT" }
         ]
     },
     "whd": {
