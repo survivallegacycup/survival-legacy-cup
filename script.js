@@ -354,11 +354,11 @@ const teamsDatabase = {
         logo: "logo-tgl.jpg",
         country: "", 
         players: [
-            { n: "TGL.DEKAY", a: "", r: "RUSHER" },
-            { n: "TGL.HDPE", a: "", r: "RUSHER" },
-            { n: "TGL.MUP", a: "", r: "BOMBER" },
-            { n: "TGL.CUBA", a: "", r: "SNIPER" },
-            { n: "TGL.NPHUNG", a: "", r: "SUPPORT" }
+            { n: "TGL.DEKAY", a: "dekay.jpg", r: "RUSHER" },
+            { n: "TGL.HDPE", a: "hdpe.jpg", r: "RUSHER" },
+            { n: "TGL.MUP", a: "mup.jpg", r: "BOMBER" },
+            { n: "TGL.CUBA", a: "cuba.jpg", r: "SNIPER" },
+            { n: "TGL.NPHUNG", a: "nphung.jpg", r: "SUPPORT" }
         ]
     },
     "nvd": {
