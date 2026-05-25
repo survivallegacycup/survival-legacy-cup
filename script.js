@@ -504,7 +504,19 @@ const teamsDatabase = {
             { n: "KHÔNG CÓ", a: "https://placehold.co/200x250/111/555?text=TRONG", r: "TRONG" }
         ]
     },
-    "t27": { name: "TEAM 27", desc: "Thông tin đội 27...", logo: "https://placehold.co/120x120/222/FFF?text=T27", country: "[VIETNAM]", players: Array(5).fill({ n: "T27.MEMBER", a: "https://placehold.co/200x250/333/777?text=T27" }) },
+    "dc": {
+        name: "DC",
+        desc: "DC - Tên đầy đủ là Diệt Cus. Đội tuyển Free Fire mang phong cách thi đấu dứt khoát và đầy uy lực. Không vòng vo, mỗi pha hành động của DC đều như một đòn đánh chí mạng, nhanh gọn và đủ để định đoạt cục diện trận đấu Survival Legacy Cup SS1!",
+        logo: "logo-dc.jpg",
+        country: "", 
+        players: [
+            { n: "DC.PHAT", a: "phat.jpg", r: "RUSHER" },
+            { n: "DC.DONG", a: "dong2.jpg", r: "RUSHER" },
+            { n: "DC.KHANH", a: "khanh.jpg", r: "SNIPER" },
+            { n: "DC.HUNG", a: "hung.jpg", r: "SUPPORT" },
+            { n: "KHÔNG CÓ", a: "https://placehold.co/200x250/111/555?text=TRONG", r: "TRONG" }
+        ]
+    },
     "t28": { name: "TEAM 28", desc: "Thông tin đội 28...", logo: "https://placehold.co/120x120/222/FFF?text=T28", country: "[VIETNAM]", players: Array(5).fill({ n: "T28.MEMBER", a: "https://placehold.co/200x250/333/777?text=T28" }) },
     "t29": { name: "TEAM 29", desc: "Thông tin đội 29...", logo: "https://placehold.co/120x120/222/FFF?text=T29", country: "[VIETNAM]", players: Array(5).fill({ n: "T29.MEMBER", a: "https://placehold.co/200x250/333/777?text=T29" }) },
     "t30": { name: "TEAM 30", desc: "Thông tin đội 30...", logo: "https://placehold.co/120x120/222/FFF?text=T30", country: "[VIETNAM]", players: Array(5).fill({ n: "T30.MEMBER", a: "https://placehold.co/200x250/333/777?text=T30" }) },
