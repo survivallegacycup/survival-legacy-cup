@@ -517,7 +517,19 @@ const teamsDatabase = {
             { n: "KHÔNG CÓ", a: "https://placehold.co/200x250/111/555?text=TRONG", r: "TRONG" }
         ]
     },
-    "t28": { name: "TEAM 28", desc: "Thông tin đội 28...", logo: "https://placehold.co/120x120/222/FFF?text=T28", country: "[VIETNAM]", players: Array(5).fill({ n: "T28.MEMBER", a: "https://placehold.co/200x250/333/777?text=T28" }) },
+    "tgl2": {
+        name: "TGL2",
+        desc: "TGL2 - Tên đầy đủ là Team Gia Lai 2. Đội tuyển Free Fire phiên bản trẻ trung nhưng không kém phần sắc bén của TGL - thi đấu với tinh thần máu lửa và khát khao khẳng định. Luôn sẵn sàng bùng nổ, TGL2 là ẩn số có thể tạo nên bất ngờ ở bất kỳ thời điểm nào tại Survival Legacy Cup SS1!",
+        logo: "logo-tgl2.jpg",
+        country: "", 
+        players: [
+            { n: "TGL2.DKHOI", a: "dkhoi.jpg", r: "RUSHER" },
+            { n: "TGL2.HPHONG", a: "hphong", r: "RUSHER" },
+            { n: "TGL2.GHAO", a: "ghao.jpg", r: "SNIPER" },
+            { n: "TGL2.DKHOA", a: "dkhoa.jpg", r: "SNIPER" },
+            { n: "TGL2.CPHAT", a: "cphat.jpg", r: "SUPPORT" }
+        ]
+    },
     "t29": { name: "TEAM 29", desc: "Thông tin đội 29...", logo: "https://placehold.co/120x120/222/FFF?text=T29", country: "[VIETNAM]", players: Array(5).fill({ n: "T29.MEMBER", a: "https://placehold.co/200x250/333/777?text=T29" }) },
     "t30": { name: "TEAM 30", desc: "Thông tin đội 30...", logo: "https://placehold.co/120x120/222/FFF?text=T30", country: "[VIETNAM]", players: Array(5).fill({ n: "T30.MEMBER", a: "https://placehold.co/200x250/333/777?text=T30" }) },
     "t31": { name: "TEAM 31", desc: "Thông tin đội 31...", logo: "https://placehold.co/120x120/222/FFF?text=T31", country: "[VIETNAM]", players: Array(5).fill({ n: "T31.MEMBER", a: "https://placehold.co/200x250/333/777?text=T31" }) },
