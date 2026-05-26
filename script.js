@@ -543,7 +543,19 @@ const teamsDatabase = {
             { n: "SE.DUNG", a: "dung.jpg", r: "SNIPER" }
         ]
     },
-    "t30": { name: "TEAM 30", desc: "Thông tin đội 30...", logo: "https://placehold.co/120x120/222/FFF?text=T30", country: "[VIETNAM]", players: Array(5).fill({ n: "T30.MEMBER", a: "https://placehold.co/200x250/333/777?text=T30" }) },
+    "nok": {
+        name: "NOK",
+        desc: "NOK - Tên đầy đủ là NOKARA. Đội tuyển Free Fire chơi theo kiểu “một đòn là đủ” - không cần nhiều pha giao tranh, chỉ cần đúng thời điểm. Lặng lẽ tích tụ, rồi bất ngờ tung cú kết liễu khiến đối thủ không kịp hiểu chuyện gì vừa xảy ra tại Survival Legacy Cup SS1!",
+        logo: "logo-nok.jpg",
+        country: "", 
+        players: [
+            { n: "NOK.THANHHUNG", a: "thanhhung.jpg", r: "RUSHER" },
+            { n: "NOK.THANHDAT", a: "thanhdat.jpg", r: "RUSHER" },
+            { n: "NOK.VVLAVIDA", a: "vvlavida.jpg", r: "SNIPER" },
+            { n: "NOK.MOUSE", a: "mouse.jpg", r: "SNIPER" },
+            { n: "NOK.DECADE", a: "decade.jpg", r: "SUPPORT" }
+        ]
+    },
     "t31": { name: "TEAM 31", desc: "Thông tin đội 31...", logo: "https://placehold.co/120x120/222/FFF?text=T31", country: "[VIETNAM]", players: Array(5).fill({ n: "T31.MEMBER", a: "https://placehold.co/200x250/333/777?text=T31" }) },
     "t32": { name: "TEAM 32", desc: "Thông tin đội 32...", logo: "https://placehold.co/120x120/222/FFF?text=T32", country: "[VIETNAM]", players: Array(5).fill({ n: "T32.MEMBER", a: "https://placehold.co/200x250/333/777?text=T32" }) },
     "t33": { name: "TEAM 33", desc: "Thông tin đội 33...", logo: "https://placehold.co/120x120/222/FFF?text=T33", country: "[VIETNAM]", players: Array(5).fill({ n: "T33.MEMBER", a: "https://placehold.co/200x250/333/777?text=T33" }) },
