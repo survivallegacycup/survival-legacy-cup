@@ -530,7 +530,19 @@ const teamsDatabase = {
             { n: "TGL2.CPHAT", a: "cphat.jpg", r: "SUPPORT" }
         ]
     },
-    "t29": { name: "TEAM 29", desc: "Thông tin đội 29...", logo: "https://placehold.co/120x120/222/FFF?text=T29", country: "[VIETNAM]", players: Array(5).fill({ n: "T29.MEMBER", a: "https://placehold.co/200x250/333/777?text=T29" }) },
+    "se": {
+        name: "SE",
+        desc: "SE – Tên đầy đủ là SE ESPORTS. Đội tuyển thi đấu với phong thái lạnh như băng-ít sai lầm, nhiều áp lực. Mỗi bước di chuyển đều như siết dần không gian của đối thủ, đến khi nhận ra thì đã không còn đường lui tại Survival Legacy Cup SS1!",
+        logo: "logo-se.jpg",
+        country: "", 
+        players: [
+            { n: "SE.DONG", a: "dong.jpg", r: "RUSHER" },
+            { n: "SE.MINHBOY", a: "minhboy.jpg", r: "RUSHER" },
+            { n: "SE.SON", a: "son.jpg", r: "RUSHER" },
+            { n: "SE.HUY", a: "huy.jpg", r: "BOMBER" },
+            { n: "SE.DUNG", a: "dung.jpg", r: "SNIPER" }
+        ]
+    },
     "t30": { name: "TEAM 30", desc: "Thông tin đội 30...", logo: "https://placehold.co/120x120/222/FFF?text=T30", country: "[VIETNAM]", players: Array(5).fill({ n: "T30.MEMBER", a: "https://placehold.co/200x250/333/777?text=T30" }) },
     "t31": { name: "TEAM 31", desc: "Thông tin đội 31...", logo: "https://placehold.co/120x120/222/FFF?text=T31", country: "[VIETNAM]", players: Array(5).fill({ n: "T31.MEMBER", a: "https://placehold.co/200x250/333/777?text=T31" }) },
     "t32": { name: "TEAM 32", desc: "Thông tin đội 32...", logo: "https://placehold.co/120x120/222/FFF?text=T32", country: "[VIETNAM]", players: Array(5).fill({ n: "T32.MEMBER", a: "https://placehold.co/200x250/333/777?text=T32" }) },
