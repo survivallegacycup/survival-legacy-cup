@@ -556,7 +556,19 @@ const teamsDatabase = {
             { n: "NOK.DECADE", a: "decade.jpg", r: "SUPPORT" }
         ]
     },
-    "t31": { name: "TEAM 31", desc: "Thông tin đội 31...", logo: "https://placehold.co/120x120/222/FFF?text=T31", country: "[VIETNAM]", players: Array(5).fill({ n: "T31.MEMBER", a: "https://placehold.co/200x250/333/777?text=T31" }) },
+    "wr": {
+        name: "WR",
+        desc: "WR - Tên đầy đủ là WARY ESPORTS. Đội tuyển Free Fire luôn thi đấu trong trạng thái “cảnh giác tối đa” - từng bước di chuyển đều chặt chẽ, từng quyết định đều mang tính sống còn. Không dễ bị bắt bài, WR khiến đối thủ dần mắc sai lầm rồi trừng phạt bằng những pha xử lý lạnh lùng và chuẩn xác tại Survival Legacy Cup SS1!",
+        logo: "logo-wr.jpg",
+        country: "", 
+        players: [
+            { n: "WR.NH", a: "nh.jpg", r: "RUSHER" },
+            { n: "WR.GINZ", a: "ginz.jpg", r: "RIFLER" },
+            { n: "WR.BRX1", a: "brx1.jpg", r: "SNIPER" },
+            { n: "WR.QUANHUY", a: "quanhuy.jpg", r: "SUPPORT" },
+            { n: "KHÔNG CÓ", a: "https://placehold.co/200x250/111/555?text=TRONG", r: "TRONG" }
+        ]
+    },
     "t32": { name: "TEAM 32", desc: "Thông tin đội 32...", logo: "https://placehold.co/120x120/222/FFF?text=T32", country: "[VIETNAM]", players: Array(5).fill({ n: "T32.MEMBER", a: "https://placehold.co/200x250/333/777?text=T32" }) },
     "t33": { name: "TEAM 33", desc: "Thông tin đội 33...", logo: "https://placehold.co/120x120/222/FFF?text=T33", country: "[VIETNAM]", players: Array(5).fill({ n: "T33.MEMBER", a: "https://placehold.co/200x250/333/777?text=T33" }) },
     "t34": { name: "TEAM 34", desc: "Thông tin đội 34...", logo: "https://placehold.co/120x120/222/FFF?text=T34", country: "[VIETNAM]", players: Array(5).fill({ n: "T34.MEMBER", a: "https://placehold.co/200x250/333/777?text=T34" }) },
