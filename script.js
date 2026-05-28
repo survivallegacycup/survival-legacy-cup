@@ -608,7 +608,19 @@ const teamsDatabase = {
             { n: "MB.THAONHI", a: "thaonhi.jpg", r: "SUPPORT" }
         ]
     },
-    "t35": { name: "TEAM 35", desc: "Thông tin đội 35...", logo: "https://placehold.co/120x120/222/FFF?text=T35", country: "[VIETNAM]", players: Array(5).fill({ n: "T35.MEMBER", a: "https://placehold.co/200x250/333/777?text=T35" }) },
+    "km": {
+        name: "KM",
+        desc: "KM - Tên đầy đủ là KM ESPORTS. Đội tuyển Free Fire đại diện cho “Killer Mind - Tư duy sát thủ”, nơi mọi quyết định đều nhanh, gọn và mang tính kết liễu. KM không chỉ chơi game, họ săn lùng cơ hội và dứt điểm đối thủ không chút do dự tại Survival Legacy Cup SS1!",
+        logo: "logo-km.jpg",
+        country: "", 
+        players: [
+            { n: "KM.HQN", a: "hqn.jpg", r: "RUSHER" },
+            { n: "KM.KCDON", a: "kcdon.jpg", r: "RIFLER" },
+            { n: "KM.NGANDAO", a: "ngandao.jpg", r: "BOMBER" },
+            { n: "KM.CRUSH", a: "crush.jpg", r: "SNIPER" },
+            { n: "KM.MTHUAN", a: "mthuan.jpg", r: "SUPPORT" }
+        ]
+    },
     "t36": { name: "TEAM 36", desc: "Thông tin đội 36...", logo: "https://placehold.co/120x120/222/FFF?text=T36", country: "[VIETNAM]", players: Array(5).fill({ n: "T36.MEMBER", a: "https://placehold.co/200x250/333/777?text=T36" }) },
     "t37": { name: "TEAM 37", desc: "Thông tin đội 37...", logo: "https://placehold.co/120x120/222/FFF?text=T37", country: "[VIETNAM]", players: Array(5).fill({ n: "T37.MEMBER", a: "https://placehold.co/200x250/333/777?text=T37" }) },
     "t38": { name: "TEAM 38", desc: "Thông tin đội 38...", logo: "https://placehold.co/120x120/222/FFF?text=T38", country: "[VIETNAM]", players: Array(5).fill({ n: "T38.MEMBER", a: "https://placehold.co/200x250/333/777?text=T38" }) },
