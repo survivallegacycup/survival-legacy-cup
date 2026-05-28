@@ -595,7 +595,19 @@ const teamsDatabase = {
             { n: "6IT.HAU", a: "hau.jpg", r: "SUPPORT" }
         ]
     },
-    "t34": { name: "TEAM 34", desc: "Thông tin đội 34...", logo: "https://placehold.co/120x120/222/FFF?text=T34", country: "[VIETNAM]", players: Array(5).fill({ n: "T34.MEMBER", a: "https://placehold.co/200x250/333/777?text=T34" }) },
+    "mb": {
+        name: "MB",
+        desc: "MB - Tên đầy đủ là MEMBES. Đội tuyển Free Fire đại diện cho “Mind & Bullet – Trí tuệ và hỏa lực”, nơi chiến thuật và kỹ năng kết hợp hoàn hảo. Không chỉ bắn hay, MB còn thắng bằng cái đầu, biến mọi pha giao tranh thành nước đi đã được tính trước tại Survival Legacy Cup SS1!",
+        logo: "logo-mb.jpg",
+        country: "", 
+        players: [
+            { n: "MB.HIEU", a: "hieu.jpg", r: "RUSHER" },
+            { n: "MB.DANGKHOA", a: "dangkhoa.jpg", r: "RIFLER" },
+            { n: "MB.NPHUNG", a: "nphung2.jpg", r: "BOMBER" },
+            { n: "MB.QUOCKHANH", a: "quockhanh.jpg", r: "SUPPORT" },
+            { n: "MB.THAONHI", a: "thaonhi.jpg", r: "SUPPORT" }
+        ]
+    },
     "t35": { name: "TEAM 35", desc: "Thông tin đội 35...", logo: "https://placehold.co/120x120/222/FFF?text=T35", country: "[VIETNAM]", players: Array(5).fill({ n: "T35.MEMBER", a: "https://placehold.co/200x250/333/777?text=T35" }) },
     "t36": { name: "TEAM 36", desc: "Thông tin đội 36...", logo: "https://placehold.co/120x120/222/FFF?text=T36", country: "[VIETNAM]", players: Array(5).fill({ n: "T36.MEMBER", a: "https://placehold.co/200x250/333/777?text=T36" }) },
     "t37": { name: "TEAM 37", desc: "Thông tin đội 37...", logo: "https://placehold.co/120x120/222/FFF?text=T37", country: "[VIETNAM]", players: Array(5).fill({ n: "T37.MEMBER", a: "https://placehold.co/200x250/333/777?text=T37" }) },
