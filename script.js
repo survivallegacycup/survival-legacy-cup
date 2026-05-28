@@ -621,8 +621,32 @@ const teamsDatabase = {
             { n: "KM.MTHUAN", a: "mthuan.jpg", r: "SUPPORT" }
         ]
     },
-    "t36": { name: "TEAM 36", desc: "Thông tin đội 36...", logo: "https://placehold.co/120x120/222/FFF?text=T36", country: "[VIETNAM]", players: Array(5).fill({ n: "T36.MEMBER", a: "https://placehold.co/200x250/333/777?text=T36" }) },
-    "t37": { name: "TEAM 37", desc: "Thông tin đội 37...", logo: "https://placehold.co/120x120/222/FFF?text=T37", country: "[VIETNAM]", players: Array(5).fill({ n: "T37.MEMBER", a: "https://placehold.co/200x250/333/777?text=T37" }) },
+    "4t": {
+        name: "4T",
+        desc: "4T – Tên đầy đủ là 4T ESPORTS. Đội tuyển Free Fire đại diện cho “4 Triggers – 4 họng súng luôn sẵn sàng khai hỏa”, nơi mỗi thành viên là một điểm nổ có thể kích hoạt bất cứ lúc nào. Khi 4T nhập cuộc, trận đấu không còn là kiểm soát-mà là chuỗi phản ứng dây chuyền của những pha hủy diệt tại Survival Legacy Cup SS1!",
+        logo: "logo-4t.jpg",
+        country: "", 
+        players: [
+            { n: "4T.MINHNHAT", a: "https://placehold.co/200x250/111/555?text=AVATAR+FF", r: "RUSHER" },
+            { n: "4T.TRUONGAN", a: "https://placehold.co/200x250/111/555?text=AVATAR+FF", r: "BOMBER" },
+            { n: "4T.NGOCCAC", a: "https://placehold.co/200x250/111/555?text=AVATAR+FF", r: "SNIPER" },
+            { n: "4T.HOANGDUNG", a: "https://placehold.co/200x250/111/555?text=AVATAR+FF", r: "SUPPORT" },
+            { n: "4T.BONG", a: "https://placehold.co/200x250/111/555?text=AVATAR+FF", r: "SUPPORT" }
+        ]
+    },
+    "4t": {
+        name: "4T",
+        desc: "4T – Tên đầy đủ là 4T ESPORTS. Đội tuyển Free Fire đại diện cho “4 Triggers – 4 họng súng luôn sẵn sàng khai hỏa”, nơi mỗi thành viên là một điểm nổ có thể kích hoạt bất cứ lúc nào. Khi 4T nhập cuộc, trận đấu không còn là kiểm soát-mà là chuỗi phản ứng dây chuyền của những pha hủy diệt tại Survival Legacy Cup SS1!",
+        logo: "logo-4t.jpg",
+        country: "", 
+        players: [
+            { n: "4T.MINHNHAT", a: "minhnhat.jpg", r: "RUSHER" },
+            { n: "4T.TRUONGAN", a: "truongan.jpg", r: "BOMBER" },
+            { n: "4T.NGOCCAC", a: "ngoccac.jpg", r: "SNIPER" },
+            { n: "4T.HOANGDUNG", a: "hoangdung.jpg", r: "SUPPORT" },
+            { n: "4T.BONG", a: "bong.jpg", r: "SUPPORT" }
+        ]
+    },
     "t38": { name: "TEAM 38", desc: "Thông tin đội 38...", logo: "https://placehold.co/120x120/222/FFF?text=T38", country: "[VIETNAM]", players: Array(5).fill({ n: "T38.MEMBER", a: "https://placehold.co/200x250/333/777?text=T38" }) },
     "t39": { name: "TEAM 39", desc: "Thông tin đội 39...", logo: "https://placehold.co/120x120/222/FFF?text=T39", country: "[VIETNAM]", players: Array(5).fill({ n: "T39.MEMBER", a: "https://placehold.co/200x250/333/777?text=T39" }) },
     "t40": { name: "TEAM 40", desc: "Thông tin đội 40...", logo: "https://placehold.co/120x120/222/FFF?text=T40", country: "[VIETNAM]", players: Array(5).fill({ n: "T40.MEMBER", a: "https://placehold.co/200x250/333/777?text=T40" }) },
