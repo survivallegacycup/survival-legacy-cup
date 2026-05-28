@@ -582,7 +582,19 @@ const teamsDatabase = {
             { n: "4TL.MNAM", a: "mnam.jpg", r: "SUPPORT" }
         ]
     },
-    "t33": { name: "TEAM 33", desc: "Thông tin đội 33...", logo: "https://placehold.co/120x120/222/FFF?text=T33", country: "[VIETNAM]", players: Array(5).fill({ n: "T33.MEMBER", a: "https://placehold.co/200x250/333/777?text=T33" }) },
+    "6it": {
+        name: "6IT",
+        desc: "6IT -  Tên đầy đủ là 6I TEAM. Đội tuyển Free Fire đại diện cho “6 Instinct – 6 bản năng chiến đấu”, nơi mỗi quyết định đều dựa trên cảm giác và phản xạ đỉnh cao. Khi nhập cuộc, 6IT chơi như một thể thống nhất-nhanh, gắt và luôn đi trước đối thủ một nhịp tại Survival Legacy Cup SS1!",
+        logo: "logo-6it.jpg",
+        country: "", 
+        players: [
+            { n: "6IT.MKHANG", a: "mkhang.jpg", r: "RUSHER" },
+            { n: "6IT.SUY", a: "suy.jpg", r: "RUSHER" },
+            { n: "6IT.ANHDUC", a: "anhduc.jpg", r: "SNIPER" },
+            { n: "6IT.THACH", a: "thach.jpg", r: "SNIPER" },
+            { n: "6IT.HAU", a: "hau.jpg", r: "SUPPORT" }
+        ]
+    },
     "t34": { name: "TEAM 34", desc: "Thông tin đội 34...", logo: "https://placehold.co/120x120/222/FFF?text=T34", country: "[VIETNAM]", players: Array(5).fill({ n: "T34.MEMBER", a: "https://placehold.co/200x250/333/777?text=T34" }) },
     "t35": { name: "TEAM 35", desc: "Thông tin đội 35...", logo: "https://placehold.co/120x120/222/FFF?text=T35", country: "[VIETNAM]", players: Array(5).fill({ n: "T35.MEMBER", a: "https://placehold.co/200x250/333/777?text=T35" }) },
     "t36": { name: "TEAM 36", desc: "Thông tin đội 36...", logo: "https://placehold.co/120x120/222/FFF?text=T36", country: "[VIETNAM]", players: Array(5).fill({ n: "T36.MEMBER", a: "https://placehold.co/200x250/333/777?text=T36" }) },
