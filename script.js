@@ -569,7 +569,19 @@ const teamsDatabase = {
             { n: "KHÔNG CÓ", a: "https://placehold.co/200x250/111/555?text=TRONG", r: "TRONG" }
         ]
     },
-    "t32": { name: "TEAM 32", desc: "Thông tin đội 32...", logo: "https://placehold.co/120x120/222/FFF?text=T32", country: "[VIETNAM]", players: Array(5).fill({ n: "T32.MEMBER", a: "https://placehold.co/200x250/333/777?text=T32" }) },
+    "4tl": {
+        name: "4TL",
+        desc: "4TL - Tên đầy đủ là 4TL. Đội tuyển Free Fire đại diện cho “4 Tactics – 4 chiến thuật”, nơi mỗi thành viên là một mảnh ghép chiến lược hoàn chỉnh. Khi kết hợp, họ tạo nên thế trận đa hướng, biến mọi pha giao tranh thành màn áp đảo không thể chống đỡ tại Survival Legacy Cup SS1!",
+        logo: "logo-4tl.jpg",
+        country: "", 
+        players: [
+            { n: "4TL.PKHANH", a: "pkhanh.jpg", r: "RUSHER" },
+            { n: "4TL.KING", a: "king.jpg", r: "RIFLER" },
+            { n: "4TL.THANHHUY", a: "thanhhuy.jpg", r: "BOMBER" },
+            { n: "4TL.MTAY", a: "mtay.jpg", r: "SNIPER" },
+            { n: "4TL.MNAM", a: "mnam.jpg", r: "SUPPORT" }
+        ]
+    },
     "t33": { name: "TEAM 33", desc: "Thông tin đội 33...", logo: "https://placehold.co/120x120/222/FFF?text=T33", country: "[VIETNAM]", players: Array(5).fill({ n: "T33.MEMBER", a: "https://placehold.co/200x250/333/777?text=T33" }) },
     "t34": { name: "TEAM 34", desc: "Thông tin đội 34...", logo: "https://placehold.co/120x120/222/FFF?text=T34", country: "[VIETNAM]", players: Array(5).fill({ n: "T34.MEMBER", a: "https://placehold.co/200x250/333/777?text=T34" }) },
     "t35": { name: "TEAM 35", desc: "Thông tin đội 35...", logo: "https://placehold.co/120x120/222/FFF?text=T35", country: "[VIETNAM]", players: Array(5).fill({ n: "T35.MEMBER", a: "https://placehold.co/200x250/333/777?text=T35" }) },
