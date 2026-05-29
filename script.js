@@ -777,7 +777,19 @@ const teamsDatabase = {
             { n: "XH.DUYKHANH", a: "duykhanh.jpg", r: "SUPPORT" }
         ]
     },
-    "t48": { name: "TEAM 48", desc: "Thông tin đội 48...", logo: "https://placehold.co/120x120/222/FFF?text=T48", country: "[VIETNAM]", players: Array(5).fill({ n: "T48.MEMBER", a: "https://placehold.co/200x250/333/777?text=T48" }) }
+    "ovn": {
+        name: "OVN",
+        desc: "OVN – Tên đầy đủ là OBLIVION. Đội tuyển Free Fire đại diện cho “Oblivion – Sự xóa sổ”, nơi mọi dấu vết của đối thủ đều bị quét sạch không thương tiếc. OVN không chỉ chiến thắng-họ khiến kẻ địch “biến mất” khỏi bản đồ tại Survival Legacy Cup SS1!",
+        logo: "logo-ovn.jpg",
+        country: "", 
+        players: [
+            { n: "OVN.DUY", a: "duy.jpg", r: "RUSHER" },
+            { n: "OVN.VANTU", a: "vantu.jpg", r: "RUSHER" },
+            { n: "OVN.TIEN", a: "tien.jpg", r: "SNIPER" },
+            { n: "OVN.TINH", a: "tinh.jpg", r: "SNIPER" },
+            { n: "OVN.TRACY", a: "tracy.jpg", r: "SUPPORT" }
+        ]
+    }
 };
 
 function switchTeam(teamId) {
