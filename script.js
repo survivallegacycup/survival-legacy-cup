@@ -699,7 +699,19 @@ const teamsDatabase = {
             { n: "KHÔNG CÓ", a: "https://placehold.co/200x250/111/555?text=TRONG", r: "TRONG" }
         ]
     },
-    "t42": { name: "TEAM 42", desc: "Thông tin đội 42...", logo: "https://placehold.co/120x120/222/FFF?text=T42", country: "[VIETNAM]", players: Array(5).fill({ n: "T42.MEMBER", a: "https://placehold.co/200x250/333/777?text=T42" }) },
+    "ke": {
+        name: "KE",
+        desc: "KE – Tên đầy đủ là KE ESPORTS. Đội tuyển Free Fire đại diện cho “Kawaii Energy – Năng lượng đáng yêu nhưng đầy sát thương”, mang phong cách dễ thương kiểu Hello Kitty nhưng ẩn sau đó là lối chơi cực kỳ khó chịu. Đừng để vẻ ngoài đánh lừa-KE có thể “cute” trong cách xuất hiện, nhưng kết thúc trận đấu lại cực kỳ gắt tại Survival Legacy Cup SS1!",
+        logo: "logo-ke.jpg",
+        country: "", 
+        players: [
+            { n: "KE.ITAR", a: "itar.jpg", r: "RUSHER" },
+            { n: "KE.LUAN", a: "luan.jpg", r: "RIFLER" },
+            { n: "KE.CUSINA", a: "cusina.jpg", r: "SNIPER" },
+            { n: "KE.SIKIBIDI", a: "sikibidi.jpg", r: "SUPPORT" },
+            { n: "KHÔNG CÓ", a: "https://placehold.co/200x250/111/555?text=TRONG", r: "TRONG" }
+        ]
+    },
     "t43": { name: "TEAM 43", desc: "Thông tin đội 43...", logo: "https://placehold.co/120x120/222/FFF?text=T43", country: "[VIETNAM]", players: Array(5).fill({ n: "T43.MEMBER", a: "https://placehold.co/200x250/333/777?text=T43" }) },
     "t44": { name: "TEAM 44", desc: "Thông tin đội 44...", logo: "https://placehold.co/120x120/222/FFF?text=T44", country: "[VIETNAM]", players: Array(5).fill({ n: "T44.MEMBER", a: "https://placehold.co/200x250/333/777?text=T44" }) },
     "t45": { name: "TEAM 45", desc: "Thông tin đội 45...", logo: "https://placehold.co/120x120/222/FFF?text=T45", country: "[VIETNAM]", players: Array(5).fill({ n: "T45.MEMBER", a: "https://placehold.co/200x250/333/777?text=T45" }) },
