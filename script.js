@@ -660,6 +660,19 @@ const teamsDatabase = {
             { n: "LHDXB.CPHAT", a: "chanhphat.jpg", r: "SUPPORT" }
         ]
     },
+    "hkt": {
+        name: "HKT",
+        desc: "HKT – Tên đầy đủ là HKT. Đội tuyển Free Fire đại diện cho “Hard Kill Team – Đội hình săn mạng không khoan nhượng”, nơi mọi giao tranh đều được đẩy lên cực điểm. HKT không chơi an toàn - họ lao vào, áp đảo và kết thúc đối thủ bằng những pha tấn công dồn dập tại Survival Legacy Cup SS1!",
+        logo: "logo-hkt.jpg",
+        country: "", 
+        players: [
+            { n: "HKT.MKHANG", a: "mkhang.jpg", r: "RUSHER" },
+            { n: "HKT.SUY", a: "suy.jpg", r: "RUSHER" },
+            { n: "HKT.ANHDUC", a: "anhduc.jpg", r: "SNIPER" },
+            { n: "HKT.THACH", a: "thach.jpg", r: "SNIPER" },
+            { n: "HKT.HAU", a: "hau.jpg", r: "SUPPORT" }
+        ]
+    },
     "t40": { name: "TEAM 40", desc: "Thông tin đội 40...", logo: "https://placehold.co/120x120/222/FFF?text=T40", country: "[VIETNAM]", players: Array(5).fill({ n: "T40.MEMBER", a: "https://placehold.co/200x250/333/777?text=T40" }) },
     "t41": { name: "TEAM 41", desc: "Thông tin đội 41...", logo: "https://placehold.co/120x120/222/FFF?text=T41", country: "[VIETNAM]", players: Array(5).fill({ n: "T41.MEMBER", a: "https://placehold.co/200x250/333/777?text=T41" }) },
     "t42": { name: "TEAM 42", desc: "Thông tin đội 42...", logo: "https://placehold.co/120x120/222/FFF?text=T42", country: "[VIETNAM]", players: Array(5).fill({ n: "T42.MEMBER", a: "https://placehold.co/200x250/333/777?text=T42" }) },
