@@ -119,14 +119,14 @@ async function moThongSo(soTran) {
 
             // --- 1. IN 5 CỘT BÊN TRÁI (Gộp thành 1 khối bự duy nhất) ---
             container.innerHTML += `
-                <div class="g-cell span-4-row">${teamInfo[0] || ''}</div>
-                <div class="g-cell span-4-row team-name-cell">
+                <div class="g-cell">${teamInfo[0] || ''}</div>
+                <div class="g-cell team-name-cell">
                     <img src="${logoThichHop}" alt="logo" class="small-logo"> 
                     <span class="short-name">${tenDoi}</span>
                 </div>
-                <div class="g-cell span-4-row">${teamInfo[2] || ''}</div>
-                <div class="g-cell span-4-row">${teamInfo[3] || ''}</div>
-                <div class="g-cell span-4-row cot-xam-garena">${teamInfo[4] || ''}</div>
+                <div class="g-cell">${teamInfo[2] || ''}</div>
+                <div class="g-cell">${teamInfo[3] || ''}</div>
+                <div class="g-cell cot-xam-garena">${teamInfo[4] || ''}</div>
             `;
         }
     } catch (error) {

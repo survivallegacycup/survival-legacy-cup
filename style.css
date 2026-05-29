@@ -235,7 +235,7 @@ body {
 .match-number { color: #fff; font-weight: bold; font-size: 16px;}
 
 /* ================= LƯỚI BẢNG ĐIỂM (GRID TABLE) ================= */
-.grid-table { display: grid; grid-template-columns: 8% 20% 14% 14% 10% 18% 8% 8%; background-color: #151515; border: 1px solid #333; max-height: 400px; overflow-y: auto; }
+.grid-table { display: grid; grid-template-columns: 80px 2.5fr 1fr 1fr 1.5fr; }
 .grid-table::-webkit-scrollbar { width: 6px; }
 .grid-table::-webkit-scrollbar-track { background: #111; }
 .grid-table::-webkit-scrollbar-thumb { background: #ffcc00; border-radius: 10px; }
