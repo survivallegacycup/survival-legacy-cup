@@ -627,24 +627,24 @@ const teamsDatabase = {
         logo: "logo-4t.jpg",
         country: "", 
         players: [
-            { n: "4T.MINHNHAT", a: "https://placehold.co/200x250/111/555?text=AVATAR+FF", r: "RUSHER" },
-            { n: "4T.TRUONGAN", a: "https://placehold.co/200x250/111/555?text=AVATAR+FF", r: "BOMBER" },
-            { n: "4T.NGOCCAC", a: "https://placehold.co/200x250/111/555?text=AVATAR+FF", r: "SNIPER" },
-            { n: "4T.HOANGDUNG", a: "https://placehold.co/200x250/111/555?text=AVATAR+FF", r: "SUPPORT" },
-            { n: "4T.BONG", a: "https://placehold.co/200x250/111/555?text=AVATAR+FF", r: "SUPPORT" }
-        ]
-    },
-    "4t": {
-        name: "4T",
-        desc: "4T – Tên đầy đủ là 4T ESPORTS. Đội tuyển Free Fire đại diện cho “4 Triggers – 4 họng súng luôn sẵn sàng khai hỏa”, nơi mỗi thành viên là một điểm nổ có thể kích hoạt bất cứ lúc nào. Khi 4T nhập cuộc, trận đấu không còn là kiểm soát-mà là chuỗi phản ứng dây chuyền của những pha hủy diệt tại Survival Legacy Cup SS1!",
-        logo: "logo-4t.jpg",
-        country: "", 
-        players: [
             { n: "4T.MINHNHAT", a: "minhnhat.jpg", r: "RUSHER" },
             { n: "4T.TRUONGAN", a: "truongan.jpg", r: "BOMBER" },
             { n: "4T.NGOCCAC", a: "ngoccac.jpg", r: "SNIPER" },
             { n: "4T.HOANGDUNG", a: "hoangdung.jpg", r: "SUPPORT" },
             { n: "4T.BONG", a: "bong.jpg", r: "SUPPORT" }
+        ]
+    },
+    "te": {
+        name: "TE",
+        desc: "TE – Tên đầy đủ là TOMESPORTS. Đội tuyển Free Fire đại diện cho “Tactical Execution – Lối chơi chuẩn xác tuyệt đối”, nơi mọi pha xử lý đều được triển khai như một kịch bản hoàn hảo. TE không tạo ra cơ hội-họ tự viết nên thế trận và kết thúc nó theo cách của mình tại Survival Legacy Cup SS1!",
+        logo: "logo-te.png",
+        country: "", 
+        players: [
+            { n: "TE.SPEEDZ", a: "speedz.jpg", r: "RUSHER" },
+            { n: "TE.RENNO", a: "renno.jpg", r: "RUSHER" },
+            { n: "TE.KOLIX", a: "kolix.jpg", r: "BOMBER" },
+            { n: "TE.TVL", a: "tvl.jpg", r: "SNIPER" },
+            { n: "TE.BEN10", a: "ben10.jpg", r: "SUPPORT" }
         ]
     },
     "lhdxb": {
