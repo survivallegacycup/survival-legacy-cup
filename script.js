@@ -673,7 +673,19 @@ const teamsDatabase = {
             { n: "HKT.HAU", a: "hau.jpg", r: "SUPPORT" }
         ]
     },
-    "t40": { name: "TEAM 40", desc: "Thông tin đội 40...", logo: "https://placehold.co/120x120/222/FFF?text=T40", country: "[VIETNAM]", players: Array(5).fill({ n: "T40.MEMBER", a: "https://placehold.co/200x250/333/777?text=T40" }) },
+    "tgl3": {
+        name: "TGL3",
+        desc: "TGL3 – Tên đầy đủ là TEAM GIA LAI 3. Đội tuyển Free Fire đại diện cho “Third Impact – Cú bùng nổ thứ ba”, nơi sức trẻ và sự táo bạo tạo nên những pha xử lý không theo bất kỳ quy luật nào. TGL3 không đi theo lối cũ-họ phá vỡ nó và tạo ra cuộc chơi của riêng mình tại Survival Legacy Cup SS1!",
+        logo: "logo-tgl3.jpg",
+        country: "", 
+        players: [
+            { n: "TGL3.DKHOI", a: "dkhoi.jpg", r: "RUSHER" },
+            { n: "TGL3.HPHONG", a: "hphong.jpg", r: "RUSHER" },
+            { n: "TGL3.GHAO", a: "ghao.jpg", r: "SNIPER" },
+            { n: "TGL3.DKHOA", a: "dkhoa.jpg", r: "SNIPER" },
+            { n: "TGL3.CPHAT", a: "cphat.jpg", r: "SUPPORT" }
+        ]
+    },
     "t41": { name: "TEAM 41", desc: "Thông tin đội 41...", logo: "https://placehold.co/120x120/222/FFF?text=T41", country: "[VIETNAM]", players: Array(5).fill({ n: "T41.MEMBER", a: "https://placehold.co/200x250/333/777?text=T41" }) },
     "t42": { name: "TEAM 42", desc: "Thông tin đội 42...", logo: "https://placehold.co/120x120/222/FFF?text=T42", country: "[VIETNAM]", players: Array(5).fill({ n: "T42.MEMBER", a: "https://placehold.co/200x250/333/777?text=T42" }) },
     "t43": { name: "TEAM 43", desc: "Thông tin đội 43...", logo: "https://placehold.co/120x120/222/FFF?text=T43", country: "[VIETNAM]", players: Array(5).fill({ n: "T43.MEMBER", a: "https://placehold.co/200x250/333/777?text=T43" }) },
