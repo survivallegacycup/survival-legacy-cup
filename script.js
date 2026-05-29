@@ -104,12 +104,13 @@ async function moThongSo(soTran) {
         const data = await response.text();
         const rows = data.split('\n').slice(1);
 
-        for (let i = 0; i < rows.length; i += 4) {
+        for (let i = 0; i < rows.length; i++) {
             if (!rows[i] || rows[i].trim() === '') continue; 
             const teamInfo = rows[i].split(',');
             if (teamInfo.length < 5) continue; 
             
             let tenDoi = teamInfo[1] ? teamInfo[1].trim() : '';
+            if (tenDoi === '') continue;
             let logoThichHop = "https://placehold.co/24x24/222/FFF?text=LOGO";
             
             let timDoi = Object.values(teamsDatabase).find(t => t.name.toUpperCase() === tenDoi.toUpperCase());
