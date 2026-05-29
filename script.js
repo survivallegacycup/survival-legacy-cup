@@ -647,19 +647,6 @@ const teamsDatabase = {
             { n: "4T.BONG", a: "bong.jpg", r: "SUPPORT" }
         ]
     },
-    "te": {
-        name: "TE",
-        desc: "TE – Tên đầy đủ là TOMESPORTS. Đội tuyển Free Fire đại diện cho “Tactical Execution – Lối chơi chuẩn xác tuyệt đối”, nơi mọi pha xử lý đều được triển khai như một kịch bản hoàn hảo. TE không tạo ra cơ hội-họ tự viết nên thế trận và kết thúc nó theo cách của mình tại Survival Legacy Cup SS1!",
-        logo: "logo-te.png",
-        country: "", 
-        players: [
-            { n: "TE.SPEEDZ", a: "speedz.jpg", r: "RUSHER" },
-            { n: "TE.RENNO", a: "renno.jpg", r: "RUSHER" },
-            { n: "TE.KOLIX", a: "kolix.jpg", r: "BOMBER" },
-            { n: "TE.TVL", a: "tvl.jpg", r: "SNIPER" },
-            { n: "TE.BEN10", a: "ben10.jpg", r: "SUPPORT" }
-        ]
-    },
     "lhdxb": {
         name: "LHDXB",
         desc: "LHDXB – Tên đầy đủ là LA HÁN ĐẨY XE BÒ. Đội tuyển Free Fire đại diện cho “sức mạnh lì lợm và tiến công không ngừng”, như những La Hán kiên định đẩy thế trận tiến về phía trước. Không vội vàng nhưng không thể cản, LHDXB càng đánh càng ép, biến mọi trận đấu thành hành trình áp đảo tại Survival Legacy Cup SS1!",
