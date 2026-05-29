@@ -660,7 +660,19 @@ const teamsDatabase = {
             { n: "TE.BEN10", a: "ben10.jpg", r: "SUPPORT" }
         ]
     },
-    "t39": { name: "TEAM 39", desc: "Thông tin đội 39...", logo: "https://placehold.co/120x120/222/FFF?text=T39", country: "[VIETNAM]", players: Array(5).fill({ n: "T39.MEMBER", a: "https://placehold.co/200x250/333/777?text=T39" }) },
+    "lhdxb": {
+        name: "LHDXB",
+        desc: "LHDXB – Tên đầy đủ là LA HÁN ĐẨY XE BÒ. Đội tuyển Free Fire đại diện cho “sức mạnh lì lợm và tiến công không ngừng”, như những La Hán kiên định đẩy thế trận tiến về phía trước. Không vội vàng nhưng không thể cản, LHDXB càng đánh càng ép, biến mọi trận đấu thành hành trình áp đảo tại Survival Legacy Cup SS1!",
+        logo: "logo-lhdxb.jpg",
+        country: "", 
+        players: [
+            { n: "LHDXB.NQUYEN", a: "nquyen.jpg", r: "RUSHER" },
+            { n: "LHDXB.MTOAN", a: "mtoan.jpg", r: "RUSHER" },
+            { n: "LHDXB.NQUAN", a: "nquan.jpg", r: "SNIPER" },
+            { n: "LHDXB.HONGLINH", a: "honglinh.jpg", r: "SUPPORT" },
+            { n: "LHDXB.CPHAT", a: "chanhphat.jpg", r: "SUPPORT" }
+        ]
+    },
     "t40": { name: "TEAM 40", desc: "Thông tin đội 40...", logo: "https://placehold.co/120x120/222/FFF?text=T40", country: "[VIETNAM]", players: Array(5).fill({ n: "T40.MEMBER", a: "https://placehold.co/200x250/333/777?text=T40" }) },
     "t41": { name: "TEAM 41", desc: "Thông tin đội 41...", logo: "https://placehold.co/120x120/222/FFF?text=T41", country: "[VIETNAM]", players: Array(5).fill({ n: "T41.MEMBER", a: "https://placehold.co/200x250/333/777?text=T41" }) },
     "t42": { name: "TEAM 42", desc: "Thông tin đội 42...", logo: "https://placehold.co/120x120/222/FFF?text=T42", country: "[VIETNAM]", players: Array(5).fill({ n: "T42.MEMBER", a: "https://placehold.co/200x250/333/777?text=T42" }) },
