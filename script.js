@@ -714,14 +714,14 @@ const teamsDatabase = {
     },
     "hd": {
         name: "HD",
-        desc: "HD – Tên đầy đủ là Hoà Đam. Đội tuyển Free Fire đại diện cho “Heavy Damage – Sát thương hủy diệt”, nơi mỗi pha giao tranh đều mang sức công phá cực lớn. HD không cần kéo dài—họ kết thúc nhanh, gọn và đầy uy lực tại Survival Legacy Cup SS1!",
+        desc: "HD – Tên đầy đủ là Hoà Đam. Đội tuyển Free Fire đại diện cho “Heavy Damage – Sát thương hủy diệt”, nơi mỗi pha giao tranh đều mang sức công phá cực lớn. HD không cần kéo dài-họ kết thúc nhanh, gọn và đầy uy lực tại Survival Legacy Cup SS1!",
         logo: "logo-hd.jpg",
         country: "", 
         players: [
-            { n: "HD.ANHHAO", a: "anhhao.jpg", r: "RUSHER" },
-            { n: "HD.HAI", a: "hai.jpg", r: "BOMBER" },
-            { n: "HD.MINHSANG", a: "minhsang.jpg", r: "SNIPER" },
-            { n: "HD.VANHIEU", a: "vanhieu.jpg", r: "SUPPORT" },
+            { n: "HD.MKHANH", a: "mkhanh.jpg", r: "RUSHER" },
+            { n: "HD.TAIBEO", a: "taibeo.jpg", r: "BOMBER" },
+            { n: "HD.MINHHAI", a: "minhhai.jpg", r: "SNIPER" },
+            { n: "HD.VANLONG", a: "vanlong.jpg", r: "SUPPORT" },
             { n: "KHÔNG CÓ", a: "https://placehold.co/200x250/111/555?text=TRONG", r: "TRONG" }
         ]
     },
