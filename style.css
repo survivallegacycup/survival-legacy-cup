@@ -234,16 +234,6 @@ body {
 .arrow-btn:hover { border-color: #ffcc00; color: #ffcc00; }
 .match-number { color: #fff; font-weight: bold; font-size: 16px;}
 
-/* ================= LƯỚI BẢNG ĐIỂM (GRID TABLE) ================= */
-.grid-table { display: grid; grid-template-columns: 80px 2.5fr 1fr 1fr 1.5fr; }
-.grid-table::-webkit-scrollbar { width: 6px; }
-.grid-table::-webkit-scrollbar-track { background: #111; }
-.grid-table::-webkit-scrollbar-thumb { background: #ffcc00; border-radius: 10px; }
-
-.g-header { background-color: #1a1a1a; color: #888; font-weight: bold; font-size: 11px; padding: 15px 5px; display: flex; align-items: center; justify-content: center; border-bottom: 2px solid #333; position: sticky; top: 0; z-index: 10; text-transform: uppercase; }
-.g-cell { color: #ccc; font-size: 13px; padding: 12px 5px; display: flex; align-items: center; justify-content: center; border-bottom: 1px solid #222; }
-.g-header.text-left, .g-cell.text-left { justify-content: flex-start; padding-left: 20px; }
-
 /* Các lệnh gộp dòng */
 .span-4 { grid-row: span 4; border-bottom: 1px solid #555; }
 .col-tong-diem { background-color: #222; }
@@ -484,14 +474,6 @@ body {
     background-color: transparent !important;
 }
 
-/* Ép tất cả các ô đổ màu nền sậm Garena, Tiêu diệt vạch ngang */
-#data-bang-diem .g-cell {
-    border: none !important;
-    background-color: #1a1a1a !important;
-    box-sizing: border-box !important;
-    margin: 0 !important;
-}
-
 /* Định dạng Khối 5 Cột Bên Trái (Hạng, Đội, Điểm) */
 .span-4-row {
     grid-row: span 4;
@@ -585,14 +567,6 @@ body {
 ::-webkit-scrollbar-thumb {
     background: #ffcc00; /* Thanh cuộn màu vàng xịn xò */
     border-radius: 2px;
-}
-/* ================= VIỀN KẺ RÀNH MẠCH CHUẨN GARENA 100% ================= */
-
-/* 1. Kẻ vạch ngang mỏng màu xám mờ cho tất cả các ô (Chia đội và chia từng người chơi) */
-div#data-bang-diem div.g-cell,
-div#data-bang-diem div.g-header {
-    border: none !important; /* Xóa sạch các viền tạp nham */
-    border-bottom: 1px solid #2a2a2a !important; /* Vạch xám mờ tinh tế chuẩn Garena */
 }
 
 /* 2. Đóng khung viền bao quanh toàn bộ bảng */
@@ -747,4 +721,49 @@ header, .header, .navbar, .top-bar, .top-header, #header {
     width: auto !important;
     border-radius: 4px !important; /* Bo cong 4 góc logo một tí xíu cho sang trọng */
     object-fit: contain !important;
+}
+/* ================= BẢNG ĐIỂM 5 CỘT MỚI ================= */
+.grid-table {
+    display: grid;
+    /* Chia đúng 5 cột: Cột Hạng(80px), Đội(to nhất), 3 cột điểm bằng nhau */
+    grid-template-columns: 80px 3fr 1.5fr 1.5fr 1.5fr;
+    background-color: #1a1a1a;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+.g-header {
+    background-color: #222;
+    color: #aaa;
+    font-weight: bold;
+    font-size: 12px;
+    text-align: center;
+    padding: 15px 5px;
+    border-bottom: 2px solid #333;
+}
+
+.g-header.text-left {
+    text-align: left;
+    padding-left: 20px;
+}
+
+.g-cell {
+    color: #ccc;
+    font-size: 14px;
+    padding: 12px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #333;
+}
+
+.g-cell.team-name-cell {
+    justify-content: flex-start;
+    padding-left: 20px;
+}
+
+.g-cell.cot-xam-garena {
+    background-color: #2a2a2a;
+    font-weight: bold;
+    color: #ffcc00;
 }
