@@ -712,7 +712,19 @@ const teamsDatabase = {
             { n: "KHÔNG CÓ", a: "https://placehold.co/200x250/111/555?text=TRONG", r: "TRONG" }
         ]
     },
-    "t43": { name: "TEAM 43", desc: "Thông tin đội 43...", logo: "https://placehold.co/120x120/222/FFF?text=T43", country: "[VIETNAM]", players: Array(5).fill({ n: "T43.MEMBER", a: "https://placehold.co/200x250/333/777?text=T43" }) },
+    "hd": {
+        name: "HD",
+        desc: "HD – Tên đầy đủ là Hoà Đam. Đội tuyển Free Fire đại diện cho “Heavy Damage – Sát thương hủy diệt”, nơi mỗi pha giao tranh đều mang sức công phá cực lớn. HD không cần kéo dài—họ kết thúc nhanh, gọn và đầy uy lực tại Survival Legacy Cup SS1!",
+        logo: "logo-hd.jpg",
+        country: "", 
+        players: [
+            { n: "HD.ANHHAO", a: "anhhao.jpg", r: "RUSHER" },
+            { n: "HD.HAI", a: "hai.jpg", r: "BOMBER" },
+            { n: "HD.MINHSANG", a: "minhsang.jpg", r: "SNIPER" },
+            { n: "HD.VANHIEU", a: "vanhieu.jpg", r: "SUPPORT" },
+            { n: "KHÔNG CÓ", a: "https://placehold.co/200x250/111/555?text=TRONG", r: "TRONG" }
+        ]
+    },
     "t44": { name: "TEAM 44", desc: "Thông tin đội 44...", logo: "https://placehold.co/120x120/222/FFF?text=T44", country: "[VIETNAM]", players: Array(5).fill({ n: "T44.MEMBER", a: "https://placehold.co/200x250/333/777?text=T44" }) },
     "t45": { name: "TEAM 45", desc: "Thông tin đội 45...", logo: "https://placehold.co/120x120/222/FFF?text=T45", country: "[VIETNAM]", players: Array(5).fill({ n: "T45.MEMBER", a: "https://placehold.co/200x250/333/777?text=T45" }) },
     "t46": { name: "TEAM 46", desc: "Thông tin đội 46...", logo: "https://placehold.co/120x120/222/FFF?text=T46", country: "[VIETNAM]", players: Array(5).fill({ n: "T46.MEMBER", a: "https://placehold.co/200x250/333/777?text=T46" }) },
