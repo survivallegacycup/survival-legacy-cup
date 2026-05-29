@@ -128,28 +128,6 @@ async function moThongSo(soTran) {
                 <div class="g-cell span-4-row">${teamInfo[3] || ''}</div>
                 <div class="g-cell span-4-row cot-xam-garena">${teamInfo[4] || ''}</div>
             `;
-
-            // --- 2. LẶP 4 LẦN CHO 3 CỘT NGƯỜI CHƠI BÊN PHẢI ---
-            for (let j = 0; j < 4; j++) {
-                const pRow = rows[i + j];
-                const p = pRow ? pRow.split(',') : []; 
-                const isLast = (j === 3) ? 'p-row-last' : '';
-                
-                let ten = (p[5] && p[5].trim() !== '') ? p[5].toUpperCase() : '';
-                let kill = '';
-                let dmg = '';
-                
-                if (ten !== '') {
-                    kill = (p[6] && p[6].trim() !== '') ? p[6].trim() : '0';
-                    dmg = (p[7] && p[7].trim() !== '') ? p[7].trim() : '0';
-                }
-
-                container.innerHTML += `
-                    <div class="g-cell player-cell text-left ${isLast}">${ten}</div>
-                    <div class="g-cell player-cell ${isLast}">${kill}</div>
-                    <div class="g-cell player-cell ${isLast}">${dmg}</div>
-                `;
-            }
         }
     } catch (error) {
         console.error("Lỗi lấy dữ liệu:", error);
