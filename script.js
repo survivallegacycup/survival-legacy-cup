@@ -637,7 +637,7 @@ const teamsDatabase = {
     "te": {
         name: "TE",
         desc: "TE – Tên đầy đủ là TOMESPORTS. Đội tuyển Free Fire đại diện cho “Tactical Execution – Lối chơi chuẩn xác tuyệt đối”, nơi mọi pha xử lý đều được triển khai như một kịch bản hoàn hảo. TE không tạo ra cơ hội-họ tự viết nên thế trận và kết thúc nó theo cách của mình tại Survival Legacy Cup SS1!",
-        logo: "logo-te.png",
+        logo: "logo-te.jpg",
         country: "", 
         players: [
             { n: "TE.SPEEDZ", a: "speedz.jpg", r: "RUSHER" },
