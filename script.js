@@ -738,7 +738,19 @@ const teamsDatabase = {
             { n: "KHÔNG CÓ", a: "https://placehold.co/200x250/111/555?text=TRONG", r: "TRONG" }
         ]
     },
-    "t45": { name: "TEAM 45", desc: "Thông tin đội 45...", logo: "https://placehold.co/120x120/222/FFF?text=T45", country: "[VIETNAM]", players: Array(5).fill({ n: "T45.MEMBER", a: "https://placehold.co/200x250/333/777?text=T45" }) },
+    "ns": {
+        name: "NS",
+        desc: "NS – Tên đầy đủ là NGUSI ESPORTS. Đội tuyển Free Fire đại diện cho “No Signal – Mất tín hiệu”, bởi khi NS xuất hiện, đối thủ gần như “mất kết nối” với trận đấu. Nhịp game bị bóp nghẹt, tầm nhìn bị kiểm soát và mọi thứ kết thúc trước khi kịp hiểu chuyện gì xảy ra tại Survival Legacy Cup SS1!",
+        logo: "logo-ns.jpg",
+        country: "", 
+        players: [
+            { n: "NS.MINHTRI2", a: "minhtri2.jpg", r: "RUSHER" },
+            { n: "NS.PHAMCUONG", a: "phamcuong.jpg", r: "RUSHER" },
+            { n: "NS.QUOCHUY", a: "quochuy.jpg", r: "RUSHER" },
+            { n: "NS.MINHTRI", a: "minhtri.jpg", r: "SNIPER" },
+            { n: "NS.TRANLONG", a: "tranlong.jpg", r: "SUPPORT" }
+        ]
+    },
     "t46": { name: "TEAM 46", desc: "Thông tin đội 46...", logo: "https://placehold.co/120x120/222/FFF?text=T46", country: "[VIETNAM]", players: Array(5).fill({ n: "T46.MEMBER", a: "https://placehold.co/200x250/333/777?text=T46" }) },
     "t47": { name: "TEAM 47", desc: "Thông tin đội 47...", logo: "https://placehold.co/120x120/222/FFF?text=T47", country: "[VIETNAM]", players: Array(5).fill({ n: "T47.MEMBER", a: "https://placehold.co/200x250/333/777?text=T47" }) },
     "t48": { name: "TEAM 48", desc: "Thông tin đội 48...", logo: "https://placehold.co/120x120/222/FFF?text=T48", country: "[VIETNAM]", players: Array(5).fill({ n: "T48.MEMBER", a: "https://placehold.co/200x250/333/777?text=T48" }) }
