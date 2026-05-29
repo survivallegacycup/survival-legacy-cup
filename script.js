@@ -764,7 +764,19 @@ const teamsDatabase = {
             { n: "KHÔNG CÓ", a: "https://placehold.co/200x250/111/555?text=TRONG", r: "TRONG" }
         ]
     },
-    "t47": { name: "TEAM 47", desc: "Thông tin đội 47...", logo: "https://placehold.co/120x120/222/FFF?text=T47", country: "[VIETNAM]", players: Array(5).fill({ n: "T47.MEMBER", a: "https://placehold.co/200x250/333/777?text=T47" }) },
+    "xh": {
+        name: "XH",
+        desc: "XH – Tên đầy đủ là XH ESPORTS. Đội tuyển Free Fire đại diện cho “Xtreme Hunt – Cuộc săn cực hạn”, luôn truy đuổi đối thủ đến cùng và không cho bất kỳ cơ hội trốn thoát nào. XH không chỉ tìm mục tiêu—họ săn đến khi kết thúc hoàn toàn tại Survival Legacy Cup SS1!",
+        logo: "logo-xh.jpg",
+        country: "", 
+        players: [
+            { n: "XH.VHAO", a: "vanhao.jpg", r: "RUSHER" },
+            { n: "XH.HUUNHAN", a: "huunhan.jpg", r: "RUSHER" },
+            { n: "XH.VANLONG", a: "vanlong2.jpg", r: "BOMBER" },
+            { n: "XH.GIABAO", a: "giabao.jpg", r: "SNIPER" },
+            { n: "XH.DUYKHANH", a: "duykhanh.jpg", r: "SUPPORT" }
+        ]
+    },
     "t48": { name: "TEAM 48", desc: "Thông tin đội 48...", logo: "https://placehold.co/120x120/222/FFF?text=T48", country: "[VIETNAM]", players: Array(5).fill({ n: "T48.MEMBER", a: "https://placehold.co/200x250/333/777?text=T48" }) }
 };
 
