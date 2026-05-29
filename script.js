@@ -751,7 +751,19 @@ const teamsDatabase = {
             { n: "NS.TRANLONG", a: "tranlong.jpg", r: "SUPPORT" }
         ]
     },
-    "t46": { name: "TEAM 46", desc: "Thông tin đội 46...", logo: "https://placehold.co/120x120/222/FFF?text=T46", country: "[VIETNAM]", players: Array(5).fill({ n: "T46.MEMBER", a: "https://placehold.co/200x250/333/777?text=T46" }) },
+    "ea": {
+        name: "EA",
+        desc: "EA – Tên đầy đủ là EAGLE. Đội tuyển Free Fire đại diện cho “Eagle Eye – Con mắt đại bàng”, luôn bao quát toàn bản đồ và ra đòn với độ chính xác tuyệt đối. EA không săn vội-họ quan sát, khóa mục tiêu và kết liễu trong một khoảnh khắc tại Survival Legacy Cup SS1!",
+        logo: "logo-ea.jpg",
+        country: "", 
+        players: [
+            { n: "EA.DUONG", a: "duong.jpg", r: "RUSHER" },
+            { n: "EA.BRXZ", a: "brxz.jpg", r: "BOMBER" },
+            { n: "EA.FREDA", a: "freda.jpg", r: "SNIPER" },
+            { n: "EA.KHIM", a: "khim.jpg", r: "SUPPORT" },
+            { n: "KHÔNG CÓ", a: "https://placehold.co/200x250/111/555?text=TRONG", r: "TRONG" }
+        ]
+    },
     "t47": { name: "TEAM 47", desc: "Thông tin đội 47...", logo: "https://placehold.co/120x120/222/FFF?text=T47", country: "[VIETNAM]", players: Array(5).fill({ n: "T47.MEMBER", a: "https://placehold.co/200x250/333/777?text=T47" }) },
     "t48": { name: "TEAM 48", desc: "Thông tin đội 48...", logo: "https://placehold.co/120x120/222/FFF?text=T48", country: "[VIETNAM]", players: Array(5).fill({ n: "T48.MEMBER", a: "https://placehold.co/200x250/333/777?text=T48" }) }
 };
