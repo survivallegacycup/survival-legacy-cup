@@ -647,7 +647,19 @@ const teamsDatabase = {
             { n: "4T.BONG", a: "bong.jpg", r: "SUPPORT" }
         ]
     },
-    "t38": { name: "TEAM 38", desc: "Thông tin đội 38...", logo: "https://placehold.co/120x120/222/FFF?text=T38", country: "[VIETNAM]", players: Array(5).fill({ n: "T38.MEMBER", a: "https://placehold.co/200x250/333/777?text=T38" }) },
+    "te": {
+        name: "TE",
+        desc: "TE – Tên đầy đủ là TOMESPORTS. Đội tuyển Free Fire đại diện cho “Tactical Execution – Lối chơi chuẩn xác tuyệt đối”, nơi mọi pha xử lý đều được triển khai như một kịch bản hoàn hảo. TE không tạo ra cơ hội-họ tự viết nên thế trận và kết thúc nó theo cách của mình tại Survival Legacy Cup SS1!",
+        logo: "logo-te.png",
+        country: "", 
+        players: [
+            { n: "TE.SPEEDZ", a: "speedz.jpg", r: "RUSHER" },
+            { n: "TE.RENNO", a: "renno.jpg", r: "RUSHER" },
+            { n: "TE.KOLIX", a: "kolix.jpg", r: "BOMBER" },
+            { n: "TE.TVL", a: "tvl.jpg", r: "SNIPER" },
+            { n: "TE.BEN10", a: "ben10.jpg", r: "SUPPORT" }
+        ]
+    },
     "t39": { name: "TEAM 39", desc: "Thông tin đội 39...", logo: "https://placehold.co/120x120/222/FFF?text=T39", country: "[VIETNAM]", players: Array(5).fill({ n: "T39.MEMBER", a: "https://placehold.co/200x250/333/777?text=T39" }) },
     "t40": { name: "TEAM 40", desc: "Thông tin đội 40...", logo: "https://placehold.co/120x120/222/FFF?text=T40", country: "[VIETNAM]", players: Array(5).fill({ n: "T40.MEMBER", a: "https://placehold.co/200x250/333/777?text=T40" }) },
     "t41": { name: "TEAM 41", desc: "Thông tin đội 41...", logo: "https://placehold.co/120x120/222/FFF?text=T41", country: "[VIETNAM]", players: Array(5).fill({ n: "T41.MEMBER", a: "https://placehold.co/200x250/333/777?text=T41" }) },
