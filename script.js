@@ -102,6 +102,8 @@ async function moThongSo(soTran) {
 
         const response = await fetch(linkHienTai);
         const data = await response.text();
+        // THÊM ĐÚNG DÒNG NÀY VÀO:
+        console.log("DỮ LIỆU TỪ GOOGLE SHEETS LÀ:\n", data);
         const rows = data.split('\n').slice(1);
 
         for (let i = 0; i < rows.length; i++) {
