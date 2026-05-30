@@ -94,6 +94,16 @@ async function moThongSo(soTran) {
     const headers = container.querySelectorAll('.g-header');
     container.innerHTML = '';
     headers.forEach(h => container.appendChild(h));
+    container.innerHTML += `
+        <div class="g-cell">1</div>
+        <div class="g-cell team-name-cell">
+            <img src="https://placehold.co/24x24/222/FFF?text=TEST" alt="logo" class="small-logo">
+            <span class="short-name">ĐỘI TEST CSS</span>
+        </div>
+        <div class="g-cell">10</div>
+        <div class="g-cell">15</div>
+        <div class="g-cell cot-xam-garena">25</div>
+    `;
 
     try {
         // Bốc đúng link CSV theo số trận
