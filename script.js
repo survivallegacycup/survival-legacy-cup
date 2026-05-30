@@ -107,8 +107,6 @@ async function moThongSo(soTran) {
         for (let i = 0; i < rows.length; i++) {
             if (!rows[i] || rows[i].trim() === '') continue; 
             const teamInfo = rows[i].split(',');
-            if (teamInfo.length < 5) continue; 
-            
             let tenDoi = teamInfo[1] ? teamInfo[1].trim() : '';
             if (tenDoi === '') continue;
             let logoThichHop = "https://placehold.co/24x24/222/FFF?text=LOGO";
