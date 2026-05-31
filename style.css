@@ -485,7 +485,7 @@ body {
     font-size: 18px;
     font-weight: bold;
     color: #ffffff;
-    min-width: 80px; 
+    min-width: 80px;
     text-align: center;
 }
 
@@ -631,4 +631,19 @@ header, .header, .navbar, .top-bar, .top-header, #header {
     background-color: #2a2a2a;
     font-weight: bold;
     color: #ffcc00;
+}
+/* ================= THIẾT KẾ THANH CUỘN (SCROLLBAR) ================= */
+::-webkit-scrollbar {
+    width: 6px; /* Kích thước thanh cuộn dọc */
+    height: 6px; /* Kích thước thanh cuộn ngang */
+}
+::-webkit-scrollbar-track {
+    background: #111; /* Màu nền của rãnh trượt */
+}
+::-webkit-scrollbar-thumb {
+    background: #ff1a1a !important; /* Màu đỏ rực rỡ */
+    border-radius: 10px; /* Bo góc cho mượt */
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #cc0000 !important; /* Đỏ sậm hơn khi rê chuột vào */
 }
