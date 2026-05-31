@@ -67,7 +67,8 @@ async function moThongSo(soTran) {
         if (anhMapCacTran[soTran]) {
             mapBanner.src = anhMapCacTran[soTran];
             mapBanner.style.display = 'block';
-        } else {
+        } 
+        else {
             mapBanner.style.display = 'none'; 
         }
     }
