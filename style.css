@@ -399,14 +399,14 @@ body {
 .t-icon img {
     width: 65px !important; 
     height: 65px !important; 
-    object-fit: contain;
+    object-fit: cover !important;
     
     /* CHÌA KHÓA: Trả lại nền trong suốt nguyên bản cho Logo */
     background: transparent !important; 
     
     border: 3px solid transparent !important; 
     border-radius: 8px;
-    padding: 5px;
+    padding: 0px;
     transition: all 0.3s ease; 
 }
 
