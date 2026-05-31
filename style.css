@@ -287,8 +287,21 @@ body {
 .t-icon span { color: #fff; font-size: 11px; font-weight: bold; }
 /* 3. Lưới Tuyển Thủ (Bottom) */
 .players-grid {
-    display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;
-    background-color: #151515; padding: 40px 20px; border-radius: 0 0 4px 4px;
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 20px;
+    
+    /* CHÌA KHÓA: Chèn nền vàng kim loại */
+    background-image: url('bg-vang.jpg'); 
+    background-size: cover;          /* Phủ kín toàn bộ khu vực dưới */
+    background-position: center;     /* Căn giữa để lấy tâm vòng tròn vàng đẹp nhất */
+    
+    padding: 50px 20px;              /* Tăng lề trên dưới một chút cho dàn thẻ đỡ bị sát mép */
+    border-radius: 0 0 8px 8px;
+    
+    /* Tặng thêm 1 đường kẻ viền vàng ở trên cùng để phân cách thật mượt với cái nền xanh giới thiệu */
+    border-top: 3px solid #ffcc00; 
 }
 
 /* THẺ TUYỂN THỦ CẮT GÓC (ESPORTS STYLE) */
