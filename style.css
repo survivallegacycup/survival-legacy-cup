@@ -394,26 +394,27 @@ body {
     cursor: pointer; opacity: 0.4; transition: 0.3s;
 }
 .t-icon:hover, .t-icon.active { opacity: 1; }
+
 /* 1. Trạng thái bình thường của các Logo */
 .t-icon img {
     width: 65px; 
     height: 65px; 
     object-fit: contain;
-    background: #111; /* Đổi nền trắng thành đen nhạt cho tiệp với màu Esports */
-    border: 2px solid #555; /* Viền xám mỏng khi chưa chọn */
-    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.5); /* Nền đen mờ cho tiệp với không khí Esports */
+    border: 3px solid #555; /* CHÌA KHÓA: Chốt cứng viền 3px */
+    border-radius: 8px; /* Bo góc thêm tí cho mượt */
     padding: 5px;
-    transition: all 0.3s ease; /* Tạo độ mượt khi phóng to */
+    transition: all 0.3s ease; 
 }
 
-/* 2. Hiệu ứng VIP: Làm viền Vàng Dày & Phát sáng khi Chọn hoặc Rê chuột */
+/* 2. Hiệu ứng VIP: Đổi màu viền và phát sáng (KHÔNG đổi độ dày) */
 .t-icon.active img, 
 .t-icon:hover img {
-    border: 4px solid #ffcc00 !important; /* Viền vàng ép dày lên 4px */
-    box-shadow: 0 0 15px rgba(255, 204, 0, 0.8), /* Tỏa hào quang vàng ra ngoài */
-                inset 0 0 5px rgba(255, 204, 0, 0.5); /* Hắt sáng nhẹ vào trong */
-    transform: scale(1.15); /* Phóng to logo lên 1 chút cho lồi ra khỏi nền đỏ */
-    background: rgba(0, 0, 0, 0.7); /* Nền tối lại để logo rực lên */
+    border: 3px solid #ffcc00 !important; /* Vẫn giữ đúng 3px, chỉ nhuộm Vàng */
+    box-shadow: 0 0 15px rgba(255, 204, 0, 0.8), 
+                inset 0 0 5px rgba(255, 204, 0, 0.5); 
+    transform: scale(1.15); /* Phóng to bằng transform sẽ KHÔNG làm đẩy chữ */
+    background: rgba(0, 0, 0, 0.8); 
 }
 .t-icon.active img { border-color: #ffcc00; }
 .t-icon span { color: #fff; font-size: 12px; font-weight: bold; }
