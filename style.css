@@ -395,24 +395,32 @@ body {
 }
 .t-icon:hover, .t-icon.active { opacity: 1; }
 
-/* 1. Trạng thái bình thường (Ép cứng kích thước, dẹp bỏ viền thật) */
+/* 1. Trạng thái bình thường (Có sẵn viền tàng hình để giữ chỗ) */
 .t-icon img {
     width: 65px !important; 
     height: 65px !important; 
     object-fit: contain;
     background: rgba(0, 0, 0, 0.5) !important;
-    border: none !important; /* TUYỆT ĐỐI KHÔNG DÙNG VIỀN THẬT NỮA */
+    
+    /* CHÌA KHÓA Ở ĐÂY: Viền 3px nhưng trong suốt (transparent) */
+    border: 3px solid transparent !important; 
+    
     border-radius: 8px;
     padding: 5px;
     transition: all 0.3s ease; 
 }
 
-/* 2. Trạng thái Chọn/Hover (Dùng Viền Ảo không chiếm diện tích) */
+/* 2. Trạng thái Chọn/Hover (Chỉ hiện màu viền & phát sáng, KHÔNG PHÓNG TO NỮA) */
 .t-icon.active img, 
 .t-icon:hover img {
-    /* Lệnh này dùng bóng đổ để vẽ ra 1 cái viền cứng 3px màu Vàng, cộng thêm hào quang tỏa ra ngoài */
-    box-shadow: 0 0 0 3px #ffcc00, 0 0 15px rgba(255, 204, 0, 0.8) !important; 
-    transform: scale(1.15) !important; /* Scale phóng to hình ảnh lơ lửng, không đẩy bố cục */
+    /* Chỉ đổi viền sang màu Vàng, kích thước vẫn giữ đúng 3px */
+    border: 3px solid #ffcc00 !important; 
+    
+    box-shadow: 0 0 15px rgba(255, 204, 0, 0.8) !important; 
+    
+    /* TẮT TÍNH NĂNG PHÓNG TO: Trả về tỷ lệ gốc (1) */
+    transform: scale(1) !important; 
+    
     background: rgba(0, 0, 0, 0.8) !important; 
 }
 .t-icon.active img { border-color: #ffcc00; }
