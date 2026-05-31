@@ -128,8 +128,14 @@ async function moThongSo(soTran) {
             if(timDoi && timDoi.logo) {
                 logoThichHop = timDoi.logo;
             }
-
-            // --- 1. IN 5 CỘT BÊN TRÁI (Gộp thành 1 khối bự duy nhất) ---
+            // 2. DÁN ĐOẠN BOOYAH VÀO ĐÂY (Sau khi đã tìm thấy logoThichHop thật)
+            if (teamInfo[0].trim() === '1') {
+                let booyahLogo = document.querySelector('.info-box.booyah-box img');
+                let booyahName = document.querySelector('.info-box.booyah-box .winner-name');
+                if (booyahLogo) booyahLogo.src = logoThichHop;
+                if (booyahName) booyahName.innerText = tenDoi;
+            }
+            // --- 3. IN 5 CỘT BÊN TRÁI (Gộp thành 1 khối bự duy nhất) ---
             container.innerHTML += `
                 <div class="g-cell">${teamInfo[0] || ''}</div>
                 <div class="g-cell team-name-cell">
