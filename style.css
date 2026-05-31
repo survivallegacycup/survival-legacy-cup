@@ -6,7 +6,16 @@
 }
 
 body {
-    background-color: #0d0d0d;
+    /* Đặt ảnh làm nền */
+    background-image: url('bg-esport.jpg'); 
+    
+    /* Căn chỉnh ảnh chuẩn Esports */
+    background-size: cover;             /* Ép ảnh phóng to phủ kín toàn bộ màn hình */
+    background-position: center center; /* Luôn canh ảnh ở giữa trung tâm */
+    background-attachment: fixed;       /* HIỆU ỨNG XỊN: Khóa chết ảnh nền. Khi bạn cuộn web, chỉ có bảng điểm trượt đi, còn ảnh nền đứng im! */
+    background-repeat: no-repeat;       /* Không cho ảnh lặp lại */
+    
+    /* Màu chữ tổng thể */
     color: #ffffff;
 }
 
