@@ -221,7 +221,7 @@ body {
 .modal-title .text-white { color: #fff; }
 
 /* Khung thông tin trận đấu */
-.match-info-banner { display: flex; justify-content: space-between; align-items: center; background-color: #1a1a1a; border-top: 3px solid #ffcc00; padding: 20px 50px; margin-bottom: 0; }
+.match-info-banner { display: flex; justify-content: space-between; align-items: center; background-color: #1a1a1a; border-top: 3px solid #00a8ff !important; padding: 20px 50px; margin-bottom: 0; }
 .info-box { text-align: center; }
 .time-box .label { color: #fff; font-size: 13px; margin-bottom: 5px; }
 .time-box .date { color: #aaa; font-size: 15px; font-weight: bold; margin-bottom: 5px;}
