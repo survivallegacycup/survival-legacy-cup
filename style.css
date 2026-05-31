@@ -650,11 +650,12 @@ header, .header, .navbar, .top-bar, .top-header, #header {
 /* ================= ẢNH MAP BOOYAH GÓC PHẢI ================= */
 #banner-map {
     position: absolute; /* Lệnh "chiếc thảm thần" giúp ảnh bay lơ lửng */
-    top: 30px;          /* Đẩy ảnh từ trên trần nhà xuống 30px */
-    right: 40px;        /* Ép ảnh dính vào lề bên phải 40px */
+    top: 20px;          /* Đẩy ảnh từ trên trần nhà xuống 30px */
+    right: 30px;        /* Ép ảnh dính vào lề bên phải 40px */
     width: 250px;       /* Chiều ngang của ảnh (bạn có thể tăng giảm tùy ý) */
     height: auto;       /* Tự động căn chỉnh chiều cao cho không bị méo */
     border: 2px solid #ffcc00; /* Viền vàng cực ngầu */
     border-radius: 5px; /* Bo nhẹ 4 góc */
-    z-index: 100;       /* Đảm bảo ảnh luôn nằm đè lên trên cùng, không bị che */
+    z-index: 100;
+    display: none;       /* Đảm bảo ảnh luôn nằm đè lên trên cùng, không bị che */
 }
