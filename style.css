@@ -651,7 +651,7 @@ header, .header, .navbar, .top-bar, .top-header, #header {
 #banner-map {
     position: absolute;
     top: -25px;       /* Số âm (-15px) sẽ đẩy tấm ảnh bay ngược lên phía trên phần nền đen */
-    right: -180px;       /* Ép sát tấm ảnh về mép bên phải của khung */
+    right: -200px;       /* Ép sát tấm ảnh về mép bên phải của khung */
     width: 220px;     /* Kích thước giữ nguyên */
     height: auto;
     border: 3px solid #ffcc00; /* Đã đổi sang màu Xanh Dương Esports cực ngầu, và cho viền dày lên tí (3px) */
