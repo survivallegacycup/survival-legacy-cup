@@ -108,6 +108,7 @@ async function moThongSo(soTran) {
     if(!modal || !container) return;
 
     modal.style.display = 'block'; // ĐÂY CHÍNH LÀ LỆNH GỌI CÁI BẢNG LÊN!
+    document.body.style.overflow = 'hidden'; /* Khóa cuộn trang nền */
     
     const headers = container.querySelectorAll('.g-header');
     container.innerHTML = '';
@@ -173,6 +174,8 @@ async function moThongSo(soTran) {
 function dongThongSo() {
     let modal = document.getElementById('modal-thong-so');
     if(modal) modal.style.display = 'none';
+    // THÊM DÒNG NÀY VÀO ĐỂ TRẢ LẠI THANH CUỘN CHO TRANG CHỦ:
+    document.body.style.overflow = '';
 }
 
 
