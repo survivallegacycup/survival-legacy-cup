@@ -215,7 +215,7 @@ body {
 .modal-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: #050505; z-index: 9999; overflow-y: auto; }
 .btn-back-top { position: absolute; top: 30px; left: 40px; background: transparent; border: 1px solid #555; color: #aaa; padding: 8px 20px; border-radius: 4px; cursor: pointer; font-size: 12px; font-weight: bold; }
 .btn-back-top:hover { color: #fff; border-color: #ffcc00; }
-.modal-content { width: 90%; max-width: 1000px; margin: 40px auto; padding-top: 30px; position: relative;}
+.modal-content { width: 90%; max-width: 1000px; margin: 40px auto; padding-top: 30px; position: relative !important;}
 .modal-header { text-align: center; margin-bottom: 30px; }
 .modal-title { color: #ffcc00; font-size: 24px; font-weight: bold; text-transform: uppercase;}
 .modal-title .text-white { color: #fff; }
