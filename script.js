@@ -105,6 +105,11 @@ async function moThongSo(soTran) {
         // THÊM ĐÚNG DÒNG NÀY VÀO:
         console.log("DỮ LIỆU TỪ GOOGLE SHEETS LÀ:\n", data);
         const rows = data.split('\n').slice(1);
+        // RESET BẢNG BOOYAH VỀ DẤU CHẤM HỎI TRƯỚC KHI ĐỌC TRẬN MỚI
+        let booyahLogo = document.querySelector('.info-box.booyah-box img');
+        let booyahName = document.querySelector('.info-box.booyah-box .winner-name');
+        if (booyahLogo) booyahLogo.src = "https://placehold.co/80x80/222/FFF?text=?"; 
+        if (booyahName) booyahName.innerText = "???";
 
         for (let i = 0; i < rows.length; i++) {
             if (!rows[i] || rows[i].trim() === '') continue; 
@@ -112,7 +117,13 @@ async function moThongSo(soTran) {
             let tenDoi = teamInfo[1] ? teamInfo[1].trim() : '';
             if (tenDoi === '') continue;
             let logoThichHop = "https://placehold.co/24x24/222/FFF?text=LOGO";
-            
+            // TỰ ĐỘNG BÊ ĐỘI HẠNG 1 LÊN BẢNG BOOYAH!
+            if (teamInfo[0].trim() === '1') {
+                let booyahLogo = document.querySelector('.info-box.booyah-box img');
+                let booyahName = document.querySelector('.info-box.booyah-box .winner-name');
+                if (booyahLogo) booyahLogo.src = logoThichHop;
+                if (booyahName) booyahName.innerText = tenDoi;
+            }
             let timDoi = Object.values(teamsDatabase).find(t => t.name.toUpperCase() === tenDoi.toUpperCase());
             if(timDoi && timDoi.logo) {
                 logoThichHop = timDoi.logo;
