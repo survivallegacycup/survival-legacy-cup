@@ -285,19 +285,6 @@ body {
 }
 .t-icon.active img { border-color: #ffcc00; }
 .t-icon span { color: #fff; font-size: 11px; font-weight: bold; }
-
-/* 2. Banner Thông tin (Middle) */
-.team-info-banner {
-    display: flex; align-items: center; gap: 30px;
-    background-color: #252525; padding: 30px 40px;
-}
-.big-logo-box img {
-    width: 120px; height: 120px; background: #fff;
-    padding: 10px; border-radius: 5px;
-}
-.team-desc-box h2 { color: #ffcc00; font-size: 24px; margin-bottom: 10px; text-transform: uppercase;}
-.team-desc-box p { color: #ccc; font-size: 14px; line-height: 1.6; max-width: 600px; }
-
 /* 3. Lưới Tuyển Thủ (Bottom) */
 .players-grid {
     display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;
@@ -423,19 +410,24 @@ body {
 .t-icon.active img { border-color: #ffcc00; }
 .t-icon span { color: #fff; font-size: 12px; font-weight: bold; }
 
-/* 2. Banner Thông tin */
+/* 2. Banner Thông tin tin */
 .team-info-banner {
     display: flex; align-items: center; gap: 30px;
-    background-color: #2a2a2a; padding: 30px 50px;
+    background-image: url('bg-xanh.jpg'); /* CHÌA KHÓA: Nhớ để file ảnh cùng thư mục nhé */
+    background-size: cover;
+    background-position: center;
+    padding: 40px 50px;
+    border-bottom: 3px solid #0055ff; /* Kẻ viền xanh dương ở đáy */
 }
-.big-logo-box img { width: 120px; height: 120px; background: #fff; padding: 10px; border-radius: 5px; }
-.team-desc-box h2 { color: #ffcc00; font-size: 24px; margin-bottom: 10px; text-transform: uppercase;}
-.team-desc-box p { color: #ccc; font-size: 14px; line-height: 1.6; max-width: 600px; }
 
-/* 3. Lưới Tuyển Thủ */
-.players-grid {
-    display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;
-    background-color: #151515; padding: 40px 20px; border-radius: 0 0 4px 4px;
+.big-logo-box img { 
+    width: 120px; height: 120px; 
+    object-fit: cover !important; /* Ép logo tràn sát viền */
+    background: transparent !important; /* Xóa phông trắng thừa */
+    padding: 0 !important; /* Xóa khoảng trống tàng hình */
+    border: 4px solid #ffcc00 !important; /* Viền Vàng 4px cực ngầu */
+    border-radius: 8px; 
+    box-shadow: 0 0 20px rgba(255, 204, 0, 0.6); /* Hào quang vàng rực rỡ */
 }
 
 /* Thẻ cầu thủ cắt góc */
