@@ -44,6 +44,12 @@ const linkCacTran = {
     41: "https://docs.google.com/spreadsheets/d/e/2PACX-1vTxQ0XUFPh9AASBh24GIZExBRoR-Mx6IzgV8VmYzfbeTzIh-WXiOShCm2xHMnnuiEXMLunN2GQG-jpQ/pub?gid=371280148&single=true&output=csv",
     42: "https://docs.google.com/spreadsheets/d/e/2PACX-1vTxQ0XUFPh9AASBh24GIZExBRoR-Mx6IzgV8VmYzfbeTzIh-WXiOShCm2xHMnnuiEXMLunN2GQG-jpQ/pub?gid=520870058&single=true&output=csv"
 }
+const anhMapCacTran = {
+    1: "slcss1day1tran1.jpg",
+    2: "dán_link_ảnh_map_trận_2_vào_đây.jpg",
+    3: "dán_link_ảnh_map_trận_3_vào_đây.jpg",
+    // Cứ thế phẩy xuống cho đến hết các trận bạn muốn
+};
 /* ================= BẢN SAO GARENA 1:1 ================= */
 async function moThongSo(soTran) {
     if (!soTran) soTran = 1;
@@ -54,6 +60,17 @@ async function moThongSo(soTran) {
     // 1. TÍNH TOÁN VÀ CẬP NHẬT GIAO DIỆN (NGÀY, GIỜ, BOOYAH)
     // =========================================================
     let ngayThiDau = Math.ceil(soTran / 6); 
+    // Tự động nạp ảnh Map tương ứng với số trận
+    let mapBanner = document.getElementById('banner-map');
+    if (mapBanner) {
+        // Nếu trận đó có link ảnh thì hiện lên, không có thì giấu ảnh đi cho đỡ trống
+        if (anhMapCacTran[soTran]) {
+            mapBanner.src = anhMapCacTran[soTran];
+            mapBanner.style.display = 'block';
+        } else {
+            mapBanner.style.display = 'none'; 
+        }
+    }
     let tranTrongNgay = ((soTran - 1) % 6) + 1; 
 
     let tenTranEl = document.getElementById('ten-tran-dau');
