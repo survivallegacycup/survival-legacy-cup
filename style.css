@@ -256,10 +256,21 @@ body {
 }
 
 /* 1. Chọn Đội (Top) */
+/* 1. Chọn Đội (Top) */
 .team-selector-section {
-    display: flex; align-items: center; justify-content: center;
-    background-color: #222; padding: 20px; border-radius: 4px 4px 0 0;
-    gap: 15px; border-bottom: 2px solid #333;
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    
+    /* DÁN ẢNH NỀN VÀO ĐÂY: */
+    background-image: url('bg-selector.jpg'); 
+    background-size: cover;             /* Phủ kín toàn bộ khung */
+    background-position: center;        /* Canh giữa ảnh để lấy phần đẹp nhất */
+    
+    padding: 30px;                      /* Tăng lề một chút cho thoáng dàn logo */
+    border-radius: 4px 4px 0 0;
+    gap: 15px; 
+    border-bottom: 3px solid #ff1a1a;   /* Đổi viền dưới thành màu Đỏ Rực cho tone-sur-tone */
 }
 .team-grid-12 {
     display: flex; gap: 15px; overflow-x: auto; scrollbar-width: none;
