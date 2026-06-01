@@ -18,7 +18,57 @@ body {
     /* Màu chữ tổng thể */
     color: #ffffff;
 }
+/* ================= TÔNG MÀU PREMIUM: GOLD & ĐỎ TRẦM ================= */
 
+/* Tiêu đề "SURVIVAL LEGACY CUP", BOOYAH và các chữ cần nhấn mạnh */
+h1, h2, h3, 
+.text-warning, 
+.booyah-text,
+.team-desc-box h2 {
+    color: #FFD700 !important; 
+    text-shadow: 0 0 10px rgba(255, 215, 0, 0.4) !important; 
+}
+
+/* Viền bảng (Table Border) mỏng màu vàng tinh tế */
+.table-wrapper, 
+.match-info-banner,
+.players-grid {
+    border: 1px solid rgba(255, 215, 0, 0.3) !important; 
+    background: rgba(15, 10, 10, 0.85) !important; /* Nền đen pha tí đỏ trầm cho premium */
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.8) !important; 
+}
+
+/* Đường kẻ mỏng phân cách giữa các trận đấu trong bảng */
+.match-item {
+    border-bottom: 1px solid rgba(255, 215, 0, 0.15) !important;
+}
+
+/* Nút bấm (Button): Viền vàng + Hover sáng rực Vàng */
+.btn-xem-thong-so, 
+.login-btn, 
+button {
+    border: 1px solid #FFD700 !important;
+    color: #FFD700 !important;
+    background: rgba(0, 0, 0, 0.4) !important;
+    transition: all 0.3s ease !important;
+}
+
+.btn-xem-thong-so:hover, 
+.login-btn:hover, 
+button:hover {
+    background: #FFD700 !important;
+    color: #111 !important; 
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.8) !important; 
+    transform: scale(1.05); 
+}
+
+/* Highlight Menu bên trái khi được chọn */
+.sidebar .active, 
+.menu-left .active {
+    border-left: 4px solid #FFD700 !important;
+    background: linear-gradient(90deg, rgba(255, 215, 0, 0.15) 0%, transparent 100%) !important;
+    color: #FFD700 !important;
+}
 /* NAVBAR */
 .navbar {
     display: flex;
