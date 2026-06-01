@@ -871,3 +871,67 @@ header, .header, .navbar, .top-bar, .top-header, #header {
 /* Số thứ tự hạng và Tổng điểm */
 .rank-num { font-weight: bold; color: #fff; }
 .total-score { font-weight: bold; color: #ffcc00; /* Highlight tổng điểm màu vàng */ }
+/* --- BỐ CỤC HEADER BẢNG XẾP HẠNG MỚI --- */
+.rank-header-wrapper {
+    display: flex;
+    justify-content: space-between; /* Đẩy tiêu đề qua trái, Tab qua phải */
+    align-items: flex-end; 
+    border-bottom: 2px solid #2a2a2a;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+}
+
+/* Khu vực chữ bên trái */
+.header-left {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.static-label {
+    color: #ffcc00; /* Chữ màu vàng tĩnh, không bấm được */
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.rank-title-sub {
+    color: #aaa;
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Khu vực nút bấm bên phải */
+.header-right-tabs {
+    display: flex;
+    gap: 12px;
+}
+
+/* Thiết kế Nút Bảng (Chưa bấm) */
+.r-tab {
+    padding: 8px 25px;
+    color: #888;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid #333;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+/* HIỆU ỨNG KHI BẤM CHỌN (Giống hiệu ứng Logo) */
+.r-tab.active {
+    color: #ffcc00;
+    background: rgba(0, 0, 0, 0.5);
+    border: 1px solid #ffcc00;
+    box-shadow: inset 0 0 10px rgba(255, 204, 0, 0.2), 0 0 15px rgba(255, 204, 0, 0.5);
+    transform: scale(1.05); /* Phóng to nhẹ cho ngầu */
+}
+
+.r-tab:hover:not(.active) {
+    border-color: #ffcc00;
+    color: #fff;
+}

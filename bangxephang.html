@@ -53,17 +53,24 @@
             <!-- KHU VỰC BẢNG XẾP HẠNG CHUẨN GARENA -->
 <div class="garena-rank-container">
     
-    <!-- 2 Tab Menu phía trên bảng -->
-    <div class="rank-tabs">
-        <div class="r-tab active">THÔNG TIN ĐỘI TUYỂN</div>
-        <div class="r-tab">THÔNG TIN TUYỂN THỦ</div>
-    </div>
+    <!-- BỐ CỤC HEADER MỚI (CHIA TRÁI - PHẢI) -->
+    <div class="rank-header-wrapper">
+        
+        <!-- Bên Trái: Tiêu đề tĩnh -->
+        <div class="header-left">
+            <div class="static-label">THÔNG TIN ĐỘI TUYỂN</div>
+            <div id="dynamic-title" class="rank-title-sub">VÒNG BẢNG A - SURVIVAL LEGACY CUP SS1</div>
+        </div>
 
-    <!-- Tiêu đề Bảng -->
-    <div class="rank-title-bar">
-        <span>BẢNG B - SURVIVAL LEGACY CUP SS1</span>
-    </div>
+        <!-- Bên Phải: Các Nút Chọn Bảng (Bấm được) -->
+        <div class="header-right-tabs">
+            <div class="r-tab active" onclick="changeTab(this, 'A')">BẢNG A</div>
+            <div class="r-tab" onclick="changeTab(this, 'B')">BẢNG B</div>
+            <div class="r-tab" onclick="changeTab(this, 'C')">BẢNG C</div>
+            <div class="r-tab" onclick="changeTab(this, 'D')">BẢNG D</div>
+        </div>
 
+    </div>
     <!-- Bảng điểm chính -->
     <table class="garena-table">
         <thead>
@@ -76,45 +83,49 @@
                 <th width="15%">TỔNG ĐIỂM <span class="sort-icon">⬍</span></th>
             </tr>
         </thead>
-        <tbody>
-            <!-- Top 1 -->
-            <tr>
-                <td class="rank-num">1</td>
-                <td class="team-name">
-                    <img src="uzi.jpg" alt="Logo"> 
-                    <span>UZI LEGENDS</span>
-                </td>
-                <td>5</td>
-                <td>231</td>
-                <td>36</td>
-                <td class="total-score">425</td>
-            </tr>
-            <!-- Top 2 -->
-            <tr>
-                <td class="rank-num">2</td>
-                <td class="team-name">
-                    <img src="kings.jpg" alt="Logo"> 
-                    <span>KINGS</span>
-                </td>
-                <td>7</td>
-                <td>287</td>
-                <td>36</td>
-                <td class="total-score">524</td>
-            </tr>
-            <!-- Top 3 -->
-            <tr>
-                <td class="rank-num">3</td>
-                <td class="team-name">
-                    <img src="mao.jpg" alt="Logo"> 
-                    <span>MAO</span>
-                </td>
-                <td>7</td>
-                <td>285</td>
-                <td>36</td>
-                <td class="total-score">396</td>
-            </tr>
+    <tbody>
+            <!-- Team 1 -->
+            <tr><td class="rank-num">1</td><td class="team-name"><img src="uzi.jpg" alt=""> <span>UZI LEGENDS</span></td><td>5</td><td>231</td><td>36</td><td class="total-score">425</td></tr>
+            <!-- Team 2 -->
+            <tr><td class="rank-num">2</td><td class="team-name"><img src="kings.jpg" alt=""> <span>KINGS</span></td><td>4</td><td>198</td><td>36</td><td class="total-score">380</td></tr>
+            <!-- Team 3 -->
+            <tr><td class="rank-num">3</td><td class="team-name"><img src="mao.jpg" alt=""> <span>MAO</span></td><td>3</td><td>185</td><td>36</td><td class="total-score">342</td></tr>
+            <!-- Team 4 -->
+            <tr><td class="rank-num">4</td><td class="team-name"><img src="ft.jpg" alt=""> <span>FEARLESS TEAM (FT)</span></td><td>2</td><td>170</td><td>36</td><td class="total-score">310</td></tr>
+            <!-- Team 5 -->
+            <tr><td class="rank-num">5</td><td class="team-name"><img src="whd.jpg" alt=""> <span>WHD</span></td><td>2</td><td>165</td><td>36</td><td class="total-score">295</td></tr>
+            <!-- Team 6 -->
+            <tr><td class="rank-num">6</td><td class="team-name"><img src="cnct.jpg" alt=""> <span>CNCT</span></td><td>1</td><td>150</td><td>36</td><td class="total-score">270</td></tr>
+            <!-- Team 7 -->
+            <tr><td class="rank-num">7</td><td class="team-name"><img src="qc.jpg" alt=""> <span>QC</span></td><td>1</td><td>145</td><td>36</td><td class="total-score">255</td></tr>
+            <!-- Team 8 -->
+            <tr><td class="rank-num">8</td><td class="team-name"><img src="bnn1.jpg" alt=""> <span>BNN1</span></td><td>0</td><td>130</td><td>36</td><td class="total-score">220</td></tr>
+            <!-- Team 9 -->
+            <tr><td class="rank-num">9</td><td class="team-name"><img src="nnn.jpg" alt=""> <span>NNN</span></td><td>0</td><td>125</td><td>36</td><td class="total-score">205</td></tr>
+            <!-- Team 10 -->
+            <tr><td class="rank-num">10</td><td class="team-name"><img src="tlk.jpg" alt=""> <span>TỰ LÀ KHÓ (TLK)</span></td><td>0</td><td>110</td><td>36</td><td class="total-score">180</td></tr>
+            <!-- Team 11 -->
+            <tr><td class="rank-num">11</td><td class="team-name"><img src="wb.jpg" alt=""> <span>WB</span></td><td>0</td><td>95</td><td>36</td><td class="total-score">150</td></tr>
+            <!-- Team 12 -->
+            <tr><td class="rank-num">12</td><td class="team-name"><img src="sen.jpg" alt=""> <span>SEN</span></td><td>0</td><td>80</td><td>36</td><td class="total-score">120</td></tr>
         </tbody>
     </table>
+</div>
+
+<!-- Lệnh Nhúng Javascript giúp các Nút Bảng hoạt động mượt mà -->
+<script>
+    function changeTab(clickedElement, bangName) {
+        // 1. Xóa hiệu ứng sáng ở tất cả các nút
+        let tabs = document.querySelectorAll('.r-tab');
+        tabs.forEach(tab => { tab.classList.remove('active'); });
+
+        // 2. Bật hiệu ứng sáng chói (Glow) cho nút vừa bấm
+        clickedElement.classList.add('active');
+
+        // 3. Tự động đổi Tiêu đề tĩnh bên trái cho khớp với Bảng đang chọn
+        document.getElementById('dynamic-title').innerText = "VÒNG BẢNG " + bangName + " - SURVIVAL LEGACY CUP SS1";
+    }
+</script>
 </div>
         </main>
     </div>
