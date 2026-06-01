@@ -69,25 +69,25 @@ button:hover {
     background: linear-gradient(90deg, rgba(255, 215, 0, 0.15) 0%, transparent 100%) !important;
     color: #FFD700 !important;
 }
-/* ================= NHUỘM XANH NƯỚC BIỂN KHUNG BẢNG ĐIỂM ================= */
+/* ================= NHUỘM XANH DƯƠNG ĐẬM (NAVY BLUE) ================= */
 
 /* 1. Nền của toàn bộ bảng lịch thi đấu */
 .table-wrapper {
-    /* Nền Xanh nước biển đậm (Deep Ocean Blue) pha chút trong suốt 85% */
-    background: rgba(4, 25, 60, 0.85) !important; 
+    /* Nền Xanh dương cực đậm (Deep Navy - gần như đen pha xanh) */
+    background: rgba(5, 12, 30, 0.9) !important; 
     
-    /* Đổi viền sang màu xanh dương nhạt cho tông xuyệt tông */
-    border: 1px solid rgba(0, 162, 255, 0.4) !important; 
+    /* Viền xanh sẫm tinh tế, không bị chóe sáng */
+    border: 1px solid rgba(20, 60, 120, 0.5) !important; 
     
-    /* Đổ bóng màu xanh sẫm tạo chiều sâu */
-    box-shadow: 0 8px 32px rgba(0, 15, 40, 0.9) !important; 
+    /* Đổ bóng đen sâu để bảng nổi lên */
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.9) !important; 
 }
 
-/* 2. Hiệu ứng ánh sáng nước biển khi trỏ chuột vào từng trận đấu */
+/* 2. Hiệu ứng khi trỏ chuột vào từng trận đấu */
 .match-item:hover {
-    /* Phủ một lớp sáng xanh nhẹ khi rê chuột ngang qua */
-    background: rgba(0, 162, 255, 0.25) !important; 
-    border-bottom: 1px solid #00a2ff !important;
+    /* Hover hắt sáng màu xanh sẫm, dịu mắt và sang trọng */
+    background: rgba(15, 45, 100, 0.4) !important; 
+    border-bottom: 1px solid rgba(30, 90, 180, 0.8) !important;
 }
 /* NAVBAR */
 .navbar {
