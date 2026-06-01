@@ -770,3 +770,104 @@ header, .header, .navbar, .top-bar, .top-header, #header {
     z-index: 100;
     /* Dòng display: none; nếu đang có thì bạn cứ giữ nguyên nhé */
 }
+/* ================= GIAO DIỆN BẢNG XẾP HẠNG CHUẨN GARENA ================= */
+
+.garena-rank-container {
+    width: 100%;
+    background-color: #111; /* Nền đen sâu */
+    border-right: 2px solid #ffcc00; /* Vạch vàng đặc trưng bên phải của Garena */
+    padding: 0 0 30px 0;
+    font-family: Arial, sans-serif;
+}
+
+/* --- TAB THÔNG TIN --- */
+.rank-tabs {
+    display: flex;
+    justify-content: center;
+    border-bottom: 2px solid #2a2a2a; /* Đường viền xám dưới tab */
+    margin-bottom: 20px;
+}
+
+.r-tab {
+    padding: 15px 30px;
+    color: #888;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+.r-tab.active {
+    color: #ffcc00; /* Chữ vàng khi được chọn */
+    border-bottom: 3px solid #ffcc00; /* Gạch đít vàng */
+}
+
+.r-tab:hover { color: #fff; }
+
+/* --- TIÊU ĐỀ BẢNG --- */
+.rank-title-bar {
+    text-align: right;
+    padding: 0 20px 10px 0;
+    color: #aaa;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* --- BẢNG ĐIỂM (TABLE) --- */
+.garena-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    color: #ddd; /* Chữ màu xám sáng */
+}
+
+/* Phần Header (Hạng, Đội tuyển, Booyah...) */
+.garena-table th {
+    color: #999;
+    font-size: 12px;
+    font-weight: normal;
+    padding: 15px 10px;
+    border-bottom: 1px solid #333;
+    text-transform: uppercase;
+}
+
+.sort-icon { font-size: 10px; margin-left: 5px; opacity: 0.5; }
+
+/* Phần Nội dung (Các đội) */
+.garena-table td {
+    padding: 12px 10px;
+    font-size: 14px;
+    border-bottom: 1px solid #1a1a1a;
+}
+
+/* Hiệu ứng sọc dưa (Dòng chẵn màu đậm, dòng lẻ màu nhạt hơn chút) */
+.garena-table tbody tr:nth-child(odd) { background-color: #171717; }
+.garena-table tbody tr:nth-child(even) { background-color: #111111; }
+
+/* Đổi màu khi trỏ chuột vào dòng */
+.garena-table tbody tr:hover { background-color: #222; }
+
+/* Căn chỉnh riêng cho ô tên Đội tuyển */
+.text-left { text-align: left !important; }
+
+.team-name {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 15px;
+    font-weight: bold;
+    color: #fff;
+}
+
+/* Logo đội tuyển trong bảng */
+.team-name img {
+    width: 35px;
+    height: 35px;
+    object-fit: contain;
+    background: transparent;
+}
+
+/* Số thứ tự hạng và Tổng điểm */
+.rank-num { font-weight: bold; color: #fff; }
+.total-score { font-weight: bold; color: #ffcc00; /* Highlight tổng điểm màu vàng */ }
