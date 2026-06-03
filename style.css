@@ -953,39 +953,41 @@ header, .header, .navbar, .top-bar, .top-header, #header {
     /* Tắt bớt đổ bóng chữ để nhìn sạch sẽ và sắc nét hơn */
     text-shadow: none !important; 
 }
-/* ================= HIGHLIGHT TOP 6: HIỆU ỨNG NHỊP THỞ NEON ================= */
+/* ================= HIGHLIGHT TOP 6: MÀU ELECTRIC CYAN (Y CHANG ẢNH AI) ================= */
 
-/* 1. Tạo kịch bản chuyển động (Animation) sáng tối nhịp nhàng */
-@keyframes neonPulse {
+/* 1. Kịch bản nhịp thở: Cập nhật màu Xanh Cyan chói lóa */
+@keyframes neonPulseCyan {
     0% {
-        box-shadow: inset 0px 0px 8px rgba(0, 212, 255, 0.2), 0px 0px 5px rgba(0, 212, 255, 0.3);
-        border-color: rgba(0, 212, 255, 0.4);
+        box-shadow: inset 0px 0px 10px rgba(0, 229, 255, 0.4), 0px 0px 8px rgba(0, 229, 255, 0.5);
+        outline-color: rgba(0, 229, 255, 0.5);
     }
     50% {
-        box-shadow: inset 0px 0px 20px rgba(0, 212, 255, 0.6), 0px 0px 25px rgba(0, 212, 255, 0.8);
-        border-color: #00d4ff; /* Sáng rực rỡ nhất ở giữa nhịp */
+        /* Nhịp sáng mạnh nhất: Quầng sáng tỏa rộng, lõi sáng chói */
+        box-shadow: inset 0px 0px 20px rgba(0, 229, 255, 0.8), 0px 0px 25px rgba(0, 229, 255, 1);
+        outline-color: #00e5ff; /* Màu Cyan nguyên bản sáng rực */
     }
     100% {
-        box-shadow: inset 0px 0px 8px rgba(0, 212, 255, 0.2), 0px 0px 5px rgba(0, 212, 255, 0.3);
-        border-color: rgba(0, 212, 255, 0.4);
+        box-shadow: inset 0px 0px 10px rgba(0, 229, 255, 0.4), 0px 0px 8px rgba(0, 229, 255, 0.5);
+        outline-color: rgba(0, 229, 255, 0.5);
     }
 }
 
-/* 2. Áp dụng hiệu ứng cho 6 hàng đầu tiên */
+/* 2. Áp dụng cho 6 hàng đầu tiên */
 .garena-table tbody tr:nth-child(-n+6) {
-    background: linear-gradient(90deg, rgba(0, 162, 255, 0.15) 0%, transparent 100%) !important;
+    /* Đổ một lớp nền xanh tối bên trong để làm nổi bật cái viền điện tử (Giống trong ảnh) */
+    background: rgba(0, 30, 70, 0.6) !important;
     
-    /* Gắn animation nhịp thở, lặp lại vô hạn, mỗi nhịp dài 2 giây */
-    animation: neonPulse 2s infinite; 
+    /* Gắn animation nhịp thở mới */
+    animation: neonPulseCyan 2s infinite ease-in-out; 
     
-    /* Cấu trúc viền để đổ bóng (CSS bảng hơi đặc thù nên cần bọc viền trên dưới) */
-    outline: 2px solid #00d4ff;
-    outline-offset: -1px;
+    /* Viền Cyan ôm sát từng hàng */
+    outline: 2px solid #00e5ff;
+    outline-offset: -2px; /* Kéo viền vào trong để không bị lem bảng */
 }
 
-/* 3. Màu chữ số thứ tự Hạng */
+/* 3. Chữ số Hạng (1-6) cũng phải phát sáng màu Electric Cyan */
 .garena-table tbody tr:nth-child(-n+6) .rank-num {
-    color: #00d4ff !important;
-    text-shadow: 0 0 10px #00d4ff !important;
-    font-size: 16px;
+    color: #ccffff !important; /* Lõi chữ màu trắng xanh */
+    text-shadow: 0 0 10px #00e5ff, 0 0 20px #00e5ff !important; /* Đổ bóng Cyan cực mạnh */
+    font-weight: 900;
 }
