@@ -953,28 +953,39 @@ header, .header, .navbar, .top-bar, .top-header, #header {
     /* Tắt bớt đổ bóng chữ để nhìn sạch sẽ và sắc nét hơn */
     text-shadow: none !important; 
 }
-/* ================= HIGHLIGHT TOP 6 (VÉ VÀO BÁN KẾT) ================= */
+/* ================= HIGHLIGHT TOP 6: HIỆU ỨNG NHỊP THỞ NEON ================= */
 
-/* Tự động nhắm mục tiêu vào 6 hàng đầu tiên (Top 1 đến Top 6) của bảng */
+/* 1. Tạo kịch bản chuyển động (Animation) sáng tối nhịp nhàng */
+@keyframes neonPulse {
+    0% {
+        box-shadow: inset 0px 0px 8px rgba(0, 212, 255, 0.2), 0px 0px 5px rgba(0, 212, 255, 0.3);
+        border-color: rgba(0, 212, 255, 0.4);
+    }
+    50% {
+        box-shadow: inset 0px 0px 20px rgba(0, 212, 255, 0.6), 0px 0px 25px rgba(0, 212, 255, 0.8);
+        border-color: #00d4ff; /* Sáng rực rỡ nhất ở giữa nhịp */
+    }
+    100% {
+        box-shadow: inset 0px 0px 8px rgba(0, 212, 255, 0.2), 0px 0px 5px rgba(0, 212, 255, 0.3);
+        border-color: rgba(0, 212, 255, 0.4);
+    }
+}
+
+/* 2. Áp dụng hiệu ứng cho 6 hàng đầu tiên */
 .garena-table tbody tr:nth-child(-n+6) {
-    /* Trải một lớp nền gradient Xanh dương dịu mắt từ trái sang phải */
     background: linear-gradient(90deg, rgba(0, 162, 255, 0.15) 0%, transparent 100%) !important;
     
-    /* Vạch kẻ ánh sáng Xanh Neon bên trái để đánh dấu Vùng An Toàn */
-    border-left: 3px solid #00d4ff !important;
+    /* Gắn animation nhịp thở, lặp lại vô hạn, mỗi nhịp dài 2 giây */
+    animation: neonPulse 2s infinite; 
     
-    /* Đổi đường kẻ ngang bên dưới thành ánh xanh mờ */
-    border-bottom: 1px solid rgba(0, 162, 255, 0.2) !important;
+    /* Cấu trúc viền để đổ bóng (CSS bảng hơi đặc thù nên cần bọc viền trên dưới) */
+    outline: 2px solid #00d4ff;
+    outline-offset: -1px;
 }
 
-/* Đổi màu số thứ tự Hạng (1-6) thành Xanh Neon phát sáng */
+/* 3. Màu chữ số thứ tự Hạng */
 .garena-table tbody tr:nth-child(-n+6) .rank-num {
     color: #00d4ff !important;
-    text-shadow: 0 0 10px rgba(0, 212, 255, 0.6) !important;
-}
-
-/* Hiệu ứng khi rê chuột vào Top 6 (Bừng sáng rực rỡ hơn) */
-.garena-table tbody tr:nth-child(-n+6):hover {
-    background: linear-gradient(90deg, rgba(0, 162, 255, 0.25) 0%, transparent 100%) !important;
-    box-shadow: inset 4px 0 15px rgba(0, 212, 255, 0.3) !important;
+    text-shadow: 0 0 10px #00d4ff !important;
+    font-size: 16px;
 }
