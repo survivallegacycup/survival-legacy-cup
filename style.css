@@ -935,3 +935,21 @@ header, .header, .navbar, .top-bar, .top-header, #header {
     border-color: #ffcc00;
     color: #fff;
 }
+/* ================= HIỆU ỨNG MENU TRÁI KHI CLICK CHỌN (CHUẨN GARENA) ================= */
+
+.sidebar .active, 
+.menu-left .active,
+.menu-item.active { /* Tóm hết các class menu bạn có thể đang dùng */
+    
+    /* Vạch vàng đặc trưng bên trái */
+    border-left: 4px solid #ffcc00 !important;
+    
+    /* CHÌA KHÓA: Phối màu Đen nguyên khối dạt sang Xám (trắng + đen), 100% không trong suốt */
+    background: linear-gradient(90deg, #000000 0%, #3a3a3a 100%) !important;
+    
+    /* Đổi chữ thành màu Trắng cho nổi bật trên nền đen/xám giống ảnh 1 */
+    color: #ffffff !important;
+    
+    /* Tắt bớt đổ bóng chữ để nhìn sạch sẽ và sắc nét hơn */
+    text-shadow: none !important; 
+}
