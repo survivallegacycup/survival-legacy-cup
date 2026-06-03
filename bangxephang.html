@@ -109,10 +109,24 @@
             <!-- Team 12 -->
             <tr><td class="rank-num">12</td><td class="team-name"><img src="logo-bne.jpg" alt=""> <span>BNE</span></td><td>0</td><td>1</td><td>6</td><td class="total-score">11</td></tr>
         </tbody>
+        <!-- KHO DỮ LIỆU BẢNG B (Mặc định ẩn đi) -->
+        <tbody id="bang-B" class="group-data" style="display: none;">
+            <tr><td class="rank-num">1</td><td class="team-name"><img src="heav.jpg" alt=""> <span>HEAVY</span></td><td>4</td><td>95</td><td>6</td><td class="total-score">150</td></tr>
+            <tr><td class="rank-num">2</td><td class="team-name"><img src="hq.jpg" alt=""> <span>HQ ESPORTS</span></td><td>2</td><td>88</td><td>6</td><td class="total-score">135</td></tr>
+            <tr><td class="rank-num">3</td><td class="team-name"><img src="gdt.jpg" alt=""> <span>GOD OF WOLF</span></td><td>1</td><td>76</td><td>6</td><td class="total-score">110</td></tr>
+            <tr><td class="rank-num">4</td><td class="team-name"><img src="vgm.jpg" alt=""> <span>V GAMING</span></td><td>1</td><td>60</td><td>6</td><td class="total-score">95</td></tr>
+            <tr><td class="rank-num">5</td><td class="team-name"><img src="box.jpg" alt=""> <span>BOX GAMING</span></td><td>0</td><td>55</td><td>6</td><td class="total-score">82</td></tr>
+            <tr><td class="rank-num">6</td><td class="team-name"><img src="bts.jpg" alt=""> <span>BURIRAM</span></td><td>0</td><td>50</td><td>6</td><td class="total-score">75</td></tr>
+            <tr><td class="rank-num">7</td><td class="team-name"><img src="evos.jpg" alt=""> <span>EVOS</span></td><td>0</td><td>45</td><td>6</td><td class="total-score">68</td></tr>
+            <tr><td class="rank-num">8</td><td class="team-name"><img src="tpx.jpg" alt=""> <span>TEAM FLASH</span></td><td>0</td><td>40</td><td>6</td><td class="total-score">60</td></tr>
+            <tr><td class="rank-num">9</td><td class="team-name"><img src="mdx.jpg" alt=""> <span>MDX</span></td><td>0</td><td>35</td><td>6</td><td class="total-score">52</td></tr>
+            <tr><td class="rank-num">10</td><td class="team-name"><img src="ceh.jpg" alt=""> <span>CERBERUS</span></td><td>0</td><td>30</td><td>6</td><td class="total-score">45</td></tr>
+            <tr><td class="rank-num">11</td><td class="team-name"><img src="ae.jpg" alt=""> <span>ALTER EGO</span></td><td>0</td><td>25</td><td>6</td><td class="total-score">38</td></tr>
+            <tr><td class="rank-num">12</td><td class="team-name"><img src="prx.jpg" alt=""> <span>PAPER REX</span></td><td>0</td><td>15</td><td>6</td><td class="total-score">22</td></tr>
+        </tbody>
     </table>
 </div>
 
-<!-- Lệnh Nhúng Javascript giúp các Nút Bảng hoạt động mượt mà -->
 <script>
     function changeTab(clickedElement, bangName) {
         // 1. Xóa hiệu ứng sáng ở tất cả các nút
@@ -122,8 +136,19 @@
         // 2. Bật hiệu ứng sáng chói (Glow) cho nút vừa bấm
         clickedElement.classList.add('active');
 
-        // 3. Tự động đổi Tiêu đề tĩnh bên trái cho khớp với Bảng đang chọn
+        // 3. Tự động đổi Tiêu đề tĩnh bên trái cho khớp
         document.getElementById('dynamic-title').innerText = "VÒNG BẢNG " + bangName + " - SURVIVAL LEGACY CUP SS1";
+
+        // 4. PHÉP THUẬT Ở ĐÂY: Ẩn tất cả các bảng đi
+        let allGroups = document.querySelectorAll('.group-data');
+        allGroups.forEach(group => { group.style.display = 'none'; });
+
+        // 5. Chỉ hiển thị duy nhất Bảng vừa được chọn (bang-A, bang-B...)
+        let targetGroup = document.getElementById('bang-' + bangName);
+        if (targetGroup) {
+            // Dùng 'table-row-group' thay vì 'block' để bảng không bị vỡ khung
+            targetGroup.style.display = 'table-row-group'; 
+        }
     }
 </script>
 </div>
