@@ -44,12 +44,6 @@ const linkCacTran = {
     41: "https://docs.google.com/spreadsheets/d/e/2PACX-1vTxQ0XUFPh9AASBh24GIZExBRoR-Mx6IzgV8VmYzfbeTzIh-WXiOShCm2xHMnnuiEXMLunN2GQG-jpQ/pub?gid=371280148&single=true&output=csv",
     42: "https://docs.google.com/spreadsheets/d/e/2PACX-1vTxQ0XUFPh9AASBh24GIZExBRoR-Mx6IzgV8VmYzfbeTzIh-WXiOShCm2xHMnnuiEXMLunN2GQG-jpQ/pub?gid=520870058&single=true&output=csv"
 }
-const anhMapCacTran = {
-    1: "slcss1day1tran1.jpg",
-    2: "dán_link_ảnh_map_trận_2_vào_đây.jpg",
-    3: "dán_link_ảnh_map_trận_3_vào_đây.jpg",
-    // Cứ thế phẩy xuống cho đến hết các trận bạn muốn
-};
 /* ================= BẢN SAO GARENA 1:1 ================= */
 async function moThongSo(soTran) {
     if (!soTran) soTran = 1;
