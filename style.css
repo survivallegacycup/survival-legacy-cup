@@ -1042,37 +1042,51 @@ header, .header, .navbar, .top-bar, .top-header, #header {
     background-color: #1f1f1f !important;
     box-shadow: inset 4px 0 0px #ffcc00 !important; /* Hiện vạch vàng bên trái khi chỉ chuột vào */
 }
-/* ================= TỐI ƯU GIAO DIỆN ĐIỆN THOẠI (RESPONSIVE) ================= */
-
-/* Lệnh này chỉ kích hoạt khi màn hình nhỏ hơn 768px (Điện thoại/Tablet nhỏ) */
+/* ================= TỐI ƯU GIAO DIỆN ĐIỆN THOẠI CHUẨN KHÔNG LỖI ================= */
 @media screen and (max-width: 768px) {
     
-    /* 1. Đẩy Tiêu đề và Khối nút bấm thành 2 hàng trên/dưới thay vì ép nằm ngang */
+    /* Ép khung tổng phải vừa khít màn hình điện thoại, không được tràn */
+    .garena-rank-container {
+        width: 100% !important;
+        max-width: 100% !important;
+        box-sizing: border-box;
+        border-radius: 0px !important; /* Lên điện thoại để vuông vức cho đẹp */
+    }
+
+    /* Đẩy Tiêu đề và Khối nút bấm thành hàng dọc */
     .rank-header-wrapper {
         flex-direction: column !important;
         align-items: center !important;
         text-align: center;
         gap: 15px;
+        padding: 15px !important;
     }
 
-    /* 2. Cho phép các nút Bảng rớt dòng nếu hết chỗ ngang */
     .header-right-tabs {
         flex-wrap: wrap !important;
         justify-content: center !important;
         width: 100%;
+        gap: 8px !important;
     }
 
-    /* 3. Ép nút nhỏ lại một chút để vừa vặn ngón tay bấm trên màn hình cảm ứng */
     .r-tab {
-        padding: 8px 12px !important;
+        padding: 6px 12px !important;
         font-size: 12px !important;
+        flex: 1 1 40%; /* Cho các nút tự cân đối trên màn hình nhỏ */
+        text-align: center;
+    }
+
+    /* TUYỆT CHIÊU: Ép bảng điểm tự xuất hiện thanh cuộn ngang nếu quá rộng */
+    .garena-table {
+        display: block !important;
+        width: 100% !important;
+        overflow-x: auto !important; /* Vuốt ngang để xem điểm nếu màn hình quá bé */
+        white-space: nowrap !important; /* Không cho chữ trong bảng xuống dòng lung tung */
     }
     
-    /* 4. Thu nhỏ tiêu đề tránh bị tràn dòng */
-    .static-label {
-        font-size: 15px !important;
-    }
-    .rank-title-sub {
+    /* Thu nhỏ chữ trong bảng một chút cho vừa vặn điện thoại */
+    .garena-table th, .garena-table td {
+        padding: 8px 10px !important;
         font-size: 12px !important;
     }
 }
