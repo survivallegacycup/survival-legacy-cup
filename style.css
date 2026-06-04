@@ -1110,3 +1110,21 @@ header, .header, .navbar, .top-bar, .top-header, #header {
     text-shadow: 0 0 10px #ffcc00, 0 0 20px #ffcc00 !important; 
     font-weight: 900;
 }
+/* ================= KHUNG VIỀN CHO BẢNG LỊCH THI ĐẤU (INDEX.HTML) ================= */
+.table-wrapper {
+    border: 2px solid #ffffff !important; /* Kẻ viền màu trắng nét mảnh cho sang */
+    border-radius: 12px !important; /* Bo tròn 4 góc cho mượt mà */
+    box-shadow: 0 0 25px rgba(255, 0, 0, 0.6), inset 0 0 15px rgba(255, 0, 0, 0.3) !important; /* Hiệu ứng tỏa sáng Đỏ Neon ra ngoài và vào trong */
+    background-color: rgba(15, 15, 15, 0.9) !important; /* Phủ một lớp nền đen mờ để làm nổi bật chữ bên trong */
+    overflow: hidden !important; /* Ép mọi thứ gọn gàng bên trong viền bo góc */
+}
+
+/* Thêm một đường kẻ trắng mờ mỏng để ngăn cách phần Tiêu đề cột và Nội dung trận đấu */
+.table-header {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3) !important; 
+}
+
+/* Chỉnh lại khoảng cách cho thoáng mắt */
+.content {
+    padding: 20px !important;
+}
