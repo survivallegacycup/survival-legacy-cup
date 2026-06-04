@@ -986,3 +986,59 @@ header, .header, .navbar, .top-bar, .top-header, #header {
     text-shadow: 0 0 10px #00e5ff, 0 0 20px #00e5ff !important; 
     font-weight: 900;
 }
+/* ================= THIẾT KẾ KHUNG VIỀN CAM & TONE VÀNG ĐEN ================= */
+
+/* 1. KHUNG BẢNG TỔNG (Bao trọn viền Cam 4 góc) */
+.garena-rank-container {
+    width: 100%;
+    background-color: #0b0b0b !important; /* Nền đen sâu cho phần thân bảng */
+    border: 2px solid #ff6600 !important; /* Kẻ viền Cam bao quanh toàn bộ khung */
+    border-radius: 12px; /* Bo góc cho mượt */
+    overflow: hidden; /* Giữ các mảng màu không tràn ra ngoài viền bo */
+    box-shadow: 0 8px 30px rgba(255, 102, 0, 0.25) !important; /* Đổ bóng cam nhẹ ra xung quanh */
+    padding: 0 !important; /* Xóa khoảng trống lề */
+}
+
+/* 2. KHÚC TRÊN (HEADER): ỐP ẢNH NỀN CAM */
+.rank-header-wrapper {
+    background-image: url('bg-cam.jpg') !important; 
+    background-size: cover !important;
+    background-position: center !important;
+    padding: 25px 30px !important; /* Tăng độ rộng để lộ ảnh nền cam nhiều hơn */
+    border-bottom: 2px solid #ffcc00 !important; /* Vạch vàng ranh giới giữa Header và Bảng */
+    margin-bottom: 0 !important; 
+    align-items: center !important;
+}
+
+/* Đổ bóng chữ để nổi bật rực rỡ trên nền cam */
+.static-label {
+    color: #ffffff !important; /* Chữ trắng sẽ nổi bật nhất trên nền cam */
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.9) !important;
+}
+.rank-title-sub {
+    color: #ffcc00 !important;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.9) !important;
+    font-size: 14px;
+}
+
+/* 3. KHÚC DƯỚI (THÔNG SỐ ĐIỂM): TONE VÀNG ĐEN */
+.garena-table th {
+    background-color: #050505 !important; /* Nền đen tuyền cho thanh tiêu đề cột */
+    color: #ffcc00 !important; /* Chữ màu vàng */
+    border-bottom: 1px solid rgba(255, 204, 0, 0.4) !important;
+}
+
+/* Phối nền Đen xen kẽ cho các hàng (từ Top 7 trở xuống, Top 1-6 vẫn giữ ánh sáng Xanh) */
+.garena-table tbody tr:nth-child(odd) { background-color: #121212; }
+.garena-table tbody tr:nth-child(even) { background-color: #0a0a0a; }
+
+/* Kẻ chỉ vàng cực mỏng giữa các hàng để ra đúng chất Lịch thi đấu */
+.garena-table td {
+    border-bottom: 1px solid rgba(255, 204, 0, 0.08) !important;
+}
+
+/* Hover đổi màu vàng đen cho các hàng không có hiệu ứng Xanh */
+.garena-table tbody tr:hover {
+    background-color: #1f1f1f !important;
+    box-shadow: inset 4px 0 0px #ffcc00 !important; /* Hiện vạch vàng bên trái khi chỉ chuột vào */
+}
