@@ -1042,3 +1042,37 @@ header, .header, .navbar, .top-bar, .top-header, #header {
     background-color: #1f1f1f !important;
     box-shadow: inset 4px 0 0px #ffcc00 !important; /* Hiện vạch vàng bên trái khi chỉ chuột vào */
 }
+/* ================= TỐI ƯU GIAO DIỆN ĐIỆN THOẠI (RESPONSIVE) ================= */
+
+/* Lệnh này chỉ kích hoạt khi màn hình nhỏ hơn 768px (Điện thoại/Tablet nhỏ) */
+@media screen and (max-width: 768px) {
+    
+    /* 1. Đẩy Tiêu đề và Khối nút bấm thành 2 hàng trên/dưới thay vì ép nằm ngang */
+    .rank-header-wrapper {
+        flex-direction: column !important;
+        align-items: center !important;
+        text-align: center;
+        gap: 15px;
+    }
+
+    /* 2. Cho phép các nút Bảng rớt dòng nếu hết chỗ ngang */
+    .header-right-tabs {
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+        width: 100%;
+    }
+
+    /* 3. Ép nút nhỏ lại một chút để vừa vặn ngón tay bấm trên màn hình cảm ứng */
+    .r-tab {
+        padding: 8px 12px !important;
+        font-size: 12px !important;
+    }
+    
+    /* 4. Thu nhỏ tiêu đề tránh bị tràn dòng */
+    .static-label {
+        font-size: 15px !important;
+    }
+    .rank-title-sub {
+        font-size: 12px !important;
+    }
+}
