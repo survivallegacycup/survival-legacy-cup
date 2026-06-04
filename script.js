@@ -718,7 +718,7 @@ const teamsDatabase = {
     },
     "ke": {
         name: "KE",
-        desc: "KE – Tên đầy đủ là KE ESPORTS. Đội tuyển Free Fire đại diện cho “Kawaii Energy – Năng lượng đáng yêu nhưng đầy sát thương”, mang phong cách dễ thương kiểu Hello Kitty nhưng ẩn sau đó là lối chơi cực kỳ khó chịu. Đừng để vẻ ngoài đánh lừa-KE có thể “cute” trong cách xuất hiện, nhưng kết thúc trận đấu lại cực kỳ gắt tại Survival Legacy Cup SS1!",
+        desc: "KE – Tên đầy đủ là KE ESPORTS. Đội tuyển Free Fire đại diện cho “Killer Elegance – Sự kết liễu đầy tinh tế”, nơi mỗi pha xử lý vừa đẹp mắt vừa chí mạng. KE không chỉ thắng-họ biến từng khoảnh khắc trong trận đấu thành màn trình diễn đẳng cấp tại Survival Legacy Cup SS1!",
         logo: "logo-ke.jpg",
         country: "", 
         players: [
