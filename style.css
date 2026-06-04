@@ -1124,25 +1124,20 @@ header, .header, .navbar, .top-bar, .top-header, #header {
     border-bottom: 1px solid rgba(255, 255, 255, 0.3) !important; 
 }
 
-/* Viền trắng ôm khít cho khung Đội tuyển */
+/* ================= VIỀN TRẮNG ÔM SÁT KHÍT CHO KHUNG ĐỘI TUYỂN ================= */
 .team-page-wrapper {
     border: 2px solid #ffffff !important;
     border-radius: 12px !important;
     box-shadow: 0 0 25px rgba(255, 0, 0, 0.6), inset 0 0 15px rgba(255, 0, 0, 0.3) !important;
     background-color: rgba(10, 10, 10, 0.8) !important;
+    padding: 20px !important; 
     
-    padding: 20px !important; /* Đẩy nội dung xê ra cho khỏi dính mép viền trắng */
-    height: fit-content !important; 
-    margin-bottom: 30px !important; 
-}
-/* ================= KHUNG VIỀN CHO TRANG ĐỘI TUYỂN ================= */
-.doituyen-wrapper {
-    border: 2px solid #ffffff !important; /* Viền trắng nét mảnh */
-    border-radius: 12px !important; /* Bo tròn góc */
-    box-shadow: 0 0 25px rgba(255, 0, 0, 0.6), inset 0 0 15px rgba(255, 0, 0, 0.3) !important; /* Glow đỏ Neon ra ngoài và vào trong */
-    background-color: rgba(10, 10, 10, 0.8) !important; /* Nền đen mờ mờ để làm nổi bật các thẻ tuyển thủ */
-    padding: 20px !important; /* Tạo khoảng thở bên trong khung */
-    overflow: hidden !important; 
+    /* CÁC LỆNH ÉP KHUNG CO LẠI (TRỊ DỨT ĐIỂM LỖI KÉO DÃN) */
+    height: auto !important;
+    min-height: 0 !important;
+    flex: none !important; 
+    align-self: flex-start !important; 
+    margin-bottom: 50px !important;
 }
 /* Gắn nền vàng cho khu vực thẻ tuyển thủ của TẤT CẢ các đội */
 .team-player-cards {
