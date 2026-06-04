@@ -1078,3 +1078,35 @@ header, .header, .navbar, .top-bar, .top-header, #header {
         font-size: 12px !important;
     }
 }
+/* ================= HIGHLIGHT TOP 12 BÁN KẾT: NHỊP THỞ VÀNG HOÀNG KIM ================= */
+
+/* Kịch bản nhịp sáng màu Vàng */
+@keyframes neonPulseYellow {
+    0% {
+        box-shadow: inset 0px 0px 10px rgba(255, 204, 0, 0.4), 0px 0px 8px rgba(255, 204, 0, 0.5);
+        outline-color: rgba(255, 204, 0, 0.5);
+    }
+    50% {
+        box-shadow: inset 0px 0px 20px rgba(255, 204, 0, 0.8), 0px 0px 25px rgba(255, 204, 0, 1);
+        outline-color: #ffcc00; 
+    }
+    100% {
+        box-shadow: inset 0px 0px 10px rgba(255, 204, 0, 0.4), 0px 0px 8px rgba(255, 204, 0, 0.5);
+        outline-color: rgba(255, 204, 0, 0.5);
+    }
+}
+
+/* Áp dụng riêng cho Top 12 của bảng Bán Kết */
+.table-banket tbody tr:nth-child(-n+12) {
+    background: rgba(60, 40, 0, 0.6) !important; /* Nền hơi ám vàng đen cho ngầu */
+    animation: neonPulseYellow 2s infinite ease-in-out; 
+    outline: 2px solid #ffcc00;
+    outline-offset: -2px; 
+}
+
+/* Đánh bóng chữ số thứ hạng của Top 12 */
+.table-banket tbody tr:nth-child(-n+12) .rank-num {
+    color: #fffacd !important; /* Vàng sáng */
+    text-shadow: 0 0 10px #ffcc00, 0 0 20px #ffcc00 !important; 
+    font-weight: 900;
+}
