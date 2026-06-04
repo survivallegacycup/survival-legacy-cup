@@ -1128,3 +1128,21 @@ header, .header, .navbar, .top-bar, .top-header, #header {
 .content {
     padding: 20px !important;
 }
+/* ================= KHUNG VIỀN CHO TRANG ĐỘI TUYỂN ================= */
+.doituyen-wrapper {
+    border: 2px solid #ffffff !important; /* Viền trắng nét mảnh */
+    border-radius: 12px !important; /* Bo tròn góc */
+    box-shadow: 0 0 25px rgba(255, 0, 0, 0.6), inset 0 0 15px rgba(255, 0, 0, 0.3) !important; /* Glow đỏ Neon ra ngoài và vào trong */
+    background-color: rgba(10, 10, 10, 0.8) !important; /* Nền đen mờ mờ để làm nổi bật các thẻ tuyển thủ */
+    padding: 20px !important; /* Tạo khoảng thở bên trong khung */
+    overflow: hidden !important; 
+}
+/* Gắn nền vàng cho khu vực thẻ tuyển thủ của TẤT CẢ các đội */
+.team-player-cards {
+    background-image: url('edited-image_15.jpg') !important;
+    background-size: cover !important;
+    background-position: center !important;
+    border-radius: 10px; /* Bo góc tí cho đẹp */
+    padding: 20px; /* Đẩy các thẻ ra xa mép một chút */
+    border: 1px solid #ffcc00; /* Kẻ viền vàng cho tone-sur-tone */
+}
