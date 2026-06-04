@@ -1124,9 +1124,16 @@ header, .header, .navbar, .top-bar, .top-header, #header {
     border-bottom: 1px solid rgba(255, 255, 255, 0.3) !important; 
 }
 
-/* Chỉnh lại khoảng cách cho thoáng mắt */
+/* Ép viền trắng neon đỏ cho hộp content chính */
 .content {
-    padding: 20px !important;
+    border: 2px solid #ffffff !important;
+    border-radius: 12px !important;
+    box-shadow: 0 0 25px rgba(255, 0, 0, 0.6), inset 0 0 15px rgba(255, 0, 0, 0.3) !important;
+    background-color: rgba(10, 10, 10, 0.8) !important;
+    
+    /* 2 DÒNG LỆNH PHÉP THUẬT MỚI THÊM VÀO: */
+    height: fit-content !important; /* Ép cái khung phải co lại ôm sát khít vào nội dung bên trong */
+    margin-bottom: 30px !important; /* Đẩy cái dòng chữ bản quyền (footer) ra xa một chút cho thoáng */
 }
 /* ================= KHUNG VIỀN CHO TRANG ĐỘI TUYỂN ================= */
 .doituyen-wrapper {
