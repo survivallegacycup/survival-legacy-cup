@@ -1171,3 +1171,33 @@ header, .header, .navbar, .top-bar, .top-header, #header {
 .team-page-wrapper {
     margin-bottom: 40px !important; 
 }
+/* ================= HIGHLIGHT TOP 3 CHUNG KẾT: HÀO QUANG ĐỎ RỰC LỬA ================= */
+@keyframes neonPulseRed {
+    0% {
+        box-shadow: inset 0px 0px 10px rgba(255, 0, 0, 0.4), 0px 0px 8px rgba(255, 0, 0, 0.5);
+        outline-color: rgba(255, 0, 0, 0.5);
+    }
+    50% {
+        box-shadow: inset 0px 0px 20px rgba(255, 0, 0, 0.8), 0px 0px 25px rgba(255, 0, 0, 1);
+        outline-color: #ff0000; 
+    }
+    100% {
+        box-shadow: inset 0px 0px 10px rgba(255, 0, 0, 0.4), 0px 0px 8px rgba(255, 0, 0, 0.5);
+        outline-color: rgba(255, 0, 0, 0.5);
+    }
+}
+
+/* Áp dụng cho Top 3 của bảng Chung kết */
+.table-chungket tbody tr:nth-child(-n+3) {
+    background: rgba(60, 0, 0, 0.6) !important; 
+    animation: neonPulseRed 1.5s infinite ease-in-out; 
+    outline: 2px solid #ff0000;
+    outline-offset: -2px; 
+}
+
+/* Làm nổi bật số hạng Top 3 */
+.table-chungket tbody tr:nth-child(-n+3) .rank-num {
+    color: #ffcccc !important; 
+    text-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000 !important; 
+    font-weight: 900;
+}
