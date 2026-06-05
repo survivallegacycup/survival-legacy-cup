@@ -1139,12 +1139,24 @@ header, .header, .navbar, .top-bar, .top-header, #header {
     align-self: flex-start !important; 
     margin-bottom: 50px !important;
 }
-/* Gắn nền vàng cho khu vực thẻ tuyển thủ của TẤT CẢ các đội */
-.team-player-cards {
+/* ================= FIX CHUẨN 100%: NỀN VÀNG CYBERPUNK + CHỐNG GIÃN KHUNG ================= */
+
+/* 1. Gắn nền vàng ĐÚNG TÊN CLASS thực tế của bạn */
+.players-grid {
     background-image: url('edited-image_15.jpg') !important;
     background-size: cover !important;
     background-position: center !important;
-    border-radius: 10px; /* Bo góc tí cho đẹp */
-    padding: 20px; /* Đẩy các thẻ ra xa mép một chút */
-    border: 1px solid #ffcc00; /* Kẻ viền vàng cho tone-sur-tone */
+    border-radius: 12px !important;
+    padding: 30px 20px !important;
+    border: 2px solid #ffcc00 !important;
+    
+    /* Ép thẻ co lại đúng chiều cao thực, không bị dãn 1000px nữa */
+    height: max-content !important; 
+    margin-top: 25px !important; /* Đẩy cách cái banner xanh ở trên ra một chút cho thoáng */
+}
+
+/* 2. Tiêu diệt "Lỗ hổng không khí" ở giữa Banner và Thẻ cầu thủ */
+.tab-content {
+    justify-content: flex-start !important; /* Ép mọi thứ dồn chặt lên trên, cấm kéo giãn ở giữa */
+    height: max-content !important;
 }
