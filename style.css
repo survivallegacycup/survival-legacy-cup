@@ -1160,3 +1160,15 @@ header, .header, .navbar, .top-bar, .top-header, #header {
     justify-content: flex-start !important; /* Ép mọi thứ dồn chặt lên trên, cấm kéo giãn ở giữa */
     height: max-content !important;
 }
+/* ================= NHÁT KIẾM CUỐI CÙNG: CHỐNG GIÃN KHUNG ================= */
+.content, 
+.team-page-wrapper {
+    display: block !important; /* Phá vỡ hoàn toàn tính năng tự động kéo giãn của Flexbox/Grid */
+    height: max-content !important; /* Ép chiều cao chỉ dài bằng đúng nội dung bên trong */
+    min-height: 0 !important; /* Tiêu diệt mọi lệnh min-height đang ép khung phình to */
+}
+
+/* Đẩy nhẹ lên cho tách biệt với viền dưới */
+.team-page-wrapper {
+    margin-bottom: 40px !important; 
+}
