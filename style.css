@@ -1201,3 +1201,16 @@ header, .header, .navbar, .top-bar, .top-header, #header {
     text-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000 !important; 
     font-weight: 900;
 }
+/* ================= TẮT HIỆU ỨNG XANH THỪA CHO TOP 4 TRỞ ĐI (CHUNG KẾT) ================= */
+.table-chungket tbody tr:nth-child(n+4) {
+    animation: none !important; /* Tắt nhấp nháy */
+    box-shadow: none !important; /* Tắt viền sáng */
+    outline: none !important; /* Tắt nét đứt/viền cứng */
+    background: transparent !important; /* Trả lại nền đen bình thường */
+}
+
+/* Trả lại màu chữ trắng bình thường cho số thứ hạng từ Top 4 trở đi */
+.table-chungket tbody tr:nth-child(n+4) .rank-num {
+    color: #ffffff !important;
+    text-shadow: none !important;
+}
