@@ -693,7 +693,7 @@ header, .header, .navbar, .top-bar, .top-header, #header {
 }
 
 .navbar .logo img {
-    height: 35px !important; /* Chiều cao logo (Nhung có thể tăng giảm cho vừa mắt, tầm 30px-40px là đẹp) */
+    height: 35px !important; 
     width: auto !important;
     border-radius: 4px !important; /* Bo cong 4 góc logo một tí xíu cho sang trọng */
     object-fit: contain !important;
@@ -1130,7 +1130,6 @@ header, .header, .navbar, .top-bar, .top-header, #header {
     border-radius: 12px !important;
     box-shadow: 0 0 25px rgba(255, 0, 0, 0.6), inset 0 0 15px rgba(255, 0, 0, 0.3) !important;
     background-color: rgba(10, 10, 10, 0.8) !important;
-    padding: 20px !important; 
     
     /* CÁC LỆNH ÉP KHUNG CO LẠI (TRỊ DỨT ĐIỂM LỖI KÉO DÃN) */
     height: auto !important;
