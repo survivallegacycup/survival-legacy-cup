@@ -1201,18 +1201,17 @@ header, .header, .navbar, .top-bar, .top-header, #header {
     text-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000 !important; 
     font-weight: 900;
 }
-/* ================= TẮT HIỆU ỨNG XANH THỪA CHO TOP 4 TRỞ ĐI (CHUNG KẾT) ================= */
+/* ================= TẮT HIỆU ỨNG & TRẢ LẠI NỀN XÁM ĐEN CHO TOP 4+ (CHUNG KẾT) ================= */
 .table-chungket tbody tr:nth-child(n+4) {
-    animation: none !important; /* Tắt nhấp nháy */
-    box-shadow: none !important; /* Tắt viền sáng */
-    outline: none !important; /* Tắt nét đứt/viền cứng */
-    background-color: rgba(30, 30, 30, 0.8) !important;
+    animation: none !important; 
+    box-shadow: none !important; 
+    outline: none !important; 
+    background: #141414 !important; /* Trả lại màu nền xám đen đặc */
 }
 
-/* Trả lại màu chữ trắng bình thường cho số thứ hạng từ Top 4 trở đi */
-.table-chungket tbody tr:nth-child(n+4) .rank-num {
-    color: #ffffff !important;
-    text-shadow: none !important;
+/* Tạo vân sọc ngang (hàng đậm hàng nhạt) y hệt Vòng Bảng cho đồng bộ */
+.table-chungket tbody tr:nth-child(n+4):nth-child(even) {
+    background: #1a1a1a !important; 
 }
 /* ================= KHUNG VIỀN CAM CHO TOÀN BỘ BẢNG XẾP HẠNG ================= */
 .garena-rank-container {
