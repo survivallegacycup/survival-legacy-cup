@@ -1221,3 +1221,16 @@ header, .header, .navbar, .top-bar, .top-header, #header {
     background-color: rgba(15, 15, 15, 0.9) !important; /* Lót nền đen mờ để bảng chữ nổi bật */
     overflow: hidden !important; /* Ép mọi thứ gọn gàng trong viền */
 }
+/* ================= CHỈNH MÀU VIỀN RIÊNG BIỆT CHO TỪNG BẢNG ================= */
+
+/* Viền Xanh Dương chói lóa cho Bán Kết */
+.vien-xanh {
+    border-color: #00d2ff !important; 
+    box-shadow: 0 0 25px rgba(0, 210, 255, 0.5), inset 0 0 10px rgba(0, 210, 255, 0.3) !important;
+}
+
+/* Viền Đỏ rực lửa cho Chung Kết (Tông xuyệt tông với Top 3) */
+.vien-do {
+    border-color: #ff0000 !important;
+    box-shadow: 0 0 25px rgba(255, 0, 0, 0.6), inset 0 0 10px rgba(255, 0, 0, 0.3) !important;
+}
