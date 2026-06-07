@@ -2,56 +2,91 @@
 // Nhớ dán link Google Sheets của bạn vào đây nha:
 const SHEET_LINK = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vTxQ0XUFPh9AASBh24GIZExBRoR-Mx6IzgV8VmYzfbeTzIh-WXiOShCm2xHMnnuiEXMLunN2GQG-jpQ/pub?gid=1621423787&single=true&output=csv';
 
-async function moThongSo(soTran) {
+/* ================= PHẦN 1: BẢNG THÔNG SỐ TỬ CHIẾN 1VS1 (3 TAB) ================= */
+
+// DÁN 3 LINK CSV MÀ BẠN VỪA LẤY Ở BƯỚC 1 VÀO ĐÂY:
+const LINK_DAY1 = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vTtBSowuBllvrWxdqCNHlmVOjaCKLvhpe45Qg5lrTMMCDnwrKS2UuTCuE7CzqUuSjZsvZayY0jV02H1/pub?gid=0&single=true&output=csv'; 
+const LINK_DAY2 = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vTtBSowuBllvrWxdqCNHlmVOjaCKLvhpe45Qg5lrTMMCDnwrKS2UuTCuE7CzqUuSjZsvZayY0jV02H1/pub?gid=1304469215&single=true&output=csv'; 
+const LINK_DAY3 = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vTtBSowuBllvrWxdqCNHlmVOjaCKLvhpe45Qg5lrTMMCDnwrKS2UuTCuE7CzqUuSjZsvZayY0jV02H1/pub?gid=1451683209&single=true&output=csv'; 
+
+async function moThongSo(tenTran) {
     let modal = document.getElementById('modal-thong-so');
     let container = document.getElementById('data-bang-diem');
-    if(!modal || !container) return; 
+    if(!modal || !container) return;
 
     modal.style.display = 'block';
-    const headers = container.querySelectorAll('.g-header');
-    container.innerHTML = '';
-    headers.forEach(h => container.appendChild(h));
+    container.innerHTML = '<p style="color:#ffcc00; text-align:center; padding: 20px; font-weight:bold;">Đang tải dữ liệu trận đấu...</p>';
+
+    // --- BỘ NÃO TỰ ĐỘNG CHỌN TAB ---
+    let linkCanLay = LINK_DAY1; // Mặc định là lấy Day 1 (Tứ kết)
+    if (tenTran.toLowerCase().includes('bán kết')) {
+        linkCanLay = LINK_DAY2; // Nếu tên có chữ "Bán kết" thì đổi sang link Day 2
+    } else if (tenTran.toLowerCase().includes('chung kết')) {
+        linkCanLay = LINK_DAY3; // Nếu tên có chữ "Chung kết" thì đổi sang link Day 3
+    }
 
     try {
-        const response = await fetch(SHEET_LINK);
+        // Mở đúng link và tải dữ liệu
+        const response = await fetch(linkCanLay);
         const data = await response.text();
-        const rows = data.split('\n').slice(1);
+        const rows = data.split('\n');
 
-        for (let i = 0; i < rows.length; i += 4) {
-            if (!rows[i] || rows[i].trim() === '') continue; 
-            const teamInfo = rows[i].split(',');
-            if (teamInfo.length < 5) continue; 
+        let timThay = false;
 
-            container.innerHTML += `
-                <div class="g-cell span-4">${teamInfo[0] || ''}</div>
-                <div class="g-cell span-4 text-left team-name-cell">
-                    <img src="https://placehold.co/24x24/222/FFF?text=LOGO" alt="logo"> ${teamInfo[1] || ''}
-                </div>
-                <div class="g-cell span-4">${teamInfo[2] || ''}</div>
-                <div class="g-cell span-4">${teamInfo[3] || ''}</div>
-                <div class="g-cell span-4 tong-diem-val">${teamInfo[4] || ''}</div>
-            `;
+        // Quét từng dòng từ trên xuống dưới trong file Sheets
+        for (let i = 1; i < rows.length; i++) { // i=1 để bỏ qua dòng tiêu đề TRẬN, ĐỘI 1, ĐỘI 2...
+            if (!rows[i] || rows[i].trim() === '') continue;
+            
+            const cols = rows[i].split(',');
+            if (cols.length >= 4) {
+                const tenTranTrongSheet = cols[0].trim();
 
-            for (let j = 0; j < 4; j++) {
-                const pRow = rows[i + j];
-                if (!pRow) continue;
-                const p = pRow.split(',');
-                const isLast = (j === 3) ? 'p-row-last' : '';
-                
-                let ten = p[5] ? p[5].toUpperCase() : '';
-                let kill = p[6] ? p[6].trim() : '0';
-                let dmg = p[7] ? p[7].trim() : '0';
+                // Dò xem dòng nào đúng tên trận đang bấm (Ví dụ: "Tứ kết 1")
+                if (tenTranTrongSheet.toLowerCase() === tenTran.toLowerCase()) {
+                    const doi1 = cols[1].trim();
+                    const doi2 = cols[2].trim();
+                    const doiThang = cols[3].trim();
 
-                container.innerHTML += `
-                    <div class="g-cell text-left ${isLast}">${ten}</div>
-                    <div class="g-cell ${isLast}">${kill}</div>
-                    <div class="g-cell ${isLast}">${dmg}</div>
-                `;
+                    // Ráp luôn giao diện VS cực cháy
+                    container.innerHTML = `
+                        <div style="display: flex; justify-content: space-around; align-items: center; margin-top: 10px; padding: 20px; background: rgba(0,0,0,0.5); border-radius: 10px; border: 1px solid #333;">
+                            <div style="text-align: center; width: 40%;">
+                                <h3 style="color: #00d2ff; font-size: 26px; margin: 0; text-transform: uppercase; text-shadow: 0 0 10px #00d2ff;">${doi1}</h3>
+                            </div>
+                            <div style="text-align: center; width: 20%;">
+                                <span style="color: #ff0000; font-size: 35px; font-weight: 900; font-style: italic; text-shadow: 0 0 15px #ff0000;">VS</span>
+                            </div>
+                            <div style="text-align: center; width: 40%;">
+                                <h3 style="color: #00d2ff; font-size: 26px; margin: 0; text-transform: uppercase; text-shadow: 0 0 10px #00d2ff;">${doi2}</h3>
+                            </div>
+                        </div>
+                        <div style="text-align: center; margin-top: 25px; padding: 15px; background: linear-gradient(90deg, #332200, #1a1100); border: 2px solid #ffcc00; border-radius: 8px; box-shadow: 0 0 20px rgba(255, 204, 0, 0.3);">
+                            <span style="color: #fff; font-size: 18px;">🏆 ĐỘI CHIẾN THẮNG: </span><br>
+                            <span style="color: #ffcc00; font-size: 28px; font-weight: 900; text-transform: uppercase; display: inline-block; margin-top: 5px;">
+                                ${doiThang && doiThang !== '' ? doiThang : 'ĐANG CẬP NHẬT...'}
+                            </span>
+                        </div>
+                    `;
+                    timThay = true;
+                    break; 
+                }
             }
         }
+
+        if (!timThay) {
+            container.innerHTML = '<p style="color:#ff4444; text-align:center; font-weight:bold; padding: 20px;">Trận này chưa có dữ liệu trên bảng điểm!</p>';
+        }
+
     } catch (error) {
         console.error("Lỗi lấy dữ liệu:", error);
+        container.innerHTML = '<p style="color:#ff4444; text-align:center; font-weight:bold; padding: 20px;">Không thể kết nối đến Google Sheets!</p>';
     }
+}
+
+// Giữ nguyên function dongThongSo() của bạn ở dưới nhé
+function dongThongSo() {
+    let modal = document.getElementById('modal-thong-so');
+    if(modal) modal.style.display = 'none';
 }
 
 function dongThongSo() {
