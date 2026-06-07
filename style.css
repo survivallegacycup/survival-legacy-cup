@@ -1245,3 +1245,8 @@ header, .header, .navbar, .top-bar, .top-header, #header {
     box-shadow: inset 4px 0 0px #ffcc00 !important;    
     transition: all 0.2s ease; 
 }
+/* ================= TRẢ LẠI MÀU VÀNG CHO CỘT TỔNG ĐIỂM TỪ TOP 4 TRỞ XUỐNG (CHUNG KẾT) ================= */
+.table-chungket tbody tr:nth-child(n+4) td.total-score {
+    color: #ffcc00 !important; /* Lấy lại màu vàng rực rỡ */
+    font-weight: bold !important; /* In đậm lên cho máu */
+}
