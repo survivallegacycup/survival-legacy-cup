@@ -67,7 +67,7 @@
             text-decoration: none;
             padding: 15px 20px;
             border: 1px solid #333;
-            border-left: 5px solid #ff0000; /* Mặc định màu đỏ (sẽ bị đè bởi class con) */
+            border-left: 5px solid #ff0000;
             border-radius: 6px;
             font-size: 16px;
             font-weight: bold;
@@ -75,20 +75,20 @@
             margin-bottom: 15px;
         }
         .video-btn:hover {
-            transform: translateX(10px); /* Hiệu ứng trượt nhẹ sang phải khi rê chuột */
+            transform: translateX(10px); 
             color: #fff !important;
         }
         .icon-play {
             font-size: 20px;
             margin-right: 15px;
-            color: #ffcc00; /* Mặc định icon màu vàng (sẽ bị đè bởi class con) */
+            color: #ffcc00; 
         }
         .video-btn:hover .icon-play {
-            color: #fff; /* Đổi màu icon khi hover */
+            color: #fff; 
         }
         .video-grid {
             display: grid;
-            grid-template-columns: repeat(2, 1fr); /* Chia 2 cột cho đẹp */
+            grid-template-columns: repeat(2, 1fr); 
             gap: 15px;
         }
 
@@ -96,7 +96,7 @@
 
         /* 1. Vòng Bảng - Xanh lá */
         .video-btn.vong-bang {
-            border-left-color: #00ff00; /* Viền trái xanh lá */
+            border-left-color: #00ff00; 
         }
         .video-btn.vong-bang:hover {
             background: linear-gradient(90deg, #00ff00, #004400);
@@ -104,29 +104,31 @@
             box-shadow: 0 0 20px rgba(0, 255, 0, 0.5);
         }
 
-        /* 2. Bán Kết - Vàng đậm */
+        /* 2. Bán Kết - Xanh dương */
         .video-btn.ban-ket {
-            border-left-color: #ffaa00; /* Viền trái vàng đậm */
+            border-left-color: #00d2ff; 
         }
         .video-btn.ban-ket:hover {
-            background: linear-gradient(90deg, #ffaa00, #775500);
-            border-color: #ffaa00;
-            box-shadow: 0 0 20px rgba(255, 170, 0, 0.5);
+            background: linear-gradient(90deg, #00d2ff, #004488);
+            border-color: #00d2ff;
+            box-shadow: 0 0 20px rgba(0, 210, 255, 0.5);
         }
 
-        /* 3. Chung Kết - Đỏ cam */
+        /* 3. Chung Kết - Đỏ rực */
         .video-btn.chung-ket {
-            border-left-color: #ff4500; /* Viền trái đỏ cam */
+            border-left-color: #ff0000; 
         }
         .video-btn.chung-ket:hover {
-            background: linear-gradient(90deg, #ff4500, #772200);
-            border-color: #ff4500;
-            box-shadow: 0 0 20px rgba(255, 69, 0, 0.5);
+            background: linear-gradient(90deg, #ff0000, #660000);
+            border-color: #ff0000;
+            box-shadow: 0 0 20px rgba(255, 0, 0, 0.5);
         }
     </style>
 
-    <h3 style="color: #00ff00; margin-bottom: 15px; border-left: 4px solid #00ff00; padding-left: 10px; font-size: 20px;">⚔️ CÁC TRẬN VÒNG BẢNG</h3> <div class="video-grid" style="margin-bottom: 40px;">
-        <a href="https://www.facebook.com/share/v/1Ku2uigG6G/" target="_blank" class="video-btn vong-bang"> <span class="icon-play">▶</span> Vòng Bảng A
+    <h3 style="color: #00ff00; margin-bottom: 15px; border-left: 4px solid #00ff00; padding-left: 10px; font-size: 20px;">⚔️ CÁC TRẬN VÒNG BẢNG</h3>
+    <div class="video-grid" style="margin-bottom: 40px;">
+        <a href="https://www.facebook.com/share/v/1Ku2uigG6G/" target="_blank" class="video-btn vong-bang"> 
+            <span class="icon-play">▶</span> Vòng Bảng A
         </a>
         <a href="https://www.facebook.com/share/v/1BFYRKryrj/" target="_blank" class="video-btn vong-bang">
             <span class="icon-play">▶</span> Vòng Bảng B
@@ -139,16 +141,20 @@
         </a>
     </div>
 
-    <h3 style="color: #ffaa00; margin-bottom: 15px; border-left: 4px solid #ffaa00; padding-left: 10px; font-size: 20px;">🔥 CÁC TRẬN BÁN KẾT</h3> <div class="video-grid" style="margin-bottom: 40px;">
-        <a href="https://www.facebook.com/share/v/1DMdomYBuV/" target="_blank" class="video-btn ban-ket"> <span class="icon-play">▶</span> Bán Kết 1
+    <h3 style="color: #00d2ff; margin-bottom: 15px; border-left: 4px solid #00d2ff; padding-left: 10px; font-size: 20px;">🔥 CÁC TRẬN BÁN KẾT</h3>
+    <div class="video-grid" style="margin-bottom: 40px;">
+        <a href="https://www.facebook.com/share/v/1DMdomYBuV/" target="_blank" class="video-btn ban-ket"> 
+            <span class="icon-play">▶</span> Bán Kết 1
         </a>
         <a href="https://www.facebook.com/share/v/192B5kGtX1/" target="_blank" class="video-btn ban-ket">
             <span class="icon-play">▶</span> Bán Kết 2
         </a>
     </div>
 
-    <h3 style="color: #ff4500; margin-bottom: 15px; border-left: 4px solid #ff4500; padding-left: 10px; font-size: 20px;">🏆 TRẬN CHUNG KẾT TỔNG</h3> <div style="margin-bottom: 20px;">
-        <a href="https://www.facebook.com/share/v/1BKrUkGiSv/" target="_blank" class="video-btn chung-ket"> <span class="icon-play">▶</span> BÙNG NỔ TRẬN CHUNG KẾT
+    <h3 style="color: #ff0000; margin-bottom: 15px; border-left: 4px solid #ff0000; padding-left: 10px; font-size: 20px;">🏆 TRẬN CHUNG KẾT TỔNG</h3>
+    <div style="margin-bottom: 20px;">
+        <a href="https://www.facebook.com/share/v/1BKrUkGiSv/" target="_blank" class="video-btn chung-ket"> 
+            <span class="icon-play">▶</span> BÙNG NỔ TRẬN CHUNG KẾT
         </a>
     </div>
 
