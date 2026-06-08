@@ -15,7 +15,32 @@ async function moThongSo(tenTran) {
     if(!modal || !container) return;
 
     modal.style.display = 'block';
-    container.innerHTML = '<p style="color:#ffcc00; text-align:center; padding: 20px; font-weight:bold;">Đang tải dữ liệu trận đấu...</p>';
+    // Ép khung cũ phá bỏ dạng lưới (Grid) để dàn đều giao diện VS
+                    container.style.display = 'block'; 
+
+                    // Ráp giao diện VS mới chuẩn Esports
+                    container.innerHTML = `
+                        <div style="width: 100%; padding: 10px 0;">
+                            <div style="display: flex; justify-content: center; align-items: center; background: rgba(0, 0, 0, 0.8); padding: 30px 10px; border-radius: 12px; border: 1px solid #555; box-shadow: 0 0 20px rgba(0,0,0,0.5);">
+                                <div style="flex: 1; text-align: right; padding-right: 25px;">
+                                    <h3 style="color: #00d2ff; font-size: 32px; margin: 0; text-transform: uppercase; text-shadow: 0 0 15px #00d2ff;">${doi1}</h3>
+                                </div>
+                                <div style="padding: 0 20px;">
+                                    <span style="color: #ff0000; font-size: 45px; font-weight: 900; font-style: italic; text-shadow: 0 0 20px #ff0000;">VS</span>
+                                </div>
+                                <div style="flex: 1; text-align: left; padding-left: 25px;">
+                                    <h3 style="color: #00d2ff; font-size: 32px; margin: 0; text-transform: uppercase; text-shadow: 0 0 15px #00d2ff;">${doi2}</h3>
+                                </div>
+                            </div>
+                            
+                            <div style="text-align: center; margin-top: 30px; padding: 25px; background: linear-gradient(90deg, #332200, #1a1100); border: 2px solid #ffcc00; border-radius: 8px; box-shadow: 0 0 25px rgba(255, 204, 0, 0.4);">
+                                <div style="color: #fff; font-size: 16px; margin-bottom: 8px; font-weight: bold;">🏆 ĐỘI CHIẾN THẮNG 🏆</div>
+                                <div style="color: #ffcc00; font-size: 34px; font-weight: 900; text-transform: uppercase; letter-spacing: 2px;">
+                                    ${doiThang && doiThang !== '' ? doiThang : 'ĐANG CẬP NHẬT...'}
+                                </div>
+                            </div>
+                        </div>
+                    `;
 
     // --- BỘ NÃO TỰ ĐỘNG CHỌN TAB ---
     let linkCanLay = LINK_DAY1; // Mặc định là lấy Day 1 (Tứ kết)
