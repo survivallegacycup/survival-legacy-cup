@@ -1250,3 +1250,8 @@ header, .header, .navbar, .top-bar, .top-header, #header {
     color: #ffcc00 !important; 
     font-weight: bold !important; 
 }
+/* Viền Trắng Tinh Khôi */
+.vien-trang {
+    border-color: #ffffff !important;
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.6), inset 0 0 10px rgba(255, 255, 255, 0.3) !important;
+}

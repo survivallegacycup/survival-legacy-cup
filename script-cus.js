@@ -9,10 +9,37 @@ async function moThongSo(tenTran) {
     if(!modal || !container) return;
 
     modal.style.display = 'block';
-    // Ép khung cũ phá bỏ dạng lưới (Grid) để dàn đều giao diện VS
-                    container.style.display = 'block'; 
+    container.style.display = 'block'; // Ép thành dạng Block để giao diện rộng rãi
+    container.innerHTML = '<p style="color:#ffcc00; text-align:center; padding: 20px; font-weight:bold;">Đang tải dữ liệu trận đấu...</p>';
 
-                    // Ráp giao diện VS mới chuẩn Esports
+    // --- BỘ NÃO TỰ ĐỘNG CHỌN TAB ---
+    let linkCanLay = LINK_DAY1;
+    if (tenTran.toLowerCase().includes('bán kết')) {
+        linkCanLay = LINK_DAY2;
+    } else if (tenTran.toLowerCase().includes('chung kết')) {
+        linkCanLay = LINK_DAY3;
+    }
+
+    try {
+        const response = await fetch(linkCanLay);
+        const data = await response.text();
+        const rows = data.split('\n');
+
+        let timThay = false;
+
+        for (let i = 1; i < rows.length; i++) { 
+            if (!rows[i] || rows[i].trim() === '') continue;
+            
+            const cols = rows[i].split(',');
+            if (cols.length >= 4) {
+                const tenTranTrongSheet = cols[0].trim();
+
+                if (tenTranTrongSheet.toLowerCase() === tenTran.toLowerCase()) {
+                    const doi1 = cols[1].trim();
+                    const doi2 = cols[2].trim();
+                    const doiThang = cols[3].trim();
+
+                    // RÁP GIAO DIỆN VS VÀO ĐÚNG CHỖ NÀY (Sau khi đã có dữ liệu)
                     container.innerHTML = `
                         <div style="width: 100%; padding: 10px 0;">
                             <div style="display: flex; justify-content: center; align-items: center; background: rgba(0, 0, 0, 0.8); padding: 30px 10px; border-radius: 12px; border: 1px solid #555; box-shadow: 0 0 20px rgba(0,0,0,0.5);">
@@ -26,64 +53,12 @@ async function moThongSo(tenTran) {
                                     <h3 style="color: #00d2ff; font-size: 32px; margin: 0; text-transform: uppercase; text-shadow: 0 0 15px #00d2ff;">${doi2}</h3>
                                 </div>
                             </div>
-                            
                             <div style="text-align: center; margin-top: 30px; padding: 25px; background: linear-gradient(90deg, #332200, #1a1100); border: 2px solid #ffcc00; border-radius: 8px; box-shadow: 0 0 25px rgba(255, 204, 0, 0.4);">
                                 <div style="color: #fff; font-size: 16px; margin-bottom: 8px; font-weight: bold;">🏆 ĐỘI CHIẾN THẮNG 🏆</div>
                                 <div style="color: #ffcc00; font-size: 34px; font-weight: 900; text-transform: uppercase; letter-spacing: 2px;">
                                     ${doiThang && doiThang !== '' ? doiThang : 'ĐANG CẬP NHẬT...'}
                                 </div>
                             </div>
-                        </div>
-                    `;
-
-    // --- BỘ NÃO TỰ ĐỘNG CHỌN TAB ---
-    let linkCanLay = LINK_DAY1; // Mặc định là lấy Day 1 (Tứ kết)
-    if (tenTran.toLowerCase().includes('bán kết')) {
-        linkCanLay = LINK_DAY2; // Nếu tên có chữ "Bán kết" thì đổi sang link Day 2
-    } else if (tenTran.toLowerCase().includes('chung kết')) {
-        linkCanLay = LINK_DAY3; // Nếu tên có chữ "Chung kết" thì đổi sang link Day 3
-    }
-
-    try {
-        // Mở đúng link và tải dữ liệu
-        const response = await fetch(linkCanLay);
-        const data = await response.text();
-        const rows = data.split('\n');
-
-        let timThay = false;
-
-        // Quét từng dòng từ trên xuống dưới trong file Sheets
-        for (let i = 1; i < rows.length; i++) { // i=1 để bỏ qua dòng tiêu đề TRẬN, ĐỘI 1, ĐỘI 2...
-            if (!rows[i] || rows[i].trim() === '') continue;
-            
-            const cols = rows[i].split(',');
-            if (cols.length >= 4) {
-                const tenTranTrongSheet = cols[0].trim();
-
-                // Dò xem dòng nào đúng tên trận đang bấm (Ví dụ: "Tứ kết 1")
-                if (tenTranTrongSheet.toLowerCase() === tenTran.toLowerCase()) {
-                    const doi1 = cols[1].trim();
-                    const doi2 = cols[2].trim();
-                    const doiThang = cols[3].trim();
-
-                    // Ráp luôn giao diện VS cực cháy
-                    container.innerHTML = `
-                        <div style="display: flex; justify-content: space-around; align-items: center; margin-top: 10px; padding: 20px; background: rgba(0,0,0,0.5); border-radius: 10px; border: 1px solid #333;">
-                            <div style="text-align: center; width: 40%;">
-                                <h3 style="color: #00d2ff; font-size: 26px; margin: 0; text-transform: uppercase; text-shadow: 0 0 10px #00d2ff;">${doi1}</h3>
-                            </div>
-                            <div style="text-align: center; width: 20%;">
-                                <span style="color: #ff0000; font-size: 35px; font-weight: 900; font-style: italic; text-shadow: 0 0 15px #ff0000;">VS</span>
-                            </div>
-                            <div style="text-align: center; width: 40%;">
-                                <h3 style="color: #00d2ff; font-size: 26px; margin: 0; text-transform: uppercase; text-shadow: 0 0 10px #00d2ff;">${doi2}</h3>
-                            </div>
-                        </div>
-                        <div style="text-align: center; margin-top: 25px; padding: 15px; background: linear-gradient(90deg, #332200, #1a1100); border: 2px solid #ffcc00; border-radius: 8px; box-shadow: 0 0 20px rgba(255, 204, 0, 0.3);">
-                            <span style="color: #fff; font-size: 18px;">🏆 ĐỘI CHIẾN THẮNG: </span><br>
-                            <span style="color: #ffcc00; font-size: 28px; font-weight: 900; text-transform: uppercase; display: inline-block; margin-top: 5px;">
-                                ${doiThang && doiThang !== '' ? doiThang : 'ĐANG CẬP NHẬT...'}
-                            </span>
                         </div>
                     `;
                     timThay = true;
