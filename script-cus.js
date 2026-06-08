@@ -1,9 +1,3 @@
-/* ================= PHẦN 1: BẢNG THÔNG SỐ (TRANG LỊCH THI ĐẤU) ================= */
-// Nhớ dán link Google Sheets của bạn vào đây nha:
-const SHEET_LINK = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vTxQ0XUFPh9AASBh24GIZExBRoR-Mx6IzgV8VmYzfbeTzIh-WXiOShCm2xHMnnuiEXMLunN2GQG-jpQ/pub?gid=1621423787&single=true&output=csv';
-
-/* ================= PHẦN 1: BẢNG THÔNG SỐ TỬ CHIẾN 1VS1 (3 TAB) ================= */
-
 // DÁN 3 LINK CSV MÀ BẠN VỪA LẤY Ở BƯỚC 1 VÀO ĐÂY:
 const LINK_DAY1 = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vTtBSowuBllvrWxdqCNHlmVOjaCKLvhpe45Qg5lrTMMCDnwrKS2UuTCuE7CzqUuSjZsvZayY0jV02H1/pub?gid=0&single=true&output=csv'; 
 const LINK_DAY2 = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vTtBSowuBllvrWxdqCNHlmVOjaCKLvhpe45Qg5lrTMMCDnwrKS2UuTCuE7CzqUuSjZsvZayY0jV02H1/pub?gid=1304469215&single=true&output=csv'; 
