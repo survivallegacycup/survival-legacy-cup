@@ -1251,7 +1251,12 @@ header, .header, .navbar, .top-bar, .top-header, #header {
     font-weight: bold !important; 
 }
 /* Viền Trắng Tinh Khôi */
+/* Viền Trắng Tinh Khôi */
 .vien-trang {
-    border-color: #ffffff !important;
+    border: 2px solid #ffffff !important; /* Ép buộc tạo khung viền cứng màu trắng */
     box-shadow: 0 0 25px rgba(255, 255, 255, 0.6), inset 0 0 10px rgba(255, 255, 255, 0.3) !important;
+}
+/* Hiệu ứng lia chuột sáng dòng */
+.schedule-table tbody tr:hover {
+    background-color: rgba(255, 255, 255, 0.08) !important;
 }
