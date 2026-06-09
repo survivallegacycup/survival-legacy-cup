@@ -9,6 +9,15 @@ async function moThongSo(tenTran) {
     if(!modal || !container) return;
 
     modal.style.display = 'block';
+    // --- LỆNH TỰ ĐỘNG ĐỔI SỐ TRẬN KHI BẤM ---
+    let spanTenTran = document.getElementById('ten-tran-hien-tai');
+    if (spanTenTran) {
+        // Tìm xem trận mình đang bấm nằm ở vị trí số mấy trong danh sách
+        viTriHienTai = danhSachTran.findIndex(t => t.toLowerCase() === tenTran.toLowerCase());
+        if (viTriHienTai !== -1) {
+            spanTenTran.innerText = 'TRẬN ' + (viTriHienTai + 1);
+        }
+    }
     container.style.display = 'block'; // Ép thành dạng Block để giao diện rộng rãi
     container.innerHTML = '<p style="color:#ffcc00; text-align:center; padding: 20px; font-weight:bold;">Đang tải dữ liệu trận đấu...</p>';
 
@@ -87,7 +96,26 @@ function dongThongSo() {
     let modal = document.getElementById('modal-thong-so');
     if(modal) modal.style.display = 'none';
 }
+/* ================= HỆ THỐNG NÚT BẤM CHUYỂN TRẬN ================= */
+// Danh sách 4 trận Tứ Kết
+const danhSachTran = ['Tứ kết 1', 'Tứ kết 2', 'Tứ kết 3', 'Tứ kết 4'];
+let viTriHienTai = 0; // Mặc định bắt đầu ở vị trí số 0 (Tứ kết 1)
 
+function chuyenTran(buocNhay) {
+    viTriHienTai += buocNhay; // Cộng hoặc trừ vị trí
+    
+    // Nếu lùi quá Trận 1 thì vòng tít về Trận 4
+    if (viTriHienTai < 0) {
+        viTriHienTai = danhSachTran.length - 1;
+    }
+    // Nếu tiến quá Trận 4 thì vòng lại Trận 1
+    if (viTriHienTai >= danhSachTran.length) {
+        viTriHienTai = 0;
+    }
+    
+    // Tự động gọi lại hàm nạp dữ liệu với trận mới
+    moThongSo(danhSachTran[viTriHienTai]);
+}
 
 /* ================= PHẦN 2: HỆ THỐNG ĐỘI TUYỂN ================= */
 const teamsDatabase = {
