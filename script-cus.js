@@ -3,30 +3,46 @@ const LINK_DAY1 = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vTtBSowuBllvr
 const LINK_DAY2 = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vTtBSowuBllvrWxdqCNHlmVOjaCKLvhpe45Qg5lrTMMCDnwrKS2UuTCuE7CzqUuSjZsvZayY0jV02H1/pub?gid=1304469215&single=true&output=csv'; 
 const LINK_DAY3 = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vTtBSowuBllvrWxdqCNHlmVOjaCKLvhpe45Qg5lrTMMCDnwrKS2UuTCuE7CzqUuSjZsvZayY0jV02H1/pub?gid=1451683209&single=true&output=csv'; 
 
+// --- KHAI BÁO CÁC NHÓM TRẬN ---
+const nhomTuKet = ['Tứ kết 1', 'Tứ kết 2', 'Tứ kết 3', 'Tứ kết 4'];
+const nhomBanKet = ['Bán kết 1', 'Bán kết 2'];
+const nhomChungKet = ['Chung Kết'];
+
+let danhSachHienTai = [];
+let viTriHienTai = 0;
+
 async function moThongSo(tenTran) {
     let modal = document.getElementById('modal-thong-so');
     let container = document.getElementById('data-bang-diem');
     if(!modal || !container) return;
 
     modal.style.display = 'block';
-    // --- LỆNH TỰ ĐỘNG ĐỔI SỐ TRẬN KHI BẤM ---
-    let spanTenTran = document.getElementById('ten-tran-hien-tai');
-    if (spanTenTran) {
-        // Tìm xem trận mình đang bấm nằm ở vị trí số mấy trong danh sách
-        viTriHienTai = danhSachTran.findIndex(t => t.toLowerCase() === tenTran.toLowerCase());
-        if (viTriHienTai !== -1) {
-            spanTenTran.innerText = 'TRẬN ' + (viTriHienTai + 1);
-        }
-    }
-    container.style.display = 'block'; // Ép thành dạng Block để giao diện rộng rãi
+    container.style.display = 'block'; 
     container.innerHTML = '<p style="color:#ffcc00; text-align:center; padding: 20px; font-weight:bold;">Đang tải dữ liệu trận đấu...</p>';
 
-    // --- BỘ NÃO TỰ ĐỘNG CHỌN TAB ---
+    // --- BỘ NÃO PHÂN NHÓM VÀ CẬP NHẬT TÊN ---
+    let tenThuong = tenTran.toLowerCase();
     let linkCanLay = LINK_DAY1;
-    if (tenTran.toLowerCase().includes('bán kết')) {
+
+    // Xét xem trận đang bấm thuộc nhóm nào để chốt danh sách
+    if (tenThuong.includes('tứ kết')) {
+        danhSachHienTai = nhomTuKet;
+        linkCanLay = LINK_DAY1;
+    } else if (tenThuong.includes('bán kết')) {
+        danhSachHienTai = nhomBanKet;
         linkCanLay = LINK_DAY2;
-    } else if (tenTran.toLowerCase().includes('chung kết')) {
+    } else {
+        danhSachHienTai = nhomChungKet;
         linkCanLay = LINK_DAY3;
+    }
+
+    // Cập nhật vị trí hiện tại trong nhóm đó
+    viTriHienTai = danhSachHienTai.findIndex(t => t.toLowerCase() === tenThuong);
+
+    // Ép chữ in đậm ở giữa 2 nút mũi tên đổi theo tên trận
+    let spanTenTran = document.getElementById('ten-tran-hien-tai');
+    if (spanTenTran) {
+        spanTenTran.innerText = tenTran.toUpperCase(); // Đổi thành TỨ KẾT 1, BÁN KẾT 2...
     }
 
     try {
@@ -43,12 +59,11 @@ async function moThongSo(tenTran) {
             if (cols.length >= 4) {
                 const tenTranTrongSheet = cols[0].trim();
 
-                if (tenTranTrongSheet.toLowerCase() === tenTran.toLowerCase()) {
+                if (tenTranTrongSheet.toLowerCase() === tenThuong) {
                     const doi1 = cols[1].trim();
                     const doi2 = cols[2].trim();
                     const doiThang = cols[3].trim();
 
-                    // RÁP GIAO DIỆN VS VÀO ĐÚNG CHỖ NÀY (Sau khi đã có dữ liệu)
                     container.innerHTML = `
                         <div style="width: 100%; padding: 10px 0;">
                             <div style="display: flex; justify-content: center; align-items: center; background: rgba(0, 0, 0, 0.8); padding: 30px 10px; border-radius: 12px; border: 1px solid #555; box-shadow: 0 0 20px rgba(0,0,0,0.5);">
@@ -86,35 +101,22 @@ async function moThongSo(tenTran) {
     }
 }
 
-// Giữ nguyên function dongThongSo() của bạn ở dưới nhé
-function dongThongSo() {
-    let modal = document.getElementById('modal-thong-so');
-    if(modal) modal.style.display = 'none';
-}
-
-function dongThongSo() {
-    let modal = document.getElementById('modal-thong-so');
-    if(modal) modal.style.display = 'none';
-}
-/* ================= HỆ THỐNG NÚT BẤM CHUYỂN TRẬN ================= */
-// Danh sách 4 trận Tứ Kết
-const danhSachTran = ['Tứ kết 1', 'Tứ kết 2', 'Tứ kết 3', 'Tứ kết 4'];
-let viTriHienTai = 0; // Mặc định bắt đầu ở vị trí số 0 (Tứ kết 1)
-
+// --- HÀM BẤM CHUYỂN TRẬN ---
 function chuyenTran(buocNhay) {
-    viTriHienTai += buocNhay; // Cộng hoặc trừ vị trí
+    if(danhSachHienTai.length === 0) return;
     
-    // Nếu lùi quá Trận 1 thì vòng tít về Trận 4
+    viTriHienTai += buocNhay;
+    
+    // Quanh vòng TRONG CÙNG 1 NHÓM
     if (viTriHienTai < 0) {
-        viTriHienTai = danhSachTran.length - 1;
+        viTriHienTai = danhSachHienTai.length - 1;
     }
-    // Nếu tiến quá Trận 4 thì vòng lại Trận 1
-    if (viTriHienTai >= danhSachTran.length) {
+    if (viTriHienTai >= danhSachHienTai.length) {
         viTriHienTai = 0;
     }
     
-    // Tự động gọi lại hàm nạp dữ liệu với trận mới
-    moThongSo(danhSachTran[viTriHienTai]);
+    // Mở lại thông số với tên trận mới cùng nhóm
+    moThongSo(danhSachHienTai[viTriHienTai]);
 }
 
 /* ================= PHẦN 2: HỆ THỐNG ĐỘI TUYỂN ================= */
