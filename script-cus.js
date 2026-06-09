@@ -213,7 +213,13 @@ function switchTeam(teamId) {
         }
     });
 }
-
+// --- HÀM ĐÓNG BẢNG THÔNG SỐ ---
+function dongThongSo() {
+    let modal = document.getElementById('modal-thong-so');
+    if (modal) {
+        modal.style.display = 'none';
+    }
+}
 // Bắt đầu vào web là bật ngay đội UNICORN (Mã là 'unc')
 document.addEventListener("DOMContentLoaded", function() {
     if (document.getElementById('player-cards-container')) {
