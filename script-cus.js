@@ -63,6 +63,34 @@ async function moThongSo(tenTran) {
                     const doi1 = cols[1].trim();
                     const doi2 = cols[2].trim();
                     const doiThang = cols[3].trim();
+                    // --- BỘ NÃO TỰ ĐỘNG ĐỔI LOGO BOOYAH TRÊN HEADER ---
+                    let modalLogo = document.getElementById('modal-booyah-logo');
+                    let modalPlaceholder = document.getElementById('modal-booyah-placeholder');
+                    let modalName = document.getElementById('modal-booyah-name');
+
+                    if (doiThang && doiThang !== '') {
+                        // Thuật toán: "NET FF" -> "netff" -> "logo-netff.jpg"
+                        let tenFileAnh = "logo-" + doiThang.toLowerCase().replace(/\s+/g, '') + ".jpg";
+                        
+                        if(modalLogo) {
+                            modalLogo.src = tenFileAnh;
+                            modalLogo.style.display = 'block';
+                        }
+                        if(modalPlaceholder) modalPlaceholder.style.display = 'none';
+                        if(modalName) {
+                            modalName.innerText = doiThang;
+                            modalName.style.color = '#ffcc00'; // Đổi màu vàng sáng rực
+                        }
+                    } else {
+                        // Nếu chưa đánh xong, chưa có kết quả
+                        if(modalLogo) modalLogo.style.display = 'none';
+                        if(modalPlaceholder) modalPlaceholder.style.display = 'block';
+                        if(modalName) {
+                            modalName.innerText = 'ĐANG CẬP NHẬT';
+                            modalName.style.color = '#666';
+                        }
+                    }
+                    // --- KẾT THÚC BỘ NÃO LOGO ---
 
                     container.innerHTML = `
                         <div style="width: 100%; padding: 10px 0;">
