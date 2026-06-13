@@ -825,13 +825,35 @@ function switchTeam(teamId) {
             else if(player.r === "SUPPORT") badgeStyle = "background: #00ccff; color: #000;"; 
             else if(player.r === "SNIPER" || player.r === "SNIPPER") badgeStyle = "background: #ff9900; color: #000;"; 
             
-            // Xây dựng khung vàng mini
+            // Xây dựng thẻ Thông số 3D (NO PICTURES)
             container.innerHTML += `
-                <div class="uzi-mini-card">
-                    <div class="mini-role" style="${badgeStyle}">${player.r ? player.r : 'THÀNH VIÊN'}</div>
-                    <img class="mini-avatar" src="${player.a}" alt="Avatar" onerror="this.src='https://placehold.co/100x100/222/555?text=?'">
-                    <div class="mini-name">${player.n}</div>
-                    <div class="mini-id">ID: ${player.id ? player.id : 'Đang cập nhật'}</div>
+                <div class="uzi-stat-card">
+                    <div class="card-header">
+                        <span class="stat-role-badge" style="${badgeStyle}">${player.r ? player.r : 'THÀNH VIÊN'}</span>
+                        <span class="card-uzi-logo">UZI L. SS2</span>
+                    </div>
+
+                    <div class="card-body">
+                        <div class="data-field">
+                            <span class="data-label">TUYỂN THỦ</span>
+                            <span class="data-value">${player.n}</span>
+                        </div>
+                        <div class="data-field">
+                            <span class="data-label">PLAYER ID</span>
+                            <span class="data-value-id">${player.id ? player.id : 'DỮ LIỆU ĐANG CẬP NHẬT'}</span>
+                        </div>
+                    </div>
+
+                    <div class="stat-btn-row">
+                        <div class="uzi-stat-btn">
+                            <span class="uzi-stat-btn-label">TỶ LỆ HEADSHOT</span>
+                            <span class="uzi-stat-btn-value">ĐANG CẬP NHẬT %</span>
+                        </div>
+                        <div class="uzi-stat-btn">
+                            <span class="uzi-stat-btn-label">FACEBOOK</span>
+                            <span class="uzi-stat-btn-value">XEM TRANG CÁ NHÂN</span>
+                        </div>
+                    </div>
                 </div>
             `;
         });
