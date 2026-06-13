@@ -818,18 +818,23 @@ function switchTeam(teamId) {
     if(container) {
         container.innerHTML = ''; 
         data.players.forEach(player => {
-            // Đổi màu Role cho đẹp
-            let badgeStyle = "background: #ffcc00; color: #000;"; 
-            if(player.r === "BOMBER") badgeStyle = "background: #ff3366; color: #fff;"; 
-            else if(player.r === "SUPPORT") badgeStyle = "background: #00ccff; color: #000;"; 
-            else if(player.r === "SNIPER" || player.r === "SNIPPER") badgeStyle = "background: #ff9900; color: #000;"; 
+            // Đổi màu Role chuẩn chỉnh theo ý Nhung
+            let badgeStyle = "background: #555; color: #fff;"; // Màu mặc định nếu không có role
+            if (player.r === "RUSHER") badgeStyle = "background: #ff0000; color: #fff;"; // Đỏ
+            else if (player.r === "RIFLER") badgeStyle = "background: #0088ff; color: #fff;"; // Xanh dương
+            else if (player.r === "BOMBER") badgeStyle = "background: #ffcc00; color: #000;"; // Vàng (chữ đen cho dễ đọc)
+            else if (player.r === "SNIPER" || player.r === "SNIPPER") badgeStyle = "background: #00cc44; color: #fff;"; // Xanh lá
+            else if (player.r === "SUPPORT") badgeStyle = "background: #ff33cc; color: #fff;"; // Hồng
             
-            // Xây dựng thẻ Thông số 3D (ĐÃ XÓA 2 NÚT)
+            // Xây dựng thẻ Thông số 3D
             container.innerHTML += `
                 <div class="uzi-stat-card">
                     <div class="card-header">
                         <span class="stat-role-badge" style="${badgeStyle}">${player.r ? player.r : 'THÀNH VIÊN'}</span>
-                        <span class="card-uzi-logo">SURVIVAL LEGACY CUP SS1</span>
+                        
+                        <span class="card-uzi-logo" style="font-size: 9px; line-height: 1.3; text-align: right; color: #ffcc00;">
+                            SURVIVAL LEGACY<br>CUP SS1
+                        </span>
                     </div>
 
                     <div class="card-body">
