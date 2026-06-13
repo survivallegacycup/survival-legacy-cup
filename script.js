@@ -829,7 +829,7 @@ function switchTeam(teamId) {
                 <div class="uzi-stat-card">
                     <div class="card-header">
                         <span class="stat-role-badge" style="${badgeStyle}">${player.r ? player.r : 'THÀNH VIÊN'}</span>
-                        <span class="card-uzi-logo">UZI L. SS2</span>
+                        <span class="card-uzi-logo">SCL SS1</span>
                     </div>
 
                     <div class="card-body">
