@@ -819,17 +819,23 @@ function switchTeam(teamId) {
     if(container) {
         container.innerHTML = ''; 
         data.players.forEach(player => {
-            // Lệnh giấu cái khung Quốc gia nếu để trống
-            let tagQuocGia = data.country !== "" ? `<span class="p-tag">${data.country}</span>` : "";
+            // Đổi màu nhãn (Role) cho đẹp: Bomber màu hồng, Support màu xanh...
+            let badgeStyle = "background: #ffcc00; color: #000;"; // Mặc định Vàng
+            if(player.r === "BOMBER") badgeStyle = "background: #ff3366; color: #fff;"; 
+            else if(player.r === "SUPPORT") badgeStyle = "background: #00ccff; color: #000;"; 
+            else if(player.r === "SNIPER" || player.r === "SNIPPER") badgeStyle = "background: #ff9900; color: #000;"; 
             
+            // Xây dựng thẻ 3D
             container.innerHTML += `
-                <div class="player-card">
-                    <div class="p-info-top">
-                        <span class="p-name">${player.n}</span>
-                        <span class="p-tag">[${player.r ? player.r : 'THÀNH VIÊN'}]</span>
+                <div class="uzi-player-card">
+                    <span class="role-badge" style="${badgeStyle}">${player.r ? player.r : 'THÀNH VIÊN'}</span>
+                    <div class="player-avatar">
+                        <img src="${player.a}" alt="Avatar" onerror="this.src='https://placehold.co/100x100/222/555?text=?'">
                     </div>
-                    <img class="p-avatar" src="${player.a}" alt="Avatar">
-                    <div class="btn-xem-them">XEM THÊM <span class="arrow">▶</span></div>
+                    <div class="player-details">
+                        <h3 class="p-name">${player.n}</h3>
+                        <p class="p-id">Tuyển thủ của ${data.name}</p>
+                    </div>
                 </div>
             `;
         });
