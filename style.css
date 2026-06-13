@@ -1436,3 +1436,19 @@ a, button, .t-icon, .uzi-stat-card {
 .data-label { color: #777; font-size: 10px; font-weight: bold; letter-spacing: 2px; display: block; margin-bottom: 4px; }
 .data-value { color: #fff; font-size: 24px; font-weight: 900; letter-spacing: 1px; display: block; text-shadow: 0 0 10px var(--neon-dim); }
 .data-value-id { color: rgba(255,255,255,0.4); font-size: 12px; font-family: monospace; letter-spacing: 2px; }
+/* ================= 1. CUSTOM GAMING CURSOR ( tâm ngắm UZI ) - FIXED ================= */
+/* Nhúng tâm ngắm màu vàng trực tiếp vào CSS, bao ko mất, bao ko bản quyền */
+:root {
+  --weapon-cursor: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='1.5' fill='%23ffcc00'/%3E%3Cpath d='M16 4v8M16 20v8M4 16h8M20 16h8' stroke='%23ffcc00' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E") 16 16, crosshair;
+}
+
+/* Áp dụng tâm ngắm cho toàn bộ trang web */
+body {
+    cursor: var(--weapon-cursor);
+}
+
+/* Đảm bảo khi lia vào LINK, NÚT, THẺ Tuyển thủ, nó VẪN GIỮ là tâm ngắm */
+/* Tớ dùng !important để ép trình duyệt ko được hiện cái bàn tay (pointer) mặc định */
+a, button, .uzi-stat-card, .t-icon, .nav-btn, .uzi-btn-cus {
+    cursor: var(--weapon-cursor) !important;
+}
