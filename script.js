@@ -182,14 +182,13 @@ const teamsDatabase = {
         logo: "logo-uzi.jpg",
         country: "", 
         players: [
-            { n: "UZI.TDUY", r: "RUSHER"},
-            { n: "UZI.KEN", r: "RIFLER" },
-            { n: "UZI.HANA", r: "BOMBER" },
-            { n: "UZI.FOR", r: "SNIPPER" },
-            { n: "UZI.BIN", r: "SUPPORT" }
+            { n: "UZI.TDUY", r: "RUSHER", id: "1684785935" },
+            { n: "UZI.KEN", r: "RIFLER", id: "11332758118" },
+            { n: "UZI.HANA", r: "BOMBER", id: "2104295752" },
+            { n: "UZI.FOR", r: "SNIPER", id: "6738561967" },
+            { n: "UZI.BIN", r: "SUPPORT", id: "9173149407" }
         ]
     },
-    // ĐỘI 2 trở đi... (Lát nữa mình thay sau)
     "ks": {
         name: "KINGS FF",
         desc: "KS – Tên đầy đủ là KINGS FF. Đội tuyển Free Fire sở hữu lối chơi bản lĩnh và kỷ luật, luôn giữ thế trận ổn định và sẵn sàng áp đảo đối thủ để khẳng định vị thế “nhà vua” tại Survival Legacy Cup SS1!",
@@ -825,7 +824,7 @@ function switchTeam(teamId) {
             else if(player.r === "SUPPORT") badgeStyle = "background: #00ccff; color: #000;"; 
             else if(player.r === "SNIPER" || player.r === "SNIPPER") badgeStyle = "background: #ff9900; color: #000;"; 
             
-            // Xây dựng thẻ Thông số 3D (NO PICTURES)
+            // Xây dựng thẻ Thông số 3D (ĐÃ XÓA 2 NÚT)
             container.innerHTML += `
                 <div class="uzi-stat-card">
                     <div class="card-header">
@@ -838,20 +837,9 @@ function switchTeam(teamId) {
                             <span class="data-label">TUYỂN THỦ</span>
                             <span class="data-value">${player.n}</span>
                         </div>
-                        <div class="data-field">
+                        <div class="data-field" style="margin-bottom: 0;">
                             <span class="data-label">PLAYER ID</span>
                             <span class="data-value-id">${player.id ? player.id : 'DỮ LIỆU ĐANG CẬP NHẬT'}</span>
-                        </div>
-                    </div>
-
-                    <div class="stat-btn-row">
-                        <div class="uzi-stat-btn">
-                            <span class="uzi-stat-btn-label">TỶ LỆ HEADSHOT</span>
-                            <span class="uzi-stat-btn-value">ĐANG CẬP NHẬT %</span>
-                        </div>
-                        <div class="uzi-stat-btn">
-                            <span class="uzi-stat-btn-label">FACEBOOK</span>
-                            <span class="uzi-stat-btn-value">XEM TRANG CÁ NHÂN</span>
                         </div>
                     </div>
                 </div>
