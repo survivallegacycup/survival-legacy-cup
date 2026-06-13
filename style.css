@@ -1364,137 +1364,91 @@ header, .header, .navbar, .top-bar, .top-header, #header {
     gap: 15px; /* Khoảng cách vừa phải */
     padding: 20px 0;
 }
-/* ================= UZI LEGENDS STAT CARD (NEW DESIGN - NO PICS) ================= */
-.uzi-roster-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 25px; /* Tăng khoảng cách để thấy rõ hiệu ứng phát sáng */
-    padding: 30px 10px;
-}
+/* ================= THẺ 3D ESPORTS VIP (GLOW ĐỎ & VIỀN GRADIENT) ================= */
 
-/* Thẻ chính bọc ngoài */
+/* 1. Khung bọc thẻ: Nền tảng tạo Glow */
 .uzi-stat-card {
-    background: linear-gradient(180deg, #151515 0%, #050505 100%);
-    border: 1px solid rgba(255, 204, 0, 0.3); /* Viền vàng mờ mặc định */
-    border-radius: 15px;
-    width: 260px; /* Rộng hơn chút để structured text đẹp */
-    padding: 0;
-    text-align: left; /* Canh lề trái cho structured text chuyên nghiệp */
     position: relative;
-    overflow: hidden;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
-    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    width: 260px;
+    border-radius: 12px;
+    background: #111; /* Màu nền dự phòng */
+    text-align: left;
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.15); /* Hào quang đỏ mờ tĩnh */
+    transition: 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+    z-index: 1; /* Giữ nội dung nổi lên trên */
+    margin-bottom: 20px;
 }
 
-/* Hiệu ứng lia chuột (Hover) nảy lên và viền sáng mạnh */
+/* THỦ THUẬT: Tạo viền Gradient Đỏ - Cam bo góc */
+.uzi-stat-card::before {
+    content: "";
+    position: absolute;
+    inset: -2px; /* Độ dày của viền gradient (2px) */
+    border-radius: 14px; /* Phải to hơn border-radius của thẻ 1 chút */
+    background: linear-gradient(45deg, #ff0000, #ff8800, #ff0000);
+    z-index: -1; /* Chìm xuống làm viền */
+    opacity: 0.4; /* Sáng nhẹ lúc bình thường */
+    transition: 0.4s;
+}
+
+/* 2. Hiệu ứng Hover: Nảy lên và Rực sáng */
 .uzi-stat-card:hover {
-    transform: translateY(-12px) scale(1.03); /* Nảy lên và phóng to nhẹ */
-    border-color: #ffcc00; /* Viền sáng vàng rực */
-    box-shadow: 0 20px 40px rgba(255, 204, 0, 0.25), inset 0 0 25px rgba(255, 204, 0, 0.1); /* Phát sáng viền trong và ngoài */
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(255, 0, 0, 0.5); /* Tỏa hào quang đỏ chót */
 }
 
-/* Thanh tiêu đề Role ở đỉnh thẻ */
+/* Viền gradient sáng chói lên khi lia chuột */
+.uzi-stat-card:hover::before {
+    opacity: 1;
+    filter: blur(1px); /* Tỏa sáng ra ngoài */
+}
+
+/* 3. Line ánh sáng chạy ngang dưới Header */
 .card-header {
     position: relative;
-    height: 40px;
-    border-bottom: 1px solid rgba(255, 204, 0, 0.2);
+    height: 45px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 15px;
-    background: rgba(255, 255, 255, 0.03);
+    background: #0a0a0a;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
 }
 
-.stat-role-badge {
-    font-size: 11px;
-    font-weight: 900;
-    padding: 5px 10px;
-    border-radius: 20px;
-    text-transform: uppercase;
-    letter-spacing: 1.5px;
+.card-header::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    /* Line sáng ở giữa, mờ dần ra 2 biên */
+    background: linear-gradient(90deg, transparent, #ffcc00, transparent);
+    box-shadow: 0 0 8px #ffcc00; 
 }
 
-.card-uzi-logo {
-    color: #ffcc00;
-    font-size: 11px;
-    font-weight: bold;
-    font-family: monospace;
-}
-
-/* Phần thân thẻ chứa dữ liệu ID và Tên (Không ảnh) */
+/* 4. Thân thẻ và Phân cấp chữ (Tên to, ID mờ) */
 .card-body {
     padding: 20px 15px;
-}
-
-.data-field {
-    margin-bottom: 15px;
-}
-
-.data-label {
-    color: #888; /* Màu xám mờ cho label */
-    font-size: 10px;
-    text-transform: uppercase;
-    letter-spacing: 1.5px;
-    font-weight: bold;
-    display: block;
-    margin-bottom: 3px;
+    background: linear-gradient(180deg, #151515 0%, #080808 100%);
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
 }
 
 .data-value {
     color: #fff;
-    font-size: 20px;
+    font-size: 22px; /* Chữ to đùng */
     font-weight: 900;
-    letter-spacing: 1.5px;
+    letter-spacing: 1px;
+    display: block;
+    margin-bottom: 2px; /* Ép sát vào ID */
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.2); /* Bắt sáng nhẹ cho text */
 }
 
 .data-value-id {
-    color: #ffcc00; /* Màu vàng rực cho ID */
-    font-size: 15px;
+    color: rgba(255, 255, 255, 0.4); /* Mờ đi chuẩn Esports */
+    font-size: 12px; /* Chữ nhỏ gọn */
     font-family: monospace;
-    font-weight: bold;
-}
-
-/* Dòng chứa các nút bấm giả ở dưới đáy thẻ */
-.stat-btn-row {
-    border-top: 1px solid rgba(255, 204, 0, 0.2);
-    background: rgba(255, 255, 255, 0.03);
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    padding: 15px 0;
-}
-
-/* Thiết kế từng nút bấm giả (chỉ là div rỗng) */
-.uzi-stat-btn {
-    background: rgba(255, 204, 0, 0.05); /* Nền vàng mờ mặc định */
-    border: 1px solid rgba(255, 204, 0, 0.3);
-    border-radius: 20px;
-    padding: 8px 18px;
-    text-align: center;
-    transition: all 0.2s ease;
-    cursor: pointer;
-}
-
-.uzi-stat-btn-label {
-    color: rgba(255, 204, 0, 0.7);
-    font-size: 10px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    display: block;
-    margin-bottom: 3px;
-}
-
-.uzi-stat-btn-value {
-    color: #fff;
-    font-size: 13px;
-    font-weight: bold;
-}
-
-/* HIỆU ỨNG KHI LIA CHUỘT VÀO NÚT: PHÁT SÁNG MẠNH */
-.uzi-stat-btn:hover {
-    background: rgba(255, 204, 0, 0.2); /* Nền vàng sáng hơn */
-    border-color: #ffcc00; /* Viền sáng vàng rực */
-    box-shadow: 0 0 15px #ffcc00; /* Hiệu ứng phát sáng lấp lánh (Nhung yêu cầu) */
-    transform: scale(1.05); /* Phóng to nút nhẹ */
+    letter-spacing: 2px;
 }
