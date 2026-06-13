@@ -1364,91 +1364,75 @@ header, .header, .navbar, .top-bar, .top-header, #header {
     gap: 15px; /* Khoảng cách vừa phải */
     padding: 20px 0;
 }
-/* ================= THẺ 3D ESPORTS VIP (GLOW ĐỎ & VIỀN GRADIENT) ================= */
+/* ================= 1. CUSTOM GAMING CURSOR ================= */
+body {
+    cursor: url('https://cdn-icons-png.flaticon.com/32/790/790159.png'), auto; /* Chuột tâm ngắm súng */
+}
+a, button, .t-icon, .uzi-stat-card {
+    cursor: url('https://cdn-icons-png.flaticon.com/32/790/790159.png'), pointer;
+}
 
-/* 1. Khung bọc thẻ: Nền tảng tạo Glow */
+/* ================= 2. HIỆU ỨNG LOGO TEAM ĐẬP NHỊP (PULSE) ================= */
+#info-team-logo {
+    animation: neonPulse 2s infinite alternate;
+    filter: drop-shadow(0 0 10px rgba(255, 204, 0, 0.5));
+}
+@keyframes neonPulse {
+    from { transform: scale(1); filter: drop-shadow(0 0 10px rgba(255, 204, 0, 0.5)); }
+    to { transform: scale(1.08); filter: drop-shadow(0 0 25px rgba(255, 204, 0, 1)); }
+}
+
+/* ================= 3. ANIMATION XUẤT HIỆN THẺ (SLIDE UP) ================= */
+@keyframes slideUpFade {
+    from { opacity: 0; transform: translateY(40px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* ================= 4. KHUNG THẺ ESPORTS CỰC CHÁY ================= */
+.uzi-roster-container {
+    display: flex; flex-wrap: wrap; justify-content: center; gap: 25px; padding: 30px 10px;
+}
+
 .uzi-stat-card {
     position: relative;
     width: 260px;
+    background: rgba(15, 15, 15, 0.85); /* Nền kính mờ */
+    backdrop-filter: blur(10px);
     border-radius: 12px;
-    background: #111; /* Màu nền dự phòng */
-    text-align: left;
-    box-shadow: 0 0 15px rgba(255, 0, 0, 0.15); /* Hào quang đỏ mờ tĩnh */
-    transition: 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
-    z-index: 1; /* Giữ nội dung nổi lên trên */
-    margin-bottom: 20px;
+    /* Dùng biến --neon từ JS để tự đổi màu viền và hào quang */
+    border: 1px solid var(--neon-dim);
+    box-shadow: 0 5px 15px var(--neon-dim);
+    opacity: 0; 
+    animation: slideUpFade 0.6s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+    transition: all 0.3s ease;
+    overflow: hidden;
 }
 
-/* THỦ THUẬT: Tạo viền Gradient Đỏ - Cam bo góc */
-.uzi-stat-card::before {
-    content: "";
-    position: absolute;
-    inset: -2px; /* Độ dày của viền gradient (2px) */
-    border-radius: 14px; /* Phải to hơn border-radius của thẻ 1 chút */
-    background: linear-gradient(45deg, #ff0000, #ff8800, #ff0000);
-    z-index: -1; /* Chìm xuống làm viền */
-    opacity: 0.4; /* Sáng nhẹ lúc bình thường */
-    transition: 0.4s;
+/* Hiệu ứng Light Beam (Tia sáng quét ngang thẻ) */
+.uzi-stat-card::after {
+    content: ""; position: absolute; top: 0; left: -100%; width: 50%; height: 100%;
+    background: linear-gradient(to right, transparent, rgba(255,255,255,0.1), transparent);
+    transform: skewX(-25deg); transition: 0.6s; z-index: 0;
 }
+.uzi-stat-card:hover::after { left: 150%; } /* Quét ánh sáng khi lia chuột */
 
-/* 2. Hiệu ứng Hover: Nảy lên và Rực sáng */
+/* Hover nảy thẻ và bùng nổ Hào quang */
 .uzi-stat-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 15px 35px rgba(255, 0, 0, 0.5); /* Tỏa hào quang đỏ chót */
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 15px 35px var(--neon), inset 0 0 15px var(--neon-dim);
+    border-color: var(--neon);
 }
 
-/* Viền gradient sáng chói lên khi lia chuột */
-.uzi-stat-card:hover::before {
-    opacity: 1;
-    filter: blur(1px); /* Tỏa sáng ra ngoài */
-}
+.card-header, .card-body { position: relative; z-index: 1; }
 
-/* 3. Line ánh sáng chạy ngang dưới Header */
 .card-header {
-    position: relative;
-    height: 45px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 15px;
-    background: #0a0a0a;
-    border-top-left-radius: 12px;
-    border-top-right-radius: 12px;
+    height: 45px; display: flex; align-items: center; justify-content: space-between;
+    padding: 0 15px; background: rgba(0,0,0,0.4);
+    border-bottom: 1px solid rgba(255,255,255,0.05);
 }
 
-.card-header::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    /* Line sáng ở giữa, mờ dần ra 2 biên */
-    background: linear-gradient(90deg, transparent, #ffcc00, transparent);
-    box-shadow: 0 0 8px #ffcc00; 
-}
-
-/* 4. Thân thẻ và Phân cấp chữ (Tên to, ID mờ) */
-.card-body {
-    padding: 20px 15px;
-    background: linear-gradient(180deg, #151515 0%, #080808 100%);
-    border-bottom-left-radius: 12px;
-    border-bottom-right-radius: 12px;
-}
-
-.data-value {
-    color: #fff;
-    font-size: 22px; /* Chữ to đùng */
-    font-weight: 900;
-    letter-spacing: 1px;
-    display: block;
-    margin-bottom: 2px; /* Ép sát vào ID */
-    text-shadow: 0 0 5px rgba(255, 255, 255, 0.2); /* Bắt sáng nhẹ cho text */
-}
-
-.data-value-id {
-    color: rgba(255, 255, 255, 0.4); /* Mờ đi chuẩn Esports */
-    font-size: 12px; /* Chữ nhỏ gọn */
-    font-family: monospace;
-    letter-spacing: 2px;
-}
+.stat-role-badge { font-size: 11px; font-weight: 900; padding: 5px 10px; border-radius: 4px; text-transform: uppercase; letter-spacing: 1px;}
+.card-body { padding: 20px 15px; text-align: left; }
+.data-label { color: #777; font-size: 10px; font-weight: bold; letter-spacing: 2px; display: block; margin-bottom: 4px; }
+.data-value { color: #fff; font-size: 24px; font-weight: 900; letter-spacing: 1px; display: block; text-shadow: 0 0 10px var(--neon-dim); }
+.data-value-id { color: rgba(255,255,255,0.4); font-size: 12px; font-family: monospace; letter-spacing: 2px; }

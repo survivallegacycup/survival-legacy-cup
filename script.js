@@ -817,28 +817,55 @@ function switchTeam(teamId) {
 
     if(container) {
         container.innerHTML = ''; 
-        data.players.forEach(player => {
-            // Đổi màu Role chuẩn chỉnh theo ý Nhung
-            let badgeStyle = "background: #555; color: #fff;"; // Màu mặc định nếu không có role
-            if (player.r === "RUSHER") badgeStyle = "background: #ff0000; color: #fff;"; // Đỏ
-            else if (player.r === "RIFLER") badgeStyle = "background: #0088ff; color: #fff;"; // Xanh dương
-            else if (player.r === "BOMBER") badgeStyle = "background: #ffcc00; color: #000;"; // Vàng (chữ đen cho dễ đọc)
-            else if (player.r === "SNIPER" || player.r === "SNIPPER") badgeStyle = "background: #00cc44; color: #fff;"; // Xanh lá
-            else if (player.r === "SUPPORT") badgeStyle = "background: #ff33cc; color: #fff;"; // Hồng
+        // Thêm tham số 'index' để tính thời gian delay xuất hiện từng thẻ
+        data.players.forEach((player, index) => { 
             
-            // Xây dựng thẻ Thông số 3D
+            // 1. Tự động chia màu Neon và Icon Emojis
+            let neonColor = "rgba(100, 100, 100, "; // Xám mặc định
+            let roleIcon = "🎮";
+            let badgeStyle = "background: #555; color: #fff;";
+
+            if (player.r === "RUSHER") {
+                neonColor = "rgba(255, 0, 0, "; // Đỏ
+                roleIcon = "⚔️";
+                badgeStyle = "background: #ff0000; color: #fff;";
+            } else if (player.r === "RIFLER") {
+                neonColor = "rgba(0, 136, 255, "; // Xanh dương
+                roleIcon = "🔫";
+                badgeStyle = "background: #0088ff; color: #fff;";
+            } else if (player.r === "BOMBER") {
+                neonColor = "rgba(255, 204, 0, "; // Vàng
+                roleIcon = "💣";
+                badgeStyle = "background: #ffcc00; color: #000;";
+            } else if (player.r === "SNIPER" || player.r === "SNIPPER") {
+                neonColor = "rgba(0, 204, 68, "; // Xanh lá
+                roleIcon = "🎯";
+                badgeStyle = "background: #00cc44; color: #fff;";
+            } else if (player.r === "SUPPORT") {
+                neonColor = "rgba(255, 51, 204, "; // Hồng
+                roleIcon = "🛡️";
+                badgeStyle = "background: #ff33cc; color: #fff;";
+            }
+
+            // 2. Tính toán độ trễ (Delay) để bài ra từng lá bài một
+            let delay = index * 0.15; // Mỗi người cách nhau 0.15 giây
+
+            // 3. Xây dựng cấu trúc Thẻ (Truyền thẳng màu Neon vào CSS)
             container.innerHTML += `
-                <div class="uzi-stat-card">
+                <div class="uzi-stat-card" style="
+                    animation-delay: ${delay}s; 
+                    --neon: ${neonColor} 0.8); 
+                    --neon-dim: ${neonColor} 0.2);
+                ">
                     <div class="card-header">
-                        <span class="stat-role-badge" style="${badgeStyle}">${player.r ? player.r : 'THÀNH VIÊN'}</span>
-                        
-                        <span class="card-uzi-logo" style="font-size: 9px; line-height: 1.3; text-align: right; color: #ffcc00;">
+                        <span class="stat-role-badge" style="${badgeStyle}">${roleIcon} ${player.r ? player.r : 'THÀNH VIÊN'}</span>
+                        <span class="card-uzi-logo" style="font-size: 9px; line-height: 1.3; text-align: right; color: #fff; text-shadow: 0 0 5px #fff;">
                             SURVIVAL LEGACY<br>CUP SS1
                         </span>
                     </div>
 
                     <div class="card-body">
-                        <div class="data-field">
+                        <div class="data-field" style="margin-bottom: 15px;">
                             <span class="data-label">TUYỂN THỦ</span>
                             <span class="data-value">${player.n}</span>
                         </div>
