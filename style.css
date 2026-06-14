@@ -149,7 +149,13 @@ button:hover {
 /* SIDEBAR */
 .sidebar {
     width: 250px;
-    flex-shrink: 0; /* Khóa chết chiều rộng, không cho méo */
+    flex-shrink: 0;
+    /* Dán thêm bộ giáp nền đen vào đây */
+    background: rgba(10, 10, 10, 0.85); 
+    padding: 20px 15px;
+    border-radius: 12px;
+    border: 1px solid #333;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.8);
 }
 
 .sidebar h3 {
@@ -642,21 +648,6 @@ button:hover {
     color: #ffaa00 !important;
     text-shadow: 1px 1px 2px #000, -1px -1px 2px #000, 1px -1px 2px #000, -1px 1px 2px #000 !important; /* Viền mỏng lại cho đỡ thô */
 }
-/* ================= PHA TRỘN: MENU DỌC BÊN TRÁI MÀU ĐỎ ================= */
-
-/* 1. Ép viền của các mục đang chọn ở Menu Trái thành màu Đỏ */
-.container > div:not(.content) .active,
-.sidebar .active,
-.menu-left .active {
-    border-left-color: #ff1a1a !important;
-}
-
-/* 2. Đổi luôn viền Đỏ khi rê chuột (hover) vào menu trái cho đồng bộ */
-.container > div:not(.content) li:hover,
-.container > div:not(.content) .menu-item:hover,
-.sidebar .menu-item:hover {
-    border-left-color: #ff1a1a !important;
-}
 
 /* 3. Tiện tay nhuộm Đỏ luôn thanh cuộn (Scrollbar) cho chiến */
 ::-webkit-scrollbar-thumb {
@@ -922,24 +913,6 @@ header, .header, .navbar, .top-bar, .top-header, #header {
 .r-tab:hover:not(.active) {
     border-color: #ffcc00;
     color: #fff;
-}
-/* ================= HIỆU ỨNG MENU TRÁI KHI CLICK CHỌN (CHUẨN GARENA) ================= */
-
-.sidebar .active, 
-.menu-left .active,
-.menu-item.active { /* Tóm hết các class menu bạn có thể đang dùng */
-    
-    /* Vạch vàng đặc trưng bên trái */
-    border-left: 4px solid #ffcc00 !important;
-    
-    /* CHÌA KHÓA: Phối màu Đen nguyên khối dạt sang Xám (trắng + đen), 100% không trong suốt */
-    background: linear-gradient(90deg, #000000 0%, #3a3a3a 100%) !important;
-    
-    /* Đổi chữ thành màu Trắng cho nổi bật trên nền đen/xám giống ảnh 1 */
-    color: #ffffff !important;
-    
-    /* Tắt bớt đổ bóng chữ để nhìn sạch sẽ và sắc nét hơn */
-    text-shadow: none !important; 
 }
 /* ================= HIGHLIGHT TOP 6: NHỊP THỞ CYAN (COMEBACK) ================= */
 
