@@ -107,35 +107,25 @@ button:hover {
     color: #fff;
     font-style: italic;
 }
-/* ================= 2. NAVBAR UNDERLINE ANIMATION ================= */
-.nav-links li a {
-    position: relative;
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: #888;
     text-decoration: none;
-    padding-bottom: 5px;
-    color: #fff;
-    transition: 0.3s;
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
-/* Tạo thanh gạch chân ẩn với độ dài = 0 */
-.nav-links li a::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0; 
-    height: 2px;
-    background: #ffcc00; /* Màu Vàng Gold highlight */
-    transition: width 0.3s ease; /* Chạy animation mượt */
-}
-
-/* Khi lia chuột, gạch chân chạy ra 100% */
-.nav-links li a:hover::after {
-    width: 100%;
-}
-
-.nav-links li a:hover {
+.nav-links a.active, .nav-links a:hover {
     color: #ffcc00;
 }
+
 .login-btn {
     background: transparent;
     border: 1px solid #555;
@@ -1452,4 +1442,33 @@ a, button, .uzi-stat-card, .t-icon, .nav-btn, .uzi-btn-cus {
     transform: translateX(8px); /* Trượt nhẹ sang phải tạo cảm giác tương tác */
     border-left: 3px solid #ff0000 !important;
     color: #fff !important;
+}
+/* ================= 2. NAVBAR UNDERLINE ANIMATION ================= */
+.nav-links li a {
+    position: relative;
+    text-decoration: none;
+    padding-bottom: 5px;
+    color: #fff;
+    transition: 0.3s;
+}
+
+/* Tạo thanh gạch chân ẩn với độ dài = 0 */
+.nav-links li a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0; 
+    height: 2px;
+    background: #ffcc00; /* Màu Vàng Gold highlight */
+    transition: width 0.3s ease; /* Chạy animation mượt */
+}
+
+/* Khi lia chuột, gạch chân chạy ra 100% */
+.nav-links li a:hover::after {
+    width: 100%;
+}
+
+.nav-links li a:hover {
+    color: #ffcc00;
 }
