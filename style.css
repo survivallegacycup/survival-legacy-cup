@@ -90,49 +90,12 @@ button:hover {
     /* Kẻ đường viền dưới màu Vàng rực rỡ để highlight trận đấu */
     border-bottom: 1px solid rgba(255, 215, 0, 0.8) !important;
 }
-/* NAVBAR */
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #000;
-    padding: 15px 40px;
-    border-bottom: 2px solid #ffcc00;
-}
 
 .logo {
     font-size: 28px;
     font-weight: 900;
     color: #fff;
     font-style: italic;
-}
-
-.nav-links {
-    list-style: none;
-    display: flex;
-    gap: 30px;
-}
-
-.nav-links a {
-    color: #888;
-    text-decoration: none;
-    font-size: 13px;
-    font-weight: bold;
-    text-transform: uppercase;
-}
-
-.nav-links a.active, .nav-links a:hover {
-    color: #ffcc00;
-}
-
-.login-btn {
-    background: transparent;
-    border: 1px solid #555;
-    color: #aaa;
-    padding: 6px 20px;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 12px;
 }
 
 /* LAYOUT CONTAINER (Ép buộc 2 cột nằm ngang) */
@@ -667,19 +630,6 @@ header, .header, .navbar, .top-bar, .top-header, #header {
     /* Tớ bỏ overflow: hidden đi để không bị cắt lẹm mất góc thẻ của bạn nữa */
 }
 
-/* ================= LOGO TRÊN THANH MENU ================= */
-.navbar .logo {
-    display: flex !important;
-    align-items: center !important; /* Canh giữa logo và chữ theo chiều dọc */
-    gap: 10px !important; /* Khoảng cách giữa ảnh logo và chữ UZI LEGENDS */
-}
-
-.navbar .logo img {
-    height: 35px !important; 
-    width: auto !important;
-    border-radius: 4px !important; /* Bo cong 4 góc logo một tí xíu cho sang trọng */
-    object-fit: contain !important;
-}
 /* ================= BẢNG ĐIỂM 5 CỘT MỚI ================= */
 .grid-table {
     display: grid;
@@ -1420,32 +1370,92 @@ header, .header, .navbar, .top-bar, .top-header, #header {
     border-left: 3px solid #ff0000 !important;
     color: #fff !important;
 }
-/* ================= 2. NAVBAR UNDERLINE ANIMATION ================= */
-.nav-links li a {
+/* ================= SIÊU CẤP NAVBAR AAA ESPORTS ================= */
+
+/* 1. Nền kính mờ (Glassmorphism) + Ánh đỏ nhẹ */
+.navbar {
     position: relative;
-    text-decoration: none;
-    padding-bottom: 5px;
-    color: #fff;
-    transition: 0.3s;
+    background: linear-gradient(to right, rgba(10, 0, 0, 0.9), rgba(40, 0, 0, 0.8), rgba(10, 0, 0, 0.9)) !important;
+    backdrop-filter: blur(12px) !important;
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255, 0, 0, 0.3) !important;
+    overflow: hidden; /* Cực quan trọng để tia sáng không lọt ra ngoài */
+    z-index: 100;
 }
 
-/* Tạo thanh gạch chân ẩn với độ dài = 0 */
+/* 2. Tia sáng quét ngang (Scan Light) rọi liên tục */
+.navbar::before {
+    content: "";
+    position: absolute;
+    top: 0; left: -100%;
+    width: 30%; height: 100%;
+    /* Dùng màu Vàng Gold rọi nhẹ cho sang */
+    background: linear-gradient(120deg, transparent, rgba(255, 204, 0, 0.15), transparent);
+    animation: scanLight 4s infinite linear;
+    pointer-events: none; /* Không cản trở click chuột */
+}
+@keyframes scanLight {
+    0% { left: -50%; }
+    100% { left: 150%; }
+}
+
+/* 3. Đường viền ánh sáng chạy dưới đáy Navbar */
+.navbar::after {
+    content: "";
+    position: absolute;
+    bottom: 0; left: -100%;
+    width: 50%; height: 2px;
+    background: linear-gradient(90deg, transparent, #ffcc00, transparent);
+    animation: lightRun 3s linear infinite;
+}
+@keyframes lightRun {
+    0% { left: -100%; }
+    100% { left: 100%; }
+}
+
+/* 4. Menu Items - Glow chữ & Gạch chân trượt */
+.nav-links li a {
+    position: relative;
+    transition: 0.3s ease;
+    color: #fff !important;
+    text-decoration: none;
+    padding-bottom: 5px;
+}
+
+.nav-links li a:hover {
+    color: #ffcc00 !important;
+    text-shadow: 0 0 10px rgba(255, 204, 0, 0.8); /* Phát sáng chữ */
+}
+
+/* Thanh gạch chân ẩn */
 .nav-links li a::after {
     content: "";
     position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0; 
-    height: 2px;
-    background: #ffcc00; /* Màu Vàng Gold highlight */
-    transition: width 0.3s ease; /* Chạy animation mượt */
+    left: 0; bottom: -5px;
+    width: 0; height: 2px;
+    background: #ffcc00;
+    transition: 0.3s ease;
 }
 
-/* Khi lia chuột, gạch chân chạy ra 100% */
+/* Trượt gạch chân ra khi lia chuột */
 .nav-links li a:hover::after {
     width: 100%;
 }
 
-.nav-links li a:hover {
-    color: #ffcc00;
+/* 5. Nút ĐĂNG NHẬP Premium (Đỏ gradient Vàng) */
+.login-btn {
+    background: linear-gradient(45deg, #ff0000, #ffcc00) !important;
+    border: none !important;
+    color: #fff !important;
+    font-weight: bold !important;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.5) !important;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) !important;
+    padding: 8px 20px !important;
+    border-radius: 8px !important;
+}
+
+.login-btn:hover {
+    transform: scale(1.08); /* Phóng to nhẹ văng ra trước */
+    box-shadow: 0 0 20px rgba(255, 204, 0, 0.8) !important; /* Đổi hào quang sang Vàng */
+    color: #fff !important;
 }
