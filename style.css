@@ -1429,6 +1429,8 @@ a, button, .uzi-stat-card, .t-icon, .nav-btn, .uzi-btn-cus {
     border: 1px solid rgba(255, 0, 0, 0.2) !important;
     border-radius: 12px;
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.7);
+    overflow-x: hidden !important; /* Khóa chết thanh cuộn ngang (Trục X) */
+    overflow-y: auto !important;   /* Chỉ cho phép cuộn trượt lên xuống (Trục Y) */
 }
 
 /* Hover trượt mượt mà cho các mục Menu */
