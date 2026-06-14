@@ -1370,64 +1370,59 @@ header, .header, .navbar, .top-bar, .top-header, #header {
     border-left: 3px solid #ff0000 !important;
     color: #fff !important;
 }
-/* ================= SIÊU CẤP NAVBAR AAA ESPORTS ================= */
+/* ================= SIÊU CẤP NAVBAR AAA ESPORTS (ĐÃ SỬA LỖI DÀN HÀNG) ================= */
 
-/* 1. Nền kính mờ (Glassmorphism) + Ánh đỏ nhẹ */
+/* 1. BỘ XƯƠNG: Dàn hàng ngang và dính chặt lên trần (Sticky) */
 .navbar {
-    position: relative;
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    padding: 10px 40px !important;
+    position: sticky; /* Dính chặt trên cùng khi cuộn web */
+    top: 0;
+    z-index: 1000; /* Luôn nổi trên mọi thứ khác */
+
+    /* Da thịt: Kính mờ Glassmorphism */
     background: linear-gradient(to right, rgba(10, 0, 0, 0.9), rgba(40, 0, 0, 0.8), rgba(10, 0, 0, 0.9)) !important;
     backdrop-filter: blur(12px) !important;
     -webkit-backdrop-filter: blur(12px);
     border-bottom: 1px solid rgba(255, 0, 0, 0.3) !important;
-    overflow: hidden; /* Cực quan trọng để tia sáng không lọt ra ngoài */
-    z-index: 100;
+    overflow: hidden; 
 }
 
-/* 2. Tia sáng quét ngang (Scan Light) rọi liên tục */
-.navbar::before {
-    content: "";
-    position: absolute;
-    top: 0; left: -100%;
-    width: 30%; height: 100%;
-    /* Dùng màu Vàng Gold rọi nhẹ cho sang */
-    background: linear-gradient(120deg, transparent, rgba(255, 204, 0, 0.15), transparent);
-    animation: scanLight 4s infinite linear;
-    pointer-events: none; /* Không cản trở click chuột */
-}
-@keyframes scanLight {
-    0% { left: -50%; }
-    100% { left: 150%; }
+/* 2. ÉP LOGO NHỎ LẠI */
+.navbar img {
+    height: 40px !important; /* Ép cứng chiều cao, ko cho logo phình to */
+    width: auto;
 }
 
-/* 3. Đường viền ánh sáng chạy dưới đáy Navbar */
-.navbar::after {
-    content: "";
-    position: absolute;
-    bottom: 0; left: -100%;
-    width: 50%; height: 2px;
-    background: linear-gradient(90deg, transparent, #ffcc00, transparent);
-    animation: lightRun 3s linear infinite;
-}
-@keyframes lightRun {
-    0% { left: -100%; }
-    100% { left: 100%; }
+/* 3. BỘ XƯƠNG MENU: Dàn các chữ thành hàng ngang */
+.nav-links {
+    display: flex !important;
+    list-style: none !important;
+    gap: 35px !important; /* Khoảng cách cực thoáng giữa các chữ */
+    margin: 0 !important;
+    padding: 0 !important;
 }
 
-/* 4. Menu Items - Glow chữ & Gạch chân trượt */
+/* 4. CHỮ MENU & HIỆU ỨNG TRƯỢT VÀNG */
 .nav-links li a {
     position: relative;
     transition: 0.3s ease;
     color: #fff !important;
     text-decoration: none;
     padding-bottom: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .nav-links li a:hover {
     color: #ffcc00 !important;
-    text-shadow: 0 0 10px rgba(255, 204, 0, 0.8); /* Phát sáng chữ */
+    text-shadow: 0 0 10px rgba(255, 204, 0, 0.8);
 }
 
-/* Thanh gạch chân ẩn */
 .nav-links li a::after {
     content: "";
     position: absolute;
@@ -1437,12 +1432,26 @@ header, .header, .navbar, .top-bar, .top-header, #header {
     transition: 0.3s ease;
 }
 
-/* Trượt gạch chân ra khi lia chuột */
 .nav-links li a:hover::after {
     width: 100%;
 }
 
-/* 5. Nút ĐĂNG NHẬP Premium (Đỏ gradient Vàng) */
+/* 5. TIA SÁNG QUÉT NGANG (SCAN LIGHT) */
+.navbar::before {
+    content: ""; position: absolute; top: 0; left: -100%; width: 30%; height: 100%;
+    background: linear-gradient(120deg, transparent, rgba(255, 204, 0, 0.15), transparent);
+    animation: scanLight 4s infinite linear; pointer-events: none;
+}
+@keyframes scanLight { 0% { left: -50%; } 100% { left: 150%; } }
+
+.navbar::after {
+    content: ""; position: absolute; bottom: 0; left: -100%; width: 50%; height: 2px;
+    background: linear-gradient(90deg, transparent, #ffcc00, transparent);
+    animation: lightRun 3s linear infinite;
+}
+@keyframes lightRun { 0% { left: -100%; } 100% { left: 100%; } }
+
+/* 6. NÚT ĐĂNG NHẬP VIP */
 .login-btn {
     background: linear-gradient(45deg, #ff0000, #ffcc00) !important;
     border: none !important;
@@ -1450,12 +1459,14 @@ header, .header, .navbar, .top-bar, .top-header, #header {
     font-weight: bold !important;
     box-shadow: 0 0 10px rgba(255, 0, 0, 0.5) !important;
     transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) !important;
-    padding: 8px 20px !important;
+    padding: 10px 24px !important;
     border-radius: 8px !important;
+    cursor: pointer;
+    font-size: 13px;
+    letter-spacing: 1px;
 }
 
 .login-btn:hover {
-    transform: scale(1.08); /* Phóng to nhẹ văng ra trước */
-    box-shadow: 0 0 20px rgba(255, 204, 0, 0.8) !important; /* Đổi hào quang sang Vàng */
-    color: #fff !important;
+    transform: scale(1.08);
+    box-shadow: 0 0 20px rgba(255, 204, 0, 0.8) !important;
 }
