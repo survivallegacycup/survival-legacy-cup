@@ -1452,3 +1452,40 @@ body {
 a, button, .uzi-stat-card, .t-icon, .nav-btn, .uzi-btn-cus {
     cursor: var(--weapon-cursor) !important;
 }
+/* ================= ĐỒNG BỘ HIỆU ỨNG VÀNG GARENA CHO 2 MENU ================= */
+
+/* 1. Ép tất cả các dòng menu về 1 chuẩn: Nền đen mờ, chữ xám */
+.sidebar-section ul li, 
+ul.stages li, 
+ul.tournament-list li {
+    background: rgba(255, 255, 255, 0.02) !important; /* Đánh bay nền xám đặc cũ */
+    border-left: 3px solid transparent !important; /* Chừa sẵn chỗ cho vạch vàng */
+    color: #999 !important; /* Chữ xám mặc định */
+    padding: 12px 15px !important;
+    transition: all 0.2s ease !important;
+}
+
+/* 2. Hiệu ứng khi lia chuột: Sáng lên nhẹ */
+.sidebar-section ul li:hover, 
+ul.stages li:hover, 
+ul.tournament-list li:hover {
+    background: rgba(255, 255, 255, 0.08) !important;
+    color: #fff !important;
+}
+
+/* 3. NÚT ĐANG ĐƯỢC CHỌN (SÁNG VẠCH VÀNG VÀ CHỮ VÀNG) */
+.sidebar-section ul li.active, 
+ul.stages li.active, 
+ul.tournament-list li.active {
+    border-left: 3px solid #ffcc00 !important; /* Vạch vàng rực rỡ bên trái */
+    background: rgba(255, 204, 0, 0.08) !important; /* Đổ nền vàng đen cực ngầu */
+    color: #ffcc00 !important; /* Chữ vàng */
+    font-weight: bold !important;
+}
+
+/* Đảm bảo mấy cái link <a> bên trong cũng phải đổi màu theo */
+.sidebar-section ul li a, 
+ul.stages li a, 
+ul.tournament-list li a {
+    color: inherit !important;
+}
