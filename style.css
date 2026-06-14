@@ -4,7 +4,10 @@
     box-sizing: border-box;
     font-family: 'Arial', sans-serif;
 }
-
+/* Dùng tâm súng gốc của hệ thống (siêu mượt, không delay) */
+body, a, button, .uzi-stat-card, .t-icon, .nav-btn, .uzi-btn-cus {
+    cursor: crosshair !important;
+}
 body {
     /* Đặt ảnh làm nền */
     background-image: url('bg-esport.jpg'); 
