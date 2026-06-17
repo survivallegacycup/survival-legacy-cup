@@ -1508,11 +1508,22 @@ header, .header, .navbar, .top-bar, .top-header, #header {
         display: none;
     }
 }
-.sidebar {
-    background-image: url('nen-vang.jpg');
+.uzi-roster-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px; 
+    padding: 40px 10px; /* Tăng padding lên chút cho thoáng ảnh nền */
+
+    /* ===== CHÈN ẢNH NỀN TIA SÉT VÀO ĐÂY ===== */
+    /* Phủ thêm một lớp màu đen mờ 70% (rgba) đè lên ảnh để làm nền dịu lại, giúp các thẻ tuyển thủ nổi bần bật lên trên */
+    background: linear-gradient(rgba(10, 10, 10, 0.7), rgba(10, 10, 10, 0.7)), url('nen-vang.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    /* Bạn có thể cần thêm padding để nội dung không bị dính sát mép */
-    padding: 20px;
+    
+    /* Bo góc và thêm viền vàng mờ cho nguyên cái khung */
+    border-radius: 15px;
+    border: 1px solid rgba(255, 204, 0, 0.2);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
 }
