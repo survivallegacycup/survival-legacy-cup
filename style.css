@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@800;900&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -1526,4 +1527,77 @@ header, .header, .navbar, .top-bar, .top-header, #header {
     border-radius: 15px;
     border: 1px solid rgba(255, 204, 0, 0.2);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+}
+/* ================= LOGO NAVBAR VIP (ANIMATED GRADIENT & GLOW) ================= */
+
+.nav-logo-container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+/* Ảnh Logo nhỏ gọn, có hào quang xanh */
+.nav-logo-container img {
+    width: 45px;
+    height: 45px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 198, 255, 0.4); 
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+/* Chữ UZI LEGENDS chuẩn Font Gaming */
+.nav-logo-text {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 26px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    
+    /* 1. Đổ màu Gradient Đỏ - Vàng - Đỏ */
+    background: linear-gradient(270deg, #ff0000, #ffcc00, #ff0000);
+    background-size: 400% 400%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+    /* 2. Hiệu ứng Gradient tự động chạy mượt mà */
+    animation: gradientMove 5s ease infinite;
+    
+    /* 3. Đổ bóng Glow (Dùng filter drop-shadow thay cho text-shadow để chữ trong suốt không bị lỗi đen nền) */
+    filter: drop-shadow(0 0 8px rgba(255, 0, 0, 0.6)); 
+    
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+/* Kịch bản cho màu Gradient chạy liên tục */
+@keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Đường line ánh sáng ẩn bên dưới chữ */
+.nav-logo-text::after {
+    content: "";
+    display: block;
+    width: 0%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #ffcc00, transparent);
+    margin-top: 4px;
+    transition: width 0.4s ease;
+}
+
+/* ===== HIỆU ỨNG KHI LIA CHUỘT (HOVER) ===== */
+.nav-logo-container:hover img {
+    transform: scale(1.1) rotate(-5deg); /* Nảy và nghiêng logo */
+    box-shadow: 0 0 20px rgba(0, 198, 255, 0.9); /* Phát sáng mạnh hơn */
+}
+
+.nav-logo-container:hover .nav-logo-text {
+    transform: scale(1.05); /* Chữ to lên nhẹ */
+    filter: drop-shadow(0 0 15px rgba(255, 204, 0, 0.8)); /* Đổi hào quang sang Vàng */
+}
+
+.nav-logo-container:hover .nav-logo-text::after {
+    width: 100%; /* Đường line ánh sáng chạy ra */
 }
