@@ -1629,11 +1629,14 @@ header, .header, .navbar, .top-bar, .top-header, #header {
 }
 
 /* 3. CHỮ TIÊU ĐỀ CHIA 2 MÀU (TEXT GRADIENT) */
+/* 3. CHỮ TIÊU ĐỀ CHIA 2 MÀU (TEXT GRADIENT) */
 .match-title-box {
     font-weight: 900;
     font-family: 'Orbitron', sans-serif;
     letter-spacing: 1px;
     font-size: 15px;
+    text-align: center !important; /* Đẩy tiêu đề ra giữa bảng */
+    padding-left: 20px !important; /* Tạo khoảng cách an toàn với cột Ngày */
 }
 .text-main {
     background: linear-gradient(90deg, #ff0000, #ffcc00);
@@ -1662,18 +1665,20 @@ tr.match-row:hover, tbody tr:not(.table-header-row):hover {
 }
 
 /* 5. NÚT "XEM THỐNG SỐ" BỐC LỬA */
+/* 5. NÚT "XEM THỐNG SỐ" BỐC LỬA VÀ THON GỌN */
 .btn-xem-thong-so, .btn-stats {
     background: linear-gradient(45deg, #ff0000, #ff7300) !important;
     border: none !important;
     color: #fff !important;
-    padding: 6px 18px !important;
+    padding: 5px 12px !important; /* Bóp nhỏ nút lại cho thanh lịch */
     border-radius: 20px !important;
-    font-size: 11px !important;
+    font-size: 10px !important; /* Hạ size chữ xuống một chút */
     font-weight: 900 !important;
     letter-spacing: 1px;
     box-shadow: 0 0 10px rgba(255, 0, 0, 0.5) !important;
     transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) !important;
     cursor: pointer;
+    white-space: nowrap !important; /* KHÓA CHẾT CHỮ TRÊN 1 DÒNG, KHÔNG CHO RỚT DÒNG */
 }
 .btn-xem-thong-so:hover, .btn-stats:hover {
     transform: scale(1.12) !important; /* Phóng to nảy lên */
