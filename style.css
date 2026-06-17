@@ -1601,3 +1601,82 @@ header, .header, .navbar, .top-bar, .top-header, #header {
 .nav-logo-container:hover .nav-logo-text::after {
     width: 100%; /* Đường line ánh sáng chạy ra */
 }
+/* ================= NÂNG CẤP BẢNG LỊCH THI ĐẤU ESPORTS VIP ================= */
+
+/* 1. NỀN BẢNG GLASSMORPHISM (Kính mờ sang trọng) */
+.table-wrapper, .match-table {
+    background: rgba(10, 5, 5, 0.65) !important;
+    backdrop-filter: blur(10px) !important;
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 80, 0, 0.3) !important;
+    box-shadow: 0 0 25px rgba(255, 50, 0, 0.2) !important;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+/* 2. DÒNG TIÊU ĐỀ (Highlight Đỏ Cam) */
+.table-header-row, .match-title-bg {
+    background: linear-gradient(90deg, rgba(255, 0, 0, 0.3), rgba(255, 140, 0, 0.05)) !important;
+    border-left: 4px solid #ff0000 !important;
+}
+
+/* Chữ Ngày Tháng Vàng Gold */
+.match-date {
+    color: #ffcc00 !important;
+    font-weight: 900 !important;
+    font-size: 15px;
+    text-shadow: 0 0 10px rgba(255, 204, 0, 0.6);
+}
+
+/* 3. CHỮ TIÊU ĐỀ CHIA 2 MÀU (TEXT GRADIENT) */
+.match-title-box {
+    font-weight: 900;
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 1px;
+    font-size: 15px;
+}
+.text-main {
+    background: linear-gradient(90deg, #ff0000, #ffcc00);
+    -webkit-background-clip: text; background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.divider {
+    color: rgba(255, 255, 255, 0.3); margin: 0 6px;
+}
+.text-sub {
+    /* Lạnh (Xanh Ngọc) đối lập với Nóng (Đỏ) tạo hiệu ứng cực gắt */
+    background: linear-gradient(90deg, #00c6ff, #0072ff);
+    -webkit-background-clip: text; background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 15px rgba(0, 198, 255, 0.3);
+}
+
+/* 4. HIỆU ỨNG LIA CHUỘT VÀO TỪNG TRẬN (ROW HOVER) */
+tr.match-row, tbody tr:not(.table-header-row) {
+    transition: all 0.3s ease !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+tr.match-row:hover, tbody tr:not(.table-header-row):hover {
+    background: linear-gradient(90deg, rgba(255, 0, 0, 0.15), transparent) !important;
+    transform: translateX(5px); /* Trượt nhẹ sang phải */
+}
+
+/* 5. NÚT "XEM THỐNG SỐ" BỐC LỬA */
+.btn-xem-thong-so, .btn-stats {
+    background: linear-gradient(45deg, #ff0000, #ff7300) !important;
+    border: none !important;
+    color: #fff !important;
+    padding: 6px 18px !important;
+    border-radius: 20px !important;
+    font-size: 11px !important;
+    font-weight: 900 !important;
+    letter-spacing: 1px;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.5) !important;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) !important;
+    cursor: pointer;
+}
+.btn-xem-thong-so:hover, .btn-stats:hover {
+    transform: scale(1.12) !important; /* Phóng to nảy lên */
+    box-shadow: 0 0 20px rgba(255, 204, 0, 0.9) !important; /* Rực Vàng chói lóa */
+    color: #fff !important;
+}
