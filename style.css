@@ -1508,3 +1508,11 @@ header, .header, .navbar, .top-bar, .top-header, #header {
         display: none;
     }
 }
+.sidebar {
+    background-image: url('nen-vang.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* Bạn có thể cần thêm padding để nội dung không bị dính sát mép */
+    padding: 20px;
+}
