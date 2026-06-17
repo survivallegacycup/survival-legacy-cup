@@ -195,10 +195,10 @@ const teamsDatabase = {
         logo: "logo-ks.jpg",
         country: "",
         players: [
-            { n: "KS.GREAT", a: "great.jpg", r: "RUSHER" },
-            { n: "KS.VPHAT", a: "vphat.jpg", r: "RUSHER" },
-            { n: "KS.CTHANG", a: "cthang.jpg", r: "RUSHER" },
-            { n: "KS.HLOC", a: "hloc.jpg", r: "RIFLER" },
+            { n: "KS.GREAT", r: "RUSHER", id: "261423238" },
+            { n: "KS.VPHAT", r: "RUSHER", id: "8534460998" },
+            { n: "KS.CTHANG", r: "RUSHER", id: "9531598587" },
+            { n: "KS.HLOC", r: "RIFLER", id: "8015399781" },
             { n: "KHÔNG CÓ", a: "https://placehold.co/200x250/111/555?text=TRONG" }
         ]
     },
@@ -208,11 +208,11 @@ const teamsDatabase = {
         logo: "logo-mao.jpg",
         country: "", 
         players: [
-            { n: "MAO.ĐBIN", a: "đbin.jpg", r: "RUSHER"},
-            { n: "MAO.NTRI", a: "ntri.jpg", r: "BOMBER"},
-            { n: "MAO.QVINH", a: "qvinh.jpg", r: "SNIPER"},
-            { n: "MAO.BAUUJU?", a: "bauju.jpg", r: "SUPPORT"},
-            { n: "MAO.SUN", a: "sun.jpg", r: "SUPPORT"}
+            { n: "MAO.ĐBIN", r: "RUSHER", id: "7017022761"},
+            { n: "MAO.NTRI", r: "BOMBER", id: "9348528189"},
+            { n: "MAO.QVINH", r: "SNIPER", id: "1183370030"},
+            { n: "MAO.LEYNII?", r: "SUPPORT", id: " 561971260 "},
+            { n: "MAO.SUN", r: "SUPPORT", id: "12225789596"}
         ]
     },
     "ft": {
@@ -221,10 +221,10 @@ const teamsDatabase = {
         logo: "logo-ft.jpg",
         country: "", 
         players: [
-            { n: "FT.W4U", a: "w4u.jpg", r: "RUSHER" },
-            { n: "FT.JVARZ", a: "jvarz.jpg", r: "BOMBER" },
-            { n: "FT.THANHDAI", a: "thanhdai.jpg", r: "SNIPER" },
-            { n: "FT.MILLOW", a: "millow.jpg", r: "SUPPORT" },
+            { n: "FT.W4U", r: "RUSHER", id: "6456961336" },
+            { n: "FT.JVARZ", r: "BOMBER", id: "4363598414" },
+            { n: "FT.THANHDAI", r: "SNIPER", id: "3659332602" },
+            { n: "FT.MILLOW", r: "SUPPORT", id: "2444693631" },
             { n: "KHÔNG CÓ", a: "https://placehold.co/200x250/111/555?text=TRONG" }
         ]
     },
@@ -234,10 +234,10 @@ const teamsDatabase = {
         logo: "logo-wb.jpg", /* Nhớ gõ đúng tên file ảnh bạn vừa lưu ở Bước 1 */
         country: "", 
         players: [
-            { n: "WB.K9", a: "k9.jpg", r: "RUSHER" },
-            { n: "WB.BOI", a: "boi.jpg", r: "BOMBER" },
-            { n: "WB.DMK", a: "dmk.jpg", r: "SNIPER" },
-            { n: "WB.PEPIN", a: "pin.jpg", r: "SUPPORT" },
+            { n: "WB.K9", r: "RUSHER", id: "3890131812" },
+            { n: "WB.BOI", r: "BOMBER", id: "9128936319" },
+            { n: "WB.DMK", r: "SNIPER", id: "9625163973" },
+            { n: "WB.PEPIN", r: "SUPPORT", id: "2598058404" },
             { n: "KHÔNG CÓ", a: "https://placehold.co/200x250/111/555?text=TRONG" }
         ]
     },
@@ -247,11 +247,11 @@ const teamsDatabase = {
         logo: "logo-tlk.jpg",
         country: "", 
         players: [
-            { n: "TLK.DONTCRY", a: "dontcry.jpg", r: "RUSHER" },
-            { n: "TLK.RAM", a: "ram.jpg", r: "BOMBER" },
-            { n: "TLK.NTT", a: "ntt.jpg", r: "SNIPER" },
-            { n: "TLK.NGOCTIEN", a: "ngoctien.jpg", r: "SUPPORT" },
-            { n: "TLK.VANTUAN", a: "vantuan.jpg", r: "SUPPORT" }
+            { n: "TLK.DONTCRY", r: "RUSHER", id: "8974744042" },
+            { n: "TLK.RAM", r: "BOMBER", id: "6787164998" },
+            { n: "TLK.NTT", r: "SNIPER", id: "6489203171" },
+            { n: "TLK.NGOCTIEN", r: "SUPPORT", id: "2514795764" },
+            { n: "TLK.VANTUAN", r: "SUPPORT", id: "896939861" }
         ]
     },
     "uch": {
@@ -260,10 +260,10 @@ const teamsDatabase = {
         logo: "logo-uch.jpg",
         country: "", 
         players: [
-            { n: "UCH.HKIET", a: "hkiet.jpg", r: "RUSHER"},
-            { n: "UCH.TDUY", a: "tduy.jpg", r: "BOMBER" },
-            { n: "UCH.TKIEN", a: "tkien.jpg", r: "SNIPER"},
-            { n: "UCH.XBAO", a: "xbao.jpg", r: "SUPPORT" },
+            { n: "UCH.HKIET", r: "RUSHER", id: "2706443747"},
+            { n: "UCH.TDUY", r: "BOMBER", id: "9861347097" },
+            { n: "UCH.TKIEN", r: "SNIPER", id: "12835295615"},
+            { n: "UCH.XBAO", r: "SUPPORT", id: "9352178397" },
             { n: "KHÔNG CÓ", a: "https://placehold.co/200x250/111/555?text=TRONG" }
         ]
     },
@@ -273,11 +273,11 @@ const teamsDatabase = {
         logo: "logo-qc.jpg",
         country: "", 
         players: [
-            { n: "QC.KAME", a: "kame.jpg", r: "RUSHER" },
-            { n: "QC.DKHANG", a: "dkhang.jpg", r: "RUSHER" },
-            { n: "QC.NGHIEU", a: "nghieu.jpg", r: "BOMBER" },
-            { n: "QC.CHIBUN", a: "chibun.jpg", r: "SNIPER" },
-            { n: "QC.LAW", a: "law.jpg", r: "SUPPORT" }
+            { n: "QC.KAME",  r: "RUSHER", id: "7169919048" },
+            { n: "QC.DKHANG",  r: "RUSHER", id: "12662645082" },
+            { n: "QC.NGHIEU", r: "BOMBER", id: "1868626947" },
+            { n: "QC.CHIBUN",  r: "SNIPER", id: "6464845328" },
+            { n: "QC.LAW", r: "SUPPORT", id: "13044258821" }
         ]
     },
     "kg": {
@@ -286,10 +286,10 @@ const teamsDatabase = {
         logo: "logo-kg.jpg",
         country: "", 
         players: [
-            { n: "KG.TANPHAT", a: "tanphat.jpg", r: "RUSHER" },
-            { n: "KG.QUAN", a: "quan.jpg", r: "RUSHER" },
-            { n: "KG.THINH", a: "thinh.jpg", r: "SNIPER" },
-            { n: "KG.HIEUDUC", a: "hieuduc.jpg", r: "SUPPORT" },
+            { n: "KG.TANPHAT", r: "RUSHER", id: "589071469"},
+            { n: "KG.QUAN", r: "RUSHER", id: "7083435745" },
+            { n: "KG.THINH", r: "SNIPER", id: "1211245755" },
+            { n: "KG.HIEUDUC", r: "SUPPORT", id: "2073408899" },
             { n: "KHÔNG CÓ", a: "https://placehold.co/200x250/111/555?text=TRONG", r: "TRONG" }
         ]
     },
@@ -299,10 +299,10 @@ const teamsDatabase = {
         logo: "logo-nna.jpg",
         country: "", 
         players: [
-            { n: "NNA.TCUONG", a: "tcuong.jpg", r: "RUSHER" },
-            { n: "NNA.THDAT", a: "thdat.jpg", r: "RUSHER" },
-            { n: "NNA.DHAI", a: "dhai.jpg", r: "BOMBER" },
-            { n: "NNA.QMANH", a: "qmanh.jpg", r: "SUPPORT" },
+            { n: "NNA.TCUONG", r: "RUSHER", id: "1246697946" },
+            { n: "NNA.THDAT", r: "RUSHER", id: "3421297792" },
+            { n: "NNA.DHAI", r: "BOMBER", id: "4184049752" },
+            { n: "NNA.QMANH", r: "SUPPORT", id: "02645505986" },
             { n: "KHÔNG CÓ", a: "https://placehold.co/200x250/111/555?text=TRONG" }
         ]
     },
@@ -312,10 +312,10 @@ const teamsDatabase = {
         logo: "logo-bnn1.jpg",
         country: "", 
         players: [
-            { n: "BNN1.HGIA", a: "hgia.jpg", r: "RUSHER" },
-            { n: "BNN1.TCONG", a: "tcong.jpg", r: "BOMBER" },
-            { n: "BNN1.VTAI", a: "vtai.jpg", r: "SUPPORT" },
-            { n: "BNN1.VLAP", a: "vlap.jpg", r: "SNIPER" },
+            { n: "BNN1.HGIA", r: "RUSHER", id: "1716356557" },
+            { n: "BNN1.TCONG", r: "BOMBER", id: "9774404730" },
+            { n: "BNN1.VTAI", r: "SUPPORT", id: "9780579184" },
+            { n: "BNN1.VLAP", r: "SNIPER", id: "1236791829" },
             { n: "KHÔNG CÓ", a: "https://placehold.co/200x250/111/555?text=TRONG" }
         ]
     },
@@ -325,10 +325,10 @@ const teamsDatabase = {
         logo: "logo-nnn.jpg",
         country: "", 
         players: [
-            { n: "NNN.DINH", a: "dinh.jpg", r: "RUSHER" },
-            { n: "NNN.VANTAI", a: "vantai.jpg", r: "RUSHER" },
-            { n: "NNN.BMINH", a: "bminh.jpg", r: "SNIPER" },
-            { n: "NNN.NHATTIEN", a: "nhattien.jpg", r: "SUPPORT" },
+            { n: "NNN.DINH", r: "RUSHER", id: "3011718064" },
+            { n: "NNN.VANTAI", r: "RUSHER", id: "8102907685" },
+            { n: "NNN.BMINH", r: "SNIPER", id: "6576055069" },
+            { n: "NNN.NHATTIEN", r: "SUPPORT", id: "5389941711" },
             { n: "KHÔNG CÓ", a: "https://placehold.co/200x250/111/555?text=TRONG" }
         ]
     },
@@ -338,11 +338,11 @@ const teamsDatabase = {
         logo: "logo-t2al.jpg",
         country: "", 
         players: [
-            { n: "T2AL.KTUAN", a: "ktuan.jpg", r: "RUSHER" },
-            { n: "T2AL.LHTUAN", a: "lhtuan.jpg", r: "RUSHER" },
-            { n: "T2AL.XQUYENN", a: "xquyen.jpg", r: "RIFLER" },
-            { n: "T2AL.XUANLOC", a: "xuanloc.jpg", r: "SNIPER" },
-            { n: "T2AL.MINHANN", a: "minhan.jpg", r: "SUPPORT" }
+            { n: "T2AL.KTUAN", r: "RUSHER", id: "982519896" },
+            { n: "T2AL.LHTUAN", r: "RUSHER", id: "1794081493" },
+            { n: "T2AL.XQUYENN", r: "RIFLER", id: "8457251920" },
+            { n: "T2AL.XUANLOC", r: "SNIPER", id: "9050876679" },
+            { n: "T2AL.MINHANN",r: "SUPPORT", id: "3395103979" }
         ]
     },
     "tq": {
@@ -351,10 +351,10 @@ const teamsDatabase = {
         logo: "logo-tq.jpg",
         country: "", 
         players: [
-            { n: "TQ.VKHANG", a: "vkhang.jpg", r: "RUSHER" },
-            { n: "TQ.SYHA", a: "syha.jpg", r: "RIFLER" },
-            { n: "TQ.FAKE", a: "fake.jpg", r: "SNIPER" },
-            { n: "TQ.MOICHOI", a: "moichoi.jpg", r: "SUPPORT" },
+            { n: "TQ.VKHANG", r: "RUSHER", id: "238934807" },
+            { n: "TQ.SYHA", r: "RIFLER", id: "10039390084" },
+            { n: "TQ.FAKE", r: "SNIPER", id: "8616363159" },
+            { n: "TQ.MOICHOI", r: "SUPPORT", id: "1890915738" },
             { n: "KHÔNG CÓ", a: "https://placehold.co/200x250/111/555?text=TRONG"}
         ]
     },
@@ -364,11 +364,11 @@ const teamsDatabase = {
         logo: "logo-tgl.jpg",
         country: "", 
         players: [
-            { n: "TGL.DEKAY", a: "dekay.jpg", r: "RUSHER" },
-            { n: "TGL.HDPE", a: "hdpe.jpg", r: "RUSHER" },
-            { n: "TGL.MUP", a: "mup.jpg", r: "BOMBER" },
-            { n: "TGL.CUBA", a: "cuba.jpg", r: "SNIPER" },
-            { n: "TGL.NPHUNG", a: "nphung.jpg", r: "SUPPORT" }
+            { n: "TGL.DEKAY", r: "RUSHER", id: "5529315258" },
+            { n: "TGL.HDPE", r: "RUSHER", id: "248286997" },
+            { n: "TGL.MUP", r: "BOMBER", id: "2984185398" },
+            { n: "TGL.CUBA", r: "SNIPER", id: "4146302957" },
+            { n: "TGL.NPHUNG", r: "SUPPORT", id: "363533799" }
         ]
     },
     "nvd": {
@@ -377,11 +377,11 @@ const teamsDatabase = {
         logo: "logo-nvd.jpg",
         country: "", 
         players: [
-            { n: "NVD.QUOCHUY", a: "quochuy.jpg", r: "RUSHER" },
-            { n: "NVD.PHAMCUONG", a: "phamcuong.jpg", r: "RUSHER" },
-            { n: "NVD.MINHTRI", a: "minhtri.jpg", r: "SPINER" },
-            { n: "NVD.TRANLONG", a: "tranlong.jpg", r: "SUPPORT" },
-            { n: "NVD.QUOCMINH", a: "quocminh.jpg", r: "SUPPORT" }
+            { n: "NVD.QUOCHUY", r: "RUSHER", id: "1895472861" },
+            { n: "NVD.PHAMCUONG", r: "RUSHER", id: "10808635533" },
+            { n: "NVD.MINHTRI", r: "SPINER", id: "392420699" },
+            { n: "NVD.TRANLONG", r: "SUPPORT", id: "1728096984" },
+            { n: "NVD.QUOCMINH", r: "SUPPORT", id: "1921473584" }
         ]
     },
     "hp": {
@@ -390,11 +390,11 @@ const teamsDatabase = {
         logo: "logo-hp.jpg",
         country: "", 
         players: [
-            { n: "HP.PHUY", a: "phuy.jpg", r: "RUSHER" },
-            { n: "HP.MLONG", a: "mlong.jpg", r: "RUSHER" },
-            { n: "HP.HBAO", a: "hbao.jpg", r: "BOMBER" },
-            { n: "HP.HKIET", a: "h-kiet.jpg", r: "SNIPER" },
-            { n: "HP.ATUAN", a: "atuan.jpg", r: "SUPPORT" }
+            { n: "HP.PHUY", r: "RUSHER", id: "343473824" },
+            { n: "HP.MLONG", r: "RUSHER", id: "30966128" },
+            { n: "HP.HBAO", r: "BOMBER", id: "3117070335" },
+            { n: "HP.HKIET", r: "SNIPER", id: "7533504927" },
+            { n: "HP.ATUAN", r: "SUPPORT", id: "1824807835" }
         ]
     },
     "gods": {
@@ -403,11 +403,11 @@ const teamsDatabase = {
         logo: "logo-gods.jpg",
         country: "", 
         players: [
-            { n: "GODS.BHUY", a: "bhuy.jpg", r: "RUSHER" },
-            { n: "GODS.CHUY", a: "chuy.jpg", r: "RUSHER" },
-            { n: "GODS.KDUY", a: "kduy.jpg", r: "SPINER" },
-            { n: "GODS.TVAN", a: "tvan.jpg", r: "SUPPORT" },
-            { n: "GODS.GKIET", a: "gkiet.jpg", r: "SUPPORT" }
+            { n: "GODS.BHUY", r: "RUSHER", id: "7286133977" },
+            { n: "GODS.CHUY",r: "RUSHER", id: "5358748224" },
+            { n: "GODS.KDUY", r: "SPINER", id: "9898703421" },
+            { n: "GODS.TVAN", r: "SUPPORT", id: "4998752967" },
+            { n: "GODS.GKIET", r: "SUPPORT", id: "6523254985" }
         ]
     },
     "whd": {
@@ -416,11 +416,11 @@ const teamsDatabase = {
         logo: "logo-whd.png",
         country: "", 
         players: [
-            { n: "WHD.TUANANH", a: "tuananh.jpg", r: "RUSHER" },
-            { n: "WHD.NGOCHAI", a: "ngochai.jpg", r: "BOMBER" },
-            { n: "WHD.THANHSON", a: "thanhson.jpg", r: "SNIPER" },
-            { n: "WHD.NGOCCAC", a: "ngoccac.jpg", r: "SNIPER" },
-            { n: "WHD.HUUPHUOC", a: "huuphuoc.jpg", r: "SUPPORT" }
+            { n: "WHD.TUANANH", r: "RUSHER", id: "2015939299" },
+            { n: "WHD.NGOCHAI", r: "BOMBER", id: "638649717" },
+            { n: "WHD.THANHSON", r: "SNIPER", id: "4109105748" },
+            { n: "WHD.NGOCCAC",r: "SNIPER", id: "2656003625" },
+            { n: "WHD.HUUPHUOC", r: "SUPPORT", id: "6548727578" }
         ]
     },
     "arc": {
@@ -429,10 +429,10 @@ const teamsDatabase = {
         logo: "logo-arc.jpg",
         country: "", 
         players: [
-            { n: "ARC.HUY", a: "huy.jpg", r: "RUSHER" },
-            { n: "ARC.MINHBOY", a: "minhboy.jpg", r: "BOMBER" },
-            { n: "ARC.DUNG", a: "dung.jpg", r: "SNIPER" },
-            { n: "ARC.DONG", a: "dong.jpg", r: "SUPPORT" },
+            { n: "ARC.HUY", r: "RUSHER", id: "3956442086" },
+            { n: "ARC.MINHBOY", r: "BOMBER", id: "453404499" },
+            { n: "ARC.DUNG", r: "SNIPER", id: "2812885077" },
+            { n: "ARC.DONG", r: "SUPPORT", id: "3111464911" },
             { n: "KHÔNG CÓ", a: "https://placehold.co/200x250/111/555?text=TRONG", r: "TRONG" }
         ]
     },
@@ -442,11 +442,11 @@ const teamsDatabase = {
         logo: "logo-bne.jpg",
         country: "", 
         players: [
-            { n: "BNE.TUANAN", a: "tuanan.jpg", r: "RUSHER" },
-            { n: "BNE.DPHONG", a: "dphong.jpg", r: "BOMBER" },
-            { n: "BNE.VINHKAKA", a: "vinhkaka.jpg", r: "BOMBER" },
-            { n: "BNE.TNHAN", a: "tnhan.jpg", r: "SNIPER" },
-            { n: "BNE.DBAO", a: "dbao.jpg", r: "SUPPORT" }
+            { n: "BNE.TUANAN", r: "RUSHER", id: "8368590729" },
+            { n: "BNE.DPHONG", r: "BOMBER", id: "7930899723" },
+            { n: "BNE.VINHKAKA", r: "BOMBER", id: "1231702254" },
+            { n: "BNE.TNHAN", r: "SNIPER", id: "7506277174" },
+            { n: "BNE.DBAO",  r: "SUPPORT", id: "9818033572" }
         ]
     },
     "cnct": {
@@ -455,11 +455,11 @@ const teamsDatabase = {
         logo: "logo-cnct.jpg",
         country: "", 
         players: [
-            { n: "CNCT.QN", a: "qn.jpg", r: "RUSHER" },
-            { n: "CNCT.CN", a: "cn.jpg", r: "RUSHER" },
-            { n: "CNCT.KH", a: "kh.jpg", r: "RUSHER" },
-            { n: "CNCT.SOI", a: "soi.jpg", r: "SNIPER" },
-            { n: "CNCT.QUYEN", a: "quyen.jpg", r: "SUPPORT" }
+            { n: "CNCT.QN", r: "RUSHER", id: "109393806" },
+            { n: "CNCT.CN", r: "RUSHER", id: "1503184563" },
+            { n: "CNCT.KH",r: "RUSHER", id: "2519487267" },
+            { n: "CNCT.SOI", r: "SNIPER", id: "12848040110" },
+            { n: "CNCT.QUYEN", r: "SUPPORT", id: "12953668584" }
         ]
     },
     "btn": {
