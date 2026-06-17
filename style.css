@@ -1470,3 +1470,41 @@ header, .header, .navbar, .top-bar, .top-header, #header {
     transform: scale(1.08);
     box-shadow: 0 0 20px rgba(255, 204, 0, 0.8) !important;
 }
+/* ================= TỐI ƯU GIAO DIỆN CHO ĐIỆN THOẠI & TABLET (RESPONSIVE) ================= */
+
+/* 1. Màn hình cỡ vừa (Tablet / Thu nhỏ trình duyệt) */
+@media screen and (max-width: 992px) {
+    .nav-links {
+        gap: 15px !important; /* Ép khoảng cách các chữ gần lại */
+    }
+    .nav-links li a {
+        font-size: 12px; /* Thu nhỏ chữ menu */
+    }
+    .login-btn {
+        padding: 8px 15px !important;
+        font-size: 12px;
+    }
+}
+
+/* 2. Màn hình siêu nhỏ (Điện thoại thông minh) */
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-wrap: wrap !important; /* Cho phép các thành phần rớt xuống hàng mới */
+        padding: 10px 15px !important; /* Bóp lề nhỏ lại */
+    }
+    
+    .nav-links {
+        order: 3; /* Đẩy nguyên dải menu xuống hàng thứ 2 */
+        width: 100% !important; /* Chiếm trọn 100% chiều ngang hàng 2 */
+        justify-content: flex-start !important;
+        overflow-x: auto !important; /* Cho phép vuốt ngang (scroll) */
+        padding-top: 15px !important;
+        padding-bottom: 5px !important;
+        gap: 20px !important;
+    }
+
+    /* Ẩn cái thanh cuộn ngang xấu xí của trình duyệt điện thoại để nhìn sang hơn */
+    .nav-links::-webkit-scrollbar {
+        display: none;
+    }
+}
