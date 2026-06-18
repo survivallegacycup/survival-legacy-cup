@@ -1631,16 +1631,19 @@ header, .header, .navbar, .top-bar, .top-header, #header {
 
 /* 3. CHỮ TIÊU ĐỀ VÀNG GOLD & CĂN GIỮA CHUẨN CHỈNH */
 .table-header-row {
-    /* Nền highlight đổi sang Vàng mờ cho tông xuyệt tông */
     background: linear-gradient(90deg, rgba(255, 204, 0, 0.15), transparent) !important;
     border-left: 4px solid #ffcc00 !important;
+    width: 100% !important; /* BÙA 1: Ép rộng 100% */
+    display: block !important;
+    margin-top: 5px; /* Thêm chút khoảng trống cho khỏi dính chữ */
 }
 
 .match-title-box {
-    text-align: center !important; /* Ép toàn bộ chữ ra chính giữa bảng */
-    padding: 15px 0 !important;
+    text-align: center !important; 
+    padding: 12px 0 !important;
+    width: 100% !important; /* BÙA 2: Ép khối chữ dãn 100% để ra giữa */
+    display: block !important;
 }
-
 .match-date {
     color: #fff !important; /* Ngày màu trắng sáng để làm nền */
     font-size: 14px;
