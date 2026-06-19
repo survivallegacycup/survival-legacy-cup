@@ -39,16 +39,34 @@
         /* ===== NAVBAR ===== */
         nav {
             display: flex; justify-content: space-between; align-items: center;
-            padding: 15px 40px; background: rgba(0,0,0,0.8); backdrop-filter: blur(10px);
-            border-bottom: 1px solid rgba(255,0,0,0.3); position: sticky; top: 0; z-index: 100;
+            padding: 10px 40px; background: rgba(10, 0, 0, 0.9); backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(255, 0, 0, 0.3); position: sticky; top: 0; z-index: 1000;
         }
-        .nav-logo { font-weight: 900; font-size: 24px; letter-spacing: 2px; color: white; text-shadow: 0 0 10px red; }
-        .nav-logo span { color: var(--orange); }
-        .nav-links { display: flex; gap: 30px; list-style: none; }
-        .nav-links a { color: #ccc; text-decoration: none; font-weight: 600; font-size: 14px; text-transform: uppercase; transition: 0.3s; }
-        .nav-links a:hover, .nav-links a.active { color: var(--gold); text-shadow: 0 0 10px var(--gold); }
-        .btn-login { background: linear-gradient(45deg, var(--red), var(--orange)); border: none; padding: 8px 20px; color: white; font-weight: 800; border-radius: 5px; cursor: pointer; box-shadow: 0 0 15px rgba(255,0,0,0.5); transition: 0.3s; }
-        .btn-login:hover { transform: scale(1.05); box-shadow: 0 0 25px var(--gold); }
+        
+        /* Hiệu ứng Logo Xịn xò y chang các trang khác */
+        .nav-logo-container { display: flex; align-items: center; gap: 12px; }
+        .nav-logo-container img { width: 45px; height: 45px; border-radius: 8px; box-shadow: 0 0 10px rgba(0, 198, 255, 0.4); transition: 0.3s; }
+        .nav-logo-container:hover img { transform: scale(1.1) rotate(-5deg); box-shadow: 0 0 20px rgba(0, 198, 255, 0.9); }
+        .nav-logo-text { 
+            font-family: 'Orbitron', sans-serif; font-size: 26px; font-weight: 900; letter-spacing: 2px; 
+            background: linear-gradient(270deg, #ff0000, #ffcc00, #ff0000); background-size: 400% 400%; 
+            -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; 
+            animation: gradientMove 5s ease infinite; filter: drop-shadow(0 0 8px rgba(255, 0, 0, 0.6)); transition: 0.3s; 
+        }
+        @keyframes gradientMove { 0% { background-position: 0% 50%; } 50% { background-position: 100% 50%; } 100% { background-position: 0% 50%; } }
+        
+        /* Link Menu */
+        .nav-links { display: flex; gap: 25px; list-style: none; margin: 0; padding: 0; }
+        .nav-links a { color: #fff; text-decoration: none; font-weight: bold; font-size: 13px; text-transform: uppercase; transition: 0.3s; letter-spacing: 1px; }
+        .nav-links a:hover, .nav-links a.active { color: #ffcc00; text-shadow: 0 0 10px rgba(255, 204, 0, 0.8); }
+        
+        /* Nút Đăng Nhập */
+        .btn-login { 
+            background: linear-gradient(45deg, #ff0000, #ffcc00); border: none; padding: 10px 24px; 
+            color: white; font-weight: bold; font-size: 13px; letter-spacing: 1px; border-radius: 8px; 
+            cursor: pointer; box-shadow: 0 0 10px rgba(255,0,0,0.5); transition: 0.3s; 
+        }
+        .btn-login:hover { transform: scale(1.08); box-shadow: 0 0 20px rgba(255, 204, 0, 0.8); }
 
         /* ===== CONTAINER ===== */
         .container { max-width: 1300px; margin: 0 auto; padding: 40px 20px; }
@@ -151,12 +169,17 @@
     <div class="bg-glow"></div>
 
     <nav>
-        <div class="nav-logo">UZI　<span>LEGENDS</span></div>
+        <a href="trangchu.html" class="nav-logo-container" style="text-decoration: none;">
+            <img src="logo-uzi.jpg" alt="UZI Logo">
+            <div class="nav-logo-text">UZI LEGENDS</div>
+        </a>
         <ul class="nav-links">
             <li><a href="trangchu.html" class="active">TRANG CHỦ</a></li>
             <li><a href="index.html">LỊCH THI ĐẤU</a></li>
             <li><a href="doituyen.html">ĐỘI TUYỂN</a></li>
-            <li><a href="#">BẢNG XẾP HẠNG</a></li>
+            <li><a href="bangxephang.html">BẢNG XẾP HẠNG</a></li>
+            <li><a href="thongtin.html">THÔNG TIN</a></li>
+            <li><a href="video.html">FULL VIDEO GIẢI ĐẤU</a></li>
         </ul>
         <button class="btn-login">ĐĂNG NHẬP</button>
     </nav>
