@@ -52,15 +52,6 @@
         .col-status { animation: pulseBadge 2.5s infinite; }
         @keyframes pulseBadge { 0%, 100% { opacity: 1; text-shadow: 0 0 10px red; } 50% { opacity: 0.6; text-shadow: none; } }
     </style>
-    ```
-
----
-
-### Bước 2: Nạp "Linh hồn" Javascript chạy hiệu ứng xuống cuối trang
-Bạn cuộn thẳng xuống **TÍT DƯỚI CÙNG** của file `index.html`. Tìm đến thẻ đóng `</body>`. 
-**Dán NGAY TRÊN** thẻ `</body>` đoạn Script vận hành này:
-
-```html
     <script>
         // 1. CHẠY HIỆU ỨNG TÀN LỬA BAY (FIRE PARTICLES)
         const canvas = document.getElementById('fireCanvas');
