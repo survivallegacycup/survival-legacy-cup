@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UZI　LEGENDS - HUD QUÂN ĐOÀN</title>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600;800;900&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --red: #ff0000;
+            --orange: #ff7a00;
+            --gold: #ffcc00;
+            --dark: #0a0a0f;
+            --glass: rgba(20, 5, 5, 0.6);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Be Vietnam Pro', sans-serif; }
+        
+        body {
+            background-color: var(--dark);
+            color: white;
+            overflow-x: hidden;
+        }
+
+        /* ===== BACKGROUND EFFECTS ===== */
+        #particles { position: fixed; top: 0; left: 0; z-index: -2; width: 100%; height: 100%; }
+        .scanline {
+            position: fixed; width: 100%; height: 100%; z-index: -1; pointer-events: none;
+            background: linear-gradient(rgba(255,0,0,0.03) 50%, transparent 50%);
+            background-size: 100% 4px;
+        }
+        .bg-glow {
+            position: fixed; top: -20%; left: 50%; transform: translateX(-50%);
+            width: 800px; height: 500px; background: radial-gradient(circle, rgba(255,0,0,0.15), transparent 70%);
+            z-index: -2; pointer-events: none; filter: blur(50px);
+        }
+
+        /* ===== NAVBAR ===== */
+        nav {
+            display: flex; justify-content: space-between; align-items: center;
+            padding: 15px 40px; background: rgba(0,0,0,0.8); backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(255,0,0,0.3); position: sticky; top: 0; z-index: 100;
+        }
+        .nav-logo { font-weight: 900; font-size: 24px; letter-spacing: 2px; color: white; text-shadow: 0 0 10px red; }
+        .nav-logo span { color: var(--orange); }
+        .nav-links { display: flex; gap: 30px; list-style: none; }
+        .nav-links a { color: #ccc; text-decoration: none; font-weight: 600; font-size: 14px; text-transform: uppercase; transition: 0.3s; }
+        .nav-links a:hover, .nav-links a.active { color: var(--gold); text-shadow: 0 0 10px var(--gold); }
+        .btn-login { background: linear-gradient(45deg, var(--red), var(--orange)); border: none; padding: 8px 20px; color: white; font-weight: 800; border-radius: 5px; cursor: pointer; box-shadow: 0 0 15px rgba(255,0,0,0.5); transition: 0.3s; }
+        .btn-login:hover { transform: scale(1.05); box-shadow: 0 0 25px var(--gold); }
+
+        /* ===== CONTAINER ===== */
+        .container { max-width: 1300px; margin: 0 auto; padding: 40px 20px; }
+
+        /* ===== TITLE GLITCH ===== */
+        .hero-title {
+            text-align: center; font-size: 60px; font-weight: 900; letter-spacing: 4px;
+            background: linear-gradient(90deg, #fff, #ffcc00); -webkit-background-clip: text; color: transparent;
+            background-clip: text;
+            margin-bottom: 40px; position: relative; animation: glitch 3s infinite; text-transform: uppercase;
+        }
+        @keyframes glitch {
+            0% { text-shadow: 2px 0 var(--red), -2px 0 var(--orange); }
+            5% { text-shadow: -2px 0 var(--red), 2px 0 var(--orange); }
+            10% { text-shadow: 2px 0 var(--red), -2px 0 var(--orange); }
+            15% { text-shadow: none; }
+            100% { text-shadow: none; }
+        }
+
+        /* ===== HUD STATS BOXES (3D TILT) ===== */
+        .hud-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; margin-bottom: 40px; }
+        .hud-box {
+            background: var(--glass); border: 1px solid rgba(255, 122, 0, 0.3); border-radius: 8px;
+            padding: 25px 20px; text-align: center; backdrop-filter: blur(10px);
+            box-shadow: inset 0 0 20px rgba(255,0,0,0.1), 0 5px 15px rgba(0,0,0,0.5);
+            transition: transform 0.1s; transform-style: preserve-3d; cursor: pointer;
+        }
+        .hud-box:hover { border-color: var(--gold); box-shadow: 0 0 30px rgba(255, 122, 0, 0.4); }
+        .hud-num { font-size: 32px; font-weight: 900; color: white; text-shadow: 0 0 10px var(--red); transform: translateZ(20px); }
+        .hud-num span.max { font-size: 14px; color: var(--gold); text-shadow: 0 0 10px var(--gold); vertical-align: top; }
+        .hud-label { font-size: 12px; color: #aaa; font-weight: 600; letter-spacing: 1px; margin-top: 5px; transform: translateZ(10px); }
+
+        /* ===== LAYOUT CHÍNH: TRÁI (NỘI DUNG) - PHẢI (SIDEBAR) ===== */
+        .main-layout { display: grid; grid-template-columns: 2.5fr 1fr; gap: 30px; }
+
+        /* Khung chung cho các phần */
+        .section-box {
+            background: var(--glass); border: 1px solid rgba(255,255,255,0.1); border-radius: 8px;
+            padding: 25px; margin-bottom: 30px; backdrop-filter: blur(5px);
+        }
+        .section-title { font-size: 20px; font-weight: 800; color: var(--gold); border-bottom: 2px solid var(--red); padding-bottom: 10px; margin-bottom: 20px; letter-spacing: 1px; text-transform: uppercase; }
+
+        /* ===== THÀNH VIÊN NỔI BẬT ===== */
+        .vip-grid { display: grid; grid-template-columns: 1.5fr 1fr 1fr 1fr 1fr; gap: 15px; }
+        .vip-card { background: rgba(0,0,0,0.5); border: 1px solid #333; border-radius: 5px; text-align: center; padding: 20px 10px; transition: 0.3s; }
+        .vip-card.leader { border: 1px solid var(--red); box-shadow: 0 0 15px rgba(255,0,0,0.3); background: linear-gradient(180deg, rgba(255,0,0,0.1), transparent); }
+        .vip-card.leader:hover { box-shadow: 0 0 30px var(--red); transform: translateY(-5px); }
+        .vip-card.empty { border: 1px dashed #555; color: #555; display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 600; }
+        .vip-avatar { width: 50px; height: 50px; background: #222; border-radius: 50%; margin: 0 auto 10px; display: flex; align-items: center; justify-content: center; font-weight: 900; border: 2px solid var(--gold); }
+        .vip-name { font-size: 14px; font-weight: 800; color: white; }
+        .vip-role { font-size: 11px; color: var(--orange); font-weight: 600; margin-top: 3px; }
+
+        /* ===== TIN TỨC QUÂN ĐOÀN ===== */
+        .news-item { border-left: 3px solid var(--red); background: linear-gradient(90deg, rgba(255,0,0,0.1), transparent); padding: 15px; margin-bottom: 15px; border-radius: 0 5px 5px 0; transition: 0.3s; }
+        .news-item:hover { transform: translateX(10px); border-left-color: var(--gold); background: linear-gradient(90deg, rgba(255,204,0,0.1), transparent); }
+        .n-date { font-size: 12px; color: var(--gold); font-weight: 800; margin-bottom: 5px; }
+        .n-title { font-size: 16px; font-weight: 800; color: white; margin-bottom: 5px; }
+        .n-desc { font-size: 13px; color: #bbb; line-height: 1.5; }
+
+        /* ===== 55 SLOT THÀNH VIÊN (KẾT NỐI SHEETS) ===== */
+        .roster-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(130px, 1fr)); gap: 10px; max-height: 400px; overflow-y: auto; padding-right: 10px; }
+        /* Tùy chỉnh thanh cuộn */
+        .roster-grid::-webkit-scrollbar { width: 6px; }
+        .roster-grid::-webkit-scrollbar-thumb { background: var(--red); border-radius: 10px; }
+        
+        .slot-card { background: rgba(0,0,0,0.6); border: 1px solid #333; padding: 12px 10px; border-radius: 4px; text-align: center; transition: 0.2s; }
+        .slot-card.filled { border-color: rgba(255,204,0,0.4); }
+        .slot-card.filled:hover { background: rgba(255,204,0,0.1); border-color: var(--gold); transform: scale(1.05); }
+        .slot-card.empty { border: 1px dashed #444; opacity: 0.5; }
+        .slot-idx { font-size: 10px; color: #777; margin-bottom: 3px; }
+        .slot-name { font-size: 13px; font-weight: 700; color: white; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+        .slot-card.empty .slot-name { color: #666; }
+
+        /* ===== SIDEBAR (CỘT PHẢI) ===== */
+        .side-info-row { display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid rgba(255,255,255,0.05); font-size: 13px; }
+        .side-info-row span:first-child { color: #aaa; font-weight: 600; }
+        .side-info-row span:last-child { color: white; font-weight: 800; text-align: right; }
+        .req-list { list-style: none; margin-top: 10px; }
+        .req-list li { font-size: 12px; color: var(--gold); background: rgba(255,204,0,0.1); padding: 5px 8px; margin-bottom: 5px; border-radius: 3px; border-left: 2px solid var(--gold); }
+        
+        /* Tiến độ cấp độ */
+        .progress-bar { width: 100%; height: 8px; background: #222; border-radius: 10px; margin-top: 10px; overflow: hidden; position: relative; }
+        .progress-fill { width: 100%; height: 100%; background: linear-gradient(90deg, var(--red), var(--gold)); box-shadow: 0 0 10px var(--gold); }
+        
+        /* Box Tuyển quân */
+        .join-box { background: linear-gradient(135deg, rgba(255,0,0,0.2), rgba(255,122,0,0.1)); border-color: var(--orange); text-align: center; }
+        .join-desc { font-size: 13px; color: #ccc; margin-bottom: 15px; line-height: 1.5; }
+        .btn-join { width: 100%; padding: 12px; background: linear-gradient(90deg, var(--red), var(--orange)); border: none; color: white; font-weight: 800; font-size: 14px; border-radius: 5px; cursor: pointer; text-transform: uppercase; animation: pulseBtn 2s infinite; }
+        @keyframes pulseBtn {
+            0% { box-shadow: 0 0 10px rgba(255,0,0,0.5); }
+            50% { box-shadow: 0 0 25px rgba(255,204,0,0.8); }
+            100% { box-shadow: 0 0 10px rgba(255,0,0,0.5); }
+        }
+    </style>
+</head>
+<body>
+
+    <canvas id="particles"></canvas>
+    <div class="scanline"></div>
+    <div class="bg-glow"></div>
+
+    <nav>
+        <div class="nav-logo">UZI <span>LEGENDS</span></div>
+        <ul class="nav-links">
+            <li><a href="trangchu.html" class="active">TRANG CHỦ</a></li>
+            <li><a href="index.html">LỊCH THI ĐẤU</a></li>
+            <li><a href="doituyen.html">ĐỘI TUYỂN</a></li>
+            <li><a href="#">BẢNG XẾP HẠNG</a></li>
+        </ul>
+        <button class="btn-login">ĐĂNG NHẬP</button>
+    </nav>
+
+    <div class="container">
+        <h1 class="hero-title">UZI LEGENDS</h1>
+
+        <div class="hud-grid">
+            <div class="hud-box tilt-card">
+                <div class="hud-num">38<span style="font-size: 20px; color: #aaa;">/55</span></div>
+                <div class="hud-label">THÀNH VIÊN</div>
+            </div>
+            <div class="hud-box tilt-card">
+                <div class="hud-num">LV7 <span class="max">MAX</span></div>
+                <div class="hud-label">CẤP ĐỘ QUÂN ĐOÀN</div>
+            </div>
+            <div class="hud-box tilt-card">
+                <div class="hud-num">610,000</div>
+                <div class="hud-label">GUILD EXP</div>
+            </div>
+            <div class="hud-box tilt-card">
+                <div class="hud-num">#21</div>
+                <div class="hud-label">XẾP HẠNG VĨNH LONG</div>
+            </div>
+        </div>
+
+        <div class="main-layout">
+            <div class="left-col">
+                
+                <div class="section-box">
+                    <h2 class="section-title">THÀNH VIÊN NỔI BẬT</h2>
+                    <div class="vip-grid">
+                        <div class="vip-card leader">
+                            <div class="vip-avatar">👑</div>
+                            <div class="vip-name">UZI. LEADER</div>
+                            <div class="vip-role">CHỦ QUÂN ĐOÀN</div>
+                        </div>
+                        <div class="vip-card empty">SLOT TRỐNG</div>
+                        <div class="vip-card empty">SLOT TRỐNG</div>
+                        <div class="vip-card empty">SLOT TRỐNG</div>
+                        <div class="vip-card empty">SLOT TRỐNG</div>
+                    </div>
+                </div>
+
+                <div class="section-box">
+                    <h2 class="section-title">TIN TỨC QUÂN ĐOÀN</h2>
+                    
+                    <div class="news-item">
+                        <div class="n-date">15/06/2026</div>
+                        <div class="n-title">Quân đoàn vào Top 21 bảng xếp hạng Vĩnh Long!</div>
+                        <div class="n-desc">Sau Tuần Thứ 10, UZI LEGENDS leo lên vị trí #21 ở Tỉnh Vĩnh Long. Cảm ơn tất cả thành viên đã cống hiến!</div>
+                    </div>
+
+                    <div class="news-item">
+                        <div class="n-date">19/06/2026</div>
+                        <div class="n-title">Mở đợt tuyển thành viên mới — còn 17 slot</div>
+                        <div class="n-desc">Quân đoàn đang tìm kiếm những người chơi chăm cày, có kinh nghiệm chơi rank sinh tồn hoặc tử chiến và tâm huyết cùng UZI LEGENDS. Liên hệ Tari Le nhé!</div>
+                    </div>
+
+                    <div class="news-item">
+                        <div class="n-date">19/06/2026</div>
+                        <div class="n-title">Guild EXP đạt mốc 610,000 — lên cấp 7 MAX</div>
+                        <div class="n-desc">Toàn quân đoàn hoàn thành nhiệm vụ tuần để đẩy EXP vượt mốc 500,000 chính thức lên LV7 MAX. Quá tuyệt vời!</div>
+                    </div>
+                </div>
+
+                <div class="section-box">
+                    <h2 class="section-title">DANH SÁCH THÀNH VIÊN (55 SLOT)</h2>
+                    <div class="roster-grid" id="roster-container">
+                        </div>
+                </div>
+
+            </div>
+
+            <div class="right-col">
+                
+                <div class="section-box">
+                    <h2 class="section-title">THÔNG TIN</h2>
+                    <div class="side-info-row"><span>Tên</span><span>UZI LEGENDS</span></div>
+                    <div class="side-info-row"><span>Khu vực</span><span>Việt Nam</span></div>
+                    <div class="side-info-row"><span>Ngôn ngữ</span><span>Tiếng Việt</span></div>
+                    <div class="side-info-row" style="border:none;"><span>Trạng thái</span><span style="color:var(--orange)">Đang tuyển</span></div>
+                    
+                    <div style="margin-top: 15px;">
+                        <span style="color: #aaa; font-weight: 600; font-size: 13px;">Yêu cầu gia nhập:</span>
+                        <ul class="req-list">
+                            <li>ĐỔI TÊN THEO QUÂN ĐOÀN</li>
+                            <li>CÀY 2500 ĐIỂM DANH DỰ/TUẦN</li>
+                            <li>CÀY 30 ĐIỂM QUÂN ĐOÀN CHIẾN/TUẦN</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="section-box">
+                    <h2 class="section-title">TIẾN ĐỘ CẤP ĐỘ</h2>
+                    <div style="display: flex; justify-content: space-between; font-size: 14px; font-weight: 800;">
+                        <span>CẤP 7 MAX</span>
+                        <span style="color: var(--gold);">100%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill"></div>
+                    </div>
+                    <div style="margin-top: 10px; font-size: 12px; color: #aaa; text-align: right;">LV7 → LV7 MAX</div>
+                </div>
+
+                <div class="section-box join-box">
+                    <h2 class="section-title" style="border:none; margin-bottom: 10px;">GIA NHẬP NGAY</h2>
+                    <div class="join-desc">Chúng tôi đang tìm những người có thực lực - tâm huyết - nỗ lực. Còn <strong>17 slot!</strong></div>
+                    <button class="btn-join">LIÊN HỆ CHỦ QUÂN ĐOÀN UZI</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script>
+        /* ================= 1. HIỆU ỨNG HẠT BỤI BAY (PARTICLES) ================= */
+        const canvas = document.getElementById("particles");
+        const ctx = canvas.getContext("2d");
+        canvas.width = window.innerWidth; canvas.height = window.innerHeight;
+        let particlesArray = [];
+        for (let i = 0; i < 80; i++) {
+            particlesArray.push({
+                x: Math.random() * canvas.width,
+                y: Math.random() * canvas.height,
+                size: Math.random() * 2,
+                speedY: Math.random() * 1 + 0.5,
+                opacity: Math.random()
+            });
+        }
+        function animateParticles() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            particlesArray.forEach(p => {
+                p.y -= p.speedY; // Bay lên trên
+                if (p.y < 0) p.y = canvas.height;
+                ctx.fillStyle = `rgba(255, 60, 0, ${p.opacity})`;
+                ctx.beginPath(); ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2); ctx.fill();
+            });
+            requestAnimationFrame(animateParticles);
+        }
+        animateParticles();
+
+        /* ================= 2. HIỆU ỨNG TILT 3D CHO 4 HỘP HUD ================= */
+        const tiltCards = document.querySelectorAll('.tilt-card');
+        tiltCards.forEach(card => {
+            card.addEventListener('mousemove', e => {
+                let rect = card.getBoundingClientRect();
+                let x = e.clientX - rect.left; let y = e.clientY - rect.top;
+                let rotateX = ((y / rect.height) - 0.5) * -20; // Xoay tối đa 20 độ
+                let rotateY = ((x / rect.width) - 0.5) * 20;
+                card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale3d(1.05, 1.05, 1.05)`;
+            });
+            card.addEventListener('mouseleave', () => {
+                card.style.transform = `perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1)`;
+            });
+        });
+
+        /* ================= 3. RENDER 55 SLOT THÀNH VIÊN ================= */
+        const rosterContainer = document.getElementById('roster-container');
+        
+        // Tạo sẵn mảng danh sách ảo (38 người có tên)
+        const dummyMembers = [
+            "UZI. LEADER", "UZI. TDUY", "UZI. KEN", "UZI. HANA", "UZI. FOR", "UZI. BIN",
+            "Tari Le", "Shadow", "Killer", "Sniper99", "NoobMaster", "ProPlayer",
+            // Thêm đại cho đủ 38...
+            "Member 13", "Member 14", "Member 15", "Member 16", "Member 17", "Member 18",
+            "Member 19", "Member 20", "Member 21", "Member 22", "Member 23", "Member 24",
+            "Member 25", "Member 26", "Member 27", "Member 28", "Member 29", "Member 30",
+            "Member 31", "Member 32", "Member 33", "Member 34", "Member 35", "Member 36",
+            "Member 37", "Member 38"
+        ];
+
+        // Vòng lặp in ra đủ 55 ô
+        let rosterHTML = "";
+        for (let i = 1; i <= 55; i++) {
+            if (i <= 38) {
+                // Ô đã có người
+                let name = dummyMembers[i-1] || `UZI. PLAYER ${i}`;
+                rosterHTML += `
+                    <div class="slot-card filled">
+                        <div class="slot-idx">SLOT ${i}</div>
+                        <div class="slot-name">${name}</div>
+                    </div>
+                `;
+            } else {
+                // Ô trống (từ 39 đến 55)
+                rosterHTML += `
+                    <div class="slot-card empty">
+                        <div class="slot-idx">SLOT ${i}</div>
+                        <div class="slot-name">TRỐNG</div>
+                    </div>
+                `;
+            }
+        }
+        rosterContainer.innerHTML = rosterHTML;
+
+        /* MẸO CHO NHUNG: Khi nào có link API Google Sheets, 
+           Nhung chỉ cần dùng hàm fetch() để lấy mảng Tên thật đè lên cái dummyMembers là xong! */
+    </script>
+</body>
+</html>
