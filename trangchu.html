@@ -151,7 +151,7 @@
     <div class="bg-glow"></div>
 
     <nav>
-        <div class="nav-logo">UZI <span>LEGENDS</span></div>
+        <div class="nav-logo">UZI　<span>LEGENDS</span></div>
         <ul class="nav-links">
             <li><a href="trangchu.html" class="active">TRANG CHỦ</a></li>
             <li><a href="index.html">LỊCH THI ĐẤU</a></li>
@@ -162,7 +162,7 @@
     </nav>
 
     <div class="container">
-        <h1 class="hero-title">UZI LEGENDS</h1>
+        <h1 class="hero-title">UZI　LEGENDS</h1>
 
         <div class="hud-grid">
             <div class="hud-box tilt-card">
@@ -191,7 +191,7 @@
                     <div class="vip-grid">
                         <div class="vip-card leader">
                             <div class="vip-avatar">👑</div>
-                            <div class="vip-name">UZI. LEADER</div>
+                            <div class="vip-name">UZI　TARI</div>
                             <div class="vip-role">CHỦ QUÂN ĐOÀN</div>
                         </div>
                         <div class="vip-card empty">SLOT TRỐNG</div>
@@ -207,13 +207,13 @@
                     <div class="news-item">
                         <div class="n-date">15/06/2026</div>
                         <div class="n-title">Quân đoàn vào Top 21 bảng xếp hạng Vĩnh Long!</div>
-                        <div class="n-desc">Sau Tuần Thứ 10, UZI LEGENDS leo lên vị trí #21 ở Tỉnh Vĩnh Long. Cảm ơn tất cả thành viên đã cống hiến!</div>
+                        <div class="n-desc">Sau Tuần Thứ 10, UZI　LEGENDS leo lên vị trí #21 ở Tỉnh Vĩnh Long. Cảm ơn tất cả thành viên đã cống hiến!</div>
                     </div>
 
                     <div class="news-item">
                         <div class="n-date">19/06/2026</div>
                         <div class="n-title">Mở đợt tuyển thành viên mới — còn 17 slot</div>
-                        <div class="n-desc">Quân đoàn đang tìm kiếm những người chơi chăm cày, có kinh nghiệm chơi rank sinh tồn hoặc tử chiến và tâm huyết cùng UZI LEGENDS. Liên hệ Tari Le nhé!</div>
+                        <div class="n-desc">Quân đoàn đang tìm kiếm những người chơi chăm cày, có kinh nghiệm chơi rank sinh tồn hoặc tử chiến và tâm huyết cùng UZI　LEGENDS. Liên hệ Tari Le nhé!</div>
                     </div>
 
                     <div class="news-item">
@@ -235,7 +235,7 @@
                 
                 <div class="section-box">
                     <h2 class="section-title">THÔNG TIN</h2>
-                    <div class="side-info-row"><span>Tên</span><span>UZI LEGENDS</span></div>
+                    <div class="side-info-row"><span>Tên</span><span>UZI　LEGENDS</span></div>
                     <div class="side-info-row"><span>Khu vực</span><span>Việt Nam</span></div>
                     <div class="side-info-row"><span>Ngôn ngữ</span><span>Tiếng Việt</span></div>
                     <div class="side-info-row" style="border:none;"><span>Trạng thái</span><span style="color:var(--orange)">Đang tuyển</span></div>
@@ -319,7 +319,7 @@
         
         // Tạo sẵn mảng danh sách ảo (38 người có tên)
         const dummyMembers = [
-            "UZI. LEADER", "UZI. TDUY", "UZI. KEN", "UZI. HANA", "UZI. FOR", "UZI. BIN",
+            "UZI　TARI", "UZI　NAME", "UZI　NAME", "UZI　NAME", "UZI　NAME", "UZI　NAME",
             "Tari Le", "Shadow", "Killer", "Sniper99", "NoobMaster", "ProPlayer",
             // Thêm đại cho đủ 38...
             "Member 13", "Member 14", "Member 15", "Member 16", "Member 17", "Member 18",
@@ -334,7 +334,7 @@
         for (let i = 1; i <= 55; i++) {
             if (i <= 38) {
                 // Ô đã có người
-                let name = dummyMembers[i-1] || `UZI. PLAYER ${i}`;
+                let name = dummyMembers[i-1] || `UZI　PLAYER ${i}`;
                 rosterHTML += `
                     <div class="slot-card filled">
                         <div class="slot-idx">SLOT ${i}</div>
@@ -353,8 +353,8 @@
         }
         rosterContainer.innerHTML = rosterHTML;
 
-        /* MẸO CHO NHUNG: Khi nào có link API Google Sheets, 
-           Nhung chỉ cần dùng hàm fetch() để lấy mảng Tên thật đè lên cái dummyMembers là xong! */
+        /* MẸO CHO N: Khi nào có link API Google Sheets, 
+           N chỉ cần dùng hàm fetch() để lấy mảng Tên thật đè lên cái dummyMembers là xong! */
     </script>
 </body>
 </html>
