@@ -18,7 +18,14 @@
         * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Be Vietnam Pro', sans-serif; }
         
         body {
-            background-color: var(--dark);
+            /* ===== CHÈN ẢNH NỀN SIÊU CẤP VÀO ĐÂY ===== */
+            background-image: url('bg-trangchu.jpg'); /* Đổi tên này nếu bạn đặt tên file ảnh khác */
+            background-size: cover; /* Ép ảnh phủ kín toàn bộ màn hình */
+            background-position: center center; /* Canh giữa ảnh */
+            background-attachment: fixed; /* BÙA CHÚ: Cuộn web nhưng ảnh nền vẫn đứng im tĩnh lặng */
+            background-repeat: no-repeat;
+            background-color: #050000; /* Màu lót dự phòng */
+            
             color: white;
             overflow-x: hidden;
         }
