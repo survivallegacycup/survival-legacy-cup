@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Rajdhani:wght@500;600;700&family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -1718,4 +1718,37 @@ body, .table-wrapper, .match-item, .sidebar {
     font-family: 'Russo One', sans-serif !important;
     letter-spacing: 1.5px !important;
     font-weight: normal !important; /* Russo One đã đủ đậm rồi */
+}
+/* ================= THAY ÁO FONT BE VIETNAM PRO (SẠCH SẼ, DỊU MẮT) ================= */
+
+/* 1. Ép Font Be Vietnam Pro cho TOÀN BỘ web và giảm dãn chữ */
+body, .table-wrapper, .match-item, .sidebar,
+.match-title-box, .match-date, .sidebar-title, .nav-links li a,
+.btn-xem-thong-so, .btn-stats, .login-btn,
+.text-main, .text-sub, .nav-logo-text {
+    font-family: 'Be Vietnam Pro', sans-serif !important;
+    letter-spacing: 0.5px !important; /* Dãn nhẹ 0.5px chuẩn UI Esports */
+}
+
+/* 2. Giảm độ chói của Tiêu đề Giải đấu */
+.text-main, .text-sub {
+    /* Đổi sang Gradient Cam/Vàng nhạt mượt mà hơn, không bị gắt */
+    background: linear-gradient(90deg, #ff7a00, #ffca28) !important; 
+    -webkit-background-clip: text !important;
+    background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    text-shadow: none !important; /* Tắt hào quang chói mắt */
+    font-weight: 700 !important;
+}
+
+/* 3. Ngày tháng dịu lại */
+.match-date {
+    color: #eaeaea !important; /* Trắng xám nhạt cực dễ chịu */
+    text-shadow: none !important;
+    font-weight: 600 !important;
+}
+
+/* 4. Dấu gạch dọc mờ đi */
+.divider {
+    color: rgba(255, 255, 255, 0.2) !important;
 }
