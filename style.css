@@ -1686,7 +1686,7 @@ header, .header, .navbar, .top-bar, .top-header, #header {
     white-space: nowrap !important; /* KHÓA CHẾT CHỮ TRÊN 1 DÒNG, KHÔNG CHO RỚT DÒNG */
 }
 .btn-xem-thong-so:hover, .btn-stats:hover {
-    transform: scale(1.12) !important; /* Phóng to nảy lên */
+    transform: scale(1.04) !important; /* Phóng to nảy lên */
     box-shadow: 0 0 20px rgba(255, 204, 0, 0.9) !important; /* Rực Vàng chói lóa */
     color: #fff !important;
 }
@@ -1752,3 +1752,65 @@ body, .table-wrapper, .match-item, .sidebar,
 .divider {
     color: rgba(255, 255, 255, 0.2) !important;
 }
+/* ================= SIDEBAR ULTRA ESPORTS (NỀN ĐỎ & GLOW CAM) ================= */
+
+/* Khung sidebar tổng */
+.sidebar-panel {
+  background: linear-gradient(160deg, rgba(80,15,0,0.6) 0%, rgba(10,10,10,0.95) 50%),
+              repeating-linear-gradient(-55deg, rgba(255,107,0,0.015) 0px, rgba(255,107,0,0.015) 1px, transparent 1px, transparent 28px);
+  border: 1px solid rgba(255,107,0,0.3) !important;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(139,0,0,0.2), inset 0 0 30px rgba(80,10,0,0.1);
+  animation: sidebarGlow 4s ease-in-out infinite alternate;
+  width: 260px; /* Độ rộng chuẩn */
+  flex-shrink: 0;
+}
+
+@keyframes sidebarGlow {
+  from { box-shadow: 0 0 20px rgba(139,0,0,0.15), inset 0 0 30px rgba(80,10,0,0.1); }
+  to   { box-shadow: 0 0 40px rgba(200,50,0,0.25), inset 0 0 50px rgba(100,20,0,0.2); }
+}
+
+/* TIÊU ĐỀ NHÓM: "GIẢI ĐẤU", "GIAI ĐOẠN" */
+.sidebar-group-title {
+  font-size: 13px; font-weight: 800; letter-spacing: 2px; text-transform: uppercase;
+  color: #FF6B00; padding: 16px 16px 8px; position: relative; display: flex; align-items: center; gap: 8px;
+  font-family: 'Orbitron', sans-serif !important;
+}
+.sidebar-group-title::after {
+  content: ''; position: absolute; bottom: 0; left: 16px; right: 16px; height: 1px;
+  background: linear-gradient(90deg, rgba(255,107,0,0.6), transparent);
+}
+.sidebar-group-title::before { content: '▶'; font-size: 9px; color: rgba(255,107,0,0.7); }
+
+/* ITEM GIẢI ĐẤU (cấp 1) */
+.sidebar-item {
+  display: block; padding: 12px 16px; font-size: 13px; font-weight: 600; letter-spacing: 0.5px;
+  color: rgba(224,216,200,0.7); border-left: 3px solid transparent; cursor: pointer;
+  position: relative; overflow: hidden; transition: all 0.3s ease; text-decoration: none;
+}
+.sidebar-item:hover { color: #fff; border-left-color: rgba(255,107,0,0.5); background: rgba(255,107,0,0.06); }
+.sidebar-item::after {
+  content: ''; position: absolute; top: 0; left: -80%; width: 50%; height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,140,50,0.15), transparent);
+  transition: left 0.4s ease; pointer-events: none;
+}
+.sidebar-item:hover::after { left: 120%; }
+.sidebar-item.active {
+  color: #FF6B00; border-left-color: #FF6B00; background: rgba(255,107,0,0.1); text-shadow: 0 0 10px rgba(255,107,0,0.5); font-weight: 800;
+}
+
+/* ITEM GIAI ĐOẠN (cấp 2) */
+.sidebar-stage {
+  display: block; padding: 10px 16px 10px 24px; font-size: 12px; font-weight: 600;
+  color: rgba(224,216,200,0.6); border-left: 2px solid transparent; cursor: pointer;
+  transition: all 0.3s ease; text-decoration: none; position: relative;
+}
+.sidebar-stage .stage-date { display: block; font-size: 11px; font-weight: normal; color: rgba(224,216,200,0.4); margin-top: 3px; }
+.sidebar-stage:hover { color: #fff; border-left-color: rgba(255,107,0,0.35); background: rgba(255,107,0,0.04); }
+.sidebar-stage.active { color: #FF9944; border-left-color: #FF6B00; background: rgba(255,107,0,0.08); font-weight: 800; }
+.sidebar-stage.active .stage-date { color: rgba(255,153,68,0.7); }
+
+/* Divider giữa các nhóm */
+.sidebar-divider { height: 1px; background: linear-gradient(90deg, rgba(255,107,0,0.3), transparent); margin: 8px 0; }
