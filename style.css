@@ -1814,81 +1814,111 @@ body, .table-wrapper, .match-item, .sidebar,
 
 /* Divider giữa các nhóm */
 .sidebar-divider { height: 1px; background: linear-gradient(90deg, rgba(255,107,0,0.3), transparent); margin: 8px 0; }
-/* ================== GIAO DIỆN POPUP CYBER VIOLET ================== */
+/* ================== GIAO DIỆN POPUP XEM THÔNG SỐ (CHUẨN CYBER VIOLET) ================== */
 :root {
-    --violet: #7B2FFF; --violet-light: #B97AFF;
-    --cyan: #00F0FF; --pink: #FF2D78;
-    --bg-modal: #120F24; --border-cy: rgba(123,47,255,0.25);
+    --cy-violet: #7B2FFF; --cy-light: #B97AFF;
+    --cy-cyan: #00F0FF; --cy-bg: #120F24;
 }
 
-.modal-overlay { background: rgba(13, 11, 26, 0.9) !important; backdrop-filter: blur(10px); }
+/* 1. Phủ nền đen mờ */
+.modal-overlay {
+    background: rgba(10, 8, 22, 0.9) !important;
+    backdrop-filter: blur(10px);
+    display: flex !important; align-items: center; justify-content: center; /* Ép bảng ra giữa màn hình */
+}
 
-/* Khung Popup chính */
-.cyber-modal {
-    background: var(--bg-modal) !important;
-    border: 1px solid var(--border-cy) !important;
+/* 2. Khung Popup chính */
+.modal-content {
+    background: linear-gradient(135deg, rgba(80,20,160,0.2) 0%, rgba(18,15,36,0.98) 60%) !important;
+    border: 1px solid rgba(123,47,255,0.3) !important;
+    border-top: 2px solid var(--cy-violet) !important;
     border-radius: 12px !important;
-    box-shadow: 0 0 50px rgba(123,47,255,0.15) !important;
-    padding: 30px !important; max-width: 950px !important;
-    margin: 4% auto !important; position: relative; overflow: hidden;
-    animation: fadeUp 0.5s ease both; font-family: 'Inter', sans-serif; color: #D8D0F0;
+    box-shadow: 0 0 50px rgba(123,47,255,0.15), inset 0 0 40px rgba(80,20,160,0.1) !important;
+    padding: 30px !important;
+    width: 95% !important; max-width: 950px !important;
+    margin: 0 !important; /* Đã canh giữa bằng flex ở trên */
+    animation: fadeUp 0.4s ease both; color: #D8D0F0;
 }
 @keyframes fadeUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
 
-/* Nút Trở Lại */
-.btn-back-cyber {
-    display: inline-flex; align-items: center; gap: 8px; margin-bottom: 20px;
-    font-family: 'Rajdhani', sans-serif; font-size: 13px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase;
-    color: var(--cyan); background: rgba(0,240,255,0.05); border: 0.5px solid rgba(0,240,255,0.35);
-    padding: 7px 16px; border-radius: 3px; cursor: pointer; transition: 0.2s;
+/* 3. Nút Trở Lại */
+.btn-back-top {
+    font-family: 'Rajdhani', sans-serif; font-size: 13px; font-weight: 700; letter-spacing: 1.5px;
+    color: var(--cy-cyan); background: rgba(0,240,255,0.05); border: 1px solid rgba(0,240,255,0.3);
+    padding: 8px 18px; border-radius: 4px; cursor: pointer; transition: 0.3s;
+    margin-bottom: 20px; display: inline-flex; align-items: center; gap: 5px;
 }
-.btn-back-cyber:hover { background: rgba(0,240,255,0.1); box-shadow: 0 0 14px rgba(0,240,255,0.2); transform: translateX(-4px); }
+.btn-back-top:hover { background: rgba(0,240,255,0.15); box-shadow: 0 0 15px rgba(0,240,255,0.3); transform: translateX(-5px); color: #fff; }
 
-/* Header Trận Đấu */
-.match-header-cyber {
-    background: linear-gradient(135deg, rgba(80,20,160,0.4) 0%, rgba(13,11,26,0.97) 60%);
-    border: 0.5px solid var(--border-cy); border-top: 2px solid var(--violet); border-radius: 8px;
-    padding: 1.5rem 2rem; display: grid; grid-template-columns: auto 1fr auto; align-items: center; gap: 2rem;
-    margin-bottom: 1.5rem; position: relative; overflow: hidden;
-    box-shadow: 0 0 50px rgba(123,47,255,0.12), inset 0 0 60px rgba(80,20,160,0.08);
+/* 4. Khung Header Trận Đấu */
+.match-info-banner {
+    display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 20px;
+    background: rgba(0,0,0,0.3); border: 1px solid rgba(123,47,255,0.2); border-radius: 8px;
+    padding: 20px 30px; margin-bottom: 25px; box-shadow: inset 0 0 30px rgba(123,47,255,0.05);
 }
-.match-time .label { font-size: 11px; letter-spacing: 3px; text-transform: uppercase; color: rgba(216,208,240,0.4); margin-bottom: 4px; }
-.match-time .date { font-size: 14px; color: rgba(216,208,240,0.6); margin-bottom: 6px; font-weight: 600; }
-.match-time .time-num { 
-    font-family: 'Rajdhani', sans-serif; font-size: 34px; font-weight: 700; /* Đã làm nhỏ thời gian */
-    color: var(--cyan); line-height: 1; text-shadow: 0 0 15px rgba(0,240,255,0.5);
-    animation: timePulseCy 3s ease-in-out infinite;
+
+/* Thời gian */
+.time-box { text-align: left; }
+.time-box .label { font-size: 11px; letter-spacing: 3px; color: rgba(216,208,240,0.4); margin: 0 0 5px 0; }
+.time-box .date { font-size: 14px; font-weight: 600; color: rgba(216,208,240,0.7); margin: 0 0 5px 0; }
+.time-box .time {
+    font-family: 'Rajdhani', sans-serif; font-size: 38px; font-weight: 700; color: var(--cy-cyan); margin: 0; line-height: 1;
+    text-shadow: 0 0 15px rgba(0,240,255,0.5); animation: timePulseCy 2s infinite alternate;
 }
-@keyframes timePulseCy { 0%,100% {text-shadow: 0 0 15px rgba(0,240,255,0.5)} 50% {text-shadow: 0 0 30px rgba(0,240,255,0.8), 0 0 50px rgba(123,47,255,0.4)} }
+@keyframes timePulseCy { to { text-shadow: 0 0 25px rgba(0,240,255,0.8), 0 0 40px rgba(123,47,255,0.5); } }
 
 /* Booyah */
-.match-center { text-align: center; }
+.booyah-box { text-align: center; }
 .booyah-text {
-    font-family: 'Rajdhani', sans-serif; font-size: 32px; font-weight: 700; letter-spacing: 4px; margin-bottom: 10px;
-    background: linear-gradient(90deg, var(--violet-light), var(--cyan), var(--violet-light)); background-size: 200% auto;
-    -webkit-background-clip: text; background-clip: text; color: transparent; animation: booyahShine 2.5s linear infinite;
+    font-family: 'Rajdhani', sans-serif; font-size: 34px; font-weight: 800; letter-spacing: 4px;
+    background: linear-gradient(90deg, var(--cy-light), var(--cy-cyan), var(--cy-light)); background-size: 200% auto;
+    -webkit-background-clip: text; background-clip: text; color: transparent; margin: 0 0 10px 0;
+    animation: booyahShine 2.5s linear infinite;
 }
-@keyframes booyahShine { from { background-position: 0%; } to { background-position: 200%; } }
-.winner-logo {
-    width: 65px; height: 65px; border-radius: 50%; border: 1.5px solid var(--cyan); background: #1A1030;
-    box-shadow: 0 0 20px rgba(0,240,255,0.4), 0 0 40px rgba(123,47,255,0.2); margin: 0 auto 8px;
-    display: flex; align-items: center; justify-content: center; padding: 2px;
+@keyframes booyahShine { to { background-position: 200%; } }
+.booyah-box img {
+    width: 65px; height: 65px; border-radius: 50%; border: 1.5px solid var(--cy-cyan);
+    box-shadow: 0 0 20px rgba(0,240,255,0.4); padding: 2px; background: #1A1030; object-fit: cover; margin-bottom: 8px;
 }
-.winner-name { font-family: 'Rajdhani', sans-serif; font-size: 16px; font-weight: 700; color: #fff; letter-spacing: 2px; }
+.winner-name { font-family: 'Rajdhani', sans-serif; font-size: 16px; font-weight: 700; color: #fff; letter-spacing: 2px; margin: 0; }
 
-/* Mũi tên chuyển trận vuông xịn */
-.match-nav { display: flex; align-items: center; gap: 14px; }
+/* Điều hướng Trận */
+.match-nav-box { display: flex; align-items: center; justify-content: flex-end; gap: 15px; }
 .nav-arrow {
-    width: 36px; height: 36px; border-radius: 4px; background: rgba(123,47,255,0.1); border: 0.5px solid var(--border-cy);
-    display: flex; align-items: center; justify-content: center; cursor: pointer; color: var(--violet-light); font-size: 14px;
-    transition: all 0.2s;
+    width: 36px; height: 36px; border-radius: 4px; background: rgba(123,47,255,0.1); border: 1px solid rgba(123,47,255,0.3);
+    display: flex; align-items: center; justify-content: center; cursor: pointer; color: var(--cy-light); font-size: 14px; transition: 0.2s;
 }
-.nav-arrow:hover { background: rgba(123,47,255,0.25); box-shadow: 0 0 15px rgba(123,47,255,0.4); transform: scale(1.1); color: #fff; }
-.match-label { font-family: 'Rajdhani', sans-serif; font-size: 22px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: #fff; }
+.nav-arrow:hover { background: rgba(123,47,255,0.3); box-shadow: 0 0 15px rgba(123,47,255,0.5); color: #fff; transform: scale(1.1); }
+.chu-tran { font-family: 'Rajdhani', sans-serif; font-size: 22px; font-weight: 700; letter-spacing: 2px; color: #fff; margin: 0; }
 
-/* Bảng Điểm Hover Animation */
-.table-wrap-cyber { border: 0.5px solid var(--border-cy); border-radius: 8px; overflow: hidden; box-shadow: 0 0 60px rgba(123,47,255,0.1), inset 0 0 40px rgba(80,20,160,0.06); background: rgba(0,0,0,0.3); }
-.table-wrap-cyber .g-header { background: linear-gradient(90deg, rgba(80,20,160,0.5), rgba(18,15,36,0.95)) !important; border-bottom: 1px solid var(--border-cy); color: rgba(216,208,240,0.6) !important; font-family: 'Rajdhani', sans-serif; font-size: 12px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; padding: 14px 10px; }
-.table-wrap-cyber .g-row { transition: all 0.3s ease; border-bottom: 0.5px solid rgba(123,47,255,0.08); background: transparent; position: relative; overflow: hidden; cursor: pointer;}
-.table-wrap-cyber .g-row:hover { background: rgba(123,47,255,0.15); transform: scale(1.01) translateX(6px); box-shadow: inset 4px 0 0 var(--cyan); }
-.table-wrap-cyber .col-tong-diem { color: var(--cyan) !important; font-family: 'Rajdhani', sans-serif; font-size: 18px; font-weight: 700; text-shadow: 0 0 12px rgba(0,240,255,0.5); }
+/* 5. BẢNG ĐIỂM GRID (Phép thuật giúp 5 cột thẳng tắp) */
+.grid-table {
+    display: grid;
+    grid-template-columns: 80px 1fr 150px 150px 120px; /* ÉP BUỘC CHIA 5 CỘT */
+    background: rgba(0,0,0,0.4); border: 1px solid rgba(123,47,255,0.2); border-radius: 8px;
+    box-shadow: inset 0 0 30px rgba(0,0,0,0.5); overflow: hidden;
+}
+
+/* Tiêu đề cột */
+.g-header {
+    background: linear-gradient(90deg, rgba(80,20,160,0.5), rgba(18,15,36,0.95));
+    border-bottom: 1px solid rgba(123,47,255,0.3); color: rgba(216,208,240,0.7);
+    font-family: 'Rajdhani', sans-serif; font-size: 13px; font-weight: 600; letter-spacing: 1px;
+    padding: 15px 10px; text-align: center; display: flex; align-items: center; justify-content: center;
+}
+.g-header.text-left { justify-content: flex-start; padding-left: 20px; }
+.g-header.col-tong-diem { color: var(--cy-cyan) !important; text-shadow: 0 0 10px rgba(0,240,255,0.5); }
+
+/* Xử lý các dòng do Javascript nhả ra */
+.g-row { display: contents; } /* Lệnh siêu quan trọng để JS không làm vỡ Grid */
+.g-row > div {
+    padding: 15px 10px; text-align: center; border-bottom: 1px solid rgba(123,47,255,0.1);
+    display: flex; align-items: center; justify-content: center; font-size: 15px; font-weight: 500; transition: 0.2s; background: transparent;
+}
+/* Hiệu ứng lia chuột (Hover) cả 1 hàng */
+.g-row:hover > div { background: rgba(123,47,255,0.15); cursor: pointer; }
+.g-row:hover > div:first-child { box-shadow: inset 4px 0 0 var(--cy-cyan); }
+
+/* Trang trí cột Đội tuyển & Tổng điểm */
+.g-row > div:nth-child(2) { justify-content: flex-start; padding-left: 20px; font-weight: bold; color: #fff; font-family: 'Rajdhani', sans-serif; font-size: 18px; letter-spacing: 1px;}
+.g-row > div:nth-child(5) { color: var(--cy-cyan); font-weight: 700; font-size: 18px; text-shadow: 0 0 10px rgba(0,240,255,0.3); font-family: 'Rajdhani', sans-serif;}
