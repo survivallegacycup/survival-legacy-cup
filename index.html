@@ -380,12 +380,6 @@
                 hoverSound.play().catch(e => {}); // Bỏ qua lỗi tự động play của trình duyệt
             });
         });
-        // 4. HIỆU ỨNG CHUỘT GLOW TRACKING & BỤI LỬA MODAL
-const glow = document.createElement("div");
-glow.style.cssText = "position: fixed; width: 250px; height: 250px; background: radial-gradient(circle, rgba(0, 240, 255, 0.15), transparent 60%); pointer-events: none; transform: translate(-50%, -50%); z-index: 9999;";
-document.body.appendChild(glow);
-document.addEventListener("mousemove", e => { glow.style.left = e.clientX + "px"; glow.style.top = e.clientY + "px"; });
-
 const particleCanvas = document.createElement("canvas");
 particleCanvas.style.cssText = "position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 9998; pointer-events: none;";
 document.body.appendChild(particleCanvas);
