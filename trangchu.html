@@ -167,6 +167,36 @@
             50% { box-shadow: 0 0 25px rgba(255,204,0,0.8); }
             100% { box-shadow: 0 0 10px rgba(255,0,0,0.5); }
         }
+        /* ================== HIỆU ỨNG TIA SÁNG QUÉT NAVBAR ================== */
+nav {
+    overflow: hidden; /* Ép tia sáng không bị tràn ra ngoài khung */
+}
+
+/* Tạo ra tia sáng Cam - Đỏ */
+nav::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%; /* Vị trí bắt đầu ở tuốt bên trái */
+    width: 60%; /* Độ rộng của tia sáng */
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 204, 0, 0.15), rgba(255, 0, 0, 0.35), transparent);
+    animation: sweepNav 4s ease-in-out infinite alternate; /* 'alternate' giúp nó chạy đi rồi chạy ngược về */
+    pointer-events: none;
+    z-index: 0;
+}
+
+/* Đẩy Logo, Link và Nút Đăng nhập nổi lên trên tia sáng */
+nav > * {
+    position: relative;
+    z-index: 1;
+}
+
+/* Chuyển động lướt qua lại */
+@keyframes sweepNav {
+    0% { left: -100%; }
+    100% { left: 150%; }
+}
     </style>
 </head>
 <body>
