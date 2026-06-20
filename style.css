@@ -1891,34 +1891,55 @@ body, .table-wrapper, .match-item, .sidebar,
 .nav-arrow:hover { background: rgba(123,47,255,0.3); box-shadow: 0 0 15px rgba(123,47,255,0.5); color: #fff; transform: scale(1.1); }
 .chu-tran { font-family: 'Rajdhani', sans-serif; font-size: 22px; font-weight: 700; letter-spacing: 2px; color: #fff; margin: 0; }
 
-/* 5. BẢNG ĐIỂM GRID (Phép thuật giúp 5 cột thẳng tắp) */
-.grid-table {
-    display: grid;
-    grid-template-columns: 80px 1fr 150px 150px 120px; /* ÉP BUỘC CHIA 5 CỘT */
-    background: rgba(0,0,0,0.4); border: 1px solid rgba(123,47,255,0.2); border-radius: 8px;
-    box-shadow: inset 0 0 30px rgba(0,0,0,0.5); overflow: hidden;
+/* 5. BẢNG ĐIỂM (HIỆU ỨNG TIA SÁNG & HOVER ĐÃ ĐƯỢC UNLOCK) */
+.cyber-table {
+    background: rgba(10, 8, 22, 0.6); border: 1px solid var(--border-cy);
+    border-radius: 8px; overflow: hidden;
+    box-shadow: 0 0 60px rgba(123,47,255,0.1), inset 0 0 40px rgba(80,20,160,0.06);
+    display: flex; flex-direction: column;
 }
 
-/* Tiêu đề cột */
+/* Ép cấu trúc 5 cột cho cả Header và Hàng dữ liệu */
+.g-row-header, .g-row {
+    display: grid !important;
+    grid-template-columns: 80px 1fr 150px 150px 120px;
+    align-items: center;
+}
+
+/* Nền Header nối liền một khối Gradient sang trọng */
+.g-row-header {
+    background: linear-gradient(90deg, rgba(80,20,160,0.6), rgba(18,15,36,0.95));
+    border-bottom: 1px solid var(--border-cy);
+}
 .g-header {
-    background: linear-gradient(90deg, rgba(80,20,160,0.5), rgba(18,15,36,0.95));
-    border-bottom: 1px solid rgba(123,47,255,0.3); color: rgba(216,208,240,0.7);
-    font-family: 'Rajdhani', sans-serif; font-size: 13px; font-weight: 600; letter-spacing: 1px;
-    padding: 15px 10px; text-align: center; display: flex; align-items: center; justify-content: center;
+    font-family: 'Rajdhani', sans-serif; font-size: 13px; font-weight: 600;
+    color: rgba(216,208,240,0.7); letter-spacing: 1px; padding: 15px 10px; text-align: center;
 }
-.g-header.text-left { justify-content: flex-start; padding-left: 20px; }
-.g-header.col-tong-diem { color: var(--cy-cyan) !important; text-shadow: 0 0 10px rgba(0,240,255,0.5); }
+.g-header.text-left { text-align: left; padding-left: 20px; }
+.g-header.col-tong-diem { color: var(--cy-cyan) !important; text-shadow: 0 0 10px rgba(0,240,255,0.4); }
 
-/* Xử lý các dòng do Javascript nhả ra */
-.g-row { display: contents; } /* Lệnh siêu quan trọng để JS không làm vỡ Grid */
-.g-row > div {
-    padding: 15px 10px; text-align: center; border-bottom: 1px solid rgba(123,47,255,0.1);
-    display: flex; align-items: center; justify-content: center; font-size: 15px; font-weight: 500; transition: 0.2s; background: transparent;
+/* Các dòng dữ liệu JS nhả ra */
+.g-row {
+    border-bottom: 0.5px solid rgba(123,47,255,0.08); background: transparent;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    position: relative; overflow: hidden; cursor: pointer;
 }
-/* Hiệu ứng lia chuột (Hover) cả 1 hàng */
-.g-row:hover > div { background: rgba(123,47,255,0.15); cursor: pointer; }
-.g-row:hover > div:first-child { box-shadow: inset 4px 0 0 var(--cy-cyan); }
+.g-row > div { padding: 15px 10px; text-align: center; font-size: 15px; font-weight: 500; }
 
-/* Trang trí cột Đội tuyển & Tổng điểm */
-.g-row > div:nth-child(2) { justify-content: flex-start; padding-left: 20px; font-weight: bold; color: #fff; font-family: 'Rajdhani', sans-serif; font-size: 18px; letter-spacing: 1px;}
-.g-row > div:nth-child(5) { color: var(--cy-cyan); font-weight: 700; font-size: 18px; text-shadow: 0 0 10px rgba(0,240,255,0.3); font-family: 'Rajdhani', sans-serif;}
+/* HIỆU ỨNG TIA SÁNG QUÉT NGANG & NỔI KHỐI (SWEEP & GLOW) */
+.g-row::after {
+    content: ''; position: absolute; top: 0; left: -80%; width: 50%; height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(0,240,255,0.1), transparent);
+    transition: left 0.4s ease; pointer-events: none;
+}
+.g-row:hover {
+    background: rgba(123,47,255,0.15) !important;
+    transform: scale(1.01) translateX(6px);
+    box-shadow: inset 4px 0 0 var(--cy-cyan), 0 0 20px rgba(123,47,255,0.1);
+    z-index: 10;
+}
+.g-row:hover::after { left: 120%; }
+
+/* Màu nổi bật cho cột Đội Tuyển & Tổng Điểm */
+.g-row > div:nth-child(2) { text-align: left; padding-left: 20px; font-weight: 700; color: #fff; font-family: 'Rajdhani', sans-serif; font-size: 17px; letter-spacing: 1px; }
+.g-row > div:nth-child(5) { color: var(--cy-cyan); font-weight: 700; font-size: 19px; text-shadow: 0 0 10px rgba(0,240,255,0.3); font-family: 'Rajdhani', sans-serif; }
