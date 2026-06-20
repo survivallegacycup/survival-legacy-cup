@@ -1824,7 +1824,7 @@ body, .table-wrapper, .match-item, .sidebar,
 .modal-overlay {
     background: rgba(10, 8, 22, 0.9) !important;
     backdrop-filter: blur(10px);
-    display: flex !important; align-items: center; justify-content: center; /* Ép bảng ra giữa màn hình */
+    /* Tớ đã xóa dòng display: flex !important gây lỗi ở đây */
 }
 
 /* 2. Khung Popup chính */
@@ -1836,7 +1836,7 @@ body, .table-wrapper, .match-item, .sidebar,
     box-shadow: 0 0 50px rgba(123,47,255,0.15), inset 0 0 40px rgba(80,20,160,0.1) !important;
     padding: 30px !important;
     width: 95% !important; max-width: 950px !important;
-    margin: 0 !important; /* Đã canh giữa bằng flex ở trên */
+    margin: 8vh auto !important; /* Dùng margin để tự động canh giữa bảng an toàn */
     animation: fadeUp 0.4s ease both; color: #D8D0F0;
 }
 @keyframes fadeUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
