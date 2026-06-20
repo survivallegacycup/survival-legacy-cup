@@ -1814,3 +1814,65 @@ body, .table-wrapper, .match-item, .sidebar,
 
 /* Divider giữa các nhóm */
 .sidebar-divider { height: 1px; background: linear-gradient(90deg, rgba(255,107,0,0.3), transparent); margin: 8px 0; }
+/* ================== GIAO DIỆN POPUP ULTRA ================== */
+/* Khung nền mờ đằng sau */
+.modal-overlay { background: rgba(0, 0, 0, 0.85) !important; backdrop-filter: blur(8px); }
+
+/* Khung Popup chính */
+.ultra-modal {
+    background: radial-gradient(circle at top, rgba(80, 10, 10, 0.9), rgba(10, 5, 5, 0.95)) !important;
+    border: 1px solid rgba(255, 60, 0, 0.4) !important;
+    border-radius: 12px !important;
+    box-shadow: 0 0 40px rgba(255, 0, 0, 0.3), inset 0 0 20px rgba(255, 122, 0, 0.1) !important;
+    padding: 30px !important;
+    max-width: 900px !important;
+    margin: 5% auto !important;
+    position: relative;
+    overflow: hidden;
+}
+/* Quét sáng ngang Popup */
+.ultra-modal::before {
+    content: ''; position: absolute; top: 0; left: -100%; width: 50%; height: 2px;
+    background: linear-gradient(90deg, transparent, #ffcc00, transparent);
+    animation: modalScan 3s infinite;
+}
+@keyframes modalScan { 0% { left: -100%; } 100% { left: 100%; } }
+
+/* Nút Đóng */
+.btn-back-ultra {
+    background: linear-gradient(90deg, rgba(255,0,0,0.2), transparent); border: 1px solid #ff0000;
+    color: #ffcc00; padding: 8px 20px; font-family: 'Orbitron', sans-serif; font-weight: 700;
+    border-radius: 5px; margin-bottom: 20px; cursor: pointer; transition: 0.3s;
+}
+.btn-back-ultra:hover { transform: scale(1.05); box-shadow: 0 0 15px #ff0000; color: #fff; background: rgba(255,0,0,0.5); }
+
+/* Banner Thông tin Trận */
+.ultra-banner { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; border-bottom: 1px solid rgba(255,0,0,0.2); padding-bottom: 20px; }
+.ultra-banner .time { font-family: 'Orbitron', sans-serif; font-size: 36px; color: #ffcc00; text-shadow: 0 0 15px #ffcc00; margin: 0; }
+.ultra-banner .date { color: #ccc; font-weight: bold; margin: 0; }
+
+/* BOOYAH NEON CHỚP NHÁY */
+.booyah-text-ultra {
+    font-family: 'Orbitron', sans-serif; font-size: 42px; font-weight: 900; margin: 0 0 10px 0;
+    background: linear-gradient(90deg, #ffcc00, #ff0000); -webkit-background-clip: text; color: transparent;
+    background-clip: text;
+    text-shadow: 0 0 10px #ffcc00, 0 0 30px #ff0000; animation: flickerBooyah 2s infinite alternate;
+}
+@keyframes flickerBooyah { 0% { filter: brightness(1); } 100% { filter: brightness(1.3); text-shadow: 0 0 20px #ffcc00, 0 0 50px #ff0000; } }
+
+.winner-icon-ultra {
+    width: 65px; height: 65px; border-radius: 50%; border: 2px solid #ffcc00; margin: 0 auto;
+    box-shadow: 0 0 20px #ffcc00; padding: 3px; background: #000;
+}
+.winner-name-ultra { font-family: 'Orbitron', sans-serif; font-weight: bold; font-size: 16px; margin-top: 8px; color: #fff; letter-spacing: 2px;}
+
+/* Chuyển Trận */
+.ultra-nav { display: flex; align-items: center; gap: 15px; font-family: 'Orbitron', sans-serif; font-size: 20px; font-weight: bold; }
+.ultra-nav .nav-arrow { color: #ff0000; cursor: pointer; transition: 0.3s; font-size: 24px; }
+.ultra-nav .nav-arrow:hover { color: #ffcc00; text-shadow: 0 0 15px #ffcc00; transform: scale(1.2); }
+
+/* BẢNG ĐIỂM (Ép CSS cho cái Grid hiện tại của bạn) */
+.ultra-table { background: rgba(0, 0, 0, 0.5); border-radius: 8px; border: 1px solid rgba(255, 60, 0, 0.2); overflow: hidden; box-shadow: 0 5px 20px rgba(0,0,0,0.5); }
+.ultra-table .g-header { background: rgba(255, 0, 0, 0.2) !important; color: #ffcc00 !important; font-family: 'Orbitron', sans-serif; font-weight: bold; border-bottom: 2px solid #ff0000; padding: 12px 10px; }
+.ultra-table .g-row { transition: 0.3s; border-bottom: 1px solid rgba(255,255,255,0.05); }
+.ultra-table .g-row:hover { background: linear-gradient(90deg, rgba(255,0,0,0.2), transparent); transform: scale(1.01); box-shadow: inset 3px 0 0 #ff0000; }
