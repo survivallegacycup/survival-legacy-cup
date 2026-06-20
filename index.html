@@ -184,35 +184,39 @@
         </main>
     </div>
     <div id="modal-thong-so" class="modal-overlay" style="display: none;">
-    <div class="modal-content cyber-modal">
-        <button class="btn-back-cyber" onclick="dongThongSo()">◀ TRỞ LẠI</button>
-
-        <div class="match-header-cyber">
-            <div class="match-time">
-                <div class="label">THỜI GIAN</div>
-                <div class="date" id="ngay-thang-modal">21/05/2026</div>
-                <div class="time-num" id="gio-modal">19:00</div>
-            </div>
-            
-            <div class="match-center">
-                <div class="booyah-text">BOOYAH!</div>
-                <div class="winner-logo">
-                    <img src="logo-ft.jpg" alt="Winner Logo" id="logo-win-modal" style="width:100%; height:100%; border-radius:50%; object-fit:cover; padding:2px;">
+        
+        <button class="btn-back-top" onclick="dongThongSo()">◀ TRỞ LẠI</button>
+        
+        <div class="modal-content">
+            <div class="match-info-banner">
+                <div class="info-box time-box">
+                    <p class="label">THỜI GIAN</p>
+                    <p class="date">21/05/2026</p>
+                    <p class="time">19:00</p>
                 </div>
-                <div class="winner-name" id="ten-win-modal">FT</div>
+                
+                <div class="info-box booyah-box">
+                    <h3 class="booyah-text">BOOYAH!</h3>
+                    <img src="https://placehold.co/80x80/222/FFF?text=?" alt="Winner Logo">
+                    <p class="winner-name">???</p>
+                </div>
+                
+                <!-- HỘP CHỨA MŨI TÊN CHUYỂN TRẬN GARENA STYLE -->
+                <div class="match-nav-box">
+                    <div class="nav-arrow" onclick="chuyenTran(-1)"> ◀ </div>
+                    <div id="ten-tran-dau" class="chu-tran">TRẬN 1</div>
+                    <div class="nav-arrow" onclick="chuyenTran(1)"> ▶ </div>
+                </div>
             </div>
-
-            <div class="match-nav">
-                <div class="nav-arrow" onclick="chuyenTran(-1)">◀</div>
-                <div id="ten-tran-dau" class="match-label">TRẬN 1</div>
-                <div class="nav-arrow" onclick="chuyenTran(1)">▶</div>
+            <div class="grid-table" id="data-bang-diem">
+                <div class="g-header">HẠNG</div>
+                <div class="g-header text-left">ĐỘI TUYỂN</div>
+                <div class="g-header">ĐIỂM THỨ HẠNG</div>
+                <div class="g-header">ĐIỂM HẠ GỤC</div>
+                <div class="g-header col-tong-diem" style="color: #ffcc00;">TỔNG ĐIỂM</div>
             </div>
         </div>
-
-        <div class="table-wrap-cyber" id="data-bang-diem">
-            </div>
     </div>
-</div>
     <script src="script.js?v=12"></script>
     <!-- ================= DÒNG BẢN QUYỀN GÓC TRÁI ================= -->
     <div class="footer-copyright">
