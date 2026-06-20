@@ -327,6 +327,31 @@
 .grid-table > div:not(.g-header):hover { background: rgba(255, 59, 59, 0.15); box-shadow: inset 0 0 15px rgba(255, 59, 59, 0.2); cursor: pointer; }
 .grid-table > div:nth-child(5n+2):not(.g-header) { justify-content: flex-start; padding-left: 20px; font-weight: bold; font-size: 16px; color: #fff; }
 .grid-table > div:nth-child(5n):not(.g-header) { color: #ff8a00; font-weight: bold; font-size: 18px; text-shadow: 0 0 10px rgba(255, 138, 0, 0.3); }
+/* ================== ULTRA UPGRADE: VALORANT & MOBILE ================== */
+/* 1. Mở bảng kiểu Valorant (Nén ngang rồi bung dọc) */
+.modal-content {
+    backdrop-filter: blur(20px) !important; /* Glassmorphism xịn hơn */
+    background: linear-gradient(135deg, rgba(17, 17, 25, 0.85), rgba(26, 26, 46, 0.95)) !important;
+    animation: valorantOpen 0.6s cubic-bezier(0.86, 0, 0.07, 1) both !important;
+}
+@keyframes valorantOpen {
+    0% { transform: scaleY(0.01) scaleX(0); opacity: 0; }
+    50% { transform: scaleY(0.01) scaleX(1); opacity: 1; }
+    100% { transform: scaleY(1) scaleX(1); opacity: 1; }
+}
+
+/* 2. Responsive Mobile (Hiển thị cực xịn trên điện thoại) */
+@media (max-width: 768px) {
+    .modal-content { width: 98% !important; padding: 15px !important; margin: 2vh auto !important; }
+    .match-info-banner { grid-template-columns: 1fr; text-align: center; gap: 12px; }
+    .time-box, .match-nav-box { justify-content: center; text-align: center; }
+    .booyah-text { font-size: 32px; }
+    .chu-tran { font-size: 18px; }
+    
+    /* Cho phép cuộn ngang bảng điểm trên điện thoại để không bị méo */
+    .grid-table { display: block; overflow-x: auto; white-space: nowrap; padding-bottom: 10px; }
+    .g-row-header, .g-row { min-width: 650px; /* Ép độ rộng tối thiểu để giữ form 5 cột */ }
+}
     </style>
     <script>
         // 1. CHẠY HIỆU ỨNG TÀN LỬA BAY (FIRE PARTICLES)
@@ -403,5 +428,70 @@ function animateFireParticles() {
 animateFireParticles();
 window.addEventListener("resize", () => { cw = particleCanvas.width = window.innerWidth; ch = particleCanvas.height = window.innerHeight; });
     </script>
+    <audio id="sfxHover" src="https://assets.mixkit.co/active_storage/sfx/2571/2571-preview.mp3" preload="auto"></audio>
+<audio id="sfxClick" src="https://assets.mixkit.co/active_storage/sfx/2568/2568-preview.mp3" preload="auto"></audio>
+
+<script>
+    // 1. HỆ THỐNG ÂM THANH ESPORTS
+    const hoverSfx = document.getElementById("sfxHover");
+    const clickSfx = document.getElementById("sfxClick");
+    
+    document.querySelectorAll(".g-row, .nav-arrow, .btn-back-top").forEach(el => {
+        el.addEventListener("mouseenter", () => { hoverSfx.currentTime = 0; hoverSfx.volume = 0.5; hoverSfx.play().catch(()=>{}); });
+        el.addEventListener("click", () => { clickSfx.currentTime = 0; clickSfx.volume = 0.8; clickSfx.play().catch(()=>{}); });
+    });
+
+    // 2. HỆ THỐNG KHÓI + LỬA (Đã đổi tên biến sang ctxModal, modalParticles... để không đụng hàng)
+    const modalCanvas = document.createElement("canvas");
+    modalCanvas.style.cssText = "position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 9998; pointer-events: none;";
+    document.body.appendChild(modalCanvas);
+    
+    const ctxModal = modalCanvas.getContext("2d");
+    let cwModal = modalCanvas.width = window.innerWidth;
+    let chModal = modalCanvas.height = window.innerHeight;
+    let modalParticles = [];
+
+    // Tạo 80 hạt (trộn lẫn Khói mờ và Lửa sáng)
+    for (let i = 0; i < 80; i++) {
+        modalParticles.push({
+            x: Math.random() * cwModal,
+            y: Math.random() * chModal,
+            size: Math.random() * 3 + 1,
+            speedX: (Math.random() - 0.5) * 1.5,
+            speedY: (Math.random() - 0.5) * 2 - 1,
+            isSmoke: Math.random() > 0.7
+        });
+    }
+
+    function animateModalFire() {
+        ctxModal.clearRect(0, 0, cwModal, chModal);
+        const modal = document.getElementById("modal-thong-so");
+        
+        // Chỉ render khi bảng thống số đang mở
+        if (modal && modal.style.display !== "none") {
+            modalParticles.forEach(p => {
+                p.x += p.speedX; p.y += p.speedY;
+                if (p.y < 0) p.y = chModal; if (p.x < 0) p.x = cwModal; if (p.x > cwModal) p.x = 0;
+                
+                ctxModal.beginPath();
+                if (p.isSmoke) {
+                    ctxModal.fillStyle = "rgba(255, 138, 0, 0.05)";
+                    ctxModal.arc(p.x, p.y, p.size * 4, 0, Math.PI * 2);
+                } else {
+                    let gradient = ctxModal.createRadialGradient(p.x, p.y, 0, p.x, p.y, p.size);
+                    gradient.addColorStop(0, "rgba(255, 255, 255, 0.8)"); 
+                    gradient.addColorStop(0.3, "rgba(255, 138, 0, 0.6)"); 
+                    gradient.addColorStop(1, "rgba(255, 59, 59, 0)");     
+                    ctxModal.fillStyle = gradient;
+                    ctxModal.arc(p.x, p.y, p.size * 2, 0, Math.PI * 2);
+                }
+                ctxModal.fill();
+            });
+        }
+        requestAnimationFrame(animateModalFire);
+    }
+    animateModalFire();
+    window.addEventListener("resize", () => { cwModal = modalCanvas.width = window.innerWidth; chModal = modalCanvas.height = window.innerHeight; });
+</script>
 </body>
 </html>
