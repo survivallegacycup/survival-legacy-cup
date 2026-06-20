@@ -225,8 +225,8 @@
         <span class="eng-text">(This website is a non-profit project created for personal learning purposes. It is not officially affiliated with Garena.
         All Free Fire-related images, logos, and assets are the property of Garena.)</span>
     </div>
-</body>
-<audio id="hoverSound" src="https://www.fesliyanstudios.com/play-mp3/387" preload="auto"></audio>
+
+    <audio id="hoverSound" src="https://www.fesliyanstudios.com/play-mp3/387" preload="auto"></audio>
     
     <canvas id="fireCanvas" style="position:fixed; top:0; left:0; width:100%; height:100%; pointer-events:none; z-index:-2; opacity:0.6;"></canvas>
     <div style="position:fixed; width:100%; height:100%; z-index:-1; pointer-events:none; background: linear-gradient(rgba(255,0,0,0.03) 50%, transparent 50%); background-size:100% 4px;"></div>
@@ -254,6 +254,79 @@
         /* Nhịp đập Badge */
         .col-status { animation: pulseBadge 2.5s infinite; }
         @keyframes pulseBadge { 0%, 100% { opacity: 1; text-shadow: 0 0 10px red; } 50% { opacity: 0.6; text-shadow: none; } }
+        /* ================== ULTRA ESPORTS POPUP ================== */
+.modal-overlay { background: rgba(11, 11, 20, 0.92) !important; backdrop-filter: blur(12px); }
+
+.modal-content {
+    background: linear-gradient(135deg, #111111, #1a1a2e) !important;
+    border: 1px solid rgba(0, 240, 255, 0.4) !important; border-radius: 16px !important;
+    box-shadow: 0 0 35px rgba(0, 240, 255, 0.15), inset 0 0 20px rgba(255, 59, 59, 0.1) !important;
+    padding: 30px !important; width: 95% !important; max-width: 950px !important;
+    margin: 6vh auto !important; position: relative; overflow: hidden; color: #fff;
+    animation: modalZoom 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
+}
+@keyframes modalZoom { from { transform: scale(0.95); opacity: 0; } to { transform: scale(1); opacity: 1; } }
+
+.modal-content::before {
+    content: ""; position: absolute; width: 200%; height: 200%; top: -50%; left: -50%;
+    background: linear-gradient(120deg, transparent, rgba(255, 138, 0, 0.15), transparent);
+    animation: shine 4s linear infinite; pointer-events: none;
+}
+@keyframes shine { 0% { transform: translateX(-100%) } 100% { transform: translateX(100%) } }
+
+.btn-back-top {
+    padding: 10px 20px; border: 1px solid #00f0ff; color: #00f0ff; background: rgba(0, 240, 255, 0.05);
+    transition: 0.3s; cursor: pointer; border-radius: 4px; font-weight: bold; margin-bottom: 20px; display: inline-block;
+}
+.btn-back-top:hover { background: #00f0ff; color: #000; box-shadow: 0 0 15px #00f0ff; transform: translateX(-5px); }
+
+.match-info-banner {
+    display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 20px;
+    background: rgba(20, 20, 30, 0.6); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 12px; padding: 20px 30px; margin-bottom: 25px;
+}
+.time-box .label { color: #00f0ff; letter-spacing: 2px; font-size: 12px; margin-bottom: 5px; }
+.time-box .date { color: #ccc; font-weight: bold; margin-bottom: 5px; }
+.time-box .time { font-size: 40px; font-weight: 900; color: #fff; text-shadow: 0 0 15px rgba(255, 255, 255, 0.5); margin: 0; line-height: 1; }
+
+.booyah-box { text-align: center; }
+.booyah-text {
+    font-size: 42px; font-weight: 900; letter-spacing: 4px; margin: 0 0 10px 0;
+    background: linear-gradient(90deg, #ff3b3b, #ff8a00, #ff3b3b); background-size: 200%;
+    -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;
+    animation: textMove 3s linear infinite; text-shadow: 0 0 20px rgba(255, 59, 59, 0.4);
+}
+@keyframes textMove { 0% { background-position: 0% } 100% { background-position: 200% } }
+.booyah-box img { width: 70px; height: 70px; border-radius: 50%; border: 2px solid #ff8a00; box-shadow: 0 0 20px rgba(255, 138, 0, 0.5); object-fit: cover; margin-bottom: 5px; }
+.winner-name { font-size: 18px; font-weight: bold; letter-spacing: 2px; color: #fff; margin: 0; text-transform: uppercase; }
+
+.match-nav-box { display: flex; align-items: center; justify-content: flex-end; gap: 15px; }
+.nav-arrow {
+    width: 36px; height: 36px; border-radius: 6px; background: rgba(255, 59, 59, 0.1); border: 1px solid rgba(255, 59, 59, 0.4);
+    display: flex; align-items: center; justify-content: center; cursor: pointer; color: #ff3b3b; font-weight: bold; transition: 0.3s;
+}
+.nav-arrow:hover { background: #ff3b3b; color: #fff; box-shadow: 0 0 15px #ff3b3b; transform: scale(1.1); }
+.chu-tran { font-size: 22px; font-weight: bold; color: #00f0ff; margin: 0; text-transform: uppercase; }
+
+.grid-table {
+    display: grid; grid-template-columns: 80px 1fr 150px 150px 120px;
+    background: rgba(20, 20, 30, 0.8); backdrop-filter: blur(10px);
+    border: 1px solid rgba(0, 240, 255, 0.2); border-radius: 12px; overflow: hidden;
+}
+.g-header {
+    color: #00f0ff !important; text-transform: uppercase; letter-spacing: 1px; padding: 15px 10px;
+    background: rgba(0, 0, 0, 0.6); border-bottom: 2px solid #ff3b3b;
+    display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 13px;
+}
+.g-header.text-left { justify-content: flex-start; padding-left: 20px; }
+.g-header.col-tong-diem { color: #ff8a00 !important; text-shadow: 0 0 10px rgba(255, 138, 0, 0.5); }
+
+.grid-table > div:not(.g-header) {
+    padding: 15px 10px; text-align: center; border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    display: flex; align-items: center; justify-content: center; font-size: 15px; font-weight: 500; transition: 0.2s;
+}
+.grid-table > div:not(.g-header):hover { background: rgba(255, 59, 59, 0.15); box-shadow: inset 0 0 15px rgba(255, 59, 59, 0.2); cursor: pointer; }
+.grid-table > div:nth-child(5n+2):not(.g-header) { justify-content: flex-start; padding-left: 20px; font-weight: bold; font-size: 16px; color: #fff; }
+.grid-table > div:nth-child(5n):not(.g-header) { color: #ff8a00; font-weight: bold; font-size: 18px; text-shadow: 0 0 10px rgba(255, 138, 0, 0.3); }
     </style>
     <script>
         // 1. CHẠY HIỆU ỨNG TÀN LỬA BAY (FIRE PARTICLES)
@@ -307,5 +380,34 @@
                 hoverSound.play().catch(e => {}); // Bỏ qua lỗi tự động play của trình duyệt
             });
         });
+        // 4. HIỆU ỨNG CHUỘT GLOW TRACKING & BỤI LỬA MODAL
+const glow = document.createElement("div");
+glow.style.cssText = "position: fixed; width: 250px; height: 250px; background: radial-gradient(circle, rgba(0, 240, 255, 0.15), transparent 60%); pointer-events: none; transform: translate(-50%, -50%); z-index: 9999;";
+document.body.appendChild(glow);
+document.addEventListener("mousemove", e => { glow.style.left = e.clientX + "px"; glow.style.top = e.clientY + "px"; });
+
+const particleCanvas = document.createElement("canvas");
+particleCanvas.style.cssText = "position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 9998; pointer-events: none;";
+document.body.appendChild(particleCanvas);
+const ctxParticle = particleCanvas.getContext("2d");
+let cw = particleCanvas.width = window.innerWidth; let ch = particleCanvas.height = window.innerHeight;
+let fireParticles = [];
+for (let i = 0; i < 100; i++) fireParticles.push({ x: Math.random() * cw, y: Math.random() * ch, size: Math.random() * 2.5, speedX: (Math.random() - 0.5) * 0.8, speedY: (Math.random() - 0.5) * 1.5 - 0.5 });
+
+function animateFireParticles() {
+    ctxParticle.clearRect(0, 0, cw, ch);
+    const modal = document.getElementById("modal-thong-so");
+    if (modal && modal.style.display !== "none") {
+        fireParticles.forEach(p => {
+            p.x += p.speedX; p.y += p.speedY;
+            if (p.y < 0) p.y = ch; if (p.x < 0) p.x = cw; if (p.x > cw) p.x = 0;
+            ctxParticle.fillStyle = "rgba(255, 138, 0, 0.6)"; ctxParticle.beginPath(); ctxParticle.arc(p.x, p.y, p.size, 0, Math.PI * 2); ctxParticle.fill();
+        });
+    }
+    requestAnimationFrame(animateFireParticles);
+}
+animateFireParticles();
+window.addEventListener("resize", () => { cw = particleCanvas.width = window.innerWidth; ch = particleCanvas.height = window.innerHeight; });
     </script>
+</body>
 </html>
