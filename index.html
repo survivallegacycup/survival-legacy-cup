@@ -385,13 +385,27 @@
 /* Particle Canvas */
 canvas#particlesModal { position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 1; }
 
-/* Nút Trở lại */
-.btn-back-top {
-    position: relative; z-index: 4; background: #0a1628; border: 1px solid rgba(0, 240, 255, 0.4);
-    padding: 8px 16px; border-radius: 6px; color: #00f0ff; font-family: 'Orbitron', monospace; font-size: 12px;
-    cursor: pointer; transition: 0.3s; margin-bottom: 15px; display: inline-flex; align-items: center;
+/* Fix nút Trở Lại không bị méo và chống lẹm CSS cũ */
+#modal-thong-so .btn-back-top {
+    position: relative; z-index: 10;
+    background: #0a1628 !important; 
+    border: 1px solid rgba(0, 240, 255, 0.4) !important;
+    padding: 8px 20px !important; 
+    border-radius: 6px !important; 
+    color: #00f0ff !important; 
+    font-family: 'Orbitron', monospace !important; 
+    font-size: 13px !important; 
+    font-weight: bold !important;
+    cursor: pointer; transition: 0.3s; 
+    margin-bottom: 20px; display: inline-flex; align-items: center; justify-content: center;
+    width: fit-content !important; 
+    white-space: nowrap !important; /* Lệnh cực quan trọng giúp chữ không bị ép xuống dòng */
 }
-.btn-back-top:hover { background: rgba(0, 240, 255, 0.2); box-shadow: 0 0 15px rgba(0, 240, 255, 0.4); color: #fff; }
+#modal-thong-so .btn-back-top:hover { 
+    background: rgba(0, 240, 255, 0.2) !important; 
+    box-shadow: 0 0 15px rgba(0, 240, 255, 0.4) !important; 
+    color: #fff !important; 
+}
 
 /* Header Banner cắt góc */
 .match-info-banner.es-header {
