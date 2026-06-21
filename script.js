@@ -44,10 +44,6 @@ const linkCacTran = {
     41: "https://docs.google.com/spreadsheets/d/e/2PACX-1vTxQ0XUFPh9AASBh24GIZExBRoR-Mx6IzgV8VmYzfbeTzIh-WXiOShCm2xHMnnuiEXMLunN2GQG-jpQ/pub?gid=371280148&single=true&output=csv",
     42: "https://docs.google.com/spreadsheets/d/e/2PACX-1vTxQ0XUFPh9AASBh24GIZExBRoR-Mx6IzgV8VmYzfbeTzIh-WXiOShCm2xHMnnuiEXMLunN2GQG-jpQ/pub?gid=520870058&single=true&output=csv"
 }
-// Gán tên hiển thị
-document.getElementById("ten-win-modal").innerText = tenDoiTop1;
-// Tự động tìm logo tương ứng (ví dụ: WHD -> logo-whd.jpg)
-document.getElementById("logo-win-modal").src = "logo-" + tenDoiTop1.toLowerCase() + ".jpg";
 /* ================= BẢN SAO GARENA 1:1 ================= */
 async function moThongSo(soTran) {
     if (!soTran) soTran = 1;
