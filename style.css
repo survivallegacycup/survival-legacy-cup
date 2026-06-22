@@ -1991,6 +1991,7 @@ body, .table-wrapper, .match-item, .sidebar,
     font-family: 'Orbitron', monospace !important; font-size: 13px !important; font-weight: bold !important;
     cursor: pointer; transition: 0.3s; margin-bottom: 20px; display: inline-flex; align-items: center; justify-content: center;
     width: fit-content !important; white-space: nowrap !important;
+    gap: 6px;
 }
 #modal-thong-so .btn-back-top:hover { background: rgba(0, 240, 255, 0.2) !important; box-shadow: 0 0 15px rgba(0, 240, 255, 0.4) !important; color: #fff !important; }
 

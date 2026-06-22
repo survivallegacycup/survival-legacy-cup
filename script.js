@@ -66,25 +66,33 @@ async function moThongSo(soTran) {
             mapBanner.style.display = 'none'; 
         }
     }
-    let tranTrongNgay = ((soTran - 1) % 6) + 1; 
+    // 1. Tính toán Ngày thi đấu và Trận trong ngày (Mỗi ngày 6 trận)
+        let ngayThiDau = Math.ceil(soTran / 6);
+        let tranTrongNgay = ((soTran - 1) % 6) + 1;
 
-    let tenTranEl = document.getElementById('ten-tran-dau');
-    if (tenTranEl) tenTranEl.innerText = "TRẬN " + tranTrongNgay;
+        // 2. Cập nhật Số Trận (Hiển thị TRẬN 1, TRẬN 2...)
+        let tenTranEl = document.getElementById('ten-tran-dau');
+        if (tenTranEl) tenTranEl.innerText = "TRẬN " + tranTrongNgay;
 
-    let dayEl = document.querySelector('.modal-title span'); 
-    if (dayEl) dayEl.innerText = "DAY " + ngayThiDau;
+        // 3. Cập nhật NGÀY THI ĐẤU (Đã nối đúng ID của giao diện Neon)
+        let dateEl = document.getElementById('ngay-thang-modal');
+        if (dateEl) {
+            const lichNgay = { 
+                1: "21/05/2026", 2: "22/05/2026", 3: "23/05/2026", 
+                4: "24/05/2026", 5: "25/05/2026", 6: "26/05/2026", 7: "27/05/2026" 
+            };
+            dateEl.innerText = lichNgay[ngayThiDau] || "21/05/2026";
+        }
 
-    let dateEl = document.querySelector('.info-box.time-box .date');
-    if (dateEl) {
-        const lichNgay = { 1: "21/05/2026", 2: "22/05/2026", 3: "23/05/2026", 4: "24/05/2026", 5: "25/05/2026", 6: "26/05/2026", 7: "27/05/2026" };
-        dateEl.innerText = lichNgay[ngayThiDau] || "21/05/2026";
-    }
-
-    let timeEl = document.querySelector('.info-box.time-box .time');
-    if (timeEl) {
-        const gioThiDau = { 1: "19:00", 2: "19:30", 3: "20:00", 4: "20:30", 5: "21:00", 6: "21:30" };
-        timeEl.innerText = gioThiDau[tranTrongNgay] || "19:00";
-    }
+        // 4. Cập nhật GIỜ THI ĐẤU (Đã nối đúng ID của giao diện Neon)
+        let timeEl = document.getElementById('gio-modal');
+        if (timeEl) {
+            const gioThiDau = { 
+                1: "19:00", 2: "19:30", 3: "20:00", 
+                4: "20:30", 5: "21:00", 6: "21:30" 
+            };
+            timeEl.innerText = gioThiDau[tranTrongNgay] || "19:00";
+        }
 
     let booyahLogo = document.querySelector('.info-box.booyah-box img');
     let booyahName = document.querySelector('.info-box.booyah-box .winner-name');
