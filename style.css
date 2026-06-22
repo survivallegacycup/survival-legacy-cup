@@ -1932,12 +1932,7 @@ body, .table-wrapper, .match-item, .sidebar,
     background: linear-gradient(90deg, transparent, rgba(0,240,255,0.1), transparent);
     transition: left 0.4s ease; pointer-events: none;
 }
-.g-row:hover {
-    background: rgba(123,47,255,0.15) !important;
-    transform: scale(1.01) translateX(6px);
-    box-shadow: inset 4px 0 0 var(--cy-cyan), 0 0 20px rgba(123,47,255,0.1);
-    z-index: 10;
-}
+
 .g-row:hover::after { left: 120%; }
 
 /* Màu nổi bật cho cột Đội Tuyển & Tổng Điểm */
@@ -2013,10 +2008,7 @@ body, .table-wrapper, .match-item, .sidebar,
 
 .g-header.text-left { justify-content: flex-start; padding-left: 20px; }
 /* 🌟 HIỆU ỨNG HOVER SÁNG NGUYÊN 1 HÀNG 🌟 */
-.g-row:hover {
-    background: #0a1628; border-color: rgba(0, 240, 255, 0.4);
-    box-shadow: inset 0 0 20px rgba(0, 240, 255, 0.15); transform: translateX(6px);
-}
+
 .g-row:hover > div { color: #00f0ff; text-shadow: 0 0 8px rgba(0, 240, 255, 0.4); }
 .g-row:hover > div:nth-child(5) { color: #fff; text-shadow: 0 0 15px #00f0ff; transform: scale(1.1); }
 /* 1. VIỀN KHUNG NEON XANH TÍM CHẠY VÒNG QUANH */
@@ -2070,13 +2062,7 @@ body, .table-wrapper, .match-item, .sidebar,
 .g-header.text-left { justify-content: flex-start; padding-left: 20px; }
 
 /* 5. G-ROW VÀ THANH PROGRESS BAR BÊN DƯỚI */
-.g-row {
-    display: grid; grid-template-columns: 80px 1fr 140px 140px 120px;
-    background: rgba(10, 22, 40, 0.4); border-radius: 6px; 
-    border: 1px solid transparent; border-bottom: 1px solid rgba(0, 240, 255, 0.05);
-    transition: all 0.25s cubic-bezier(0.25, 0.8, 0.25, 1); cursor: pointer;
-    position: relative; padding-bottom: 5px !important; /* Chừa chỗ cho thanh điểm */
-}
+
 /* CSS cho thanh điểm chạy (Màu xanh nối tím) */
 .pts-bar-wrap {
     position: absolute; bottom: 0; left: 80px; right: 0; height: 3px;
@@ -2087,4 +2073,30 @@ body, .table-wrapper, .match-item, .sidebar,
     background: linear-gradient(90deg, #00f0ff, #7b3cff);
     transition: width 1.2s cubic-bezier(0.25, 0.8, 0.25, 1); /* Chạy mượt trong 1.2 giây */
     box-shadow: 0 0 10px rgba(0, 240, 255, 0.6);
+}
+/* 5. G-ROW VÀ THANH PROGRESS BAR (NÂNG CẤP DUAL TONE ESPORTS) */
+.g-row {
+    display: grid; grid-template-columns: 80px 1fr 140px 140px 120px;
+    
+    /* Concept 1: Xanh Cyber blend sang Tím Futuristic + Glassmorphism */
+    background: linear-gradient(135deg, rgba(10, 15, 44, 0.8) 0%, rgba(13, 27, 76, 0.6) 45%, rgba(42, 15, 76, 0.8) 100%) !important;
+    backdrop-filter: blur(12px);
+    
+    border: 1px solid rgba(255, 255, 255, 0.05) !important;
+    border-bottom: 1px solid rgba(0, 240, 255, 0.15) !important;
+    
+    /* Inner Glow tạo độ sâu 3D */
+    box-shadow: inset 0 0 20px rgba(0, 240, 255, 0.05), inset 0 0 40px rgba(123, 47, 255, 0.05) !important;
+    
+    border-radius: 8px;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); cursor: pointer;
+    position: relative; padding-bottom: 5px !important;
+}
+
+/* HIỆU ỨNG HOVER DUAL TONE CHÁY MÁY */
+.g-row:hover {
+    background: linear-gradient(90deg, rgba(0, 240, 255, 0.2) 0%, rgba(123, 47, 255, 0.2) 100%) !important;
+    border-color: rgba(0, 240, 255, 0.5) !important;
+    box-shadow: inset 0 0 25px rgba(0, 240, 255, 0.2), inset 0 0 50px rgba(123, 47, 255, 0.15) !important;
+    transform: translateX(6px);
 }
