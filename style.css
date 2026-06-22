@@ -2020,17 +2020,47 @@ body, .table-wrapper, .match-item, .sidebar,
 .logo-corner.bl { bottom: -2px; left: -2px; border-width: 0 0 2px 2px; } .logo-corner.br { bottom: -2px; right: -2px; border-width: 0 2px 2px 0; }
 .winner-name { font-size: 13px; color: rgba(0, 240, 255, 0.6); letter-spacing: 2px; font-weight: 700; margin: 0; text-transform: uppercase;}
 
+/* ================== GRID BẢNG ĐIỂM (ĐÃ NÂNG CẤP HOVER) ================== */
 .es-table-wrap { position: relative; z-index: 4; }
-.grid-table { display: grid; grid-template-columns: 80px 1fr 140px 140px 120px; border-radius: 8px; overflow: hidden; }
-.g-header { background: transparent !important; color: rgba(0, 240, 255, 0.5) !important; font-size: 11px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; padding: 12px 10px; border-bottom: 1px solid rgba(0, 240, 255, 0.2); display: flex; align-items: center; justify-content: center; }
+
+/* Chuyển bảng thành dạng cột để xếp các hàng chồng lên nhau */
+.grid-table { display: flex; flex-direction: column; gap: 5px; border-radius: 8px; overflow: hidden; }
+
+/* HÀNG HEADER */
+.g-row-header {
+    display: grid; grid-template-columns: 80px 1fr 140px 140px 120px;
+    border-bottom: 1px solid rgba(0, 240, 255, 0.2); padding-bottom: 4px; margin-bottom: 4px;
+}
+.g-header {
+    background: transparent !important; color: rgba(0, 240, 255, 0.5) !important;
+    font-size: 11px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase;
+    padding: 12px 10px; display: flex; align-items: center; justify-content: center;
+}
 .g-header.text-left { justify-content: flex-start; padding-left: 20px; }
 
-.grid-table > div:not(.g-header) {
-    padding: 12px 10px; text-align: center; border-bottom: 1px solid rgba(0, 240, 255, 0.08); background: transparent;
-    color: #c8d8e8; font-size: 15px; font-weight: 600; display: flex; align-items: center; justify-content: center; transition: 0.2s; font-family: 'Orbitron', monospace;
+/* HÀNG DỮ LIỆU CÁC ĐỘI */
+.g-row {
+    display: grid; grid-template-columns: 80px 1fr 140px 140px 120px;
+    background: rgba(10, 22, 40, 0.4); border-radius: 6px; /* Màu nền siêu ngầu */
+    border: 1px solid transparent; border-bottom: 1px solid rgba(0, 240, 255, 0.05);
+    transition: all 0.25s cubic-bezier(0.25, 0.8, 0.25, 1); cursor: pointer;
 }
-.grid-table > div:nth-child(5n+2):not(.g-header) { justify-content: flex-start; padding-left: 20px; font-family: 'Rajdhani', sans-serif; font-size: 18px; color: #fff; font-weight: 700; letter-spacing: 1px; }
-.grid-table > div:nth-child(5n+3):not(.g-header) { color: #378add; }
-.grid-table > div:nth-child(5n+4):not(.g-header) { color: #1d9e75; }
-.grid-table > div:nth-child(5n):not(.g-header) { color: #ffd700; font-size: 20px; text-shadow: 0 0 10px rgba(255, 215, 0, 0.4); font-weight: 900; }
-.grid-table > div:not(.g-header):hover { background: #0a1628; box-shadow: inset 0 0 15px rgba(0, 240, 255, 0.1); color: #00f0ff; }
+
+/* Định dạng từng ô trong hàng */
+.g-row > div {
+    padding: 12px 10px; display: flex; align-items: center; justify-content: center;
+    font-family: 'Orbitron', monospace; font-size: 15px; font-weight: 600; color: #c8d8e8; transition: 0.2s;
+}
+
+.g-row > div:nth-child(2) { justify-content: flex-start; padding-left: 20px; font-family: 'Rajdhani', sans-serif; font-size: 18px; color: #fff; font-weight: 700; letter-spacing: 1px; }
+.g-row > div:nth-child(3) { color: #378add; }
+.g-row > div:nth-child(4) { color: #1d9e75; }
+.g-row > div:nth-child(5) { color: #ffd700; font-size: 20px; text-shadow: 0 0 10px rgba(255, 215, 0, 0.4); font-weight: 900; }
+
+/* 🌟 HIỆU ỨNG HOVER SÁNG NGUYÊN 1 HÀNG 🌟 */
+.g-row:hover {
+    background: #0a1628; border-color: rgba(0, 240, 255, 0.4);
+    box-shadow: inset 0 0 20px rgba(0, 240, 255, 0.15); transform: translateX(6px);
+}
+.g-row:hover > div { color: #00f0ff; text-shadow: 0 0 8px rgba(0, 240, 255, 0.4); }
+.g-row:hover > div:nth-child(5) { color: #fff; text-shadow: 0 0 15px #ffd700; transform: scale(1.1); }

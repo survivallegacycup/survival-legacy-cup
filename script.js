@@ -112,67 +112,66 @@ async function moThongSo(soTran) {
     modal.style.display = 'block'; // ĐÂY CHÍNH LÀ LỆNH GỌI CÁI BẢNG LÊN!
     document.body.style.overflow = 'hidden'; /* Khóa cuộn trang nền */
     
-    const headers = container.querySelectorAll('.g-header');
-    container.innerHTML = '';
-    headers.forEach(h => container.appendChild(h));
+   // Bắt đầu từ đoạn lấy header
+        const headers = container.querySelectorAll('.g-header');
+        container.innerHTML = '';
+        
+        // 1. TẠO HÀNG BỌC HEADER
+        let headerRow = document.createElement('div');
+        headerRow.className = 'g-row-header';
+        headers.forEach(h => headerRow.appendChild(h));
+        container.appendChild(headerRow);
 
-    try {
-        // Lấy link CSV theo trận bạn đã thiết lập
-        let linkHienTai = linkCacTran[soTran];
-        if (!linkHienTai) return;
-
-        const response = await fetch(linkHienTai);
-        const data = await response.text();
-        console.log("DỮ LIỆU TỪ GOOGLE SHEETS LÀ:\n", data);
-
-        const rows = data.split('\n').slice(1);
-
-        // 1. FIX LỖI LOGO: Lấy đúng ID của giao diện Neon mới
-        let booyahLogo = document.getElementById("logo-win-modal");
-        let booyahName = document.getElementById("ten-win-modal");
-
-        // Reset về ? trước khi đọc trận mới
-        if (booyahLogo) booyahLogo.src = "https://placehold.co/80x80/222/FFF?text=?";
-        if (booyahName) booyahName.innerText = "???";
-
-        // 2. VÒNG LẶP ĐỌC SHEET VÀ IN BẢNG
-        for (let i = 0; i < rows.length; i++) {
-            if (!rows[i] || rows[i].trim() === '') continue;
+        try {
+            let linkHienTai = linkCacTran[soTran];
+            if (!linkHienTai) return;
             
-            const teamInfo = rows[i].split(',');
-            let hang = teamInfo[0] ? teamInfo[0].trim() : '';
-            let tenDoi = teamInfo[1] ? teamInfo[1].trim() : '';
-            let diemTH = teamInfo[2] ? teamInfo[2].trim() : '';
-            let diemKill = teamInfo[3] ? teamInfo[3].trim() : '';
-            let tongDiem = teamInfo[4] ? teamInfo[4].trim() : '';
+            const response = await fetch(linkHienTai);
+            const data = await response.text();
+            const rows = data.split('\n').slice(1);
+            
+            let booyahLogo = document.getElementById("logo-win-modal");
+            let booyahName = document.getElementById("ten-win-modal");
+            if (booyahLogo) booyahLogo.src = "https://placehold.co/80x80/222/FFF?text=?";
+            if (booyahName) booyahName.innerText = "???";
 
-            if (!tenDoi || tenDoi === 'ĐỘI TUYỂN' || tenDoi === 'ĐỘI') continue;
+            for (let i = 0; i < rows.length; i++) {
+                if (!rows[i] || rows[i].trim() === '') continue;
+                
+                const teamInfo = rows[i].split(',');
+                let hang = teamInfo[0] ? teamInfo[0].trim() : '';
+                let tenDoi = teamInfo[1] ? teamInfo[1].trim() : '';
+                let diemTH = teamInfo[2] ? teamInfo[2].trim() : '';
+                let diemKill = teamInfo[3] ? teamInfo[3].trim() : '';
+                let tongDiem = teamInfo[4] ? teamInfo[4].trim() : '';
 
-            // Link Logo tự động
-            let logoThichHop = "logo-" + tenDoi.toLowerCase() + ".jpg";
+                if (!tenDoi || tenDoi === 'ĐỘI TUYỂN' || tenDoi === 'ĐỘI') continue;
 
-            // --- TỰ ĐỘNG BÊ ĐỘI HẠNG 1 LÊN BOOYAH! ---
-            if (hang === "1" || hang === 1) {
-                if (booyahName) booyahName.innerText = tenDoi;
-                if (booyahLogo) booyahLogo.src = logoThichHop;
+                let logoThichHop = "logo-" + tenDoi.toLowerCase() + ".jpg";
+
+                if (hang === "1" || hang === 1) {
+                    if (booyahName) booyahName.innerText = tenDoi;
+                    if (booyahLogo) booyahLogo.src = logoThichHop;
+                }
+
+                // 2. PHÉP THUẬT: BỌC 5 Ô VÀO TRONG THẺ <div class="g-row"> ĐỂ DI CHUỘT SÁNG CẢ HÀNG
+                let htmlRow = `
+                    <div class="g-row">
+                        <div>${hang}</div>
+                        <div>
+                            <img src="${logoThichHop}" style="width:24px;height:24px;border-radius:6px;margin-right:10px;border:1px solid #00f0ff;object-fit:cover;"> 
+                            ${tenDoi}
+                        </div>
+                        <div>${diemTH}</div>
+                        <div>${diemKill}</div>
+                        <div>${tongDiem}</div>
+                    </div>
+                `;
+                container.innerHTML += htmlRow;
             }
-
-            // --- FIX LỖI MÀU: In trực tiếp 5 ô div (KHÔNG bọc thẻ cha) để CSS Grid nhận đúng màu ---
-            let htmlRow = `
-                <div>${hang}</div>
-                <div>
-                    <img src="${logoThichHop}" style="width:24px;height:24px;border-radius:50%;margin-right:8px;vertical-align:middle;border:1px solid #00f0ff;object-fit:cover;"> 
-                    ${tenDoi}
-                </div>
-                <div>${diemTH}</div>
-                <div>${diemKill}</div>
-                <div>${tongDiem}</div>
-            `;
-            container.innerHTML += htmlRow;
+        } catch (error) {
+            console.error("Lỗi khi load dữ liệu trận: ", error);
         }
-    } catch (error) {
-        console.error("Lỗi khi load dữ liệu trận: ", error);
-    }
 }
 
 function dongThongSo() {
