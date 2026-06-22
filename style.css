@@ -2018,7 +2018,7 @@ body, .table-wrapper, .match-item, .sidebar,
     box-shadow: inset 0 0 20px rgba(0, 240, 255, 0.15); transform: translateX(6px);
 }
 .g-row:hover > div { color: #00f0ff; text-shadow: 0 0 8px rgba(0, 240, 255, 0.4); }
-.g-row:hover > div:nth-child(5) { color: #fff; text-shadow: 0 0 15px #ffd700; transform: scale(1.1); }
+.g-row:hover > div:nth-child(5) { color: #fff; text-shadow: 0 0 15px #00f0ff; transform: scale(1.1); }
 /* 1. VIỀN KHUNG NEON XANH TÍM CHẠY VÒNG QUANH */
 .modal-content.es-root {
     border: 2px solid transparent !important;
