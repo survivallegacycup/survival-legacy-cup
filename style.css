@@ -1899,32 +1899,10 @@ body, .table-wrapper, .match-item, .sidebar,
     display: flex; flex-direction: column;
 }
 
-/* Ép cấu trúc 5 cột cho cả Header và Hàng dữ liệu */
-.g-row-header, .g-row {
-    display: grid !important;
-    grid-template-columns: 80px 1fr 150px 150px 120px;
-    align-items: center;
-}
 
-/* Nền Header nối liền một khối Gradient sang trọng */
-.g-row-header {
-    background: linear-gradient(90deg, rgba(80,20,160,0.6), rgba(18,15,36,0.95));
-    border-bottom: 1px solid var(--border-cy);
-}
-.g-header {
-    font-family: 'Rajdhani', sans-serif; font-size: 13px; font-weight: 600;
-    color: rgba(216,208,240,0.7); letter-spacing: 1px; padding: 15px 10px; text-align: center;
-}
 .g-header.text-left { text-align: left; padding-left: 20px; }
 .g-header.col-tong-diem { color: var(--cy-cyan) !important; text-shadow: 0 0 10px rgba(0,240,255,0.4); }
 
-/* Các dòng dữ liệu JS nhả ra */
-.g-row {
-    border-bottom: 0.5px solid rgba(123,47,255,0.08); background: transparent;
-    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-    position: relative; overflow: hidden; cursor: pointer;
-}
-.g-row > div { padding: 15px 10px; text-align: center; font-size: 15px; font-weight: 500; }
 
 /* HIỆU ỨNG TIA SÁNG QUÉT NGANG & NỔI KHỐI (SWEEP & GLOW) */
 .g-row::after {
@@ -2099,4 +2077,40 @@ body, .table-wrapper, .match-item, .sidebar,
     border-color: rgba(0, 240, 255, 0.5) !important;
     box-shadow: inset 0 0 25px rgba(0, 240, 255, 0.2), inset 0 0 50px rgba(123, 47, 255, 0.15) !important;
     transform: translateX(6px);
+}
+/* ================== HÀNG HEADER (NỀN XANH TÍM ĐẬM) ================== */
+.g-row-header {
+    display: grid; grid-template-columns: 80px 1fr 140px 140px 120px;
+    background: linear-gradient(90deg, rgba(10, 15, 44, 0.95) 0%, rgba(42, 15, 76, 0.95) 100%) !important;
+    border-bottom: 2px solid rgba(0, 240, 255, 0.5) !important; 
+    border-radius: 8px 8px 0 0 !important;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    margin-bottom: 8px;
+}
+.g-header {
+    background: transparent !important; 
+    color: #00f0ff !important; /* Đổi chữ tiêu đề thành Xanh Neon cho cháy */
+    font-size: 11px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase;
+    padding: 12px 10px; display: flex; align-items: center; justify-content: center;
+}
+.g-header.text-left { justify-content: flex-start; padding-left: 20px; }
+
+/* ================== HÀNG DỮ LIỆU CÁC ĐỘI (KÍNH MỜ XANH TÍM) ================== */
+.g-row {
+    display: grid; grid-template-columns: 80px 1fr 140px 140px 120px;
+    
+    /* Nền kính mờ blend Xanh dương sang Tím */
+    background: linear-gradient(90deg, rgba(13, 27, 76, 0.5) 0%, rgba(42, 15, 76, 0.5) 100%) !important;
+    backdrop-filter: blur(10px) !important;
+    
+    border-radius: 6px; 
+    border: 1px solid rgba(0, 240, 255, 0.1) !important; 
+    border-bottom: 1px solid rgba(123, 47, 255, 0.3) !important;
+    transition: all 0.25s cubic-bezier(0.25, 0.8, 0.25, 1); cursor: pointer;
+    position: relative; padding-bottom: 5px !important; 
+}
+
+/* Đảm bảo phần container không có nền che mất hàng */
+#data-bang-diem.grid-table {
+    background: transparent !important;
 }
