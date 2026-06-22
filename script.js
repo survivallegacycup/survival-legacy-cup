@@ -135,40 +135,66 @@ async function moThongSo(soTran) {
             if (booyahLogo) booyahLogo.src = "https://placehold.co/80x80/222/FFF?text=?";
             if (booyahName) booyahName.innerText = "???";
 
+            // BƯỚC A: ĐỌC DỮ LIỆU VÀ TÌM ĐIỂM CAO NHẤT (Để làm chuẩn cho Progress Bar)
+            let danhSachDoi = [];
+            let maxTongDiem = 0;
+
             for (let i = 0; i < rows.length; i++) {
                 if (!rows[i] || rows[i].trim() === '') continue;
-                
                 const teamInfo = rows[i].split(',');
                 let hang = teamInfo[0] ? teamInfo[0].trim() : '';
                 let tenDoi = teamInfo[1] ? teamInfo[1].trim() : '';
                 let diemTH = teamInfo[2] ? teamInfo[2].trim() : '';
                 let diemKill = teamInfo[3] ? teamInfo[3].trim() : '';
-                let tongDiem = teamInfo[4] ? teamInfo[4].trim() : '';
+                let tongDiem = teamInfo[4] ? teamInfo[4].trim() : '0';
 
                 if (!tenDoi || tenDoi === 'ĐỘI TUYỂN' || tenDoi === 'ĐỘI') continue;
 
-                let logoThichHop = "logo-" + tenDoi.toLowerCase() + ".jpg";
+                let soDiem = parseInt(tongDiem) || 0;
+                if (soDiem > maxTongDiem) maxTongDiem = soDiem; // Ghi nhận kỷ lục
 
-                if (hang === "1" || hang === 1) {
-                    if (booyahName) booyahName.innerText = tenDoi;
+                danhSachDoi.push({ hang, tenDoi, diemTH, diemKill, tongDiem: soDiem, rawTong: tongDiem });
+            }
+
+            // BƯỚC B: IN HTML CÙNG VỚI THANH PROGRESS BAR
+            danhSachDoi.forEach((team, index) => {
+                let logoThichHop = "logo-" + team.tenDoi.toLowerCase() + ".jpg";
+
+                if (team.hang === "1" || team.hang === 1) {
+                    if (booyahName) booyahName.innerText = team.tenDoi;
                     if (booyahLogo) booyahLogo.src = logoThichHop;
                 }
 
-                // 2. PHÉP THUẬT: BỌC 5 Ô VÀO TRONG THẺ <div class="g-row"> ĐỂ DI CHUỘT SÁNG CẢ HÀNG
+                // Tính % chiều dài thanh điểm
+                let phanTram = maxTongDiem > 0 ? (team.tongDiem / maxTongDiem) * 100 : 0;
+
                 let htmlRow = `
                     <div class="g-row">
-                        <div>${hang}</div>
+                        <div>${team.hang}</div>
                         <div>
                             <img src="${logoThichHop}" style="width:24px;height:24px;border-radius:6px;margin-right:10px;border:1px solid #00f0ff;object-fit:cover;"> 
-                            ${tenDoi}
+                            ${team.tenDoi}
                         </div>
-                        <div>${diemTH}</div>
-                        <div>${diemKill}</div>
-                        <div>${tongDiem}</div>
+                        <div>${team.diemTH}</div>
+                        <div>${team.diemKill}</div>
+                        <div>${team.rawTong}</div>
+                        
+                        <div class="pts-bar-wrap">
+                            <div class="pts-bar" id="bar-${index}" data-width="${phanTram}%"></div>
+                        </div>
                     </div>
                 `;
                 container.innerHTML += htmlRow;
-            }
+            });
+
+            // BƯỚC C: KÍCH HOẠT ANIMATION CHẠY THANH ĐIỂM SAU KHI BẢNG ĐÃ MỞ
+            setTimeout(() => {
+                danhSachDoi.forEach((team, index) => {
+                    let bar = document.getElementById(`bar-${index}`);
+                    if (bar) bar.style.width = bar.getAttribute('data-width');
+                });
+            }, 100);
+
         } catch (error) {
             console.error("Lỗi khi load dữ liệu trận: ", error);
         }
