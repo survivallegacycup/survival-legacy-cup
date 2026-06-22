@@ -67,8 +67,8 @@ async function moThongSo(soTran) {
         }
     }
     // 1. Tính toán Ngày thi đấu và Trận trong ngày (Mỗi ngày 6 trận)
-        let ngayThiDau = Math.ceil(soTran / 6);
-        let tranTrongNgay = ((soTran - 1) % 6) + 1;
+        ngayThiDau = Math.ceil(soTran / 6);
+        tranTrongNgay = ((soTran - 1) % 6) + 1;
 
         // 2. Cập nhật Số Trận (Hiển thị TRẬN 1, TRẬN 2...)
         let tenTranEl = document.getElementById('ten-tran-dau');
