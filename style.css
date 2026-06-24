@@ -2135,15 +2135,6 @@ body, .table-wrapper, .match-item, .sidebar,
     background: linear-gradient(#04080f, #04080f) padding-box,
                 linear-gradient(45deg, #00f0ff, #7b3cff, #00f0ff) border-box !important;
 }
-/* ================== FIX CUỐI CÙNG: CĂN GIỮA & CHUẨN MÀU XANH TÍM ================== */
-
-/* 1. Ép cột Hạng (Số 1, 2, 3...) đứng ngay chính giữa */
-.g-row > div:nth-child(1) {
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    text-align: center !important;
-}
 
 /* 2. Đổi viền Banner Booyah thành gradient Xanh Tím (Xóa viền vàng) */
 .match-info-banner.es-header {
@@ -2172,10 +2163,11 @@ body, .table-wrapper, .match-item, .sidebar,
     grid-template-columns: 80px 1fr 140px 140px 140px !important;
     width: 100% !important;
 }
+/* ================== FIX CHÓT: CĂN GIỮA ĐIỂM & ÉP THANH TIẾN ĐỘ SANG TRÁI ================== */
 
-/* 3. Căn giữa tuyệt đối cho Tiêu đề và Số điểm (Không lệch 1 pixel) */
-.g-row-header > .g-header:nth-child(n+3),
-.g-row > div:nth-child(n+3) {
+/* 1. CHỈ căn giữa đúng 3 cột Điểm (Cột 3, 4, 5). Tha cho thanh Progress Bar! */
+.g-row-header > div:nth-child(3), .g-row-header > div:nth-child(4), .g-row-header > div:nth-child(5),
+.g-row > div:nth-child(3), .g-row > div:nth-child(4), .g-row > div:nth-child(5) {
     display: flex !important;
     justify-content: center !important;
     align-items: center !important;
@@ -2183,29 +2175,20 @@ body, .table-wrapper, .match-item, .sidebar,
     padding-left: 0 !important;
     padding-right: 0 !important;
 }
-/* ================== GIẢI CỨU THANH PROGRESS BAR ================== */
-/* Miễn nhiễm thanh điểm khỏi lệnh căn giữa cột, ép nó nằm bám đáy hàng */
+
+/* 2. Ép Thanh Progress Bar bám chặt lề trái và chạy sang phải */
 .g-row > .pts-bar-wrap {
-    position: absolute !important;
-    display: block !important;
-    bottom: 0 !important;
-    left: 80px !important; /* Neo chặt bám sát sau cột Hạng */
-    right: 0 !important;
-    height: 3px !important;
-    padding: 0 !important;
-    margin: 0 !important;
-}
-/* ================== FIX THANH PROGRESS BAR BÁM LỀ TRÁI ================== */
-.g-row > .pts-bar-wrap {
-    display: flex !important; 
-    justify-content: flex-start !important; /* Chìa khóa tuyệt đối ép thanh chạy từ bên trái */
     position: absolute !important;
     bottom: 0 !important;
     left: 80px !important; /* Neo sát ngay sau cột Hạng */
     right: 0 !important;
     height: 3px !important;
+    display: block !important; /* Xóa bỏ flex để không bao giờ bị căn giữa nữa */
+    padding: 0 !important;
+    margin: 0 !important;
 }
 
 .g-row > .pts-bar-wrap > .pts-bar {
-    margin: 0 !important; /* Xóa bỏ mọi lực hút ẩn đẩy thanh ra giữa */
+    float: left !important; /* Lệnh tối thượng: Ép dải màu mọc từ bên trái */
+    margin: 0 !important;
 }
