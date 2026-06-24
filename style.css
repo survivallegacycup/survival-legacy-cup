@@ -2156,3 +2156,30 @@ body, .table-wrapper, .match-item, .sidebar,
     background: linear-gradient(#04080f, #04080f) padding-box,
                 linear-gradient(45deg, #00f0ff, #7b3cff, #00f0ff) border-box !important;
 }
+/* ================== THUỐC ĐẶC TRỊ GÓC VUÔNG & LỆCH CỘT ================== */
+
+/* 1. Mở khóa góc bị cắt, bo tròn mượt mà */
+.match-info-banner.es-header {
+    clip-path: none !important; /* Chìa khóa để hết gãy khúc */
+    border-radius: 12px !important;
+    border: 1px solid rgba(0, 240, 255, 0.5) !important;
+    border-image: none !important;
+}
+
+/* 2. Ép lưới cột đều tăm tắp (3 cột điểm bằng đúng 140px) */
+.g-row-header, .g-row {
+    display: grid !important;
+    grid-template-columns: 80px 1fr 140px 140px 140px !important;
+    width: 100% !important;
+}
+
+/* 3. Căn giữa tuyệt đối cho Tiêu đề và Số điểm (Không lệch 1 pixel) */
+.g-row-header > .g-header:nth-child(n+3),
+.g-row > div:nth-child(n+3) {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    text-align: center !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
