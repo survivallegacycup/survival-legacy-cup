@@ -2180,12 +2180,13 @@ body, .table-wrapper, .match-item, .sidebar,
 .g-row > .pts-bar-wrap {
     position: absolute !important;
     bottom: 0 !important;
-    left: 80px !important; /* Neo sát ngay sau cột Hạng */
+    left: 0 !important;
     right: 0 !important;
     height: 3px !important;
     display: block !important; /* Xóa bỏ flex để không bao giờ bị căn giữa nữa */
     padding: 0 !important;
     margin: 0 !important;
+    border-radius: 0 0 6px 6px !important;
 }
 
 .g-row > .pts-bar-wrap > .pts-bar {
