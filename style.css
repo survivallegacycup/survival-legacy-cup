@@ -2195,3 +2195,17 @@ body, .table-wrapper, .match-item, .sidebar,
     padding: 0 !important;
     margin: 0 !important;
 }
+/* ================== FIX THANH PROGRESS BAR BÁM LỀ TRÁI ================== */
+.g-row > .pts-bar-wrap {
+    display: flex !important; 
+    justify-content: flex-start !important; /* Chìa khóa tuyệt đối ép thanh chạy từ bên trái */
+    position: absolute !important;
+    bottom: 0 !important;
+    left: 80px !important; /* Neo sát ngay sau cột Hạng */
+    right: 0 !important;
+    height: 3px !important;
+}
+
+.g-row > .pts-bar-wrap > .pts-bar {
+    margin: 0 !important; /* Xóa bỏ mọi lực hút ẩn đẩy thanh ra giữa */
+}
