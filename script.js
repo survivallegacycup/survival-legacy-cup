@@ -1073,3 +1073,158 @@ if (canvasModal) {
     }
     drawModalParticles();
 }
+// =========================================================================
+// CHỨC NĂNG BẢNG XẾP HẠNG V5 (LẮP LOGO TỰ ĐỘNG + ANIMATION + CHUYỂN BẢNG)
+// =========================================================================
+
+const DU_LIEU_BXH_V5 = {
+  'A': [
+    {rank:1, name:"FT", booyah:3, kill:81, match:6, total:133},
+    {rank:2, name:"WHD", booyah:1, kill:71, match:6, total:113},
+    {rank:3, name:"CNCT", booyah:2, kill:42, match:6, total:91},
+    {rank:4, name:"TQ", booyah:0, kill:32, match:6, total:72},
+    {rank:5, name:"NNA", booyah:0, kill:32, match:6, total:61},
+    {rank:6, name:"UZI", booyah:0, kill:30, match:6, total:58},
+    {rank:7, name:"NNN", booyah:0, kill:24, match:6, total:55},
+    {rank:8, name:"ARC", booyah:0, kill:18, match:6, total:37},
+    {rank:9, name:"T2AL", booyah:0, kill:10, match:6, total:28},
+    {rank:10, name:"KG", booyah:0, kill:10, match:6, total:24},
+    {rank:11, name:"HP", booyah:0, kill:2, match:6, total:14},
+    {rank:12, name:"BNE", booyah:0, kill:1, match:6, total:11}
+  ],
+  'B': [
+    {rank:1, name:"PHANTOM", booyah:4, kill:90, match:6, total:150},
+    {rank:2, name:"OVN", booyah:2, kill:60, match:6, total:105},
+    {rank:3, name:"PCM", booyah:0, kill:55, match:6, total:80},
+    {rank:4, name:"TE", booyah:0, kill:40, match:6, total:60},
+    {rank:5, name:"QC", booyah:0, kill:35, match:6, total:50}
+  ],
+  'C': [
+    {rank:1, name:"MILKY", booyah:2, kill:65, match:6, total:110},
+    {rank:2, name:"NETFF", booyah:1, kill:40, match:6, total:85},
+    {rank:3, name:"TLK", booyah:1, kill:30, match:6, total:65}
+  ],
+  'D': [
+    {rank:1, name:"TGL", booyah:3, kill:80, match:6, total:140},
+    {rank:2, name:"NOK", booyah:1, kill:45, match:6, total:90}
+  ]
+};
+
+function getTierV5(rank){
+  if(rank<=6) return { ac:"#00e5ff", sweep:"rgba(0,229,255,0.06)", bar:"#00e5ff", rowBg:"#020c14", nameBase:"#5ab8d8", nameHover:"#d0f8ff", rankBase:"#1e6080", rankHover:"#00e5ff", avaBase:"#001824", avaBorder:"#00e5ff22", avaHoverBg:"#002a38", avaHoverBorder:"#00e5ff88", totalBase:"#00e5ff", totalSize:15, killCol:"#22d3a5", booyahCol:"#e8b400" };
+  if(rank<=9) return { ac:"#d060f0", sweep:"rgba(208,96,240,0.06)", bar:"#d060f0", rowBg:"#07020e", nameBase:"#9858b8", nameHover:"#e8c0ff", rankBase:"#5a2878", rankHover:"#d060f0", avaBase:"#0e0418", avaBorder:"#d060f022", avaHoverBg:"#1a0830", avaHoverBorder:"#d060f088", totalBase:"#c050e0", totalSize:14, killCol:"#22d3a599", booyahCol:"#e8b40099" };
+  return { ac:"#40a0e0", sweep:"rgba(64,160,224,0.05)", bar:"#40a0e0", rowBg:"#02080f", nameBase:"#3a6888", nameHover:"#90c8e8", rankBase:"#1e4060", rankHover:"#40a0e0", avaBase:"#040e18", avaBorder:"#40a0e022", avaHoverBg:"#081828", avaHoverBorder:"#40a0e066", totalBase:"#3890c8", totalSize:13, killCol:"#22d3a566", booyahCol:"#e8b40066" };
+}
+
+function renderLeaderboardV5(bangId) {
+  const teams = DU_LIEU_BXH_V5[bangId] || [];
+  const podWrap = document.getElementById("podium");
+  const restWrap = document.getElementById("rest-rows");
+  
+  if(!podWrap || !restWrap) return; // Nếu ko ở trang BXH thì bỏ qua
+  
+  podWrap.innerHTML = "";
+  restWrap.innerHTML = "";
+  if(teams.length === 0) return;
+
+  const POD_CFG = [
+    {teamIdx:1, podOrder:0, label:"HẠNG NHÌ", icon:"&#9670;", color:"#00c8ff", bg:"#00040e", border:"#00c8ff33", avaBg:"#001a2e", ringColor:"#00c8ff55", delay:350},
+    {teamIdx:0, podOrder:1, label:"HẠNG NHẤT", icon:"&#9813;", color:"#e8b400", bg:"#0c0800", border:"#e8b40044", avaBg:"#1a1000", ringColor:"#e8b40066", delay:150},
+    {teamIdx:2, podOrder:2, label:"HẠNG BA", icon:"&#9651;", color:"#ff6a00", bg:"#0c0400", border:"#ff6a0033", avaBg:"#1a0800", ringColor:"#ff6a0044", delay:550}
+  ];
+
+  POD_CFG.forEach(p => {
+    if(!teams[p.teamIdx]) return;
+    const t = teams[p.teamIdx];
+    let logoThichHop = "logo-" + t.name.toLowerCase() + ".jpg"; // LOGO TỰ ĐỘNG
+
+    const card = document.createElement("div");
+    card.className = "pod-card";
+    card.style.cssText = `background:${p.bg};border-color:${p.border};order:${p.podOrder};padding-top:${p.podOrder===1?'20px':'14px'}`;
+    card.innerHTML = `<div class="pod-shine"></div>
+      <div class="pod-no" style="color:${p.color}">${p.label}</div>
+      <div class="pod-icon" style="color:${p.color}">${p.icon}</div>
+      <div class="pod-ava" style="background:${p.avaBg};border-color:${p.color};">
+        <div class="pod-ring" style="border-color:${p.ringColor}"></div>
+        <img src="${logoThichHop}" style="width:100%;height:100%;border-radius:8px;object-fit:cover;position:relative;z-index:2;">
+      </div>
+      <div class="pod-name" style="color:${p.color};text-shadow:0 0 18px ${p.color}66">${t.name}</div>
+      <div class="pod-pts" style="color:${p.color};text-shadow:0 0 24px ${p.color}77">${t.total}</div>
+      <div class="pod-ptslbl">tổng điểm</div>
+      <div class="pod-stats">
+        <div class="ps-item"><span class="ps-v" style="color:${p.color}99">${t.booyah}</span><span class="ps-l">BOOYAH</span></div>
+        <div class="ps-item"><span class="ps-v" style="color:#22d3a5">${t.kill}</span><span class="ps-l">HẠ GỤC</span></div>
+        <div class="ps-item"><span class="ps-v" style="color:#3a6080">${t.match}</span><span class="ps-l">TRẬN</span></div>
+      </div>`;
+    podWrap.appendChild(card);
+    setTimeout(() => card.classList.add("show"), p.delay);
+  });
+
+  const maxTotal = teams[0].total;
+  teams.slice(3).forEach((t, i) => {
+    if(i === 3) {
+      const cut = document.createElement("div");
+      cut.className = "qual-cut";
+      cut.innerHTML = '<span class="cut-lbl">VÒNG LOẠI</span>';
+      restWrap.appendChild(cut);
+    }
+    
+    let logoThichHop = "logo-" + t.name.toLowerCase() + ".jpg"; // LOGO TỰ ĐỘNG
+    const tier = getTierV5(t.rank);
+    
+    const row = document.createElement("div");
+    row.className = "rest-row";
+    row.style.background = tier.rowBg;
+    row.innerHTML = `
+      <div class="rr-sweep" style="background:${tier.sweep}"></div>
+      <div class="rr-bar" style="background:${tier.bar}"></div>
+      <div class="rr-rank" style="color:${tier.rankBase}">${t.rank}</div>
+      <div class="rr-team">
+        <div class="rr-ava" style="background:${tier.avaBase};border:1px solid ${tier.avaBorder};">
+            <img src="${logoThichHop}" style="width:100%;height:100%;border-radius:4px;object-fit:cover;">
+        </div>
+        <span class="rr-name" style="color:${tier.nameBase}">${t.name}</span>
+      </div>
+      <div class="rr-val" style="color:${tier.booyahCol}">${t.booyah}</div>
+      <div class="rr-val" style="color:${tier.killCol}">${t.kill}</div>
+      <div class="rr-val" style="color:#2a4a6a">${t.match}</div>
+      <div class="rr-total" style="color:${tier.totalBase};font-size:${tier.totalSize}px">${t.total}</div>
+      <div class="prog-wrap"><div class="prog" id="p${bangId}-${i}" style="background:${tier.bar}77"></div></div>`;
+
+    const rn = row.querySelector(".rr-rank"), nm = row.querySelector(".rr-name");
+    const av = row.querySelector(".rr-ava"), tot = row.querySelector(".rr-total");
+    row.addEventListener("mouseenter", () => {
+      rn.style.color = tier.rankHover; nm.style.color = tier.nameHover;
+      av.style.background = tier.avaHoverBg; av.style.borderColor = tier.avaHoverBorder;
+      tot.style.color = "#fff"; tot.style.textShadow = `0 0 14px ${tier.ac}cc`; tot.style.fontSize = (tier.totalSize+1)+"px";
+    });
+    row.addEventListener("mouseleave", () => {
+      rn.style.color = tier.rankBase; nm.style.color = tier.nameBase;
+      av.style.background = tier.avaBase; av.style.borderColor = tier.avaBorder;
+      tot.style.color = tier.totalBase; tot.style.textShadow = "none"; tot.style.fontSize = tier.totalSize+"px";
+    });
+
+    restWrap.appendChild(row);
+    setTimeout(() => {
+      row.classList.add("show");
+      setTimeout(() => {
+        const p = document.getElementById(`p${bangId}-${i}`);
+        if(p) p.style.width = Math.round(t.total/maxTotal*100) + "%";
+      }, 200);
+    }, 750 + i * 65);
+  });
+}
+
+// Bắt sự kiện Click nút chuyển Bảng
+document.querySelectorAll(".tab").forEach(btn => {
+  btn.addEventListener("click", function() {
+    document.querySelectorAll(".tab").forEach(x => x.classList.remove("on"));
+    this.classList.add("on");
+    renderLeaderboardV5(this.getAttribute("data-bang"));
+  });
+});
+
+// Chạy mặc định Bảng A nếu đang ở trang Bảng Xếp Hạng
+if(document.getElementById("bxh-root")) {
+    renderLeaderboardV5('A');
+}

@@ -52,138 +52,38 @@
         </aside>
 
         <main class="content">
-            <!-- KHU VỰC BẢNG XẾP HẠNG CHUẨN GARENA -->
-<div class="garena-rank-container">
-    
-    <!-- BỐ CỤC HEADER MỚI (CHIA TRÁI - PHẢI) -->
-    <div class="rank-header-wrapper">
-        
-        <!-- Bên Trái: Tiêu đề tĩnh -->
-        <div class="header-left">
-            <div class="static-label">THÔNG TIN ĐỘI TUYỂN</div>
-            <div id="dynamic-title" class="rank-title-sub"> CÁC TRẬN VÒNG BẢNG - SURVIVAL LEGACY CUP SS1</div>
+            <div id="bxh-root">
+      <canvas id="fx"></canvas>
+      
+      <div class="hdr">
+        <div class="hdr-left">
+          <span class="hdr-eyebrow">Survival Legacy Cup SS1 — Vòng bảng</span>
+          <span class="hdr-title">BẢNG XẾP <span>HẠNG</span></span>
         </div>
-
-        <!-- Bên Phải: Các Nút Chọn Bảng (Bấm được) -->
-        <div class="header-right-tabs">
-            <div class="r-tab active" onclick="changeTab(this, 'A')">BẢNG A</div>
-            <div class="r-tab" onclick="changeTab(this, 'B')">BẢNG B</div>
-            <div class="r-tab" onclick="changeTab(this, 'C')">BẢNG C</div>
-            <div class="r-tab" onclick="changeTab(this, 'D')">BẢNG D</div>
+        <div class="hdr-right">
+          <span class="season-badge">21–24/05/2026</span>
+          <div class="live-pill"><div class="live-dot"></div><span class="live-txt">LIVE</span></div>
         </div>
-
+      </div>
+      
+      <div class="tabs">
+        <button class="tab on" data-bang="A">BẢNG A</button>
+        <button class="tab" data-bang="B">BẢNG B</button>
+        <button class="tab" data-bang="C">BẢNG C</button>
+        <button class="tab" data-bang="D">BẢNG D</button>
+      </div>
+      
+      <div class="podium-wrap" id="podium"></div>
+      
+      <div class="rest-wrap">
+        <div class="rest-head">
+          <div class="rh">NO.</div><div class="rh">ĐỘI</div>
+          <div class="rh rc">BOOYAH</div><div class="rh rc">HẠ GỤC</div>
+          <div class="rh rc">TRẬN</div><div class="rh rc">ĐIỂM</div>
+        </div>
+        <div id="rest-rows"></div>
+      </div>
     </div>
-    <!-- Bảng điểm chính -->
-    <table class="garena-table">
-        <thead>
-            <tr>
-                <th width="10%">HẠNG</th>
-                <th width="35%" class="text-left">ĐỘI TUYỂN</th>
-                <th width="15%">BOOYAH! <span class="sort-icon">⬍</span></th>
-                <th width="15%">TỔNG HẠ GỤC <span class="sort-icon">⬍</span></th>
-                <th width="10%">TRẬN</th>
-                <th width="15%">TỔNG ĐIỂM <span class="sort-icon">⬍</span></th>
-            </tr>
-        </thead>
-    <tbody id="bang-A" class="group-data">
-            <!-- Team 1 -->
-            <tr><td class="rank-num">1</td><td class="team-name"><img src="logo-ft.jpg" alt=""> <span>FT</span></td><td>3</td><td>81</td><td>6</td><td class="total-score">133</td></tr>
-            <!-- Team 2 -->
-            <tr><td class="rank-num">2</td><td class="team-name"><img src="logo-whd.jpg" alt=""> <span>WHD</span></td><td>1</td><td>71</td><td>6</td><td class="total-score">113</td></tr>
-            <!-- Team 3 -->
-            <tr><td class="rank-num">3</td><td class="team-name"><img src="logo-cnct.jpg" alt=""> <span>CNCT</span></td><td>2</td><td>42</td><td>6</td><td class="total-score">91</td></tr>
-            <!-- Team 4 -->
-            <tr><td class="rank-num">4</td><td class="team-name"><img src="logo-tq.jpg" alt=""> <span>TQ</span></td><td>0</td><td>32</td><td>6</td><td class="total-score">72</td></tr>
-            <!-- Team 5 -->
-            <tr><td class="rank-num">5</td><td class="team-name"><img src="logo-nna.jpg" alt=""> <span>NNA</span></td><td>0</td><td>32</td><td>6</td><td class="total-score">61</td></tr>
-            <!-- Team 6 -->
-            <tr><td class="rank-num">6</td><td class="team-name"><img src="logo-uzi.jpg" alt=""> <span>UZI</span></td><td>0</td><td>30</td><td>6</td><td class="total-score">58</td></tr>
-            <!-- Team 7 -->
-            <tr><td class="rank-num">7</td><td class="team-name"><img src="logo-nnn.jpg" alt=""> <span>NNN</span></td><td>0</td><td>24</td><td>6</td><td class="total-score">55</td></tr>
-            <!-- Team 8 -->
-            <tr><td class="rank-num">8</td><td class="team-name"><img src="logo-arc.jpg" alt=""> <span>ARC</span></td><td>0</td><td>18</td><td>6</td><td class="total-score">37</td></tr>
-            <!-- Team 9 -->
-            <tr><td class="rank-num">9</td><td class="team-name"><img src="logo-t2al.jpg" alt=""> <span>T2AL</span></td><td>0</td><td>10</td><td>6</td><td class="total-score">28</td></tr>
-            <!-- Team 10 -->
-            <tr><td class="rank-num">10</td><td class="team-name"><img src="logo-kg.jpg" alt=""> <span>KG</span></td><td>0</td><td>10</td><td>6</td><td class="total-score">24</td></tr>
-            <!-- Team 11 -->
-            <tr><td class="rank-num">11</td><td class="team-name"><img src="logo-hp.jpg" alt=""> <span>HP</span></td><td>0</td><td>2</td><td>6</td><td class="total-score">14</td></tr>
-            <!-- Team 12 -->
-            <tr><td class="rank-num">12</td><td class="team-name"><img src="logo-bne.jpg" alt=""> <span>BNE</span></td><td>0</td><td>1</td><td>6</td><td class="total-score">11</td></tr>
-        </tbody>
-        <!-- KHO DỮ LIỆU BẢNG B -->
-        <tbody id="bang-B" class="group-data" style="display: none;">
-            <tr><td class="rank-num">1</td><td class="team-name"><img src="logo-qc.jpg" alt=""> <span>QC</span></td><td>3</td><td>93</td><td>6</td><td class="total-score">146</td></tr>
-            <tr><td class="rank-num">2</td><td class="team-name"><img src="logo-bnn1.jpg" alt=""> <span>BNN1</span></td><td>1</td><td>62</td><td>6</td><td class="total-score">104</td></tr>
-            <tr><td class="rank-num">3</td><td class="team-name"><img src="logo-gods.jpg" alt=""> <span>GODS</span></td><td>0</td><td>37</td><td>6</td><td class="total-score">70</td></tr>
-            <tr><td class="rank-num">4</td><td class="team-name"><img src="logo-tgl.jpg" alt=""> <span>TGL</span></td><td>2</td><td>24</td><td>6</td><td class="total-score">68</td></tr>
-            <tr><td class="rank-num">5</td><td class="team-name"><img src="logo-tlk.jpg" alt=""> <span>TLK</span></td><td>0</td><td>26</td><td>6</td><td class="total-score">63</td></tr>
-            <tr><td class="rank-num">6</td><td class="team-name"><img src="logo-mao.jpg" alt=""> <span>MAO</span></td><td>0</td><td>25</td><td>6</td><td class="total-score">62</td></tr>
-            <tr><td class="rank-num">7</td><td class="team-name"><img src="logo-nvd.jpg" alt=""> <span>NVD</span></td><td>0</td><td>22</td><td>6</td><td class="total-score">55</td></tr>
-            <tr><td class="rank-num">8</td><td class="team-name"><img src="logo-blx.jpg" alt=""> <span>BLX</span></td><td>0</td><td>10</td><td>6</td><td class="total-score">32</td></tr>
-            <tr><td class="rank-num">9</td><td class="team-name"><img src="logo-uch.jpg" alt=""> <span>UCH</span></td><td>0</td><td>16</td><td>6</td><td class="total-score">28</td></tr>
-            <tr><td class="rank-num">10</td><td class="team-name"><img src="logo-wb.jpg" alt=""> <span>WB</span></td><td>0</td><td>8</td><td>6</td><td class="total-score">20</td></tr>
-            <tr><td class="rank-num">11</td><td class="team-name"><img src="logo-ks.jpg" alt=""> <span>KS</span></td><td>0</td><td>0</td><td>6</td><td class="total-score">0</td></tr>
-            <tr><td class="rank-num">12</td><td class="team-name"><img src="logo-btn.jpg" alt=""> <span>BTN</span></td><td>0</td><td>0</td><td>6</td><td class="total-score">0</td></tr>
-        </tbody>
-        <!-- KHO DỮ LIỆU BẢNG C -->
-        <tbody id="bang-C" class="group-data" style="display: none;">
-            <tr><td class="rank-num">1</td><td class="team-name"><img src="logo-4t.jpg" alt=""> <span>4T</span></td><td>2</td><td>36</td><td>6</td><td class="total-score">81</td></tr>
-            <tr><td class="rank-num">2</td><td class="team-name"><img src="logo-nok.jpg" alt=""> <span>NOK</span></td><td>2</td><td>29</td><td>6</td><td class="total-score">71</td></tr>
-            <tr><td class="rank-num">3</td><td class="team-name"><img src="logo-km.jpg" alt=""> <span>KM</span></td><td>0</td><td>32</td><td>6</td><td class="total-score">71</td></tr>
-            <tr><td class="rank-num">4</td><td class="team-name"><img src="logo-wr.jpg" alt=""> <span>WR</span></td><td>0</td><td>31</td><td>6</td><td class="total-score">66</td></tr>
-            <tr><td class="rank-num">5</td><td class="team-name"><img src="logo-4tl.jpg" alt=""> <span>4TL</span></td><td>1</td><td>32</td><td>6</td><td class="total-score">65</td></tr>
-            <tr><td class="rank-num">6</td><td class="team-name"><img src="logo-se.jpg" alt=""> <span>SE</span></td><td>0</td><td>29</td><td>6</td><td class="total-score">61</td></tr>
-            <tr><td class="rank-num">7</td><td class="team-name"><img src="logo-tgl2.jpg" alt=""> <span>TGL2</span></td><td>0</td><td>26</td><td>6</td><td class="total-score">57</td></tr>
-            <tr><td class="rank-num">8</td><td class="team-name"><img src="logo-mb.jpg" alt=""> <span>MB</span></td><td>0</td><td>9</td><td>6</td><td class="total-score">46</td></tr>
-            <tr><td class="rank-num">9</td><td class="team-name"><img src="logo-pcm.jpg" alt=""> <span>PCM</span></td><td>0</td><td>13</td><td>6</td><td class="total-score">24</td></tr>
-            <tr><td class="rank-num">10</td><td class="team-name"><img src="logo-6it.jpg" alt=""> <span>6IT</span></td><td>0</td><td>0</td><td>6</td><td class="total-score">0</td></tr>
-            <tr><td class="rank-num">11</td><td class="team-name"><img src="logo-hre.jpg" alt=""> <span>HRE</span></td><td>0</td><td>0</td><td>6</td><td class="total-score">0</td></tr>
-            <tr><td class="rank-num">12</td><td class="team-name"><img src="logo-dc.jpg" alt=""> <span>DC</span></td><td>1</td><td>0</td><td>6</td><td class="total-score">0</td></tr>
-        </tbody>
-        <!-- KHO DỮ LIỆU BẢNG D -->
-        <tbody id="bang-D" class="group-data" style="display: none;">
-            <tr><td class="rank-num">1</td><td class="team-name"><img src="logo-tgl3.jpg" alt=""> <span>TGL3</span></td><td>2</td><td>54</td><td>6</td><td class="total-score">98</td></tr>
-            <tr><td class="rank-num">2</td><td class="team-name"><img src="logo-te.jpg" alt=""> <span>TE</span></td><td>1</td><td>56</td><td>6</td><td class="total-score">94</td></tr>
-            <tr><td class="rank-num">3</td><td class="team-name"><img src="logo-lt.jpg" alt=""> <span>LT</span></td><td>0</td><td>52</td><td>6</td><td class="total-score">91</td></tr>
-            <tr><td class="rank-num">4</td><td class="team-name"><img src="logo-ns.jpg" alt=""> <span>NS</span></td><td>1</td><td>42</td><td>6</td><td class="total-score">86</td></tr>
-            <tr><td class="rank-num">5</td><td class="team-name"><img src="logo-lhdxb.jpg" alt=""> <span>LHDXB</span></td><td>1</td><td>44</td><td>6</td><td class="total-score">83</td></tr>
-            <tr><td class="rank-num">6</td><td class="team-name"><img src="logo-ovn.jpg" alt=""> <span>OVN</span></td><td>0</td><td>42</td><td>6</td><td class="total-score">70</td></tr>
-            <tr><td class="rank-num">7</td><td class="team-name"><img src="logo-ke.jpg" alt=""> <span>KE</span></td><td>0</td><td>39</td><td>6</td><td class="total-score">65</td></tr>
-            <tr><td class="rank-num">8</td><td class="team-name"><img src="logo-hd2.jpg" alt=""> <span>HD2</span></td><td>1</td><td>30</td><td>6</td><td class="total-score">61</td></tr>
-            <tr><td class="rank-num">9</td><td class="team-name"><img src="logo-xh.jpg" alt=""> <span>XH</span></td><td>0</td><td>26</td><td>6</td><td class="total-score">45</td></tr>
-            <tr><td class="rank-num">10</td><td class="team-name"><img src="logo-ea.jpg" alt=""> <span>EA</span></td><td>0</td><td>21</td><td>6</td><td class="total-score">35</td></tr>
-            <tr><td class="rank-num">11</td><td class="team-name"><img src="logo-hd.jpg" alt=""> <span>HD</span></td><td>0</td><td>23</td><td>6</td><td class="total-score">31</td></tr>
-            <tr><td class="rank-num">12</td><td class="team-name"><img src="logo-hkt.jpg" alt=""> <span>HKT</span></td><td>0</td><td>9</td><td>6</td><td class="total-score">20</td></tr>
-        </tbody>
-    </table>
-</div>
-
-<script>
-    function changeTab(clickedElement, bangName) {
-        // 1. Xóa hiệu ứng sáng ở tất cả các nút
-        let tabs = document.querySelectorAll('.r-tab');
-        tabs.forEach(tab => { tab.classList.remove('active'); });
-
-        // 2. Bật hiệu ứng sáng chói (Glow) cho nút vừa bấm
-        clickedElement.classList.add('active');
-
-        // 3. Tự động đổi Tiêu đề tĩnh bên trái cho khớp
-        document.getElementById('dynamic-title').innerText = "VÒNG BẢNG " + bangName + " - SURVIVAL LEGACY CUP SS1";
-
-        // 4. PHÉP THUẬT Ở ĐÂY: Ẩn tất cả các bảng đi
-        let allGroups = document.querySelectorAll('.group-data');
-        allGroups.forEach(group => { group.style.display = 'none'; });
-
-        // 5. Chỉ hiển thị duy nhất Bảng vừa được chọn (bang-A, bang-B...)
-        let targetGroup = document.getElementById('bang-' + bangName);
-        if (targetGroup) {
-            // Dùng 'table-row-group' thay vì 'block' để bảng không bị vỡ khung
-            targetGroup.style.display = 'table-row-group'; 
-        }
-    }
-</script>
-</div>
         </main>
     </div>
     <div id="modal-thong-so" class="modal-overlay" style="display: none;">
