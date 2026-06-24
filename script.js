@@ -1077,6 +1077,7 @@ if (canvasModal) {
 // CHỨC NĂNG BẢNG XẾP HẠNG V5 (LẮP LOGO TỰ ĐỘNG + ANIMATION + CHUYỂN BẢNG)
 // =========================================================================
 
+// 1. DỮ LIỆU ĐỘNG CHO 4 BẢNG (Đã cập nhật chuẩn 100% từ mã HTML của bạn)
 const DU_LIEU_BXH_V5 = {
   'A': [
     {rank:1, name:"FT", booyah:3, kill:81, match:6, total:133},
@@ -1093,20 +1094,46 @@ const DU_LIEU_BXH_V5 = {
     {rank:12, name:"BNE", booyah:0, kill:1, match:6, total:11}
   ],
   'B': [
-    {rank:1, name:"PHANTOM", booyah:4, kill:90, match:6, total:150},
-    {rank:2, name:"OVN", booyah:2, kill:60, match:6, total:105},
-    {rank:3, name:"PCM", booyah:0, kill:55, match:6, total:80},
-    {rank:4, name:"TE", booyah:0, kill:40, match:6, total:60},
-    {rank:5, name:"QC", booyah:0, kill:35, match:6, total:50}
+    {rank:1, name:"QC", booyah:3, kill:93, match:6, total:146},
+    {rank:2, name:"BNN1", booyah:1, kill:62, match:6, total:104},
+    {rank:3, name:"GODS", booyah:0, kill:37, match:6, total:70},
+    {rank:4, name:"TGL", booyah:2, kill:24, match:6, total:68},
+    {rank:5, name:"TLK", booyah:0, kill:26, match:6, total:63},
+    {rank:6, name:"MAO", booyah:0, kill:25, match:6, total:62},
+    {rank:7, name:"NVD", booyah:0, kill:22, match:6, total:55},
+    {rank:8, name:"BLX", booyah:0, kill:10, match:6, total:32},
+    {rank:9, name:"UCH", booyah:0, kill:16, match:6, total:28},
+    {rank:10, name:"WB", booyah:0, kill:8, match:6, total:20},
+    {rank:11, name:"KS", booyah:0, kill:0, match:0, total:0},
+    {rank:12, name:"BTN", booyah:0, kill:0, match:0, total:0}
   ],
   'C': [
-    {rank:1, name:"MILKY", booyah:2, kill:65, match:6, total:110},
-    {rank:2, name:"NETFF", booyah:1, kill:40, match:6, total:85},
-    {rank:3, name:"TLK", booyah:1, kill:30, match:6, total:65}
+    {rank:1, name:"4T", booyah:2, kill:36, match:6, total:81},
+    {rank:2, name:"NOK", booyah:2, kill:29, match:6, total:71},
+    {rank:3, name:"KM", booyah:0, kill:32, match:6, total:71},
+    {rank:4, name:"WR", booyah:0, kill:31, match:6, total:66},
+    {rank:5, name:"4TL", booyah:1, kill:32, match:6, total:65},
+    {rank:6, name:"SE", booyah:0, kill:29, match:6, total:61},
+    {rank:7, name:"TGL2", booyah:0, kill:26, match:6, total:57},
+    {rank:8, name:"MB", booyah:0, kill:9, match:6, total:46},
+    {rank:9, name:"PCM", booyah:0, kill:13, match:6, total:24},
+    {rank:10, name:"6IT", booyah:0, kill:0, match:0, total:0},
+    {rank:11, name:"HRE", booyah:0, kill:0, match:0, total:0},
+    {rank:12, name:"DC", booyah:0, kill:0, match:0, total:0}
   ],
   'D': [
-    {rank:1, name:"TGL", booyah:3, kill:80, match:6, total:140},
-    {rank:2, name:"NOK", booyah:1, kill:45, match:6, total:90}
+    {rank:1, name:"TGL3", booyah:2, kill:54, match:6, total:98},
+    {rank:2, name:"TE", booyah:1, kill:56, match:6, total:94},
+    {rank:3, name:"LT", booyah:0, kill:52, match:6, total:91},
+    {rank:4, name:"NS", booyah:1, kill:42, match:6, total:86},
+    {rank:5, name:"LHDXB", booyah:1, kill:44, match:6, total:83},
+    {rank:6, name:"OVN", booyah:0, kill:42, match:6, total:70},
+    {rank:7, name:"KE", booyah:0, kill:39, match:6, total:65},
+    {rank:8, name:"HD2", booyah:1, kill:30, match:6, total:61},
+    {rank:9, name:"XH", booyah:0, kill:26, match:6, total:45},
+    {rank:10, name:"EA", booyah:0, kill:17, match:6, total:35},
+    {rank:11, name:"HD", booyah:0, kill:23, match:6, total:31},
+    {rank:12, name:"HKT", booyah:0, kill:9, match:6, total:20}
   ]
 };
 
