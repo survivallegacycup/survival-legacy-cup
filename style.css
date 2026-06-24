@@ -2183,3 +2183,15 @@ body, .table-wrapper, .match-item, .sidebar,
     padding-left: 0 !important;
     padding-right: 0 !important;
 }
+/* ================== GIẢI CỨU THANH PROGRESS BAR ================== */
+/* Miễn nhiễm thanh điểm khỏi lệnh căn giữa cột, ép nó nằm bám đáy hàng */
+.g-row > .pts-bar-wrap {
+    position: absolute !important;
+    display: block !important;
+    bottom: 0 !important;
+    left: 80px !important; /* Neo chặt bám sát sau cột Hạng */
+    right: 0 !important;
+    height: 3px !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
