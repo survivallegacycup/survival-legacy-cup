@@ -2135,3 +2135,24 @@ body, .table-wrapper, .match-item, .sidebar,
     background: linear-gradient(#04080f, #04080f) padding-box,
                 linear-gradient(45deg, #00f0ff, #7b3cff, #00f0ff) border-box !important;
 }
+/* ================== FIX CUỐI CÙNG: CĂN GIỮA & CHUẨN MÀU XANH TÍM ================== */
+
+/* 1. Ép cột Hạng (Số 1, 2, 3...) đứng ngay chính giữa */
+.g-row > div:nth-child(1) {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+}
+
+/* 2. Đổi viền Banner Booyah thành gradient Xanh Tím (Xóa viền vàng) */
+.match-info-banner.es-header {
+    border: 2px solid transparent !important;
+    border-image: linear-gradient(90deg, #00f0ff, #7b3cff) 1 !important;
+}
+
+/* 3. Làm sạch viền chạy Neon bên ngoài (Chỉ giữ Xanh và Tím, bỏ các màu rườm rà) */
+.modal-content.es-root {
+    background: linear-gradient(#04080f, #04080f) padding-box,
+                linear-gradient(45deg, #00f0ff, #7b3cff, #00f0ff) border-box !important;
+}
