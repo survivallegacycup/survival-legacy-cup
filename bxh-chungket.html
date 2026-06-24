@@ -51,43 +51,37 @@
             </ul>
         </aside>
 
-        <main class="content">
-            <div class="garena-rank-container vien-vang">
-            <div class="rank-header-wrapper" style="justify-content: flex-start;">
-            <div class="header-left">
-                <div class="static-label">THÔNG TIN ĐỘI TUYỂN</div>
-                <div class="rank-title-sub">BẢNG XẾP HẠNG CHUNG KẾT - SURVIVAL LEGACY CUP SS1</div>
-            </div>
+        <main class="content"> 
+            <div id="bxh-root">
+      <canvas id="fx"></canvas>
+      
+      <div class="hdr">
+        <div class="hdr-left">
+          <span class="hdr-eyebrow">Survival Legacy Cup SS1 — ĐÊM CHUNG KẾT TỔNG</span>
+          <span class="hdr-title">BẢNG XẾP <span>HẠNG</span></span>
         </div>
-        
-        <table class="garena-table table-chungket">
-            <thead>
-                <tr>
-                    <th width="10%">HẠNG</th>
-                    <th width="35%" class="text-left">ĐỘI TUYỂN</th>
-                    <th width="15%">BOOYAH! <span class="sort-icon">⬍</span></th>
-                    <th width="15%">TỔNG HẠ GỤC <span class="sort-icon">⬍</span></th>
-                    <th width="10%">TRẬN</th>
-                    <th width="15%">TỔNG ĐIỂM <span class="sort-icon">⬍</span></th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr><td class="rank-num">1</td><td class="team-name"><img src="logo-ft.jpg" alt=""> <span>FT</span></td><td>0</td><td>78</td><td>6</td><td class="total-score">124</td></tr>
-                <tr><td class="rank-num">2</td><td class="team-name"><img src="logo-tgl.jpg" alt=""> <span>TGL</span></td><td>2</td><td>59</td><td>6</td><td class="total-score">111</td></tr>
-                <tr><td class="rank-num">3</td><td class="team-name"><img src="logo-4t.jpg" alt=""> <span>4T</span></td><td>0</td><td>45</td><td>6</td><td class="total-score">82</td></tr>
-                
-                <tr><td class="rank-num">4</td><td class="team-name"><img src="logo-ns.jpg" alt=""> <span>NS</span></td><td>1</td><td>47</td><td>6</td><td class="total-score">81</td></tr>
-                <tr><td class="rank-num">5</td><td class="team-name"><img src="logo-tgl3.jpg" alt=""> <span>TGL3</span></td><td>1</td><td>29</td><td>6</td><td class="total-score">67</td></tr>
-                <tr><td class="rank-num">6</td><td class="team-name"><img src="logo-te.jpg" alt=""> <span>TE</span></td><td>1</td><td>41</td><td>6</td><td class="total-score">64</td></tr>
-                <tr><td class="rank-num">7</td><td class="team-name"><img src="logo-lhdxb.jpg" alt=""> <span>LHDXB</span></td><td>1</td><td>19</td><td>6</td><td class="total-score">45</td></tr>
-                <tr><td class="rank-num">8</td><td class="team-name"><img src="logo-nna.jpg" alt=""> <span>NNA</span></td><td>0</td><td>17</td><td>6</td><td class="total-score">42</td></tr>
-                <tr><td class="rank-num">9</td><td class="team-name"><img src="logo-gods.jpg" alt=""> <span>GODS</span></td><td>0</td><td>24</td><td>6</td><td class="total-score">40</td></tr>
-                <tr><td class="rank-num">10</td><td class="team-name"><img src="logo-nok.jpg" alt=""> <span>NOK</span></td><td>0</td><td>11</td><td>6</td><td class="total-score">33</td></tr>
-                <tr><td class="rank-num">11</td><td class="team-name"><img src="logo-whd.jpg" alt=""> <span>WHD</span></td><td>0</td><td>12</td><td>6</td><td class="total-score">19</td></tr>
-                <tr><td class="rank-num">12</td><td class="team-name"><img src="logo-cnct.jpg" alt=""> <span>CNCT</span></td><td>0</td><td>0</td><td>6</td><td class="total-score">0</td></tr>
-            </tbody>
-        </table>
+        <div class="hdr-right">
+          <span class="season-badge">27/05/2026</span>
+          <div class="live-pill"><div class="live-dot"></div><span class="live-txt">LIVE</span></div>
         </div>
+      </div>
+      
+      <div class="tabs">
+        <button class="tab on" style="cursor: default; color: #ff2a5f; border-bottom-color: #ff2a5f; background: #ff2a5f10; text-shadow: 0 0 14px #ff2a5f77;">VÒNG CHUNG KẾT</button>
+      </div>
+      
+      <div class="podium-wrap" id="podium-chungket"></div>
+      
+      <div class="rest-wrap">
+        <div class="rest-head">
+          <div class="rh">NO.</div><div class="rh">ĐỘI</div>
+          <div class="rh rc">BOOYAH</div><div class="rh rc">HẠ GỤC</div>
+          <div class="rh rc">TRẬN</div><div class="rh rc">ĐIỂM</div>
+        </div>
+        <div id="rest-rows-chungket"></div>
+      </div>
+    </div>
+        </main>
     </div>
     <script src="script.js?v=13"></script>
     <!-- ================= DÒNG BẢN QUYỀN GÓC TRÁI ================= -->

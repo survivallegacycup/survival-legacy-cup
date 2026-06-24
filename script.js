@@ -1383,3 +1383,119 @@ function renderBanket() {
 
 // Khởi chạy Bán Kết khi trang load
 renderBanket();
+// =========================================================================
+// CHỨC NĂNG BẢNG XẾP HẠNG CHUNG KẾT (12 ĐỘI)
+// =========================================================================
+
+const DU_LIEU_CHUNGKET = [
+  {rank:1, name:"FT", booyah:0, kill:78, match:6, total:124},
+  {rank:2, name:"TGL", booyah:2, kill:59, match:6, total:111},
+  {rank:3, name:"4T", booyah:0, kill:45, match:6, total:82},
+  {rank:4, name:"NS", booyah:1, kill:47, match:6, total:81},
+  {rank:5, name:"TGL3", booyah:1, kill:29, match:6, total:67},
+  {rank:6, name:"TE", booyah:1, kill:41, match:6, total:64},
+  {rank:7, name:"LHDXB", booyah:1, kill:19, match:6, total:45},
+  {rank:8, name:"NNA", booyah:0, kill:17, match:6, total:42},
+  {rank:9, name:"GODS", booyah:0, kill:24, match:6, total:40},
+  {rank:10, name:"NOK", booyah:0, kill:11, match:6, total:33},
+  {rank:11, name:"WHD", booyah:0, kill:12, match:6, total:19},
+  {rank:12, name:"CNCT", booyah:0, kill:1, match:6, total:7}
+];
+
+// Dùng chung bảng màu V5 chuẩn Esports
+function getTierCK(rank){
+  if(rank<=6) return { ac:"#00e5ff", sweep:"rgba(0,229,255,0.06)", bar:"#00e5ff", rowBg:"#020c14", nameBase:"#5ab8d8", nameHover:"#d0f8ff", rankBase:"#1e6080", rankHover:"#00e5ff", avaBase:"#001824", avaBorder:"#00e5ff22", avaHoverBg:"#002a38", avaHoverBorder:"#00e5ff88", totalBase:"#00e5ff", totalSize:15, killCol:"#22d3a5", booyahCol:"#e8b400" };
+  if(rank<=9) return { ac:"#d060f0", sweep:"rgba(208,96,240,0.06)", bar:"#d060f0", rowBg:"#07020e", nameBase:"#9858b8", nameHover:"#e8c0ff", rankBase:"#5a2878", rankHover:"#d060f0", avaBase:"#0e0418", avaBorder:"#d060f022", avaHoverBg:"#1a0830", avaHoverBorder:"#d060f088", totalBase:"#c050e0", totalSize:14, killCol:"#22d3a599", booyahCol:"#e8b40099" };
+  return { ac:"#40a0e0", sweep:"rgba(64,160,224,0.05)", bar:"#40a0e0", rowBg:"#02080f", nameBase:"#3a6888", nameHover:"#90c8e8", rankBase:"#1e4060", rankHover:"#40a0e0", avaBase:"#040e18", avaBorder:"#40a0e022", avaHoverBg:"#081828", avaHoverBorder:"#40a0e066", totalBase:"#3890c8", totalSize:13, killCol:"#22d3a566", booyahCol:"#e8b40066" };
+}
+
+function renderChungKet() {
+  const podWrap = document.getElementById("podium-chungket");
+  const restWrap = document.getElementById("rest-rows-chungket");
+  if(!podWrap || !restWrap) return;
+
+  // Cấu hình Podium: Đổi danh hiệu và màu cho Nhà Vô Địch
+  const POD_CFG = [
+    {teamIdx:1, podOrder:0, label:"Á QUÂN", icon:"&#9670;", color:"#00c8ff", bg:"#00040e", border:"#00c8ff33", avaBg:"#001a2e", ringColor:"#00c8ff55", delay:350},
+    {teamIdx:0, podOrder:1, label:"NHÀ VÔ ĐỊCH", icon:"&#9813;", color:"#ffcc00", bg:"#141000", border:"#ffcc0066", avaBg:"#241a00", ringColor:"#ffcc0088", delay:150},
+    {teamIdx:2, podOrder:2, label:"QUÝ QUÂN", icon:"&#9651;", color:"#ff6a00", bg:"#0c0400", border:"#ff6a0033", avaBg:"#1a0800", ringColor:"#ff6a0044", delay:550}
+  ];
+
+  POD_CFG.forEach(p => {
+    const t = DU_LIEU_CHUNGKET[p.teamIdx];
+    let logoThichHop = "logo-" + t.name.toLowerCase() + ".jpg";
+    const card = document.createElement("div");
+    card.className = "pod-card";
+    card.style.cssText = `background:${p.bg};border-color:${p.border};order:${p.podOrder};padding-top:${p.podOrder===1?'20px':'14px'}`;
+    
+    // Nếu là Nhà Vô Địch, thêm hiệu ứng text rực rỡ hơn
+    let ptsStyle = p.podOrder === 1 ? `color:${p.color};text-shadow:0 0 30px ${p.color}; font-size: 34px;` : `color:${p.color};text-shadow:0 0 24px ${p.color}77`;
+
+    card.innerHTML = `<div class="pod-shine"></div>
+      <div class="pod-no" style="color:${p.color}">${p.label}</div>
+      <div class="pod-icon" style="color:${p.color}">${p.icon}</div>
+      <div class="pod-ava" style="background:${p.avaBg};border-color:${p.color};">
+        <div class="pod-ring" style="border-color:${p.ringColor}"></div>
+        <img src="${logoThichHop}" style="width:100%;height:100%;border-radius:8px;object-fit:cover;position:relative;z-index:2;">
+      </div>
+      <div class="pod-name" style="color:${p.color};text-shadow:0 0 18px ${p.color}66">${t.name}</div>
+      <div class="pod-pts" style="${ptsStyle}">${t.total}</div>
+      <div class="pod-ptslbl">tổng điểm</div>
+      <div class="pod-stats">
+        <div class="ps-item"><span class="ps-v" style="color:${p.color}99">${t.booyah}</span><span class="ps-l">BOOYAH</span></div>
+        <div class="ps-item"><span class="ps-v" style="color:#22d3a5">${t.kill}</span><span class="ps-l">HẠ GỤC</span></div>
+        <div class="ps-item"><span class="ps-v" style="color:#3a6080">${t.match}</span><span class="ps-l">TRẬN</span></div>
+      </div>`;
+    podWrap.appendChild(card);
+    setTimeout(() => card.classList.add("show"), p.delay);
+  });
+
+  const maxTotal = DU_LIEU_CHUNGKET[0].total;
+  DU_LIEU_CHUNGKET.slice(3).forEach((t, i) => {
+    let logoThichHop = "logo-" + t.name.toLowerCase() + ".jpg";
+    const tier = getTierCK(t.rank);
+    const row = document.createElement("div");
+    row.className = "rest-row";
+    row.style.background = tier.rowBg;
+    row.innerHTML = `
+      <div class="rr-sweep" style="background:${tier.sweep}"></div>
+      <div class="rr-bar" style="background:${tier.bar}"></div>
+      <div class="rr-rank" style="color:${tier.rankBase}">${t.rank}</div>
+      <div class="rr-team">
+        <div class="rr-ava" style="background:${tier.avaBase};border:1px solid ${tier.avaBorder};">
+            <img src="${logoThichHop}" style="width:100%;height:100%;border-radius:4px;object-fit:cover;">
+        </div>
+        <span class="rr-name" style="color:${tier.nameBase}">${t.name}</span>
+      </div>
+      <div class="rr-val" style="color:${tier.booyahCol}">${t.booyah}</div>
+      <div class="rr-val" style="color:${tier.killCol}">${t.kill}</div>
+      <div class="rr-val" style="color:#2a4a6a">${t.match}</div>
+      <div class="rr-total" style="color:${tier.totalBase};font-size:${tier.totalSize}px">${t.total}</div>
+      <div class="prog-wrap"><div class="prog" id="pck-${i}" style="background:${tier.bar}77"></div></div>`;
+
+    const rn = row.querySelector(".rr-rank"), nm = row.querySelector(".rr-name");
+    const av = row.querySelector(".rr-ava"), tot = row.querySelector(".rr-total");
+    row.addEventListener("mouseenter", () => {
+      rn.style.color = tier.rankHover; nm.style.color = tier.nameHover;
+      av.style.background = tier.avaHoverBg; av.style.borderColor = tier.avaHoverBorder;
+      tot.style.color = "#fff"; tot.style.textShadow = `0 0 14px ${tier.ac}cc`; tot.style.fontSize = (tier.totalSize+1)+"px";
+    });
+    row.addEventListener("mouseleave", () => {
+      rn.style.color = tier.rankBase; nm.style.color = tier.nameBase;
+      av.style.background = tier.avaBase; av.style.borderColor = tier.avaBorder;
+      tot.style.color = tier.totalBase; tot.style.textShadow = "none"; tot.style.fontSize = tier.totalSize+"px";
+    });
+
+    restWrap.appendChild(row);
+    setTimeout(() => {
+      row.classList.add("show");
+      setTimeout(() => {
+        const p = document.getElementById(`pck-${i}`);
+        if(p) p.style.width = Math.round(t.total/maxTotal*100) + "%";
+      }, 200);
+    }, 750 + i * 65);
+  });
+}
+
+// Khởi chạy Chung Kết khi trang load
+renderChungKet();
