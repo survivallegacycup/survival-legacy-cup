@@ -1499,3 +1499,28 @@ function renderChungKet() {
 
 // Khởi chạy Chung Kết khi trang load
 renderChungKet();
+// =========================================================================
+// CHỨC NĂNG ANIMATION SCROLL REVEAL CHO TRANG THÔNG TIN (Fade Up)
+// =========================================================================
+document.addEventListener("DOMContentLoaded", () => {
+    const observerOptions = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.15 // Hiện 15% là kích hoạt animation
+    };
+
+    const ttObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                // Tắt theo dõi sau khi đã hiện để mượt mà hiệu năng
+                observer.unobserve(entry.target); 
+            }
+        });
+    }, observerOptions);
+
+    // Bắt đầu theo dõi tất cả các khối có class fade-up
+    document.querySelectorAll('.fade-up').forEach(element => {
+        ttObserver.observe(element);
+    });
+});

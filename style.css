@@ -2253,3 +2253,96 @@ body, .table-wrapper, .match-item, .sidebar,
 #bxh-root .prog { height:100%; width:0; transition:width 1.6s cubic-bezier(.4,0,.2,1); }
 #bxh-root .qual-cut { height:1px; background:linear-gradient(90deg,transparent,#e8b40055,#e8b400,#e8b40055,transparent); position:relative; margin:2px 0; }
 #bxh-root .cut-lbl { position:absolute; right:16px; top:50%; transform:translateY(-50%); background:#02040a; padding:0 8px; font-family:'Orbitron',monospace; font-size:9px; font-weight:700; color:#e8b40099; letter-spacing:2px; }
+/* ================== GIAO DIỆN THÔNG TIN GIẢI ĐẤU (MODERN V5) ================== */
+.tt-wrapper {
+    position: relative;
+    padding: 10px;
+    color: white;
+    font-family: 'Rajdhani', sans-serif;
+    border-radius: 18px;
+    z-index: 1;
+    margin-top: 15px;
+}
+
+/* 1. Animation Nền (Gợi ý ảnh 2) */
+.tt-bg-anim {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(45deg, rgba(0,229,255,0.05), rgba(124,58,237,0.05), rgba(255,77,157,0.05));
+    background-size: 400% 400%;
+    animation: bgMove 15s ease infinite;
+    z-index: -1;
+    border-radius: 18px;
+}
+@keyframes bgMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* 2. Glassmorphism Card & Hover Effect (Gợi ý ảnh 3) */
+.tt-card, .tt-header {
+    background: rgba(15, 23, 42, 0.4); /* Kính mờ siêu mướt */
+    backdrop-filter: blur(16px);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0,229,255,0.05), 0 0 40px rgba(124,58,237,0.05);
+    padding: 26px;
+    margin-bottom: 20px;
+    transition: 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+.tt-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 0 25px rgba(0,229,255,0.3), 0 0 60px rgba(124,58,237,0.2);
+    border-color: rgba(0,229,255,0.3);
+}
+
+/* 3. Text Gradient Tiêu Đề (Gợi ý ảnh 3) */
+.tt-title {
+    font-family: 'Orbitron', monospace;
+    font-size: 28px;
+    text-align: center;
+    background: linear-gradient(90deg, #00e5ff, #7c3aed, #ff4d9d);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradientText 6s linear infinite;
+    background-size: 300% auto;
+    margin-bottom: 8px;
+}
+@keyframes gradientText { to { background-position: 300% center; } }
+
+.tt-subtitle { text-align: center; color: #94a3b8; font-weight: 700; letter-spacing: 2px; font-size: 13px; }
+.tt-card-title { font-family: 'Orbitron', monospace; color: #00e5ff; margin-bottom: 16px; font-size: 18px; text-transform: uppercase; border-bottom: 1px solid rgba(0,229,255,0.15); padding-bottom: 10px;}
+
+/* 4. Grid và Danh Sách */
+.tt-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+.highlight-card { grid-column: 1 / -1; background: linear-gradient(135deg, rgba(15,23,42,0.6), rgba(0,229,255,0.05)); }
+.tt-list, .tt-list-danger { list-style: none; line-height: 2; font-size: 15px; color: #cbd5e1; }
+.tt-list li::before { content: '▹'; color: #00e5ff; margin-right: 8px; font-weight: bold; }
+.tt-list-danger li::before { content: '▪'; color: #ef4444; margin-right: 8px; font-size: 18px;}
+.tt-list li strong { color: #fff; }
+
+/* 5. Cụm Điểm Số và Giải Thưởng */
+.tt-prize li { margin: 12px 0; font-size: 16px; display: flex; align-items: center; gap: 10px; color: #e2e8f0; font-family: 'Orbitron', monospace;}
+.medal { font-size: 24px; filter: drop-shadow(0 0 10px rgba(255,215,0,0.5)); }
+.tt-kill-score { text-align: center; color: #ff2a5f; font-size: 26px; font-weight: 900; margin: 12px 0; font-family: 'Orbitron', monospace; text-shadow: 0 0 15px rgba(255,42,95,0.6); letter-spacing: 2px;}
+.tt-top-scores { text-align: center; color: #64748b; font-size: 14px; line-height: 2.2; }
+.tt-top-scores span { color: #fff; font-weight: bold; padding: 0 4px;}
+
+.tt-alert { background: rgba(234,179,8,0.1); border-left: 4px solid #eab308; padding: 10px 15px; color: #fde047; font-weight: bold; border-radius: 4px; font-size: 14px;}
+.tt-link { color: #00e5ff; text-decoration: none; font-weight: bold; transition: 0.3s; }
+.tt-link:hover { text-shadow: 0 0 10px #00e5ff; }
+
+/* Thẻ cảnh báo Đỏ */
+.danger-card:hover { box-shadow: 0 0 25px rgba(239,68,68,0.3); border-color: rgba(239,68,68,0.4); }
+.text-red { color: #ef4444 !important; border-bottom-color: rgba(239,68,68,0.2) !important;}
+.strong-red { color: #ef4444; font-weight: bold; font-size: 17px; margin-top: 10px; display: inline-block; font-family: 'Orbitron', monospace;}
+.mt-10 { margin-top: 15px; }
+
+/* 6. Hiệu ứng Intersection Fade Up (Gợi ý ảnh 5) */
+.fade-up { opacity: 0; transform: translateY(40px); transition: opacity 0.8s cubic-bezier(0.25, 0.8, 0.25, 1), transform 0.8s cubic-bezier(0.25, 0.8, 0.25, 1); }
+.fade-up.visible { opacity: 1; transform: translateY(0); }
+
+/* Chống vỡ khung trên ĐT */
+@media(max-width: 900px) { .tt-grid { grid-template-columns: 1fr; } }
