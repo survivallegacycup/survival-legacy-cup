@@ -51,7 +51,7 @@ async function moThongSo(soTran) {
     // --- CHÈN 4 DÒNG NÀY VÀO ĐẦU HÀM ---
     tranHienTai = soTran;
     // =========================================================
-    // 1. TÍNH TOÁN VÀ CẬP NHẬT GIAO DIỆN (NGÀY, GIỜ, BOOYAH)
+    // 1. TÍNH TOÁN VÀ CẬP NHẬT GIAO DIỆN (NGÀY, GIỜ, WINNER)
     // =========================================================
     let ngayThiDau = Math.ceil(soTran / 6); 
     // Tự động nạp ảnh Map tương ứng với số trận
@@ -1179,7 +1179,7 @@ function renderLeaderboardV5(bangId) {
       <div class="pod-pts" style="color:${p.color};text-shadow:0 0 24px ${p.color}77">${t.total}</div>
       <div class="pod-ptslbl">tổng điểm</div>
       <div class="pod-stats">
-        <div class="ps-item"><span class="ps-v" style="color:${p.color}99">${t.booyah}</span><span class="ps-l">BOOYAH</span></div>
+        <div class="ps-item"><span class="ps-v" style="color:${p.color}99">${t.booyah}</span><span class="ps-l">WINNER</span></div>
         <div class="ps-item"><span class="ps-v" style="color:#22d3a5">${t.kill}</span><span class="ps-l">HẠ GỤC</span></div>
         <div class="ps-item"><span class="ps-v" style="color:#3a6080">${t.match}</span><span class="ps-l">TRẬN</span></div>
       </div>`;
@@ -1318,7 +1318,7 @@ function renderBanket() {
       <div class="pod-pts" style="color:${p.color};text-shadow:0 0 24px ${p.color}77">${t.total}</div>
       <div class="pod-ptslbl">tổng điểm</div>
       <div class="pod-stats">
-        <div class="ps-item"><span class="ps-v" style="color:${p.color}99">${t.booyah}</span><span class="ps-l">BOOYAH</span></div>
+        <div class="ps-item"><span class="ps-v" style="color:${p.color}99">${t.booyah}</span><span class="ps-l">WINNER</span></div>
         <div class="ps-item"><span class="ps-v" style="color:#22d3a5">${t.kill}</span><span class="ps-l">HẠ GỤC</span></div>
         <div class="ps-item"><span class="ps-v" style="color:#3a6080">${t.match}</span><span class="ps-l">TRẬN</span></div>
       </div>`;
@@ -1442,7 +1442,7 @@ function renderChungKet() {
       <div class="pod-pts" style="${ptsStyle}">${t.total}</div>
       <div class="pod-ptslbl">tổng điểm</div>
       <div class="pod-stats">
-        <div class="ps-item"><span class="ps-v" style="color:${p.color}99">${t.booyah}</span><span class="ps-l">BOOYAH</span></div>
+        <div class="ps-item"><span class="ps-v" style="color:${p.color}99">${t.booyah}</span><span class="ps-l">WINNER</span></div>
         <div class="ps-item"><span class="ps-v" style="color:#22d3a5">${t.kill}</span><span class="ps-l">HẠ GỤC</span></div>
         <div class="ps-item"><span class="ps-v" style="color:#3a6080">${t.match}</span><span class="ps-l">TRẬN</span></div>
       </div>`;
