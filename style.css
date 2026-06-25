@@ -2394,3 +2394,59 @@ img {
     max-width: 100%;
     height: auto;
 }
+/* ================== GIAO DIỆN ĐIỆN THOẠI (RESPONSIVE) ================== */
+@media screen and (max-width: 850px) {
+    /* 1. Đẩy menu sang hàng dọc */
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+    .sidebar {
+        width: 100% !important;
+        height: auto !important;
+        position: relative;
+        margin-bottom: 20px;
+    }
+    .content {
+        width: 100% !important;
+        padding: 0 10px !important;
+        margin-left: 0 !important;
+    }
+
+    /* 2. Ép bảng xếp hạng V5 co dãn vừa màn hình nhỏ */
+    #bxh-root .rest-head {
+        grid-template-columns: 35px minmax(0,1fr) 45px 50px 40px 45px !important;
+        padding: 10px 5px !important;
+        font-size: 8px !important;
+    }
+    #bxh-root .rest-row {
+        grid-template-columns: 35px minmax(0,1fr) 45px 50px 40px 45px !important;
+        padding: 10px 5px !important;
+    }
+    #bxh-root .rr-name { font-size: 12px !important; }
+    #bxh-root .rr-val { font-size: 11px !important; }
+    #bxh-root .rr-total { font-size: 13px !important; }
+    #bxh-root .rr-ava { width: 24px; height: 24px; }
+    
+    /* Thu nhỏ bục Top 3 */
+    #bxh-root .podium-wrap { gap: 4px; padding: 10px 5px; }
+    #bxh-root .pod-card { padding: 10px 5px 8px; }
+    #bxh-root .pod-name { font-size: 11px; }
+    #bxh-root .pod-pts { font-size: 18px; }
+    #bxh-root .ps-item span.ps-v { font-size: 11px; }
+    #bxh-root .ps-item span.ps-l { font-size: 7px; }
+
+    /* Thu nhỏ Tab chuyển bảng */
+    #bxh-root .tabs { padding: 0 5px; justify-content: space-around; }
+    #bxh-root .tab { padding: 10px 5px; font-size: 10px; }
+    
+    /* 3. Trang Chủ: Chia danh sách 55 Slot thành 2 cột thay vì nhiều cột */
+    .roster-grid { grid-template-columns: 1fr 1fr !important; }
+    .slot-card { padding: 8px 5px !important; }
+    .slot-name { font-size: 12px !important; }
+
+    /* 4. Trang Thông Tin: Các khối nằm dọc nhau */
+    .tt-grid { grid-template-columns: 1fr !important; }
+    .tt-title { font-size: 20px; }
+    .tt-kill-score { font-size: 18px; }
+}
