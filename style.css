@@ -2346,3 +2346,21 @@ body, .table-wrapper, .match-item, .sidebar,
 
 /* Chống vỡ khung trên ĐT */
 @media(max-width: 900px) { .tt-grid { grid-template-columns: 1fr; } }
+/* Ép buộc bảng V5 hiển thị đúng */
+#bxh-root { 
+    display: block !important; 
+    background: #02040a !important; 
+    /* ... các thuộc tính khác ... */
+}
+/* Ép buộc chữ "WINNER" hiển thị ngang hàng */
+.ps-l { display: block !important; }
+#bxh-root .rest-head { 
+    display: grid !important; 
+    grid-template-columns: 44px minmax(0,1fr) 68px 80px 56px 80px !important; 
+    /* ... giữ nguyên các dòng khác ... */
+}
+#bxh-root .rest-head { 
+    display: grid !important; 
+    grid-template-columns: 44px minmax(0,1fr) 68px 80px 56px 80px !important; 
+    /* ... giữ nguyên các dòng khác ... */
+}
