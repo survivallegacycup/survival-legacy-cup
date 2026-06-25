@@ -2364,3 +2364,33 @@ body, .table-wrapper, .match-item, .sidebar,
     grid-template-columns: 44px minmax(0,1fr) 68px 80px 56px 80px !important; 
     /* ... giữ nguyên các dòng khác ... */
 }
+/* Dành cho màn hình điện thoại (nhỏ hơn 768px) */
+@media screen and (max-width: 768px) {
+    /* 1. Co dãn phần Sidebar và Main */
+    .container { display: flex; flex-direction: column; }
+    .sidebar { width: 100% !important; }
+    .content { width: 100% !important; padding: 10px !important; }
+
+    /* 2. Cấu hình lại Bảng xếp hạng V5 cho mobile */
+    #bxh-root .rest-head { display: none !important; } /* Ẩn tiêu đề cột để tiết kiệm diện tích */
+    #bxh-root .rest-row { 
+        grid-template-columns: 30px 1fr 50px 50px !important; 
+        font-size: 12px;
+        padding: 8px !important;
+    }
+    
+    /* Ẩn bớt các chỉ số không quá quan trọng trên mobile */
+    #bxh-root .rh.rc:nth-child(4), #bxh-root .rr-val:nth-child(5) { display: none !important; }
+
+    /* 3. Cấu hình danh sách thành viên (trang chủ) */
+    .roster-grid { grid-template-columns: 1fr 1fr !important; } /* Chỉ còn 2 cột thay vì nhiều cột */
+    .slot-card { padding: 5px; font-size: 10px; }
+    
+    /* 4. Điều chỉnh cỡ chữ tổng thể */
+    body { font-size: 14px; }
+    h1 { font-size: 20px; }
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
