@@ -2450,3 +2450,9 @@ img {
     .tt-title { font-size: 20px; }
     .tt-kill-score { font-size: 18px; }
 }
+.team-banner-logo {
+    width: 100px !important;  /* Khóa chiều rộng (bạn có thể tăng giảm tùy ý) */
+    height: 100px !important; /* Khóa chiều cao bằng chiều rộng để tạo hình vuông */
+    object-fit: contain !important; /* ĐÂY LÀ CÂU THẦN CHÚ: Ép ảnh giữ đúng tỷ lệ gốc, không bao giờ bị méo! */
+    border-radius: 8px; /* Bo tròn nhẹ các góc cho đẹp */
+}
