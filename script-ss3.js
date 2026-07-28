@@ -177,8 +177,8 @@ const teamsDatabase = {
             { n: "BNA.HGIA", r: "RUSHER", id: "1716356557" },
             { n: "BNA.ĐQUANG", r: "RUSHER", id: "2349365559" },
             { n: "BNA.VLAP", r: "RUSHER", id: "3428078972" },
-            { n: "BNA.VTAI", r: "SUPPORT", id: "9780579184" },
-            { n: "KHÔNG CÓ", a: "https://placehold.co/200x250/111/555?text=TRONG" }
+            { n: "BNA.KHANH", r: "SNIPER", id: "2120500181" },
+            { n: "BNA.VTAI", r: "SUPPORT", id: "9780579184" }
         ]
     },
     "ks": {
@@ -834,8 +834,6 @@ function switchTeam(teamId) {
         }
     });
 }
-
-// Bắt đầu vào web là bật ngay đội UNICORN (Mã là 'unc')
 document.addEventListener("DOMContentLoaded", function() {
     if (document.getElementById('player-cards-container')) {
         switchTeam('unc'); 
@@ -863,15 +861,15 @@ function chuyenTrang(huong) {
 }
 /* ================= HỆ THỐNG MŨI TÊN CHUYỂN TRẬN ================= */
 let tranHienTai = 1;
-const tongSoTran = 35; // Khai báo tổng cộng có 6 trận
+const tongSoTran = 35; // Khai báo tổng cộng có 5 trận
 
 function chuyenTran(huong) {
     tranHienTai += huong;
     
-    // Nếu đang ở Trận 1 mà bấm lùi, nó vòng xuống Trận 6
+    // Nếu đang ở Trận 1 mà bấm lùi, nó vòng xuống Trận 5
     if (tranHienTai < 1) tranHienTai = tongSoTran;
     
-    // Nếu đang ở Trận 6 mà bấm tới, nó vòng lại Trận 1
+    // Nếu đang ở Trận 5 mà bấm tới, nó vòng lại Trận 1
     if (tranHienTai > tongSoTran) tranHienTai = 1;
     
     // Lệnh cho nó mở bảng thông số của trận vừa chuyển
@@ -879,5 +877,5 @@ function chuyenTran(huong) {
 }
 // Tự động kích hoạt hiển thị đội UZI ngay khi vừa mở trang
 window.onload = function() {
-    switchTeam('uzi');
+    switchTeam('bna');
 };
