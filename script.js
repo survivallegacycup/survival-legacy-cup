@@ -926,7 +926,7 @@ function switchTeam(teamId) {
 // Bắt đầu vào web là bật ngay đội UNICORN (Mã là 'unc')
 document.addEventListener("DOMContentLoaded", function() {
     if (document.getElementById('player-cards-container')) {
-        switchTeam('unc'); 
+        switchTeam('uzi'); 
     }
 });
 // ================= HỆ THỐNG MŨI TÊN CHUYỂN 4 TRANG =================
