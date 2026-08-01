@@ -140,7 +140,7 @@ async function moThongSo(soTran) {
                 let booyahName = document.querySelector('.info-box.booyah-box .winner-name');
                 if (booyahLogo) booyahLogo.src = logoThichHop;
                 if (booyahName) booyahName.innerText = tenDoi;
-            }
+            }s
             // --- 3. IN 5 CỘT BÊN TRÁI (Gộp thành 1 khối bự duy nhất) ---
             container.innerHTML += `
                 <div class="g-cell">${teamInfo[0] || ''}</div>
@@ -809,18 +809,63 @@ function switchTeam(teamId) {
 
     if(container) {
         container.innerHTML = ''; 
-        data.players.forEach(player => {
-            // Lệnh giấu cái khung Quốc gia nếu để trống
-            let tagQuocGia = data.country !== "" ? `<span class="p-tag">${data.country}</span>` : "";
+        // Thêm tham số 'index' để tính thời gian delay xuất hiện từng thẻ
+        data.players.forEach((player, index) => { 
             
+            // 1. Tự động chia màu Neon và Icon Emojis
+            let neonColor = "rgba(100, 100, 100, "; // Xám mặc định
+            let roleIcon = "🎮";
+            let badgeStyle = "background: #555; color: #fff;";
+
+            if (player.r === "RUSHER") {
+                neonColor = "rgba(255, 0, 0, "; // Đỏ
+                roleIcon = "⚔️";
+                badgeStyle = "background: #ff0000; color: #fff;";
+            } else if (player.r === "RIFLER") {
+                neonColor = "rgba(0, 136, 255, "; // Xanh dương
+                roleIcon = "🔫";
+                badgeStyle = "background: #0088ff; color: #fff;";
+            } else if (player.r === "BOMBER") {
+                neonColor = "rgba(255, 204, 0, "; // Vàng
+                roleIcon = "💣";
+                badgeStyle = "background: #ffcc00; color: #000;";
+            } else if (player.r === "SNIPER" || player.r === "SNIPPER") {
+                neonColor = "rgba(0, 204, 68, "; // Xanh lá
+                roleIcon = "🎯";
+                badgeStyle = "background: #00cc44; color: #fff;";
+            } else if (player.r === "SUPPORT") {
+                neonColor = "rgba(255, 51, 204, "; // Hồng
+                roleIcon = "🛡️";
+                badgeStyle = "background: #ff33cc; color: #fff;";
+            }
+
+            // 2. Tính toán độ trễ (Delay) để bài ra từng lá bài một
+            let delay = index * 0.15; // Mỗi người cách nhau 0.15 giây
+
+            // 3. Xây dựng cấu trúc Thẻ (Truyền thẳng màu Neon vào CSS)
             container.innerHTML += `
-                <div class="player-card">
-                    <div class="p-info-top">
-                        <span class="p-name">${player.n}</span>
-                        <span class="p-tag">[${player.r ? player.r : 'THÀNH VIÊN'}]</span>
+                <div class="uzi-stat-card" style="
+                    animation-delay: ${delay}s; 
+                    --neon: ${neonColor} 0.8); 
+                    --neon-dim: ${neonColor} 0.2);
+                ">
+                    <div class="card-header">
+                        <span class="stat-role-badge" style="${badgeStyle}">${roleIcon} ${player.r ? player.r : 'THÀNH VIÊN'}</span>
+                        <span class="card-uzi-logo" style="font-size: 9px; line-height: 1.3; text-align: right; color: #fff; text-shadow: 0 0 5px #fff;">
+                            SURVIVAL LEGACY<br>CUP SS1
+                        </span>
                     </div>
-                    <img class="p-avatar" src="${player.a}" alt="Avatar">
-                    <div class="btn-xem-them">XEM THÊM <span class="arrow">▶</span></div>
+
+                    <div class="card-body">
+                        <div class="data-field" style="margin-bottom: 15px;">
+                            <span class="data-label">TUYỂN THỦ</span>
+                            <span class="data-value">${player.n}</span>
+                        </div>
+                        <div class="data-field" style="margin-bottom: 0;">
+                            <span class="data-label">PLAYER ID</span>
+                            <span class="data-value-id">${player.id ? player.id : 'DỮ LIỆU ĐANG CẬP NHẬT'}</span>
+                        </div>
+                    </div>
                 </div>
             `;
         });
@@ -845,7 +890,6 @@ function chuyenTrang(huong) {
     trangHienTai += huong;
     if (trangHienTai > 4) trangHienTai = 1; // Nhảy từ trang 4 về trang 1
     if (trangHienTai < 1) trangHienTai = 4; // Lùi từ trang 1 xuống trang 4
-
     // Bật tắt giao diện
     let t1 = document.getElementById('trang-1');
     let t2 = document.getElementById('trang-2');
@@ -874,4 +918,108 @@ function chuyenTran(huong) {
     
     // Lệnh cho nó mở bảng thông số của trận vừa chuyển
     moThongSo(tranHienTai);
+}
+// =========================================================
+// 1. SCROLL REVEAL (Trượt hàng giải đấu lên)
+// =========================================================
+const matchRows = document.querySelectorAll('.match-item');
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry, i) => {
+        if (entry.isIntersecting) {
+            setTimeout(() => entry.target.classList.add('visible'), i * 80);
+            observer.unobserve(entry.target);
+        }
+    });
+}, { threshold: 0.1 });
+matchRows.forEach(row => observer.observe(row));
+
+// =========================================================
+// 2. HỆ THỐNG ÂM THANH CHUNG
+// =========================================================
+const hoverSound = document.getElementById("hoverSound");
+const sfxHover = document.getElementById("sfxHover");
+const sfxClick = document.getElementById("sfxClick");
+
+// Tiếng tick cho hàng giải đấu
+document.querySelectorAll('.match-item, .btn-stats, .login-btn').forEach(el => {
+    el.addEventListener("mouseenter", () => {
+        if(hoverSound) { hoverSound.currentTime = 0; hoverSound.play().catch(e => {}); }
+    });
+});
+
+// Tiếng UI cho Modal Esports
+document.querySelectorAll(".g-row, .nav-btn, .btn-back-top").forEach(el => {
+    el.addEventListener("mouseenter", () => { 
+        if(sfxHover) { sfxHover.currentTime = 0; sfxHover.volume = 0.5; sfxHover.play().catch(e => {}); }
+    });
+    el.addEventListener("click", () => { 
+        if(sfxClick) { sfxClick.currentTime = 0; sfxClick.volume = 0.8; sfxClick.play().catch(e => {}); }
+    });
+});
+
+// =========================================================
+// 3. HIỆU ỨNG TÀN LỬA NỀN CAM (Trang chủ)
+// =========================================================
+const fireCanvas = document.getElementById('fireCanvas');
+if (fireCanvas) {
+    const ctxFire = fireCanvas.getContext('2d');
+    let fw = fireCanvas.width = window.innerWidth;
+    let fh = fireCanvas.height = window.innerHeight;
+    let fires = [];
+    for (let i = 0; i < 60; i++) {
+        fires.push({
+            x: Math.random() * fw, y: Math.random() * fh,
+            r: Math.random() * 2 + 1, d: Math.random() * 100, speed: Math.random() * 2 + 0.5
+        });
+    }
+    function drawFire() {
+        ctxFire.clearRect(0, 0, fw, fh);
+        ctxFire.fillStyle = "rgba(255, 80, 0, 0.8)";
+        ctxFire.beginPath();
+        fires.forEach((p) => {
+            ctxFire.moveTo(p.x, p.y);
+            ctxFire.arc(p.x, p.y, p.r, 0, Math.PI * 2, true);
+            p.y -= p.speed;
+            p.x += Math.sin(p.d) * 0.5;
+            p.d += 0.05;
+            if (p.y < -10) p.y = fh + 10;
+        });
+        ctxFire.fill();
+        requestAnimationFrame(drawFire);
+    }
+    drawFire();
+    window.addEventListener("resize", () => { fw = fireCanvas.width = window.innerWidth; fh = fireCanvas.height = window.innerHeight; });
+}
+
+// =========================================================
+// 4. HẠT BỤI NEON XANH (Trong bảng Thống số)
+// =========================================================
+const canvasModal = document.getElementById("particlesModal");
+if (canvasModal) {
+    const ctxModal = canvasModal.getContext("2d");
+    function resizeCanvasModal() { canvasModal.width = canvasModal.offsetWidth; canvasModal.height = canvasModal.offsetHeight; }
+    window.addEventListener('resize', resizeCanvasModal);
+    setTimeout(resizeCanvasModal, 500);
+
+    const pts = Array.from({length: 40}, () => ({
+        x: Math.random() * window.innerWidth, y: Math.random() * window.innerHeight,
+        r: Math.random() * 1.5 + 0.3, vx: (Math.random() - 0.5) * 0.4, vy: (Math.random() - 0.5) * 0.4, a: Math.random() * 0.4 + 0.1
+    }));
+
+    function drawModalParticles() {
+        const modal = document.getElementById("modal-thong-so");
+        if (modal && modal.style.display !== "none") {
+            if(canvasModal.width === 0) resizeCanvasModal();
+            ctxModal.clearRect(0, 0, canvasModal.width, canvasModal.height);
+            pts.forEach(p => {
+                ctxModal.beginPath(); ctxModal.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+                ctxModal.fillStyle = `rgba(0, 240, 255, ${p.a})`; ctxModal.fill();
+                p.x += p.vx; p.y += p.vy;
+                if(p.x < 0 || p.x > canvasModal.width) p.vx *= -1;
+                if(p.y < 0 || p.y > canvasModal.height) p.vy *= -1;
+            });
+        }
+        requestAnimationFrame(drawModalParticles);
+    }
+    drawModalParticles();
 }
