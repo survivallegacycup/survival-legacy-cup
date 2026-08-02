@@ -181,17 +181,17 @@ const teamsDatabase = {
             { n: "BNA.VTAI", r: "SUPPORT", id: "9780579184" }
         ]
     },
-    "ks": {
-        name: "KINGS FF",
-        desc: "KS – Tên đầy đủ là KINGS FF. Đội tuyển sở hữu lối chơi bản lĩnh và kỷ luật, luôn giữ thế trận ổn định và sẵn sàng áp đảo đối thủ để khẳng định vị thế “nhà vua” tại Survival Legacy Cup SS1!",
-        logo: "logo-ks.jpg",
+    "nok2": {
+        name: "NOK",
+        desc: "NOK – Tên đầy đủ là NOKARA. Mang trong mình tinh thần không ngại va chạm và luôn hướng đến những màn trình diễn bùng nổ, bước vào giải đấu với mục tiêu không chỉ góp mặt mà còn để lại dấu ấn. Mỗi trận đấu là một cơ hội để khẳng định bản lĩnh và đưa cái tên NOKARA vươn xa tại Survival Legacy Cup SS3!",
+        logo: "logo-nok2.jpg",
         country: "",
         players: [
-            { n: "KS.GREAT", r: "RUSHER", id: "261423238" },
-            { n: "KS.VPHAT", r: "RUSHER", id: "8534460998" },
-            { n: "KS.CTHANG", r: "RUSHER", id: "9531598587" },
-            { n: "KS.HLOC", r: "RIFLER", id: "8015399781" },
-            { n: "KHÔNG CÓ", a: "https://placehold.co/200x250/111/555?text=TRONG" }
+            { n: "NOK.LAVIDA", r: "RUSHER", id: "3225479273" },
+            { n: "NOK.THANHDAT", r: "RUSHER", id: "2491284727" },
+            { n: "NOK.VOHUNG", r: "RIFLER", id: "8776372081" },
+            { n: "NOK.CRY", r: "SUPPORT", id: "2763014509" },
+            { n: "NOK.NOVA", r: "SUPPORT", id: "1824618270" }
         ]
     },
     "mao": {
