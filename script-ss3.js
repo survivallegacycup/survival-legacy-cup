@@ -194,18 +194,18 @@ const teamsDatabase = {
             { n: "NOK.NOVA", r: "SUPPORT", id: "1824618270" }
         ]
     },
-    "mao": {
-        name: "MAO",
-        desc: "MAO – Tên đầy đủ là MAO. Đội tuyển nổi bật với lối chơi nhanh, táo bạo và không ngại giao tranh, luôn tạo áp lực mạnh mẽ và sẵn sàng bùng nổ tại Survival Legacy Cup SS1!",
-        logo: "logo-mao.jpg",
+    "lke": {
+        name: "LKE",
+        desc: "LKE – Tên đầy đủ là LÊ KIÊN ESPORTS. Không cần hô hào quá lớn, LKE để kỹ năng lên tiếng. Mỗi pha giao tranh là một lời khẳng định, mỗi chiến thắng là một dấu ấn. Khi đã bước vào trận đấu, mục tiêu duy nhất của LÊ KIÊN ESPORTS là khiến cái tên của mình được nhắc đến nhiều nhất tại Survival Legacy Cup SS3!",
+        logo: "logo-lke.jpg",
         country: "", 
         players: [
-            { n: "MAO.ĐBIN", r: "RUSHER", id: "7017022761"},
-            { n: "MAO.NTRI", r: "BOMBER", id: "9348528189"},
-            { n: "MAO.QVINH", r: "SNIPER", id: "1183370030"},
-            { n: "MAO.LEYNII?", r: "SUPPORT", id: " 561971260 "},
-            { n: "MAO.SUN", r: "SUPPORT", id: "12225789596"}
-        ]
+            { n: "LKE.EMBEN", r: "RUSHER", id: "355294300"},
+            { n: "LKE.KEYD", r: "BOMBER", id: "2055349409"},
+            { n: "LKE.EMTHIEN", r: "SNIPER", id: "1693177119"},
+            { n: "LKE.EMBOY", r: "SNIPER", id: "11487790754"},
+            { n: "LKE.EMPHUC", r: "SUPPORT", id: "3209197272"}
+        ] 
     },
     "ft": {
         name: "FT",
