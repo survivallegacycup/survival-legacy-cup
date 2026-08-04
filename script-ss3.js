@@ -246,16 +246,16 @@ const teamsDatabase = {
             { n: "ADE.TBON", r: "SUPPORT", id: "3768548347" }
         ]
     },
-    "uch": {
-        name: "UCH",
-        desc: "UCH - Tên đầy đủ là Uchiha. Đội tuyển mang phong cách lạnh lùng và chuẩn xác, nổi bật với khả năng kiểm soát giao tranh cùng những pha xử lý sắc bén, luôn sẵn sàng thiêu rụi đối thủ tại Survival Legacy Cup SS1!",
-        logo: "logo-uch.jpg",
+    "xbc": {
+        name: "XBC",
+        desc: "XBC – Tên đầy đủ là XBC. Càng áp lực, XBC càng bùng nổ. Với tinh thần quyết chiến và lối chơi không khoan nhượng, đội tuyển sẵn sàng chinh phục mọi thử thách để ghi tên mình vào những trận đấu đáng nhớ tại Survival Legacy Cup SS3!",
+        logo: "logo-xbc.jpg",
         country: "", 
         players: [
-            { n: "UCH.HKIET", r: "RUSHER", id: "2706443747"},
-            { n: "UCH.TDUY", r: "BOMBER", id: "9861347097" },
-            { n: "UCH.TKIEN", r: "SNIPER", id: "12835295615"},
-            { n: "UCH.XBAO", r: "SUPPORT", id: "9352178397" },
+            { n: "XBC.EMDEN", r: "RUSHER", id: "1651597235"},
+            { n: "XBC.TINA", r: "RIFLER", id: "3486653852" },
+            { n: "XBC.NGDUNG", r: "BOMBER", id: "6606575697"},
+            { n: "XBC.GIAHUY", r: "SNIPER", id: "6706177979" },
             { n: "KHÔNG CÓ", a: "https://placehold.co/200x250/111/555?text=TRONG" }
         ]
     },
