@@ -324,56 +324,56 @@ const teamsDatabase = {
             { n: "PC.EMBE", r: "SUPPORT", id: "2124497748" }
         ]
     },
-    "t2al": {
-        name: "T2AL",
-        desc: "T2AL- Tên đầy đủ là T2AL Esports. Đội tuyển mang biểu tượng “số 2 bứt phá”, luôn âm thầm tích lũy sức mạnh trước khi tăng tốc mạnh mẽ, sẵn sàng vượt lên và chiếm lĩnh vị trí dẫn đầu tại Survival Legacy Cup SS1!",
-        logo: "logo-t2al.jpg",
+    "fh": {
+        name: "FH",
+        desc: "FH – Tên đầy đủ là FIRE HORSE. Như một chiến mã bùng cháy trên chiến trường, FIRE HORSE luôn lao về phía trước với tốc độ, sức mạnh và tinh thần không bao giờ bỏ cuộc. Sẵn sàng đốt cháy mọi giới hạn, FH quyết tâm tạo nên dấu ấn tại Survival Legacy Cup SS3!",
+        logo: "logo-fh.jpg",
         country: "", 
         players: [
-            { n: "T2AL.KTUAN", r: "RUSHER", id: "982519896" },
-            { n: "T2AL.LHTUAN", r: "RUSHER", id: "1794081493" },
-            { n: "T2AL.XQUYENN", r: "RIFLER", id: "8457251920" },
-            { n: "T2AL.XUANLOC", r: "SNIPER", id: "9050876679" },
-            { n: "T2AL.MINHANN",r: "SUPPORT", id: "3395103979" }
+            { n: "FH.DNP", r: "RUSHER", id: "2277930623" },
+            { n: "FH.GRIZZY", r: "RUSHER", id: "1127435270" },
+            { n: "FH.DONKAI", r: "BOMBER", id: "926872567" },
+            { n: "FH.BOI", r: "SNIPER", id: "746523523" },
+            { n: "FH.HNAM",r: "SUPPORT", id: "2590142436" }
         ]
     },
-    "tq": {
-        name: "TQ",
-        desc: "TQ - Tên đầy đủ là TQ Esports. Đội tuyển mang phong cách “im lặng nhưng kết liễu”, không ồn ào nhưng mỗi lần xuất hiện là một lần quét sạch, ra đòn ít nhưng chuẩn và cực kỳ chí mạng tại Survival Legacy Cup SS1.!",
-        logo: "logo-tq.jpg",
+    "xh2": {
+        name: "XH",
+        desc: "XH – Tên đầy đủ là XH Esports. Mỗi trận đấu là một cơ hội, mỗi đối thủ là một thử thách để vượt qua. Với tinh thần thi đấu máu lửa và khát khao chiến thắng, XH Esports sẵn sàng tạo nên những khoảnh khắc bùng nổ tại Survival Legacy Cup SS3!",
+        logo: "logo-xh2.jpg",
         country: "", 
         players: [
-            { n: "TQ.VKHANG", r: "RUSHER", id: "238934807" },
-            { n: "TQ.SYHA", r: "RIFLER", id: "10039390084" },
-            { n: "TQ.FAKE", r: "SNIPER", id: "8616363159" },
-            { n: "TQ.MOICHOI", r: "SUPPORT", id: "1890915738" },
+            { n: "XH.SEPRD", r: "RUSHER", id: "2944272645" },
+            { n: "XH.NERO", r: "BOMBER", id: "4477210794" },
+            { n: "XH.VHAO", r: "SNIPER", id: "8231699643" },
+            { n: "XH.ZYROX", r: "SUPPORT", id: "2205566148" },
             { n: "KHÔNG CÓ", a: "https://placehold.co/200x250/111/555?text=TRONG"}
         ]
     },
-    "tgl": {
-        name: "TGL",
-        desc: "TGL - Tên đầy đủ là Team Gia Lai. Đội tuyển không chỉ thi đấu, họ “định hình” trận đấu theo cách của riêng mình. Với phong thái điềm tĩnh và những pha ra quyết định mang tính chuẩn mực, TGL luôn khiến chiến thắng trở thành điều tất yếu chứ không phải may mắn tại Survival Legacy Cup SS1!",
-        logo: "logo-tgl.jpg",
+    "ttr": {
+        name: "TTR",
+        desc: "TTR – Tên đầy đủ là Twin Tigger Reigh. Mang hình ảnh của những mãnh hổ song hành, Twin Tigger Reigh luôn thi đấu với sự ăn ý, tốc độ và bản lĩnh. Không ngại đối đầu với bất kỳ thử thách nào, TTR sẵn sàng săn lấy chiến thắng và khẳng định vị thế tại Survival Legacy Cup SS3!",
+        logo: "logo-ttr.jpg",
         country: "", 
         players: [
-            { n: "TGL.DEKAY", r: "RUSHER", id: "5529315258" },
-            { n: "TGL.HDPE", r: "RUSHER", id: "248286997" },
-            { n: "TGL.MUP", r: "BOMBER", id: "2984185398" },
-            { n: "TGL.CUBA", r: "SNIPER", id: "4146302957" },
-            { n: "TGL.NPHUNG", r: "SUPPORT", id: "363533799" }
+            { n: "TTR.EMDZET", r: "RUSHER", id: "5514960658" },
+            { n: "TTR.EMPTY", r: "RUSHER", id: "7593775838" },
+            { n: "TTR.WANZT", r: "BOMBER", id: "4077941419" },
+            { n: "TTR.BABYBOI", r: "SNIPER", id: "2709789364" },
+            { n: "TTR.JADETEE", r: "SUPPORT", id: "6752608040" }
         ]
     },
-    "nvd": {
-        name: "NVD",
-        desc: "NVD - Tên đầy đủ là NEVERDIE. Đội tuyển với tinh thần chiến đấu không bỏ cuộc đúng như tên gọi. Lì lợm, bền bỉ và luôn chiến đến cùng, Neverdie cái tên luôn khiến đối thủ phải dè chừng mỗi khi bước vào trận tại Survival Legacy Cup SS1!",
-        logo: "logo-nvd.jpg",
+    "mix": {
+        name: "MIX",
+        desc: "MIX – Tên đầy đủ là MIX Esports. Đúng như cái tên, MIX Esports là sự hòa quyện giữa kỹ năng, chiến thuật và tinh thần đồng đội. Với lối chơi linh hoạt và quyết tâm không lùi bước, MIX sẵn sàng tạo nên bất ngờ và khẳng định bản lĩnh tại Survival Legacy Cup SS3!",
+        logo: "logo-mix.jpg",
         country: "", 
         players: [
-            { n: "NVD.QUOCHUY", r: "RUSHER", id: "1895472861" },
-            { n: "NVD.PHAMCUONG", r: "RUSHER", id: "10808635533" },
-            { n: "NVD.MINHTRI", r: "SPINER", id: "392420699" },
-            { n: "NVD.TRANLONG", r: "SUPPORT", id: "1728096984" },
-            { n: "NVD.QUOCMINH", r: "SUPPORT", id: "1921473584" }
+            { n: "MIX.VMA", r: "RUSHER", id: "6446192753" },
+            { n: "MIX.SUT", r: "RIFLER", id: "10789157722" },
+            { n: "MIX.BIDAY", r: "BOMBER", id: "7325713391" },
+            { n: "MIX.TQUAN", r: "SNIPER", id: "13306468362" },
+            { n: "KHÔNG CÓ", a: "https://placehold.co/200x250/111/555?text=TRONG" }
         ]
     },
     "hp": {
