@@ -207,17 +207,17 @@ const teamsDatabase = {
             { n: "LKE.EMPHUC", r: "SUPPORT", id: "3209197272"}
         ] 
     },
-    "ft": {
-        name: "FT",
-        desc: "FT - Tên đầy đủ là Fearless Team. Đội tuyển luôn thi đấu với lòng quyết tâm, chiến thuật linh hoạt và tinh thần đồng đội mạnh mẽ. Chúng tôi hướng tới mục tiêu không chỉ là chiến thắng, mà còn là truyền cảm hứng cho cộng đồng tại Survival Legacy Cup SS1!",
-        logo: "logo-ft.jpg",
+    "vkt": {
+        name: "VKT",
+        desc: "VKT – Tên đầy đủ là Vân Kiếm Tôn. Tựa như một thanh kiếm được tôi luyện qua muôn vàn thử thách, Vân Kiếm Tôn bước vào mỗi trận đấu với sự sắc bén, bản lĩnh và quyết tâm chinh phục mọi giới hạn. Không chỉ hướng đến chiến thắng, VKT còn muốn khắc ghi tên mình bằng những màn trình diễn đầy khí chất và khẳng định đẳng cấp tại Survival Legacy Cup SS3!",
+        logo: "logo-vkt.jpg",
         country: "", 
         players: [
-            { n: "FT.W4U", r: "RUSHER", id: "6456961336" },
-            { n: "FT.JVARZ", r: "BOMBER", id: "4363598414" },
-            { n: "FT.THANHDAI", r: "SNIPER", id: "3659332602" },
-            { n: "FT.MILLOW", r: "SUPPORT", id: "2444693631" },
-            { n: "KHÔNG CÓ", a: "https://placehold.co/200x250/111/555?text=TRONG" }
+            { n: "VKT.VANTUAN", r: "RUSHER", id: "1285407799" },
+            { n: "VKT.VANTHAO", r: "RIFLER", id: "64897553" },
+            { n: "VKT.KADO", r: "BOMBER", id: "1986949358" },
+            { n: "VKT.MY", r: "SNIPER", id: "9353533657" },
+            { n: "VKT.BOYWALK", r: "SUPPORT", id: "11041145321" }
         ]
     },
     "wb": {
