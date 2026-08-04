@@ -233,17 +233,17 @@ const teamsDatabase = {
             { n: "KHÔNG CÓ", a: "https://placehold.co/200x250/111/555?text=TRONG" }
         ]
     },
-    "tlk": {
-        name: "TLK",
-        desc: "TLK - Tên đầy đủ là Tú Lơ Khơ. Đội tuyển mang phong cách thi đấu ngẫu hứng nhưng đầy hiệu quả, nổi bật với những pha xử lý “khó đoán” và khả năng lật kèo ấn tượng tại Survival Legacy Cup SS1!",
-        logo: "logo-tlk.jpg",
+    "ade2": {
+        name: "ADE",
+        desc: "ADE – Tên đầy đủ là ADE. Không cần một cái tên quá dài để tạo dấu ấn, ADE chọn cách khiến đối thủ phải ghi nhớ bằng màn trình diễn trên chiến trường. Với tinh thần không lùi bước, khả năng thích nghi linh hoạt và khát khao chinh phục từng trận đấu, ADE sẵn sàng bứt phá, tạo nên những khoảnh khắc đáng nhớ và khẳng định bản lĩnh tại Survival Legacy Cup SS3!",
+        logo: "logo-ade2.jpg",
         country: "", 
         players: [
-            { n: "TLK.DONTCRY", r: "RUSHER", id: "8974744042" },
-            { n: "TLK.RAM", r: "BOMBER", id: "6787164998" },
-            { n: "TLK.NTT", r: "SNIPER", id: "6489203171" },
-            { n: "TLK.NGOCTIEN", r: "SUPPORT", id: "2514795764" },
-            { n: "TLK.VANTUAN", r: "SUPPORT", id: "896939861" }
+            { n: "ADE.TNGHIA", r: "RUSHER", id: "4275108112" },
+            { n: "ADE.TPHONG", r: "RUSHER", id: "6794901944" },
+            { n: "ADE.WHUY", r: "SNIPER", id: "983026618" },
+            { n: "ADE.DOKI", r: "SNIPER", id: "8095908384" },
+            { n: "ADE.TBON", r: "SUPPORT", id: "3768548347" }
         ]
     },
     "uch": {
@@ -852,7 +852,7 @@ function switchTeam(teamId) {
                     <div class="card-header">
                         <span class="stat-role-badge" style="${badgeStyle}">${roleIcon} ${player.r ? player.r : 'THÀNH VIÊN'}</span>
                         <span class="card-uzi-logo" style="font-size: 9px; line-height: 1.3; text-align: right; color: #fff; text-shadow: 0 0 5px #fff;">
-                            SURVIVAL LEGACY<br>CUP SS1
+                            SURVIVAL LEGACY<br>CUP SS3
                         </span>
                     </div>
 
