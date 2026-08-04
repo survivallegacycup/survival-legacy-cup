@@ -220,16 +220,16 @@ const teamsDatabase = {
             { n: "VKT.BOYWALK", r: "SUPPORT", id: "11041145321" }
         ]
     },
-    "wb": {
-        name: "WB",
-        desc: "WB - Tên đầy đủ là WIBU Esports. Đội tuyển với lối chơi trẻ trung, linh hoạt và giàu đột biến, thường xuyên tạo bất ngờ bằng những pha xử lý táo bạo và khả năng bứt phá mạnh mẽ tại Survival Legacy Cup SS1!",
-        logo: "logo-wb.jpg", /* Nhớ gõ đúng tên file ảnh bạn vừa lưu ở Bước 1 */
+    "nse": {
+        name: "NSE",
+        desc: "NSE – Tên đầy đủ là NEW STAR ESPORTS. Mang khát vọng của những ngôi sao mới đang vươn mình tỏa sáng, NEW STAR ESPORTS không ngại đối đầu với bất kỳ thử thách nào. Với tinh thần thi đấu máu lửa, lối chơi đầy đột phá và khát khao chinh phục đỉnh cao, NSE sẵn sàng biến mỗi trận đấu thành cơ hội để khẳng định tên tuổi và tỏa sáng rực rỡ tại Survival Legacy Cup SS3!",
+        logo: "logo-nse.jpg", 
         country: "", 
         players: [
-            { n: "WB.K9", r: "RUSHER", id: "3890131812" },
-            { n: "WB.BOI", r: "BOMBER", id: "9128936319" },
-            { n: "WB.DMK", r: "SNIPER", id: "9625163973" },
-            { n: "WB.PEPIN", r: "SUPPORT", id: "2598058404" },
+            { n: "NSE.MAC", r: "RUSHER", id: "10808635533" },
+            { n: "NSE.MINHTRIDZ", r: "BOMBER", id: "392360699" },
+            { n: "NSE.MINHTRI", r: "SNIPER", id: "2038614210" },
+            { n: "NSE.TRANLONG", r: "SUPPORT", id: "1728096984" },
             { n: "KHÔNG CÓ", a: "https://placehold.co/200x250/111/555?text=TRONG" }
         ]
     },
