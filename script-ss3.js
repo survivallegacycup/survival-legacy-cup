@@ -863,7 +863,7 @@ function switchTeam(teamId) {
                         </div>
                         <div class="data-field" style="margin-bottom: 0;">
                             <span class="data-label">PLAYER ID</span>
-                            <span class="data-value-id">${player.id ? player.id : 'DỮ LIỆU ĐANG CẬP NHẬT'}</span>
+                            <span class="data-value-id">${player.id ? player.id : 'KHÔNG CÓ DỮ LIỆU'}</span>
                         </div>
                     </div>
                 </div>
