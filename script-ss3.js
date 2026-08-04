@@ -259,69 +259,69 @@ const teamsDatabase = {
             { n: "KHÔNG CÓ", a: "https://placehold.co/200x250/111/555?text=TRONG" }
         ]
     },
-    "qc": {
-        name: "QC",
-        desc: "QC - Tên đầy đủ là Quyết Chiến Esports. Đội tuyển với tinh thần chiến đấu máu lửa, luôn chủ động giao tranh và không ngại va chạm, nổi bật với lối chơi quyết liệt và khả năng ép giao tranh mạnh mẽ tại Survival Legacy Cup SS1!",
-        logo: "logo-qc.jpg",
+    "tdt": {
+        name: "TDT",
+        desc: "TDT – Tên đầy đủ là Team Đầu Trâu. Đúng như cái tên, Team Đầu Trâu mang tinh thần lì lợm, bền bỉ và không bao giờ lùi bước trước bất kỳ đối thủ nào. Với ý chí quyết chiến và khát khao chinh phục, TDT sẵn sàng húc tung mọi thử thách để khẳng định sức mạnh tại Survival Legacy Cup SS3!",
+        logo: "logo-tdt.jpg",
         country: "", 
         players: [
-            { n: "QC.KAME",  r: "RUSHER", id: "7169919048" },
-            { n: "QC.DKHANG",  r: "RUSHER", id: "12662645082" },
-            { n: "QC.NGHIEU", r: "BOMBER", id: "1868626947" },
-            { n: "QC.CHIBUN",  r: "SNIPER", id: "6464845328" },
-            { n: "QC.LAW", r: "SUPPORT", id: "13044258821" }
+            { n: "TDT.GIABAO",  r: "RUSHER", id: "9653299037" },
+            { n: "TDT.TUANANH",  r: "RIFLER", id: "13022794005" },
+            { n: "TDT.PHAMBAO", r: "SNIPER", id: "9268264276" },
+            { n: "TDT.DUCVIET",  r: "SUPPORT", id: "7297998533" },
+            { n: "TDT.DUCNAM", r: "SUPPORT", id: "6347851915" }
         ]
     },
-    "kg": {
-        name: "KG",
-        desc: "KG – Tên đầy đủ là KG Esports. Đội tuyển thi đấu đầy bản lĩnh và kỷ luật, nổi bật với lối chơi chắc chắn, kiểm soát trận đấu tốt và khả năng phối hợp team cực kỳ ăn ý. Không chỉ mạnh ở kỹ năng cá nhân, họ còn sở hữu tư duy chiến thuật sắc bén, sẵn sàng bứt phá và làm chủ cuộc chơi ở những thời khắc quyết định tại Survival Legacy Cup SS1!",
-        logo: "logo-kg.jpg",
+    "he2": {
+        name: "HE",
+        desc: "HE – Tên đầy đủ là HE. Với HE, H là Heart (trái tim nhiệt huyết), E là Elite (tinh thần của những chiến binh ưu tú). Thi đấu bằng cả đam mê và bản lĩnh, HE quyết tâm tạo nên những màn trình diễn bùng nổ tại Survival Legacy Cup SS3!",
+        logo: "logo-he2.jpg",
         country: "", 
         players: [
-            { n: "KG.TANPHAT", r: "RUSHER", id: "589071469"},
-            { n: "KG.QUAN", r: "RUSHER", id: "7083435745" },
-            { n: "KG.THINH", r: "SNIPER", id: "1211245755" },
-            { n: "KG.HIEUDUC", r: "SUPPORT", id: "2073408899" },
-            { n: "KHÔNG CÓ", a: "https://placehold.co/200x250/111/555?text=TRONG", r: "TRONG" }
+            { n: "HE.THEVAN", r: "RUSHER", id: "8976760504"},
+            { n: "HE.KUBILL", r: "RUSHER", id: "15516271021" },
+            { n: "HE.QUOCTHUAN", r: "SNIPER", id: "2226577011" },
+            { n: "HE.DIEMHANG", r: "SUPPORT", id: "229894720" },
+            { n: "HE.THENHAT", r: "SUPPORT", id: "2601876385" }
         ]
     },
-    "nna": {
-        name: "NNA",
-        desc: "NNA - Tên đầy đủ là Nước Ngọt Academy. Đội tuyển mang phong cách “ngọt mà gắt”, vẻ ngoài nhẹ nhàng nhưng lối chơi cực kỳ khó chịu, sẵn sàng tung đòn kết liễu bất ngờ và khiến đối thủ “thấm đòn” tại Survival Legacy Cup SS1!",
-        logo: "logo-nna.jpg",
+    "lte": {
+        name: "LTE",
+        desc: "LTE – Tên đầy đủ là Long Trị Esports. Khi Rồng cất cánh, bầu trời chỉ còn chỗ cho kẻ mạnh. Với tinh thần quyết chiến và khát khao chiến thắng, LTE sẵn sàng bùng nổ trong từng trận đấu để ghi dấu ấn tại Survival Legacy Cup SS3!",
+        logo: "logo-lte.jpg",
         country: "", 
         players: [
-            { n: "NNA.TCUONG", r: "RUSHER", id: "1246697946" },
-            { n: "NNA.THDAT", r: "RUSHER", id: "3421297792" },
-            { n: "NNA.DHAI", r: "BOMBER", id: "4184049752" },
-            { n: "NNA.QMANH", r: "SUPPORT", id: "02645505986" },
-            { n: "KHÔNG CÓ", a: "https://placehold.co/200x250/111/555?text=TRONG" }
+            { n: "LTE.TTAM", r: "RUSHER", id: "8123875526" },
+            { n: "LTE.QDAT", r: "RUSHER", id: "4752316998" },
+            { n: "LTE.GIABAO", r: "RIFLER", id: "10288568002" },
+            { n: "LTE.HDANG", r: "BOMBER", id: "4184330303" },
+            { n: "LTE.HTINH", r: "SUPPORT", id: "7984169749" }
         ]
     },
-    "bnn1": {
-        name: "BNN1",
-        desc: "BBN1 - Tên đầy đủ là Béc Nin No 1. Đội tuyển với khí chất dẫn đầu, lối chơi dứt khoát và đầy uy lực, luôn nhập cuộc với mục tiêu thống trị và khẳng định đẳng cấp số 1 tại Survival Legacy Cup SS1!",
-        logo: "logo-bnn1.jpg",
+    "arty": {
+        name: "ARTY",
+        desc: "ARTY – Tên đầy đủ là ARTY KILLER. Sinh ra để săn kill, thi đấu để thống trị. Với lối chơi máu lửa và tinh thần không khoan nhượng, ARTY KILLER sẵn sàng biến mọi cuộc đối đầu thành màn trình diễn của mình tại Survival Legacy Cup SS3!",
+        logo: "logo-arty.jpg",
         country: "", 
         players: [
-            { n: "BNN1.HGIA", r: "RUSHER", id: "1716356557" },
-            { n: "BNN1.TCONG", r: "BOMBER", id: "9774404730" },
-            { n: "BNN1.VTAI", r: "SUPPORT", id: "9780579184" },
-            { n: "BNN1.VLAP", r: "SNIPER", id: "1236791829" },
-            { n: "KHÔNG CÓ", a: "https://placehold.co/200x250/111/555?text=TRONG" }
+            { n: "ARTY.TRINH", r: "RUSHER", id: "7289909444" },
+            { n: "ARTY.KHOA", r: "RUSHER", id: "9794313196" },
+            { n: "ARTY.TUAN", r: "RIFLER", id: "10208562491" },
+            { n: "ARTY.HUNG", r: "SNIPER", id: "8970512236" },
+            { n: "ARTY.HOA", r: "SUPPORT", id: "3091870862" }
         ]
     },
-    "nnn": {
-        name: "NNN",
-        desc: "NNN - Tên đầy đủ là NO NO NO. Đội tuyển với tinh thần “nói không với thất bại”, nổi bật bởi lối chơi quyết đoán, áp lực liên tục và khả năng từ chối mọi cơ hội của đối thủ tại Survival Legacy Cup SS1!",
-        logo: "logo-nnn.jpg",
+    "pc": {
+        name: "PC",
+        desc: "PC – Tên đầy đủ là PC Esports. Giống như một cỗ máy được tối ưu để chiến thắng, PC Esports luôn vận hành với sự chính xác, kỷ luật và tốc độ. Mỗi trận đấu là một cơ hội để PC bùng nổ và khẳng định sức mạnh tại Survival Legacy Cup SS3!",
+        logo: "logo-pc.jpg",
         country: "", 
         players: [
-            { n: "NNN.DINH", r: "RUSHER", id: "3011718064" },
-            { n: "NNN.VANTAI", r: "RUSHER", id: "8102907685" },
-            { n: "NNN.BMINH", r: "SNIPER", id: "6576055069" },
-            { n: "NNN.NHATTIEN", r: "SUPPORT", id: "5389941711" },
-            { n: "KHÔNG CÓ", a: "https://placehold.co/200x250/111/555?text=TRONG" }
+            { n: "PC.DNDAN", r: "RUSHER", id: "7939875539" },
+            { n: "PC.LHT", r: "RUSHER", id: "9531744891" },
+            { n: "PC.HIEU", r: "RIFLER", id: "8614179975" },
+            { n: "PC.TEN", r: "SNIPER", id: "5401984097" },
+            { n: "PC.EMBE", r: "SUPPORT", id: "2124497748" }
         ]
     },
     "t2al": {
