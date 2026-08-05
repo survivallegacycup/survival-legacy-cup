@@ -376,82 +376,82 @@ const teamsDatabase = {
             { n: "KHÔNG CÓ", a: "https://placehold.co/200x250/111/555?text=TRONG" }
         ]
     },
-    "hp": {
-        name: "HP",
-        desc: "HP – Tên đầy đủ là HP ESPORTS. Đội tuyển mang phong cách thi đấu lạnh lùng và chuẩn xác. Không cần quá phô trương, HP luôn âm thầm tích lũy lợi thế và kết liễu trận đấu bằng những pha xử lý gọn gàng, dứt khoát tại Survival Legacy Cup SS1!",
-        logo: "logo-hp.jpg",
+    "isea": {
+        name: "ISEA",
+        desc: "ISEA – Tên đầy đủ là ISEA Esports. Như những con sóng giữa đại dương, ISEA Esports càng gặp thử thách càng bùng lên mạnh mẽ. Với tinh thần quyết chiến và khát khao chinh phục, ISEA sẵn sàng vượt mọi giới hạn để tạo nên dấu ấn tại Survival Legacy Cup SS3!",
+        logo: "logo-isea.jpg",
         country: "", 
         players: [
-            { n: "HP.PHUY", r: "RUSHER", id: "343473824" },
-            { n: "HP.MLONG", r: "RUSHER", id: "30966128" },
-            { n: "HP.HBAO", r: "BOMBER", id: "3117070335" },
-            { n: "HP.HKIET", r: "SNIPER", id: "7533504927" },
-            { n: "HP.ATUAN", r: "SUPPORT", id: "1824807835" }
+            { n: "ISEA.LUAN", r: "RUSHER", id: "2653093397" },
+            { n: "ISEA.HANA", r: "RIFLER", id: "2104295752" },
+            { n: "ISEA.AMIA", r: "BOMBER", id: "4426672086" },
+            { n: "ISEA.MIN", r: "SNIPER", id: "3262117908" },
+            { n: "ISEA.BIN", r: "SUPPORT", id: "9348528189" }
         ]
     },
-    "gods": {
-        name: "GODS",
-        desc: "GODS – Tên đầy đủ là GODS ESPORTS. Đội tuyển bước vào trận như những kẻ định đoạt số phận ván đấu. Mỗi pha di chuyển đều mang tính áp đặt, mỗi giao tranh đều là lời tuyên bố: đây là lãnh địa của GODS tại Survival Legacy Cup SS1!",
-        logo: "logo-gods.jpg",
+    "vle": {
+        name: "VLE",
+        desc: "VLE – Tên đầy đủ là VL Esports. Bình tĩnh khi nhập cuộc, bùng nổ khi giao tranh. VL Esports mang theo tinh thần của những chiến binh không ngại va chạm và quyết tâm chiến đấu đến cùng để khẳng định bản lĩnh tại Survival Legacy Cup SS3!",
+        logo: "logo-vle.jpg",
         country: "", 
         players: [
-            { n: "GODS.BHUY", r: "RUSHER", id: "7286133977" },
-            { n: "GODS.CHUY",r: "RUSHER", id: "5358748224" },
-            { n: "GODS.KDUY", r: "SPINER", id: "9898703421" },
-            { n: "GODS.TVAN", r: "SUPPORT", id: "4998752967" },
-            { n: "GODS.GKIET", r: "SUPPORT", id: "6523254985" }
+            { n: "VLE.KHANHTOAN", r: "RUSHER", id: "1466891354" },
+            { n: "VLE.VANHIEU",r: "BOMBER", id: "931508938" },
+            { n: "VLE.MINHDUC", r: "SNIPER", id: "1047846802" },
+            { n: "VLE.VIETHUNG", r: "SNIPER", id: "1679326020" },
+            { n: "VLE.SYTUAN", r: "SUPPORT", id: "1812440436" }
         ]
     },
-    "whd": {
-        name: "WHD",
-        desc: "WHD - Tên đầy đủ là Vui Vẻ Hoà Đồng. Đội tuyển mang năng lượng tích cực vào từng trận đấu, nhưng đừng để sự vui vẻ đánh lừa, khi cần họ vẫn có thể bùng nổ và xoay chuyển cục diện theo cách không ai ngờ tới  tại Survival Legacy Cup SS1!",
-        logo: "logo-whd.png",
+    "b52e": {
+        name: "B52E",
+        desc: "B52E – Tên đầy đủ là B52 Esports. Chỉ cần B52E xuất trận, bầu không khí lập tức nóng lên. Với những pha xử lý bùng nổ và tinh thần không ngại đối đầu, B52 Esports quyết tâm làm rung chuyển mọi trận đấu tại Survival Legacy Cup SS3!",
+        logo: "logo-b52e.jpg",
         country: "", 
         players: [
-            { n: "WHD.TUANANH", r: "RUSHER", id: "2015939299" },
-            { n: "WHD.NGOCHAI", r: "BOMBER", id: "638649717" },
-            { n: "WHD.THANHSON", r: "SNIPER", id: "4109105748" },
-            { n: "WHD.NGOCCAC",r: "SNIPER", id: "2656003625" },
-            { n: "WHD.HUUPHUOC", r: "SUPPORT", id: "6548727578" }
+            { n: "B52E.ORHUN", r: "RUSHER", id: "10886768826" },
+            { n: "B52E.MAKCUONG", r: "RUSHER", id: "3888878565" },
+            { n: "B52E.LEVORZ", r: "BOMBER", id: "9050876679" },
+            { n: "B52E.SEBEO",r: "SNIPER", id: "6353698339" },
+            { n: "B52E.NGBAO", r: "SUPPORT", id: "4439122562" }
         ]
     },
-    "arc": {
-        name: "ARC",
-        desc: "ARC – tên đầy đủ là ARCANE LEGION. Đội tuyển mang màu sắc huyền bí và khó lường, nơi mỗi bước di chuyển đều ẩn chứa toan tính. Với lối chơi tinh quái và khả năng tạo đột biến cao, ARC luôn khiến trận đấu xoay chiều theo cách rất “ma thuật” tại Survival Legacy Cup SS1!",
-        logo: "logo-arc.jpg",
+    "đstn": {
+        name: "ĐSTN",
+        desc: "ĐSTN – Tên đầy đủ là ĐSTN Esports. Có những cái tên được nhớ bằng lời nói, còn ĐSTN Esports muốn được nhớ bằng những màn trình diễn. Với bản lĩnh và khát khao chiến thắng, đội tuyển quyết tâm bùng nổ và khẳng định vị thế tại Survival Legacy Cup SS3!",
+        logo: "logo-đstn.jpg",
         country: "", 
         players: [
-            { n: "ARC.HUY", r: "RUSHER", id: "3956442086" },
-            { n: "ARC.MINHBOY", r: "BOMBER", id: "453404499" },
-            { n: "ARC.DUNG", r: "SNIPER", id: "2812885077" },
-            { n: "ARC.DONG", r: "SUPPORT", id: "3111464911" },
+            { n: "ĐSTN.U7E", r: "RUSHER", id: "6775937715" },
+            { n: "ĐSTN.KHUNG", r: "RUSHER", id: "9061635777" },
+            { n: "ĐSTN.NVX", r: "SNIPER", id: "6556475658" },
+            { n: "ĐSTN.TOP1", r: "SUPPORT", id: "3201187189" },
+            { n: "ĐSTN.HDUNG", r: "SUPPORT", id: "6118395618" }
+        ]
+    },
+    "vg": {
+        name: "VG",
+        desc: "VG – Tên đầy đủ là VG. Mang tinh thần Victory & Glory – chiến thắng và vinh quang, VG luôn bước vào trận đấu với khát khao chinh phục đỉnh cao. Không ngại thử thách, không lùi bước trước bất kỳ đối thủ nào, VG quyết tâm ghi tên mình vào những khoảnh khắc rực rỡ tại Survival Legacy Cup SS3!",
+        logo: "logo-vg.jpg",
+        country: "", 
+        players: [
+            { n: "VG.THTRIEU", r: "RUSHER", id: "1564568025" },
+            { n: "VG.BLAN", r: "RUSHER", id: "11895984874" },
+            { n: "VG.XHT", r: "SNIPER", id: "9322506139" },
+            { n: "VG.MTRI", r: "SNIPER", id: "7813968373" },
+            { n: "VG.XHT2",  r: "SUPPORT", id: "9363415496" }
+        ]
+    },
+    "st": {
+        name: "ST",
+        desc: "ST – Tên đầy đủ là Shart TiTan. Khi Titan thức tỉnh, chiến trường chỉ còn chỗ cho những kẻ mạnh. Với tinh thần quyết chiến và khát khao chiến thắng, ST sẵn sàng bùng nổ trong từng trận đấu để tạo nên dấu ấn tại Survival Legacy Cup SS3!",
+        logo: "logo-st.jpg",
+        country: "", 
+        players: [
+            { n: "ST.DLUONG", r: "RUSHER", id: "6470814423" },
+            { n: "ST.NGAO", r: "RIFLER", id: "1756227636" },
+            { n: "ST.TDUNG",r: "SNIPER", id: "1982342638" },
+            { n: "ST.VP", r: "SUPPORT", id: "5329839627" },
             { n: "KHÔNG CÓ", a: "https://placehold.co/200x250/111/555?text=TRONG", r: "TRONG" }
-        ]
-    },
-    "bne": {
-        name: "BNE",
-        desc: "BNE - Tên đầy đủ là BN ESPORT. Đội tuyển chơi theo kiểu “ít nhưng chất” — mỗi pha di chuyển đều có mục đích, mỗi giao tranh đều tính toán kỹ lưỡng. Không ồn ào, nhưng khi ra tay thì gần như không cho đối thủ cơ hội phản kháng tại Survival Legacy Cup SS1!",
-        logo: "logo-bne.jpg",
-        country: "", 
-        players: [
-            { n: "BNE.TUANAN", r: "RUSHER", id: "8368590729" },
-            { n: "BNE.DPHONG", r: "BOMBER", id: "7930899723" },
-            { n: "BNE.VINHKAKA", r: "BOMBER", id: "1231702254" },
-            { n: "BNE.TNHAN", r: "SNIPER", id: "7506277174" },
-            { n: "BNE.DBAO",  r: "SUPPORT", id: "9818033572" }
-        ]
-    },
-    "cnct": {
-        name: "CNCT",
-        desc: "CNCT – Tên đầy đủ là CAINUOC CITY. Đội tuyển mang đậm chất đường phố với lối chơi táo bạo và không ngại va chạm. Luôn sẵn sàng lao vào giao tranh, CNCT biến mỗi trận đấu thành cuộc chiến thực thụ, nơi bản lĩnh được đặt lên hàng đầu tại Survival Legacy Cup SS1!",
-        logo: "logo-cnct.jpg",
-        country: "", 
-        players: [
-            { n: "CNCT.QN", r: "RUSHER", id: "109393806" },
-            { n: "CNCT.CN", r: "RUSHER", id: "1503184563" },
-            { n: "CNCT.KH",r: "RUSHER", id: "2519487267" },
-            { n: "CNCT.SOI", r: "SNIPER", id: "12848040110" },
-            { n: "CNCT.QUYEN", r: "SUPPORT", id: "12953668584" }
         ]
     },
     "btn": {
