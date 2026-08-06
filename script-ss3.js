@@ -480,29 +480,29 @@ const teamsDatabase = {
             { n: "KHÔNG CÓ", a: "https://placehold.co/200x250/111/555?text=TRONG", r: "TRONG" }
         ]
     },
-    "hre": {
-        name: "HRE",
-        desc: "HRE - Tên đầy đủ là HERO ESPORTS. Đội tuyển mang tinh thần của những “người hùng” thực thụ- luôn xuất hiện đúng lúc và tạo nên khác biệt. Với lối chơi bản lĩnh và những pha tỏa sáng cá nhân, HRE thường là nhân tố xoay chuyển cục diện trận đấu tại Survival Legacy Cup SS1!",
-        logo: "logo-hre.jpg",
+    "sgp": {
+        name: "SGP",
+        desc: "SGP – Tên đầy đủ là SGP. Mang tinh thần Strike • Glory • Power, SGP luôn bước vào trận đấu với khát khao chiến thắng và bản lĩnh của những chiến binh thực thụ. Không ngại đối đầu, không lùi bước trước thử thách, SGP quyết tâm tạo nên dấu ấn tại Survival Legacy Cup SS3!",
+        logo: "logo-sgp.jpg",
         country: "", 
         players: [
-            { n: "HRE.RESFINA", r: "RUSHER", id: "1518845669" },
-            { n: "HRE.COTU", r: "BOMBER", id: "6839933813" },
-            { n: "HRE.TANHH", r: "SNIPER", id: "6153199502" },
-            { n: "HRE.VANPHONG", r: "SUPPORT", id: "16899530216" },
-            { n: "KHÔNG CÓ", a: "https://placehold.co/200x250/111/555?text=TRONG", r: "TRONG" }
+            { n: "SGP.DAU", r: "RUSHER", id: "4364899318" },
+            { n: "SGP.TTHUY", r: "RIFLER", id: "13614124304" },
+            { n: "SGP.TAPO", r: "BOMBER", id: "6153199502" },
+            { n: "SGP.QTIEN", r: "SNIPER", id: "14545224777" },
+            { n: "KHÔNG CÓ", r: "SUPPORT", id: "7430013561" }
         ]
     },
-    "pcm": {
-        name: "PCM",
-        desc: "PCM - Tên đầy đủ là PCM. Đội tuyển chơi như những “kẻ giật dây” phía sau trận đấu - không ồn ào nhưng luôn kiểm soát nhịp độ. Đến khi đối thủ nhận ra, mọi thứ đã nằm trọn trong thế trận của PCM tại Survival Legacy Cup SS1!",
-        logo: "logo-pcm.jpg",
+    "mek": {
+        name: "MEK",
+        desc: "MEK – Tên đầy đủ là MegaKill Esports. Khi giao tranh bùng nổ cũng là lúc MegaKill Esports lên tiếng. Với tinh thần quyết chiến, kỹ năng sắc bén và khát khao chinh phục, MEK quyết tâm tạo nên những pha xử lý mãn nhãn và ghi dấu ấn tại Survival Legacy Cup SS3!",
+        logo: "logo-mek.jpg",
         country: "", 
         players: [
-            { n: "PCM.APPOMEO", r: "RUSHER", id: "2215015375" },
-            { n: "PCM.DZAI", r: "RUSHER", id: "949943695" },
-            { n: "PCM.OGGY", r: "SNIPER", id: "8927718972" },
-            { n: "PCM.K", r: "SUPPORT", id: "1222539985" },
+            { n: "MEK.MTRIET", r: "RUSHER", id: "11689622261" },
+            { n: "MEK.FRV", r: "RIFLER", id: "3248543787" },
+            { n: "MEK.TRUNG", r: "SNIPER", id: "12770679079" },
+            { n: "MEK.NANH", r: "SUPPORT", id: "12770679079" },
             { n: "KHÔNG CÓ", a: "https://placehold.co/200x250/111/555?text=TRONG", r: "TRONG" }
         ]
     },
