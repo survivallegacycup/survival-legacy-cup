@@ -454,30 +454,30 @@ const teamsDatabase = {
             { n: "KHÔNG CÓ", a: "https://placehold.co/200x250/111/555?text=TRONG", r: "TRONG" }
         ]
     },
-    "btn": {
-        name: "BTN",
-        desc: "BTN - Tên đầy đủ là BTN. Đội tuyển mang phong cách thi đấu lạnh và lì, càng bị ép, họ càng nguy hiểm. Với những pha phản công sắc bén, BTN luôn biết cách biến thế trận bất lợi thành màn lật kèo đầy bất ngờ tại Survival Legacy Cup SS1!",
-        logo: "logo-btn.jpg",
+    "cte": {
+        name: "CTE",
+        desc: "CTE – Tên đầy đủ là CTE. Với ý chí của những Champions Together Forever, CTE tin rằng sức mạnh lớn nhất đến từ sự gắn kết. Chiến đấu như một tập thể, quyết thắng như một đội tuyển, CTE quyết tâm tạo nên dấu ấn tại Survival Legacy Cup SS3!",
+        logo: "logo-cte.jpg",
         country: "", 
         players: [
-            { n: "BTN.TDUNG", r: "RUSHER", id: "1488596643" },
-            { n: "BTN.VQUANG", r: "RUSHER", id: "5719612395" },
-            { n: "BTN.TANH", r: "SNIPER", id: "2709719422" },
-            { n: "BTN.HLONG", r: "SUPPORT", id: "8730416367" },
+            { n: "CTE.GBAO", r: "RUSHER", id: "14501843024" },
+            { n: "CTE.HOANGPHU", r: "RUSHER", id: "692914271" },
+            { n: "CTE.LONGVU", r: "SNIPER", id: "2934208943" },
+            { n: "CTE.BI", r: "SUPPORT", id: "11849275511" },
             { n: "KHÔNG CÓ", a: "https://placehold.co/200x250/111/555?text=TRONG", r: "TRONG" }
         ]
     },
-    "blx": {
-        name: "BLX",
-        desc: "BLX - Tên đầy đủ là BLITZX. Đội tuyển mang phong cách đánh nhanh, dồn dập đúng như cái tên “Blitz”. Không cho đối thủ thời gian thở, BLX luôn áp đảo nhịp trận bằng những pha tấn công chớp nhoáng và đầy uy lực tại Survival Legacy Cup SS1!",
-        logo: "logo-blx.jpg",
+    "km2": {
+        name: "KM",
+        desc: "KM – Tên đầy đủ là KM Esports. Mang tinh thần Kill • Master, KM Esports luôn bước vào trận đấu với bản lĩnh của những người làm chủ mọi cuộc giao tranh. Không ngại đối đầu, không bỏ lỡ cơ hội, KM quyết tâm chinh phục chiến thắng và khẳng định vị thế tại Survival Legacy Cup SS3!",
+        logo: "logo-km2.jpg",
         country: "", 
         players: [
-            { n: "BLX.CP", r: "RUSHER", id: "2335381188" },
-            { n: "BLX.CT", r: "RUSHER", id: "1943300913" },
-            { n: "BLX.HT", r: "SNIPER", id: "7985693180" },
-            { n: "BLX.TQ", r: "SNIPER", id: "600083928" },
-            { n: "BLX.TC", r: "SUPPORT", id: "1586169125" }
+            { n: "KM.WRONGUS", r: "RUSHER", id: "3016983320" },
+            { n: "KM.GUNNERS", r: "RIFLER", id: "5975854296" },
+            { n: "KM.PHAMTIEN", r: "BOMBER", id: "2315234124" },
+            { n: "KM.EZLOVE", r: "SNIPER", id: "2146266439" },
+            { n: "KHÔNG CÓ", a: "https://placehold.co/200x250/111/555?text=TRONG", r: "TRONG" }
         ]
     },
     "hre": {
