@@ -597,82 +597,82 @@ const teamsDatabase = {
             { n: "UZI.BIN", r: "SUPPORT", id: "9173149407" }
         ]
     },
-    "mb": {
-        name: "MB",
-        desc: "MB - Tên đầy đủ là MEMBES. Đội tuyển đại diện cho “Mind & Bullet – Trí tuệ và hỏa lực”, nơi chiến thuật và kỹ năng kết hợp hoàn hảo. Không chỉ bắn hay, MB còn thắng bằng cái đầu, biến mọi pha giao tranh thành nước đi đã được tính trước tại Survival Legacy Cup SS1!",
-        logo: "logo-mb.jpg",
+    "vta": {
+        name: "VTA",
+        desc: "VTA – Tên đầy đủ là VTA. Victory • Tactics • Ambition – chiến thắng, chiến thuật và khát vọng. VTA bước vào mỗi trận đấu với mục tiêu rõ ràng: chơi bằng thực lực, đánh bằng bản lĩnh và quyết tâm tiến xa tại Survival Legacy Cup SS3!",
+        logo: "logo-vta.jpg",
         country: "", 
         players: [
-            { n: "MB.HIEU", r: "RUSHER", id: "34210900" },
-            { n: "MB.DANGKHOA", r: "RIFLER", id: "679576072" },
-            { n: "MB.NPHUNG", r: "BOMBER", id: "79343656218" },
-            { n: "MB.QUOCKHANH", r: "SUPPORT", id: "2984185398" },
-            { n: "MB.THAONHI", r: "SUPPORT", id: "9682496132" }
+            { n: "VTA.PHUCTHINH", r: "RUSHER", id: "7754321281" },
+            { n: "VTA.TUANANH", r: "BOMBER", id: "1047965020" },
+            { n: "VTA.MHOANG", r: "SNIPER", id: "5969646401" },
+            { n: "VTA.TANDUAN", r: "SNIPER", id: "5001589171" },
+            { n: "VTA.DUCANH", r: "SUPPORT", id: "3309814632" }
         ]
     },
-    "km": {
-        name: "KM",
-        desc: "KM - Tên đầy đủ là KM ESPORTS. Đội tuyển đại diện cho “Killer Mind - Tư duy sát thủ”, nơi mọi quyết định đều nhanh, gọn và mang tính kết liễu. KM không chỉ chơi game, họ săn lùng cơ hội và dứt điểm đối thủ không chút do dự tại Survival Legacy Cup SS1!",
-        logo: "logo-km.jpg",
+    "tmh": {
+        name: "TMH",
+        desc: "TMH – Tên đầy đủ là TMH. Think. Move. Hunt. – nghĩ nhanh, di chuyển chuẩn, săn chiến thắng. TMH không cần ồn ào để tạo áp lực; chỉ cần một khoảnh khắc đúng lúc, đội tuyển sẵn sàng biến thế trận và ghi dấu ấn tại Survival Legacy Cup SS3!",
+        logo: "logo-tmh.jpg",
         country: "", 
         players: [
-            { n: "KM.HQN", r: "RUSHER", id: "3016983320" },
-            { n: "KM.KCDON", r: "RIFLER", id: "2319234124" },
-            { n: "KM.NGANDAO", r: "BOMBER", id: "4524940495" },
-            { n: "KM.CRUSH", r: "SNIPER", id: "1890603447" },
-            { n: "KM.MTHUAN", r: "SUPPORT", id: "5975854296" }
+            { n: "TMH.VANTUAN", r: "RUSHER", id: "1285407799" },
+            { n: "TMH.BOYWALK", r: "BOMBER", id: "11041145321" },
+            { n: "TMH.MY", r: "SNIPER", id: "9353533657" },
+            { n: "TMH.AN", r: "SUPPORT", id: "9279800249" },
+            { n: "KHÔNG CÓ", a: "https://placehold.co/200x250/111/555?text=TRONG", r: "TRONG" }
         ]
     },
-    "4t": {
-        name: "4T",
+    "ze": {
+        name: "ZE",
         desc: "4T – Tên đầy đủ là 4T ESPORTS. Đội tuyển đại diện cho “4 Triggers – 4 họng súng luôn sẵn sàng khai hỏa”, nơi mỗi thành viên là một điểm nổ có thể kích hoạt bất cứ lúc nào. Khi 4T nhập cuộc, trận đấu không còn là kiểm soát-mà là chuỗi phản ứng dây chuyền của những pha hủy diệt tại Survival Legacy Cup SS1!",
         logo: "logo-4t.jpg",
         country: "", 
         players: [
-            { n: "4T.MINHNHAT", r: "RUSHER", id: "712500213" },
-            { n: "4T.TRUONGAN", r: "BOMBER", id: "4359140364" },
-            { n: "4T.NGOCCAC", r: "SNIPER", id: "2656003625" },
-            { n: "4T.HOANGDUNG", r: "SUPPORT", id: "2543293151" },
-            { n: "4T.BONG", r: "SUPPORT", id: "1836363131" }
+            { n: "ZE.DNDAN", r: "RUSHER", id: "7939875539" },
+            { n: "ZE.LHT", r: "RUSHER", id: "9531744891" },
+            { n: "ZE.HIEU", r: "RIFLER", id: "8614179975" },
+            { n: "ZE.TEN", r: "SNIPER", id: "5401984097" },
+            { n: "ZE.EMBE", r: "SUPPORT", id: "2124497748" }
         ]
     },
-    "te": {
-        name: "TE",
-        desc: "TE – Tên đầy đủ là TOMESPORTS. Đội tuyển đại diện cho “Tactical Execution – Lối chơi chuẩn xác tuyệt đối”, nơi mọi pha xử lý đều được triển khai như một kịch bản hoàn hảo. TE không tạo ra cơ hội-họ tự viết nên thế trận và kết thúc nó theo cách của mình tại Survival Legacy Cup SS1!",
-        logo: "logo-te.jpg",
+    "sgp2": {
+        name: "SGP2",
+        desc: "SGP2 – Tên đầy đủ là SGP2. Strike • Glory • Power — Level 2. Không chỉ bước vào để thi đấu, SGP2 hướng đến một cấp độ hoàn toàn khác: mạnh hơn, nhanh hơn và quyết liệt hơn. Sẵn sàng bùng nổ trong từng pha giao tranh, SGP2 quyết tâm tạo dấu ấn tại Survival Legacy Cup SS3!",
+        logo: "logo-sgp2.jpg",
         country: "", 
         players: [
-            { n: "TE.SPEEDZ", r: "RUSHER", id: "5754555818" },
-            { n: "TE.RENNO", r: "RUSHER", id: "3138080504" },
-            { n: "TE.KOLIX", r: "BOMBER", id: "2094074229" },
-            { n: "TE.TVL", r: "SNIPER", id: "60147504612" },
-            { n: "TE.BEN10", r: "SUPPORT", id: "154415876" }
+            { n: "SGP2.NAME", r: "RUSHER", id: "24894538764" },
+            { n: "SGP2.DH", r: "RIFLER", id: "3081890813" },
+            { n: "SGP2.EMIT", r: "BOMBER", id: "7781127261" },
+            { n: "SGP2.GHOST", r: "SNIPER", id: "9861486205" },
+            { n: "SGP2.MEO", r: "SUPPORT", id: "8720767754" }
         ]
     },
-    "lhdxb": {
-        name: "LHDXB",
-        desc: "LHDXB – Tên đầy đủ là LA HÁN ĐẨY XE BÒ. Đội tuyển đại diện cho “sức mạnh lì lợm và tiến công không ngừng”, như những La Hán kiên định đẩy thế trận tiến về phía trước. Không vội vàng nhưng không thể cản, LHDXB càng đánh càng ép, biến mọi trận đấu thành hành trình áp đảo tại Survival Legacy Cup SS1!",
-        logo: "logo-lhdxb.jpg",
+    "ggl": {
+        name: "GGL",
+        desc: "GGL – Tên đầy đủ là GGL. Go • Grind • Glory – tiến lên, không ngừng rèn luyện và hướng tới vinh quang. GGL không cần khởi đầu hoàn hảo, chỉ cần càng đánh càng mạnh. Với tinh thần quyết chiến và khát khao bứt phá, GGL sẵn sàng tạo dấu ấn tại Survival Legacy Cup SS3!",
+        logo: "logo-ggl.jpg",
         country: "", 
         players: [
-            { n: "LHDXB.NQUYEN", r: "RUSHER", id: "975051123" },
-            { n: "LHDXB.MTOAN", r: "RUSHER", id: "4086920472" },
-            { n: "LHDXB.NQUAN", r: "SNIPER", id: "6783878691" },
-            { n: "LHDXB.HONGLINH", r: "SUPPORT", id: "3120683522" },
-            { n: "LHDXB.CPHAT", r: "SUPPORT", id: "1815747167" }
+            { n: "GGL.CUBA", r: "RUSHER", id: "4146302957" },
+            { n: "GGL.DEKAY", r: "RUSHER", id: "5529315258" },
+            { n: "GGL.SLASH", r: "BOMBER", id: "1156181860" },
+            { n: "GGL.CHAN", r: "SNIPER", id: "8722710019" },
+            { n: "GGL.YOGOU", r: "SUPPORT", id: "248286997" }
         ]
     },
-    "hkt": {
-        name: "HKT",
-        desc: "HKT – Tên đầy đủ là HKT. Đội tuyển đại diện cho “Hard Kill Team – Đội hình săn mạng không khoan nhượng”, nơi mọi giao tranh đều được đẩy lên cực điểm. HKT không chơi an toàn - họ lao vào, áp đảo và kết thúc đối thủ bằng những pha tấn công dồn dập tại Survival Legacy Cup SS1!",
-        logo: "logo-hkt.jpg",
+    "klbb": {
+        name: "KLBB",
+        desc: "KLBB – Tên đầy đủ là KLBB Esports. Keep • Lock • Battle • Break – giữ vững, khóa mục tiêu, chiến đấu và bứt phá. KLBB Esports càng vào sâu càng lì đòn, càng áp lực càng bản lĩnh. Không ngại bất kỳ đối thủ nào, KLBB quyết tâm phá mọi giới hạn và tạo dấu ấn tại Survival Legacy Cup SS3!",
+        logo: "logo-ktbb.jpg",
         country: "", 
         players: [
-            { n: "6IT.MKHANG", r: "RUSHER", id: "1274582211" },
-            { n: "6IT.SUY", r: "RUSHER", id: "1230035221" },
-            { n: "6IT.ANHDUC", r: "SNIPER", id: "2188993998" },
-            { n: "6IT.THACH", r: "SNIPER", id: "11806045043" },
-            { n: "6IT.HAU", r: "SUPPORT", id: "8294900883" }
+            { n: "KLBB.HUUDAI", r: "RUSHER", id: "928351548" },
+            { n: "KLBB.TUANANH", r: "RIFLER", id: "13022794005" },
+            { n: "KLBB.DUCVIET", r: "SNIPER", id: "7297998533" },
+            { n: "KLBB.GIABAO", r: "SUPPORT", id: "9653299037" },
+            { n: "KHÔNG CÓ", a: "https://placehold.co/200x250/111/555?text=TRONG", r: "TRONG" }
         ]
     },
     "tgl3": {
