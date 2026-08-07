@@ -665,7 +665,7 @@ const teamsDatabase = {
     "klbb": {
         name: "KLBB",
         desc: "KLBB – Tên đầy đủ là KLBB Esports. Keep • Lock • Battle • Break – giữ vững, khóa mục tiêu, chiến đấu và bứt phá. KLBB Esports càng vào sâu càng lì đòn, càng áp lực càng bản lĩnh. Không ngại bất kỳ đối thủ nào, KLBB quyết tâm phá mọi giới hạn và tạo dấu ấn tại Survival Legacy Cup SS3!",
-        logo: "logo-ktbb.jpg",
+        logo: "logo-klbb.jpg",
         country: "", 
         players: [
             { n: "KLBB.HUUDAI", r: "RUSHER", id: "928351548" },
