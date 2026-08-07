@@ -675,121 +675,121 @@ const teamsDatabase = {
             { n: "KHÔNG CÓ", a: "https://placehold.co/200x250/111/555?text=TRONG", r: "TRONG" }
         ]
     },
-    "tgl3": {
-        name: "TGL3",
-        desc: "TGL3 – Tên đầy đủ là TEAM GIA LAI 3. Đội tuyển đại diện cho “Third Impact – Cú bùng nổ thứ ba”, nơi sức trẻ và sự táo bạo tạo nên những pha xử lý không theo bất kỳ quy luật nào. TGL3 không đi theo lối cũ-họ phá vỡ nó và tạo ra cuộc chơi của riêng mình tại Survival Legacy Cup SS1!",
-        logo: "logo-tgl3.jpg",
+    "sl": {
+        name: "SL",
+        desc: "SL – Tên đầy đủ là Serein Line. Mang trong mình sự điềm tĩnh của “Serein” – một vẻ đẹp yên bình giữa những biến động, Serein Line không cần ồn ào để tạo khác biệt. Càng áp lực, SL càng lạnh lùng, càng quyết đoán và sẵn sàng bứt phá tại Survival Legacy Cup SS3!",
+        logo: "logo-sl.jpg",
         country: "", 
         players: [
-            { n: "TGL2.DKHOI", r: "RUSHER", id: "955002794" },
-            { n: "TGL2.HPHONG", r: "RUSHER", id: "3989001696" },
-            { n: "TGL2.GHAO", r: "SNIPER", id: "4371542961" },
-            { n: "TGL2.DKHOA", r: "SNIPER", id: "876012041" },
-            { n: "TGL2.CPHAT", r: "SUPPORT", id: "9712450395" }
+            { n: "SL.KING", r: "RUSHER", id: "2325777762" },
+            { n: "SL.KAM", r: "RIFLER", id: "362038211" },
+            { n: "SL.HCHUONG", r: "BOMBER", id: "1185079614" },
+            { n: "SL.DREX", r: "SNIPER", id: "5223838420" },
+            { n: "SL.EMKHOI", r: "SNIPER", id: "2791106345" }
         ]
     },
-    "lt": {
-        name: "LT",
-        desc: "LT – Tên đầy đủ là LT Đội tuyển đại diện cho “Last Trigger – Phát bắn cuối cùng”, nơi mọi pha giao tranh đều có thể kết thúc chỉ trong một khoảnh khắc. LT không cần nhiều cơ hội-chỉ cần một lần ra tay là đủ để định đoạt trận đấu tại Survival Legacy Cup SS1!",
-        logo: "logo-lt.jpg",
+    "hbpe": {
+        name: "HBPE",
+        desc: "HBPE – Tên đầy đủ là HBP Esports. Mang tinh thần Hold • Break • Push • Elevate, HBP Esports luôn biết khi nào cần giữ thế, khi nào phải bứt phá. Bình tĩnh trong từng bước di chuyển, quyết đoán trong thời khắc quyết định, HBPE sẵn sàng vượt giới hạn và vươn lên tại Survival Legacy Cup SS3!",
+        logo: "logo-hbpe.jpg",
         country: "", 
         players: [
-            { n: "LT.HDANG", r: "RUSHER", id: "4184330303" },
-            { n: "LT.QDAT", r: "BOMBER", id: "4752316998" },
-            { n: "LT.PBAN", r: "SNIPER", id: "10288568002" },
-            { n: "LT.HTINH", r: "SUPPORT", id: "7984169749" },
+            { n: "HBPE.KENDY", r: "RUSHER", id: "1774361226" },
+            { n: "HBPE.MYDIEU", r: "BOMBER", id: "2830766201" },
+            { n: "HBPE.THANHDAT", r: "SNIPER", id: "5681703686" },
+            { n: "HBPE.KEN", r: "SNIPER", id: "9079507302" },
+            { n: "HBPE.ZADRED", r: "SUPPORT", id: "1884223878" }
+        ]
+    },
+    "dpkq": {
+        name: "DPKQ",
+        desc: "DPKQ – Tên đầy đủ là DPKQ Esports. Don’t Pause. Keep Qualifying. – không dừng lại, không ngừng tiến bước. DPKQ Esports càng vào sâu càng bản lĩnh, càng áp lực càng quyết đoán, sẵn sàng bứt phá qua từng vòng đấu và tạo dấu ấn tại Survival Legacy Cup SS3!",
+        logo: "logo-dpkq.jpg",
+        country: "", 
+        players: [
+            { n: "DPKQ.NABABI", r: "RUSHER", id: "4162915867" },
+            { n: "DPKQ.NOTHING", r: "RUSHER", id: "8185602496" },
+            { n: "DPKQ.MVP", r: "SNIPER", id: "2545864104" },
+            { n: "DPKQ.TANDUNG", r: "SUPPORT", id: "6237439641" },
             { n: "KHÔNG CÓ", a: "https://placehold.co/200x250/111/555?text=TRONG", r: "TRONG" }
         ]
     },
-    "ke": {
-        name: "KE",
-        desc: "KE – Tên đầy đủ là KE ESPORTS. Đội tuyển đại diện cho “Killer Elegance – Sự kết liễu đầy tinh tế”, nơi mỗi pha xử lý vừa đẹp mắt vừa chí mạng. KE không chỉ thắng-họ biến từng khoảnh khắc trong trận đấu thành màn trình diễn đẳng cấp tại Survival Legacy Cup SS1!",
-        logo: "logo-ke.jpg",
+    "noka": {
+        name: "NOKA",
+        desc: "NOKA – Tên đầy đủ là NOKA. Never Overlook. Keep Advancing. – không xem nhẹ bất kỳ đối thủ nào, không ngừng tiến lên. NOKA bước vào từng trận đấu với sự tự tin, quyết đoán và tinh thần sẵn sàng bứt phá để tạo dấu ấn tại Survival Legacy Cup SS3!",
+        logo: "logo-noka.jpg",
         country: "", 
         players: [
-            { n: "KE.ITAR", r: "RUSHER", id: "6309254787" },
-            { n: "KE.LUAN", r: "RIFLER", id: "4461929512" },
-            { n: "KE.CUSINA", r: "SNIPER", id: "4461929512" },
-            { n: "KE.SIKIBIDI", r: "SUPPORT", id: "2421066275" },
-            { n: "KHÔNG CÓ", a: "https://placehold.co/200x250/111/555?text=TRONG", r: "TRONG" }
+            { n: "NOKA.LAVIDA", r: "RUSHER", id: "3225479273" },
+            { n: "NOKA.TDAT", r: "RUSHER", id: "2491284727" },
+            { n: "NOKA.CRYLUV", r: "RIFLER", id: "2763014509" },
+            { n: "NOKA.HUNG", r: "RIFLER", id: "8776372081" },
+            { n: "NOKA.NOVA", r: "SUPPORT", id: "1824618270" }
         ]
     },
-    "hd": {
-        name: "HD",
-        desc: "HD – Tên đầy đủ là Hoà Đam. Đội tuyển đại diện cho “Heavy Damage – Sát thương hủy diệt”, nơi mỗi pha giao tranh đều mang sức công phá cực lớn. HD không cần kéo dài-họ kết thúc nhanh, gọn và đầy uy lực tại Survival Legacy Cup SS1!",
-        logo: "logo-hd.jpg",
+    "xht": {
+        name: "XHT",
+        desc: "XHT – Tên đầy đủ là XHAMTERS. Nghe tên tưởng đùa, vào trận mới biết không đùa được. XHT mang đến lối chơi khó đoán, sẵn sàng tạo biến số và khiến mọi đối thủ phải dè chừng. Tên có thể gây cười, nhưng thực lực thì không — XHT quyết tâm tạo dấu ấn tại Survival Legacy Cup SS3!",
+        logo: "logo-xht.jpg",
         country: "", 
         players: [
-            { n: "HD.MKHANH", r: "RUSHER", id: "9607055670" },
-            { n: "HD.TAIBEO", r: "BOMBER", id: "1332676822" },
-            { n: "HD.MINHHAI", r: "SNIPER", id: "896345915" },
-            { n: "HD.VANLONG", r: "SUPPORT", id: "1512501078" },
-            { n: "KHÔNG CÓ", a: "https://placehold.co/200x250/111/555?text=TRONG", r: "TRONG" }
+            { n: "XHT.AGM", r: "RUSHER", id: "1731908696" },
+            { n: "XHT.PLTL",r: "RIFLER", id: "3538480583" },
+            { n: "XHT.CUTIT", r: "BOMBER", id: "9326144006" },
+            { n: "XHT.NGNHAT", r: "SNIPER", id: "3120004297" },
+            { n: "XHT.SKIBIDI", r: "SUPPORT", id: "4465994720" }
         ]
     },
-    "hd2": {
-        name: "HD2",
-        desc: "HD2 – Tên đầy đủ là Hoà Đam 2. Đội tuyển đại diện cho “Double Impact – Cú đánh kép”, nơi mỗi pha tấn công đều dồn dập và liên hoàn. HD2 không cho đối thủ thời gian thích nghi-chỉ có áp lực và sụp đổ tại Survival Legacy Cup SS1!",
-        logo: "logo-hd2.jpg",
+    "tkt": {
+        name: "TKT",
+        desc: "TKT – Tên đầy đủ là TOKUTA. TO the top, Keep fighting, TAke the win — tiến lên đỉnh, chiến đấu đến cùng, giành lấy chiến thắng. TKT không vào trận để làm nền, mà để tạo bất ngờ và khiến từng khoảnh khắc tại Survival Legacy Cup SS3 phải nhớ đến cái tên TOKUTA!",
+        logo: "logo-tkt.jpg",
         country: "", 
         players: [
-            { n: "HD2.ANHHAO", r: "RUSHER", id: "8795927885" },
-            { n: "HD2.HAI",r: "BOMBER", id: "10818014400" },
-            { n: "HD2.MINHSANG", r: "SNIPER", id: "1751028828" },
-            { n: "HD2.VANHIEU", r: "SUPPORT", id: "9776458518" },
-            { n: "KHÔNG CÓ", a: "https://placehold.co/200x250/111/555?text=TRONG", r: "TRONG" }
+            { n: "TKT.NVX", r: "RUSHER", id: "6556475658" },
+            { n: "TKT.HUNG", r: "RUSHER", id: "9061635777" },
+            { n: "TKT.U7E", r: "RIFLER", id: "6775937715" },
+            { n: "TKT.VTT", r: "SNIPER", id: "3201187189" },
+            { n: "TKT.ODCH", r: "SUPPORT", id: "9774162852" }
         ]
     },
-    "ns": {
-        name: "NS",
-        desc: "NS – Tên đầy đủ là NGUSI ESPORTS. Đội tuyển đại diện cho “No Signal – Mất tín hiệu”, bởi khi NS xuất hiện, đối thủ gần như “mất kết nối” với trận đấu. Nhịp game bị bóp nghẹt, tầm nhìn bị kiểm soát và mọi thứ kết thúc trước khi kịp hiểu chuyện gì xảy ra tại Survival Legacy Cup SS1!",
-        logo: "logo-ns.jpg",
+    "h2k": {
+        name: "H2K",
+        desc: "H2K – Tên đầy đủ là H2K. Hard to Kill – khó bị đánh bại. Đúng như cái tên, H2K luôn giữ vững bản lĩnh ngay cả khi thế trận trở nên căng thẳng nhất. Càng bị dồn ép, H2K càng lì lợm, càng quyết chiến và sẵn sàng lật ngược mọi thế trận tại Survival Legacy Cup SS3!",
+        logo: "logo-h2k.jpg",
         country: "", 
         players: [
-            { n: "NS.MINHTRI2", r: "RUSHER", id: "2038614210" },
-            { n: "NS.PHAMCUONG", r: "RUSHER", id: "10808635533" },
-            { n: "NS.QUOCHUY", r: "RUSHER", id: "1895472861" },
-            { n: "NS.MINHTRI", r: "SNIPER", id: "392360699" },
-            { n: "NS.TRANLONG", r: "SUPPORT", id: "1728096984" }
+            { n: "H2K.VANHIEU", r: "RUSHER", id: "931508938" },
+            { n: "H2K.SYTUAN", r: "BOMBER", id: "728485649" },
+            { n: "H2K.MINHDUC", r: "BOMBER", id: "1047846802" },
+            { n: "H2K.VIETHUNG", r: "SNIPER", id: "1679326020" },
+            { n: "H2K.KTOAN", r: "SUPPORT", id: "1466891354" }
         ]
     },
-    "ea": {
-        name: "EA",
-        desc: "EA – Tên đầy đủ là EAGLE. Đội tuyển đại diện cho “Eagle Eye – Con mắt đại bàng”, luôn bao quát toàn bản đồ và ra đòn với độ chính xác tuyệt đối. EA không săn vội-họ quan sát, khóa mục tiêu và kết liễu trong một khoảnh khắc tại Survival Legacy Cup SS1!",
-        logo: "logo-ea.jpg",
+    "stt": {
+        name: "STT",
+        desc: "STT – Tên đầy đủ là Shark TiTan. Sau một thời gian vắng bóng, Shark TiTan chính thức trở lại. Lần comeback này không phải để tìm lại ánh hào quang, mà để tạo ra một phiên bản mạnh mẽ hơn, lì lợm hơn và đáng gờm hơn. STT trở lại để săn chiến thắng và viết tiếp hành trình tại Survival Legacy Cup SS3!",
+        logo: "logo-stt.jpg",
         country: "", 
         players: [
-            { n: "EA.DUONG", r: "RUSHER", id: "6029556071" },
-            { n: "EA.BRXZ", r: "BOMBER", id: "8684104067" },
-            { n: "EA.FREDA", r: "SNIPER", id: "6706995113" },
-            { n: "EA.KHIM", r: "SUPPORT", id: "738994568" },
-            { n: "KHÔNG CÓ", a: "https://placehold.co/200x250/111/555?text=TRONG", r: "TRONG" }
+            { n: "STT.HUNG", r: "RUSHER", id: "10081813956" },
+            { n: "STT.NGAO", r: "RIFLER", id: "1756227636" },
+            { n: "STT.TDUNG", r: "SNIPER", id: "1982342638" },
+            { n: "STT.VP", r: "SUPPORT", id: "5329839627" },
+            { n: "STT.GIAPHONG", r: "SUPPORT", id: "1380391498S" }
         ]
     },
-    "xh": {
-        name: "XH",
-        desc: "XH – Tên đầy đủ là XH ESPORTS. Đội tuyển đại diện cho “Xtreme Hunt – Cuộc săn cực hạn”, luôn truy đuổi đối thủ đến cùng và không cho bất kỳ cơ hội trốn thoát nào. XH không chỉ tìm mục tiêu—họ săn đến khi kết thúc hoàn toàn tại Survival Legacy Cup SS1!",
-        logo: "logo-xh.jpg",
+    "tae": {
+        name: "TAE",
+        desc: "TAE – Tên đầy đủ là Tu Anh Esports. Mang tinh thần của một tập thể luôn tiến về phía trước, TAE không ngại thử thách và luôn sẵn sàng tăng tốc khi thời khắc quyết định xuất hiện. Bản lĩnh trong từng pha đấu, quyết đoán trong từng khoảnh khắc, TAE quyết tâm tạo dấu ấn tại Survival Legacy Cup SS3!",
+        logo: "logo-tae.jpg",
         country: "", 
         players: [
-            { n: "XH.VHAO", r: "RUSHER", id: "8231699643" },
-            { n: "XH.HUUNHAN", r: "RUSHER", id: "44772107941" },
-            { n: "XH.VANLONG", r: "BOMBER", id: "7433774761" },
-            { n: "XH.GIABAO", r: "SNIPER", id: "2129571314" },
-            { n: "XH.DUYKHANH", r: "SUPPORT", id: "2205566148" }
-        ]
-    },
-    "ovn": {
-        name: "OVN",
-        desc: "OVN – Tên đầy đủ là OBLIVION. Đội tuyển đại diện cho “Oblivion – Sự xóa sổ”, nơi mọi dấu vết của đối thủ đều bị quét sạch không thương tiếc. OVN không chỉ chiến thắng-họ khiến kẻ địch “biến mất” khỏi bản đồ tại Survival Legacy Cup SS1!",
-        logo: "logo-ovn.jpg",
-        country: "", 
-        players: [
-            { n: "OVN.DUY", r: "RUSHER", id: "12576856883" },
-            { n: "OVN.VANTU", r: "RUSHER", id: "9881928946" },
-            { n: "OVN.TIEN", r: "SNIPER", id: "12350586814" },
-            { n: "OVN.TINH", r: "SNIPER", id: "8866941793" },
-            { n: "OVN.TRACY", r: "SUPPORT", id: "8082886790" }
+            { n: "TAE.HDAC", r: "RUSHER", id: "1921590936" },
+            { n: "TAE.KAYZ", r: "RUSHER", id: "8427796049" },
+            { n: "TAE.VANDU", r: "SNIPER", id: "14784206632" },
+            { n: "TAE.EMBI", r: "SNIPER", id: "1214825454" },
+            { n: "TAE.SOI", r: "SUPPORT", id: "2778311951" }
         ]
     }
 };
