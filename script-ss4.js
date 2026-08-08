@@ -852,7 +852,7 @@ function switchTeam(teamId) {
                     <div class="card-header">
                         <span class="stat-role-badge" style="${badgeStyle}">${roleIcon} ${player.r ? player.r : 'THÀNH VIÊN'}</span>
                         <span class="card-uzi-logo" style="font-size: 9px; line-height: 1.3; text-align: right; color: #fff; text-shadow: 0 0 5px #fff;">
-                            SURVIVAL LEGACY<br>CUP SS3
+                            SURVIVAL LEGACY<br>CUP SS4
                         </span>
                     </div>
 
