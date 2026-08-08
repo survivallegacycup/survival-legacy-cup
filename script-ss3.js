@@ -547,15 +547,15 @@ const teamsDatabase = {
     },
     "cde": {
         name: "CDE",
-        desc: "NOK - Tên đầy đủ là NOKARA. Đội tuyển chơi theo kiểu “một đòn là đủ” - không cần nhiều pha giao tranh, chỉ cần đúng thời điểm. Lặng lẽ tích tụ, rồi bất ngờ tung cú kết liễu khiến đối thủ không kịp hiểu chuyện gì vừa xảy ra tại Survival Legacy Cup SS1!",
-        logo: "logo-nok.jpg",
+        desc: "CDE – Tên đầy đủ là CDE. Challenge • Dominate • Elevate – thử thách, thống trị và vươn lên. CDE không bước vào chiến trường để đứng sau bất kỳ ai, mà để tạo áp lực, bứt phá và biến từng trận đấu thành cơ hội khẳng định bản lĩnh tại Survival Legacy Cup SS3!",
+        logo: "logo-cde.jpg",
         country: "", 
         players: [
-            { n: "NOK.THANHHUNG", r: "RUSHER", id: "1607088699" },
-            { n: "NOK.THANHDAT", r: "RUSHER", id: "7941474305" },
-            { n: "NOK.VVLAVIDA", r: "SNIPER", id: "3225479273" },
-            { n: "NOK.MOUSE", r: "SNIPER", id: "1821218270" },
-            { n: "NOK.DECADE", r: "SUPPORT", id: "1156181860" }
+            { n: "CDE.VIETNHAT", r: "RUSHER", id: "9191569547" },
+            { n: "CDE.TANDUNG", r: "RUSHER", id: "1829162964" },
+            { n: "CDE.BEO", r: "RUSHER", id: "6353698339" },
+            { n: "CDE.TRINH", r: "SNIPER", id: "7289909444" },
+            { n: "CDE.ZEDRED", r: "SUPPORT", id: "7990559151" }
         ]
     },
     "bcs": {
