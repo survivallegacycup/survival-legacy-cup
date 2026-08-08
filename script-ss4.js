@@ -171,7 +171,7 @@ const teamsDatabase = {
     "vkt3": {
         name: "VKT",
         desc: "VKT – Tên đầy đủ là Vân Kiếm Tôn. Mang khí chất của một kiếm khách giữa phong vân, Vân Kiếm Tôn không tìm kiếm chiến thắng bằng lời nói mà bằng từng đường kiếm sắc bén trên chiến trường. Kiếm đã xuất, không lùi bước; trận đã vào, chỉ hướng đến chiến thắng tại Survival Legacy Cup SS4!",
-        logo: "logo-vktss4.jpg",
+        logo: "logo-vkt.jpg",
         country: "", 
         players: [
             { n: "VKT.TONGCHU", r: "RUSHER", id: "5755160631" },
