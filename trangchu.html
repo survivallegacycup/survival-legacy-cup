@@ -410,8 +410,6 @@ nav > * {
 
         /* ================= 3. RENDER 55 SLOT THÀNH VIÊN ================= */
         const rosterContainer = document.getElementById('roster-container');
-        
-        // Tạo sẵn mảng danh sách ảo (38 người có tên)
         const dummyMembers = [
             "UZI　TARI", "UZI　BOUBOR", "UZI　OMACHI", "UZI　HANA", "UZI　TPHUC", "UZI　SUN",
             "UZI　DNVT", "UZI　ENZOU", "UZI　G.HƯNG", "UZI　VTUNG", "UZI　FOR", "UZI　VHIEU",
@@ -426,7 +424,7 @@ nav > * {
         // Vòng lặp in ra đủ 55 ô
         let rosterHTML = "";
         for (let i = 1; i <= 55; i++) {
-            if (i <= 38) {
+            if (i <= 43) {
                 // Ô đã có người
                 let name = dummyMembers[i-1] || `UZI　PLAYER ${i}`;
                 rosterHTML += `
