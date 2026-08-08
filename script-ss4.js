@@ -181,69 +181,69 @@ const teamsDatabase = {
             { n: "VKT.SHARKO", r: "SUPPORT", id: "12083562597" }
         ]
     },
-    "nok2": {
-        name: "NOK",
-        desc: "NOK – Tên đầy đủ là NOKARA. Mang trong mình tinh thần không ngại va chạm và luôn hướng đến những màn trình diễn bùng nổ, bước vào giải đấu với mục tiêu không chỉ góp mặt mà còn để lại dấu ấn. Mỗi trận đấu là một cơ hội để khẳng định bản lĩnh và đưa cái tên NOKARA vươn xa tại Survival Legacy Cup SS3!",
-        logo: "logo-nok2.jpg",
+    "ts": {
+        name: "TS",
+        desc: "TS – Tên đầy đủ là TS. Tactical Strike – ra đòn bằng chiến thuật, kết liễu bằng bản lĩnh. TS không tìm kiếm cơ hội, TS tạo ra cơ hội. Khi thời khắc quyết định xuất hiện, đội tuyển sẵn sàng tung đòn và xoay chuyển toàn bộ cục diện tại Survival Legacy Cup SS4!",
+        logo: "logo-ts.jpg",
         country: "",
         players: [
-            { n: "NOK.LAVIDA", r: "RUSHER", id: "3225479273" },
-            { n: "NOK.THANHDAT", r: "RUSHER", id: "2491284727" },
-            { n: "NOK.VOHUNG", r: "RIFLER", id: "8776372081" },
-            { n: "NOK.CRY", r: "SUPPORT", id: "2763014509" },
-            { n: "NOK.NOVA", r: "SUPPORT", id: "1824618270" }
+            { n: "TS.VENUS", r: "RUSHER", id: "9715895573" },
+            { n: "TS.TN", r: "RUSHER", id: "14239022427" },
+            { n: "TS.PRIME", r: "RUSHER", id: "7692544136" },
+            { n: "TS.HUNG", r: "BOMBER", id: "3716775696" },
+            { n: "TS.NAMVU", r: "SUPPORT", id: "7559599413" }
         ]
     },
-    "lke": {
-        name: "LKE",
-        desc: "LKE – Tên đầy đủ là LÊ KIÊN ESPORTS. Không cần hô hào quá lớn, LKE để kỹ năng lên tiếng. Mỗi pha giao tranh là một lời khẳng định, mỗi chiến thắng là một dấu ấn. Khi đã bước vào trận đấu, mục tiêu duy nhất của LÊ KIÊN ESPORTS là khiến cái tên của mình được nhắc đến nhiều nhất tại Survival Legacy Cup SS3!",
-        logo: "logo-lke.jpg",
+    "fh2": {
+        name: "FH",
+        desc: "FH – Tên đầy đủ là FIRE HORSE. Như một chiến mã bùng cháy trên chiến trường, FIRE HORSE luôn lao về phía trước với tốc độ, sức mạnh và tinh thần không bao giờ bỏ cuộc. Sẵn sàng đốt cháy mọi giới hạn, FH quyết tâm tạo nên dấu ấn tại Survival Legacy Cup SS4!",
+        logo: "logo-fh.jpg",
         country: "", 
         players: [
-            { n: "LKE.EMBEN", r: "RUSHER", id: "355294300"},
-            { n: "LKE.KEYD", r: "BOMBER", id: "2055349409"},
-            { n: "LKE.EMTHIEN", r: "SNIPER", id: "1693177119"},
-            { n: "LKE.EMBOY", r: "SNIPER", id: "11487790754"},
-            { n: "LKE.EMPHUC", r: "SUPPORT", id: "3209197272"}
+            { n: "FH.SADER", r: "RUSHER", id: "2277930623"},
+            { n: "FH.DONKAI", r: "BOMBER", id: "926872567"},
+            { n: "FH.COM", r: "SNIPER", id: "746523523"},
+            { n: "FH.GRIZZY", r: "SNIPER", id: "1127435270"},
+            { n: "FH.KANG", r: "SUPPORT", id: "2590142436"}
         ] 
     },
-    "vkt": {
-        name: "VKT",
-        desc: "VKT – Tên đầy đủ là Vân Kiếm Tôn. Tựa như một thanh kiếm được tôi luyện qua muôn vàn thử thách, Vân Kiếm Tôn bước vào mỗi trận đấu với sự sắc bén, bản lĩnh và quyết tâm chinh phục mọi giới hạn. Không chỉ hướng đến chiến thắng, VKT còn muốn khắc ghi tên mình bằng những màn trình diễn đầy khí chất và khẳng định đẳng cấp tại Survival Legacy Cup SS3!",
-        logo: "logo-vkt.jpg",
+    "btv": {
+        name: "BTV",
+        desc: "BTV – Tên đầy đủ là BTV. Born To Victory – sinh ra để chiến thắng. BTV không bước vào trận đấu để thử sức, mà để chứng minh bản lĩnh. Càng áp lực càng lì lợm, càng quyết định càng bùng nổ — BTV sẵn sàng chiến đấu đến cùng tại Survival Legacy Cup SS4!",
+        logo: "logo-btv.jpg",
         country: "", 
         players: [
-            { n: "VKT.VANTUAN", r: "RUSHER", id: "1285407799" },
-            { n: "VKT.VANTHAO", r: "RIFLER", id: "64897553" },
-            { n: "VKT.KADO", r: "BOMBER", id: "1986949358" },
-            { n: "VKT.MY", r: "SNIPER", id: "9353533657" },
-            { n: "VKT.BOYWALK", r: "SUPPORT", id: "11041145321" }
+            { n: "BTV.THIENVU", r: "RUSHER", id: "14201869960" },
+            { n: "BTV.AD", r: "RUSHER", id: "4439122562" },
+            { n: "BTV.N16T", r: "SNIPER", id: "2625087688" },
+            { n: "BTV.HTUAN", r: "SUPPORT", id: "1794081493" },
+            { n: "BTV.GAU", r: "SUPPORT", id: "8050249339" }
         ]
     },
-    "nse": {
-        name: "NSE",
-        desc: "NSE – Tên đầy đủ là NEW STAR ESPORTS. Mang khát vọng của những ngôi sao mới đang vươn mình tỏa sáng, NEW STAR ESPORTS không ngại đối đầu với bất kỳ thử thách nào. Với tinh thần thi đấu máu lửa, lối chơi đầy đột phá và khát khao chinh phục đỉnh cao, NSE sẵn sàng biến mỗi trận đấu thành cơ hội để khẳng định tên tuổi và tỏa sáng rực rỡ tại Survival Legacy Cup SS3!",
-        logo: "logo-nse.jpg", 
+    "bbe": {
+        name: "BBE",
+        desc: "BBE – Tên đầy đủ là Bánh Bao Esports. Đừng để cái tên “Bánh Bao” đánh lừa — bên ngoài có thể mềm, nhưng vào trận thì không mềm chút nào. BBE mang đến lối chơi đầy bất ngờ, càng bị ép càng bật lại mạnh mẽ. Bánh Bao có thể tròn, nhưng đường đến chiến thắng thì không vòng vo — BBE quyết chiến tại Survival Legacy Cup SS4!",
+        logo: "logo-bbe.jpg", 
         country: "", 
         players: [
-            { n: "NSE.MAC", r: "RUSHER", id: "10808635533" },
-            { n: "NSE.MINHTRIDZ", r: "BOMBER", id: "392360699" },
-            { n: "NSE.MINHTRI", r: "SNIPER", id: "2038614210" },
-            { n: "NSE.TRANLONG", r: "SUPPORT", id: "1728096984" },
-            { n: "KHÔNG CÓ", a: "https://placehold.co/200x250/111/555?text=TRONG" }
+            { n: "BBE.KENDY", r: "RUSHER", id: "1774361226" },
+            { n: "BBE.MYDIEU", r: "BOMBER", id: "2830766201" },
+            { n: "BBE.KEN", r: "SNIPER", id: "9079507302" },
+            { n: "BBE.THANHDAT", r: "SNIPER", id: "5681703686" },
+            { n: "BBE.KAISER", r: "SUPPORT", id: "7809471778"}
         ]
     },
-    "ade2": {
-        name: "ADE",
-        desc: "ADE – Tên đầy đủ là ADE. Không cần một cái tên quá dài để tạo dấu ấn, ADE chọn cách khiến đối thủ phải ghi nhớ bằng màn trình diễn trên chiến trường. Với tinh thần không lùi bước, khả năng thích nghi linh hoạt và khát khao chinh phục từng trận đấu, ADE sẵn sàng bứt phá, tạo nên những khoảnh khắc đáng nhớ và khẳng định bản lĩnh tại Survival Legacy Cup SS3!",
-        logo: "logo-ade2.jpg",
+    "hd3": {
+        name: "HD",
+        desc: "HD – Tên đầy đủ là Hoà Đam. Hai chữ cái, một tinh thần: Hold • Dominate – giữ vững thế trận, làm chủ cuộc chơi. HD không cần ồn ào để gây áp lực, chỉ cần vào trận là sẵn sàng bứt phá, áp đảo và chiến đấu đến cùng tại Survival Legacy Cup SS4!",
+        logo: "logo-hd3.jpg",
         country: "", 
         players: [
-            { n: "ADE.TNGHIA", r: "RUSHER", id: "4275108112" },
-            { n: "ADE.TPHONG", r: "RUSHER", id: "6794901944" },
-            { n: "ADE.WHUY", r: "SNIPER", id: "983026618" },
-            { n: "ADE.DOKI", r: "SNIPER", id: "8095908384" },
-            { n: "ADE.TBON", r: "SUPPORT", id: "3768548347" }
+            { n: "HD.WIN", r: "RUSHER", id: "16483572912" },
+            { n: "HD.DVM", r: "RUSHER", id: "7818992208" },
+            { n: "HD.ZANE", r: "RIFLER", id: "2327107805" },
+            { n: "HD.MKHANH", r: "SNIPER", id: "9607055670" },
+            { n: "HD.VHIEU", r: "SUPPORT", id: "9776458518" }
         ]
     },
     "xbc": {
