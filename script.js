@@ -225,7 +225,7 @@ const teamsDatabase = {
         ]
     },
     "ks": {
-        name: "KINGS FF",
+        name: "KS",
         desc: "KS – Tên đầy đủ là KINGS FF. Đội tuyển sở hữu lối chơi bản lĩnh và kỷ luật, luôn giữ thế trận ổn định và sẵn sàng áp đảo đối thủ để khẳng định vị thế “nhà vua” tại Survival Legacy Cup SS1!",
         logo: "logo-ks.jpg",
         country: "",
@@ -923,7 +923,7 @@ function switchTeam(teamId) {
     });
 }
 
-// Bắt đầu vào web là bật ngay đội UNICORN (Mã là 'unc')
+// Bắt đầu vào web là bật ngay đội UZI (Mã là 'uzi')
 document.addEventListener("DOMContentLoaded", function() {
     if (document.getElementById('player-cards-container')) {
         switchTeam('uzi'); 
@@ -935,7 +935,6 @@ function chuyenTrang(huong) {
     trangHienTai += huong;
     if (trangHienTai > 4) trangHienTai = 1; // Nhảy từ trang 4 về trang 1
     if (trangHienTai < 1) trangHienTai = 4; // Lùi từ trang 1 xuống trang 4
-
     // Bật tắt giao diện
     let t1 = document.getElementById('trang-1');
     let t2 = document.getElementById('trang-2');
