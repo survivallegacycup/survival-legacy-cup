@@ -414,7 +414,7 @@ const teamsDatabase = {
         players: [
             { n: "NVD.QUOCHUY", r: "RUSHER", id: "1895472861" },
             { n: "NVD.PHAMCUONG", r: "RUSHER", id: "10808635533" },
-            { n: "NVD.MINHTRI", r: "SPINER", id: "392420699" },
+            { n: "NVD.MINHTRI", r: "SNIPER", id: "392420699" },
             { n: "NVD.TRANLONG", r: "SUPPORT", id: "1728096984" },
             { n: "NVD.QUOCMINH", r: "SUPPORT", id: "1921473584" }
         ]
@@ -440,7 +440,7 @@ const teamsDatabase = {
         players: [
             { n: "GODS.BHUY", r: "RUSHER", id: "7286133977" },
             { n: "GODS.CHUY",r: "RUSHER", id: "5358748224" },
-            { n: "GODS.KDUY", r: "SPINER", id: "9898703421" },
+            { n: "GODS.KDUY", r: "SNIPER", id: "9898703421" },
             { n: "GODS.TVAN", r: "SUPPORT", id: "4998752967" },
             { n: "GODS.GKIET", r: "SUPPORT", id: "6523254985" }
         ]
