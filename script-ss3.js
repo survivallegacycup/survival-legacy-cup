@@ -642,7 +642,7 @@ const teamsDatabase = {
         logo: "logo-sgp2.jpg",
         country: "", 
         players: [
-            { n: "SGP2.NAME", r: "RUSHER", id: "24894538764" },
+            { n: "SGP2.LOI", r: "RUSHER", id: "8231737839" },
             { n: "SGP2.DH", r: "RIFLER", id: "3081890813" },
             { n: "SGP2.EMIT", r: "BOMBER", id: "7781127261" },
             { n: "SGP2.GHOST", r: "SNIPER", id: "9861486205" },
