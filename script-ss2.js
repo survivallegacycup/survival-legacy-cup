@@ -69,7 +69,7 @@ async function moThongSo(soTran) {
 
     let dateEl = document.querySelector('.info-box.time-box .date');
     if (dateEl) {
-        const lichNgay = { 1: "27/07/2026", 2: "28/07/2026", 3: "29/07/2026", 4: "30/07/2026", 5: "31/07/2026", 6: "01/08/2026", 7: "02/08/2026" };
+        const lichNgay = { 1: "09/06/2026", 2: "10/06/2026", 3: "11/06/2026", 4: "12/06/2026", 5: "13/06/2026", 6: "14/06/2026", 7: "15/06/2026" };
         dateEl.innerText = lichNgay[ngayThiDau] || "27/07/2026";
     }
 
@@ -140,7 +140,7 @@ async function moThongSo(soTran) {
                 let booyahName = document.querySelector('.info-box.booyah-box .winner-name');
                 if (booyahLogo) booyahLogo.src = logoThichHop;
                 if (booyahName) booyahName.innerText = tenDoi;
-            }s
+            }
             // --- 3. IN 5 CỘT BÊN TRÁI (Gộp thành 1 khối bự duy nhất) ---
             container.innerHTML += `
                 <div class="g-cell">${teamInfo[0] || ''}</div>
