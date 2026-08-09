@@ -175,10 +175,10 @@ const teamsDatabase = {
         country: "", 
         players: [
             { n: "LKE.CONG", r: "RUSHER", id: "2706594432" },
-            { n: "BNA.ĐQUANG", r: "RUSHER", id: "2349365559" },
-            { n: "BNA.VLAP", r: "RUSHER", id: "3428078972" },
-            { n: "BNA.KHANH", r: "SNIPER", id: "2120500181" },
-            { n: "BNA.VTAI", r: "SUPPORT", id: "9780579184" }
+            { n: "LKE.KEY", r: "BOMBER", id: "2055349409" },
+            { n: "LKE.FEAR", r: "SNIPER", id: "1693177119" },
+            { n: "LKE.PLINH", r: "SUPPORT", id: "3209197272" },
+            { n: "LKE.VANCUA", r: "SUPPORT", id: "1577337727" }
         ]
     },
     "ks": {
