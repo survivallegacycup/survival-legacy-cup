@@ -170,11 +170,11 @@ function dongThongSo() {
 const teamsDatabase = {
     "lkess2": {
         name: "LKE",
-        desc: "BNA - Tên đầy đủ là BN Academy. Đội tuyển đại diện cho tinh thần rèn luyện, trưởng thành và vươn lên qua từng trận đấu. Từ những bước đi đầu tiên đến những màn đối đầu căng thẳng, BNA luôn giữ vững sự đoàn kết, không ngại thử thách và sẵn sàng bứt phá để khẳng định bản thân tại Survival Legacy Cup SS2!",
+        desc: "LKE – Tên đầy đủ là LÊ KIÊN ESPORTS. Không cần hô hào quá lớn, LKE để kỹ năng lên tiếng. Mỗi pha giao tranh là một lời khẳng định, mỗi chiến thắng là một dấu ấn. Khi đã bước vào trận đấu, mục tiêu duy nhất của LÊ KIÊN ESPORTS là khiến cái tên của mình được nhắc đến nhiều nhất tại Survival Legacy Cup SS2!",
         logo: "logo-lkess2.jpg",
         country: "", 
         players: [
-            { n: "BNA.HGIA", r: "RUSHER", id: "1716356557" },
+            { n: "LKE.CONG", r: "RUSHER", id: "2706594432" },
             { n: "BNA.ĐQUANG", r: "RUSHER", id: "2349365559" },
             { n: "BNA.VLAP", r: "RUSHER", id: "3428078972" },
             { n: "BNA.KHANH", r: "SNIPER", id: "2120500181" },
@@ -874,4 +874,108 @@ function chuyenTran(huong) {
     
     // Lệnh cho nó mở bảng thông số của trận vừa chuyển
     moThongSo(tranHienTai);
+}
+// =========================================================
+// 1. SCROLL REVEAL (Trượt hàng giải đấu lên)
+// =========================================================
+const matchRows = document.querySelectorAll('.match-item');
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry, i) => {
+        if (entry.isIntersecting) {
+            setTimeout(() => entry.target.classList.add('visible'), i * 80);
+            observer.unobserve(entry.target);
+        }
+    });
+}, { threshold: 0.1 });
+matchRows.forEach(row => observer.observe(row));
+
+// =========================================================
+// 2. HỆ THỐNG ÂM THANH CHUNG
+// =========================================================
+const hoverSound = document.getElementById("hoverSound");
+const sfxHover = document.getElementById("sfxHover");
+const sfxClick = document.getElementById("sfxClick");
+
+// Tiếng tick cho hàng giải đấu
+document.querySelectorAll('.match-item, .btn-stats, .login-btn').forEach(el => {
+    el.addEventListener("mouseenter", () => {
+        if(hoverSound) { hoverSound.currentTime = 0; hoverSound.play().catch(e => {}); }
+    });
+});
+
+// Tiếng UI cho Modal Esports
+document.querySelectorAll(".g-row, .nav-btn, .btn-back-top").forEach(el => {
+    el.addEventListener("mouseenter", () => { 
+        if(sfxHover) { sfxHover.currentTime = 0; sfxHover.volume = 0.5; sfxHover.play().catch(e => {}); }
+    });
+    el.addEventListener("click", () => { 
+        if(sfxClick) { sfxClick.currentTime = 0; sfxClick.volume = 0.8; sfxClick.play().catch(e => {}); }
+    });
+});
+
+// =========================================================
+// 3. HIỆU ỨNG TÀN LỬA NỀN CAM (Trang chủ)
+// =========================================================
+const fireCanvas = document.getElementById('fireCanvas');
+if (fireCanvas) {
+    const ctxFire = fireCanvas.getContext('2d');
+    let fw = fireCanvas.width = window.innerWidth;
+    let fh = fireCanvas.height = window.innerHeight;
+    let fires = [];
+    for (let i = 0; i < 60; i++) {
+        fires.push({
+            x: Math.random() * fw, y: Math.random() * fh,
+            r: Math.random() * 2 + 1, d: Math.random() * 100, speed: Math.random() * 2 + 0.5
+        });
+    }
+    function drawFire() {
+        ctxFire.clearRect(0, 0, fw, fh);
+        ctxFire.fillStyle = "rgba(255, 80, 0, 0.8)";
+        ctxFire.beginPath();
+        fires.forEach((p) => {
+            ctxFire.moveTo(p.x, p.y);
+            ctxFire.arc(p.x, p.y, p.r, 0, Math.PI * 2, true);
+            p.y -= p.speed;
+            p.x += Math.sin(p.d) * 0.5;
+            p.d += 0.05;
+            if (p.y < -10) p.y = fh + 10;
+        });
+        ctxFire.fill();
+        requestAnimationFrame(drawFire);
+    }
+    drawFire();
+    window.addEventListener("resize", () => { fw = fireCanvas.width = window.innerWidth; fh = fireCanvas.height = window.innerHeight; });
+}
+
+// =========================================================
+// 4. HẠT BỤI NEON XANH (Trong bảng Thống số)
+// =========================================================
+const canvasModal = document.getElementById("particlesModal");
+if (canvasModal) {
+    const ctxModal = canvasModal.getContext("2d");
+    function resizeCanvasModal() { canvasModal.width = canvasModal.offsetWidth; canvasModal.height = canvasModal.offsetHeight; }
+    window.addEventListener('resize', resizeCanvasModal);
+    setTimeout(resizeCanvasModal, 500);
+
+    const pts = Array.from({length: 40}, () => ({
+        x: Math.random() * window.innerWidth, y: Math.random() * window.innerHeight,
+        r: Math.random() * 1.5 + 0.3, vx: (Math.random() - 0.5) * 0.4, vy: (Math.random() - 0.5) * 0.4, a: Math.random() * 0.4 + 0.1
+    }));
+
+    function drawModalParticles() {
+        const modal = document.getElementById("modal-thong-so");
+        if (modal && modal.style.display !== "none") {
+            if(canvasModal.width === 0) resizeCanvasModal();
+            ctxModal.clearRect(0, 0, canvasModal.width, canvasModal.height);
+            pts.forEach(p => {
+                ctxModal.beginPath(); ctxModal.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+                ctxModal.fillStyle = `rgba(0, 240, 255, ${p.a})`; ctxModal.fill();
+                p.x += p.vx; p.y += p.vy;
+                if(p.x < 0 || p.x > canvasModal.width) p.vx *= -1;
+                if(p.y < 0 || p.y > canvasModal.height) p.vy *= -1;
+            });
+        }
+        requestAnimationFrame(drawModalParticles);
+    }
+    drawModalParticles();
 }
