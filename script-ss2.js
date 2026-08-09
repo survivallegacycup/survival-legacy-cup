@@ -171,7 +171,7 @@ const teamsDatabase = {
     "lkess2": {
         name: "LKE",
         desc: "BNA - Tên đầy đủ là BN Academy. Đội tuyển đại diện cho tinh thần rèn luyện, trưởng thành và vươn lên qua từng trận đấu. Từ những bước đi đầu tiên đến những màn đối đầu căng thẳng, BNA luôn giữ vững sự đoàn kết, không ngại thử thách và sẵn sàng bứt phá để khẳng định bản thân tại Survival Legacy Cup SS2!",
-        logo: "logo-bna.jpg",
+        logo: "logo-lkess2.jpg",
         country: "", 
         players: [
             { n: "BNA.HGIA", r: "RUSHER", id: "1716356557" },
