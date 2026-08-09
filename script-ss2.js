@@ -168,304 +168,302 @@ function dongThongSo() {
 
 /* ================= PHẦN 2: HỆ THỐNG ĐỘI TUYỂN ================= */
 const teamsDatabase = {
-    // ĐỘI 1: UNICORN (Đã ẩn chữ Việt Nam và thay đổi thành viên)
-    "uzi": {
-        name: "UZI",
-        desc: "UZI - Tên đầy đủ là UZI　LEGENDS. Đội tuyển Free Fire mang hình tượng “song UZI khai hỏa”, tốc độ xả đạn nghẹt thở, dồn ép liên tục khiến đối thủ không kịp thở, vào giao tranh là quét sạch đội hình đối thủ trong tích tắc, thể hiện đẳng cấp “bắn nhanh – thắng nhanh” tại Survival Legacy Cup SS1!",
-        logo: "logo-uzi.jpg",
+    "bna": {
+        name: "BNA",
+        desc: "BNA - Tên đầy đủ là BN Academy. Đội tuyển đại diện cho tinh thần rèn luyện, trưởng thành và vươn lên qua từng trận đấu. Từ những bước đi đầu tiên đến những màn đối đầu căng thẳng, BNA luôn giữ vững sự đoàn kết, không ngại thử thách và sẵn sàng bứt phá để khẳng định bản thân tại Survival Legacy Cup SS2!",
+        logo: "logo-bna.jpg",
         country: "", 
         players: [
-            { n: "UZI.TDUY", a: "t.duy.jpg", r: "RUSHER"},
-            { n: "UZI.KEN", a: "ken.jpg", r: "RIFLER" },
-            { n: "UZI.HANA", a: "hana.jpg", r: "BOMBER" },
-            { n: "UZI.FOR", a: "for.jpg", r: "SNIPPER" },
-            { n: "UZI.BIN", a: "bin.jpg", r: "SUPPORT" }
+            { n: "BNA.HGIA", r: "RUSHER", id: "1716356557" },
+            { n: "BNA.ĐQUANG", r: "RUSHER", id: "2349365559" },
+            { n: "BNA.VLAP", r: "RUSHER", id: "3428078972" },
+            { n: "BNA.KHANH", r: "SNIPER", id: "2120500181" },
+            { n: "BNA.VTAI", r: "SUPPORT", id: "9780579184" }
         ]
     },
-    // ĐỘI 2 trở đi... (Lát nữa mình thay sau)
     "ks": {
         name: "KINGS FF",
-        desc: "KS – Tên đầy đủ là KINGS FF. Đội tuyển Free Fire sở hữu lối chơi bản lĩnh và kỷ luật, luôn giữ thế trận ổn định và sẵn sàng áp đảo đối thủ để khẳng định vị thế “nhà vua” tại Survival Legacy Cup SS1!",
+        desc: "KS – Tên đầy đủ là KINGS FF. Đội tuyển sở hữu lối chơi bản lĩnh và kỷ luật, luôn giữ thế trận ổn định và sẵn sàng áp đảo đối thủ để khẳng định vị thế “nhà vua” tại Survival Legacy Cup SS1!",
         logo: "logo-ks.jpg",
         country: "",
         players: [
-            { n: "KS.GREAT", a: "great.jpg", r: "RUSHER" },
-            { n: "KS.VPHAT", a: "vphat.jpg", r: "RUSHER" },
-            { n: "KS.CTHANG", a: "cthang.jpg", r: "RUSHER" },
-            { n: "KS.HLOC", a: "hloc.jpg", r: "RIFLER" },
+            { n: "KS.GREAT", r: "RUSHER", id: "261423238" },
+            { n: "KS.VPHAT", r: "RUSHER", id: "8534460998" },
+            { n: "KS.CTHANG", r: "RUSHER", id: "9531598587" },
+            { n: "KS.HLOC", r: "RIFLER", id: "8015399781" },
             { n: "KHÔNG CÓ", a: "https://placehold.co/200x250/111/555?text=TRONG" }
         ]
     },
     "mao": {
         name: "MAO",
-        desc: "MAO – Tên đầy đủ là MAO. Đội tuyển Free Fire nổi bật với lối chơi nhanh, táo bạo và không ngại giao tranh, luôn tạo áp lực mạnh mẽ và sẵn sàng bùng nổ tại Survival Legacy Cup SS1!",
+        desc: "MAO – Tên đầy đủ là MAO. Đội tuyển nổi bật với lối chơi nhanh, táo bạo và không ngại giao tranh, luôn tạo áp lực mạnh mẽ và sẵn sàng bùng nổ tại Survival Legacy Cup SS1!",
         logo: "logo-mao.jpg",
         country: "", 
         players: [
-            { n: "MAO.ĐBIN", a: "đbin.jpg", r: "RUSHER"},
-            { n: "MAO.NTRI", a: "ntri.jpg", r: "BOMBER"},
-            { n: "MAO.QVINH", a: "qvinh.jpg", r: "SNIPER"},
-            { n: "MAO.BAUUJU?", a: "bauju.jpg", r: "SUPPORT"},
-            { n: "MAO.SUN", a: "sun.jpg", r: "SUPPORT"}
+            { n: "MAO.ĐBIN", r: "RUSHER", id: "7017022761"},
+            { n: "MAO.NTRI", r: "BOMBER", id: "9348528189"},
+            { n: "MAO.QVINH", r: "SNIPER", id: "1183370030"},
+            { n: "MAO.LEYNII?", r: "SUPPORT", id: " 561971260 "},
+            { n: "MAO.SUN", r: "SUPPORT", id: "12225789596"}
         ]
     },
     "ft": {
         name: "FT",
-        desc: "FT - Tên đầy đủ là Fearless Team. Đội tuyển Free Fire luôn thi đấu với lòng quyết tâm, chiến thuật linh hoạt và tinh thần đồng đội mạnh mẽ. Chúng tôi hướng tới mục tiêu không chỉ là chiến thắng, mà còn là truyền cảm hứng cho cộng đồng tại Survival Legacy Cup SS1!",
+        desc: "FT - Tên đầy đủ là Fearless Team. Đội tuyển luôn thi đấu với lòng quyết tâm, chiến thuật linh hoạt và tinh thần đồng đội mạnh mẽ. Chúng tôi hướng tới mục tiêu không chỉ là chiến thắng, mà còn là truyền cảm hứng cho cộng đồng tại Survival Legacy Cup SS1!",
         logo: "logo-ft.jpg",
         country: "", 
         players: [
-            { n: "FT.W4U", a: "w4u.jpg", r: "RUSHER" },
-            { n: "FT.JVARZ", a: "jvarz.jpg", r: "BOMBER" },
-            { n: "FT.THANHDAI", a: "thanhdai.jpg", r: "SNIPER" },
-            { n: "FT.MILLOW", a: "millow.jpg", r: "SUPPORT" },
+            { n: "FT.W4U", r: "RUSHER", id: "6456961336" },
+            { n: "FT.JVARZ", r: "BOMBER", id: "4363598414" },
+            { n: "FT.THANHDAI", r: "SNIPER", id: "3659332602" },
+            { n: "FT.MILLOW", r: "SUPPORT", id: "2444693631" },
             { n: "KHÔNG CÓ", a: "https://placehold.co/200x250/111/555?text=TRONG" }
         ]
     },
     "wb": {
         name: "WB",
-        desc: "WB - Tên đầy đủ là WIBU Esports. Đội tuyển Free Fire với lối chơi trẻ trung, linh hoạt và giàu đột biến, thường xuyên tạo bất ngờ bằng những pha xử lý táo bạo và khả năng bứt phá mạnh mẽ tại Survival Legacy Cup SS1!",
+        desc: "WB - Tên đầy đủ là WIBU Esports. Đội tuyển với lối chơi trẻ trung, linh hoạt và giàu đột biến, thường xuyên tạo bất ngờ bằng những pha xử lý táo bạo và khả năng bứt phá mạnh mẽ tại Survival Legacy Cup SS1!",
         logo: "logo-wb.jpg", /* Nhớ gõ đúng tên file ảnh bạn vừa lưu ở Bước 1 */
         country: "", 
         players: [
-            { n: "WB.K9", a: "k9.jpg", r: "RUSHER" },
-            { n: "WB.BOI", a: "boi.jpg", r: "BOMBER" },
-            { n: "WB.DMK", a: "dmk.jpg", r: "SNIPER" },
-            { n: "WB.PEPIN", a: "pin.jpg", r: "SUPPORT" },
+            { n: "WB.K9", r: "RUSHER", id: "3890131812" },
+            { n: "WB.BOI", r: "BOMBER", id: "9128936319" },
+            { n: "WB.DMK", r: "SNIPER", id: "9625163973" },
+            { n: "WB.PEPIN", r: "SUPPORT", id: "2598058404" },
             { n: "KHÔNG CÓ", a: "https://placehold.co/200x250/111/555?text=TRONG" }
         ]
     },
     "tlk": {
         name: "TLK",
-        desc: "TLK - Tên đầy đủ là Tú Lơ Khơ. Đội tuyển Free Fire mang phong cách thi đấu ngẫu hứng nhưng đầy hiệu quả, nổi bật với những pha xử lý “khó đoán” và khả năng lật kèo ấn tượng tại Survival Legacy Cup SS1!",
+        desc: "TLK - Tên đầy đủ là Tú Lơ Khơ. Đội tuyển mang phong cách thi đấu ngẫu hứng nhưng đầy hiệu quả, nổi bật với những pha xử lý “khó đoán” và khả năng lật kèo ấn tượng tại Survival Legacy Cup SS1!",
         logo: "logo-tlk.jpg",
         country: "", 
         players: [
-            { n: "TLK.DONTCRY", a: "dontcry.jpg", r: "RUSHER" },
-            { n: "TLK.RAM", a: "ram.jpg", r: "BOMBER" },
-            { n: "TLK.NTT", a: "ntt.jpg", r: "SNIPER" },
-            { n: "TLK.NGOCTIEN", a: "ngoctien.jpg", r: "SUPPORT" },
-            { n: "TLK.VANTUAN", a: "vantuan.jpg", r: "SUPPORT" }
+            { n: "TLK.DONTCRY", r: "RUSHER", id: "8974744042" },
+            { n: "TLK.RAM", r: "BOMBER", id: "6787164998" },
+            { n: "TLK.NTT", r: "SNIPER", id: "6489203171" },
+            { n: "TLK.NGOCTIEN", r: "SUPPORT", id: "2514795764" },
+            { n: "TLK.VANTUAN", r: "SUPPORT", id: "896939861" }
         ]
     },
     "uch": {
         name: "UCH",
-        desc: "UCH - Tên đầy đủ là Uchiha. Đội tuyển Free Fire mang phong cách lạnh lùng và chuẩn xác, nổi bật với khả năng kiểm soát giao tranh cùng những pha xử lý sắc bén, luôn sẵn sàng thiêu rụi đối thủ tại Survival Legacy Cup SS1!",
+        desc: "UCH - Tên đầy đủ là Uchiha. Đội tuyển mang phong cách lạnh lùng và chuẩn xác, nổi bật với khả năng kiểm soát giao tranh cùng những pha xử lý sắc bén, luôn sẵn sàng thiêu rụi đối thủ tại Survival Legacy Cup SS1!",
         logo: "logo-uch.jpg",
         country: "", 
         players: [
-            { n: "UCH.HKIET", a: "hkiet.jpg", r: "RUSHER"},
-            { n: "UCH.TDUY", a: "tduy.jpg", r: "BOMBER" },
-            { n: "UCH.TKIEN", a: "tkien.jpg", r: "SNIPER"},
-            { n: "UCH.XBAO", a: "xbao.jpg", r: "SUPPORT" },
+            { n: "UCH.HKIET", r: "RUSHER", id: "2706443747"},
+            { n: "UCH.TDUY", r: "BOMBER", id: "9861347097" },
+            { n: "UCH.TKIEN", r: "SNIPER", id: "12835295615"},
+            { n: "UCH.XBAO", r: "SUPPORT", id: "9352178397" },
             { n: "KHÔNG CÓ", a: "https://placehold.co/200x250/111/555?text=TRONG" }
         ]
     },
     "qc": {
         name: "QC",
-        desc: "QC - Tên đầy đủ là Quyết Chiến Esports. Đội tuyển Free Fire với tinh thần chiến đấu máu lửa, luôn chủ động giao tranh và không ngại va chạm, nổi bật với lối chơi quyết liệt và khả năng ép giao tranh mạnh mẽ tại Survival Legacy Cup SS1!",
+        desc: "QC - Tên đầy đủ là Quyết Chiến Esports. Đội tuyển với tinh thần chiến đấu máu lửa, luôn chủ động giao tranh và không ngại va chạm, nổi bật với lối chơi quyết liệt và khả năng ép giao tranh mạnh mẽ tại Survival Legacy Cup SS1!",
         logo: "logo-qc.jpg",
         country: "", 
         players: [
-            { n: "QC.KAME", a: "kame.jpg", r: "RUSHER" },
-            { n: "QC.DKHANG", a: "dkhang.jpg", r: "RUSHER" },
-            { n: "QC.NGHIEU", a: "nghieu.jpg", r: "BOMBER" },
-            { n: "QC.CHIBUN", a: "chibun.jpg", r: "SNIPER" },
-            { n: "QC.LAW", a: "law.jpg", r: "SUPPORT" }
+            { n: "QC.KAME",  r: "RUSHER", id: "7169919048" },
+            { n: "QC.DKHANG",  r: "RUSHER", id: "12662645082" },
+            { n: "QC.NGHIEU", r: "BOMBER", id: "1868626947" },
+            { n: "QC.CHIBUN",  r: "SNIPER", id: "6464845328" },
+            { n: "QC.LAW", r: "SUPPORT", id: "13044258821" }
         ]
     },
     "kg": {
         name: "KG",
-        desc: "KG – Tên đầy đủ là KG Esports. Đội tuyển Free Fire thi đấu đầy bản lĩnh và kỷ luật, nổi bật với lối chơi chắc chắn, kiểm soát trận đấu tốt và khả năng phối hợp team cực kỳ ăn ý. Không chỉ mạnh ở kỹ năng cá nhân, họ còn sở hữu tư duy chiến thuật sắc bén, sẵn sàng bứt phá và làm chủ cuộc chơi ở những thời khắc quyết định tại Survival Legacy Cup SS1!",
+        desc: "KG – Tên đầy đủ là KG Esports. Đội tuyển thi đấu đầy bản lĩnh và kỷ luật, nổi bật với lối chơi chắc chắn, kiểm soát trận đấu tốt và khả năng phối hợp team cực kỳ ăn ý. Không chỉ mạnh ở kỹ năng cá nhân, họ còn sở hữu tư duy chiến thuật sắc bén, sẵn sàng bứt phá và làm chủ cuộc chơi ở những thời khắc quyết định tại Survival Legacy Cup SS1!",
         logo: "logo-kg.jpg",
         country: "", 
         players: [
-            { n: "KG.TANPHAT", a: "tanphat.jpg", r: "RUSHER" },
-            { n: "KG.QUAN", a: "quan.jpg", r: "RUSHER" },
-            { n: "KG.THINH", a: "thinh.jpg", r: "SNIPER" },
-            { n: "KG.HIEUDUC", a: "hieuduc.jpg", r: "SUPPORT" },
+            { n: "KG.TANPHAT", r: "RUSHER", id: "589071469"},
+            { n: "KG.QUAN", r: "RUSHER", id: "7083435745" },
+            { n: "KG.THINH", r: "SNIPER", id: "1211245755" },
+            { n: "KG.HIEUDUC", r: "SUPPORT", id: "2073408899" },
             { n: "KHÔNG CÓ", a: "https://placehold.co/200x250/111/555?text=TRONG", r: "TRONG" }
         ]
     },
     "nna": {
         name: "NNA",
-        desc: "NNA - Tên đầy đủ là Nước Ngọt Academy. Đội tuyển Free Fire mang phong cách “ngọt mà gắt”, vẻ ngoài nhẹ nhàng nhưng lối chơi cực kỳ khó chịu, sẵn sàng tung đòn kết liễu bất ngờ và khiến đối thủ “thấm đòn” tại Survival Legacy Cup SS1!",
+        desc: "NNA - Tên đầy đủ là Nước Ngọt Academy. Đội tuyển mang phong cách “ngọt mà gắt”, vẻ ngoài nhẹ nhàng nhưng lối chơi cực kỳ khó chịu, sẵn sàng tung đòn kết liễu bất ngờ và khiến đối thủ “thấm đòn” tại Survival Legacy Cup SS1!",
         logo: "logo-nna.jpg",
         country: "", 
         players: [
-            { n: "NNA.TCUONG", a: "tcuong.jpg", r: "RUSHER" },
-            { n: "NNA.THDAT", a: "thdat.jpg", r: "RUSHER" },
-            { n: "NNA.DHAI", a: "dhai.jpg", r: "BOMBER" },
-            { n: "NNA.QMANH", a: "qmanh.jpg", r: "SUPPORT" },
+            { n: "NNA.TCUONG", r: "RUSHER", id: "1246697946" },
+            { n: "NNA.THDAT", r: "RUSHER", id: "3421297792" },
+            { n: "NNA.DHAI", r: "BOMBER", id: "4184049752" },
+            { n: "NNA.QMANH", r: "SUPPORT", id: "02645505986" },
             { n: "KHÔNG CÓ", a: "https://placehold.co/200x250/111/555?text=TRONG" }
         ]
     },
     "bnn1": {
         name: "BNN1",
-        desc: "BBN1 - Tên đầy đủ là Béc Nin No 1. Đội tuyển Free Fire với khí chất dẫn đầu, lối chơi dứt khoát và đầy uy lực, luôn nhập cuộc với mục tiêu thống trị và khẳng định đẳng cấp số 1 tại Survival Legacy Cup SS1!",
+        desc: "BBN1 - Tên đầy đủ là Béc Nin No 1. Đội tuyển với khí chất dẫn đầu, lối chơi dứt khoát và đầy uy lực, luôn nhập cuộc với mục tiêu thống trị và khẳng định đẳng cấp số 1 tại Survival Legacy Cup SS1!",
         logo: "logo-bnn1.jpg",
         country: "", 
         players: [
-            { n: "BNN1.HGIA", a: "hgia.jpg", r: "RUSHER" },
-            { n: "BNN1.TCONG", a: "tcong.jpg", r: "BOMBER" },
-            { n: "BNN1.VTAI", a: "vtai.jpg", r: "SUPPORT" },
-            { n: "BNN1.VLAP", a: "vlap.jpg", r: "SNIPER" },
+            { n: "BNN1.HGIA", r: "RUSHER", id: "1716356557" },
+            { n: "BNN1.TCONG", r: "BOMBER", id: "9774404730" },
+            { n: "BNN1.VTAI", r: "SUPPORT", id: "9780579184" },
+            { n: "BNN1.VLAP", r: "SNIPER", id: "1236791829" },
             { n: "KHÔNG CÓ", a: "https://placehold.co/200x250/111/555?text=TRONG" }
         ]
     },
     "nnn": {
         name: "NNN",
-        desc: "NNN - Tên đầy đủ là NO NO NO. Đội tuyển Free Fire với tinh thần “nói không với thất bại”, nổi bật bởi lối chơi quyết đoán, áp lực liên tục và khả năng từ chối mọi cơ hội của đối thủ tại Survival Legacy Cup SS1!",
+        desc: "NNN - Tên đầy đủ là NO NO NO. Đội tuyển với tinh thần “nói không với thất bại”, nổi bật bởi lối chơi quyết đoán, áp lực liên tục và khả năng từ chối mọi cơ hội của đối thủ tại Survival Legacy Cup SS1!",
         logo: "logo-nnn.jpg",
         country: "", 
         players: [
-            { n: "NNN.DINH", a: "dinh.jpg", r: "RUSHER" },
-            { n: "NNN.VANTAI", a: "vantai.jpg", r: "RUSHER" },
-            { n: "NNN.BMINH", a: "bminh.jpg", r: "SNIPER" },
-            { n: "NNN.NHATTIEN", a: "nhattien.jpg", r: "SUPPORT" },
+            { n: "NNN.DINH", r: "RUSHER", id: "3011718064" },
+            { n: "NNN.VANTAI", r: "RUSHER", id: "8102907685" },
+            { n: "NNN.BMINH", r: "SNIPER", id: "6576055069" },
+            { n: "NNN.NHATTIEN", r: "SUPPORT", id: "5389941711" },
             { n: "KHÔNG CÓ", a: "https://placehold.co/200x250/111/555?text=TRONG" }
         ]
     },
     "t2al": {
         name: "T2AL",
-        desc: "T2AL- Tên đầy đủ là T2AL Esports. Đội tuyển Free Fire mang biểu tượng “số 2 bứt phá”, luôn âm thầm tích lũy sức mạnh trước khi tăng tốc mạnh mẽ, sẵn sàng vượt lên và chiếm lĩnh vị trí dẫn đầu tại Survival Legacy Cup SS1!",
+        desc: "T2AL- Tên đầy đủ là T2AL Esports. Đội tuyển mang biểu tượng “số 2 bứt phá”, luôn âm thầm tích lũy sức mạnh trước khi tăng tốc mạnh mẽ, sẵn sàng vượt lên và chiếm lĩnh vị trí dẫn đầu tại Survival Legacy Cup SS1!",
         logo: "logo-t2al.jpg",
         country: "", 
         players: [
-            { n: "T2AL.KTUAN", a: "ktuan.jpg", r: "RUSHER" },
-            { n: "T2AL.LHTUAN", a: "lhtuan.jpg", r: "RUSHER" },
-            { n: "T2AL.XQUYENN", a: "xquyen.jpg", r: "RIFLER" },
-            { n: "T2AL.XUANLOC", a: "xuanloc.jpg", r: "SNIPER" },
-            { n: "T2AL.MINHANN", a: "minhan.jpg", r: "SUPPORT" }
+            { n: "T2AL.KTUAN", r: "RUSHER", id: "982519896" },
+            { n: "T2AL.LHTUAN", r: "RUSHER", id: "1794081493" },
+            { n: "T2AL.XQUYENN", r: "RIFLER", id: "8457251920" },
+            { n: "T2AL.XUANLOC", r: "SNIPER", id: "9050876679" },
+            { n: "T2AL.MINHANN",r: "SUPPORT", id: "3395103979" }
         ]
     },
     "tq": {
         name: "TQ",
-        desc: "TQ - Tên đầy đủ là TQ Esports. Đội tuyển Free Fire mang phong cách “im lặng nhưng kết liễu”, không ồn ào nhưng mỗi lần xuất hiện là một lần quét sạch, ra đòn ít nhưng chuẩn và cực kỳ chí mạng tại Survival Legacy Cup SS1.!",
+        desc: "TQ - Tên đầy đủ là TQ Esports. Đội tuyển mang phong cách “im lặng nhưng kết liễu”, không ồn ào nhưng mỗi lần xuất hiện là một lần quét sạch, ra đòn ít nhưng chuẩn và cực kỳ chí mạng tại Survival Legacy Cup SS1.!",
         logo: "logo-tq.jpg",
         country: "", 
         players: [
-            { n: "TQ.VKHANG", a: "vkhang.jpg", r: "RUSHER" },
-            { n: "TQ.SYHA", a: "syha.jpg", r: "RIFLER" },
-            { n: "TQ.FAKE", a: "fake.jpg", r: "SNIPER" },
-            { n: "TQ.MOICHOI", a: "moichoi.jpg", r: "SUPPORT" },
+            { n: "TQ.VKHANG", r: "RUSHER", id: "238934807" },
+            { n: "TQ.SYHA", r: "RIFLER", id: "10039390084" },
+            { n: "TQ.FAKE", r: "SNIPER", id: "8616363159" },
+            { n: "TQ.MOICHOI", r: "SUPPORT", id: "1890915738" },
             { n: "KHÔNG CÓ", a: "https://placehold.co/200x250/111/555?text=TRONG"}
         ]
     },
     "tgl": {
         name: "TGL",
-        desc: "TGL - Tên đầy đủ là Team Gia Lai. Đội tuyển Free Fire không chỉ thi đấu, họ “định hình” trận đấu theo cách của riêng mình. Với phong thái điềm tĩnh và những pha ra quyết định mang tính chuẩn mực, TGL luôn khiến chiến thắng trở thành điều tất yếu chứ không phải may mắn tại Survival Legacy Cup SS1!",
+        desc: "TGL - Tên đầy đủ là Team Gia Lai. Đội tuyển không chỉ thi đấu, họ “định hình” trận đấu theo cách của riêng mình. Với phong thái điềm tĩnh và những pha ra quyết định mang tính chuẩn mực, TGL luôn khiến chiến thắng trở thành điều tất yếu chứ không phải may mắn tại Survival Legacy Cup SS1!",
         logo: "logo-tgl.jpg",
         country: "", 
         players: [
-            { n: "TGL.DEKAY", a: "dekay.jpg", r: "RUSHER" },
-            { n: "TGL.HDPE", a: "hdpe.jpg", r: "RUSHER" },
-            { n: "TGL.MUP", a: "mup.jpg", r: "BOMBER" },
-            { n: "TGL.CUBA", a: "cuba.jpg", r: "SNIPER" },
-            { n: "TGL.NPHUNG", a: "nphung.jpg", r: "SUPPORT" }
+            { n: "TGL.DEKAY", r: "RUSHER", id: "5529315258" },
+            { n: "TGL.HDPE", r: "RUSHER", id: "248286997" },
+            { n: "TGL.MUP", r: "BOMBER", id: "2984185398" },
+            { n: "TGL.CUBA", r: "SNIPER", id: "4146302957" },
+            { n: "TGL.NPHUNG", r: "SUPPORT", id: "363533799" }
         ]
     },
     "nvd": {
         name: "NVD",
-        desc: "NVD - Tên đầy đủ là NEVERDIE. Đội tuyển Free Fire với tinh thần chiến đấu không bỏ cuộc đúng như tên gọi. Lì lợm, bền bỉ và luôn chiến đến cùng, Neverdie cái tên luôn khiến đối thủ phải dè chừng mỗi khi bước vào trận tại Survival Legacy Cup SS1!",
+        desc: "NVD - Tên đầy đủ là NEVERDIE. Đội tuyển với tinh thần chiến đấu không bỏ cuộc đúng như tên gọi. Lì lợm, bền bỉ và luôn chiến đến cùng, Neverdie cái tên luôn khiến đối thủ phải dè chừng mỗi khi bước vào trận tại Survival Legacy Cup SS1!",
         logo: "logo-nvd.jpg",
         country: "", 
         players: [
-            { n: "NVD.QUOCHUY", a: "quochuy.jpg", r: "RUSHER" },
-            { n: "NVD.PHAMCUONG", a: "phamcuong.jpg", r: "RUSHER" },
-            { n: "NVD.MINHTRI", a: "minhtri.jpg", r: "SPINER" },
-            { n: "NVD.TRANLONG", a: "tranlong.jpg", r: "SUPPORT" },
-            { n: "NVD.QUOCMINH", a: "quocminh.jpg", r: "SUPPORT" }
+            { n: "NVD.QUOCHUY", r: "RUSHER", id: "1895472861" },
+            { n: "NVD.PHAMCUONG", r: "RUSHER", id: "10808635533" },
+            { n: "NVD.MINHTRI", r: "SPINER", id: "392420699" },
+            { n: "NVD.TRANLONG", r: "SUPPORT", id: "1728096984" },
+            { n: "NVD.QUOCMINH", r: "SUPPORT", id: "1921473584" }
         ]
     },
     "hp": {
         name: "HP",
-        desc: "HP – Tên đầy đủ là HP ESPORTS. Đội tuyển Free Fire mang phong cách thi đấu lạnh lùng và chuẩn xác. Không cần quá phô trương, HP luôn âm thầm tích lũy lợi thế và kết liễu trận đấu bằng những pha xử lý gọn gàng, dứt khoát tại Survival Legacy Cup SS1!",
+        desc: "HP – Tên đầy đủ là HP ESPORTS. Đội tuyển mang phong cách thi đấu lạnh lùng và chuẩn xác. Không cần quá phô trương, HP luôn âm thầm tích lũy lợi thế và kết liễu trận đấu bằng những pha xử lý gọn gàng, dứt khoát tại Survival Legacy Cup SS1!",
         logo: "logo-hp.jpg",
         country: "", 
         players: [
-            { n: "HP.PHUY", a: "phuy.jpg", r: "RUSHER" },
-            { n: "HP.MLONG", a: "mlong.jpg", r: "RUSHER" },
-            { n: "HP.HBAO", a: "hbao.jpg", r: "BOMBER" },
-            { n: "HP.HKIET", a: "h-kiet.jpg", r: "SNIPER" },
-            { n: "HP.ATUAN", a: "atuan.jpg", r: "SUPPORT" }
+            { n: "HP.PHUY", r: "RUSHER", id: "343473824" },
+            { n: "HP.MLONG", r: "RUSHER", id: "30966128" },
+            { n: "HP.HBAO", r: "BOMBER", id: "3117070335" },
+            { n: "HP.HKIET", r: "SNIPER", id: "7533504927" },
+            { n: "HP.ATUAN", r: "SUPPORT", id: "1824807835" }
         ]
     },
     "gods": {
         name: "GODS",
-        desc: "GODS – Tên đầy đủ là GODS ESPORTS. Đội tuyển Free Fire bước vào trận như những kẻ định đoạt số phận ván đấu. Mỗi pha di chuyển đều mang tính áp đặt, mỗi giao tranh đều là lời tuyên bố: đây là lãnh địa của GODS tại Survival Legacy Cup SS1!",
+        desc: "GODS – Tên đầy đủ là GODS ESPORTS. Đội tuyển bước vào trận như những kẻ định đoạt số phận ván đấu. Mỗi pha di chuyển đều mang tính áp đặt, mỗi giao tranh đều là lời tuyên bố: đây là lãnh địa của GODS tại Survival Legacy Cup SS1!",
         logo: "logo-gods.jpg",
         country: "", 
         players: [
-            { n: "GODS.BHUY", a: "bhuy.jpg", r: "RUSHER" },
-            { n: "GODS.CHUY", a: "chuy.jpg", r: "RUSHER" },
-            { n: "GODS.KDUY", a: "kduy.jpg", r: "SPINER" },
-            { n: "GODS.TVAN", a: "tvan.jpg", r: "SUPPORT" },
-            { n: "GODS.GKIET", a: "gkiet.jpg", r: "SUPPORT" }
+            { n: "GODS.BHUY", r: "RUSHER", id: "7286133977" },
+            { n: "GODS.CHUY",r: "RUSHER", id: "5358748224" },
+            { n: "GODS.KDUY", r: "SPINER", id: "9898703421" },
+            { n: "GODS.TVAN", r: "SUPPORT", id: "4998752967" },
+            { n: "GODS.GKIET", r: "SUPPORT", id: "6523254985" }
         ]
     },
     "whd": {
         name: "WHD",
-        desc: "WHD - Tên đầy đủ là Vui Vẻ Hoà Đồng. Đội tuyển Free Fire mang năng lượng tích cực vào từng trận đấu, nhưng đừng để sự vui vẻ đánh lừa, khi cần họ vẫn có thể bùng nổ và xoay chuyển cục diện theo cách không ai ngờ tới  tại Survival Legacy Cup SS1!",
+        desc: "WHD - Tên đầy đủ là Vui Vẻ Hoà Đồng. Đội tuyển mang năng lượng tích cực vào từng trận đấu, nhưng đừng để sự vui vẻ đánh lừa, khi cần họ vẫn có thể bùng nổ và xoay chuyển cục diện theo cách không ai ngờ tới  tại Survival Legacy Cup SS1!",
         logo: "logo-whd.png",
         country: "", 
         players: [
-            { n: "WHD.TUANANH", a: "tuananh.jpg", r: "RUSHER" },
-            { n: "WHD.NGOCHAI", a: "ngochai.jpg", r: "BOMBER" },
-            { n: "WHD.THANHSON", a: "thanhson.jpg", r: "SNIPER" },
-            { n: "WHD.NGOCCAC", a: "ngoccac.jpg", r: "SNIPER" },
-            { n: "WHD.HUUPHUOC", a: "huuphuoc.jpg", r: "SUPPORT" }
+            { n: "WHD.TUANANH", r: "RUSHER", id: "2015939299" },
+            { n: "WHD.NGOCHAI", r: "BOMBER", id: "638649717" },
+            { n: "WHD.THANHSON", r: "SNIPER", id: "4109105748" },
+            { n: "WHD.NGOCCAC",r: "SNIPER", id: "2656003625" },
+            { n: "WHD.HUUPHUOC", r: "SUPPORT", id: "6548727578" }
         ]
     },
     "arc": {
         name: "ARC",
-        desc: "ARC – tên đầy đủ là ARCANE LEGION. Đội tuyển Free Fire mang màu sắc huyền bí và khó lường, nơi mỗi bước di chuyển đều ẩn chứa toan tính. Với lối chơi tinh quái và khả năng tạo đột biến cao, ARC luôn khiến trận đấu xoay chiều theo cách rất “ma thuật” tại Survival Legacy Cup SS1!",
+        desc: "ARC – tên đầy đủ là ARCANE LEGION. Đội tuyển mang màu sắc huyền bí và khó lường, nơi mỗi bước di chuyển đều ẩn chứa toan tính. Với lối chơi tinh quái và khả năng tạo đột biến cao, ARC luôn khiến trận đấu xoay chiều theo cách rất “ma thuật” tại Survival Legacy Cup SS1!",
         logo: "logo-arc.jpg",
         country: "", 
         players: [
-            { n: "ARC.HUY", a: "huy.jpg", r: "RUSHER" },
-            { n: "ARC.MINHBOY", a: "minhboy.jpg", r: "BOMBER" },
-            { n: "ARC.DUNG", a: "dung.jpg", r: "SNIPER" },
-            { n: "ARC.DONG", a: "dong.jpg", r: "SUPPORT" },
+            { n: "ARC.HUY", r: "RUSHER", id: "3956442086" },
+            { n: "ARC.MINHBOY", r: "BOMBER", id: "453404499" },
+            { n: "ARC.DUNG", r: "SNIPER", id: "2812885077" },
+            { n: "ARC.DONG", r: "SUPPORT", id: "3111464911" },
             { n: "KHÔNG CÓ", a: "https://placehold.co/200x250/111/555?text=TRONG", r: "TRONG" }
         ]
     },
     "bne": {
         name: "BNE",
-        desc: "BNE - Tên đầy đủ là BN ESPORT. Đội tuyển Free Fire chơi theo kiểu “ít nhưng chất” — mỗi pha di chuyển đều có mục đích, mỗi giao tranh đều tính toán kỹ lưỡng. Không ồn ào, nhưng khi ra tay thì gần như không cho đối thủ cơ hội phản kháng tại Survival Legacy Cup SS1!",
+        desc: "BNE - Tên đầy đủ là BN ESPORT. Đội tuyển chơi theo kiểu “ít nhưng chất” — mỗi pha di chuyển đều có mục đích, mỗi giao tranh đều tính toán kỹ lưỡng. Không ồn ào, nhưng khi ra tay thì gần như không cho đối thủ cơ hội phản kháng tại Survival Legacy Cup SS1!",
         logo: "logo-bne.jpg",
         country: "", 
         players: [
-            { n: "BNE.TUANAN", a: "tuanan.jpg", r: "RUSHER" },
-            { n: "BNE.DPHONG", a: "dphong.jpg", r: "BOMBER" },
-            { n: "BNE.VINHKAKA", a: "vinhkaka.jpg", r: "BOMBER" },
-            { n: "BNE.TNHAN", a: "tnhan.jpg", r: "SNIPER" },
-            { n: "BNE.DBAO", a: "dbao.jpg", r: "SUPPORT" }
+            { n: "BNE.TUANAN", r: "RUSHER", id: "8368590729" },
+            { n: "BNE.DPHONG", r: "BOMBER", id: "7930899723" },
+            { n: "BNE.VINHKAKA", r: "BOMBER", id: "1231702254" },
+            { n: "BNE.TNHAN", r: "SNIPER", id: "7506277174" },
+            { n: "BNE.DBAO",  r: "SUPPORT", id: "9818033572" }
         ]
     },
     "cnct": {
         name: "CNCT",
-        desc: "CNCT – Tên đầy đủ là CAINUOC CITY. Đội tuyển Free Fire mang đậm chất đường phố với lối chơi táo bạo và không ngại va chạm. Luôn sẵn sàng lao vào giao tranh, CNCT biến mỗi trận đấu thành cuộc chiến thực thụ, nơi bản lĩnh được đặt lên hàng đầu tại Survival Legacy Cup SS1!",
+        desc: "CNCT – Tên đầy đủ là CAINUOC CITY. Đội tuyển mang đậm chất đường phố với lối chơi táo bạo và không ngại va chạm. Luôn sẵn sàng lao vào giao tranh, CNCT biến mỗi trận đấu thành cuộc chiến thực thụ, nơi bản lĩnh được đặt lên hàng đầu tại Survival Legacy Cup SS1!",
         logo: "logo-cnct.jpg",
         country: "", 
         players: [
-            { n: "CNCT.QN", a: "qn.jpg", r: "RUSHER" },
-            { n: "CNCT.CN", a: "cn.jpg", r: "RUSHER" },
-            { n: "CNCT.KH", a: "kh.jpg", r: "RUSHER" },
-            { n: "CNCT.SOI", a: "soi.jpg", r: "SNIPER" },
-            { n: "CNCT.QUYEN", a: "quyen.jpg", r: "SUPPORT" }
+            { n: "CNCT.QN", r: "RUSHER", id: "109393806" },
+            { n: "CNCT.CN", r: "RUSHER", id: "1503184563" },
+            { n: "CNCT.KH",r: "RUSHER", id: "2519487267" },
+            { n: "CNCT.SOI", r: "SNIPER", id: "12848040110" },
+            { n: "CNCT.QUYEN", r: "SUPPORT", id: "12953668584" }
         ]
     },
     "btn": {
         name: "BTN",
-        desc: "BTN - Tên đầy đủ là BTN. Đội tuyển Free Fire mang phong cách thi đấu lạnh và lì, càng bị ép, họ càng nguy hiểm. Với những pha phản công sắc bén, BTN luôn biết cách biến thế trận bất lợi thành màn lật kèo đầy bất ngờ tại Survival Legacy Cup SS1!",
+        desc: "BTN - Tên đầy đủ là BTN. Đội tuyển mang phong cách thi đấu lạnh và lì, càng bị ép, họ càng nguy hiểm. Với những pha phản công sắc bén, BTN luôn biết cách biến thế trận bất lợi thành màn lật kèo đầy bất ngờ tại Survival Legacy Cup SS1!",
         logo: "logo-btn.jpg",
         country: "", 
         players: [
-            { n: "BTN.TDUNG", a: "tdung.jpg", r: "RUSHER" },
-            { n: "BTN.VQUANG", a: "vquang.jpg", r: "RUSHER" },
-            { n: "BTN.TANH", a: "tanh.jpg", r: "SNIPER" },
-            { n: "BTN.HLONG", a: "hlong.jpg", r: "SUPPORT" },
+            { n: "BTN.TDUNG", r: "RUSHER", id: "1488596643" },
+            { n: "BTN.VQUANG", r: "RUSHER", id: "5719612395" },
+            { n: "BTN.TANH", r: "SNIPER", id: "2709719422" },
+            { n: "BTN.HLONG", r: "SUPPORT", id: "8730416367" },
             { n: "KHÔNG CÓ", a: "https://placehold.co/200x250/111/555?text=TRONG", r: "TRONG" }
         ]
     },
@@ -475,11 +473,11 @@ const teamsDatabase = {
         logo: "logo-blx.jpg",
         country: "", 
         players: [
-            { n: "BLX.CP", a: "cp.jpg", r: "RUSHER" },
-            { n: "BLX.CT", a: "ct.jpg", r: "RUSHER" },
-            { n: "BLX.HT", a: "ht.jpg", r: "SNIPER" },
-            { n: "BLX.TQ", a: "tq.jpg", r: "SNIPER" },
-            { n: "BLX.TC", a: "tc.jpg", r: "SUPPORT" }
+            { n: "BLX.CP", r: "RUSHER", id: "2335381188" },
+            { n: "BLX.CT", r: "RUSHER", id: "1943300913" },
+            { n: "BLX.HT", r: "SNIPER", id: "7985693180" },
+            { n: "BLX.TQ", r: "SNIPER", id: "600083928" },
+            { n: "BLX.TC", r: "SUPPORT", id: "1586169125" }
         ]
     },
     "hre": {
@@ -488,10 +486,10 @@ const teamsDatabase = {
         logo: "logo-hre.jpg",
         country: "", 
         players: [
-            { n: "HRE.RESFINA", a: "resfina.jpg", r: "RUSHER" },
-            { n: "HRE.COTU", a: "cotu.jpg", r: "BOMBER" },
-            { n: "HRE.TANHH", a: "tanhh.jpg", r: "SNIPER" },
-            { n: "HRE.VANPHONG", a: "vanphong.jpg", r: "SUPPORT" },
+            { n: "HRE.RESFINA", r: "RUSHER", id: "1518845669" },
+            { n: "HRE.COTU", r: "BOMBER", id: "6839933813" },
+            { n: "HRE.TANHH", r: "SNIPER", id: "6153199502" },
+            { n: "HRE.VANPHONG", r: "SUPPORT", id: "16899530216" },
             { n: "KHÔNG CÓ", a: "https://placehold.co/200x250/111/555?text=TRONG", r: "TRONG" }
         ]
     },
@@ -501,37 +499,37 @@ const teamsDatabase = {
         logo: "logo-pcm.jpg",
         country: "", 
         players: [
-            { n: "PCM.APPOMEO", a: "appomeo.jpg", r: "RUSHER" },
-            { n: "PCM.DZAI", a: "dzai.jpg", r: "RUSHER" },
-            { n: "PCM.OGGY", a: "oggy.jpg", r: "SNIPER" },
-            { n: "PCM.K", a: "k.jpg", r: "SUPPORT" },
+            { n: "PCM.APPOMEO", r: "RUSHER", id: "2215015375" },
+            { n: "PCM.DZAI", r: "RUSHER", id: "949943695" },
+            { n: "PCM.OGGY", r: "SNIPER", id: "8927718972" },
+            { n: "PCM.K", r: "SUPPORT", id: "1222539985" },
             { n: "KHÔNG CÓ", a: "https://placehold.co/200x250/111/555?text=TRONG", r: "TRONG" }
         ]
     },
     "dc": {
         name: "DC",
-        desc: "DC - Tên đầy đủ là Diệt Cus. Đội tuyển Free Fire mang phong cách thi đấu dứt khoát và đầy uy lực. Không vòng vo, mỗi pha hành động của DC đều như một đòn đánh chí mạng, nhanh gọn và đủ để định đoạt cục diện trận đấu Survival Legacy Cup SS1!",
+        desc: "DC - Tên đầy đủ là Diệt Cus. Đội tuyển mang phong cách thi đấu dứt khoát và đầy uy lực. Không vòng vo, mỗi pha hành động của DC đều như một đòn đánh chí mạng, nhanh gọn và đủ để định đoạt cục diện trận đấu Survival Legacy Cup SS1!",
         logo: "logo-dc.jpg",
         country: "", 
         players: [
-            { n: "DC.PHAT", a: "phat.jpg", r: "RUSHER" },
-            { n: "DC.DONG", a: "dong2.jpg", r: "RUSHER" },
-            { n: "DC.KHANH", a: "khanh.jpg", r: "SNIPER" },
-            { n: "DC.HUNG", a: "hung.jpg", r: "SUPPORT" },
+            { n: "DC.PHAT", r: "RUSHER", id: "276351221" },
+            { n: "DC.DONG", r: "RUSHER", id: "2447664617" },
+            { n: "DC.KHANH", r: "SNIPER", id: "8857474561" },
+            { n: "DC.HUNG", r: "SUPPORT", id: "2278495131" },
             { n: "KHÔNG CÓ", a: "https://placehold.co/200x250/111/555?text=TRONG", r: "TRONG" }
         ]
     },
     "tgl2": {
         name: "TGL2",
-        desc: "TGL2 - Tên đầy đủ là Team Gia Lai 2. Đội tuyển Free Fire phiên bản trẻ trung nhưng không kém phần sắc bén của TGL - thi đấu với tinh thần máu lửa và khát khao khẳng định. Luôn sẵn sàng bùng nổ, TGL2 là ẩn số có thể tạo nên bất ngờ ở bất kỳ thời điểm nào tại Survival Legacy Cup SS1!",
+        desc: "TGL2 - Tên đầy đủ là Team Gia Lai 2. Đội tuyển phiên bản trẻ trung nhưng không kém phần sắc bén của TGL - thi đấu với tinh thần máu lửa và khát khao khẳng định. Luôn sẵn sàng bùng nổ, TGL2 là ẩn số có thể tạo nên bất ngờ ở bất kỳ thời điểm nào tại Survival Legacy Cup SS1!",
         logo: "logo-tgl2.jpg",
         country: "", 
         players: [
-            { n: "TGL2.DKHOI", a: "dkhoi.jpg", r: "RUSHER" },
-            { n: "TGL2.HPHONG", a: "hphong.jpg", r: "RUSHER" },
-            { n: "TGL2.GHAO", a: "ghao.jpg", r: "SNIPER" },
-            { n: "TGL2.DKHOA", a: "dkhoa.jpg", r: "SNIPER" },
-            { n: "TGL2.CPHAT", a: "cphat.jpg", r: "SUPPORT" }
+            { n: "TGL2.DKHOI", r: "RUSHER", id: "955002794" },
+            { n: "TGL2.HPHONG", r: "RUSHER", id: "3989001696" },
+            { n: "TGL2.GHAO", r: "SNIPER", id: "4371542961" },
+            { n: "TGL2.DKHOA", r: "SNIPER", id: "876012041" },
+            { n: "TGL2.CPHAT", r: "SUPPORT", id: "9712450395" }
         ]
     },
     "se": {
@@ -540,258 +538,258 @@ const teamsDatabase = {
         logo: "logo-se.jpg",
         country: "", 
         players: [
-            { n: "SE.DONG", a: "dong.jpg", r: "RUSHER" },
-            { n: "SE.MINHBOY", a: "minhboy.jpg", r: "RUSHER" },
-            { n: "SE.SON", a: "son.jpg", r: "RUSHER" },
-            { n: "SE.HUY", a: "huy.jpg", r: "BOMBER" },
-            { n: "SE.DUNG", a: "dung.jpg", r: "SNIPER" }
+            { n: "SE.DONG", r: "RUSHER", id: "3111464911" },
+            { n: "SE.MINHBOY", r: "RUSHER", id: "453404499" },
+            { n: "SE.SON", r: "RUSHER", id: "1628027516" },
+            { n: "SE.HUY", r: "BOMBER", id: "3966442086" },
+            { n: "SE.DUNG", r: "SNIPER", id: "2812885077" }
         ]
     },
     "nok": {
         name: "NOK",
-        desc: "NOK - Tên đầy đủ là NOKARA. Đội tuyển Free Fire chơi theo kiểu “một đòn là đủ” - không cần nhiều pha giao tranh, chỉ cần đúng thời điểm. Lặng lẽ tích tụ, rồi bất ngờ tung cú kết liễu khiến đối thủ không kịp hiểu chuyện gì vừa xảy ra tại Survival Legacy Cup SS1!",
+        desc: "NOK - Tên đầy đủ là NOKARA. Đội tuyển chơi theo kiểu “một đòn là đủ” - không cần nhiều pha giao tranh, chỉ cần đúng thời điểm. Lặng lẽ tích tụ, rồi bất ngờ tung cú kết liễu khiến đối thủ không kịp hiểu chuyện gì vừa xảy ra tại Survival Legacy Cup SS1!",
         logo: "logo-nok.jpg",
         country: "", 
         players: [
-            { n: "NOK.THANHHUNG", a: "thanhhung.jpg", r: "RUSHER" },
-            { n: "NOK.THANHDAT", a: "thanhdat.jpg", r: "RUSHER" },
-            { n: "NOK.VVLAVIDA", a: "vvlavida.jpg", r: "SNIPER" },
-            { n: "NOK.MOUSE", a: "mouse.jpg", r: "SNIPER" },
-            { n: "NOK.DECADE", a: "decade.jpg", r: "SUPPORT" }
+            { n: "NOK.THANHHUNG", r: "RUSHER", id: "1607088699" },
+            { n: "NOK.THANHDAT", r: "RUSHER", id: "7941474305" },
+            { n: "NOK.VVLAVIDA", r: "SNIPER", id: "3225479273" },
+            { n: "NOK.MOUSE", r: "SNIPER", id: "1821218270" },
+            { n: "NOK.DECADE", r: "SUPPORT", id: "1156181860" }
         ]
     },
     "wr": {
         name: "WR",
-        desc: "WR - Tên đầy đủ là WARY ESPORTS. Đội tuyển Free Fire luôn thi đấu trong trạng thái “cảnh giác tối đa” - từng bước di chuyển đều chặt chẽ, từng quyết định đều mang tính sống còn. Không dễ bị bắt bài, WR khiến đối thủ dần mắc sai lầm rồi trừng phạt bằng những pha xử lý lạnh lùng và chuẩn xác tại Survival Legacy Cup SS1!",
+        desc: "WR - Tên đầy đủ là WARY ESPORTS. Đội tuyển luôn thi đấu trong trạng thái “cảnh giác tối đa” - từng bước di chuyển đều chặt chẽ, từng quyết định đều mang tính sống còn. Không dễ bị bắt bài, WR khiến đối thủ dần mắc sai lầm rồi trừng phạt bằng những pha xử lý lạnh lùng và chuẩn xác tại Survival Legacy Cup SS1!",
         logo: "logo-wr.jpg",
         country: "", 
         players: [
-            { n: "WR.NH", a: "nh.jpg", r: "RUSHER" },
-            { n: "WR.GINZ", a: "ginz.jpg", r: "RIFLER" },
-            { n: "WR.BRX1", a: "brx1.jpg", r: "SNIPER" },
-            { n: "WR.QUANHUY", a: "quanhuy.jpg", r: "SUPPORT" },
+            { n: "WR.NH", r: "RUSHER", id: "2142110554" },
+            { n: "WR.GINZ", r: "RIFLER", id: "7016299240" },
+            { n: "WR.BRX1", r: "SNIPER", id: "4076949508" },
+            { n: "WR.QUANHUY", r: "SUPPORT", id: "2286289594" },
             { n: "KHÔNG CÓ", a: "https://placehold.co/200x250/111/555?text=TRONG", r: "TRONG" }
         ]
     },
     "4tl": {
         name: "4TL",
-        desc: "4TL - Tên đầy đủ là 4TL. Đội tuyển Free Fire đại diện cho “4 Tactics – 4 chiến thuật”, nơi mỗi thành viên là một mảnh ghép chiến lược hoàn chỉnh. Khi kết hợp, họ tạo nên thế trận đa hướng, biến mọi pha giao tranh thành màn áp đảo không thể chống đỡ tại Survival Legacy Cup SS1!",
+        desc: "4TL - Tên đầy đủ là 4TL. Đội tuyển đại diện cho “4 Tactics – 4 chiến thuật”, nơi mỗi thành viên là một mảnh ghép chiến lược hoàn chỉnh. Khi kết hợp, họ tạo nên thế trận đa hướng, biến mọi pha giao tranh thành màn áp đảo không thể chống đỡ tại Survival Legacy Cup SS1!",
         logo: "logo-4tl.jpg",
         country: "", 
         players: [
-            { n: "4TL.PKHANH", a: "pkhanh.jpg", r: "RUSHER" },
-            { n: "4TL.KING", a: "king.jpg", r: "RIFLER" },
-            { n: "4TL.THANHHUY", a: "thanhhuy.jpg", r: "BOMBER" },
-            { n: "4TL.MTAY", a: "mtay.jpg", r: "SNIPER" },
-            { n: "4TL.MNAM", a: "mnam.jpg", r: "SUPPORT" }
+            { n: "4TL.PKHANH", r: "RUSHER", id: "673976563" },
+            { n: "4TL.KING", r: "RIFLER", id: "3990065287" },
+            { n: "4TL.THANHHUY", r: "BOMBER", id: "267718770" },
+            { n: "4TL.MTAY", r: "SNIPER", id: "1444830129" },
+            { n: "4TL.MNAM", r: "SUPPORT", id: "7567631186" }
         ]
     },
     "6it": {
         name: "6IT",
-        desc: "6IT -  Tên đầy đủ là 6I TEAM. Đội tuyển Free Fire đại diện cho “6 Instinct – 6 bản năng chiến đấu”, nơi mỗi quyết định đều dựa trên cảm giác và phản xạ đỉnh cao. Khi nhập cuộc, 6IT chơi như một thể thống nhất-nhanh, gắt và luôn đi trước đối thủ một nhịp tại Survival Legacy Cup SS1!",
+        desc: "6IT -  Tên đầy đủ là 6I TEAM. Đội tuyển đại diện cho “6 Instinct – 6 bản năng chiến đấu”, nơi mỗi quyết định đều dựa trên cảm giác và phản xạ đỉnh cao. Khi nhập cuộc, 6IT chơi như một thể thống nhất-nhanh, gắt và luôn đi trước đối thủ một nhịp tại Survival Legacy Cup SS1!",
         logo: "logo-6it.jpg",
         country: "", 
         players: [
-            { n: "6IT.MKHANG", a: "mkhang.jpg", r: "RUSHER" },
-            { n: "6IT.SUY", a: "suy.jpg", r: "RUSHER" },
-            { n: "6IT.ANHDUC", a: "anhduc.jpg", r: "SNIPER" },
-            { n: "6IT.THACH", a: "thach.jpg", r: "SNIPER" },
-            { n: "6IT.HAU", a: "hau.jpg", r: "SUPPORT" }
+            { n: "6IT.MKHANG", r: "RUSHER", id: "1274582211" },
+            { n: "6IT.SUY", r: "RUSHER", id: "1230035221" },
+            { n: "6IT.ANHDUC", r: "SNIPER", id: "2188993998" },
+            { n: "6IT.THACH", r: "SNIPER", id: "11806045043" },
+            { n: "6IT.HAU", r: "SUPPORT", id: "8294900883" }
         ]
     },
     "mb": {
         name: "MB",
-        desc: "MB - Tên đầy đủ là MEMBES. Đội tuyển Free Fire đại diện cho “Mind & Bullet – Trí tuệ và hỏa lực”, nơi chiến thuật và kỹ năng kết hợp hoàn hảo. Không chỉ bắn hay, MB còn thắng bằng cái đầu, biến mọi pha giao tranh thành nước đi đã được tính trước tại Survival Legacy Cup SS1!",
+        desc: "MB - Tên đầy đủ là MEMBES. Đội tuyển đại diện cho “Mind & Bullet – Trí tuệ và hỏa lực”, nơi chiến thuật và kỹ năng kết hợp hoàn hảo. Không chỉ bắn hay, MB còn thắng bằng cái đầu, biến mọi pha giao tranh thành nước đi đã được tính trước tại Survival Legacy Cup SS1!",
         logo: "logo-mb.jpg",
         country: "", 
         players: [
-            { n: "MB.HIEU", a: "hieu.jpg", r: "RUSHER" },
-            { n: "MB.DANGKHOA", a: "dangkhoa.jpg", r: "RIFLER" },
-            { n: "MB.NPHUNG", a: "nphung2.jpg", r: "BOMBER" },
-            { n: "MB.QUOCKHANH", a: "quockhanh.jpg", r: "SUPPORT" },
-            { n: "MB.THAONHI", a: "thaonhi.jpg", r: "SUPPORT" }
+            { n: "MB.HIEU", r: "RUSHER", id: "34210900" },
+            { n: "MB.DANGKHOA", r: "RIFLER", id: "679576072" },
+            { n: "MB.NPHUNG", r: "BOMBER", id: "79343656218" },
+            { n: "MB.QUOCKHANH", r: "SUPPORT", id: "2984185398" },
+            { n: "MB.THAONHI", r: "SUPPORT", id: "9682496132" }
         ]
     },
     "km": {
         name: "KM",
-        desc: "KM - Tên đầy đủ là KM ESPORTS. Đội tuyển Free Fire đại diện cho “Killer Mind - Tư duy sát thủ”, nơi mọi quyết định đều nhanh, gọn và mang tính kết liễu. KM không chỉ chơi game, họ săn lùng cơ hội và dứt điểm đối thủ không chút do dự tại Survival Legacy Cup SS1!",
+        desc: "KM - Tên đầy đủ là KM ESPORTS. Đội tuyển đại diện cho “Killer Mind - Tư duy sát thủ”, nơi mọi quyết định đều nhanh, gọn và mang tính kết liễu. KM không chỉ chơi game, họ săn lùng cơ hội và dứt điểm đối thủ không chút do dự tại Survival Legacy Cup SS1!",
         logo: "logo-km.jpg",
         country: "", 
         players: [
-            { n: "KM.HQN", a: "hqn.jpg", r: "RUSHER" },
-            { n: "KM.KCDON", a: "kcdon.jpg", r: "RIFLER" },
-            { n: "KM.NGANDAO", a: "ngandao.jpg", r: "BOMBER" },
-            { n: "KM.CRUSH", a: "crush.jpg", r: "SNIPER" },
-            { n: "KM.MTHUAN", a: "mthuan.jpg", r: "SUPPORT" }
+            { n: "KM.HQN", r: "RUSHER", id: "3016983320" },
+            { n: "KM.KCDON", r: "RIFLER", id: "2319234124" },
+            { n: "KM.NGANDAO", r: "BOMBER", id: "4524940495" },
+            { n: "KM.CRUSH", r: "SNIPER", id: "1890603447" },
+            { n: "KM.MTHUAN", r: "SUPPORT", id: "5975854296" }
         ]
     },
     "4t": {
         name: "4T",
-        desc: "4T – Tên đầy đủ là 4T ESPORTS. Đội tuyển Free Fire đại diện cho “4 Triggers – 4 họng súng luôn sẵn sàng khai hỏa”, nơi mỗi thành viên là một điểm nổ có thể kích hoạt bất cứ lúc nào. Khi 4T nhập cuộc, trận đấu không còn là kiểm soát-mà là chuỗi phản ứng dây chuyền của những pha hủy diệt tại Survival Legacy Cup SS1!",
+        desc: "4T – Tên đầy đủ là 4T ESPORTS. Đội tuyển đại diện cho “4 Triggers – 4 họng súng luôn sẵn sàng khai hỏa”, nơi mỗi thành viên là một điểm nổ có thể kích hoạt bất cứ lúc nào. Khi 4T nhập cuộc, trận đấu không còn là kiểm soát-mà là chuỗi phản ứng dây chuyền của những pha hủy diệt tại Survival Legacy Cup SS1!",
         logo: "logo-4t.jpg",
         country: "", 
         players: [
-            { n: "4T.MINHNHAT", a: "minhnhat.jpg", r: "RUSHER" },
-            { n: "4T.TRUONGAN", a: "truongan.jpg", r: "BOMBER" },
-            { n: "4T.NGOCCAC", a: "ngoccac.jpg", r: "SNIPER" },
-            { n: "4T.HOANGDUNG", a: "hoangdung.jpg", r: "SUPPORT" },
-            { n: "4T.BONG", a: "bong.jpg", r: "SUPPORT" }
+            { n: "4T.MINHNHAT", r: "RUSHER", id: "712500213" },
+            { n: "4T.TRUONGAN", r: "BOMBER", id: "4359140364" },
+            { n: "4T.NGOCCAC", r: "SNIPER", id: "2656003625" },
+            { n: "4T.HOANGDUNG", r: "SUPPORT", id: "2543293151" },
+            { n: "4T.BONG", r: "SUPPORT", id: "1836363131" }
         ]
     },
     "te": {
         name: "TE",
-        desc: "TE – Tên đầy đủ là TOMESPORTS. Đội tuyển Free Fire đại diện cho “Tactical Execution – Lối chơi chuẩn xác tuyệt đối”, nơi mọi pha xử lý đều được triển khai như một kịch bản hoàn hảo. TE không tạo ra cơ hội-họ tự viết nên thế trận và kết thúc nó theo cách của mình tại Survival Legacy Cup SS1!",
+        desc: "TE – Tên đầy đủ là TOMESPORTS. Đội tuyển đại diện cho “Tactical Execution – Lối chơi chuẩn xác tuyệt đối”, nơi mọi pha xử lý đều được triển khai như một kịch bản hoàn hảo. TE không tạo ra cơ hội-họ tự viết nên thế trận và kết thúc nó theo cách của mình tại Survival Legacy Cup SS1!",
         logo: "logo-te.jpg",
         country: "", 
         players: [
-            { n: "TE.SPEEDZ", a: "speedz.jpg", r: "RUSHER" },
-            { n: "TE.RENNO", a: "renno.jpg", r: "RUSHER" },
-            { n: "TE.KOLIX", a: "kolix.jpg", r: "BOMBER" },
-            { n: "TE.TVL", a: "tvl.jpg", r: "SNIPER" },
-            { n: "TE.BEN10", a: "ben10.jpg", r: "SUPPORT" }
+            { n: "TE.SPEEDZ", r: "RUSHER", id: "5754555818" },
+            { n: "TE.RENNO", r: "RUSHER", id: "3138080504" },
+            { n: "TE.KOLIX", r: "BOMBER", id: "2094074229" },
+            { n: "TE.TVL", r: "SNIPER", id: "60147504612" },
+            { n: "TE.BEN10", r: "SUPPORT", id: "154415876" }
         ]
     },
     "lhdxb": {
         name: "LHDXB",
-        desc: "LHDXB – Tên đầy đủ là LA HÁN ĐẨY XE BÒ. Đội tuyển Free Fire đại diện cho “sức mạnh lì lợm và tiến công không ngừng”, như những La Hán kiên định đẩy thế trận tiến về phía trước. Không vội vàng nhưng không thể cản, LHDXB càng đánh càng ép, biến mọi trận đấu thành hành trình áp đảo tại Survival Legacy Cup SS1!",
+        desc: "LHDXB – Tên đầy đủ là LA HÁN ĐẨY XE BÒ. Đội tuyển đại diện cho “sức mạnh lì lợm và tiến công không ngừng”, như những La Hán kiên định đẩy thế trận tiến về phía trước. Không vội vàng nhưng không thể cản, LHDXB càng đánh càng ép, biến mọi trận đấu thành hành trình áp đảo tại Survival Legacy Cup SS1!",
         logo: "logo-lhdxb.jpg",
         country: "", 
         players: [
-            { n: "LHDXB.NQUYEN", a: "nquyen.jpg", r: "RUSHER" },
-            { n: "LHDXB.MTOAN", a: "mtoan.jpg", r: "RUSHER" },
-            { n: "LHDXB.NQUAN", a: "nquan.jpg", r: "SNIPER" },
-            { n: "LHDXB.HONGLINH", a: "honglinh.jpg", r: "SUPPORT" },
-            { n: "LHDXB.CPHAT", a: "chanhphat.jpg", r: "SUPPORT" }
+            { n: "LHDXB.NQUYEN", r: "RUSHER", id: "975051123" },
+            { n: "LHDXB.MTOAN", r: "RUSHER", id: "4086920472" },
+            { n: "LHDXB.NQUAN", r: "SNIPER", id: "6783878691" },
+            { n: "LHDXB.HONGLINH", r: "SUPPORT", id: "3120683522" },
+            { n: "LHDXB.CPHAT", r: "SUPPORT", id: "1815747167" }
         ]
     },
     "hkt": {
         name: "HKT",
-        desc: "HKT – Tên đầy đủ là HKT. Đội tuyển Free Fire đại diện cho “Hard Kill Team – Đội hình săn mạng không khoan nhượng”, nơi mọi giao tranh đều được đẩy lên cực điểm. HKT không chơi an toàn - họ lao vào, áp đảo và kết thúc đối thủ bằng những pha tấn công dồn dập tại Survival Legacy Cup SS1!",
+        desc: "HKT – Tên đầy đủ là HKT. Đội tuyển đại diện cho “Hard Kill Team – Đội hình săn mạng không khoan nhượng”, nơi mọi giao tranh đều được đẩy lên cực điểm. HKT không chơi an toàn - họ lao vào, áp đảo và kết thúc đối thủ bằng những pha tấn công dồn dập tại Survival Legacy Cup SS1!",
         logo: "logo-hkt.jpg",
         country: "", 
         players: [
-            { n: "HKT.MKHANG", a: "mkhang.jpg", r: "RUSHER" },
-            { n: "HKT.SUY", a: "suy.jpg", r: "RUSHER" },
-            { n: "HKT.ANHDUC", a: "anhduc.jpg", r: "SNIPER" },
-            { n: "HKT.THACH", a: "thach.jpg", r: "SNIPER" },
-            { n: "HKT.HAU", a: "hau.jpg", r: "SUPPORT" }
+            { n: "6IT.MKHANG", r: "RUSHER", id: "1274582211" },
+            { n: "6IT.SUY", r: "RUSHER", id: "1230035221" },
+            { n: "6IT.ANHDUC", r: "SNIPER", id: "2188993998" },
+            { n: "6IT.THACH", r: "SNIPER", id: "11806045043" },
+            { n: "6IT.HAU", r: "SUPPORT", id: "8294900883" }
         ]
     },
     "tgl3": {
         name: "TGL3",
-        desc: "TGL3 – Tên đầy đủ là TEAM GIA LAI 3. Đội tuyển Free Fire đại diện cho “Third Impact – Cú bùng nổ thứ ba”, nơi sức trẻ và sự táo bạo tạo nên những pha xử lý không theo bất kỳ quy luật nào. TGL3 không đi theo lối cũ-họ phá vỡ nó và tạo ra cuộc chơi của riêng mình tại Survival Legacy Cup SS1!",
+        desc: "TGL3 – Tên đầy đủ là TEAM GIA LAI 3. Đội tuyển đại diện cho “Third Impact – Cú bùng nổ thứ ba”, nơi sức trẻ và sự táo bạo tạo nên những pha xử lý không theo bất kỳ quy luật nào. TGL3 không đi theo lối cũ-họ phá vỡ nó và tạo ra cuộc chơi của riêng mình tại Survival Legacy Cup SS1!",
         logo: "logo-tgl3.jpg",
         country: "", 
         players: [
-            { n: "TGL3.DKHOI", a: "dkhoi.jpg", r: "RUSHER" },
-            { n: "TGL3.HPHONG", a: "hphong.jpg", r: "RUSHER" },
-            { n: "TGL3.GHAO", a: "ghao.jpg", r: "SNIPER" },
-            { n: "TGL3.DKHOA", a: "dkhoa.jpg", r: "SNIPER" },
-            { n: "TGL3.CPHAT", a: "cphat.jpg", r: "SUPPORT" }
+            { n: "TGL2.DKHOI", r: "RUSHER", id: "955002794" },
+            { n: "TGL2.HPHONG", r: "RUSHER", id: "3989001696" },
+            { n: "TGL2.GHAO", r: "SNIPER", id: "4371542961" },
+            { n: "TGL2.DKHOA", r: "SNIPER", id: "876012041" },
+            { n: "TGL2.CPHAT", r: "SUPPORT", id: "9712450395" }
         ]
     },
     "lt": {
         name: "LT",
-        desc: "LT – Tên đầy đủ là LT Đội tuyển Free Fire đại diện cho “Last Trigger – Phát bắn cuối cùng”, nơi mọi pha giao tranh đều có thể kết thúc chỉ trong một khoảnh khắc. LT không cần nhiều cơ hội-chỉ cần một lần ra tay là đủ để định đoạt trận đấu tại Survival Legacy Cup SS1!",
+        desc: "LT – Tên đầy đủ là LT Đội tuyển đại diện cho “Last Trigger – Phát bắn cuối cùng”, nơi mọi pha giao tranh đều có thể kết thúc chỉ trong một khoảnh khắc. LT không cần nhiều cơ hội-chỉ cần một lần ra tay là đủ để định đoạt trận đấu tại Survival Legacy Cup SS1!",
         logo: "logo-lt.jpg",
         country: "", 
         players: [
-            { n: "LT.HDANG", a: "hdang.jpg", r: "RUSHER" },
-            { n: "LT.QDAT", a: "qdat.jpg", r: "BOMBER" },
-            { n: "LT.PBAN", a: "pban.jpg", r: "SNIPER" },
-            { n: "LT.HTINH", a: "htinh.jpg", r: "SUPPORT" },
+            { n: "LT.HDANG", r: "RUSHER", id: "4184330303" },
+            { n: "LT.QDAT", r: "BOMBER", id: "4752316998" },
+            { n: "LT.PBAN", r: "SNIPER", id: "10288568002" },
+            { n: "LT.HTINH", r: "SUPPORT", id: "7984169749" },
             { n: "KHÔNG CÓ", a: "https://placehold.co/200x250/111/555?text=TRONG", r: "TRONG" }
         ]
     },
     "ke": {
         name: "KE",
-        desc: "KE – Tên đầy đủ là KE ESPORTS. Đội tuyển Free Fire đại diện cho “Killer Elegance – Sự kết liễu đầy tinh tế”, nơi mỗi pha xử lý vừa đẹp mắt vừa chí mạng. KE không chỉ thắng-họ biến từng khoảnh khắc trong trận đấu thành màn trình diễn đẳng cấp tại Survival Legacy Cup SS1!",
+        desc: "KE – Tên đầy đủ là KE ESPORTS. Đội tuyển đại diện cho “Killer Elegance – Sự kết liễu đầy tinh tế”, nơi mỗi pha xử lý vừa đẹp mắt vừa chí mạng. KE không chỉ thắng-họ biến từng khoảnh khắc trong trận đấu thành màn trình diễn đẳng cấp tại Survival Legacy Cup SS1!",
         logo: "logo-ke.jpg",
         country: "", 
         players: [
-            { n: "KE.ITAR", a: "itar.jpg", r: "RUSHER" },
-            { n: "KE.LUAN", a: "luan.jpg", r: "RIFLER" },
-            { n: "KE.CUSINA", a: "cusina.jpg", r: "SNIPER" },
-            { n: "KE.SIKIBIDI", a: "sikibidi.jpg", r: "SUPPORT" },
+            { n: "KE.ITAR", r: "RUSHER", id: "6309254787" },
+            { n: "KE.LUAN", r: "RIFLER", id: "4461929512" },
+            { n: "KE.CUSINA", r: "SNIPER", id: "4461929512" },
+            { n: "KE.SIKIBIDI", r: "SUPPORT", id: "2421066275" },
             { n: "KHÔNG CÓ", a: "https://placehold.co/200x250/111/555?text=TRONG", r: "TRONG" }
         ]
     },
     "hd": {
         name: "HD",
-        desc: "HD – Tên đầy đủ là Hoà Đam. Đội tuyển Free Fire đại diện cho “Heavy Damage – Sát thương hủy diệt”, nơi mỗi pha giao tranh đều mang sức công phá cực lớn. HD không cần kéo dài-họ kết thúc nhanh, gọn và đầy uy lực tại Survival Legacy Cup SS1!",
+        desc: "HD – Tên đầy đủ là Hoà Đam. Đội tuyển đại diện cho “Heavy Damage – Sát thương hủy diệt”, nơi mỗi pha giao tranh đều mang sức công phá cực lớn. HD không cần kéo dài-họ kết thúc nhanh, gọn và đầy uy lực tại Survival Legacy Cup SS1!",
         logo: "logo-hd.jpg",
         country: "", 
         players: [
-            { n: "HD.MKHANH", a: "mkhanh.jpg", r: "RUSHER" },
-            { n: "HD.TAIBEO", a: "taibeo.jpg", r: "BOMBER" },
-            { n: "HD.MINHHAI", a: "minhhai.jpg", r: "SNIPER" },
-            { n: "HD.VANLONG", a: "vanlong.jpg", r: "SUPPORT" },
+            { n: "HD.MKHANH", r: "RUSHER", id: "9607055670" },
+            { n: "HD.TAIBEO", r: "BOMBER", id: "1332676822" },
+            { n: "HD.MINHHAI", r: "SNIPER", id: "896345915" },
+            { n: "HD.VANLONG", r: "SUPPORT", id: "1512501078" },
             { n: "KHÔNG CÓ", a: "https://placehold.co/200x250/111/555?text=TRONG", r: "TRONG" }
         ]
     },
     "hd2": {
         name: "HD2",
-        desc: "HD2 – Tên đầy đủ là Hoà Đam 2. Đội tuyển Free Fire đại diện cho “Double Impact – Cú đánh kép”, nơi mỗi pha tấn công đều dồn dập và liên hoàn. HD2 không cho đối thủ thời gian thích nghi-chỉ có áp lực và sụp đổ tại Survival Legacy Cup SS1!",
+        desc: "HD2 – Tên đầy đủ là Hoà Đam 2. Đội tuyển đại diện cho “Double Impact – Cú đánh kép”, nơi mỗi pha tấn công đều dồn dập và liên hoàn. HD2 không cho đối thủ thời gian thích nghi-chỉ có áp lực và sụp đổ tại Survival Legacy Cup SS1!",
         logo: "logo-hd2.jpg",
         country: "", 
         players: [
-            { n: "HD2.ANHHAO", a: "anhhao.jpg", r: "RUSHER" },
-            { n: "HD2.HAI", a: "hai.jpg", r: "BOMBER" },
-            { n: "HD2.MINHSANG", a: "minhsang.jpg", r: "SNIPER" },
-            { n: "HD2.VANHIEU", a: "vanhieu.jpg", r: "SUPPORT" },
+            { n: "HD2.ANHHAO", r: "RUSHER", id: "8795927885" },
+            { n: "HD2.HAI",r: "BOMBER", id: "10818014400" },
+            { n: "HD2.MINHSANG", r: "SNIPER", id: "1751028828" },
+            { n: "HD2.VANHIEU", r: "SUPPORT", id: "9776458518" },
             { n: "KHÔNG CÓ", a: "https://placehold.co/200x250/111/555?text=TRONG", r: "TRONG" }
         ]
     },
     "ns": {
         name: "NS",
-        desc: "NS – Tên đầy đủ là NGUSI ESPORTS. Đội tuyển Free Fire đại diện cho “No Signal – Mất tín hiệu”, bởi khi NS xuất hiện, đối thủ gần như “mất kết nối” với trận đấu. Nhịp game bị bóp nghẹt, tầm nhìn bị kiểm soát và mọi thứ kết thúc trước khi kịp hiểu chuyện gì xảy ra tại Survival Legacy Cup SS1!",
+        desc: "NS – Tên đầy đủ là NGUSI ESPORTS. Đội tuyển đại diện cho “No Signal – Mất tín hiệu”, bởi khi NS xuất hiện, đối thủ gần như “mất kết nối” với trận đấu. Nhịp game bị bóp nghẹt, tầm nhìn bị kiểm soát và mọi thứ kết thúc trước khi kịp hiểu chuyện gì xảy ra tại Survival Legacy Cup SS1!",
         logo: "logo-ns.jpg",
         country: "", 
         players: [
-            { n: "NS.MINHTRI2", a: "minhtri2.jpg", r: "RUSHER" },
-            { n: "NS.PHAMCUONG", a: "phamcuong.jpg", r: "RUSHER" },
-            { n: "NS.QUOCHUY", a: "quochuy.jpg", r: "RUSHER" },
-            { n: "NS.MINHTRI", a: "minhtri.jpg", r: "SNIPER" },
-            { n: "NS.TRANLONG", a: "tranlong.jpg", r: "SUPPORT" }
+            { n: "NS.MINHTRI2", r: "RUSHER", id: "2038614210" },
+            { n: "NS.PHAMCUONG", r: "RUSHER", id: "10808635533" },
+            { n: "NS.QUOCHUY", r: "RUSHER", id: "1895472861" },
+            { n: "NS.MINHTRI", r: "SNIPER", id: "392360699" },
+            { n: "NS.TRANLONG", r: "SUPPORT", id: "1728096984" }
         ]
     },
     "ea": {
         name: "EA",
-        desc: "EA – Tên đầy đủ là EAGLE. Đội tuyển Free Fire đại diện cho “Eagle Eye – Con mắt đại bàng”, luôn bao quát toàn bản đồ và ra đòn với độ chính xác tuyệt đối. EA không săn vội-họ quan sát, khóa mục tiêu và kết liễu trong một khoảnh khắc tại Survival Legacy Cup SS1!",
+        desc: "EA – Tên đầy đủ là EAGLE. Đội tuyển đại diện cho “Eagle Eye – Con mắt đại bàng”, luôn bao quát toàn bản đồ và ra đòn với độ chính xác tuyệt đối. EA không săn vội-họ quan sát, khóa mục tiêu và kết liễu trong một khoảnh khắc tại Survival Legacy Cup SS1!",
         logo: "logo-ea.jpg",
         country: "", 
         players: [
-            { n: "EA.DUONG", a: "duong.jpg", r: "RUSHER" },
-            { n: "EA.BRXZ", a: "brxz.jpg", r: "BOMBER" },
-            { n: "EA.FREDA", a: "freda.jpg", r: "SNIPER" },
-            { n: "EA.KHIM", a: "khim.jpg", r: "SUPPORT" },
+            { n: "EA.DUONG", r: "RUSHER", id: "6029556071" },
+            { n: "EA.BRXZ", r: "BOMBER", id: "8684104067" },
+            { n: "EA.FREDA", r: "SNIPER", id: "6706995113" },
+            { n: "EA.KHIM", r: "SUPPORT", id: "738994568" },
             { n: "KHÔNG CÓ", a: "https://placehold.co/200x250/111/555?text=TRONG", r: "TRONG" }
         ]
     },
     "xh": {
         name: "XH",
-        desc: "XH – Tên đầy đủ là XH ESPORTS. Đội tuyển Free Fire đại diện cho “Xtreme Hunt – Cuộc săn cực hạn”, luôn truy đuổi đối thủ đến cùng và không cho bất kỳ cơ hội trốn thoát nào. XH không chỉ tìm mục tiêu—họ săn đến khi kết thúc hoàn toàn tại Survival Legacy Cup SS1!",
+        desc: "XH – Tên đầy đủ là XH ESPORTS. Đội tuyển đại diện cho “Xtreme Hunt – Cuộc săn cực hạn”, luôn truy đuổi đối thủ đến cùng và không cho bất kỳ cơ hội trốn thoát nào. XH không chỉ tìm mục tiêu—họ săn đến khi kết thúc hoàn toàn tại Survival Legacy Cup SS1!",
         logo: "logo-xh.jpg",
         country: "", 
         players: [
-            { n: "XH.VHAO", a: "vanhao.jpg", r: "RUSHER" },
-            { n: "XH.HUUNHAN", a: "huunhan.jpg", r: "RUSHER" },
-            { n: "XH.VANLONG", a: "vanlong2.jpg", r: "BOMBER" },
-            { n: "XH.GIABAO", a: "giabao.jpg", r: "SNIPER" },
-            { n: "XH.DUYKHANH", a: "duykhanh.jpg", r: "SUPPORT" }
+            { n: "XH.VHAO", r: "RUSHER", id: "8231699643" },
+            { n: "XH.HUUNHAN", r: "RUSHER", id: "44772107941" },
+            { n: "XH.VANLONG", r: "BOMBER", id: "7433774761" },
+            { n: "XH.GIABAO", r: "SNIPER", id: "2129571314" },
+            { n: "XH.DUYKHANH", r: "SUPPORT", id: "2205566148" }
         ]
     },
     "ovn": {
         name: "OVN",
-        desc: "OVN – Tên đầy đủ là OBLIVION. Đội tuyển Free Fire đại diện cho “Oblivion – Sự xóa sổ”, nơi mọi dấu vết của đối thủ đều bị quét sạch không thương tiếc. OVN không chỉ chiến thắng-họ khiến kẻ địch “biến mất” khỏi bản đồ tại Survival Legacy Cup SS1!",
+        desc: "OVN – Tên đầy đủ là OBLIVION. Đội tuyển đại diện cho “Oblivion – Sự xóa sổ”, nơi mọi dấu vết của đối thủ đều bị quét sạch không thương tiếc. OVN không chỉ chiến thắng-họ khiến kẻ địch “biến mất” khỏi bản đồ tại Survival Legacy Cup SS1!",
         logo: "logo-ovn.jpg",
         country: "", 
         players: [
-            { n: "OVN.DUY", a: "duy.jpg", r: "RUSHER" },
-            { n: "OVN.VANTU", a: "vantu.jpg", r: "RUSHER" },
-            { n: "OVN.TIEN", a: "tien.jpg", r: "SNIPER" },
-            { n: "OVN.TINH", a: "tinh.jpg", r: "SNIPER" },
-            { n: "OVN.TRACY", a: "tracy.jpg", r: "SUPPORT" }
+            { n: "OVN.DUY", r: "RUSHER", id: "12576856883" },
+            { n: "OVN.VANTU", r: "RUSHER", id: "9881928946" },
+            { n: "OVN.TIEN", r: "SNIPER", id: "12350586814" },
+            { n: "OVN.TINH", r: "SNIPER", id: "8866941793" },
+            { n: "OVN.TRACY", r: "SUPPORT", id: "8082886790" }
         ]
     }
 };
@@ -836,11 +834,9 @@ function switchTeam(teamId) {
         }
     });
 }
-
-// Bắt đầu vào web là bật ngay đội UNICORN (Mã là 'unc')
 document.addEventListener("DOMContentLoaded", function() {
     if (document.getElementById('player-cards-container')) {
-        switchTeam('unc'); 
+        switchTeam('lke'); 
     }
 });
 // ================= HỆ THỐNG MŨI TÊN CHUYỂN 4 TRANG =================
@@ -865,21 +861,17 @@ function chuyenTrang(huong) {
 }
 /* ================= HỆ THỐNG MŨI TÊN CHUYỂN TRẬN ================= */
 let tranHienTai = 1;
-const tongSoTran = 35; // Khai báo tổng cộng có 6 trận
+const tongSoTran = 35; // Khai báo tổng cộng có 5 trận
 
 function chuyenTran(huong) {
     tranHienTai += huong;
     
-    // Nếu đang ở Trận 1 mà bấm lùi, nó vòng xuống Trận 6
+    // Nếu đang ở Trận 1 mà bấm lùi, nó vòng xuống Trận 5
     if (tranHienTai < 1) tranHienTai = tongSoTran;
     
-    // Nếu đang ở Trận 6 mà bấm tới, nó vòng lại Trận 1
+    // Nếu đang ở Trận 5 mà bấm tới, nó vòng lại Trận 1
     if (tranHienTai > tongSoTran) tranHienTai = 1;
     
     // Lệnh cho nó mở bảng thông số của trận vừa chuyển
     moThongSo(tranHienTai);
 }
-// Tự động kích hoạt hiển thị đội UZI ngay khi vừa mở trang
-window.onload = function() {
-    switchTeam('uzi');
-};
