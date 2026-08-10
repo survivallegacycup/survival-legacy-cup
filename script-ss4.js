@@ -298,30 +298,30 @@ const teamsDatabase = {
             { n: "PTE.TNHAN", r: "SUPPORT", id: "3592042217" }
         ]
     },
-    "arty": {
-        name: "ARTY",
-        desc: "ARTY – Tên đầy đủ là ARTY KILLER. Sinh ra để săn kill, thi đấu để thống trị. Với lối chơi máu lửa và tinh thần không khoan nhượng, ARTY KILLER sẵn sàng biến mọi cuộc đối đầu thành màn trình diễn của mình tại Survival Legacy Cup SS3!",
-        logo: "logo-artyss4.jpg",
+    "tckss4": {
+        name: "TCK",
+        desc: "TCK – Tên đầy đủ là TCK. Take Control, Keep Fighting – nắm quyền kiểm soát, chiến đấu đến cùng. TCK không chờ thời cơ xuất hiện, họ tự tạo ra thời cơ bằng từng pha xử lý quyết đoán. Kiểm soát thế trận, bùng nổ đúng lúc và chiến đấu đến giây cuối cùng tại Survival Legacy Cup SS4!",
+        logo: "logo-tckss4.jpg",
         country: "", 
         players: [
-            { n: "ARTY.TRINH", r: "RUSHER", id: "7289909444" },
-            { n: "ARTY.KHOA", r: "RUSHER", id: "9794313196" },
-            { n: "ARTY.TUAN", r: "RIFLER", id: "10208562491" },
-            { n: "ARTY.HUNG", r: "SNIPER", id: "8970512236" },
-            { n: "ARTY.HOA", r: "SUPPORT", id: "3091870862" }
+            { n: "TCK.TKHANH", r: "RUSHER", id: "7626327478" },
+            { n: "TCK.SANG", r: "RUSHER", id: "15493068013" },
+            { n: "TCK.PQUAN", r: "BOMBER", id: "10631438987" },
+            { n: "TCK.J1Z", r: "SNIPER", id: "8382794436" },
+            { n: "TCK.TRPHUC", r: "SUPPORT", id: "7634167228" }
         ]
     },
-    "pc": {
-        name: "PC",
-        desc: "PC – Tên đầy đủ là PC Esports. Giống như một cỗ máy được tối ưu để chiến thắng, PC Esports luôn vận hành với sự chính xác, kỷ luật và tốc độ. Mỗi trận đấu là một cơ hội để PC bùng nổ và khẳng định sức mạnh tại Survival Legacy Cup SS3!",
-        logo: "logo-pc.jpg",
+    "adnss4": {
+        name: "ADN",
+        desc: "ADN – Tên đầy đủ là ADN. Attack • Dominate • Never Back Down – tấn công, áp đảo và không bao giờ lùi bước. ADN mang tinh thần chiến đấu trực diện, càng va chạm càng mạnh, càng áp lực càng bùng nổ. Không né tránh, không chùn bước — ADN sẵn sàng chiến đến cùng tại Survival Legacy Cup SS4!",
+        logo: "logo-adnss4.jpg",
         country: "", 
         players: [
-            { n: "PC.DNDAN", r: "RUSHER", id: "7939875539" },
-            { n: "PC.LHT", r: "RUSHER", id: "9531744891" },
-            { n: "PC.HIEU", r: "RIFLER", id: "8614179975" },
-            { n: "PC.TEN", r: "SNIPER", id: "5401984097" },
-            { n: "PC.EMBE", r: "SUPPORT", id: "2124497748" }
+            { n: "ADN.BAOVAT", r: "RUSHER", id: "7087724023" },
+            { n: "ADN.TAM", r: "BOMBER", id: "726580642" },
+            { n: "ADN.TNOK", r: "SNIPER", id: "11661686307" },
+            { n: "ADN.MINH", r: "SUPPORT", id: "1114877961" },
+            { n: "ADN.PKHAI", r: "SUPPORT", id: "3428476614" }
         ]
     },
     "fh": {
