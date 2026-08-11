@@ -881,7 +881,7 @@ function switchTeam(teamId) {
 }
 document.addEventListener("DOMContentLoaded", function() {
     if (document.getElementById('player-cards-container')) {
-        switchTeam('vkt3'); 
+        switchTeam('vktss4'); 
     }
 });
 // ================= HỆ THỐNG MŨI TÊN CHUYỂN 4 TRANG =================
