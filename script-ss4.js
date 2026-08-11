@@ -506,17 +506,17 @@ const teamsDatabase = {
             { n: "SGP.KH", r: "SUPPORT", id: "6922295097" }
         ]
     },
-    "tglss3": {
-        name: "TGL",
-        desc: "TGL – Tên đầy đủ là Team Gia Lai. Mang tinh thần của vùng đất Tây Nguyên đầy nắng gió, TGL bước vào chiến trường với sự lì lợm, mạnh mẽ và không ngại thử thách. Không chỉ thi đấu để chiến thắng, TGL còn quyết tâm mang dấu ấn Gia Lai đến Survival Legacy Cup SS3!",
-        logo: "logo-tglss3.jpg",
+    "rrqss4": {
+        name: "RRQ",
+        desc: "RRQ – Tên đầy đủ là RRQ Esports. Rise • Rule • Conquer – vươn lên, làm chủ và chinh phục. RRQ không bước vào chiến trường để tìm một vị trí an toàn, mà để tranh giành vị trí cao nhất. Bản lĩnh lên tiếng, chiến thắng là mục tiêu — RRQ sẵn sàng chinh phục Survival Legacy Cup SS4!",
+        logo: "logo-rrqss4.jpg",
         country: "", 
         players: [
-            { n: "TGL.DKHOI", r: "RUSHER", id: "1022337301" },
-            { n: "TGL.HPHONG", r: "RUSHER", id: "6881001992" },
-            { n: "TGL.DKHOA", r: "BOMBER", id: "876012041" },
-            { n: "TGL.GHAO", r: "SNIPER", id: "9431656118" },
-            { n: "TGL.CPHAT", r: "SUPPORT", id: "9712450395"  }
+            { n: "RRQ.FOX", r: "RUSHER", id: "6895539974" },
+            { n: "RRQ.HOANGANH", r: "BOMBER", id: "7095694708" },
+            { n: "RRQ.SAIFA", r: "SNIPER", id: "1724323294" },
+            { n: "RRQ.ZENNY", r: "SUPPORT", id: "5072130583" },
+            { n: "KHÔNG CÓ", a: "https://placehold.co/200x250/111/555?text=TRONG", r: "TRONG" }
         ]
     },
     "bse": {
