@@ -437,7 +437,7 @@ const teamsDatabase = {
             { n: "TGE.ONESEFL", r: "RUSHER", id: "8240307539" },
             { n: "TGE.VTUNG", r: "RIFLER", id: "6882956340" },
             { n: "TGE.OZIPLUS", r: "SNIPER", id: "14693816630" },
-            { n: "TGE.PAN", r: "SNIPER", id: "1589843978" },
+            { n: "TGE.PAN", r: "SUPPORT", id: "1589843978" },
             { n: "TGE.HNGHIA",  r: "SUPPORT", id: "11332758118" }
         ]
     },
@@ -519,7 +519,7 @@ const teamsDatabase = {
             { n: "KHÔNG CÓ", a: "https://placehold.co/200x250/111/555?text=TRONG", r: "TRONG" }
         ]
     },
-    "bse": {
+    "mekss4": {
         name: "BSE",
         desc: "BSE – Tên đầy đủ là Buttersky Elite. Mang trong mình chất riêng của một tập thể tinh nhuệ, Buttersky Elite luôn sẵn sàng tăng tốc khi trận đấu bước vào thời khắc quyết định. Với bản lĩnh, sự quyết đoán và tinh thần không lùi bước, BSE quyết tâm bứt phá và khẳng định đẳng cấp tại Survival Legacy Cup SS3!",
         logo: "logo-bse.jpg",
