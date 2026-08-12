@@ -520,42 +520,42 @@ const teamsDatabase = {
         ]
     },
     "mekss4": {
-        name: "BSE",
-        desc: "BSE – Tên đầy đủ là Buttersky Elite. Mang trong mình chất riêng của một tập thể tinh nhuệ, Buttersky Elite luôn sẵn sàng tăng tốc khi trận đấu bước vào thời khắc quyết định. Với bản lĩnh, sự quyết đoán và tinh thần không lùi bước, BSE quyết tâm bứt phá và khẳng định đẳng cấp tại Survival Legacy Cup SS3!",
-        logo: "logo-bse.jpg",
+        name: "MEK",
+        desc: "MEK – Tên đầy đủ là MegaKill Esports. Khi giao tranh bùng nổ cũng là lúc MegaKill Esports lên tiếng. Với tinh thần quyết chiến, kỹ năng sắc bén và khát khao chinh phục, MEK quyết tâm tạo nên những pha xử lý mãn nhãn và ghi dấu ấn tại Survival Legacy Cup SS4!",
+        logo: "logo-mekss4.jpg",
         country: "", 
         players: [
-            { n: "BSE.MTA", r: "RUSHER", id: "12921689211" },
-            { n: "BSE.VENUS", r: "RUSHER", id: "9715895573" },
-            { n: "BSE.HUNG", r: "BOMBER", id: "3716775696" },
-            { n: "BSE.LONGVU", r: "SNIPER", id: "7559599413" },
-            { n: "BSE.TOM", r: "SUPPORT", id: "5201490836" }
+            { n: "MEK.MTRIET", r: "RUSHER", id: "11689622261" },
+            { n: "MEK.FRV", r: "RUSHER", id: "3248543787" },
+            { n: "MEK.TRUNG", r: "SNIPER", id: "12770679079" },
+            { n: "MEK.NANH", r: "SUPPORT", id: "1680769724" },
+            { n: "KHÔNG CÓ", a: "https://placehold.co/200x250/111/555?text=TRONG", r: "TRONG" }
         ]
     },
-    "ovn2": {
-        name: "OVN",
-        desc: "OVN – Tên đầy đủ là OVN Esports. Ba chữ cái, một tinh thần: Own the Victory Now – chiến thắng ngay từ khoảnh khắc nhập cuộc. Với lối chơi quyết đoán, tinh thần không ngại đối đầu và khát khao làm chủ chiến trường, OVN sẵn sàng bùng nổ và khẳng định bản lĩnh tại Survival Legacy Cup SS3!",
-        logo: "logo-ovn2.jpg",
+    "lkess4": {
+        name: "LKE",
+        desc: "LKE – Tên đầy đủ là LÊ KIÊN ESPORTS. Không cần hô hào quá lớn, LKE để kỹ năng lên tiếng. Mỗi pha giao tranh là một lời khẳng định, mỗi chiến thắng là một dấu ấn. Khi đã bước vào trận đấu, mục tiêu duy nhất của LÊ KIÊN ESPORTS là khiến cái tên của mình được nhắc đến nhiều nhất tại Survival Legacy Cup SS4!",
+        logo: "logo-lkess4.jpg",
         country: "", 
         players: [
-            { n: "OVN.DUY", r: "RUSHER", id: "12576856883" },
-            { n: "OVN.VANTU", r: "RUSHER", id: "9881928946" },
-            { n: "OVN.TIEN", r: "SNIPER", id: "12350585814" },
-            { n: "OVN.TINH", r: "SNIPER", id: "8866941793" },
-            { n: "OVN.TAO", r: "SUPPORT", id: "936555133" }
+            { n: "LKE.EMBEN", r: "RUSHER", id: "355294300" },
+            { n: "LKE.EMTHIEN", r: "SNIPER", id: "3209197272" },
+            { n: "LKE.EMBOY", r: "SNIPER", id: "11487790754" },
+            { n: "LKE.EMPHUC", r: "SUPPORT", id: "605940899" },
+            { n: "LKE.DIEMMY", r: "SUPPORT", id: "2055349409" }
         ]
     },
-    "cde": {
-        name: "CDE",
-        desc: "CDE – Tên đầy đủ là CDE. Challenge • Dominate • Elevate – thử thách, thống trị và vươn lên. CDE không bước vào chiến trường để đứng sau bất kỳ ai, mà để tạo áp lực, bứt phá và biến từng trận đấu thành cơ hội khẳng định bản lĩnh tại Survival Legacy Cup SS3!",
-        logo: "logo-cde.jpg",
+    "kkss4": {
+        name: "KK",
+        desc: "KK – Tên đầy đủ là KING KING. Hai lần KING, gấp đôi tham vọng. KK bước vào chiến trường với tinh thần của những kẻ không muốn đứng sau bất kỳ ai — càng áp lực càng máu lửa, càng quyết định càng bùng nổ. Một KING đã đáng gờm, hai KING càng không thể xem thường — KK sẵn sàng chinh phục Survival Legacy Cup SS4!",
+        logo: "logo-kkss4.jpg",
         country: "", 
         players: [
-            { n: "CDE.VIETNHAT", r: "RUSHER", id: "9191569547" },
-            { n: "CDE.TANDUNG", r: "RUSHER", id: "1829162964" },
-            { n: "CDE.BEO", r: "RUSHER", id: "6353698339" },
-            { n: "CDE.TRINH", r: "SNIPER", id: "7289909444" },
-            { n: "CDE.ZEDRED", r: "SUPPORT", id: "7990559151" }
+            { n: "KK.MHCUONG", r: "RUSHER", id: "7519765743" },
+            { n: "KK.DUCANH", r: "RUSHER", id: "1263945996" },
+            { n: "KK.ACH", r: "RIFLER", id: "4235464631" },
+            { n: "KK.MINHDANG", r: "BOMBER", id: "1913479101" },
+            { n: "KK.ANHGM", r: "SNIPER", id: "8145868857" }
         ]
     },
     "bcs": {
