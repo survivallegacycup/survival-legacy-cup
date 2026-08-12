@@ -558,7 +558,7 @@ const teamsDatabase = {
             { n: "KK.ANHGM", r: "SNIPER", id: "8145868857" }
         ]
     },
-    "kme": {
+    "kmess4": {
         name: "KME",
         desc: "KME – Tên đầy đủ là KM Esports. Keep Moving, Keep Winning – không ngừng tiến lên, không ngừng chiến thắng. KME mang tinh thần càng đánh càng lì, càng vào sâu càng bùng nổ. Không đứng yên, không chùn bước — KME sẵn sàng tăng tốc và săn chiến thắng tại Survival Legacy Cup SS4!",
         logo: "logo-kmess4.jpg",
@@ -571,17 +571,17 @@ const teamsDatabase = {
             { n: "KME.BI", r: "SUPPORT", id: "5826764732 "}
         ]
     },
-    "pte": {
-        name: "PTE",
-        desc: "PTE – Tên đầy đủ là PTE. Power • Tactics • Elite – sức mạnh, chiến thuật và bản lĩnh tinh nhuệ. PTE không bước vào trận đấu để làm nền, mà để tạo khác biệt, bứt phá và quyết chiến đến cùng tại Survival Legacy Cup SS3!",
-        logo: "logo-pte.jpg",
+    "sawss4": {
+        name: "SAW",
+        desc: "SAW – Tên đầy đủ là SHADOW Esports. Silent Approach, Wild Strike – âm thầm tiếp cận, bùng nổ ra đòn. SAW không cần xuất hiện ồn ào, chỉ cần một khoảnh khắc thích hợp để biến cái bóng thành cơn ác mộng trên chiến trường. Ẩn mình, chờ thời, tung đòn quyết định — SAW sẵn sàng săn chiến thắng tại Survival Legacy Cup SS4!",
+        logo: "logo-sawss4.jpg",
         country: "", 
         players: [
-            { n: "PTE.THANHDAT", r: "RUSHER", id: "1778037828" },
-            { n: "PTE.REYKER", r: "BOMBER", id: "7934151585" },
-            { n: "PTE.TRIEUVY", r: "SNIPER", id: "1814073359" },
-            { n: "PTE.PU", r: "SUPPORT", id: "6334762860" },
-            { n: "PTE.KUDEN", r: "SUPPORT", id: "7300663730" }
+            { n: "SAW.NKHANH", r: "RUSHER", id: "9762026995" },
+            { n: "SAW.DUY", r: "RUSHER", id: "12576856883" },
+            { n: "SAW.TIEN", r: "RUSHER", id: "12350585814" },
+            { n: "SAW.TINH", r: "SNIPER", id: "8866941793" },
+            { n: "SAW.TAO", r: "SUPPORT", id: "936555133" }
         ]
     },
     "uziss3": {
