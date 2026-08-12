@@ -558,17 +558,17 @@ const teamsDatabase = {
             { n: "KK.ANHGM", r: "SNIPER", id: "8145868857" }
         ]
     },
-    "bcs": {
-        name: "BCS",
-        desc: "BCS – Tên đầy đủ là BCS. Mang tinh thần Battle • Clutch • Strike, BCS không chờ cơ hội đến mà tự mình tạo ra nó. Càng vào những thời khắc quyết định, BCS càng sẵn sàng bùng nổ, quyết chiến đến cùng và khẳng định bản lĩnh tại Survival Legacy Cup SS3!",
-        logo: "logo-bcs.jpg",
+    "kme": {
+        name: "KME",
+        desc: "KME – Tên đầy đủ là KM Esports. Keep Moving, Keep Winning – không ngừng tiến lên, không ngừng chiến thắng. KME mang tinh thần càng đánh càng lì, càng vào sâu càng bùng nổ. Không đứng yên, không chùn bước — KME sẵn sàng tăng tốc và săn chiến thắng tại Survival Legacy Cup SS4!",
+        logo: "logo-kmess4.jpg",
         country: "", 
         players: [
-            { n: "BCS.GON", r: "RUSHER", id: "1444714436" },
-            { n: "BCS.KHANH", r: "RUSHER", id: "2707736341" },
-            { n: "BCS.LYHUNG", r: "SNIPER", id: "2278495131" },
-            { n: "BCS.TUAN", r: "SNIPER", id: "12959767053" },
-            { n: "BCS.NTRUONG", r: "SUPPORTT", id: "8872007162" }
+            { n: "KME.LOSTINUS", r: "RUSHER", id: "3016983320" },
+            { n: "KME.EZLOVE", r: "RIFLER", id: "2146266439" },
+            { n: "KME.PHAMTIEN",r: "BOMBER", id: "2315234124" },
+            { n: "KME.GUNNERS", r: "SNIPER", id: "5975854296" },
+            { n: "KME.BI", r: "SUPPORT", id: "5826764732 "}
         ]
     },
     "pte": {
