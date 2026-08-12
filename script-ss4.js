@@ -285,17 +285,17 @@ const teamsDatabase = {
             { n: "ADE.KIETLE", r: "SUPPORT", id: "4277007464" }
         ]
     },
-    "ptess4": {
-        name: "PTE",
-        desc: "PTE – Tên đầy đủ là PT Esports. Từ những bước đầu tiên đến những trận chiến căng thẳng, PT Esports luôn giữ một mục tiêu: đã vào trận thì phải chơi tới cùng. Không ngại va chạm, không sợ áp lực, PTE sẵn sàng bùng nổ và chứng minh bản lĩnh tại Survival Legacy Cup SS4!",
-        logo: "logo-ptess4.jpg",
+    "bzess4": {
+        name: "BZE",
+        desc: "BZE – Tên đầy đủ là BZ Esports. Break the Zone, Break the Limit – phá vỡ giới hạn, bứt khỏi vùng an toàn. BZE không chờ chiến thắng tìm đến, mà chủ động tạo ra nó bằng những pha xử lý quyết đoán và tinh thần không ngại va chạm. Bước vào là chiến, bùng nổ là BZE — sẵn sàng khuấy đảo Survival Legacy Cup SS4!",
+        logo: "logo-bzess4.jpg",
         country: "", 
         players: [
-            { n: "PTE.AHUY", r: "RUSHER", id: "9598223872" },
-            { n: "PTE.QTHANH", r: "BOMBER", id: "3033106390" },
-            { n: "PTE.VBAO", r: "SNIPER", id: "326665310" },
-            { n: "PTE.QHIEU", r: "SNIPER", id: "1850344695" },
-            { n: "PTE.TNHAN", r: "SUPPORT", id: "3592042217" }
+            { n: "BZE.TDUNG", r: "RUSHER", id: "4017055018" },
+            { n: "BZE.TVAN", r: "RUSHER", id: "9050876679" },
+            { n: "BZE.ORHUN", r: "RUSHER", id: "10886768826" },
+            { n: "BZE.BAS", r: "SNIPER", id: "5554805509" },
+            { n: "BZE.SEBEO", r: "SUPPORT", id: "6353698339" }
         ]
     },
     "tckss4": {
