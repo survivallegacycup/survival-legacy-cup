@@ -610,30 +610,30 @@ const teamsDatabase = {
             { n: "VDE.HNGHIA",  r: "SUPPORT", id: "11332758118" }
         ]
     },
-    "tmh": {
-        name: "TMH",
-        desc: "TMH – Tên đầy đủ là TMH. Think. Move. Hunt. – nghĩ nhanh, di chuyển chuẩn, săn chiến thắng. TMH không cần ồn ào để tạo áp lực; chỉ cần một khoảnh khắc đúng lúc, đội tuyển sẵn sàng biến thế trận và ghi dấu ấn tại Survival Legacy Cup SS3!",
-        logo: "logo-tmh.jpg",
+    "pfpss4": {
+        name: "PFP",
+        desc: "PFP – Tên đầy đủ là PFP Esports. Play For Pride – chiến đấu vì niềm tự hào. Mỗi trận đấu không chỉ là cuộc cạnh tranh điểm số mà còn là cơ hội để khẳng định bản lĩnh của cả tập thể. Không ngại thử thách, không sợ đối đầu, PFP sẵn sàng chiến hết mình tại Survival Legacy Cup SS4!",
+        logo: "logo-pfpss4.jpg",
         country: "", 
         players: [
-            { n: "TMH.VANTUAN", r: "RUSHER", id: "1285407799" },
-            { n: "TMH.BOYWALK", r: "BOMBER", id: "11041145321" },
-            { n: "TMH.MY", r: "SNIPER", id: "9353533657" },
-            { n: "TMH.AN", r: "SUPPORT", id: "9279800249" },
-            { n: "KHÔNG CÓ", a: "https://placehold.co/200x250/111/555?text=TRONG", r: "TRONG" }
+            { n: "PFP.NTRI", r: "RUSHER", id: "2653093397" },
+            { n: "PFP.THPHONG", r: "RIFLER", id: "3120331064" },
+            { n: "PFP.HANA", r: "SNIPER", id: "2104295752" },
+            { n: "PFP.YA", r: "SNIPER", id: "9138786364" },
+            { n: "PFP.SUN", r: "SUPPORT", id: "2653093397" }
         ]
     },
-    "ze": {
-        name: "ZE",
-        desc: "4T – Tên đầy đủ là 4T ESPORTS. Đội tuyển đại diện cho “4 Triggers – 4 họng súng luôn sẵn sàng khai hỏa”, nơi mỗi thành viên là một điểm nổ có thể kích hoạt bất cứ lúc nào. Khi 4T nhập cuộc, trận đấu không còn là kiểm soát-mà là chuỗi phản ứng dây chuyền của những pha hủy diệt tại Survival Legacy Cup SS1!",
-        logo: "logo-4t.jpg",
+    "x77ss4": {
+        name: "X77",
+        desc: "X77 – Tên đầy đủ là X77 Esports. Bí ẩn như chữ X, bùng nổ như con số 77, X77 là đội tuyển luôn mang đến những điều không thể đoán trước. Đối thủ có thể chuẩn bị cho mọi kịch bản, nhưng không thể chuẩn bị cho sự đột biến mà X77 tạo ra. Một khoảnh khắc tỏa sáng có thể thay đổi cả trận đấu — và X77 luôn sẵn sàng tạo ra khoảnh khắc đó tại Survival Legacy Cup SS4!",
+        logo: "logo-x77ss4.jpg",
         country: "", 
         players: [
-            { n: "ZE.DNDAN", r: "RUSHER", id: "7939875539" },
-            { n: "ZE.LHT", r: "RUSHER", id: "9531744891" },
-            { n: "ZE.HIEU", r: "RIFLER", id: "8614179975" },
-            { n: "ZE.TEN", r: "SNIPER", id: "5401984097" },
-            { n: "ZE.EMBE", r: "SUPPORT", id: "2124497748" }
+            { n: "X77.TIENANH", r: "RUSHER", id: "12716802702" },
+            { n: "X77.NILAJS", r: "RIFLER", id: "12854479609" },
+            { n: "X77.THANH", r: "BOMBER", id: "14450081056" },
+            { n: "X77.ANTONI",r: "SUPPORT", id: "2141978426" },
+            { n: "X77.GIABAO", r: "SUPPORT", id: "11438885872" }
         ]
     },
     "sgp2": {
