@@ -584,30 +584,30 @@ const teamsDatabase = {
             { n: "SAW.TAO", r: "SUPPORT", id: "936555133" }
         ]
     },
-    "uziss3": {
-        name: "UZI",
-        desc: "UZI - Tên đầy đủ là UZI　LEGENDS. Đội tuyển mang hình tượng “song UZI khai hỏa”, tốc độ xả đạn nghẹt thở, dồn ép liên tục khiến đối thủ không kịp thở, vào giao tranh là quét sạch đội hình đối thủ trong tích tắc, thể hiện đẳng cấp “bắn nhanh – thắng nhanh” tại Survival Legacy Cup SS3!",
-        logo: "logo-uzi.jpg",
+    "ilgess4": {
+        name: "ILGE",
+        desc: "ILGE – Tên đầy đủ là I Love Games Esports. Với ILGE, game không chỉ là sở thích mà còn là nơi đam mê được biến thành khát khao chiến thắng. Chơi bằng đam mê, chiến bằng bản lĩnh, thắng bằng thực lực — ILGE sẵn sàng cháy hết mình và tạo nên dấu ấn tại Survival Legacy Cup SS4!",
+        logo: "logo-ilgess4.jpg",
         country: "", 
         players: [
-            { n: "UZI.MILLOW", r: "RUSHER", id: "2444693631" },
-            { n: "UZI.FOX", r: "RUSHER", id: "6895539974" },
-            { n: "UZI.HANA", r: "BOMBER", id: "2104295752" },
-            { n: "UZI.CHOPPER", r: "SNIPER", id: "3659332602" },
-            { n: "UZI.BIN", r: "SUPPORT", id: "9173149407" }
+            { n: "ILGE.NGPHUOC", r: "RUSHER", id: "1662260659" },
+            { n: "ILGE.PAYN", r: "RIFLER", id: "1295463080" },
+            { n: "ILGE.VH", r: "RIFLER", id: "3254504614" },
+            { n: "ILGE.THELIGHT", r: "SNIPER", id: "2895527359" },
+            { n: "ILGE.OSIRIS", r: "SUPPORT", id: "2824600011" }
         ]
     },
-    "vta": {
-        name: "VTA",
-        desc: "VTA – Tên đầy đủ là VTA. Victory • Tactics • Ambition – chiến thắng, chiến thuật và khát vọng. VTA bước vào mỗi trận đấu với mục tiêu rõ ràng: chơi bằng thực lực, đánh bằng bản lĩnh và quyết tâm tiến xa tại Survival Legacy Cup SS3!",
-        logo: "logo-vta.jpg",
+    "vdess4": {
+        name: "VDE",
+        desc: "VDE – Tên đầy đủ là Vô Danh Esports. Không mang theo hào quang hay danh tiếng, VDE bước vào chiến trường với hai bàn tay trắng và khát khao chứng minh bản thân. Hôm nay có thể là vô danh, nhưng ngày mai sẽ là cái tên khiến mọi đối thủ phải ghi nhớ — VDE sẵn sàng bùng nổ tại Survival Legacy Cup SS4!",
+        logo: "logo-vdess4.jpg",
         country: "", 
         players: [
-            { n: "VTA.PHUCTHINH", r: "RUSHER", id: "7754321281" },
-            { n: "VTA.TUANANH", r: "BOMBER", id: "1047965020" },
-            { n: "VTA.MHOANG", r: "SNIPER", id: "5969646401" },
-            { n: "VTA.TANDUAN", r: "SNIPER", id: "5001589171" },
-            { n: "VTA.DUCANH", r: "SUPPORT", id: "3309814632" }
+            { n: "VDE.ONESEFL", r: "RUSHER", id: "8240307539" },
+            { n: "VDE.OZIPLUS", r: "RUSHER", id: "14693816630" },
+            { n: "VDE.PAN", r: "RIFLER", id: "1589843978" },
+            { n: "VDE.VTUNG", r: "SNIPER", id: "6882956340" },
+            { n: "VDE.HNGHIA",  r: "SUPPORT", id: "11332758118" }
         ]
     },
     "tmh": {
