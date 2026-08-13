@@ -383,8 +383,8 @@ const teamsDatabase = {
         country: "", 
         players: [
             { n: "BL.FORX", r: "RUSHER", id: "10662958879" },
-            { n: "BL.NBBZ", r: "BOMBER", id: "4461929512" },
-            { n: "BL.FAUST", r: "SNIPER", id: "6309254787" },
+            { n: "BL.NEHUHU", r: "BOMBER", id: "4461929512" },
+            { n: "BL.EVIL", r: "SNIPER", id: "6309254787" },
             { n: "BL.SIKIBIDI", r: "SUPPORT", id: "2421066275" },
             { n: "BL.LINA", r: "SUPPORT", id: "2338588519" }
         ]
