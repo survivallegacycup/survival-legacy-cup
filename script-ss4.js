@@ -636,69 +636,69 @@ const teamsDatabase = {
             { n: "X77.GIABAO", r: "SUPPORT", id: "11438885872" }
         ]
     },
-    "sgp2": {
-        name: "SGP2",
-        desc: "SGP2 – Tên đầy đủ là SGP2. Strike • Glory • Power — Level 2. Không chỉ bước vào để thi đấu, SGP2 hướng đến một cấp độ hoàn toàn khác: mạnh hơn, nhanh hơn và quyết liệt hơn. Sẵn sàng bùng nổ trong từng pha giao tranh, SGP2 quyết tâm tạo dấu ấn tại Survival Legacy Cup SS3!",
-        logo: "logo-sgp2.jpg",
+    "ptess4": {
+        name: "PTE",
+        desc: "PTE – Tên đầy đủ là PTE. Power • Tactics • Excellence – sức mạnh, chiến thuật và sự xuất sắc. PTE không chọn lối chơi an toàn, mà chọn cách đối mặt với thử thách bằng bản lĩnh và sự tự tin. Càng áp lực càng quyết tâm, càng giao tranh càng bùng nổ — PTE sẵn sàng khẳng định vị thế tại Survival Legacy Cup SS4!",
+        logo: "logo-ptess4.jpg",
         country: "", 
         players: [
-            { n: "SGP2.LOI", r: "RUSHER", id: "8231737839" },
-            { n: "SGP2.DH", r: "RIFLER", id: "3081890813" },
-            { n: "SGP2.EMIT", r: "BOMBER", id: "7781127261" },
-            { n: "SGP2.GHOST", r: "SNIPER", id: "9861486205" },
-            { n: "SGP2.MEO", r: "SUPPORT", id: "8720767754" }
+            { n: "PTE.TRIEUVY", r: "RUSHER", id: "10676409066" },
+            { n: "PTE.MINH", r: "SNIPER", id: "7456885371" },
+            { n: "PTE.MEOBINH", r: "SNIPER", id: "10676409066" },
+            { n: "PTE.REYKER", r: "SUPPORT", id: "7934151585" },
+            { n: "PTE.PU", r: "SUPPORT", id: "6334762860" }
         ]
     },
-    "ggl": {
-        name: "GGL",
-        desc: "GGL – Tên đầy đủ là GGL. Go • Grind • Glory – tiến lên, không ngừng rèn luyện và hướng tới vinh quang. GGL không cần khởi đầu hoàn hảo, chỉ cần càng đánh càng mạnh. Với tinh thần quyết chiến và khát khao bứt phá, GGL sẵn sàng tạo dấu ấn tại Survival Legacy Cup SS3!",
-        logo: "logo-ggl.jpg",
+    "tlrss4": {
+        name: "TLR",
+        desc: "TLR – Tên đầy đủ là TLR Esports. The Last Resistance – phòng tuyến cuối cùng, nơi ý chí không bao giờ gục ngã. Dù bị dồn vào thế khó khăn nhất, TLR vẫn giữ vững tinh thần chiến đấu và sẵn sàng phản công bất cứ lúc nào. Không bỏ cuộc, không lùi bước — TLR quyết tâm chiến đấu đến cùng tại Survival Legacy Cup SS4!",
+        logo: "logo-tlrss4.jpg",
         country: "", 
         players: [
-            { n: "GGL.CUBA", r: "RUSHER", id: "4146302957" },
-            { n: "GGL.DEKAY", r: "RUSHER", id: "5529315258" },
-            { n: "GGL.SLASH", r: "BOMBER", id: "1156181860" },
-            { n: "GGL.CHAN", r: "SNIPER", id: "8722710019" },
-            { n: "GGL.YOGOU", r: "SUPPORT", id: "248286997" }
+            { n: "TLR.CTHANH", r: "RUSHER", id: "4392383516" },
+            { n: "TLR.DRIFTWAY", r: "RUSHER", id: "2271691178" },
+            { n: "TLR.BLACK", r: "SNIPER", id: "218005353" },
+            { n: "TLR.TONE", r: "SNIPER", id: "80767261" },
+            { n: "TLR.HNGHIA", r: "SUPPORT", id: "2012322645" }
         ]
     },
-    "klbb": {
-        name: "KLBB",
-        desc: "KLBB – Tên đầy đủ là KLBB Esports. Keep • Lock • Battle • Break – giữ vững, khóa mục tiêu, chiến đấu và bứt phá. KLBB Esports càng vào sâu càng lì đòn, càng áp lực càng bản lĩnh. Không ngại bất kỳ đối thủ nào, KLBB quyết tâm phá mọi giới hạn và tạo dấu ấn tại Survival Legacy Cup SS3!",
-        logo: "logo-klbb.jpg",
+    "bless4": {
+        name: "BLE",
+        desc: "BLE – Tên đầy đủ là BLE. Break Limits Everywhere – phá vỡ mọi giới hạn. BLE không đặt mục tiêu chỉ để góp mặt, mà để vượt qua chính mình và tạo nên những bất ngờ trên chiến trường. Càng khó khăn càng quyết tâm, càng áp lực càng bùng nổ — BLE sẵn sàng viết nên câu chuyện của riêng mình tại Survival Legacy Cup SS4!",
+        logo: "logo-bless4.jpg",
         country: "", 
         players: [
-            { n: "KLBB.HUUDAI", r: "RUSHER", id: "928351548" },
-            { n: "KLBB.TUANANH", r: "RIFLER", id: "13022794005" },
-            { n: "KLBB.DUCVIET", r: "SNIPER", id: "7297998533" },
-            { n: "KLBB.GIABAO", r: "SUPPORT", id: "9653299037" },
-            { n: "KHÔNG CÓ", a: "https://placehold.co/200x250/111/555?text=TRONG", r: "TRONG" }
+            { n: "BLE.FORX", r: "RUSHER", id: "10662958879" },
+            { n: "BLE.NEHUHU", r: "BOMBER", id: "4461929512" },
+            { n: "BLE.EVIL", r: "SNIPER", id: "6309254787" },
+            { n: "BLE.SIKIBIDI", r: "SUPPORT", id: "2421066275" },
+            { n: "BLE.LINA", r: "SUPPORT", id: "2338588519" }
         ]
     },
-    "sl": {
-        name: "SL",
-        desc: "SL – Tên đầy đủ là Serein Line. Mang trong mình sự điềm tĩnh của “Serein” – một vẻ đẹp yên bình giữa những biến động, Serein Line không cần ồn ào để tạo khác biệt. Càng áp lực, SL càng lạnh lùng, càng quyết đoán và sẵn sàng bứt phá tại Survival Legacy Cup SS3!",
-        logo: "logo-sl.jpg",
+    "ctess4": {
+        name: "CTE",
+        desc: "CTE – Tên đầy đủ là CTE. Với ý chí của những Champions Together Forever, CTE tin rằng sức mạnh lớn nhất đến từ sự gắn kết. Chiến đấu như một tập thể, quyết thắng như một đội tuyển, CTE quyết tâm tạo nên dấu ấn tại Survival Legacy Cup SS4!",
+        logo: "logo-ctess4.jpg",
         country: "", 
         players: [
-            { n: "SL.KING", r: "RUSHER", id: "2325777762" },
-            { n: "SL.KAM", r: "RIFLER", id: "362038211" },
-            { n: "SL.HCHUONG", r: "BOMBER", id: "1185079614" },
-            { n: "SL.DREX", r: "SNIPER", id: "5223838420" },
-            { n: "SL.EMKHOI", r: "SNIPER", id: "2791106345" }
+            { n: "CTE.GIABAO", r: "RUSHER", id: "14501843024" },
+            { n: "CTE.HPHU", r: "RUSHER", id: "692914271" },
+            { n: "CTE.LONGVU", r: "SNIPER", id: "2934208943" },
+            { n: "CTE.AKIET", r: "SUPPORT", id: "11849275511" },
+            { n: "CTE.THIEN", r: "SUPPORT", id: "4707864091" }
         ]
     },
-    "hbpe": {
-        name: "HBPE",
-        desc: "HBPE – Tên đầy đủ là HBP Esports. Mang tinh thần Hold • Break • Push • Elevate, HBP Esports luôn biết khi nào cần giữ thế, khi nào phải bứt phá. Bình tĩnh trong từng bước di chuyển, quyết đoán trong thời khắc quyết định, HBPE sẵn sàng vượt giới hạn và vươn lên tại Survival Legacy Cup SS3!",
-        logo: "logo-hbpe.jpg",
+    "cdyss4": {
+        name: "CDY",
+        desc: "CDY – Tên đầy đủ là CDY. Challenge • Defy • Yield Never – dám thử thách, thách thức mọi giới hạn và không bao giờ khuất phục. CDY không bước vào trận đấu để tìm kiếm sự an toàn, mà để đối mặt với những đối thủ mạnh nhất. Càng áp lực càng kiên cường, càng khó khăn càng quyết chiến — CDY sẵn sàng bùng nổ tại Survival Legacy Cup SS4!",
+        logo: "logo-cdyss4.jpg",
         country: "", 
         players: [
-            { n: "HBPE.KENDY", r: "RUSHER", id: "1774361226" },
-            { n: "HBPE.MYDIEU", r: "BOMBER", id: "2830766201" },
-            { n: "HBPE.THANHDAT", r: "SNIPER", id: "5681703686" },
-            { n: "HBPE.KEN", r: "SNIPER", id: "9079507302" },
-            { n: "HBPE.ZADRED", r: "SUPPORT", id: "1884223878" }
+            { n: "CDY.MHCUONG", r: "RUSHER", id: "7519765743" },
+            { n: "CDY.VIETSON", r: "RUSHER", id: "7818813054" },
+            { n: "CDY.ANHGM", r: "RIFLER", id: "8145868857" },
+            { n: "CDY.DUCANH", r: "BOMBER", id: "1263945996" },
+            { n: "CDY.DANGVU", r: "SNIPER", id: "1913479101" }
         ]
     },
     "dpkq": {
