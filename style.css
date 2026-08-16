@@ -311,12 +311,6 @@ button:hover {
     cursor: pointer; opacity: 0.5; transition: 0.3s;
 }
 .t-icon:hover, .t-icon.active { opacity: 1; }
-.t-icon img {
-    width: 60px; height: 60px; object-fit: contain;
-    background: #111; border: 1px solid #444; border-radius: 5px;
-    padding: 5px;
-}
-.t-icon.active img { border-color: #ffcc00; }
 .t-icon span { color: #fff; font-size: 11px; font-weight: bold; }
 /* 3. Lưới Tuyển Thủ (Bottom) */
 .players-grid {
@@ -428,21 +422,6 @@ button:hover {
 }
 .t-icon:hover, .t-icon.active { opacity: 1; }
 
-/* 1. Trạng thái bình thường */
-.t-icon img {
-    width: 65px !important; 
-    height: 65px !important; 
-    object-fit: cover !important;
-    
-    /* CHÌA KHÓA: Trả lại nền trong suốt nguyên bản cho Logo */
-    background: transparent !important; 
-    
-    border: 3px solid transparent !important; 
-    border-radius: 8px;
-    padding: 0px;
-    transition: all 0.3s ease; 
-}
-
 /* 2. Trạng thái Chọn/Hover */
 .t-icon.active img, 
 .t-icon:hover img {
@@ -453,7 +432,6 @@ button:hover {
     /* CHÌA KHÓA: Giữ nguyên trong suốt khi click chọn */
     background: transparent !important; 
 }
-.t-icon.active img { border-color: #ffcc00; }
 .t-icon span { color: #fff; font-size: 12px; font-weight: bold; }
 
 /* 2. Banner Thông tin tin */
