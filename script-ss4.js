@@ -683,9 +683,9 @@ const teamsDatabase = {
         players: [
             { n: "RI.GPHIEN", r: "RUSHER", id: "5612947509" },
             { n: "RI.DEATH", r: "RUSHER", id: "6248000758" },
+            { n: "RI.MILLOW", r: "RUSHER", id: "2444693631" },
             { n: "RI.CHOPPER", r: "SNIPER", id: "3659332602" },
-            { n: "RI.BIN", r: "SUPPORT", id: "9173149407" },
-            { n: "KHÔNG CÓ", a: "https://placehold.co/200x250/111/555?text=TRONG", r: "TRONG" }
+            { n: "RI.BIN", r: "SUPPORT", id: "9173149407" }
         ]
     },
     "dzss4": {
