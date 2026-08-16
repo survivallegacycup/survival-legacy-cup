@@ -662,6 +662,45 @@ const teamsDatabase = {
             { n: "TLR.HNGHIA", r: "SUPPORT", id: "2012322645" }
         ]
     },
+    "tass4": {
+        name: "TA",
+        desc: "TA – Tên đầy đủ là TA Esports. Đằng sau hai chữ cái ngắn gọn là một tập thể luôn khao khát chinh phục những thử thách lớn nhất. TA không cần những lời tuyên bố mạnh mẽ, bởi chính những màn trình diễn trên chiến trường sẽ nói lên tất cả. Bản lĩnh để chiến đấu, quyết tâm để chiến thắng — TA sẵn sàng tạo dấu ấn tại Survival Legacy Cup SS4!",
+        logo: "logo-tass4.jpg",
+        country: "", 
+        players: [
+            { n: "TA.NTRI", r: "RUSHER", id: "371797166" },
+            { n: "TA.ZORI", r: "RIFLER", id: "12621403136" },
+            { n: "TA.NGA", r: "BOMBER", id: "2453358090" },
+            { n: "TA.THPHONG", r: "SNIPER", id: "3120331064" },
+            { n: "TA.YA", r: "SUPPORT", id: "9138786364"}
+        ]
+    },
+    "riss4": {
+        name: "RI",
+        desc: "RI – Tên đầy đủ là RI. Rise • Impact – vươn lên và tạo dấu ấn. RI có thể là một cái tên ngắn gọn, nhưng mục tiêu thì chưa bao giờ nhỏ. Với tinh thần không ngại đối đầu và khát khao khẳng định bản thân, RI luôn sẵn sàng bùng nổ ở những thời khắc quan trọng nhất. Không đến để góp mặt, RI đến để được ghi nhớ tại Survival Legacy Cup SS4!",
+        logo: "logo-riss4.jpg",
+        country: "", 
+        players: [
+            { n: "RI.GPHIEN", r: "RUSHER", id: "5612947509" },
+            { n: "RI.DEATH", r: "RUSHER", id: "6248000758" },
+            { n: "RI.CHOPPER", r: "SNIPER", id: "3659332602" },
+            { n: "RI.BIN", r: "SUPPORT", id: "9173149407" },
+            { n: "KHÔNG CÓ", a: "https://placehold.co/200x250/111/555?text=TRONG", r: "TRONG" }
+        ]
+    },
+    "dzss4": {
+        name: "DZ",
+        desc: "DZ – Tên đầy đủ là DZ Gaming. Mang trong mình tinh thần của những chiến binh không ngại thử thách, DZ luôn sẵn sàng lao vào những cuộc giao tranh khốc liệt nhất để giành lấy chiến thắng. Càng căng thẳng càng bản lĩnh, càng khó khăn càng quyết tâm — DZ Gaming đến với Survival Legacy Cup SS4 không chỉ để thi đấu, mà để chinh phục!",
+        logo: "logo-dzss4.jpg",
+        country: "", 
+        players: [
+            { n: "DZ.GHUNG", r: "RUSHER", id: "9339689538" },
+            { n: "DZ.SECRET",r: "RIFLER", id: "12394662375" },
+            { n: "DZ.SHIN", r: "BOMBER", id: "6437619969" },
+            { n: "DZ.SUN", r: "SNIPER", id: "12225789596" },
+            { n: "DZ.KEM", r: "SUPPORT", id: "273375308" }
+        ]
+    },
     "bless4": {
         name: "BLE",
         desc: "BLE – Tên đầy đủ là BLE. Break Limits Everywhere – phá vỡ mọi giới hạn. BLE không đặt mục tiêu chỉ để góp mặt, mà để vượt qua chính mình và tạo nên những bất ngờ trên chiến trường. Càng khó khăn càng quyết tâm, càng áp lực càng bùng nổ — BLE sẵn sàng viết nên câu chuyện của riêng mình tại Survival Legacy Cup SS4!",
@@ -699,45 +738,6 @@ const teamsDatabase = {
             { n: "CDY.ANHGM", r: "RIFLER", id: "8145868857" },
             { n: "CDY.DUCANH", r: "BOMBER", id: "1263945996" },
             { n: "CDY.DANGVU", r: "SNIPER", id: "1913479101" }
-        ]
-    },
-    "dpkq": {
-        name: "DPKQ",
-        desc: "DPKQ – Tên đầy đủ là DPKQ Esports. Don’t Pause. Keep Qualifying. – không dừng lại, không ngừng tiến bước. DPKQ Esports càng vào sâu càng bản lĩnh, càng áp lực càng quyết đoán, sẵn sàng bứt phá qua từng vòng đấu và tạo dấu ấn tại Survival Legacy Cup SS3!",
-        logo: "logo-dpkq.jpg",
-        country: "", 
-        players: [
-            { n: "DPKQ.NABABI", r: "RUSHER", id: "4162915867" },
-            { n: "DPKQ.NOTHING", r: "RUSHER", id: "8185602496" },
-            { n: "DPKQ.MVP", r: "SNIPER", id: "2545864104" },
-            { n: "DPKQ.TANDUNG", r: "SUPPORT", id: "6237439641" },
-            { n: "KHÔNG CÓ", a: "https://placehold.co/200x250/111/555?text=TRONG", r: "TRONG" }
-        ]
-    },
-    "noka": {
-        name: "NOKA",
-        desc: "NOKA – Tên đầy đủ là NOKA. Never Overlook. Keep Advancing. – không xem nhẹ bất kỳ đối thủ nào, không ngừng tiến lên. NOKA bước vào từng trận đấu với sự tự tin, quyết đoán và tinh thần sẵn sàng bứt phá để tạo dấu ấn tại Survival Legacy Cup SS3!",
-        logo: "logo-noka.jpg",
-        country: "", 
-        players: [
-            { n: "NOKA.LAVIDA", r: "RUSHER", id: "3225479273" },
-            { n: "NOKA.TDAT", r: "RUSHER", id: "2491284727" },
-            { n: "NOKA.CRYLUV", r: "RIFLER", id: "2763014509" },
-            { n: "NOKA.HUNG", r: "RIFLER", id: "8776372081" },
-            { n: "NOKA.NOVA", r: "SUPPORT", id: "1824618270" }
-        ]
-    },
-    "xht": {
-        name: "XHT",
-        desc: "XHT – Tên đầy đủ là XHAMTERS. Nghe tên tưởng đùa, vào trận mới biết không đùa được. XHT mang đến lối chơi khó đoán, sẵn sàng tạo biến số và khiến mọi đối thủ phải dè chừng. Tên có thể gây cười, nhưng thực lực thì không — XHT quyết tâm tạo dấu ấn tại Survival Legacy Cup SS3!",
-        logo: "logo-xht.jpg",
-        country: "", 
-        players: [
-            { n: "XHT.AGM", r: "RUSHER", id: "1731908696" },
-            { n: "XHT.PLTL",r: "RIFLER", id: "3538480583" },
-            { n: "XHT.CUTIT", r: "BOMBER", id: "9326144006" },
-            { n: "XHT.NGNHAT", r: "SNIPER", id: "3120004297" },
-            { n: "XHT.SKIBIDI", r: "SUPPORT", id: "4465994720" }
         ]
     },
     "tkt": {
