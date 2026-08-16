@@ -740,56 +740,56 @@ const teamsDatabase = {
             { n: "CDY.DANGVU", r: "SNIPER", id: "1913479101" }
         ]
     },
-    "tkt": {
-        name: "TKT",
-        desc: "TKT – Tên đầy đủ là TOKUTA. TO the top, Keep fighting, TAke the win — tiến lên đỉnh, chiến đấu đến cùng, giành lấy chiến thắng. TKT không vào trận để làm nền, mà để tạo bất ngờ và khiến từng khoảnh khắc tại Survival Legacy Cup SS3 phải nhớ đến cái tên TOKUTA!",
-        logo: "logo-tkt.jpg",
+    "qvss4": {
+        name: "QV",
+        desc: "QV – Tên đầy đủ là QV Esports. Quiet Victory – chiến thắng không cần quá nhiều lời nói. QV lựa chọn để kỹ năng lên tiếng, để bản lĩnh được thể hiện qua từng trận đấu. Khi cơ hội xuất hiện, QV sẽ không ngần ngại tăng tốc và biến lợi thế thành chiến thắng. Âm thầm tiến bước, bùng nổ đúng lúc — QV Esports sẵn sàng khẳng định mình tại Survival Legacy Cup SS4!",
+        logo: "logo-qvss4.jpg",
         country: "", 
         players: [
-            { n: "TKT.NVX", r: "RUSHER", id: "6556475658" },
-            { n: "TKT.HUNG", r: "RUSHER", id: "9061635777" },
-            { n: "TKT.U7E", r: "RIFLER", id: "6775937715" },
-            { n: "TKT.VTT", r: "SNIPER", id: "3201187189" },
-            { n: "TKT.ODCH", r: "SUPPORT", id: "9774162852" }
+            { n: "QV.TORAI", r: "RUSHER", id: "325587001" },
+            { n: "QV.CAMATMEO", r: "SNIPER", id: "1737545616" },
+            { n: "QV.MEOMEOMEO", r: "SNIPER", id: "7044745891" },
+            { n: "QV.BBQ", r: "SUPPORT", id: "327891042" },
+            { n: "KHÔNG CÓ", a: "https://placehold.co/200x250/111/555?text=TRONG", r: "TRONG" }
         ]
     },
-    "h2k": {
-        name: "H2K",
-        desc: "H2K – Tên đầy đủ là H2K. Hard to Kill – khó bị đánh bại. Đúng như cái tên, H2K luôn giữ vững bản lĩnh ngay cả khi thế trận trở nên căng thẳng nhất. Càng bị dồn ép, H2K càng lì lợm, càng quyết chiến và sẵn sàng lật ngược mọi thế trận tại Survival Legacy Cup SS3!",
-        logo: "logo-h2k.jpg",
+    "bzss4": {
+        name: "BZ",
+        desc: "BZ – Tên đầy đủ là BZ Esports. Blaze Zone – vùng đất của những ngọn lửa không bao giờ tắt. BZ mang lối chơi đầy nhiệt huyết, luôn sẵn sàng bùng nổ trong những thời khắc quyết định và biến áp lực thành động lực. Càng chiến càng cháy, càng đánh càng hăng — BZ Esports quyết tâm tạo nên dấu ấn tại Survival Legacy Cup SS4!",
+        logo: "logo-bzss4.jpg",
         country: "", 
         players: [
-            { n: "H2K.VANHIEU", r: "RUSHER", id: "931508938" },
-            { n: "H2K.SYTUAN", r: "BOMBER", id: "728485649" },
-            { n: "H2K.MINHDUC", r: "BOMBER", id: "1047846802" },
-            { n: "H2K.VIETHUNG", r: "SNIPER", id: "1679326020" },
-            { n: "H2K.KTOAN", r: "SUPPORT", id: "1466891354" }
+            { n: "BZ.WASABI", r: "RUSHER", id: "12508509193" },
+            { n: "BZ.ORHUN", r: "RUSHER", id: "10886768826" },
+            { n: "BZ.ZBER", r: "SNIPER", id: "15599277601" },
+            { n: "BZ.HINASS", r: "SNIPER", id: "9050876679" },
+            { n: "BZ.BEO", r: "SUPPORT", id: "6353698339" }
         ]
     },
-    "stt": {
-        name: "STT",
-        desc: "STT – Tên đầy đủ là Shark TiTan. Sau một thời gian vắng bóng, Shark TiTan chính thức trở lại. Lần comeback này không phải để tìm lại ánh hào quang, mà để tạo ra một phiên bản mạnh mẽ hơn, lì lợm hơn và đáng gờm hơn. STT trở lại để săn chiến thắng và viết tiếp hành trình tại Survival Legacy Cup SS3!",
-        logo: "logo-stt.jpg",
+    "6itss4": {
+        name: "6IT",
+        desc: "6IT – Tên đầy đủ là 6IT. Con số 6 đại diện cho sự gắn kết, còn IT là tinh thần đổi mới và tư duy chiến thuật. 6IT không phải đội tuyển thích phô trương, nhưng luôn biết cách tỏa sáng khi trận đấu bước vào giai đoạn quyết định. Giữ vững đội hình, bùng nổ đúng thời điểm — 6IT sẵn sàng tạo bất ngờ tại Survival Legacy Cup SS4!",
+        logo: "logo-6itss4.jpg",
         country: "", 
         players: [
-            { n: "STT.HUNG", r: "RUSHER", id: "10081813956" },
-            { n: "STT.NGAO", r: "RIFLER", id: "1756227636" },
-            { n: "STT.TDUNG", r: "SNIPER", id: "1982342638" },
-            { n: "STT.VP", r: "SUPPORT", id: "5329839627" },
-            { n: "STT.GIAPHONG", r: "SUPPORT", id: "1380391498S" }
+            { n: "6IT.HELLOEM", r: "RUSHER", id: "1274582211" },
+            { n: "6IT.THU", r: "RUSHER", id: "6999920894" },
+            { n: "6IT.HELUEM", r: "SNIPER", id: "12354441464" },
+            { n: "6IT.GAIDEP", r: "SNIPER", id: "1779964983" },
+            { n: "6IT.HAU", r: "SUPPORT", id: "8294900833" }
         ]
     },
-    "tae": {
-        name: "TAE",
-        desc: "TAE – Tên đầy đủ là Tu Anh Esports. Mang tinh thần của một tập thể luôn tiến về phía trước, TAE không ngại thử thách và luôn sẵn sàng tăng tốc khi thời khắc quyết định xuất hiện. Bản lĩnh trong từng pha đấu, quyết đoán trong từng khoảnh khắc, TAE quyết tâm tạo dấu ấn tại Survival Legacy Cup SS3!",
-        logo: "logo-tae.jpg",
+    "jkss4": {
+        name: "JK",
+        desc: "JK – Tên đầy đủ là JET KITTY. Đừng để cái tên dễ thương đánh lừa bạn. Khi bước vào chiến trường, JET KITTY luôn sẵn sàng chuyển từ đáng yêu sang đáng gờm chỉ trong tích tắc. Với lối chơi khó đoán và tinh thần không ngại va chạm, JK có thể là chú mèo ngoài đời, nhưng là mãnh thú trong trận đấu. Sẵn sàng săn chiến thắng tại Survival Legacy Cup SS4!",
+        logo: "logo-jkss4.jpg",
         country: "", 
         players: [
-            { n: "TAE.HDAC", r: "RUSHER", id: "1921590936" },
-            { n: "TAE.KAYZ", r: "RUSHER", id: "8427796049" },
-            { n: "TAE.VANDU", r: "SNIPER", id: "14784206632" },
-            { n: "TAE.EMBI", r: "SNIPER", id: "1214825454" },
-            { n: "TAE.SOI", r: "SUPPORT", id: "2778311951" }
+            { n: "JK.SEPHIRE", r: "RUSHER", id: "9330818816" },
+            { n: "JK.WY", r: "RUSHER", id: "8390009644" },
+            { n: "JK.BIBIBI", r: "RIFLER", id: "7849960599" },
+            { n: "JK.MKHANG", r: "SNIPER", id: "12456765114" },
+            { n: "JK.PAO", r: "SUPPORT", id: "5887148075" }
         ]
     }
 };
