@@ -246,82 +246,82 @@ const teamsDatabase = {
             { n: "CUP.EMBAO", r: "SUPPORT", id: "326665310" }
         ]
     },
-    "xbc": {
-        name: "XBC",
-        desc: "XBC – Tên đầy đủ là XBC. Càng áp lực, XBC càng bùng nổ. Với tinh thần quyết chiến và lối chơi không khoan nhượng, đội tuyển sẵn sàng chinh phục mọi thử thách để ghi tên mình vào những trận đấu đáng nhớ tại Survival Legacy Cup SS3!",
-        logo: "logo-xbc.jpg",
+    "tnfss2": {
+        name: "TNF",
+        desc: "TNF – Tên đầy đủ là TEAM NOT FOUND. Một cái tên tưởng như là lỗi hệ thống, nhưng lại là lời khẳng định đầy cá tính. Khi đối thủ tìm kiếm thông tin về TNF, thứ họ nhận được chỉ là sự bí ẩn. Không ai biết họ sẽ xuất hiện như thế nào, nhưng ai cũng phải dè chừng khi chạm trán. Ẩn mình trong bóng tối, bùng nổ trong thời khắc quyết định — TNF sẵn sàng tạo nên bất ngờ tại Survival Legacy Cup SS2!",
+        logo: "logo-tnfss2.jpg",
         country: "", 
         players: [
-            { n: "XBC.EMDEN", r: "RUSHER", id: "1651597235"},
-            { n: "XBC.TINA", r: "RIFLER", id: "3486653852" },
-            { n: "XBC.NGDUNG", r: "BOMBER", id: "6606575697"},
-            { n: "XBC.GIAHUY", r: "SNIPER", id: "6706177979" },
+            { n: "TNF.DHAO", r: "RUSHER", id: "15004360"},
+            { n: "TNF.QVINH", r: "RUSHER", id: "1183370030" },
+            { n: "TNF.LEYNII", r: "RIFLER", id: "561971260"},
+            { n: "TNF.AMIA", r: "RIFLER", id: "4426672086" },
             { n: "KHÔNG CÓ", a: "https://placehold.co/200x250/111/555?text=TRONG" }
         ]
     },
-    "tdt": {
-        name: "TDT",
-        desc: "TDT – Tên đầy đủ là Team Đầu Trâu. Đúng như cái tên, Team Đầu Trâu mang tinh thần lì lợm, bền bỉ và không bao giờ lùi bước trước bất kỳ đối thủ nào. Với ý chí quyết chiến và khát khao chinh phục, TDT sẵn sàng húc tung mọi thử thách để khẳng định sức mạnh tại Survival Legacy Cup SS3!",
-        logo: "logo-tdt.jpg",
+    "atess2": {
+        name: "ATE",
+        desc: "ATE – Tên đầy đủ là ATE. Aim • Trust • Execute – ngắm chuẩn mục tiêu, tin tưởng đồng đội và thực hiện kế hoạch đến cùng. ATE không phải đội tuyển thích nói nhiều, họ chọn cách chứng minh sức mạnh bằng hành động trên chiến trường. Kỷ luật trong lối chơi, quyết đoán trong giao tranh và lạnh lùng trước áp lực — ATE sẵn sàng bứt phá tại Survival Legacy Cup SS2!",
+        logo: "logo-atess2.jpg",
         country: "", 
         players: [
-            { n: "TDT.GIABAO",  r: "RUSHER", id: "9653299037" },
-            { n: "TDT.TUANANH",  r: "RIFLER", id: "13022794005" },
-            { n: "TDT.PHAMBAO", r: "SNIPER", id: "9268264276" },
-            { n: "TDT.DUCVIET",  r: "SUPPORT", id: "7297998533" },
-            { n: "TDT.DUCNAM", r: "SUPPORT", id: "6347851915" }
+            { n: "ATE.SUN",  r: "RUSHER", id: "5183160575" },
+            { n: "ATE.DBIN",  r: "RIFLER", id: "7017022761" },
+            { n: "ATE.HANA", r: "BOMBER", id: "2104295752" },
+            { n: "ATE.FOR",  r: "SNIPER", id: "6738561967" },
+            { n: "ATE.NTRI", r: "SUPPORT", id: "9348528189" }
         ]
     },
-    "he2": {
-        name: "HE",
-        desc: "HE – Tên đầy đủ là HE. Với HE, H là Heart (trái tim nhiệt huyết), E là Elite (tinh thần của những chiến binh ưu tú). Thi đấu bằng cả đam mê và bản lĩnh, HE quyết tâm tạo nên những màn trình diễn bùng nổ tại Survival Legacy Cup SS3!",
-        logo: "logo-he2.jpg",
+    "sess2": {
+        name: "SE",
+        desc: "SE – Tên đầy đủ là SE Esports. Silent Execution – im lặng nhưng đầy nguy hiểm. SE không cần trở thành tâm điểm trước khi trận đấu bắt đầu, bởi họ tin rằng kết quả cuối cùng mới là điều đáng nhớ nhất. Âm thầm tích lũy sức mạnh, bùng nổ đúng thời điểm và kết liễu gọn gàng — SE Esports sẵn sàng tạo nên bất ngờ tại Survival Legacy Cup SS2!",
+        logo: "logo-sess2.jpg",
         country: "", 
         players: [
-            { n: "HE.THEVAN", r: "RUSHER", id: "8976760504"},
-            { n: "HE.KUBILL", r: "RUSHER", id: "15516271021" },
-            { n: "HE.QUOCTHUAN", r: "SNIPER", id: "2226577011" },
-            { n: "HE.DIEMHANG", r: "SUPPORT", id: "229894720" },
-            { n: "HE.THENHAT", r: "SUPPORT", id: "2601876385" }
+            { n: "SE.HONGPHI", r: "RUSHER", id: "8241364798"},
+            { n: "SE.DUCTHIEN", r: "BOMBER", id: "15528147340" },
+            { n: "SE.TANTHINH", r: "SNIPER", id: "6839460717" },
+            { n: "SE.PHILONG", r: "SUPPORT", id: "1969967325" },
+            { n: "SE.TPHONG", r: "SUPPORT", id: "10828968012" }
         ]
     },
-    "lte": {
-        name: "LTE",
-        desc: "LTE – Tên đầy đủ là Long Trị Esports. Khi Rồng cất cánh, bầu trời chỉ còn chỗ cho kẻ mạnh. Với tinh thần quyết chiến và khát khao chiến thắng, LTE sẵn sàng bùng nổ trong từng trận đấu để ghi dấu ấn tại Survival Legacy Cup SS3!",
-        logo: "logo-lte.jpg",
+    "t2alss2": {
+        name: "T2AL",
+        desc: "T2AL – Tên đầy đủ là T2AL. Một cái tên độc đáo mang theo tinh thần của những người luôn dám khác biệt. T2AL không bước vào giải đấu để làm nền cho bất kỳ ai, mà để tự viết nên câu chuyện của riêng mình. Dù đối mặt với thử thách nào, T2AL vẫn giữ vững ý chí, sẵn sàng bùng nổ và chiến đấu hết mình tại Survival Legacy Cup SS2!",
+        logo: "logo-t2alss2.jpg",
         country: "", 
         players: [
-            { n: "LTE.TTAM", r: "RUSHER", id: "8123875526" },
-            { n: "LTE.QDAT", r: "RUSHER", id: "4752316998" },
-            { n: "LTE.GIABAO", r: "RIFLER", id: "10288568002" },
-            { n: "LTE.HDANG", r: "BOMBER", id: "4184330303" },
-            { n: "LTE.HTINH", r: "SUPPORT", id: "7984169749" }
+            { n: "T2AL.LEVOR", r: "RUSHER", id: "9050876679" },
+            { n: "T2AL.XQUYEN", r: "RIFLER", id: "5755547491" },
+            { n: "T2AL.LHDUNG", r: "BOMBER", id: "13452922839" },
+            { n: "T2AL.KTUAN", r: "SNIPER", id: "982519896" },
+            { n: "T2AL.LHTUAN", r: "SUPPORT", id: "1794081493" }
         ]
     },
-    "arty": {
-        name: "ARTY",
-        desc: "ARTY – Tên đầy đủ là ARTY KILLER. Sinh ra để săn kill, thi đấu để thống trị. Với lối chơi máu lửa và tinh thần không khoan nhượng, ARTY KILLER sẵn sàng biến mọi cuộc đối đầu thành màn trình diễn của mình tại Survival Legacy Cup SS3!",
-        logo: "logo-arty.jpg",
+    "jkss2": {
+        name: "JK",
+        desc: "JK – Tên đầy đủ là JET KITTY. Đừng để cái tên dễ thương đánh lừa bạn. Khi bước vào chiến trường, JET KITTY luôn sẵn sàng chuyển từ đáng yêu sang đáng gờm chỉ trong tích tắc. Với lối chơi khó đoán và tinh thần không ngại va chạm, JK có thể là chú mèo ngoài đời, nhưng là mãnh thú trong trận đấu. Sẵn sàng săn chiến thắng tại Survival Legacy Cup SS2!",
+        logo: "logo-jkss2.jpg",
         country: "", 
         players: [
-            { n: "ARTY.TRINH", r: "RUSHER", id: "7289909444" },
-            { n: "ARTY.KHOA", r: "RUSHER", id: "9794313196" },
-            { n: "ARTY.TUAN", r: "RIFLER", id: "10208562491" },
-            { n: "ARTY.HUNG", r: "SNIPER", id: "8970512236" },
-            { n: "ARTY.HOA", r: "SUPPORT", id: "3091870862" }
+            { n: "JK.DTHANH", r: "RUSHER", id: "9330818816" },
+            { n: "JK.WY", r: "RIFLER", id: "8390009644" },
+            { n: "JK.MINHKHANG", r: "SNIPER", id: "12456765114" },
+            { n: "JK.THYZAN", r: "SUPPORT", id: "7849960599" },
+            { n: "KHÔNG CÓ", a: "https://placehold.co/200x250/111/555?text=TRONG" }
         ]
     },
-    "pc": {
-        name: "PC",
-        desc: "PC – Tên đầy đủ là PC Esports. Giống như một cỗ máy được tối ưu để chiến thắng, PC Esports luôn vận hành với sự chính xác, kỷ luật và tốc độ. Mỗi trận đấu là một cơ hội để PC bùng nổ và khẳng định sức mạnh tại Survival Legacy Cup SS3!",
-        logo: "logo-pc.jpg",
+    "bcmss2": {
+        name: "BCM",
+        desc: "BCM – Tên đầy đủ là BCM. Beyond Competitive Mindset – vượt xa giới hạn của một tinh thần thi đấu thông thường. BCM luôn hướng đến sự tiến bộ, không ngừng hoàn thiện bản thân qua từng trận đấu. Không ngại thất bại, không sợ thử thách, chỉ tập trung vào mục tiêu phía trước — BCM sẵn sàng khẳng định bản lĩnh tại Survival Legacy Cup SS2!",
+        logo: "logo-bcmss2.jpg",
         country: "", 
         players: [
-            { n: "PC.DNDAN", r: "RUSHER", id: "7939875539" },
-            { n: "PC.LHT", r: "RUSHER", id: "9531744891" },
-            { n: "PC.HIEU", r: "RIFLER", id: "8614179975" },
-            { n: "PC.TEN", r: "SNIPER", id: "5401984097" },
-            { n: "PC.EMBE", r: "SUPPORT", id: "2124497748" }
+            { n: "BCM.ANHTHUY", r: "RUSHER", id: "6885450104" },
+            { n: "BCM.XLIGHT", r: "RUSHER", id: "7736404517" },
+            { n: "BCM.VHOANG", r: "RIFLER", id: "338291907" },
+            { n: "BCM.TGAM", r: "BOMBER", id: "2386649347" },
+            { n: "BCM.NNB", r: "SNIPER", id: "11902113344" }
         ]
     },
     "fh": {
