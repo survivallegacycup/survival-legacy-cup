@@ -324,160 +324,160 @@ const teamsDatabase = {
             { n: "BCM.NNB", r: "SNIPER", id: "11902113344" }
         ]
     },
-    "fh": {
-        name: "FH",
-        desc: "FH – Tên đầy đủ là FIRE HORSE. Như một chiến mã bùng cháy trên chiến trường, FIRE HORSE luôn lao về phía trước với tốc độ, sức mạnh và tinh thần không bao giờ bỏ cuộc. Sẵn sàng đốt cháy mọi giới hạn, FH quyết tâm tạo nên dấu ấn tại Survival Legacy Cup SS3!",
-        logo: "logo-fh.jpg",
+    "wbss2": {
+        name: "WB",
+        desc: "WB – Tên đầy đủ là WB. Wild Breakers – những kẻ phá vỡ mọi giới hạn. WB không thích đi theo lối mòn, họ luôn sẵn sàng tạo ra những pha xử lý táo bạo và những màn bứt phá bất ngờ. Càng hỗn loạn càng nguy hiểm, càng áp lực càng bùng nổ — WB quyết tâm để lại dấu ấn tại Survival Legacy Cup SS2!",
+        logo: "logo-wbss2.jpg",
         country: "", 
         players: [
-            { n: "FH.DNP", r: "RUSHER", id: "2277930623" },
-            { n: "FH.GRIZZY", r: "RUSHER", id: "1127435270" },
-            { n: "FH.DONKAI", r: "BOMBER", id: "926872567" },
-            { n: "FH.BOI", r: "SNIPER", id: "746523523" },
-            { n: "FH.HNAM",r: "SUPPORT", id: "2590142436" }
-        ]
-    },
-    "xh2": {
-        name: "XH",
-        desc: "XH – Tên đầy đủ là XH Esports. Mỗi trận đấu là một cơ hội, mỗi đối thủ là một thử thách để vượt qua. Với tinh thần thi đấu máu lửa và khát khao chiến thắng, XH Esports sẵn sàng tạo nên những khoảnh khắc bùng nổ tại Survival Legacy Cup SS3!",
-        logo: "logo-xh2.jpg",
-        country: "", 
-        players: [
-            { n: "XH.SEPRD", r: "RUSHER", id: "2944272645" },
-            { n: "XH.NERO", r: "BOMBER", id: "4477210794" },
-            { n: "XH.VHAO", r: "SNIPER", id: "8231699643" },
-            { n: "XH.ZYROX", r: "SUPPORT", id: "2205566148" },
+            { n: "WB.TRUNG", r: "RUSHER", id: "887238286" },
+            { n: "WB.TSANG", r: "BOMBER", id: "5382822250" },
+            { n: "WB.HLOI", r: "SNIPER", id: "1668278104" },
+            { n: "WB.BAO", r: "SUPPORT", id: "2004524774" },
             { n: "KHÔNG CÓ", a: "https://placehold.co/200x250/111/555?text=TRONG"}
         ]
     },
-    "ttr": {
-        name: "TTR",
-        desc: "TTR – Tên đầy đủ là Twin Tigger Reigh. Mang hình ảnh của những mãnh hổ song hành, Twin Tigger Reigh luôn thi đấu với sự ăn ý, tốc độ và bản lĩnh. Không ngại đối đầu với bất kỳ thử thách nào, TTR sẵn sàng săn lấy chiến thắng và khẳng định vị thế tại Survival Legacy Cup SS3!",
-        logo: "logo-ttr.jpg",
+    "ptess2": {
+        name: "PTE",
+        desc: "PTE – Tên đầy đủ là PTE. Power • Tactics • Excellence – sức mạnh, chiến thuật và sự xuất sắc. PTE không chọn lối chơi an toàn, mà chọn cách đối mặt với thử thách bằng bản lĩnh và sự tự tin. Càng áp lực càng quyết tâm, càng giao tranh càng bùng nổ — PTE sẵn sàng khẳng định vị thế tại Survival Legacy Cup SS2!",
+        logo: "logo-ptess2.jpg",
         country: "", 
         players: [
-            { n: "TTR.EMDZET", r: "RUSHER", id: "5514960658" },
-            { n: "TTR.EMPTY", r: "RUSHER", id: "7593775838" },
-            { n: "TTR.WANZT", r: "BOMBER", id: "4077941419" },
-            { n: "TTR.BABYBOI", r: "SNIPER", id: "2709789364" },
-            { n: "TTR.JADETEE", r: "SUPPORT", id: "6752608040" }
+            { n: "PTE.TDAT", r: "RUSHER", id: "9301244448" },
+            { n: "PTE.GIAHUY", r: "BOMBER", id: "327798964" },
+            { n: "PTE.PHUCBO", r: "SNIPER", id: "1184142843" },
+            { n: "PTE.NTA", r: "SUPPORT", id: "638505253" },
+            { n: "PTE.MSANG", r :"SUPPORT", id: "7961250457"}
         ]
     },
-    "mix": {
-        name: "MIX",
-        desc: "MIX – Tên đầy đủ là MIX Esports. Đúng như cái tên, MIX Esports là sự hòa quyện giữa kỹ năng, chiến thuật và tinh thần đồng đội. Với lối chơi linh hoạt và quyết tâm không lùi bước, MIX sẵn sàng tạo nên bất ngờ và khẳng định bản lĩnh tại Survival Legacy Cup SS3!",
-        logo: "logo-mix.jpg",
+    "gdass2": {
+        name: "GDA",
+        desc: "GDA – Tên đầy đủ là Gành Dầu Academy. Là tập thể những tuyển thủ trẻ đầy nhiệt huyết, GDA luôn sẵn sàng học hỏi, phát triển và chinh phục thử thách. Mỗi trận đấu là một cơ hội trưởng thành, mỗi chiến thắng là một bước tiến mới — GDA quyết tâm tỏa sáng tại Survival Legacy Cup SS2!",
+        logo: "logo-gdass2.jpg",
         country: "", 
         players: [
-            { n: "MIX.VMA", r: "RUSHER", id: "6446192753" },
-            { n: "MIX.SUT", r: "RIFLER", id: "10789157722" },
-            { n: "MIX.BIDAY", r: "BOMBER", id: "7325713391" },
-            { n: "MIX.TQUAN", r: "SNIPER", id: "13306468362" },
+            { n: "GDA.CTHIEN", r: "RUSHER", id: "7547340384" },
+            { n: "GDA.WAN", r: "BOMBER", id: "9956040958" },
+            { n: "GDA.NDUL", r: "SNIPER", id: "7720754299" },
+            { n: "GDA.MHOA", r: "SNIPER", id: "641104087" },
+            { n: "GDA.NUTS", r: "SUPPORT", id: "6752608040" }
+        ]
+    },
+    "4svss2": {
+        name: "4SV",
+        desc: "4SV – Tên đầy đủ là 4SV. Four Strong Voices – bốn tiếng nói, một mục tiêu. Sức mạnh của 4SV không đến từ cá nhân xuất sắc nhất, mà đến từ sự đồng lòng của cả tập thể. Đoàn kết để chiến đấu, quyết tâm để chiến thắng — 4SV sẵn sàng khẳng định bản thân tại Survival Legacy Cup SS2!",
+        logo: "logo-4svss2.jpg",
+        country: "", 
+        players: [
+            { n: "4SV.INZAGHI", r: "RUSHER", id: "10662958879" },
+            { n: "4SV.ITAR", r: "RIFLER", id: "6309254787" },
+            { n: "4SV.CUSINA", r: "BOMBER", id: "4461929512" },
+            { n: "4SV.SIKIBIDI", r: "SNIPER", id: "2421066275s" },
             { n: "KHÔNG CÓ", a: "https://placehold.co/200x250/111/555?text=TRONG" }
         ]
     },
-    "isea": {
-        name: "ISEA",
-        desc: "ISEA – Tên đầy đủ là ISEA Esports. Như những con sóng giữa đại dương, ISEA Esports càng gặp thử thách càng bùng lên mạnh mẽ. Với tinh thần quyết chiến và khát khao chinh phục, ISEA sẵn sàng vượt mọi giới hạn để tạo nên dấu ấn tại Survival Legacy Cup SS3!",
-        logo: "logo-isea.jpg",
+    "fhss2": {
+        name: "FH",
+        desc: "FH – Tên đầy đủ là FIRE HORSE. Như một chiến mã bùng cháy trên chiến trường, FIRE HORSE luôn lao về phía trước với tốc độ, sức mạnh và tinh thần không bao giờ bỏ cuộc. Sẵn sàng đốt cháy mọi giới hạn, FH quyết tâm tạo nên dấu ấn tại Survival Legacy Cup SS2!",
+        logo: "logo-fhss2.jpg",
         country: "", 
         players: [
-            { n: "ISEA.LUAN", r: "RUSHER", id: "2653093397" },
-            { n: "ISEA.HANA", r: "RIFLER", id: "2104295752" },
-            { n: "ISEA.AMIA", r: "BOMBER", id: "4426672086" },
-            { n: "ISEA.MIN", r: "SNIPER", id: "3262117908" },
-            { n: "ISEA.BIN", r: "SUPPORT", id: "9348528189" }
+            { n: "FH.DKHANG", r: "RUSHER", id: "2590142436" },
+            { n: "FH.JOHNSON", r: "RUSHER", id: "926872567" },
+            { n: "FH.NPS", r: "SNIPER", id: "746523523" },
+            { n: "FH.SADER", r: "SUPPORT", id: "2277930623" },
+            { n: "KHÔNG CÓ", a: "https://placehold.co/200x250/111/555?text=TRONG" }
         ]
     },
-    "vle": {
-        name: "VLE",
-        desc: "VLE – Tên đầy đủ là VL Esports. Bình tĩnh khi nhập cuộc, bùng nổ khi giao tranh. VL Esports mang theo tinh thần của những chiến binh không ngại va chạm và quyết tâm chiến đấu đến cùng để khẳng định bản lĩnh tại Survival Legacy Cup SS3!",
-        logo: "logo-vle.jpg",
+    "lgcss2": {
+        name: "LGC",
+        desc: "LGC – Tên đầy đủ là LEGACY. Di sản không được tạo nên chỉ bằng lời nói, mà bằng những trận đấu và những chiến thắng được ghi nhớ theo thời gian. LGC bước vào chiến trường với khát khao để lại dấu ấn của riêng mình, chiến đấu hết mình và viết tiếp di sản tại Survival Legacy Cup SS2!",
+        logo: "logo-lgcss2.jpg",
         country: "", 
         players: [
-            { n: "VLE.KHANHTOAN", r: "RUSHER", id: "1466891354" },
-            { n: "VLE.VANHIEU",r: "BOMBER", id: "931508938" },
-            { n: "VLE.MINHDUC", r: "SNIPER", id: "1047846802" },
-            { n: "VLE.VIETHUNG", r: "SNIPER", id: "1679326020" },
-            { n: "VLE.SYTUAN", r: "SUPPORT", id: "1812440436" }
+            { n: "LGC.BLAM", r: "RUSHER", id: "464320039" },
+            { n: "LGC.KREW",r: "RUSHER", id: "9412171548" },
+            { n: "LGC.QNHIM", r: "SNIPER", id: "9057175396" },
+            { n: "LGC.CUSHIN", r: "SUPPORT", id: "1779283386" },
+            { n: "LGC.BOP", r: "SUPPORT", id: "1171104210" }
         ]
     },
-    "b52e": {
-        name: "B52E",
-        desc: "B52E – Tên đầy đủ là B52 Esports. Chỉ cần B52E xuất trận, bầu không khí lập tức nóng lên. Với những pha xử lý bùng nổ và tinh thần không ngại đối đầu, B52 Esports quyết tâm làm rung chuyển mọi trận đấu tại Survival Legacy Cup SS3!",
-        logo: "logo-b52e.jpg",
+    "gdess2": {
+        name: "GDE",
+        desc: "GDE – Tên đầy đủ là Gành Dầu Esports. Mang theo niềm tự hào và tinh thần chiến đấu của tập thể, GDE luôn sẵn sàng đối mặt với mọi thử thách trên chiến trường. Bản lĩnh trong từng pha giao tranh, quyết tâm trong từng trận đấu — GDE hướng đến việc khẳng định tên tuổi tại Survival Legacy Cup SS2!",
+        logo: "logo-gdess2.jpg",
         country: "", 
         players: [
-            { n: "B52E.ORHUN", r: "RUSHER", id: "10886768826" },
-            { n: "B52E.MAKCUONG", r: "RUSHER", id: "3888878565" },
-            { n: "B52E.LEVORZ", r: "BOMBER", id: "9050876679" },
-            { n: "B52E.SEBEO",r: "SNIPER", id: "6353698339" },
-            { n: "B52E.NGBAO", r: "SUPPORT", id: "4439122562" }
+            { n: "GDE.KIWI", r: "RUSHER", id: "15339713714" },
+            { n: "GDE.VANKHANH", r: "RUSHER", id: "7922229586" },
+            { n: "GDE.TIENDAT", r: "SNIPER", id: "9764404235" },
+            { n: "GDE.KIMANH",r: "SNIPER", id: "9330363250" },
+            { n: "GDE.HAO", r: "SUPPORT", id: "9189412602" }
         ]
     },
-    "đstn": {
-        name: "ĐSTN",
-        desc: "ĐSTN – Tên đầy đủ là ĐSTN Esports. Có những cái tên được nhớ bằng lời nói, còn ĐSTN Esports muốn được nhớ bằng những màn trình diễn. Với bản lĩnh và khát khao chiến thắng, đội tuyển quyết tâm bùng nổ và khẳng định vị thế tại Survival Legacy Cup SS3!",
-        logo: "logo-đstn.jpg",
+    "ktgss2": {
+        name: "KTG",
+        desc: "KTG – Tên đầy đủ là KING TIGER. Mang khí chất của một vị vua và sự hung mãnh của mãnh hổ, KTG luôn sẵn sàng lao vào những cuộc đối đầu khốc liệt nhất. Uy lực như hổ vương, bản lĩnh như nhà vua — KTG quyết tâm gầm vang tại Survival Legacy Cup SS2!",
+        logo: "logo-ktgss2.jpg",
         country: "", 
         players: [
-            { n: "ĐSTN.U7E", r: "RUSHER", id: "6775937715" },
-            { n: "ĐSTN.KHUNG", r: "RUSHER", id: "9061635777" },
-            { n: "ĐSTN.NVX", r: "SNIPER", id: "6556475658" },
-            { n: "ĐSTN.TOP1", r: "SUPPORT", id: "3201187189" },
-            { n: "ĐSTN.HDUNG", r: "SUPPORT", id: "6118395618" }
+            { n: "KTG.LION", r: "RUSHER", id: "677558905" },
+            { n: "KTG.TIGER", r: "RIFLER", id: "25765433777" },
+            { n: "KTG.CAT", r: "BOMBER", id: "622659438" },
+            { n: "KTG.FOX", r: "SNIPER", id: "3200843467" },
+            { n: "KTG.DUCK", r: "SUPPORT", id: "2340886222" }
         ]
     },
-    "vg": {
-        name: "VG",
-        desc: "VG – Tên đầy đủ là VG. Mang tinh thần Victory & Glory – chiến thắng và vinh quang, VG luôn bước vào trận đấu với khát khao chinh phục đỉnh cao. Không ngại thử thách, không lùi bước trước bất kỳ đối thủ nào, VG quyết tâm ghi tên mình vào những khoảnh khắc rực rỡ tại Survival Legacy Cup SS3!",
-        logo: "logo-vg.jpg",
+    "ovnss2": {
+        name: "OVN",
+        desc: "OVN – Tên đầy đủ là OBLIVION. Đội tuyển đại diện cho “Oblivion – Sự xóa sổ”, nơi mọi dấu vết của đối thủ đều bị quét sạch không thương tiếc. OVN không chỉ chiến thắng-họ khiến kẻ địch “biến mất” khỏi bản đồ tại Survival Legacy Cup SS2!",
+        logo: "logo-ovnss2.jpg",
         country: "", 
         players: [
-            { n: "VG.THTRIEU", r: "RUSHER", id: "1564568025" },
-            { n: "VG.BLAN", r: "RUSHER", id: "11895984874" },
-            { n: "VG.XHT", r: "SNIPER", id: "9322506139" },
-            { n: "VG.MTRI", r: "SNIPER", id: "7813968373" },
-            { n: "VG.XHT2",  r: "SUPPORT", id: "9363415496" }
+            { n: "OVN.TU", r: "RUSHER", id: "9881928946" },
+            { n: "OVN.DUYEN", r: "RUSHER", id: "2299068955" },
+            { n: "OVN.TINH", r: "BOMBER", id: "8866941793" },
+            { n: "OVN.TIEN", r: "SNIPER", id: "12350585814" },
+            { n: "OVN.DUY",  r: "SUPPORT", id: "12576856883" }
         ]
     },
-    "st": {
-        name: "ST",
-        desc: "ST – Tên đầy đủ là Shart TiTan. Khi Titan thức tỉnh, chiến trường chỉ còn chỗ cho những kẻ mạnh. Với tinh thần quyết chiến và khát khao chiến thắng, ST sẵn sàng bùng nổ trong từng trận đấu để tạo nên dấu ấn tại Survival Legacy Cup SS3!",
-        logo: "logo-st.jpg",
+    "vktss2": {
+        name: "VKT",
+        desc: "VKT – Tên đầy đủ là Vân Kiếm Tôn. Mang khí chất của một kiếm khách giữa phong vân, Vân Kiếm Tôn không tìm kiếm chiến thắng bằng lời nói mà bằng từng đường kiếm sắc bén trên chiến trường. Kiếm đã xuất, không lùi bước; trận đã vào, chỉ hướng đến chiến thắng tại Survival Legacy Cup SS2!",
+        logo: "logo-vktss2.jpg",
         country: "", 
         players: [
-            { n: "ST.DLUONG", r: "RUSHER", id: "6470814423" },
-            { n: "ST.NGAO", r: "RIFLER", id: "1756227636" },
-            { n: "ST.TDUNG",r: "SNIPER", id: "1982342638" },
-            { n: "ST.VP", r: "SUPPORT", id: "5329839627" },
-            { n: "KHÔNG CÓ", a: "https://placehold.co/200x250/111/555?text=TRONG", r: "TRONG" }
+            { n: "VKT.MCUONG", r: "RUSHER", id: "7809833038" },
+            { n: "VKT.HIEUZZ", r: "RUSHER", id: "9849569769" },
+            { n: "VKT.TONGCHU",r: "RIFLER", id: "5755160631" },
+            { n: "VKT.TL", r: "SNIPER", id: "13382599307" },
+            { n: "VKT.NHOMM", r: "SUPPORT", id: "7068947577S"}
         ]
     },
-    "cte": {
-        name: "CTE",
-        desc: "CTE – Tên đầy đủ là CTE. Với ý chí của những Champions Together Forever, CTE tin rằng sức mạnh lớn nhất đến từ sự gắn kết. Chiến đấu như một tập thể, quyết thắng như một đội tuyển, CTE quyết tâm tạo nên dấu ấn tại Survival Legacy Cup SS3!",
-        logo: "logo-cte.jpg",
+    "xhss2": {
+        name: "XH",
+        desc: "XH – Tên đầy đủ là XH ESPORTS. Đội tuyển đại diện cho “Xtreme Hunt – Cuộc săn cực hạn”, luôn truy đuổi đối thủ đến cùng và không cho bất kỳ cơ hội trốn thoát nào. XH không chỉ tìm mục tiêu—họ săn đến khi kết thúc hoàn toàn tại Survival Legacy Cup SS2!",
+        logo: "logo-xhss2.jpg",
         country: "", 
         players: [
-            { n: "CTE.GBAO", r: "RUSHER", id: "14501843024" },
-            { n: "CTE.HOANGPHU", r: "RUSHER", id: "692914271" },
-            { n: "CTE.LONGVU", r: "SNIPER", id: "2934208943" },
-            { n: "CTE.BI", r: "SUPPORT", id: "11849275511" },
-            { n: "KHÔNG CÓ", a: "https://placehold.co/200x250/111/555?text=TRONG", r: "TRONG" }
+            { n: "XH.VINHHAO", r: "RUSHER", id: "2944272645" },
+            { n: "XH.GIABAO", r: "RUSHER", id: "8231699643" },
+            { n: "XH.KHANH", r: "BOMBER", id: "2205566148" },
+            { n: "XH.VANLONG", r: "SNIPER", id: "7433774761" },
+            { n: "XH.HUUNHAN", r: "SUPPORT", id: "4477210794" }
         ]
     },
-    "km2": {
-        name: "KM",
-        desc: "KM – Tên đầy đủ là KM Esports. Mang tinh thần Kill • Master, KM Esports luôn bước vào trận đấu với bản lĩnh của những người làm chủ mọi cuộc giao tranh. Không ngại đối đầu, không bỏ lỡ cơ hội, KM quyết tâm chinh phục chiến thắng và khẳng định vị thế tại Survival Legacy Cup SS3!",
-        logo: "logo-km2.jpg",
+    "dsss2": {
+        name: "DS",
+        desc: "DS – Tên đầy đủ là DIMSUM. Đừng để cái tên đồ ăn khiến bạn mất cảnh giác. DS có thể mang đến cảm giác vui vẻ bên ngoài, nhưng khi vào trận lại là một tập thể đầy khó chịu và khó lường. Nhỏ gọn nhưng chất lượng, đơn giản nhưng hiệu quả — DS sẵn sàng hấp chín mọi thử thách tại Survival Legacy Cup SS2!",
+        logo: "logo-dsss2.jpg",
         country: "", 
         players: [
-            { n: "KM.WRONGUS", r: "RUSHER", id: "3016983320" },
-            { n: "KM.GUNNERS", r: "RIFLER", id: "5975854296" },
-            { n: "KM.PHAMTIEN", r: "BOMBER", id: "2315234124" },
-            { n: "KM.EZLOVE", r: "SNIPER", id: "2146266439" },
-            { n: "KHÔNG CÓ", a: "https://placehold.co/200x250/111/555?text=TRONG", r: "TRONG" }
+            { n: "DS.HOANGQUAN", r: "RUSHER", id: "184810428" },
+            { n: "DS.GIABAO", r: "RIFLER", id: "14558452444" },
+            { n: "DS.CHIBAO", r: "RIFLER", id: "7124555583" },
+            { n: "DS.HOANHIEP", r: "SNIPER", id: "3971532776" },
+            { n: "DS.VANSON", r: "SUPPORT", id: "2347132182" }
         ]
     },
     "sgp": {
