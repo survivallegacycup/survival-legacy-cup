@@ -181,69 +181,69 @@ const teamsDatabase = {
             { n: "LKE.VANCUA", r: "SUPPORT", id: "1577337727" }
         ]
     },
-    "nok2": {
-        name: "NOK",
-        desc: "NOK – Tên đầy đủ là NOKARA. Mang trong mình tinh thần không ngại va chạm và luôn hướng đến những màn trình diễn bùng nổ, bước vào giải đấu với mục tiêu không chỉ góp mặt mà còn để lại dấu ấn. Mỗi trận đấu là một cơ hội để khẳng định bản lĩnh và đưa cái tên NOKARA vươn xa tại Survival Legacy Cup SS3!",
-        logo: "logo-nok2.jpg",
+    "pless2": {
+        name: "PLE",
+        desc: "PLE – Tên đầy đủ là PLE. Power • Legacy • Elite – sức mạnh, di sản và tinh thần tinh anh. PLE bước vào trận đấu với khát khao tạo nên dấu ấn của riêng mình, không ngại đối đầu với bất kỳ thử thách nào. Mỗi trận đấu là một cơ hội để khẳng định bản lĩnh, mỗi chiến thắng là một bước tiến đến vinh quang — PLE sẵn sàng bùng nổ tại Survival Legacy Cup SS2!",
+        logo: "logo-pless2.jpg",
         country: "",
         players: [
-            { n: "NOK.LAVIDA", r: "RUSHER", id: "3225479273" },
-            { n: "NOK.THANHDAT", r: "RUSHER", id: "2491284727" },
-            { n: "NOK.VOHUNG", r: "RIFLER", id: "8776372081" },
-            { n: "NOK.CRY", r: "SUPPORT", id: "2763014509" },
-            { n: "NOK.NOVA", r: "SUPPORT", id: "1824618270" }
+            { n: "PLE.MHIEU", r: "RUSHER", id: "13221464596" },
+            { n: "PLE.HOANGAN", r: "RUSHER", id: "6213932462" },
+            { n: "PLE.HBO", r: "BOMBER", id: "7814538937" },
+            { n: "PLE.NPHUC", r: "SNIPER", id: "276450094" },
+            { n: "PLE.DLUONG", r: "SUPPORT", id: "4375352993" }
         ]
     },
-    "lke": {
-        name: "LKE",
-        desc: "LKE – Tên đầy đủ là LÊ KIÊN ESPORTS. Không cần hô hào quá lớn, LKE để kỹ năng lên tiếng. Mỗi pha giao tranh là một lời khẳng định, mỗi chiến thắng là một dấu ấn. Khi đã bước vào trận đấu, mục tiêu duy nhất của LÊ KIÊN ESPORTS là khiến cái tên của mình được nhắc đến nhiều nhất tại Survival Legacy Cup SS3!",
-        logo: "logo-lke.jpg",
+    "ftss2": {
+        name: "FT",
+        desc: "FT – Tên đầy đủ là Fearless Team. Nỗi sợ là thứ khiến nhiều người chùn bước, nhưng với FT, đó chỉ là động lực để tiến lên. Dù đối thủ mạnh đến đâu hay thế trận khó khăn thế nào, Fearless Team vẫn giữ vững tinh thần chiến đấu và quyết tâm đến cùng. Không e ngại, không lùi bước, không bỏ cuộc — FT sẵn sàng chinh phục Survival Legacy Cup SS2!",
+        logo: "logo-ftss2.jpg",
         country: "", 
         players: [
-            { n: "LKE.EMBEN", r: "RUSHER", id: "355294300"},
-            { n: "LKE.KEYD", r: "BOMBER", id: "2055349409"},
-            { n: "LKE.EMTHIEN", r: "SNIPER", id: "1693177119"},
-            { n: "LKE.EMBOY", r: "SNIPER", id: "11487790754"},
-            { n: "LKE.EMPHUC", r: "SUPPORT", id: "3209197272"}
+            { n: "FT.W4U", r: "RUSHER", id: "6456961336" },
+            { n: "FT.JVARZ", r: "BOMBER", id: "4363598414" },
+            { n: "FT.THANHDAI", r: "SNIPER", id: "3659332602" },
+            { n: "FT.MILLOW", r: "SUPPORT", id: "2444693631" },
+            { n: "KHÔNG CÓ", a: "https://placehold.co/200x250/111/555?text=TRONG" }
         ] 
     },
-    "vkt": {
-        name: "VKT",
-        desc: "VKT – Tên đầy đủ là Vân Kiếm Tôn. Tựa như một thanh kiếm được tôi luyện qua muôn vàn thử thách, Vân Kiếm Tôn bước vào mỗi trận đấu với sự sắc bén, bản lĩnh và quyết tâm chinh phục mọi giới hạn. Không chỉ hướng đến chiến thắng, VKT còn muốn khắc ghi tên mình bằng những màn trình diễn đầy khí chất và khẳng định đẳng cấp tại Survival Legacy Cup SS3!",
-        logo: "logo-vkt.jpg",
+    "4whd": {
+        name: "4WHD",
+        desc: "4WHD – Tên đầy đủ là 4 Vui Vẻ Hoà Đồng. Không mang đến hình ảnh của những chiến binh lạnh lùng, 4WHD bước vào giải đấu với tinh thần đoàn kết, tích cực và luôn giữ ngọn lửa đam mê trong từng trận đấu. Nhưng đừng để sự vui vẻ đánh lừa, bởi khi đã vào trận, cả đội luôn chiến đấu hết mình vì màu cờ sắc áo. Vui vẻ ngoài trận đấu, quyết liệt trong trận đấu — 4WHD sẵn sàng tạo nên bất ngờ tại Survival Legacy Cup SS2!",
+        logo: "logo-4whdss2.jpg",
         country: "", 
         players: [
-            { n: "VKT.VANTUAN", r: "RUSHER", id: "1285407799" },
-            { n: "VKT.VANTHAO", r: "RIFLER", id: "64897553" },
-            { n: "VKT.KADO", r: "BOMBER", id: "1986949358" },
-            { n: "VKT.MY", r: "SNIPER", id: "9353533657" },
-            { n: "VKT.BOYWALK", r: "SUPPORT", id: "11041145321" }
+            { n: "4WHD.TUANANH", r: "RUSHER", id: "2015939299" },
+            { n: "4WHD.MNHAT", r: "RUSHER", id: "712500213" },
+            { n: "4WHD.TRUONGAN", r: "RUSHER", id: "4359140364" },
+            { n: "4WHD.TIGER", r: "SNIPER", id: "4109105748" },
+            { n: "4WHD.HUUPHUOC", r: "SUPPORT", id: "6548727578" }
         ]
     },
-    "nse": {
-        name: "NSE",
-        desc: "NSE – Tên đầy đủ là NEW STAR ESPORTS. Mang khát vọng của những ngôi sao mới đang vươn mình tỏa sáng, NEW STAR ESPORTS không ngại đối đầu với bất kỳ thử thách nào. Với tinh thần thi đấu máu lửa, lối chơi đầy đột phá và khát khao chinh phục đỉnh cao, NSE sẵn sàng biến mỗi trận đấu thành cơ hội để khẳng định tên tuổi và tỏa sáng rực rỡ tại Survival Legacy Cup SS3!",
-        logo: "logo-nse.jpg", 
+    "tglss2": {
+        name: "TGL",
+        desc: "TGL – Tên đầy đủ là Team Gia Lai. Mang tinh thần của vùng đất Tây Nguyên đầy nắng gió, TGL bước vào chiến trường với sự lì lợm, mạnh mẽ và không ngại thử thách. Không chỉ thi đấu để chiến thắng, TGL còn quyết tâm mang dấu ấn Gia Lai đến Survival Legacy Cup SS2!",
+        logo: "logo-tglss2.jpg", 
         country: "", 
         players: [
-            { n: "NSE.MAC", r: "RUSHER", id: "10808635533" },
-            { n: "NSE.MINHTRIDZ", r: "BOMBER", id: "392360699" },
-            { n: "NSE.MINHTRI", r: "SNIPER", id: "2038614210" },
-            { n: "NSE.TRANLONG", r: "SUPPORT", id: "1728096984" },
-            { n: "KHÔNG CÓ", a: "https://placehold.co/200x250/111/555?text=TRONG" }
+            { n: "TGL.DKHOI", r: "RUSHER", id: "1022337301" },
+            { n: "TGL.HPHONG", r: "BOMBER", id: "9431656118" },
+            { n: "TGL.GIAHAO", r: "SNIPER", id: "4371542961" },
+            { n: "TGL.DKHOA", r: "SNIPER", id: "876012041" },
+            { n: "TGL.CPHAT", e: "SUPPORT", id: "9712450395"}
         ]
     },
-    "ade2": {
-        name: "ADE",
-        desc: "ADE – Tên đầy đủ là ADE. Không cần một cái tên quá dài để tạo dấu ấn, ADE chọn cách khiến đối thủ phải ghi nhớ bằng màn trình diễn trên chiến trường. Với tinh thần không lùi bước, khả năng thích nghi linh hoạt và khát khao chinh phục từng trận đấu, ADE sẵn sàng bứt phá, tạo nên những khoảnh khắc đáng nhớ và khẳng định bản lĩnh tại Survival Legacy Cup SS3!",
-        logo: "logo-ade2.jpg",
+    "cupss2": {
+        name: "CUP",
+        desc: "CUP – Tên đầy đủ là CUP. Có những đội tuyển chiến đấu vì danh tiếng, có những đội tuyển chiến đấu vì phần thưởng. Nhưng với CUP, mục tiêu chỉ có một: nâng cao chiếc cúp vô địch. Mang trong mình khát khao chinh phục và tinh thần không bao giờ bỏ cuộc, CUP luôn sẵn sàng đối đầu với mọi thử thách. Đường đến vinh quang không dễ dàng, nhưng CUP sẽ chiến đấu đến cùng tại Survival Legacy Cup SS2!",
+        logo: "logo-cupss2.jpg",
         country: "", 
         players: [
-            { n: "ADE.TNGHIA", r: "RUSHER", id: "4275108112" },
-            { n: "ADE.TPHONG", r: "RUSHER", id: "6794901944" },
-            { n: "ADE.WHUY", r: "SNIPER", id: "983026618" },
-            { n: "ADE.DOKI", r: "SNIPER", id: "8095908384" },
-            { n: "ADE.TBON", r: "SUPPORT", id: "3768548347" }
+            { n: "CUP.EMHUY", r: "RUSHER", id: "9598223872" },
+            { n: "CUP.EMCA", r: "BOMBER", id: "3033106390" },
+            { n: "CUP.EMBI", r: "BOMBER", id: "9979079889" },
+            { n: "CUP.EMDAY", r: "SNIPER", id: "2678630725" },
+            { n: "CUP.EMBAO", r: "SUPPORT", id: "326665310" }
         ]
     },
     "xbc": {
