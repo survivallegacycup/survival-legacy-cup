@@ -642,7 +642,7 @@ const teamsDatabase = {
         logo: "logo-ptess4.jpg",
         country: "", 
         players: [
-            { n: "PTE.TRIEUVY", r: "RUSHER", id: "10676409066" },
+            { n: "PTE.TRIEUVY", r: "RUSHER", id: "1814073359" },
             { n: "PTE.MINH", r: "SNIPER", id: "7456885371" },
             { n: "PTE.MEOBINH", r: "SNIPER", id: "10676409066" },
             { n: "PTE.REYKER", r: "SUPPORT", id: "7934151585" },
