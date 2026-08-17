@@ -437,7 +437,7 @@ button:hover {
     /* CHÌA KHÓA: Trả lại nền trong suốt nguyên bản cho Logo */
     background: transparent !important; 
     
-    border: 3px solid transparent !important; 
+    border: 2px solid white !important;
     border-radius: 8px;
     padding: 0px;
     transition: all 0.3s ease; 
@@ -2471,17 +2471,4 @@ img {
     border: 4px solid #ffcc00 !important;
     border-radius: 8px;
     box-shadow: 0 0 20px rgba(255, 204, 0, 0.6);
-}
-/* 1. Viền trắng mặc định cho tất cả 48 logo đội tuyển */
-.t-icon img {
-    border: 2px solid white;      /* Viền trắng dày 2px */
-    border-radius: 8px;           /* Bo góc nhẹ cho mượt (bạn có thể chỉnh số này) */
-    box-sizing: border-box;       /* Ép viền không làm lệch kích thước ảnh */
-    transition: all 0.3s ease;    /* Hiệu ứng mờ ảo mượt mà khi chuyển màu */
-}
-
-/* 2. Viền vàng và phát sáng khi đội đó được click (chế độ active) */
-.t-icon.active img {
-    border: 2px solid #FFD700;    /* Đổi sang viền màu vàng rực */
-    box-shadow: 0 0 12px #FFD700; /* Thêm hào quang tỏa sáng xung quanh logo */
 }
