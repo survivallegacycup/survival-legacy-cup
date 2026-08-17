@@ -207,7 +207,7 @@ const teamsDatabase = {
             { n: "KHÔNG CÓ", a: "https://placehold.co/200x250/111/555?text=TRONG" }
         ] 
     },
-    "4whd": {
+    "4whdss2": {
         name: "4WHD",
         desc: "4WHD – Tên đầy đủ là 4 Vui Vẻ Hoà Đồng. Không mang đến hình ảnh của những chiến binh lạnh lùng, 4WHD bước vào giải đấu với tinh thần đoàn kết, tích cực và luôn giữ ngọn lửa đam mê trong từng trận đấu. Nhưng đừng để sự vui vẻ đánh lừa, bởi khi đã vào trận, cả đội luôn chiến đấu hết mình vì màu cờ sắc áo. Vui vẻ ngoài trận đấu, quyết liệt trong trận đấu — 4WHD sẵn sàng tạo nên bất ngờ tại Survival Legacy Cup SS2!",
         logo: "logo-4whdss2.jpg",
