@@ -480,95 +480,95 @@ const teamsDatabase = {
             { n: "DS.VANSON", r: "SUPPORT", id: "2347132182" }
         ]
     },
-    "sgp": {
+    "msess2": {
+        name: "MSE",
+        desc: "MSE – Tên đầy đủ là Master Kill Esports. Sinh ra để săn mạng hạ gục, MSE luôn tìm kiếm cơ hội để áp đảo đối thủ bằng những pha giao tranh đầy quyết đoán. Mỗi lần nổ súng là một lần tạo khác biệt, mỗi pha giao tranh là cơ hội để tỏa sáng — MSE sẵn sàng bùng nổ tại Survival Legacy Cup SS2!",
+        logo: "logo-msess2.jpg",
+        country: "", 
+        players: [
+            { n: "MSE.XLIGHT", r: "RUSHER", id: "1743269057" },
+            { n: "MSE.BECA", r: "RUSHER", id: "1234971029" },
+            { n: "MSE.KING", r: "BOMBER", id: "2325777762" },
+            { n: "MSE.KAY", r: "SUPPORT", id: "5622866722" },
+            { n: "MSE.LUFFY", r: "SUPPORT", id: "7430013561" }
+        ]
+    },
+    "tbess2": {
+        name: "TBE",
+        desc: "TBE – Tên đầy đủ là Tam Bình Esports. Mang theo tinh thần đoàn kết và ý chí chiến đấu bền bỉ, TBE luôn sẵn sàng đối mặt với mọi thử thách trên chiến trường. Bình tĩnh trong chiến thuật, bùng nổ trong giao tranh — Tam Bình Esports quyết tâm ghi dấu ấn tại Survival Legacy Cup SS2!",
+        logo: "logo-tbess2.jpg",
+        country: "", 
+        players: [
+            { n: "TBE.XBINN", r: "RUSHER", id: "535936843" },
+            { n: "TBE.VULONG", r: "RIFLER", id: "6521256932" },
+            { n: "TBE.S4ZG", r: "BOMBER", id: "154206856" },
+            { n: "TBE.TANHUY", r: "SNIPER", id: "1214978140" },
+            { n: "TBE.BON", r: "SUPPORT", id: "709852756" }
+        ]
+    },
+    "adess2": {
+        name: "ADE",
+        desc: "ADE – Tên đầy đủ là ADE. Không cần một cái tên quá dài để tạo dấu ấn, ADE chọn cách khiến đối thủ phải ghi nhớ bằng màn trình diễn trên chiến trường. Với tinh thần không lùi bước, khả năng thích nghi linh hoạt và khát khao chinh phục từng trận đấu, ADE sẵn sàng bứt phá, tạo nên những khoảnh khắc đáng nhớ và khẳng định bản lĩnh tại Survival Legacy Cup SS2!",
+        logo: "logo-adess2.jpg",
+        country: "", 
+        players: [
+            { n: "ADE.HYZORX7", r: "RUSHER", id: "1029129000" },
+            { n: "ADE.TNGHIA", r: "RUSHER", id: "4275108112" },
+            { n: "ADE.CONCUA7M", r: "BOMBER", id: "390416383" },
+            { n: "ADE.POTENTO", r: "SNIPER", id: "983026618" },
+            { n: "ADE.MEMORY", r: "SUPPORT", id: "3768548347"  }
+        ]
+    },
+    "vtess2": {
+        name: "VTE",
+        desc: "VTE – Tên đầy đủ là VTE Esports. Với tinh thần không ngừng tiến lên và khát khao chinh phục, VTE luôn sẵn sàng bước vào mọi trận đấu bằng sự tự tin và quyết tâm cao nhất. Càng áp lực càng bản lĩnh, càng thử thách càng mạnh mẽ — VTE quyết tâm tỏa sáng tại Survival Legacy Cup SS2!",
+        logo: "logo-vtess2.jpg",
+        country: "", 
+        players: [
+            { n: "VTE.UTKHANH", r: "RUSHER", id: "14839201287" },
+            { n: "VTE.TUANPHI", r: "RIFLER", id: "12927517522" },
+            { n: "VTE.NGUYEN", r: "BOMBER", id: "2946044939" },
+            { n: "VTE.VANNHUAN", r: "BOMBER", id: "15873084690" },
+            { n: "VTE.THU", r: "SUPPORT", id: "7444419352" }
+        ]
+    },
+    "tvkss2": {
+        name: "TVK",
+        desc: "TVK – Tên đầy đủ là The Viking Esports. Mang tinh thần của những chiến binh Viking huyền thoại, TVK không ngại đối đầu với sóng gió hay những thử thách khắc nghiệt nhất. Dũng mãnh trong giao tranh, kiên cường trước áp lực — TVK sẵn sàng chinh phục mọi chiến tuyến tại Survival Legacy Cup SS2!",
+        logo: "logo-tvkss2.jpg",
+        country: "", 
+        players: [
+            { n: "TVK.PI", r: "RUSHER", id: "91244927" },
+            { n: "TVK.VN", r: "RUSHER", id: "12807376070" },
+            { n: "TVK.DREAM", r: "RIFLER", id: "2639091217" },
+            { n: "TVK.TAY", r: "SNIPER", id: "1755026608" },
+            { n: "TVK.HUYCAT", r: "SUPPORT", id: "10347046677" }
+        ]
+    },
+    "sgpss2": {
         name: "SGP",
-        desc: "SGP – Tên đầy đủ là SGP. Mang tinh thần Strike • Glory • Power, SGP luôn bước vào trận đấu với khát khao chiến thắng và bản lĩnh của những chiến binh thực thụ. Không ngại đối đầu, không lùi bước trước thử thách, SGP quyết tâm tạo nên dấu ấn tại Survival Legacy Cup SS3!",
-        logo: "logo-sgp.jpg",
+        desc: "SGP – Tên đầy đủ là SGP. Mang tinh thần Strike • Glory • Power, SGP luôn bước vào trận đấu với khát khao chiến thắng và bản lĩnh của những chiến binh thực thụ. Không ngại đối đầu, không lùi bước trước thử thách, SGP quyết tâm tạo nên dấu ấn tại Survival Legacy Cup SS2!",
+        logo: "logo-sgpss2.jpg",
         country: "", 
         players: [
-            { n: "SGP.DAU", r: "RUSHER", id: "4364899318" },
-            { n: "SGP.TTHUY", r: "RIFLER", id: "13614124304" },
-            { n: "SGP.TAPO", r: "BOMBER", id: "6153199502" },
-            { n: "SGP.QTIEN", r: "SNIPER", id: "14545224777" },
-            { n: "KHÔNG CÓ", r: "SUPPORT", id: "7430013561" }
+            { n: "SGP.ZENTA", r: "RUSHER", id: "4364899318" },
+            { n: "SGP.GHOST", r: "RUSHER", id: "9861486205" },
+            { n: "SGP.CACHEP", r: "RUSHER", id: "7769978863" },
+            { n: "SGP.VANMINH", r: "RIFLER", id: "6806083725" },
+            { n: "SGP.DHAU", r: "SUPPORT", id: "6454588420" }
         ]
     },
-    "mek": {
-        name: "MEK",
-        desc: "MEK – Tên đầy đủ là MegaKill Esports. Khi giao tranh bùng nổ cũng là lúc MegaKill Esports lên tiếng. Với tinh thần quyết chiến, kỹ năng sắc bén và khát khao chinh phục, MEK quyết tâm tạo nên những pha xử lý mãn nhãn và ghi dấu ấn tại Survival Legacy Cup SS3!",
-        logo: "logo-mek.jpg",
+    "ckess2": {
+        name: "CKE",
+        desc: "CKE – Tên đầy đủ là Chicken Esports. Đừng để cái tên Chicken khiến bạn nghĩ đến sự e dè. CKE mang đến tinh thần thi đấu đầy tự tin, luôn sẵn sàng đối mặt với mọi thử thách và tạo nên bất ngờ trước những đối thủ mạnh. Có thể là gà trong tên gọi, nhưng trên chiến trường lại là những chiến binh không ngại va chạm — CKE quyết tâm ghi dấu ấn tại Survival Legacy Cup SS2!",
+        logo: "logo-ckess2.jpg",
         country: "", 
         players: [
-            { n: "MEK.MTRIET", r: "RUSHER", id: "11689622261" },
-            { n: "MEK.FRV", r: "RIFLER", id: "3248543787" },
-            { n: "MEK.TRUNG", r: "SNIPER", id: "12770679079" },
-            { n: "MEK.NANH", r: "SUPPORT", id: "12770679079" },
-            { n: "KHÔNG CÓ", a: "https://placehold.co/200x250/111/555?text=TRONG", r: "TRONG" }
-        ]
-    },
-    "tglss3": {
-        name: "TGL",
-        desc: "TGL – Tên đầy đủ là Team Gia Lai. Mang tinh thần của vùng đất Tây Nguyên đầy nắng gió, TGL bước vào chiến trường với sự lì lợm, mạnh mẽ và không ngại thử thách. Không chỉ thi đấu để chiến thắng, TGL còn quyết tâm mang dấu ấn Gia Lai đến Survival Legacy Cup SS3!",
-        logo: "logo-tglss3.jpg",
-        country: "", 
-        players: [
-            { n: "TGL.DKHOI", r: "RUSHER", id: "1022337301" },
-            { n: "TGL.HPHONG", r: "RUSHER", id: "6881001992" },
-            { n: "TGL.DKHOA", r: "BOMBER", id: "876012041" },
-            { n: "TGL.GHAO", r: "SNIPER", id: "9431656118" },
-            { n: "TGL.CPHAT", r: "SUPPORT", id: "9712450395"  }
-        ]
-    },
-    "bse": {
-        name: "BSE",
-        desc: "BSE – Tên đầy đủ là Buttersky Elite. Mang trong mình chất riêng của một tập thể tinh nhuệ, Buttersky Elite luôn sẵn sàng tăng tốc khi trận đấu bước vào thời khắc quyết định. Với bản lĩnh, sự quyết đoán và tinh thần không lùi bước, BSE quyết tâm bứt phá và khẳng định đẳng cấp tại Survival Legacy Cup SS3!",
-        logo: "logo-bse.jpg",
-        country: "", 
-        players: [
-            { n: "BSE.MTA", r: "RUSHER", id: "12921689211" },
-            { n: "BSE.VENUS", r: "RUSHER", id: "9715895573" },
-            { n: "BSE.HUNG", r: "BOMBER", id: "3716775696" },
-            { n: "BSE.LONGVU", r: "SNIPER", id: "7559599413" },
-            { n: "BSE.TOM", r: "SUPPORT", id: "5201490836" }
-        ]
-    },
-    "ovn2": {
-        name: "OVN",
-        desc: "OVN – Tên đầy đủ là OVN Esports. Ba chữ cái, một tinh thần: Own the Victory Now – chiến thắng ngay từ khoảnh khắc nhập cuộc. Với lối chơi quyết đoán, tinh thần không ngại đối đầu và khát khao làm chủ chiến trường, OVN sẵn sàng bùng nổ và khẳng định bản lĩnh tại Survival Legacy Cup SS3!",
-        logo: "logo-ovn2.jpg",
-        country: "", 
-        players: [
-            { n: "OVN.DUY", r: "RUSHER", id: "12576856883" },
-            { n: "OVN.VANTU", r: "RUSHER", id: "9881928946" },
-            { n: "OVN.TIEN", r: "SNIPER", id: "12350585814" },
-            { n: "OVN.TINH", r: "SNIPER", id: "8866941793" },
-            { n: "OVN.TAO", r: "SUPPORT", id: "936555133" }
-        ]
-    },
-    "cde": {
-        name: "CDE",
-        desc: "CDE – Tên đầy đủ là CDE. Challenge • Dominate • Elevate – thử thách, thống trị và vươn lên. CDE không bước vào chiến trường để đứng sau bất kỳ ai, mà để tạo áp lực, bứt phá và biến từng trận đấu thành cơ hội khẳng định bản lĩnh tại Survival Legacy Cup SS3!",
-        logo: "logo-cde.jpg",
-        country: "", 
-        players: [
-            { n: "CDE.VIETNHAT", r: "RUSHER", id: "9191569547" },
-            { n: "CDE.TANDUNG", r: "RUSHER", id: "1829162964" },
-            { n: "CDE.BEO", r: "RUSHER", id: "6353698339" },
-            { n: "CDE.TRINH", r: "SNIPER", id: "7289909444" },
-            { n: "CDE.ZEDRED", r: "SUPPORT", id: "7990559151" }
-        ]
-    },
-    "bcs": {
-        name: "BCS",
-        desc: "BCS – Tên đầy đủ là BCS. Mang tinh thần Battle • Clutch • Strike, BCS không chờ cơ hội đến mà tự mình tạo ra nó. Càng vào những thời khắc quyết định, BCS càng sẵn sàng bùng nổ, quyết chiến đến cùng và khẳng định bản lĩnh tại Survival Legacy Cup SS3!",
-        logo: "logo-bcs.jpg",
-        country: "", 
-        players: [
-            { n: "BCS.GON", r: "RUSHER", id: "1444714436" },
-            { n: "BCS.KHANH", r: "RUSHER", id: "2707736341" },
-            { n: "BCS.LYHUNG", r: "SNIPER", id: "2278495131" },
-            { n: "BCS.TUAN", r: "SNIPER", id: "12959767053" },
-            { n: "BCS.NTRUONG", r: "SUPPORTT", id: "8872007162" }
+            { n: "CKE.GTHINH", r: "RUSHER", id: "3131294525" },
+            { n: "CKE.ANBELL", r: "RUSHER", id: "952623283" },
+            { n: "CKE.KQUY", r: "SNIPER", id: "1547430253" },
+            { n: "CKE.HNGHIA", r: "SUPPORT", id: "3701999609" },
+            { n: "CKE.TDUONG", r: "SUPPORT", id: "9887968187" }
         ]
     },
     "pte": {
