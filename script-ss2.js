@@ -571,69 +571,69 @@ const teamsDatabase = {
             { n: "CKE.TDUONG", r: "SUPPORT", id: "9887968187" }
         ]
     },
-    "pte": {
-        name: "PTE",
-        desc: "PTE – Tên đầy đủ là PTE. Power • Tactics • Elite – sức mạnh, chiến thuật và bản lĩnh tinh nhuệ. PTE không bước vào trận đấu để làm nền, mà để tạo khác biệt, bứt phá và quyết chiến đến cùng tại Survival Legacy Cup SS3!",
-        logo: "logo-pte.jpg",
+    "phlmss2": {
+        name: "PHLM",
+        desc: "PHLM – Tên đầy đủ là PHLM. Có những đội tuyển cần thời gian để được chú ý, còn PHLM chọn cách khiến mọi người phải nhớ tên mình ngay từ những trận đấu đầu tiên. Với tinh thần không ngại va chạm và khát khao chinh phục, PHLM đến không chỉ để thi đấu, mà để tạo nên dấu ấn riêng tại Survival Legacy Cup SS2!",
+        logo: "logo-phlmss2.jpg",
         country: "", 
         players: [
-            { n: "PTE.THANHDAT", r: "RUSHER", id: "1778037828" },
-            { n: "PTE.REYKER", r: "BOMBER", id: "7934151585" },
-            { n: "PTE.TRIEUVY", r: "SNIPER", id: "1814073359" },
-            { n: "PTE.PU", r: "SUPPORT", id: "6334762860" },
-            { n: "PTE.KUDEN", r: "SUPPORT", id: "7300663730" }
+            { n: "PHLM.PHUC", r: "RIFLER", id: "9087252129" },
+            { n: "PHLM.HUNG", r: "SNIPER", id: "2864017551" },
+            { n: "PHLM.LUAN", r: "SUPPORT", id: "9554289177" },
+            { n: "PHLM.MY", r: "SUPPORT", id: "1970202915" },
+            { n: "KHÔNG CÓ", a: "https://placehold.co/200x250/111/555?text=TRONG" }
         ]
     },
-    "uziss3": {
-        name: "UZI",
-        desc: "UZI - Tên đầy đủ là UZI　LEGENDS. Đội tuyển mang hình tượng “song UZI khai hỏa”, tốc độ xả đạn nghẹt thở, dồn ép liên tục khiến đối thủ không kịp thở, vào giao tranh là quét sạch đội hình đối thủ trong tích tắc, thể hiện đẳng cấp “bắn nhanh – thắng nhanh” tại Survival Legacy Cup SS3!",
-        logo: "logo-uzi.jpg",
+    "nnnss2": {
+        name: "NNN",
+        desc: "NNN – Tên đầy đủ là NO NO NO. Ba chữ NO không phải để từ chối thử thách, mà là lời đáp trả dành cho mọi giới hạn. No sợ hãi, no bỏ cuộc, no lùi bước. Với tinh thần chiến đấu kiên cường và quyết tâm đến cùng, NNN sẵn sàng khiến mọi đối thủ phải nhớ tên mình tại Survival Legacy Cup SS2!",
+        logo: "logo-nnnss2.jpg",
         country: "", 
         players: [
-            { n: "UZI.MILLOW", r: "RUSHER", id: "2444693631" },
-            { n: "UZI.FOX", r: "RUSHER", id: "6895539974" },
-            { n: "UZI.HANA", r: "BOMBER", id: "2104295752" },
-            { n: "UZI.CHOPPER", r: "SNIPER", id: "3659332602" },
-            { n: "UZI.BIN", r: "SUPPORT", id: "9173149407" }
+            { n: "NNN.KDINH", r: "RUSHER", id: "3011718064" },
+            { n: "NNN.CTHIEN", r: "RIFLER", id: "15616929783" },
+            { n: "NNN.HVNA", r: "SNIPER", id: "1358951871" },
+            { n: "NNN.NTIEN", r: "SUPPORT", id: "5389941711" },
+            { n: "KHÔNG CÓ", a: "https://placehold.co/200x250/111/555?text=TRONG" }
         ]
     },
-    "vta": {
-        name: "VTA",
-        desc: "VTA – Tên đầy đủ là VTA. Victory • Tactics • Ambition – chiến thắng, chiến thuật và khát vọng. VTA bước vào mỗi trận đấu với mục tiêu rõ ràng: chơi bằng thực lực, đánh bằng bản lĩnh và quyết tâm tiến xa tại Survival Legacy Cup SS3!",
-        logo: "logo-vta.jpg",
+    "hpss2": {
+        name: "HP",
+        desc: "HP – Tên đầy đủ là FC Hồng Phúc. Mang theo tinh thần đoàn kết và ý chí không ngừng vươn lên, HP luôn bước vào mỗi trận đấu với sự tự tin và quyết tâm cao nhất. Dù đối mặt với thử thách nào, FC Hồng Phúc vẫn sẵn sàng chiến đấu hết mình để khẳng định bản lĩnh tại Survival Legacy Cup SS2!",
+        logo: "logo-hpss2.jpg",
         country: "", 
         players: [
-            { n: "VTA.PHUCTHINH", r: "RUSHER", id: "7754321281" },
-            { n: "VTA.TUANANH", r: "BOMBER", id: "1047965020" },
-            { n: "VTA.MHOANG", r: "SNIPER", id: "5969646401" },
-            { n: "VTA.TANDUAN", r: "SNIPER", id: "5001589171" },
-            { n: "VTA.DUCANH", r: "SUPPORT", id: "3309814632" }
+            { n: "HP.TVU", r: "RUSHER", id: "2410363643" },
+            { n: "HP.DKHUYEN", r: "BOMBER", id: "3369962855" },
+            { n: "HP.TPHONG", r: "SNIPER", id: "1707962974" },
+            { n: "HP.MHUNG", r: "SUPPORT", id: "1977249233" },
+            { n: "HP.DLINH", r: "SUPPORT", id: "1045355270" }
         ]
     },
-    "tmh": {
-        name: "TMH",
-        desc: "TMH – Tên đầy đủ là TMH. Think. Move. Hunt. – nghĩ nhanh, di chuyển chuẩn, săn chiến thắng. TMH không cần ồn ào để tạo áp lực; chỉ cần một khoảnh khắc đúng lúc, đội tuyển sẵn sàng biến thế trận và ghi dấu ấn tại Survival Legacy Cup SS3!",
-        logo: "logo-tmh.jpg",
+    "sgp2ss2": {
+        name: "SGP2",
+        desc: "SGP2 – Tên đầy đủ là SGP2. Strike • Glory • Power — Level 2. Không chỉ bước vào để thi đấu, SGP2 hướng đến một cấp độ hoàn toàn khác: mạnh hơn, nhanh hơn và quyết liệt hơn. Sẵn sàng bùng nổ trong từng pha giao tranh, SGP2 quyết tâm tạo dấu ấn tại Survival Legacy Cup SS2!",
+        logo: "logo-sgp2ss2.jpg",
         country: "", 
         players: [
-            { n: "TMH.VANTUAN", r: "RUSHER", id: "1285407799" },
-            { n: "TMH.BOYWALK", r: "BOMBER", id: "11041145321" },
-            { n: "TMH.MY", r: "SNIPER", id: "9353533657" },
-            { n: "TMH.AN", r: "SUPPORT", id: "9279800249" },
-            { n: "KHÔNG CÓ", a: "https://placehold.co/200x250/111/555?text=TRONG", r: "TRONG" }
+            { n: "SGP2.BATLUC", r: "RUSHER", id: "7318143690" },
+            { n: "SGP2.BATTU", r: "BOMBER", id: "11336843257" },
+            { n: "SGP2.BATNGO", r: "SNIPER", id: "7306922376" },
+            { n: "SGP2.BATBAI", r: "SNIPER", id: "1708561743" },
+            { n: "SGP2.BATDIET", r: "SUPPORT", id: "6624360505" }
         ]
     },
-    "ze": {
-        name: "ZE",
-        desc: "4T – Tên đầy đủ là 4T ESPORTS. Đội tuyển đại diện cho “4 Triggers – 4 họng súng luôn sẵn sàng khai hỏa”, nơi mỗi thành viên là một điểm nổ có thể kích hoạt bất cứ lúc nào. Khi 4T nhập cuộc, trận đấu không còn là kiểm soát-mà là chuỗi phản ứng dây chuyền của những pha hủy diệt tại Survival Legacy Cup SS1!",
-        logo: "logo-4t.jpg",
+    "btlss2": {
+        name: "BTL",
+        desc: "BTL – Tên đầy đủ là Bốn Tê Lờ. Một cái tên nghe vui vẻ và gần gũi, nhưng khi bước vào trận đấu thì BTL luôn thi đấu với tinh thần nghiêm túc và quyết tâm cao độ. Không cần quá nhiều lời nói, cả đội chọn cách thể hiện mình bằng những màn trình diễn trên chiến trường. Thoải mái ngoài trận đấu, hết mình trong trận đấu — BTL sẵn sàng tạo bất ngờ tại Survival Legacy Cup SS2!",
+        logo: "logo-btlss2.jpg",
         country: "", 
         players: [
-            { n: "ZE.DNDAN", r: "RUSHER", id: "7939875539" },
-            { n: "ZE.LHT", r: "RUSHER", id: "9531744891" },
-            { n: "ZE.HIEU", r: "RIFLER", id: "8614179975" },
-            { n: "ZE.TEN", r: "SNIPER", id: "5401984097" },
-            { n: "ZE.EMBE", r: "SUPPORT", id: "2124497748" }
+            { n: "BTL.AN", r: "RUSHER", id: "4338644524" },
+            { n: "BTL.HUY", r: "RUSHER", id: "1810007003" },
+            { n: "BTL.QUI", r: "BOMBER", id: "240209252" },
+            { n: "BTL.LUAN", r: "SUPPORT", id: "1142328763" },
+            { n: "KHÔNG CÓ", a: "https://placehold.co/200x250/111/555?text=TRONG" }
         ]
     },
     "sgp2": {
