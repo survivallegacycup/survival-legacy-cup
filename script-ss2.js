@@ -707,11 +707,11 @@ const teamsDatabase = {
         logo: "logo-rvxss2.jpg",
         country: "", 
         players: [
-            { n: "RVX.REY", r: "RUSHER", id: "367649904" },
-            { n: "RVX.WRONG", r: "RUSHER", id: "923584537" },
-            { n: "RVX.SONG", r: "SNIPER", id: "823575889" },
-            { n: "RVX.DOING", r: "SUPPORT", id: "638566489" },
-            { n: "KHÔNG CÓ", a: "https://placehold.co/200x250/111/555?text=TRONG", r: "TRONG" }
+            { n: "RVX.KIWI", r: "RUSHER", id: "7587170094" },
+            { n: "RVX.VANKHANH", r: "RUSHER", id: "7922229586" },
+            { n: "RVX.TIENDAT", r: "SNIPER", id: "9764404235" },
+            { n: "RVX.KIMANH",r: "SNIPER", id: "9330363250" },
+            { n: "RVX.HAO", r: "SUPPORT", id: "9189412602" }
         ]
     },
     "hfss2": {
@@ -730,66 +730,66 @@ const teamsDatabase = {
     "mekss2": {
         name: "MEK",
         desc: "MEK – Tên đầy đủ là MegaKill Esports. Khi giao tranh bùng nổ cũng là lúc MegaKill Esports lên tiếng. Với tinh thần quyết chiến, kỹ năng sắc bén và khát khao chinh phục, MEK quyết tâm tạo nên những pha xử lý mãn nhãn và ghi dấu ấn tại Survival Legacy Cup SS3!",
-        logo: "logo-xht.jpg",
+        logo: "logo-mekss2.jpg",
         country: "", 
         players: [
-            { n: "XHT.AGM", r: "RUSHER", id: "1731908696" },
-            { n: "XHT.PLTL",r: "RIFLER", id: "3538480583" },
-            { n: "XHT.CUTIT", r: "BOMBER", id: "9326144006" },
-            { n: "XHT.NGNHAT", r: "SNIPER", id: "3120004297" },
-            { n: "XHT.SKIBIDI", r: "SUPPORT", id: "4465994720" }
+            { n: "MEK.MTRIET", r: "RUSHER", id: "11689622261" },
+            { n: "MEK.FRV",r: "RIFLER", id: "3248543787" },
+            { n: "MEK.NCL", r: "SNIPER", id: "12770679079" },
+            { n: "MEK.NANH", r: "SUPPORT", id: "1680769724" },
+            { n: "KHÔNG CÓ", a: "https://placehold.co/200x250/111/555?text=TRONG", r: "TRONG" }
         ]
     },
-    "tkt": {
-        name: "TKT",
-        desc: "TKT – Tên đầy đủ là TOKUTA. TO the top, Keep fighting, TAke the win — tiến lên đỉnh, chiến đấu đến cùng, giành lấy chiến thắng. TKT không vào trận để làm nền, mà để tạo bất ngờ và khiến từng khoảnh khắc tại Survival Legacy Cup SS3 phải nhớ đến cái tên TOKUTA!",
-        logo: "logo-tkt.jpg",
+    "apmmss2": {
+        name: "APMM",
+        desc: "APMM – Tên đầy đủ là Áp Pồ Meo Meo. Trên chiến trường, có những đội tuyển khiến đối thủ sợ hãi bằng sức mạnh, còn APMM khiến đối thủ nhớ mãi bằng sự khó lường. Nghe như mèo con, đánh như mãnh thú — APMM sẵn sàng khuấy đảo Survival Legacy Cup SS2!",
+        logo: "logo-apmmss2.jpg",
         country: "", 
         players: [
-            { n: "TKT.NVX", r: "RUSHER", id: "6556475658" },
-            { n: "TKT.HUNG", r: "RUSHER", id: "9061635777" },
-            { n: "TKT.U7E", r: "RIFLER", id: "6775937715" },
-            { n: "TKT.VTT", r: "SNIPER", id: "3201187189" },
-            { n: "TKT.ODCH", r: "SUPPORT", id: "9774162852" }
+            { n: "APMM.BAOHUY", r: "RUSHER", id: "63678844458" },
+            { n: "APMM.MEOMEO", r: "RUSHER", id: "976892222" },
+            { n: "APMM.RTJO", r: "RIFLER", id: "49240O357" },
+            { n: "APMM.VKT", r: "SNIPER", id: "2567894357" },
+            { n: "APMM.NOAH", r: "SUPPORT", id: "8642367889" }
         ]
     },
-    "h2k": {
-        name: "H2K",
-        desc: "H2K – Tên đầy đủ là H2K. Hard to Kill – khó bị đánh bại. Đúng như cái tên, H2K luôn giữ vững bản lĩnh ngay cả khi thế trận trở nên căng thẳng nhất. Càng bị dồn ép, H2K càng lì lợm, càng quyết chiến và sẵn sàng lật ngược mọi thế trận tại Survival Legacy Cup SS3!",
-        logo: "logo-h2k.jpg",
+    "rfass2": {
+        name: "RFA",
+        desc: "RFA – Tên đầy đủ là RFA Esports. Rise From Ashes – vươn lên từ tro tàn. RFA mang tinh thần của những chiến binh không bao giờ gục ngã, luôn sẵn sàng đứng dậy mạnh mẽ hơn sau mọi thử thách. Càng khó khăn càng kiên cường, càng áp lực càng bùng nổ — RFA Esports quyết tâm khẳng định bản lĩnh tại Survival Legacy Cup SS2!",
+        logo: "logo-rfass2.jpg",
         country: "", 
         players: [
-            { n: "H2K.VANHIEU", r: "RUSHER", id: "931508938" },
-            { n: "H2K.SYTUAN", r: "BOMBER", id: "728485649" },
-            { n: "H2K.MINHDUC", r: "BOMBER", id: "1047846802" },
-            { n: "H2K.VIETHUNG", r: "SNIPER", id: "1679326020" },
-            { n: "H2K.KTOAN", r: "SUPPORT", id: "1466891354" }
+            { n: "RFA.NKT", r: "RUSHER", id: "982519896" },
+            { n: "RFA.TXQ", r: "RIFLER", id: "5755547491" },
+            { n: "RFA.LEVOR", r: "BOMBER", id: "9050876679" },
+            { n: "RFA.NGB", r: "SNIPER", id: "4439122562" },
+            { n: "RFA.LHTINH", r: "SUPPORT", id: "1794081493" }
         ]
     },
-    "stt": {
-        name: "STT",
-        desc: "STT – Tên đầy đủ là Shark TiTan. Sau một thời gian vắng bóng, Shark TiTan chính thức trở lại. Lần comeback này không phải để tìm lại ánh hào quang, mà để tạo ra một phiên bản mạnh mẽ hơn, lì lợm hơn và đáng gờm hơn. STT trở lại để săn chiến thắng và viết tiếp hành trình tại Survival Legacy Cup SS3!",
-        logo: "logo-stt.jpg",
+    "aebkss2": {
+        name: "AEBK",
+        desc: "AEBK – Tên đầy đủ là AEBK. Một cái tên bí ẩn nhưng mang theo khát khao chinh phục không hề nhỏ. AEBK không cần quá nhiều lời giới thiệu, bởi họ tin rằng những màn trình diễn trên chiến trường mới là điều khiến người khác phải ghi nhớ. Âm thầm chuẩn bị, bùng nổ đúng lúc — AEBK sẵn sàng tạo nên bất ngờ tại Survival Legacy Cup SS2!",
+        logo: "logo-aebkss2.jpg",
         country: "", 
         players: [
-            { n: "STT.HUNG", r: "RUSHER", id: "10081813956" },
-            { n: "STT.NGAO", r: "RIFLER", id: "1756227636" },
-            { n: "STT.TDUNG", r: "SNIPER", id: "1982342638" },
-            { n: "STT.VP", r: "SUPPORT", id: "5329839627" },
-            { n: "STT.GIAPHONG", r: "SUPPORT", id: "1380391498S" }
+            { n: "AEBK.TTRIEU", r: "RUSHER", id: "1564568025" },
+            { n: "AEBK.SENJU", r: "RUSHER", id: "1059803098" },
+            { n: "AEBK.DZMANGU", r: "SNIPER", id: "9058840950" },
+            { n: "AEBK.NGOCBACH", r: "SUPPORT", id: "10990182210" },
+            { n: "KHÔNG CÓ", a: "https://placehold.co/200x250/111/555?text=TRONG", r: "TRONG" }
         ]
     },
-    "tae": {
-        name: "TAE",
-        desc: "TAE – Tên đầy đủ là Tu Anh Esports. Mang tinh thần của một tập thể luôn tiến về phía trước, TAE không ngại thử thách và luôn sẵn sàng tăng tốc khi thời khắc quyết định xuất hiện. Bản lĩnh trong từng pha đấu, quyết đoán trong từng khoảnh khắc, TAE quyết tâm tạo dấu ấn tại Survival Legacy Cup SS3!",
-        logo: "logo-tae.jpg",
+    "lhqass2": {
+        name: "LHQA",
+        desc: "LHQA – Tên đầy đủ là LHQA. Legacy • Honor • Quality • Ambition – di sản, danh dự, chất lượng và khát vọng. LHQA không chỉ hướng đến chiến thắng trong từng trận đấu mà còn muốn xây dựng một dấu ấn riêng bằng tinh thần thi đấu chuyên nghiệp và quyết tâm không ngừng vươn lên. Mang theo khát vọng lớn, chiến đấu bằng bản lĩnh thật — LHQA sẵn sàng bùng nổ tại Survival Legacy Cup SS2!",
+        logo: "logo-lhqass2.jpg",
         country: "", 
         players: [
-            { n: "TAE.HDAC", r: "RUSHER", id: "1921590936" },
-            { n: "TAE.KAYZ", r: "RUSHER", id: "8427796049" },
-            { n: "TAE.VANDU", r: "SNIPER", id: "14784206632" },
-            { n: "TAE.EMBI", r: "SNIPER", id: "1214825454" },
-            { n: "TAE.SOI", r: "SUPPORT", id: "2778311951" }
+            { n: "LHQA.SIMPLE", r: "RUSHER", id: "1778890936" },
+            { n: "LHQA.JEW", r: "RUSHER", id: "8427464773" },
+            { n: "LHQA.ENGDII", r: "SNIPER", id: "1464788332" },
+            { n: "LHQA.WUNO", r: "SNIPER", id: "12130086674" },
+            { n: "LHQA.BUFULO", r: "SUPPORT", id: "2778308945" }
         ]
     }
 };
