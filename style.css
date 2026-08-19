@@ -2472,3 +2472,38 @@ img {
     border-radius: 8px;
     box-shadow: 0 0 20px rgba(255, 204, 0, 0.6);
 }
+/* =========================================
+   HIỆU ỨNG KHUNG RGB CHO BỘ ĐẾM
+========================================= */
+.rgb-counter-box {
+    text-align: center;        /* Căn giữa bộ đếm */
+    margin: 20px auto;         /* Tự động đẩy khung ra giữa thanh menu */
+    padding: 10px;             /* Tạo khoảng trống cho đẹp */
+    background-color: #111;    /* Nền màu xám đen để làm nổi bật số đỏ */
+    border-radius: 8px;        /* Bo tròn các góc */
+    width: fit-content;        /* Ép khung ôm vừa vặn vào con số */
+    
+    /* Chìa khóa tạo hiệu ứng chạy màu liên tục */
+    border: 2px solid red;     
+    animation: rgbGlow 3s linear infinite; 
+}
+
+/* Trang trí cho dòng chữ tiêu đề */
+.counter-title {
+    color: white;
+    font-size: 11px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-shadow: 1px 1px 3px black;
+}
+
+/* KHUNG TỪ ĐIỂN ĐỔI MÀU (ĐỎ -> CAM -> VÀNG -> LỤC -> LAM -> CHÀM -> ĐỎ) */
+@keyframes rgbGlow {
+    0%   { border-color: #ff0000; box-shadow: 0 0 12px #ff0000; }
+    15%  { border-color: #ff7f00; box-shadow: 0 0 12px #ff7f00; }
+    33%  { border-color: #ffff00; box-shadow: 0 0 12px #ffff00; }
+    50%  { border-color: #00ff00; box-shadow: 0 0 12px #00ff00; }
+    66%  { border-color: #0000ff; box-shadow: 0 0 12px #0000ff; }
+    83%  { border-color: #ff00ff; box-shadow: 0 0 12px #ff00ff; }
+    100% { border-color: #ff0000; box-shadow: 0 0 12px #ff0000; }
+}
