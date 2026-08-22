@@ -675,17 +675,17 @@ const teamsDatabase = {
             { n: "TA.YA", r: "SUPPORT", id: "9138786364"}
         ]
     },
-    "riss4": {
-        name: "RI",
-        desc: "RI – Tên đầy đủ là RI. Rise • Impact – vươn lên và tạo dấu ấn. RI có thể là một cái tên ngắn gọn, nhưng mục tiêu thì chưa bao giờ nhỏ. Với tinh thần không ngại đối đầu và khát khao khẳng định bản thân, RI luôn sẵn sàng bùng nổ ở những thời khắc quan trọng nhất. Không đến để góp mặt, RI đến để được ghi nhớ tại Survival Legacy Cup SS4!",
-        logo: "logo-riss4.jpg",
+    "uziss4": {
+        name: "UZI",
+        desc: "UZI - Tên đầy đủ là UZI　LEGENDS. Đội tuyển mang hình tượng “song UZI khai hỏa”, tốc độ xả đạn nghẹt thở, dồn ép liên tục khiến đối thủ không kịp thở, vào giao tranh là quét sạch đội hình đối thủ trong tích tắc, thể hiện đẳng cấp “bắn nhanh – thắng nhanh” tại Survival Legacy Cup SS1!",
+        logo: "logo-uzi.jpg",
         country: "", 
         players: [
-            { n: "RI.GPHIEN", r: "RUSHER", id: "5612947509" },
-            { n: "RI.DEATH", r: "RUSHER", id: "6248000758" },
-            { n: "RI.MILLOW", r: "RUSHER", id: "2444693631" },
-            { n: "RI.CHOPPER", r: "SNIPER", id: "3659332602" },
-            { n: "RI.BIN", r: "SUPPORT", id: "9173149407" }
+            { n: "UZI.GPHIEN", r: "RUSHER", id: "5612947509" },
+            { n: "UZI.DEATH", r: "RUSHER", id: "6248000758" },
+            { n: "UZI.MILLOW", r: "RUSHER", id: "2444693631" },
+            { n: "UZI.CHOPPER", r: "SNIPER", id: "3659332602" },
+            { n: "UZI.BIN", r: "SUPPORT", id: "9173149407" }
         ]
     },
     "dzss4": {
