@@ -1407,3 +1407,9 @@ document.addEventListener("DOMContentLoaded", () => {
         ttObserver.observe(element);
     });
 });
+// HÀM CHIA MÀU BẢNG XẾP HẠNG (Bắt buộc phải có để vẽ Top 4 trở đi)
+function getTierV5(rank) {
+    if (rank <= 6) return { ac: "#00e5ff", sweep: "rgba(0,229,255,0.06)", bar: "#00e5ff", rowBg: "#020c14", nameBase: "#3a6888" };
+    if (rank <= 9) return { ac: "#d060f0", sweep: "rgba(208,96,240,0.06)", bar: "#d060f0", rowBg: "#07020e", nameBase: "#3a6888" };
+    return { ac: "#40a0e0", sweep: "rgba(64,160,224,0.05)", bar: "#40a0e0", rowBg: "#02080f", nameBase: "#3a6888" };
+}
