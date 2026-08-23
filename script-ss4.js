@@ -1407,9 +1407,24 @@ document.addEventListener("DOMContentLoaded", () => {
         ttObserver.observe(element);
     });
 });
-// HÀM CHIA MÀU BẢNG XẾP HẠNG (Bắt buộc phải có để vẽ Top 4 trở đi)
+// HÀM CHIA MÀU BẢNG XẾP HẠNG (BẢN FULL MÀU SẮC CHI TIẾT)
 function getTierV5(rank) {
-    if (rank <= 6) return { ac: "#00e5ff", sweep: "rgba(0,229,255,0.06)", bar: "#00e5ff", rowBg: "#020c14", nameBase: "#3a6888" };
-    if (rank <= 9) return { ac: "#d060f0", sweep: "rgba(208,96,240,0.06)", bar: "#d060f0", rowBg: "#07020e", nameBase: "#3a6888" };
-    return { ac: "#40a0e0", sweep: "rgba(64,160,224,0.05)", bar: "#40a0e0", rowBg: "#02080f", nameBase: "#3a6888" };
+    if (rank <= 6) return { 
+        ac: "#00e5ff", sweep: "rgba(0,229,255,0.06)", bar: "#00e5ff", rowBg: "#020c14", 
+        nameBase: "#3a6888", nameHover: "#00e5ff", rankBase: "#2a4a6a", 
+        avaBase: "transparent", avaBorder: "transparent", avaHoverBg: "rgba(0,229,255,0.1)", avaHoverBorder: "#00e5ff",
+        booyahCol: "#ffcc00", killCol: "#22d3a5", totalBase: "#00e5ff", totalSize: 16
+    };
+    if (rank <= 9) return { 
+        ac: "#d060f0", sweep: "rgba(208,96,240,0.06)", bar: "#d060f0", rowBg: "#07020e", 
+        nameBase: "#3a6888", nameHover: "#d060f0", rankBase: "#2a4a6a", 
+        avaBase: "transparent", avaBorder: "transparent", avaHoverBg: "rgba(208,96,240,0.1)", avaHoverBorder: "#d060f0",
+        booyahCol: "#ffcc00", killCol: "#22d3a5", totalBase: "#d060f0", totalSize: 16
+    };
+    return { 
+        ac: "#40a0e0", sweep: "rgba(64,160,224,0.05)", bar: "#40a0e0", rowBg: "#02080f", 
+        nameBase: "#3a6888", nameHover: "#40a0e0", rankBase: "#2a4a6a", 
+        avaBase: "transparent", avaBorder: "transparent", avaHoverBg: "rgba(64,160,224,0.1)", avaHoverBorder: "#40a0e0",
+        booyahCol: "#ffcc00", killCol: "#22d3a5", totalBase: "#40a0e0", totalSize: 16
+    };
 }
