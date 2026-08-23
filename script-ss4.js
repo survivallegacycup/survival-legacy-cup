@@ -1073,3 +1073,101 @@ async function layTatCaDuLieuSS4() {
 
 // KHỞI ĐỘNG HỆ THỐNG!
 layTatCaDuLieuSS4();
+function renderLeaderboardV5(bangId) {
+  const teams = DU_LIEU_BXH_SS4[bangId] || [];
+  const podWrap = document.getElementById("podium");
+  const restWrap = document.getElementById("rest-rows");
+  
+  if(!podWrap || !restWrap) return; // Nếu ko ở trang BXH thì bỏ qua
+  
+  podWrap.innerHTML = "";
+  restWrap.innerHTML = "";
+  if(teams.length === 0) return;
+
+  const POD_CFG = [
+    {teamIdx:1, podOrder:0, label:"HẠNG NHÌ", icon:"&#9670;", color:"#00c8ff", bg:"#00040e", border:"#00c8ff33", avaBg:"#001a2e", ringColor:"#00c8ff55", delay:350},
+    {teamIdx:0, podOrder:1, label:"HẠNG NHẤT", icon:"&#9813;", color:"#e8b400", bg:"#0c0800", border:"#e8b40044", avaBg:"#1a1000", ringColor:"#e8b40066", delay:150},
+    {teamIdx:2, podOrder:2, label:"HẠNG BA", icon:"&#9651;", color:"#ff6a00", bg:"#0c0400", border:"#ff6a0033", avaBg:"#1a0800", ringColor:"#ff6a0044", delay:550}
+  ];
+
+  POD_CFG.forEach(p => {
+    if(!teams[p.teamIdx]) return;
+    const t = teams[p.teamIdx];
+    let logoThichHop = "logo-" + t.name.toLowerCase() + ".jpg"; // LOGO TỰ ĐỘNG
+
+    const card = document.createElement("div");
+    card.className = "pod-card";
+    card.style.cssText = `background:${p.bg};border-color:${p.border};order:${p.podOrder};padding-top:${p.podOrder===1?'20px':'14px'}`;
+    card.innerHTML = `<div class="pod-shine"></div>
+      <div class="pod-no" style="color:${p.color}">${p.label}</div>
+      <div class="pod-icon" style="color:${p.color}">${p.icon}</div>
+      <div class="pod-ava" style="background:${p.avaBg};border-color:${p.color};">
+        <div class="pod-ring" style="border-color:${p.ringColor}"></div>
+        <img src="${logoThichHop}" style="width:100%;height:100%;border-radius:8px;object-fit:cover;position:relative;z-index:2;">
+      </div>
+      <div class="pod-name" style="color:${p.color};text-shadow:0 0 18px ${p.color}66">${t.name}</div>
+      <div class="pod-pts" style="color:${p.color};text-shadow:0 0 24px ${p.color}77">${t.total}</div>
+      <div class="pod-ptslbl">tổng điểm</div>
+      <div class="pod-stats">
+        <div class="ps-item"><span class="ps-v" style="color:${p.color}99">${t.booyah}</span><span class="ps-l">WINNER</span></div>
+        <div class="ps-item"><span class="ps-v" style="color:#22d3a5">${t.kill}</span><span class="ps-l">HẠ GỤC</span></div>
+        <div class="ps-item"><span class="ps-v" style="color:#3a6080">${t.match}</span><span class="ps-l">TRẬN</span></div>
+      </div>`;
+    podWrap.appendChild(card);
+    setTimeout(() => card.classList.add("show"), p.delay);
+  });
+
+  const maxTotal = teams[0].total;
+  teams.slice(3).forEach((t, i) => {
+    if(i === 3) {
+      const cut = document.createElement("div");
+      cut.className = "qual-cut";
+      cut.innerHTML = '<span class="cut-lbl">VÒNG LOẠI</span>';
+      restWrap.appendChild(cut);
+    }
+    
+    let logoThichHop = "logo-" + t.name.toLowerCase() + ".jpg"; // LOGO TỰ ĐỘNG
+    const tier = getTierV5(t.rank);
+    
+    const row = document.createElement("div");
+    row.className = "rest-row";
+    row.style.background = tier.rowBg;
+    row.innerHTML = `
+      <div class="rr-sweep" style="background:${tier.sweep}"></div>
+      <div class="rr-bar" style="background:${tier.bar}"></div>
+      <div class="rr-rank" style="color:${tier.rankBase}">${t.rank}</div>
+      <div class="rr-team">
+        <div class="rr-ava" style="background:${tier.avaBase};border:1px solid ${tier.avaBorder};">
+            <img src="${logoThichHop}" style="width:100%;height:100%;border-radius:4px;object-fit:cover;">
+        </div>
+        <span class="rr-name" style="color:${tier.nameBase}">${t.name}</span>
+      </div>
+      <div class="rr-val" style="color:${tier.booyahCol}">${t.booyah}</div>
+      <div class="rr-val" style="color:${tier.killCol}">${t.kill}</div>
+      <div class="rr-val" style="color:#2a4a6a">${t.match}</div>
+      <div class="rr-total" style="color:${tier.totalBase};font-size:${tier.totalSize}px">${t.total}</div>
+      <div class="prog-wrap"><div class="prog" id="p${bangId}-${i}" style="background:${tier.bar}77"></div></div>`;
+
+    const rn = row.querySelector(".rr-rank"), nm = row.querySelector(".rr-name");
+    const av = row.querySelector(".rr-ava"), tot = row.querySelector(".rr-total");
+    row.addEventListener("mouseenter", () => {
+      rn.style.color = tier.rankHover; nm.style.color = tier.nameHover;
+      av.style.background = tier.avaHoverBg; av.style.borderColor = tier.avaHoverBorder;
+      tot.style.color = "#fff"; tot.style.textShadow = `0 0 14px ${tier.ac}cc`; tot.style.fontSize = (tier.totalSize+1)+"px";
+    });
+    row.addEventListener("mouseleave", () => {
+      rn.style.color = tier.rankBase; nm.style.color = tier.nameBase;
+      av.style.background = tier.avaBase; av.style.borderColor = tier.avaBorder;
+      tot.style.color = tier.totalBase; tot.style.textShadow = "none"; tot.style.fontSize = tier.totalSize+"px";
+    });
+
+    restWrap.appendChild(row);
+    setTimeout(() => {
+      row.classList.add("show");
+      setTimeout(() => {
+        const p = document.getElementById(`p${bangId}-${i}`);
+        if(p) p.style.width = Math.round(t.total/maxTotal*100) + "%";
+      }, 200);
+    }, 750 + i * 65);
+  });
+}
