@@ -1192,7 +1192,8 @@ function getTierBK(rank){
   return { ac:"#40a0e0", sweep:"rgba(64,160,224,0.05)", bar:"#40a0e0", rowBg:"#02080f", nameBase:"#3a6888", nameHover:"#90c8e8", rankBase:"#1e4060", rankHover:"#40a0e0", avaBase:"#040e18", avaBorder:"#40a0e022", avaHoverBg:"#081828", avaHoverBorder:"#40a0e066", totalBase:"#3890c8", totalSize:13, killCol:"#22d3a566", booyahCol:"#e8b40066" };
 }
 
-function renderBanket() {
+function renderBanketSS4(bkId) {
+  const teams = DU_LIEU_BANKET_SS4[bkId] || [];
   const podWrap = document.getElementById("podium-banket");
   const restWrap = document.getElementById("rest-rows-banket");
   if(!podWrap || !restWrap) return;
@@ -1204,7 +1205,7 @@ function renderBanket() {
   ];
 
   POD_CFG.forEach(p => {
-    const t = DU_LIEU_BANKET[p.teamIdx];
+    const t = teams[p.teamIdx];
     let logoThichHop = "logo-" + t.name.toLowerCase() + "ss4.jpg";
     const card = document.createElement("div");
     card.className = "pod-card";
@@ -1228,8 +1229,8 @@ function renderBanket() {
     setTimeout(() => card.classList.add("show"), p.delay);
   });
 
-  const maxTotal = DU_LIEU_BANKET[0].total;
-  DU_LIEU_BANKET.slice(3).forEach((t, i) => {
+  const maxTotal = teams[0].total;
+  teams.slice(3).forEach((t, i) => {
     // Top 12 (sau khi cắt Top 3) nằm ở vị trí index = 9
     if(i === 9) {
       const cut = document.createElement("div");
@@ -1428,3 +1429,46 @@ function getTierV5(rank) {
         booyahCol: "#ffcc00", killCol: "#22d3a5", totalBase: "#40a0e0", totalSize: 16
     };
 }
+// 1. Kho chứa chia 2 nhánh
+let DU_LIEU_BANKET_SS4 = { '1': [], '2': [] };
+
+// 2. Dán 2 link Google Sheets của BK1 và BK2 vào đây
+const LINK_BK_SS4 = {
+    '1': "https://docs.google.com/spreadsheets/d/e/2PACX-1vRxDSOSL4H3e0x1AGroPVMIV9YURcz87dYbzfxTFrDeGzobsNg67840s51Dh59mxiBdIM_8XqT02bw8/pub?gid=540096713&single=true&output=csv",
+    '2': "https://docs.google.com/spreadsheets/d/e/2PACX-1vRxDSOSL4H3e0x1AGroPVMIV9YURcz87dYbzfxTFrDeGzobsNg67840s51Dh59mxiBdIM_8XqT02bw8/pub?gid=1151424666&single=true&output=csv"
+};
+
+// 3. Động cơ tự động lấy điểm Bán Kết
+async function layDuLieuBanketSS4() {
+    try {
+        for (const bkId in LINK_BK_SS4) {
+            const link = LINK_BK_SS4[bkId];
+            if (!link || !link.includes("http")) continue; 
+
+            const response = await fetch(link);
+            const data = await response.text();
+            const rows = data.split('\n').slice(1); 
+            
+            rows.forEach(row => {
+                if(!row.trim()) return;
+                const cols = row.split(','); 
+                
+                DU_LIEU_BANKET_SS4[bkId].push({
+                    rank: parseInt(cols[0]),
+                    name: cols[1].trim(),
+                    booyah: parseInt(cols[2]),
+                    kill: parseInt(cols[3]),
+                    match: parseInt(cols[4]),
+                    total: parseInt(cols[5])
+                });
+            });
+        }
+        // Tải xong thì vẽ Bán Kết 1 lên đầu tiên
+        renderBanketSS4('1'); 
+        
+    } catch (error) {
+        console.error("Lỗi đồng bộ dữ liệu Bán Kết SS4:", error);
+    }
+}
+
+layDuLieuBanketSS4();
