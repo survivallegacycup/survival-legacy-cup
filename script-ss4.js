@@ -1023,3 +1023,53 @@ if (canvasModal) {
     }
     drawModalParticles();
 }
+// 1. KHO CHỨA DỮ LIỆU BẢNG XẾP HẠNG SS4
+let DU_LIEU_BXH_SS4 = { 'A': [], 'B': [], 'C': [], 'D': [] };
+
+// 2. CHỖ ĐỂ BẠN DÁN 4 LINK GOOGLE SHEETS CỦA SS4
+const LINK_CacBang_SS4 = {
+    'A': "https://docs.google.com/spreadsheets/d/e/2PACX-1vRxDSOSL4H3e0x1AGroPVMIV9YURcz87dYbzfxTFrDeGzobsNg67840s51Dh59mxiBdIM_8XqT02bw8/pub?gid=0&single=true&output=csv",
+    'B': "https://docs.google.com/spreadsheets/d/e/2PACX-1vRxDSOSL4H3e0x1AGroPVMIV9YURcz87dYbzfxTFrDeGzobsNg67840s51Dh59mxiBdIM_8XqT02bw8/pub?gid=1709029258&single=true&output=csv",
+    'C': "https://docs.google.com/spreadsheets/d/e/2PACX-1vRxDSOSL4H3e0x1AGroPVMIV9YURcz87dYbzfxTFrDeGzobsNg67840s51Dh59mxiBdIM_8XqT02bw8/pub?gid=1643009496&single=true&output=csv",
+    'D': "https://docs.google.com/spreadsheets/d/e/2PACX-1vRxDSOSL4H3e0x1AGroPVMIV9YURcz87dYbzfxTFrDeGzobsNg67840s51Dh59mxiBdIM_8XqT02bw8/pub?gid=991012475&single=true&output=csv"
+};
+
+// 3. ĐỘNG CƠ TỰ ĐỘNG GOM DỮ LIỆU TỪ 4 LINK
+async function layTatCaDuLieuSS4() {
+    try {
+        for (const bang in LINK_CacBang_SS4) {
+            const link = LINK_CacBang_SS4[bang];
+            if (link === "" || !link.includes("http")) continue; 
+
+            const response = await fetch(link);
+            const data = await response.text();
+            
+            // Bỏ dòng tiêu đề đầu tiên trong Google Sheets
+            const rows = data.split('\n').slice(1); 
+            
+            rows.forEach(row => {
+                if(!row.trim()) return;
+                const cols = row.split(','); 
+                
+                // Gom chuẩn xác 6 cột từ Sheets vào web
+                DU_LIEU_BXH_SS4[bang].push({
+                    rank: parseInt(cols[0]),
+                    name: cols[1].trim(),
+                    booyah: parseInt(cols[2]),
+                    kill: parseInt(cols[3]),
+                    match: parseInt(cols[4]),
+                    total: parseInt(cols[5])
+                });
+            });
+        }
+        
+        // VẼ GIAO DIỆN (Đảm bảo tên hàm này khớp với hàm bên dưới của bạn)
+        renderLeaderboardV5('A'); 
+        
+    } catch (error) {
+        console.error("Lỗi đồng bộ dữ liệu SS4:", error);
+    }
+}
+
+// KHỞI ĐỘNG HỆ THỐNG!
+layTatCaDuLieuSS4();
