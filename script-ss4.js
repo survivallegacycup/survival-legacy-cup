@@ -145,7 +145,7 @@ async function moThongSo(soTran) {
             container.innerHTML += `
                 <div class="g-cell">${teamInfo[0] || ''}</div>
                 <div class="g-cell team-name-cell">
-                    <img src="${logoThichHop}" alt="logo" class="small-logo"> 
+                    <img src="${logoThichHop}" onerror="this.onerror=null; this.src='logo-uzi.jpg';" style="width:100%;height:100%;border-radius:4px;object-fit:cover;">
                     <span class="short-name">${tenDoi}</span>
                 </div>
                 <div class="g-cell">${teamInfo[2] || ''}</div>
@@ -1103,7 +1103,7 @@ function renderLeaderboardV5(bangId) {
       <div class="pod-icon" style="color:${p.color}">${p.icon}</div>
       <div class="pod-ava" style="background:${p.avaBg};border-color:${p.color};">
         <div class="pod-ring" style="border-color:${p.ringColor}"></div>
-        <img src="${logoThichHop}" style="width:100%;height:100%;border-radius:8px;object-fit:cover;position:relative;z-index:2;">
+        <img src="${logoThichHop}" onerror="this.onerror=null; this.src='logo-uzi.jpg';" style="width:100%;height:100%;border-radius:4px;object-fit:cover;">
       </div>
       <div class="pod-name" style="color:${p.color};text-shadow:0 0 18px ${p.color}66">${t.name}</div>
       <div class="pod-pts" style="color:${p.color};text-shadow:0 0 24px ${p.color}77">${t.total}</div>
@@ -1138,7 +1138,7 @@ function renderLeaderboardV5(bangId) {
       <div class="rr-rank" style="color:${tier.rankBase}">${t.rank}</div>
       <div class="rr-team">
         <div class="rr-ava" style="background:${tier.avaBase};border:1px solid ${tier.avaBorder};">
-            <img src="${logoThichHop}" style="width:100%;height:100%;border-radius:4px;object-fit:cover;">
+            <img src="${logoThichHop}" onerror="this.onerror=null; this.src='logo-uzi.jpg';" style="width:100%;height:100%;border-radius:4px;object-fit:cover;">
         </div>
         <span class="rr-name" style="color:${tier.nameBase}">${t.name}</span>
       </div>
@@ -1214,7 +1214,7 @@ function renderBanket() {
       <div class="pod-icon" style="color:${p.color}">${p.icon}</div>
       <div class="pod-ava" style="background:${p.avaBg};border-color:${p.color};">
         <div class="pod-ring" style="border-color:${p.ringColor}"></div>
-        <img src="${logoThichHop}" style="width:100%;height:100%;border-radius:8px;object-fit:cover;position:relative;z-index:2;">
+        <img src="${logoThichHop}" onerror="this.onerror=null; this.src='logo-uzi.jpg';" style="width:100%;height:100%;border-radius:4px;object-fit:cover;">
       </div>
       <div class="pod-name" style="color:${p.color};text-shadow:0 0 18px ${p.color}66">${t.name}</div>
       <div class="pod-pts" style="color:${p.color};text-shadow:0 0 24px ${p.color}77">${t.total}</div>
@@ -1249,7 +1249,7 @@ function renderBanket() {
       <div class="rr-rank" style="color:${tier.rankBase}">${t.rank}</div>
       <div class="rr-team">
         <div class="rr-ava" style="background:${tier.avaBase};border:1px solid ${tier.avaBorder};">
-            <img src="${logoThichHop}" style="width:100%;height:100%;border-radius:4px;object-fit:cover;">
+            <img src="${logoThichHop}" onerror="this.onerror=null; this.src='logo-uzi.jpg';" style="width:100%;height:100%;border-radius:4px;object-fit:cover;">
         </div>
         <span class="rr-name" style="color:${tier.nameBase}">${t.name}</span>
       </div>
@@ -1319,7 +1319,7 @@ function renderChungKet() {
       <div class="pod-icon" style="color:${p.color}">${p.icon}</div>
       <div class="pod-ava" style="background:${p.avaBg};border-color:${p.color};">
         <div class="pod-ring" style="border-color:${p.ringColor}"></div>
-        <img src="${logoThichHop}" style="width:100%;height:100%;border-radius:8px;object-fit:cover;position:relative;z-index:2;">
+        <img src="${logoThichHop}" onerror="this.onerror=null; this.src='logo-uzi.jpg';" style="width:100%;height:100%;border-radius:4px;object-fit:cover;">
       </div>
       <div class="pod-name" style="color:${p.color};text-shadow:0 0 18px ${p.color}66">${t.name}</div>
       <div class="pod-pts" style="${ptsStyle}">${t.total}</div>
@@ -1346,7 +1346,7 @@ function renderChungKet() {
       <div class="rr-rank" style="color:${tier.rankBase}">${t.rank}</div>
       <div class="rr-team">
         <div class="rr-ava" style="background:${tier.avaBase};border:1px solid ${tier.avaBorder};">
-            <img src="${logoThichHop}" style="width:100%;height:100%;border-radius:4px;object-fit:cover;">
+            <img src="${logoThichHop}" onerror="this.onerror=null; this.src='logo-uzi.jpg';" style="width:100%;height:100%;border-radius:4px;object-fit:cover;">
         </div>
         <span class="rr-name" style="color:${tier.nameBase}">${t.name}</span>
       </div>
