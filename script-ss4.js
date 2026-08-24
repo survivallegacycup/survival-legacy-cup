@@ -1285,9 +1285,6 @@ function renderBanketSS4(bkId) {
     }, 750 + i * 50);
   });
 }
-
-// Khởi chạy Bán Kết khi trang load
-renderBanketSS4('1');
 // Dùng chung bảng màu V5 chuẩn Esports
 function getTierCK(rank){
   if(rank<=6) return { ac:"#00e5ff", sweep:"rgba(0,229,255,0.06)", bar:"#00e5ff", rowBg:"#020c14", nameBase:"#5ab8d8", nameHover:"#d0f8ff", rankBase:"#1e6080", rankHover:"#00e5ff", avaBase:"#001824", avaBorder:"#00e5ff22", avaHoverBg:"#002a38", avaHoverBorder:"#00e5ff88", totalBase:"#00e5ff", totalSize:15, killCol:"#22d3a5", booyahCol:"#e8b400" };
