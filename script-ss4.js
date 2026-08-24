@@ -1093,6 +1093,7 @@ function renderLeaderboardV5(bangId) {
   POD_CFG.forEach(p => {
     if(!teams[p.teamIdx]) return;
     const t = teams[p.teamIdx];
+    if (!t) return; // Khiên bảo vệ: Bỏ qua và không báo lỗi nếu bảng chưa có đủ đội
     let logoThichHop = "logo-" + t.name.toLowerCase() + "ss4.jpg"; // LOGO TỰ ĐỘNG
 
     const card = document.createElement("div");
