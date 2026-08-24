@@ -1194,6 +1194,7 @@ function getTierBK(rank){
 
 function renderBanketSS4(bkId) {
   const teams = DU_LIEU_BANKET_SS4[bkId] || [];
+  if (teams.length === 0) return;
   const podWrap = document.getElementById("podium-banket");
   const restWrap = document.getElementById("rest-rows-banket");
   if(!podWrap || !restWrap) return;
