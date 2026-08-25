@@ -1466,16 +1466,20 @@ document.addEventListener("DOMContentLoaded", () => {
         ttObserver.observe(element);
     });
 });
-// Hàm tự động đổi viền sáng cho tab vừa được click
-function switchTab(clickedBtn) {
-    // 1. Tìm cái hộp chứa các nút này
-    const buttonGroup = clickedBtn.parentElement;
-    
-    // 2. Tắt đèn TẤT CẢ các nút đang có trong hộp
-    buttonGroup.querySelectorAll('.tab').forEach(btn => {
-        btn.classList.remove('on');
+// Bắt sự kiện Click nút chuyển Bảng (Dùng chung cho toàn bộ web)
+document.querySelectorAll(".tab").forEach(btn => {
+    btn.addEventListener("click", function() {
+        // Tắt đèn các nút khác trong cùng một cụm
+        const parent = this.parentElement;
+        parent.querySelectorAll(".tab").forEach(x => x.classList.remove("on"));
+        
+        // Bật đèn cho nút vừa bấm
+        this.classList.add("on");
+
+        // (Chỉ dành cho Vòng Bảng) Nếu nút có gắn data-bang thì mới gọi hàm Vòng Bảng
+        const bangId = this.getAttribute("data-bang");
+        if (bangId) {
+            renderLeaderboardV5(bangId);
+        }
     });
-    
-    // 3. Bật đèn sáng chói cho đúng cái nút vừa được bấm
-    clickedBtn.classList.add('on');
-}
+});
