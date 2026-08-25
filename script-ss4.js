@@ -145,7 +145,7 @@ async function moThongSo(soTran) {
             container.innerHTML += `
                 <div class="g-cell">${teamInfo[0] || ''}</div>
                 <div class="g-cell team-name-cell">
-                    <img src="${logoThichHop}" onerror="this.onerror=null; this.src='logo-uziss4ss4.jpg';" style="width:100%;height:100%;border-radius:4px;object-fit:cover;">
+                    <img src="${logoThichHop}" onerror="this.onerror=null; this.src='logo-uziss4.jpg';" style="width:100%;height:100%;border-radius:4px;object-fit:cover;">
                     <span class="short-name">${tenDoi}</span>
                 </div>
                 <div class="g-cell">${teamInfo[2] || ''}</div>
@@ -171,7 +171,7 @@ const teamsDatabase = {
     "vktss4": {
         name: "VKT",
         desc: "VKT – Tên đầy đủ là Vân Kiếm Tôn. Mang khí chất của một kiếm khách giữa phong vân, Vân Kiếm Tôn không tìm kiếm chiến thắng bằng lời nói mà bằng từng đường kiếm sắc bén trên chiến trường. Kiếm đã xuất, không lùi bước; trận đã vào, chỉ hướng đến chiến thắng tại Survival Legacy Cup SS4!",
-        logo: "logo-vktss4ss4.jpg",
+        logo: "logo-vktss4.jpg",
         country: "", 
         players: [
             { n: "VKT.TONGCHU", r: "RUSHER", id: "5755160631" },
@@ -184,7 +184,7 @@ const teamsDatabase = {
     "tsss4": {
         name: "TS",
         desc: "TS – Tên đầy đủ là TS. Tactical Strike – ra đòn bằng chiến thuật, kết liễu bằng bản lĩnh. TS không tìm kiếm cơ hội, TS tạo ra cơ hội. Khi thời khắc quyết định xuất hiện, đội tuyển sẵn sàng tung đòn và xoay chuyển toàn bộ cục diện tại Survival Legacy Cup SS4!",
-        logo: "logo-tsss4ss4.jpg",
+        logo: "logo-tsss4.jpg",
         country: "",
         players: [
             { n: "TS.VENUS", r: "RUSHER", id: "9715895573" },
@@ -197,7 +197,7 @@ const teamsDatabase = {
     "fhss4": {
         name: "FH",
         desc: "FH – Tên đầy đủ là FIRE HORSE. Như một chiến mã bùng cháy trên chiến trường, FIRE HORSE luôn lao về phía trước với tốc độ, sức mạnh và tinh thần không bao giờ bỏ cuộc. Sẵn sàng đốt cháy mọi giới hạn, FH quyết tâm tạo nên dấu ấn tại Survival Legacy Cup SS4!",
-        logo: "logo-fhss4ss4.jpg",
+        logo: "logo-fhss4.jpg",
         country: "", 
         players: [
             { n: "FH.SADER", r: "RUSHER", id: "2277930623"},
@@ -210,7 +210,7 @@ const teamsDatabase = {
     "btvss4": {
         name: "BTV",
         desc: "BTV – Tên đầy đủ là BTV. Born To Victory – sinh ra để chiến thắng. BTV không bước vào trận đấu để thử sức, mà để chứng minh bản lĩnh. Càng áp lực càng lì lợm, càng quyết định càng bùng nổ — BTV sẵn sàng chiến đấu đến cùng tại Survival Legacy Cup SS4!",
-        logo: "logo-btvss4ss4.jpg",
+        logo: "logo-btvss4.jpg",
         country: "", 
         players: [
             { n: "BTV.THIENVU", r: "RUSHER", id: "14201869960" },
@@ -223,7 +223,7 @@ const teamsDatabase = {
     "bbess4": {
         name: "BBE",
         desc: "BBE – Tên đầy đủ là Bánh Bao Esports. Đừng để cái tên “Bánh Bao” đánh lừa — bên ngoài có thể mềm, nhưng vào trận thì không mềm chút nào. BBE mang đến lối chơi đầy bất ngờ, càng bị ép càng bật lại mạnh mẽ. Bánh Bao có thể tròn, nhưng đường đến chiến thắng thì không vòng vo — BBE quyết chiến tại Survival Legacy Cup SS4!",
-        logo: "logo-bbess4ss4.jpg", 
+        logo: "logo-bbess4.jpg", 
         country: "", 
         players: [
             { n: "BBE.KENDY", r: "RUSHER", id: "1774361226" },
@@ -236,7 +236,7 @@ const teamsDatabase = {
     "hdss4": {
         name: "HD",
         desc: "HD – Tên đầy đủ là Hoà Đam. Hai chữ cái, một tinh thần: Hold • Dominate – giữ vững thế trận, làm chủ cuộc chơi. HD không cần ồn ào để gây áp lực, chỉ cần vào trận là sẵn sàng bứt phá, áp đảo và chiến đấu đến cùng tại Survival Legacy Cup SS4!",
-        logo: "logo-hdss4ss4.jpg",
+        logo: "logo-hdss4.jpg",
         country: "", 
         players: [
             { n: "HD.WIN", r: "RUSHER", id: "16483572912" },
@@ -249,7 +249,7 @@ const teamsDatabase = {
     "tmhss4": {
         name: "TMH",
         desc: "TMH – Tên đầy đủ là TMH. Think. Move. Hunt. – nghĩ nhanh, di chuyển chuẩn, săn chiến thắng. TMH không cần ồn ào để tạo áp lực; chỉ cần một khoảnh khắc đúng lúc, đội tuyển sẵn sàng biến thế trận và ghi dấu ấn tại Survival Legacy Cup SS4!",
-        logo: "logo-tmhss4ss4.jpg",
+        logo: "logo-tmhss4.jpg",
         country: "", 
         players: [
             { n: "TMH.VANTUAN", r: "RUSHER", id: "1285407799"},
@@ -262,7 +262,7 @@ const teamsDatabase = {
     "kess4": {
         name: "KE",
         desc: "KE – Tên đầy đủ là KING Esports. Đã mang tên KING, thì bước vào chiến trường không phải để đứng sau bất kỳ ai. Với bản lĩnh của một nhà vua, tinh thần không khuất phục và khát khao chinh phục đỉnh cao, KE sẵn sàng đăng quang bằng chính thực lực tại Survival Legacy Cup SS4!",
-        logo: "logo-kess4ss4.jpg",
+        logo: "logo-kess4.jpg",
         country: "", 
         players: [
             { n: "KE.DHAO",  r: "RUSHER", id: "15004360" },
@@ -275,7 +275,7 @@ const teamsDatabase = {
     "adess4": {
         name: "ADE",
         desc: "ADE – Tên đầy đủ là ADE. Không cần một cái tên quá dài để tạo dấu ấn, ADE chọn cách khiến đối thủ phải ghi nhớ bằng màn trình diễn trên chiến trường. Với tinh thần không lùi bước, khả năng thích nghi linh hoạt và khát khao chinh phục từng trận đấu, ADE sẵn sàng bứt phá, tạo nên những khoảnh khắc đáng nhớ và khẳng định bản lĩnh tại Survival Legacy Cup SS4!",
-        logo: "logo-adess4ss4.jpg",
+        logo: "logo-adess4.jpg",
         country: "", 
         players: [
             { n: "ADE.TNGHIA", r: "RUSHER", id: "4275108112"},
@@ -288,7 +288,7 @@ const teamsDatabase = {
     "bzess4": {
         name: "BZE",
         desc: "BZE – Tên đầy đủ là BZ Esports. Break the Zone, Break the Limit – phá vỡ giới hạn, bứt khỏi vùng an toàn. BZE không chờ chiến thắng tìm đến, mà chủ động tạo ra nó bằng những pha xử lý quyết đoán và tinh thần không ngại va chạm. Bước vào là chiến, bùng nổ là BZE — sẵn sàng khuấy đảo Survival Legacy Cup SS4!",
-        logo: "logo-bzess4ss4.jpg",
+        logo: "logo-bzess4.jpg",
         country: "", 
         players: [
             { n: "BZE.TDUNG", r: "RUSHER", id: "4017055018" },
@@ -301,7 +301,7 @@ const teamsDatabase = {
     "tckss4": {
         name: "TCK",
         desc: "TCK – Tên đầy đủ là TCK. Take Control, Keep Fighting – nắm quyền kiểm soát, chiến đấu đến cùng. TCK không chờ thời cơ xuất hiện, họ tự tạo ra thời cơ bằng từng pha xử lý quyết đoán. Kiểm soát thế trận, bùng nổ đúng lúc và chiến đấu đến giây cuối cùng tại Survival Legacy Cup SS4!",
-        logo: "logo-tckss4ss4.jpg",
+        logo: "logo-tckss4.jpg",
         country: "", 
         players: [
             { n: "TCK.TKHANH", r: "RUSHER", id: "7626327478" },
@@ -314,7 +314,7 @@ const teamsDatabase = {
     "adnss4": {
         name: "ADN",
         desc: "ADN – Tên đầy đủ là ADN. Attack • Dominate • Never Back Down – tấn công, áp đảo và không bao giờ lùi bước. ADN mang tinh thần chiến đấu trực diện, càng va chạm càng mạnh, càng áp lực càng bùng nổ. Không né tránh, không chùn bước — ADN sẵn sàng chiến đến cùng tại Survival Legacy Cup SS4!",
-        logo: "logo-adnss4ss4.jpg",
+        logo: "logo-adnss4.jpg",
         country: "", 
         players: [
             { n: "ADN.BAOVAT", r: "RUSHER", id: "7087724023" },
@@ -327,7 +327,7 @@ const teamsDatabase = {
     "slss4": {
         name: "SL",
         desc: "SL – Tên đầy đủ là Serein Line. Mang trong mình sự điềm tĩnh của “Serein” – một vẻ đẹp yên bình giữa những biến động, Serein Line không cần ồn ào để tạo khác biệt. Càng áp lực, SL càng lạnh lùng, càng quyết đoán và sẵn sàng bứt phá tại Survival Legacy Cup SS4!",
-        logo: "logo-slss4ss4.jpg",
+        logo: "logo-slss4.jpg",
         country: "", 
         players: [
             { n: "SL.EMKING", r: "RUSHER", id: "2325777762" },
@@ -340,7 +340,7 @@ const teamsDatabase = {
     "ilgss4": {
         name: "ILG",
         desc: "ILG – Tên đầy đủ là I Love Game. Với ILG, game không chỉ là cuộc chơi mà là nơi đam mê được biến thành bản lĩnh. Chơi vì đam mê, chiến vì chiến thắng — ILG sẵn sàng cháy hết mình, tạo bất ngờ và để lại dấu ấn tại Survival Legacy Cup SS4!",
-        logo: "logo-ilgss4ss4.jpg",
+        logo: "logo-ilgss4.jpg",
         country: "", 
         players: [
             { n: "ILG.NGPHUOC", r: "RUSHER", id: "1662260659" },
@@ -353,7 +353,7 @@ const teamsDatabase = {
     "slass4": {
         name: "SLA",
         desc: "SLA – Tên đầy đủ là Serein Line Academy. Là thế hệ trẻ mang tinh thần của Serein Line, SLA bước vào đấu trường với mục tiêu học hỏi để trưởng thành, rèn luyện để bứt phá. Không ngại va chạm, không sợ áp lực, SLA sẵn sàng biến từng trận đấu thành một bước tiến mới tại Survival Legacy Cup SS4!",
-        logo: "logo-slass4ss4.jpg",
+        logo: "logo-slass4.jpg",
         country: "", 
         players: [
             { n: "SLA.PON", r: "RUSHER", id: "449570398" },
@@ -366,7 +366,7 @@ const teamsDatabase = {
     "artyss4": {
         name: "ARTY",
         desc: "ARTY – Tên đầy đủ là ARTY KILLER. Sinh ra để săn kill, thi đấu để thống trị. Với lối chơi máu lửa và tinh thần không khoan nhượng, ARTY KILLER sẵn sàng biến mọi cuộc đối đầu thành màn trình diễn của mình tại Survival Legacy Cup SS4!",
-        logo: "logo-artyss4ss4.jpg",
+        logo: "logo-artyss4.jpg",
         country: "", 
         players: [
             { n: "ARTY.NTUAN", r: "RUSHER", id: "10208562491" },
@@ -379,7 +379,7 @@ const teamsDatabase = {
     "blss4": {
         name: "BL",
         desc: "BL – Tên đầy đủ là BL Esports. Bật lên là chiến, bước vào là quyết! BL mang tinh thần của một đội tuyển không ngại va chạm, luôn sẵn sàng tăng tốc khi cơ hội xuất hiện. Không cần ồn ào, chỉ cần một trận đấu đủ cháy để cả chiến trường phải nhớ tên BL tại Survival Legacy Cup SS4!",
-        logo: "logo-blss4ss4.jpg",
+        logo: "logo-blss4.jpg",
         country: "", 
         players: [
             { n: "BL.FORX", r: "RUSHER", id: "10662958879" },
@@ -392,7 +392,7 @@ const teamsDatabase = {
     "nexss4": {
         name: "NEX",
         desc: "NEX – Tên đầy đủ là NEXSIAS Esports. Next level, next threat. NEXSIAS không bước vào chiến trường để hòa mình vào đám đông, mà để trở thành cái tên khiến đối thủ phải dè chừng. Càng vào trận, NEX càng tăng tốc, càng áp lực càng bùng nổ — sẵn sàng vươn lên một đẳng cấp mới tại Survival Legacy Cup SS4!",
-        logo: "logo-nexss4ss4.jpg",
+        logo: "logo-nexss4.jpg",
         country: "", 
         players: [
             { n: "NEX.LU", r: "RUSHER", id: "8910861016" },
@@ -405,7 +405,7 @@ const teamsDatabase = {
     "n1ctss4": {
         name: "N1CT",
         desc: "N1CT – Tên đầy đủ là No 1 Co Te. Cái tên mang theo một mục tiêu rõ ràng: đã chiến là phải hướng đến vị trí số 1. N1CT không ngại va chạm, không chùn bước trước áp lực, sẵn sàng tăng tốc đúng thời điểm và biến từng trận đấu thành cơ hội vươn lên tại Survival Legacy Cup SS4!",
-        logo: "logo-n1ctss4ss4.jpg",
+        logo: "logo-n1ctss4.jpg",
         country: "", 
         players: [
             { n: "N1CT.TIENANH", r: "RUSHER", id: "12716802702" },
@@ -418,7 +418,7 @@ const teamsDatabase = {
     "bbss4": {
         name: "BB",
         desc: "BB – Tên đầy đủ là Bất Bại Esports. Cái tên đã nói lên tất cả — không bước vào trận để chấp nhận thất bại. BB mang tinh thần lì lợm, càng bị dồn ép càng phản công mạnh mẽ, sẵn sàng chiến đấu đến cùng và bảo vệ danh xưng “Bất Bại” tại Survival Legacy Cup SS4!",
-        logo: "logo-bbss4ss4.jpg",
+        logo: "logo-bbss4.jpg",
         country: "", 
         players: [
             { n: "BB.NTHANH", r: "RUSHER", id: "1611862956" },
@@ -431,7 +431,7 @@ const teamsDatabase = {
     "tgess4": {
         name: "TGE",
         desc: "TGE – Tên đầy đủ là TIGER Esports. Trong rừng sâu, kẻ săn mồi không cần lên tiếng — chỉ cần một khoảnh khắc, con mồi đã nằm trong tầm ngắm. TGE mang tinh thần của một con hổ luôn chờ đúng thời điểm để vồ lấy chiến thắng. Ẩn mình, tăng tốc, kết liễu — TGE sẵn sàng biến Survival Legacy Cup SS4 thành lãnh địa của riêng mình!",
-        logo: "logo-tgess4ss4.jpg",
+        logo: "logo-tgess4.jpg",
         country: "", 
         players: [
             { n: "TGE.ONESEFL", r: "RUSHER", id: "8240307539" },
@@ -444,7 +444,7 @@ const teamsDatabase = {
     "kmss4": {
         name: "KM",
         desc: "KM – Tên đầy đủ là KM Esports. Mang tinh thần Kill • Master, KM Esports luôn bước vào trận đấu với bản lĩnh của những người làm chủ mọi cuộc giao tranh. Không ngại đối đầu, không bỏ lỡ cơ hội, KM quyết tâm chinh phục chiến thắng và khẳng định vị thế tại Survival Legacy Cup SS4!",
-        logo: "logo-kmss4ss4.jpg",
+        logo: "logo-kmss4.jpg",
         country: "", 
         players: [
             { n: "KM.LOSTINUS", r: "RUSHER", id: "3016983320" },
@@ -457,7 +457,7 @@ const teamsDatabase = {
     "rzss4": {
         name: "RZ",
         desc: "RZ – Tên đầy đủ là RAZE Esports. Không báo trước, không cho cơ hội thứ hai. RAZE bước vào chiến trường như một cơn bão — âm thầm tích tụ, rồi bùng nổ đúng thời khắc quyết định. Đã chạm trán RZ, chỉ có thể chọn một: chống trả hoặc bị cuốn phăng khỏi cuộc chơi tại Survival Legacy Cup SS4!",
-        logo: "logo-rzss4ss4.jpg",
+        logo: "logo-rzss4.jpg",
         country: "", 
         players: [
             { n: "RZ.DUY", r: "RUSHER", id: "12576856883" },
@@ -470,7 +470,7 @@ const teamsDatabase = {
     "rz2ss4": {
         name: "RZ2",
         desc: "RZ2 – Tên đầy đủ là RAZE Esports 2. Một RAZE đã đủ đáng gờm, RZ2 xuất hiện để nhân đôi sức ép. Không cần ồn ào, RZ2 chọn cách tăng tốc đúng thời điểm, phá vỡ thế trận và biến từng pha giao tranh thành cơ hội kết liễu. RAZE trở lại với phiên bản thứ hai — mạnh hơn, liều lĩnh hơn và sẵn sàng khuấy đảo Survival Legacy Cup SS4!",
-        logo: "logo-rz2ss4ss4.jpg",
+        logo: "logo-rz2ss4.jpg",
         country: "", 
         players: [
             { n: "RZ2.VANTU", r: "RUSHER", id: "9881928946" },
@@ -483,7 +483,7 @@ const teamsDatabase = {
     "zgdxss4": {
         name: "ZGDX",
         desc: "ZGDX – Tên đầy đủ là ZGDX Esports. Zero Fear, Dominate X – không sợ hãi, chỉ hướng đến áp đảo. ZGDX bước vào chiến trường với tinh thần không lùi bước, sẵn sàng biến từng pha giao tranh thành cơ hội bứt phá. Không run trước áp lực, không nhường trước đối thủ — ZGDX quyết chiến tại Survival Legacy Cup SS4!",
-        logo: "logo-zgdxss4ss4.jpg",
+        logo: "logo-zgdxss4.jpg",
         country: "", 
         players: [
             { n: "ZGDX.KIENVAN", r: "RUSHER", id: "2608313281" },
@@ -496,7 +496,7 @@ const teamsDatabase = {
     "sgpss4": {
         name: "SGP",
         desc: "SGP – Tên đầy đủ là SGP. Mang tinh thần Strike • Glory • Power, SGP luôn bước vào trận đấu với khát khao chiến thắng và bản lĩnh của những chiến binh thực thụ. Không ngại đối đầu, không lùi bước trước thử thách, SGP quyết tâm tạo nên dấu ấn tại Survival Legacy Cup SS4!",
-        logo: "logo-sgpss4ss4.jpg",
+        logo: "logo-sgpss4.jpg",
         country: "", 
         players: [
             { n: "SGP.TNLOI", r: "RUSHER", id: "8231737839" },
@@ -509,7 +509,7 @@ const teamsDatabase = {
     "rrqss4": {
         name: "RRQ",
         desc: "RRQ – Tên đầy đủ là RRQ Esports. Rise • Rule • Conquer – vươn lên, làm chủ và chinh phục. RRQ không bước vào chiến trường để tìm một vị trí an toàn, mà để tranh giành vị trí cao nhất. Bản lĩnh lên tiếng, chiến thắng là mục tiêu — RRQ sẵn sàng chinh phục Survival Legacy Cup SS4!",
-        logo: "logo-rrqss4ss4.jpg",
+        logo: "logo-rrqss4.jpg",
         country: "", 
         players: [
             { n: "RRQ.FOX", r: "RUSHER", id: "6895539974" },
@@ -522,7 +522,7 @@ const teamsDatabase = {
     "mekss4": {
         name: "MEK",
         desc: "MEK – Tên đầy đủ là MegaKill Esports. Khi giao tranh bùng nổ cũng là lúc MegaKill Esports lên tiếng. Với tinh thần quyết chiến, kỹ năng sắc bén và khát khao chinh phục, MEK quyết tâm tạo nên những pha xử lý mãn nhãn và ghi dấu ấn tại Survival Legacy Cup SS4!",
-        logo: "logo-mekss4ss4.jpg",
+        logo: "logo-mekss4.jpg",
         country: "", 
         players: [
             { n: "MEK.MTRIET", r: "RUSHER", id: "11689622261" },
@@ -535,7 +535,7 @@ const teamsDatabase = {
     "lkess4": {
         name: "LKE",
         desc: "LKE – Tên đầy đủ là LÊ KIÊN ESPORTS. Không cần hô hào quá lớn, LKE để kỹ năng lên tiếng. Mỗi pha giao tranh là một lời khẳng định, mỗi chiến thắng là một dấu ấn. Khi đã bước vào trận đấu, mục tiêu duy nhất của LÊ KIÊN ESPORTS là khiến cái tên của mình được nhắc đến nhiều nhất tại Survival Legacy Cup SS4!",
-        logo: "logo-lkess4ss4.jpg",
+        logo: "logo-lkess4.jpg",
         country: "", 
         players: [
             { n: "LKE.EMBEN", r: "RUSHER", id: "355294300" },
@@ -548,7 +548,7 @@ const teamsDatabase = {
     "kkss4": {
         name: "KK",
         desc: "KK – Tên đầy đủ là KING KING. Hai lần KING, gấp đôi tham vọng. KK bước vào chiến trường với tinh thần của những kẻ không muốn đứng sau bất kỳ ai — càng áp lực càng máu lửa, càng quyết định càng bùng nổ. Một KING đã đáng gờm, hai KING càng không thể xem thường — KK sẵn sàng chinh phục Survival Legacy Cup SS4!",
-        logo: "logo-kkss4ss4.jpg",
+        logo: "logo-kkss4.jpg",
         country: "", 
         players: [
             { n: "KK.MHCUONG", r: "RUSHER", id: "7519765743" },
@@ -561,7 +561,7 @@ const teamsDatabase = {
     "kmess4": {
         name: "KME",
         desc: "KME – Tên đầy đủ là KM Esports. Keep Moving, Keep Winning – không ngừng tiến lên, không ngừng chiến thắng. KME mang tinh thần càng đánh càng lì, càng vào sâu càng bùng nổ. Không đứng yên, không chùn bước — KME sẵn sàng tăng tốc và săn chiến thắng tại Survival Legacy Cup SS4!",
-        logo: "logo-kmess4ss4.jpg",
+        logo: "logo-kmess4.jpg",
         country: "", 
         players: [
             { n: "KME.LOSTINUS", r: "RUSHER", id: "3016983320" },
@@ -574,7 +574,7 @@ const teamsDatabase = {
     "sawss4": {
         name: "SAW",
         desc: "SAW – Tên đầy đủ là SHADOW Esports. Silent Approach, Wild Strike – âm thầm tiếp cận, bùng nổ ra đòn. SAW không cần xuất hiện ồn ào, chỉ cần một khoảnh khắc thích hợp để biến cái bóng thành cơn ác mộng trên chiến trường. Ẩn mình, chờ thời, tung đòn quyết định — SAW sẵn sàng săn chiến thắng tại Survival Legacy Cup SS4!",
-        logo: "logo-sawss4ss4.jpg",
+        logo: "logo-sawss4.jpg",
         country: "", 
         players: [
             { n: "SAW.NKHANH", r: "RUSHER", id: "9762026995" },
@@ -587,7 +587,7 @@ const teamsDatabase = {
     "ilgess4": {
         name: "ILGE",
         desc: "ILGE – Tên đầy đủ là I Love Games Esports. Với ILGE, game không chỉ là sở thích mà còn là nơi đam mê được biến thành khát khao chiến thắng. Chơi bằng đam mê, chiến bằng bản lĩnh, thắng bằng thực lực — ILGE sẵn sàng cháy hết mình và tạo nên dấu ấn tại Survival Legacy Cup SS4!",
-        logo: "logo-ilgess4ss4.jpg",
+        logo: "logo-ilgess4.jpg",
         country: "", 
         players: [
             { n: "ILGE.NGPHUOC", r: "RUSHER", id: "1662260659" },
@@ -600,7 +600,7 @@ const teamsDatabase = {
     "vdess4": {
         name: "VDE",
         desc: "VDE – Tên đầy đủ là Vô Danh Esports. Không mang theo hào quang hay danh tiếng, VDE bước vào chiến trường với hai bàn tay trắng và khát khao chứng minh bản thân. Hôm nay có thể là vô danh, nhưng ngày mai sẽ là cái tên khiến mọi đối thủ phải ghi nhớ — VDE sẵn sàng bùng nổ tại Survival Legacy Cup SS4!",
-        logo: "logo-vdess4ss4.jpg",
+        logo: "logo-vdess4.jpg",
         country: "", 
         players: [
             { n: "VDE.ONESEFL", r: "RUSHER", id: "8240307539" },
@@ -613,7 +613,7 @@ const teamsDatabase = {
     "pfpss4": {
         name: "PFP",
         desc: "PFP – Tên đầy đủ là PFP Esports. Play For Pride – chiến đấu vì niềm tự hào. Mỗi trận đấu không chỉ là cuộc cạnh tranh điểm số mà còn là cơ hội để khẳng định bản lĩnh của cả tập thể. Không ngại thử thách, không sợ đối đầu, PFP sẵn sàng chiến hết mình tại Survival Legacy Cup SS4!",
-        logo: "logo-pfpss4ss4.jpg",
+        logo: "logo-pfpss4.jpg",
         country: "", 
         players: [
             { n: "PFP.NTRI", r: "RUSHER", id: "2653093397" },
@@ -626,7 +626,7 @@ const teamsDatabase = {
     "x77ss4": {
         name: "X77",
         desc: "X77 – Tên đầy đủ là X77 Esports. Bí ẩn như chữ X, bùng nổ như con số 77, X77 là đội tuyển luôn mang đến những điều không thể đoán trước. Đối thủ có thể chuẩn bị cho mọi kịch bản, nhưng không thể chuẩn bị cho sự đột biến mà X77 tạo ra. Một khoảnh khắc tỏa sáng có thể thay đổi cả trận đấu — và X77 luôn sẵn sàng tạo ra khoảnh khắc đó tại Survival Legacy Cup SS4!",
-        logo: "logo-x77ss4ss4.jpg",
+        logo: "logo-x77ss4.jpg",
         country: "", 
         players: [
             { n: "X77.TIENANH", r: "RUSHER", id: "12716802702" },
@@ -639,7 +639,7 @@ const teamsDatabase = {
     "ptess4": {
         name: "PTE",
         desc: "PTE – Tên đầy đủ là PTE. Power • Tactics • Excellence – sức mạnh, chiến thuật và sự xuất sắc. PTE không chọn lối chơi an toàn, mà chọn cách đối mặt với thử thách bằng bản lĩnh và sự tự tin. Càng áp lực càng quyết tâm, càng giao tranh càng bùng nổ — PTE sẵn sàng khẳng định vị thế tại Survival Legacy Cup SS4!",
-        logo: "logo-ptess4ss4.jpg",
+        logo: "logo-ptess4.jpg",
         country: "", 
         players: [
             { n: "PTE.TRIEUVY", r: "RUSHER", id: "1814073359" },
@@ -652,7 +652,7 @@ const teamsDatabase = {
     "tlrss4": {
         name: "TLR",
         desc: "TLR – Tên đầy đủ là TLR Esports. The Last Resistance – phòng tuyến cuối cùng, nơi ý chí không bao giờ gục ngã. Dù bị dồn vào thế khó khăn nhất, TLR vẫn giữ vững tinh thần chiến đấu và sẵn sàng phản công bất cứ lúc nào. Không bỏ cuộc, không lùi bước — TLR quyết tâm chiến đấu đến cùng tại Survival Legacy Cup SS4!",
-        logo: "logo-tlrss4ss4.jpg",
+        logo: "logo-tlrss4.jpg",
         country: "", 
         players: [
             { n: "TLR.CTHANH", r: "RUSHER", id: "4392383516" },
@@ -665,7 +665,7 @@ const teamsDatabase = {
     "tass4": {
         name: "TA",
         desc: "TA – Tên đầy đủ là TA Esports. Đằng sau hai chữ cái ngắn gọn là một tập thể luôn khao khát chinh phục những thử thách lớn nhất. TA không cần những lời tuyên bố mạnh mẽ, bởi chính những màn trình diễn trên chiến trường sẽ nói lên tất cả. Bản lĩnh để chiến đấu, quyết tâm để chiến thắng — TA sẵn sàng tạo dấu ấn tại Survival Legacy Cup SS4!",
-        logo: "logo-tass4ss4.jpg",
+        logo: "logo-tass4.jpg",
         country: "", 
         players: [
             { n: "TA.NTRI", r: "RUSHER", id: "371797166" },
@@ -691,7 +691,7 @@ const teamsDatabase = {
     "dzss4": {
         name: "DZ",
         desc: "DZ – Tên đầy đủ là DZ Gaming. Mang trong mình tinh thần của những chiến binh không ngại thử thách, DZ luôn sẵn sàng lao vào những cuộc giao tranh khốc liệt nhất để giành lấy chiến thắng. Càng căng thẳng càng bản lĩnh, càng khó khăn càng quyết tâm — DZ Gaming đến với Survival Legacy Cup SS4 không chỉ để thi đấu, mà để chinh phục!",
-        logo: "logo-dzss4ss4.jpg",
+        logo: "logo-dzss4.jpg",
         country: "", 
         players: [
             { n: "DZ.GHUNG", r: "RUSHER", id: "9339689538" },
@@ -704,7 +704,7 @@ const teamsDatabase = {
     "bless4": {
         name: "BLE",
         desc: "BLE – Tên đầy đủ là BLE. Break Limits Everywhere – phá vỡ mọi giới hạn. BLE không đặt mục tiêu chỉ để góp mặt, mà để vượt qua chính mình và tạo nên những bất ngờ trên chiến trường. Càng khó khăn càng quyết tâm, càng áp lực càng bùng nổ — BLE sẵn sàng viết nên câu chuyện của riêng mình tại Survival Legacy Cup SS4!",
-        logo: "logo-bless4ss4.jpg",
+        logo: "logo-bless4.jpg",
         country: "", 
         players: [
             { n: "BLE.FORX", r: "RUSHER", id: "10662958879" },
@@ -717,7 +717,7 @@ const teamsDatabase = {
     "ctess4": {
         name: "CTE",
         desc: "CTE – Tên đầy đủ là CTE. Với ý chí của những Champions Together Forever, CTE tin rằng sức mạnh lớn nhất đến từ sự gắn kết. Chiến đấu như một tập thể, quyết thắng như một đội tuyển, CTE quyết tâm tạo nên dấu ấn tại Survival Legacy Cup SS4!",
-        logo: "logo-ctess4ss4.jpg",
+        logo: "logo-ctess4.jpg",
         country: "", 
         players: [
             { n: "CTE.GIABAO", r: "RUSHER", id: "14501843024" },
@@ -730,7 +730,7 @@ const teamsDatabase = {
     "cdyss4": {
         name: "CDY",
         desc: "CDY – Tên đầy đủ là CDY. Challenge • Defy • Yield Never – dám thử thách, thách thức mọi giới hạn và không bao giờ khuất phục. CDY không bước vào trận đấu để tìm kiếm sự an toàn, mà để đối mặt với những đối thủ mạnh nhất. Càng áp lực càng kiên cường, càng khó khăn càng quyết chiến — CDY sẵn sàng bùng nổ tại Survival Legacy Cup SS4!",
-        logo: "logo-cdyss4ss4.jpg",
+        logo: "logo-cdyss4.jpg",
         country: "", 
         players: [
             { n: "CDY.MHCUONG", r: "RUSHER", id: "7519765743" },
@@ -743,7 +743,7 @@ const teamsDatabase = {
     "qvss4": {
         name: "QV",
         desc: "QV – Tên đầy đủ là QV Esports. Quiet Victory – chiến thắng không cần quá nhiều lời nói. QV lựa chọn để kỹ năng lên tiếng, để bản lĩnh được thể hiện qua từng trận đấu. Khi cơ hội xuất hiện, QV sẽ không ngần ngại tăng tốc và biến lợi thế thành chiến thắng. Âm thầm tiến bước, bùng nổ đúng lúc — QV Esports sẵn sàng khẳng định mình tại Survival Legacy Cup SS4!",
-        logo: "logo-qvss4ss4.jpg",
+        logo: "logo-qvss4.jpg",
         country: "", 
         players: [
             { n: "QV.TORAI", r: "RUSHER", id: "325587001" },
@@ -756,7 +756,7 @@ const teamsDatabase = {
     "bzss4": {
         name: "BZ",
         desc: "BZ – Tên đầy đủ là BZ Esports. Blaze Zone – vùng đất của những ngọn lửa không bao giờ tắt. BZ mang lối chơi đầy nhiệt huyết, luôn sẵn sàng bùng nổ trong những thời khắc quyết định và biến áp lực thành động lực. Càng chiến càng cháy, càng đánh càng hăng — BZ Esports quyết tâm tạo nên dấu ấn tại Survival Legacy Cup SS4!",
-        logo: "logo-bzss4ss4.jpg",
+        logo: "logo-bzss4.jpg",
         country: "", 
         players: [
             { n: "BZ.WASABI", r: "RUSHER", id: "12508509193" },
@@ -769,7 +769,7 @@ const teamsDatabase = {
     "6itss4": {
         name: "6IT",
         desc: "6IT – Tên đầy đủ là 6IT. Con số 6 đại diện cho sự gắn kết, còn IT là tinh thần đổi mới và tư duy chiến thuật. 6IT không phải đội tuyển thích phô trương, nhưng luôn biết cách tỏa sáng khi trận đấu bước vào giai đoạn quyết định. Giữ vững đội hình, bùng nổ đúng thời điểm — 6IT sẵn sàng tạo bất ngờ tại Survival Legacy Cup SS4!",
-        logo: "logo-6itss4ss4.jpg",
+        logo: "logo-6itss4.jpg",
         country: "", 
         players: [
             { n: "6IT.HELLOEM", r: "RUSHER", id: "1274582211" },
@@ -782,7 +782,7 @@ const teamsDatabase = {
     "jkss4": {
         name: "JK",
         desc: "JK – Tên đầy đủ là JET KITTY. Đừng để cái tên dễ thương đánh lừa bạn. Khi bước vào chiến trường, JET KITTY luôn sẵn sàng chuyển từ đáng yêu sang đáng gờm chỉ trong tích tắc. Với lối chơi khó đoán và tinh thần không ngại va chạm, JK có thể là chú mèo ngoài đời, nhưng là mãnh thú trong trận đấu. Sẵn sàng săn chiến thắng tại Survival Legacy Cup SS4!",
-        logo: "logo-jkss4ss4.jpg",
+        logo: "logo-jkss4.jpg",
         country: "", 
         players: [
             { n: "JK.SEPHIRE", r: "RUSHER", id: "9330818816" },
@@ -998,58 +998,78 @@ if (canvasModal) {
     }
     drawModalParticles();
 }
-// 1. KHO CHỨA DỮ LIỆU BẢNG XẾP HẠNG SS4
-let DU_LIEU_BXH_SS4 = { 'A': [], 'B': [], 'C': [], 'D': [] };
+// =========================================================================
+// CHỨC NĂNG BẢNG XẾP HẠNG V5 (LẮP LOGO TỰ ĐỘNG + ANIMATION + CHUYỂN BẢNG)
+// =========================================================================
 
-// 2. CHỖ ĐỂ BẠN DÁN 4 LINK GOOGLE SHEETS CỦA SS4
-const LINK_CacBang_SS4 = {
-    'A': "https://docs.google.com/spreadsheets/d/e/2PACX-1vRxDSOSL4H3e0x1AGroPVMIV9YURcz87dYbzfxTFrDeGzobsNg67840s51Dh59mxiBdIM_8XqT02bw8/pub?gid=0&single=true&output=csv",
-    'B': "https://docs.google.com/spreadsheets/d/e/2PACX-1vRxDSOSL4H3e0x1AGroPVMIV9YURcz87dYbzfxTFrDeGzobsNg67840s51Dh59mxiBdIM_8XqT02bw8/pub?gid=1709029258&single=true&output=csv",
-    'C': "https://docs.google.com/spreadsheets/d/e/2PACX-1vRxDSOSL4H3e0x1AGroPVMIV9YURcz87dYbzfxTFrDeGzobsNg67840s51Dh59mxiBdIM_8XqT02bw8/pub?gid=1643009496&single=true&output=csv",
-    'D': "https://docs.google.com/spreadsheets/d/e/2PACX-1vRxDSOSL4H3e0x1AGroPVMIV9YURcz87dYbzfxTFrDeGzobsNg67840s51Dh59mxiBdIM_8XqT02bw8/pub?gid=991012475&single=true&output=csv"
+// 1. DỮ LIỆU ĐỘNG CHO 4 BẢNG (Đã cập nhật chuẩn 100% từ mã HTML của bạn)
+const DU_LIEU_BXH_V5 = {
+  'A': [
+    {rank:1, name:"BBE", booyah:1, kill:84, match:5, total:113},
+    {rank:2, name:"SL", booyah:1, kill:67, match:5, total:104},
+    {rank:3, name:"BTV", booyah:1, kill:35, match:5, total:70},
+    {rank:4, name:"SLA", booyah:0, kill:30, match:5, total:65},
+    {rank:5, name:"BB", booyah:1, kill:34, match:5, total:62},
+    {rank:6, name:"VKT", booyah:0, kill:35, match:5, total:58},
+    {rank:7, name:"RZ", booyah:0, kill:20, match:5, total:57},
+    {rank:8, name:"KM", booyah:0, kill:23, match:5, total:37},
+    {rank:9, name:"ILG", booyah:0, kill:19, match:5, total:30},
+    {rank:10, name:"HD", booyah:0, kill:16, match:5, total:30},
+    {rank:11, name:"BZE", booyah:1, kill:14, match:5, total:30},
+    {rank:12, name:"ZGDX", booyah:0, kill:2, match:5, total:7}
+  ],
+  'B': [
+    {rank:1, name:"KE", booyah:1, kill:51, match:5, total:85},
+    {rank:2, name:"SGP", booyah:1, kill:50, match:5, total:83},
+    {rank:3, name:"KME", booyah:1, kill:43, match:5, total:70},
+    {rank:4, name:"ADN", booyah:1, kill:46, match:5, total:78},
+    {rank:5, name:"FH", booyah:0, kill:33, match:5, total:69},
+    {rank:6, name:"TS", booyah:1, kill:15, match:5, total:39},
+    {rank:7, name:"MEK", booyah:0, kill:15, match:5, total:35},
+    {rank:8, name:"N1CT", booyah:0, kill:16, match:5, total:32},
+    {rank:9, name:"RRQ", booyah:0, kill:26, match:5, total:31},
+    {rank:10, name:"TGE", booyah:0, kill:13, match:5, total:28},
+    {rank:11, name:"RZ2", booyah:0, kill:11, match:5, total:22},
+    {rank:12, name:"NEX", booyah:0, kill:2, match:5, total:5}
+  ],
+  'C': [
+    {rank:1, name:"LKE", booyah:5, kill:141, match:5, total:201},
+    {rank:2, name:"ADE", booyah:0, kill:48, match:5, total:70},
+    {rank:3, name:"TCK", booyah:0, kill:38, match:5, total:69},
+    {rank:4, name:"TMH", booyah:0, kill:33, match:5, total:63},
+    {rank:5, name:"SAW", booyah:0, kill:32, match:5, total:57},
+    {rank:6, name:"VDE", booyah:0, kill:21, match:5, total:41},
+    {rank:7, name:"KK", booyah:0, kill:25, match:5, total:39},
+    {rank:8, name:"BL", booyah:0, kill:21, match:5, total:35},
+    {rank:9, name:"ARTY", booyah:0, kill:16, match:5, total:34},
+    {rank:10, name:"PFP", booyah:0, kill:12, match:5, total:24},
+    {rank:11, name:"X77", booyah:0, kill:4, match:5, total:24},
+    {rank:12, name:"ILGE", booyah:0, kill:4, match:5, total:12}
+  ],
+  'D': [
+    {rank:1, name:"PTE", booyah:5, kill:135, match:5, total:195},
+    {rank:2, name:"TLR", booyah:0, kill:40, match:5, total:76},
+    {rank:3, name:"UZI", booyah:0, kill:39, match:5, total:72},
+    {rank:4, name:"CTE", booyah:0, kill:37, match:5, total:58},
+    {rank:5, name:"CDY", booyah:0, kill:23, match:5, total:45},
+    {rank:6, name:"DZ", booyah:0, kill:14, match:5, total:35},
+    {rank:7, name:"BLE", booyah:0, kill:11, match:5, total:32},
+    {rank:8, name:"6IT", booyah:0, kill:9, match:5, total:30},
+    {rank:9, name:"QV", booyah:0, kill:9, match:5, total:27},
+    {rank:10, name:"BZ", booyah:0, kill:11, match:5, total:24},
+    {rank:11, name:"TA", booyah:0, kill:10, match:5, total:21},
+    {rank:12, name:"JK", booyah:0, kill:8, match:5, total:16}
+  ]
 };
 
-// 3. ĐỘNG CƠ TỰ ĐỘNG GOM DỮ LIỆU TỪ 4 LINK
-async function layTatCaDuLieuSS4() {
-    try {
-        for (const bang in LINK_CacBang_SS4) {
-            const link = LINK_CacBang_SS4[bang];
-            if (link === "" || !link.includes("http")) continue; 
-
-            const response = await fetch(link);
-            const data = await response.text();
-            
-            // Bỏ dòng tiêu đề đầu tiên trong Google Sheets
-            const rows = data.split('\n').slice(1); 
-            
-            rows.forEach(row => {
-                if(!row.trim()) return;
-                const cols = row.split(','); 
-                
-                // Gom chuẩn xác 6 cột từ Sheets vào web
-                DU_LIEU_BXH_SS4[bang].push({
-                    rank: parseInt(cols[0]),
-                    name: cols[1].trim(),
-                    booyah: parseInt(cols[2]),
-                    kill: parseInt(cols[3]),
-                    match: parseInt(cols[4]),
-                    total: parseInt(cols[5])
-                });
-            });
-        }
-        
-        // VẼ GIAO DIỆN (Đảm bảo tên hàm này khớp với hàm bên dưới của bạn)
-        renderLeaderboardV5('A'); 
-        
-    } catch (error) {
-        console.error("Lỗi đồng bộ dữ liệu SS4:", error);
-    }
+function getTierV5(rank){
+  if(rank<=6) return { ac:"#00e5ff", sweep:"rgba(0,229,255,0.06)", bar:"#00e5ff", rowBg:"#020c14", nameBase:"#5ab8d8", nameHover:"#d0f8ff", rankBase:"#1e6080", rankHover:"#00e5ff", avaBase:"#001824", avaBorder:"#00e5ff22", avaHoverBg:"#002a38", avaHoverBorder:"#00e5ff88", totalBase:"#00e5ff", totalSize:15, killCol:"#22d3a5", booyahCol:"#e8b400" };
+  if(rank<=9) return { ac:"#d060f0", sweep:"rgba(208,96,240,0.06)", bar:"#d060f0", rowBg:"#07020e", nameBase:"#9858b8", nameHover:"#e8c0ff", rankBase:"#5a2878", rankHover:"#d060f0", avaBase:"#0e0418", avaBorder:"#d060f022", avaHoverBg:"#1a0830", avaHoverBorder:"#d060f088", totalBase:"#c050e0", totalSize:14, killCol:"#22d3a599", booyahCol:"#e8b40099" };
+  return { ac:"#40a0e0", sweep:"rgba(64,160,224,0.05)", bar:"#40a0e0", rowBg:"#02080f", nameBase:"#3a6888", nameHover:"#90c8e8", rankBase:"#1e4060", rankHover:"#40a0e0", avaBase:"#040e18", avaBorder:"#40a0e022", avaHoverBg:"#081828", avaHoverBorder:"#40a0e066", totalBase:"#3890c8", totalSize:13, killCol:"#22d3a566", booyahCol:"#e8b40066" };
 }
 
-// KHỞI ĐỘNG HỆ THỐNG!
-layTatCaDuLieuSS4();
 function renderLeaderboardV5(bangId) {
-  const teams = DU_LIEU_BXH_SS4[bangId] || [];
+  const teams = DU_LIEU_BXH_V5[bangId] || [];
   const podWrap = document.getElementById("podium");
   const restWrap = document.getElementById("rest-rows");
   
@@ -1068,7 +1088,6 @@ function renderLeaderboardV5(bangId) {
   POD_CFG.forEach(p => {
     if(!teams[p.teamIdx]) return;
     const t = teams[p.teamIdx];
-    if (!t) return; // Khiên bảo vệ: Bỏ qua và không báo lỗi nếu bảng chưa có đủ đội
     let logoThichHop = "logo-" + t.name.toLowerCase() + "ss4.jpg"; // LOGO TỰ ĐỘNG
 
     const card = document.createElement("div");
@@ -1079,7 +1098,7 @@ function renderLeaderboardV5(bangId) {
       <div class="pod-icon" style="color:${p.color}">${p.icon}</div>
       <div class="pod-ava" style="background:${p.avaBg};border-color:${p.color};">
         <div class="pod-ring" style="border-color:${p.ringColor}"></div>
-        <img src="${logoThichHop}" onerror="this.onerror=null; this.src='logo-uziss4.jpg';" style="width:100%;height:100%;border-radius:4px;object-fit:cover;">
+        <img src="${logoThichHop}" style="width:100%;height:100%;border-radius:8px;object-fit:cover;position:relative;z-index:2;">
       </div>
       <div class="pod-name" style="color:${p.color};text-shadow:0 0 18px ${p.color}66">${t.name}</div>
       <div class="pod-pts" style="color:${p.color};text-shadow:0 0 24px ${p.color}77">${t.total}</div>
@@ -1114,7 +1133,7 @@ function renderLeaderboardV5(bangId) {
       <div class="rr-rank" style="color:${tier.rankBase}">${t.rank}</div>
       <div class="rr-team">
         <div class="rr-ava" style="background:${tier.avaBase};border:1px solid ${tier.avaBorder};">
-            <img src="${logoThichHop}" onerror="this.onerror=null; this.src='logo-uziss4.jpg';" style="width:100%;height:100%;border-radius:4px;object-fit:cover;">
+            <img src="${logoThichHop}" style="width:100%;height:100%;border-radius:4px;object-fit:cover;">
         </div>
         <span class="rr-name" style="color:${tier.nameBase}">${t.name}</span>
       </div>
@@ -1161,19 +1180,59 @@ document.querySelectorAll(".tab").forEach(btn => {
 if(document.getElementById("bxh-root")) {
     renderLeaderboardV5('A');
 }
-// Hàm lấy màu cho bảng Bán Kết (Nới màu Tím tới Top 12)
+// 1. CHIA DỮ LIỆU THÀNH 2 BẢNG (BÁN KẾT 1 VÀ BÁN KẾT 2)
+const DU_LIEU_BANKET_SS4 = {
+  '1': [ 
+      // Dữ liệu Bán Kết 1 (Bạn nhập 12 đội BK1 vào đây)
+      {rank:1, name:"LKE", booyah:4, kill:86, match:5, total:144},
+      {rank:2, name:"BBE", booyah:3, kill:70, match:5, total:123},
+      {rank:3, name:"CTE", booyah:1, kill:61, match:5, total:108},
+      {rank:4, name:"TS", booyah:1, kill:52, match:5, total:95},
+      {rank:5, name:"TLR", booyah:1, kill:54, match:5, total:89},
+      {rank:6, name:"SAW", booyah:0, kill:47, match:5, total:85},
+      {rank:7, name:"TCK", booyah:0, kill:44, match:5, total:75},
+      {rank:8, name:"SGP", booyah:0, kill:39, match:5, total:66},
+      {rank:9, name:"BB", booyah:0, kill:42, match:5, total:66},
+      {rank:10, name:"DZ", booyah:0, kill:31, match:5, total:65},
+      {rank:11, name:"ADN", booyah:1, kill:23, match:5, total:64},
+      {rank:12, name:"BTV", booyah:0, kill:23, match:5, total:59}
+  ],
+  '2': [ 
+      // Dữ liệu Bán Kết 2 (Bạn nhập 12 đội BK2 vào đây)
+      {rank:1, name:"MAO", booyah:0, kill:21, match:5, total:51},
+      {rank:2, name:"LT", booyah:0, kill:24, match:5, total:51},
+      {rank:3, name:"TLK", booyah:0, kill:25, match:5, total:49},
+      {rank:4, name:"KM", booyah:0, kill:30, match:5, total:49},
+      {rank:5, name:"UZI", booyah:1, kill:20, match:5, total:43},
+      {rank:6, name:"WR", booyah:0, kill:12, match:5, total:38},
+      {rank:7, name:"OVN", booyah:0, kill:7, match:5, total:30},
+      {rank:8, name:"SE", booyah:0, kill:8, match:5, total:28},
+      {rank:9, name:"BNN1", booyah:0, kill:8, match:5, total:22}
+      // Bạn nhớ bổ sung thêm cho đủ 12 đội nhé
+  ]
+};
+
+// Hàm lấy màu cho bảng Bán Kết (Giữ nguyên của bạn)
 function getTierBK(rank){
   if(rank<=6) return { ac:"#00e5ff", sweep:"rgba(0,229,255,0.06)", bar:"#00e5ff", rowBg:"#020c14", nameBase:"#5ab8d8", nameHover:"#d0f8ff", rankBase:"#1e6080", rankHover:"#00e5ff", avaBase:"#001824", avaBorder:"#00e5ff22", avaHoverBg:"#002a38", avaHoverBorder:"#00e5ff88", totalBase:"#00e5ff", totalSize:15, killCol:"#22d3a5", booyahCol:"#e8b400" };
   if(rank<=12) return { ac:"#d060f0", sweep:"rgba(208,96,240,0.06)", bar:"#d060f0", rowBg:"#07020e", nameBase:"#9858b8", nameHover:"#e8c0ff", rankBase:"#5a2878", rankHover:"#d060f0", avaBase:"#0e0418", avaBorder:"#d060f022", avaHoverBg:"#1a0830", avaHoverBorder:"#d060f088", totalBase:"#c050e0", totalSize:14, killCol:"#22d3a599", booyahCol:"#e8b40099" };
   return { ac:"#40a0e0", sweep:"rgba(64,160,224,0.05)", bar:"#40a0e0", rowBg:"#02080f", nameBase:"#3a6888", nameHover:"#90c8e8", rankBase:"#1e4060", rankHover:"#40a0e0", avaBase:"#040e18", avaBorder:"#40a0e022", avaHoverBg:"#081828", avaHoverBorder:"#40a0e066", totalBase:"#3890c8", totalSize:13, killCol:"#22d3a566", booyahCol:"#e8b40066" };
 }
 
+// 2. HÀM VẼ GIAO DIỆN CÓ KHẢ NĂNG CHUYỂN TAB
 function renderBanketSS4(bkId) {
   const teams = DU_LIEU_BANKET_SS4[bkId] || [];
-  if (teams.length === 0) return;
-  const podWrap = document.getElementById("podium");
-  const restWrap = document.getElementById("rest-rows");
+  
+  // Lưu ý: Đảm bảo ID này khớp 100% với file HTML của bạn
+  const podWrap = document.getElementById("podium-banket");
+  const restWrap = document.getElementById("rest-rows-banket");
+  
   if(!podWrap || !restWrap) return;
+  if(teams.length === 0) return;
+
+  // LỆNH DỌN RÁC: Xóa dữ liệu cũ khi bấm chuyển tab
+  podWrap.innerHTML = "";
+  restWrap.innerHTML = "";
 
   const POD_CFG = [
     {teamIdx:1, podOrder:0, label:"HẠNG NHÌ", icon:"&#9670;", color:"#00c8ff", bg:"#00040e", border:"#00c8ff33", avaBg:"#001a2e", ringColor:"#00c8ff55", delay:350},
@@ -1183,7 +1242,8 @@ function renderBanketSS4(bkId) {
 
   POD_CFG.forEach(p => {
     const t = teams[p.teamIdx];
-    if (!t) return;
+    if(!t) return; // Khiên bảo vệ Top 3
+
     let logoThichHop = "logo-" + t.name.toLowerCase() + "ss4.jpg";
     const card = document.createElement("div");
     card.className = "pod-card";
@@ -1193,7 +1253,7 @@ function renderBanketSS4(bkId) {
       <div class="pod-icon" style="color:${p.color}">${p.icon}</div>
       <div class="pod-ava" style="background:${p.avaBg};border-color:${p.color};">
         <div class="pod-ring" style="border-color:${p.ringColor}"></div>
-        <img src="${logoThichHop}" onerror="this.onerror=null; this.src='logo-uziss4.jpg';" style="width:100%;height:100%;border-radius:4px;object-fit:cover;">
+        <img src="${logoThichHop}" onerror="this.onerror=null; this.src='logo-uziss4.jpg';" style="width:100%;height:100%;border-radius:8px;object-fit:cover;position:relative;z-index:2;">
       </div>
       <div class="pod-name" style="color:${p.color};text-shadow:0 0 18px ${p.color}66">${t.name}</div>
       <div class="pod-pts" style="color:${p.color};text-shadow:0 0 24px ${p.color}77">${t.total}</div>
@@ -1209,8 +1269,9 @@ function renderBanketSS4(bkId) {
 
   const maxTotal = teams[0].total;
   teams.slice(3).forEach((t, i) => {
-    // Top 12 (sau khi cắt Top 3) nằm ở vị trí index = 9
-    if(i === 9) {
+    
+    // 3. VẠCH ĐỎ LẤY TOP 6: Nằm ở vị trí index = 3 (ngay trước khi vẽ Hạng 7)
+    if(i === 3) {
       const cut = document.createElement("div");
       cut.className = "qual-cut";
       cut.innerHTML = '<span class="cut-lbl" style="color:#ff2a2a; border: 1px solid #ff2a2a44; border-radius: 4px;">CHUNG KẾT</span>';
@@ -1236,7 +1297,7 @@ function renderBanketSS4(bkId) {
       <div class="rr-val" style="color:${tier.killCol}">${t.kill}</div>
       <div class="rr-val" style="color:#2a4a6a">${t.match}</div>
       <div class="rr-total" style="color:${tier.totalBase};font-size:${tier.totalSize}px">${t.total}</div>
-      <div class="prog-wrap"><div class="prog" id="pbk-${i}" style="background:${tier.bar}77"></div></div>`;
+      <div class="prog-wrap"><div class="prog" id="pbk-${bkId}-${i}" style="background:${tier.bar}77"></div></div>`;
 
     const rn = row.querySelector(".rr-rank"), nm = row.querySelector(".rr-name");
     const av = row.querySelector(".rr-ava"), tot = row.querySelector(".rr-total");
@@ -1255,12 +1316,34 @@ function renderBanketSS4(bkId) {
     setTimeout(() => {
       row.classList.add("show");
       setTimeout(() => {
-        const p = document.getElementById(`pbk-${i}`);
+        const p = document.getElementById(`pbk-${bkId}-${i}`);
         if(p) p.style.width = Math.round(t.total/maxTotal*100) + "%";
       }, 200);
     }, 750 + i * 50);
   });
 }
+
+// 4. Khởi chạy mặc định Bán Kết 1 khi load web
+renderBanketSS4('1');
+// =========================================================================
+// CHỨC NĂNG BẢNG XẾP HẠNG CHUNG KẾT (12 ĐỘI)
+// =========================================================================
+
+const DU_LIEU_CHUNGKET = [
+  {rank:1, name:"FT", booyah:0, kill:78, match:5, total:124},
+  {rank:2, name:"TGL", booyah:2, kill:59, match:5, total:111},
+  {rank:3, name:"4T", booyah:0, kill:45, match:5, total:82},
+  {rank:4, name:"NS", booyah:1, kill:47, match:5, total:81},
+  {rank:5, name:"TGL3", booyah:1, kill:29, match:5, total:67},
+  {rank:6, name:"TE", booyah:1, kill:41, match:5, total:64},
+  {rank:7, name:"LHDXB", booyah:1, kill:19, match:5, total:45},
+  {rank:8, name:"NNA", booyah:0, kill:17, match:5, total:42},
+  {rank:9, name:"GODS", booyah:0, kill:24, match:5, total:40},
+  {rank:10, name:"NOK", booyah:0, kill:11, match:5, total:33},
+  {rank:11, name:"WHD", booyah:0, kill:12, match:5, total:19},
+  {rank:12, name:"CNCT", booyah:0, kill:1, match:5, total:7}
+];
+
 // Dùng chung bảng màu V5 chuẩn Esports
 function getTierCK(rank){
   if(rank<=6) return { ac:"#00e5ff", sweep:"rgba(0,229,255,0.06)", bar:"#00e5ff", rowBg:"#020c14", nameBase:"#5ab8d8", nameHover:"#d0f8ff", rankBase:"#1e6080", rankHover:"#00e5ff", avaBase:"#001824", avaBorder:"#00e5ff22", avaHoverBg:"#002a38", avaHoverBorder:"#00e5ff88", totalBase:"#00e5ff", totalSize:15, killCol:"#22d3a5", booyahCol:"#e8b400" };
@@ -1272,9 +1355,6 @@ function renderChungKet() {
   const podWrap = document.getElementById("podium-chungket");
   const restWrap = document.getElementById("rest-rows-chungket");
   if(!podWrap || !restWrap) return;
-  // Dọn sạch bục Top 3 và Danh sách trước khi vẽ dữ liệu mới
-  podWrap.innerHTML = "";
-  restWrap.innerHTML = "";
 
   // Cấu hình Podium: Đổi danh hiệu và màu cho Nhà Vô Địch
   const POD_CFG = [
@@ -1298,7 +1378,7 @@ function renderChungKet() {
       <div class="pod-icon" style="color:${p.color}">${p.icon}</div>
       <div class="pod-ava" style="background:${p.avaBg};border-color:${p.color};">
         <div class="pod-ring" style="border-color:${p.ringColor}"></div>
-        <img src="${logoThichHop}" onerror="this.onerror=null; this.src='logo-uziss4.jpg';" style="width:100%;height:100%;border-radius:4px;object-fit:cover;">
+        <img src="${logoThichHop}" style="width:100%;height:100%;border-radius:8px;object-fit:cover;position:relative;z-index:2;">
       </div>
       <div class="pod-name" style="color:${p.color};text-shadow:0 0 18px ${p.color}66">${t.name}</div>
       <div class="pod-pts" style="${ptsStyle}">${t.total}</div>
@@ -1325,7 +1405,7 @@ function renderChungKet() {
       <div class="rr-rank" style="color:${tier.rankBase}">${t.rank}</div>
       <div class="rr-team">
         <div class="rr-ava" style="background:${tier.avaBase};border:1px solid ${tier.avaBorder};">
-            <img src="${logoThichHop}" onerror="this.onerror=null; this.src='logo-uziss4.jpg';" style="width:100%;height:100%;border-radius:4px;object-fit:cover;">
+            <img src="${logoThichHop}" style="width:100%;height:100%;border-radius:4px;object-fit:cover;">
         </div>
         <span class="rr-name" style="color:${tier.nameBase}">${t.name}</span>
       </div>
@@ -1386,67 +1466,3 @@ document.addEventListener("DOMContentLoaded", () => {
         ttObserver.observe(element);
     });
 });
-// HÀM CHIA MÀU BẢNG XẾP HẠNG (BẢN FULL MÀU SẮC CHI TIẾT)
-function getTierV5(rank) {
-    if (rank <= 6) return { 
-        ac: "#00e5ff", sweep: "rgba(0,229,255,0.06)", bar: "#00e5ff", rowBg: "#020c14", 
-        nameBase: "#3a6888", nameHover: "#00e5ff", rankBase: "#2a4a6a", 
-        avaBase: "transparent", avaBorder: "transparent", avaHoverBg: "rgba(0,229,255,0.1)", avaHoverBorder: "#00e5ff",
-        booyahCol: "#ffcc00", killCol: "#22d3a5", totalBase: "#00e5ff", totalSize: 16
-    };
-    if (rank <= 9) return { 
-        ac: "#d060f0", sweep: "rgba(208,96,240,0.06)", bar: "#d060f0", rowBg: "#07020e", 
-        nameBase: "#3a6888", nameHover: "#d060f0", rankBase: "#2a4a6a", 
-        avaBase: "transparent", avaBorder: "transparent", avaHoverBg: "rgba(208,96,240,0.1)", avaHoverBorder: "#d060f0",
-        booyahCol: "#ffcc00", killCol: "#22d3a5", totalBase: "#d060f0", totalSize: 16
-    };
-    return { 
-        ac: "#40a0e0", sweep: "rgba(64,160,224,0.05)", bar: "#40a0e0", rowBg: "#02080f", 
-        nameBase: "#3a6888", nameHover: "#40a0e0", rankBase: "#2a4a6a", 
-        avaBase: "transparent", avaBorder: "transparent", avaHoverBg: "rgba(64,160,224,0.1)", avaHoverBorder: "#40a0e0",
-        booyahCol: "#ffcc00", killCol: "#22d3a5", totalBase: "#40a0e0", totalSize: 16
-    };
-}
-// 1. Kho chứa chia 2 nhánh
-let DU_LIEU_BANKET_SS4 = { '1': [], '2': [] };
-
-// 2. Dán 2 link Google Sheets của BK1 và BK2 vào đây
-const LINK_BK_SS4 = {
-    '1': "https://docs.google.com/spreadsheets/d/e/2PACX-1vRxDSOSL4H3e0x1AGroPVMIV9YURcz87dYbzfxTFrDeGzobsNg67840s51Dh59mxiBdIM_8XqT02bw8/pub?gid=540096713&single=true&output=csv",
-    '2': "https://docs.google.com/spreadsheets/d/e/2PACX-1vRxDSOSL4H3e0x1AGroPVMIV9YURcz87dYbzfxTFrDeGzobsNg67840s51Dh59mxiBdIM_8XqT02bw8/pub?gid=1151424666&single=true&output=csv"
-};
-
-// 3. Động cơ tự động lấy điểm Bán Kết
-async function layDuLieuBanketSS4() {
-    try {
-        for (const bkId in LINK_BK_SS4) {
-            const link = LINK_BK_SS4[bkId];
-            if (!link || !link.includes("http")) continue; 
-
-            const response = await fetch(link);
-            const data = await response.text();
-            const rows = data.split('\n').slice(1); 
-            
-            rows.forEach(row => {
-                if(!row.trim()) return;
-                const cols = row.split(','); 
-                
-                DU_LIEU_BANKET_SS4[bkId].push({
-                    rank: parseInt(cols[0]),
-                    name: cols[1].trim(),
-                    booyah: parseInt(cols[2]),
-                    kill: parseInt(cols[3]),
-                    match: parseInt(cols[4]),
-                    total: parseInt(cols[5])
-                });
-            });
-        }
-        // Tải xong thì vẽ Bán Kết 1 lên đầu tiên
-        renderBanketSS4('1'); 
-        
-    } catch (error) {
-        console.error("Lỗi đồng bộ dữ liệu Bán Kết SS4:", error);
-    }
-}
-
-layDuLieuBanketSS4();
