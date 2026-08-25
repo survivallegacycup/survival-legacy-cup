@@ -932,31 +932,6 @@ const observer = new IntersectionObserver((entries) => {
     });
 }, { threshold: 0.1 });
 matchRows.forEach(row => observer.observe(row));
-
-// =========================================================
-// 2. HỆ THỐNG ÂM THANH CHUNG
-// =========================================================
-const hoverSound = document.getElementById("hoverSound");
-const sfxHover = document.getElementById("sfxHover");
-const sfxClick = document.getElementById("sfxClick");
-
-// Tiếng tick cho hàng giải đấu
-document.querySelectorAll('.match-item, .btn-stats, .login-btn').forEach(el => {
-    el.addEventListener("mouseenter", () => {
-        if(hoverSound) { hoverSound.currentTime = 0; hoverSound.play().catch(e => {}); }
-    });
-});
-
-// Tiếng UI cho Modal Esports
-document.querySelectorAll(".g-row, .nav-btn, .btn-back-top").forEach(el => {
-    el.addEventListener("mouseenter", () => { 
-        if(sfxHover) { sfxHover.currentTime = 0; sfxHover.volume = 0.5; sfxHover.play().catch(e => {}); }
-    });
-    el.addEventListener("click", () => { 
-        if(sfxClick) { sfxClick.currentTime = 0; sfxClick.volume = 0.8; sfxClick.play().catch(e => {}); }
-    });
-});
-
 // =========================================================
 // 3. HIỆU ỨNG TÀN LỬA NỀN CAM (Trang chủ)
 // =========================================================
@@ -1196,8 +1171,8 @@ function getTierBK(rank){
 function renderBanketSS4(bkId) {
   const teams = DU_LIEU_BANKET_SS4[bkId] || [];
   if (teams.length === 0) return;
-  const podWrap = document.getElementById("podium-banket");
-  const restWrap = document.getElementById("rest-rows-banket");
+  const podWrap = document.getElementById("podium");
+  const restWrap = document.getElementById("rest-rows");
   if(!podWrap || !restWrap) return;
 
   const POD_CFG = [
@@ -1208,6 +1183,7 @@ function renderBanketSS4(bkId) {
 
   POD_CFG.forEach(p => {
     const t = teams[p.teamIdx];
+    if (!t) return;
     let logoThichHop = "logo-" + t.name.toLowerCase() + "ss4.jpg";
     const card = document.createElement("div");
     card.className = "pod-card";
