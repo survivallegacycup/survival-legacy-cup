@@ -1337,7 +1337,7 @@ const DU_LIEU_CHUNGKET = [
   {rank:5, name:"CTE", booyah:0, kill:27, match:5, total:53},
   {rank:6, name:"SAW", booyah:0, kill:16, match:5, total:49},
   {rank:7, name:"CDY", booyah:0, kill:12, match:5, total:36},
-  {rank:8, name:"CKT", booyah:0, kill:18, match:5, total:33},
+  {rank:8, name:"VKT", booyah:0, kill:18, match:5, total:33},
   {rank:9, name:"VDE", booyah:0, kill:7, match:5, total:28},
   {rank:10, name:"FH", booyah:0, kill:5, match:5, total:14},
   {rank:11, name:"TS", booyah:0, kill:1, match:5, total:8},
