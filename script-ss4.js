@@ -1272,6 +1272,9 @@ function renderChungKet() {
   const podWrap = document.getElementById("podium-chungket");
   const restWrap = document.getElementById("rest-rows-chungket");
   if(!podWrap || !restWrap) return;
+  // Dọn sạch bục Top 3 và Danh sách trước khi vẽ dữ liệu mới
+  podWrap.innerHTML = "";
+  restWrap.innerHTML = "";
 
   // Cấu hình Podium: Đổi danh hiệu và màu cho Nhà Vô Địch
   const POD_CFG = [
