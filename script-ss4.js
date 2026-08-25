@@ -1466,3 +1466,16 @@ document.addEventListener("DOMContentLoaded", () => {
         ttObserver.observe(element);
     });
 });
+// Hàm tự động đổi viền sáng cho tab vừa được click
+function switchTab(clickedBtn) {
+    // 1. Tìm cái hộp chứa các nút này
+    const buttonGroup = clickedBtn.parentElement;
+    
+    // 2. Tắt đèn TẤT CẢ các nút đang có trong hộp
+    buttonGroup.querySelectorAll('.tab').forEach(btn => {
+        btn.classList.remove('on');
+    });
+    
+    // 3. Bật đèn sáng chói cho đúng cái nút vừa được bấm
+    clickedBtn.classList.add('on');
+}
