@@ -1330,18 +1330,18 @@ renderBanketSS4('1');
 // =========================================================================
 
 const DU_LIEU_CHUNGKET = [
-  {rank:1, name:"FT", booyah:0, kill:78, match:5, total:124},
-  {rank:2, name:"TGL", booyah:2, kill:59, match:5, total:111},
-  {rank:3, name:"4T", booyah:0, kill:45, match:5, total:82},
-  {rank:4, name:"NS", booyah:1, kill:47, match:5, total:81},
-  {rank:5, name:"TGL3", booyah:1, kill:29, match:5, total:67},
-  {rank:6, name:"TE", booyah:1, kill:41, match:5, total:64},
-  {rank:7, name:"LHDXB", booyah:1, kill:19, match:5, total:45},
-  {rank:8, name:"NNA", booyah:0, kill:17, match:5, total:42},
-  {rank:9, name:"GODS", booyah:0, kill:24, match:5, total:40},
-  {rank:10, name:"NOK", booyah:0, kill:11, match:5, total:33},
-  {rank:11, name:"WHD", booyah:0, kill:12, match:5, total:19},
-  {rank:12, name:"CNCT", booyah:0, kill:1, match:5, total:7}
+  {rank:1, name:"PTE", booyah:3, kill:127, match:5, total:174},
+  {rank:2, name:"BBE", booyah:1, kill:75, match:5, total:112},
+  {rank:3, name:"UZI", booyah:0, kill:43, match:5, total:75},
+  {rank:4, name:"TLR", booyah:1, kill:34, match:5, total:59},
+  {rank:5, name:"CTE", booyah:0, kill:27, match:5, total:53},
+  {rank:6, name:"SAW", booyah:0, kill:16, match:5, total:49},
+  {rank:7, name:"CDY", booyah:0, kill:12, match:5, total:36},
+  {rank:8, name:"CKT", booyah:0, kill:18, match:5, total:33},
+  {rank:9, name:"VDE", booyah:0, kill:7, match:5, total:28},
+  {rank:10, name:"FH", booyah:0, kill:5, match:5, total:14},
+  {rank:11, name:"TS", booyah:0, kill:1, match:5, total:8},
+  {rank:12, name:"LKE", booyah:0, kill:0, match:5, total:5}
 ];
 
 // Dùng chung bảng màu V5 chuẩn Esports
