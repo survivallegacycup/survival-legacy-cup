@@ -1182,33 +1182,33 @@ if(document.getElementById("bxh-root")) {
 }
 // 1. CHIA DỮ LIỆU THÀNH 2 BẢNG (BÁN KẾT 1 VÀ BÁN KẾT 2)
 const DU_LIEU_BANKET_SS4 = {
-  '1': [ 
-      // Dữ liệu Bán Kết 1 (Bạn nhập 12 đội BK1 vào đây)
-      {rank:1, name:"LKE", booyah:4, kill:86, match:5, total:144},
-      {rank:2, name:"BBE", booyah:3, kill:70, match:5, total:123},
-      {rank:3, name:"CTE", booyah:1, kill:61, match:5, total:108},
-      {rank:4, name:"TS", booyah:1, kill:52, match:5, total:95},
-      {rank:5, name:"TLR", booyah:1, kill:54, match:5, total:89},
-      {rank:6, name:"SAW", booyah:0, kill:47, match:5, total:85},
-      {rank:7, name:"TCK", booyah:0, kill:44, match:5, total:75},
-      {rank:8, name:"SGP", booyah:0, kill:39, match:5, total:66},
-      {rank:9, name:"BB", booyah:0, kill:42, match:5, total:66},
-      {rank:10, name:"DZ", booyah:0, kill:31, match:5, total:65},
-      {rank:11, name:"ADN", booyah:1, kill:23, match:5, total:64},
-      {rank:12, name:"BTV", booyah:0, kill:23, match:5, total:59}
+  '1': [
+      {rank:1, name:"LKE", booyah:4, kill:122, match:5, total:170},
+      {rank:2, name:"BBE", booyah:0, kill:74, match:5, total:113},
+      {rank:3, name:"CTE", booyah:0, kill:47, match:5, total:68},
+      {rank:4, name:"TS", booyah:0, kill:36, match:5, total:68},
+      {rank:5, name:"TLR", booyah:1, kill:38, match:5, total:65},
+      {rank:6, name:"SAW", booyah:0, kill:13, match:5, total:43},
+      {rank:7, name:"TCK", booyah:0, kill:18, match:5, total:40},
+      {rank:8, name:"SGP", booyah:0, kill:13, match:5, total:38},
+      {rank:9, name:"BB", booyah:0, kill:10, match:5, total:29},
+      {rank:10, name:"DZ", booyah:0, kill:7, match:5, total:27},
+      {rank:11, name:"ADN", booyah:0, kill:4, match:5, total:5},
+      {rank:12, name:"BTV", booyah:0, kill:0, match:5, total:1}
   ],
-  '2': [ 
-      // Dữ liệu Bán Kết 2 (Bạn nhập 12 đội BK2 vào đây)
-      {rank:1, name:"MAO", booyah:0, kill:21, match:5, total:51},
-      {rank:2, name:"LT", booyah:0, kill:24, match:5, total:51},
-      {rank:3, name:"TLK", booyah:0, kill:25, match:5, total:49},
-      {rank:4, name:"KM", booyah:0, kill:30, match:5, total:49},
-      {rank:5, name:"UZI", booyah:1, kill:20, match:5, total:43},
-      {rank:6, name:"WR", booyah:0, kill:12, match:5, total:38},
-      {rank:7, name:"OVN", booyah:0, kill:7, match:5, total:30},
-      {rank:8, name:"SE", booyah:0, kill:8, match:5, total:28},
-      {rank:9, name:"BNN1", booyah:0, kill:8, match:5, total:22}
-      // Bạn nhớ bổ sung thêm cho đủ 12 đội nhé
+  '2': [
+      {rank:1, name:"PTE", booyah:3, kill:133, match:5, total:182},
+      {rank:2, name:"UZI", booyah:0, kill:41, match:5, total:79},
+      {rank:3, name:"VKT", booyah:0, kill:46, match:5, total:75},
+      {rank:4, name:"CDY", booyah:1, kill:35, match:5, total:63},
+      {rank:5, name:"FH", booyah:1, kill:14, match:5, total:53},
+      {rank:6, name:"VDE", booyah:0, kill:24, match:5, total:48},
+      {rank:7, name:"KME", booyah:0, kill:18, match:5, total:37},
+      {rank:8, name:"KE", booyah:0, kill:6, match:5, total:31},
+      {rank:9, name:"SLA", booyah:0, kill:8, match:5, total:26},
+      {rank:10, name:"SL", booyah:0, kill:4, match:5, total:11},
+      {rank:11, name:"ADE", booyah:0, kill:1, match:5, total:3},
+      {rank:12, name:"TMH", booyah:0, kill:0, match:5, total:1}
   ]
 };
 
