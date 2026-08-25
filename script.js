@@ -1103,8 +1103,8 @@ const DU_LIEU_BXH_V5 = {
     {rank:8, name:"BLX", booyah:0, kill:10, match:6, total:32},
     {rank:9, name:"UCH", booyah:0, kill:16, match:6, total:28},
     {rank:10, name:"WB", booyah:0, kill:8, match:6, total:20},
-    {rank:11, name:"KS", booyah:0, kill:0, match:0, total:0},
-    {rank:12, name:"BTN", booyah:0, kill:0, match:0, total:0}
+    {rank:11, name:"KS", booyah:0, kill:0, match:6, total:0},
+    {rank:12, name:"BTN", booyah:0, kill:0, match:6, total:0}
   ],
   'C': [
     {rank:1, name:"4T", booyah:2, kill:36, match:6, total:81},
@@ -1116,9 +1116,9 @@ const DU_LIEU_BXH_V5 = {
     {rank:7, name:"TGL2", booyah:0, kill:26, match:6, total:57},
     {rank:8, name:"MB", booyah:0, kill:9, match:6, total:46},
     {rank:9, name:"PCM", booyah:0, kill:13, match:6, total:24},
-    {rank:10, name:"6IT", booyah:0, kill:0, match:0, total:0},
-    {rank:11, name:"HRE", booyah:0, kill:0, match:0, total:0},
-    {rank:12, name:"DC", booyah:0, kill:0, match:0, total:0}
+    {rank:10, name:"6IT", booyah:0, kill:0, match:6, total:0},
+    {rank:11, name:"HRE", booyah:0, kill:0, match:6, total:0},
+    {rank:12, name:"DC", booyah:0, kill:0, match:6, total:0}
   ],
   'D': [
     {rank:1, name:"TGL3", booyah:2, kill:54, match:6, total:98},
