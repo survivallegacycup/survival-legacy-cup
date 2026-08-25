@@ -1023,3 +1023,38 @@ if (canvasModal) {
     }
     drawModalParticles();
 }
+// =========================================
+// HÀM TẠO HIỆU ỨNG BỤI BAY (DUST PARTICLES)
+// =========================================
+function taoHieuUngBuiBay() {
+    const container = document.getElementById('dust-container');
+    if (!container) return; // Nếu trang không có máy tạo bụi thì bỏ qua
+
+    const soLuongBui = 40; // Bạn có thể tăng giảm số lượng hạt bụi ở đây
+
+    for (let i = 0; i < soLuongBui; i++) {
+        let dust = document.createElement('div');
+        dust.className = 'dust-particle';
+
+        // 1. Random kích thước hạt bụi (từ 2px đến 6px cho chân thực)
+        let size = Math.random() * 4 + 2;
+        dust.style.width = size + 'px';
+        dust.style.height = size + 'px';
+
+        // 2. Random vị trí xuất hiện (từ mép trái sang mép phải màn hình)
+        dust.style.left = Math.random() * 100 + 'vw';
+
+        // 3. Random tốc độ bay (từ 6 giây đến 12 giây để tạo lớp lang trước sau)
+        let thoiGianBay = Math.random() * 6 + 6; 
+        dust.style.animationDuration = thoiGianBay + 's';
+
+        // 4. Random độ trễ (để bụi không bay lên cùng 1 lúc như bị lỗi)
+        let doTre = Math.random() * 5;
+        dust.style.animationDelay = doTre + 's';
+
+        container.appendChild(dust);
+    }
+}
+
+// Gọi hàm chạy ngay khi load trang
+document.addEventListener("DOMContentLoaded", taoHieuUngBuiBay);
