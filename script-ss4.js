@@ -1322,9 +1322,6 @@ function renderBanketSS4(bkId) {
     }, 750 + i * 50);
   });
 }
-
-// 4. Khởi chạy mặc định Bán Kết 1 khi load web
-renderBanketSS4('1');
 // =========================================================================
 // CHỨC NĂNG BẢNG XẾP HẠNG CHUNG KẾT (12 ĐỘI)
 // =========================================================================
@@ -1483,3 +1480,23 @@ document.querySelectorAll(".tab").forEach(btn => {
         }
     });
 });
+// HÀM ĐIỀU KHIỂN ĐỘC LẬP CHO BÁN KẾT (Chống xung đột 100%)
+function bamNutBanKet(bkId) {
+    // 1. Lôi cổ 2 cái nút ra
+    const btn1 = document.getElementById("btn-bk1");
+    const btn2 = document.getElementById("btn-bk2");
+    
+    // 2. Dập tắt viền vàng của cả 2 nút
+    if (btn1) btn1.classList.remove("on");
+    if (btn2) btn2.classList.remove("on");
+    
+    // 3. Bật viền vàng sáng chói cho đúng cái nút vừa bấm
+    const nutDuocBam = document.getElementById("btn-bk" + bkId);
+    if (nutDuocBam) nutDuocBam.classList.add("on");
+    
+    // 4. Lôi dữ liệu Bán Kết ra vẽ
+    renderBanketSS4(bkId.toString());
+}
+
+// Khởi chạy mặc định Bán Kết 1 khi vừa mở web
+bamNutBanKet(1);
