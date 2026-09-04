@@ -1,7 +1,7 @@
 /* ================= PHẦN 1: BẢNG THÔNG SỐ (TRANG LỊCH THI ĐẤU) ================= */
 // Nhớ dán link Google Sheets của bạn vào đây nha:
 const linkCacTran = {
-    1: "",
+    1: "https://docs.google.com/spreadsheets/d/e/2PACX-1vR_PfivC-q15NqLRcnPTqLMZ7zC531hNxZ0esDydzj_5_l3mcb7XzyRpFpk76M7HQwouSt9T5_7uGIa/pub?gid=0&single=true&output=csv",
     2: "",
     3: "",
     4: "",
@@ -70,7 +70,7 @@ async function moThongSo(soTran) {
     let dateEl = document.querySelector('.info-box.time-box .date');
     if (dateEl) {
         const lichNgay = { 1: "09/06/2026", 2: "10/06/2026", 3: "11/06/2026", 4: "12/06/2026", 5: "13/06/2026", 6: "14/06/2026", 7: "15/06/2026" };
-        dateEl.innerText = lichNgay[ngayThiDau] || "27/07/2026";
+        dateEl.innerText = lichNgay[ngayThiDau] || "09/06/2026";
     }
 
     let timeEl = document.querySelector('.info-box.time-box .time');
